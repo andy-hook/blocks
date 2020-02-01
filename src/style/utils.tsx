@@ -17,11 +17,11 @@ interface CropSettings {
   bottomCrop: number
 }
 
-export const createTextCrop = (
+export function createTextCrop(
   settings: CropSettings,
   topAdjustment = "0px",
   bottomAdjustment = "0px"
-) => {
+) {
   const { lHeight, topCrop, bottomCrop } = settings
 
   const cropFontSize = 100

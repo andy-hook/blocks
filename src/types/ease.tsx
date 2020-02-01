@@ -23,5 +23,6 @@ export type EaseName =
   | "easeInBack"
   | "easeOutBack"
   | "easeInOutBack"
+  | "subtleBounce"
 
 export type Eases = { [key in EaseName]: number[] }

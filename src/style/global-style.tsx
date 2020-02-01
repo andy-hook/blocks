@@ -144,13 +144,13 @@ const GlobalTransitionLink = createGlobalStyle`
     overflow: hidden !important;
   }
 
-  /* using transition-portal messes with the styling and pages dissappear due to a negative margin being set on the element */
+  /* Using transition-portal messes with styling and causes pages to dissappear due to a negative margin set on the element */
   .tl-wrapper + .tl-wrapper {
     margin: 0 !important;
   }
 
   /* Entering page should always sit above the exiting */
-  /* This is primarily used to prevent jank when click to go to the next project at the bottm of a page */
+  /* This is primarily used to prevent jank when switching routes */
   .tl-wrapper-status--entering,
   .tl-wrapper-status--entered {
     z-index: ${zIndex.low + 1} !important;

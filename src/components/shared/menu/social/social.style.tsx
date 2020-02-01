@@ -1,11 +1,6 @@
 import styled from "styled-components"
 import { themeText, isTheme } from "@style/theme"
-import {
-  borderRadius,
-  easing,
-  duration,
-  borderThickness,
-} from "@style/variables"
+import { borderRadius, ease, duration, borderThickness } from "@style/variables"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const padding = "0.7em"
@@ -30,7 +25,7 @@ export const Link = styled(OutboundLink)`
   padding: ${padding};
 
   &::after {
-    transition: transform ${duration.slow} ${easing("subtleBounce")},
+    transition: transform ${duration.slow} ${ease("subtleBounce")},
       opacity ${duration.fast} linear;
 
     content: "";
@@ -62,7 +57,7 @@ export const Link = styled(OutboundLink)`
   }
 `
 export const IconPos = styled.div`
-  transition: opacity ${duration.slow} ${easing("subtleBounce")};
+  transition: opacity ${duration.slow} ${ease("subtleBounce")};
   opacity: ${isTheme("dark", "0.25", "0.4")};
 
   ${Link}:hover &,

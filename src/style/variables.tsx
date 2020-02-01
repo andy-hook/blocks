@@ -105,17 +105,6 @@ export const textShadow = {
   heavy: "0 0 1em rgba(0, 0, 0.6)",
 }
 
-/* Easing
-  ------------------------------------------------- */
-
-export const easingTimings: { [index: string]: number[] } = {
-  subtleBounce: [0.15, 0.585, 0.225, 1.26],
-}
-
-export function easing(name: string) {
-  return `cubic-bezier(${easingTimings[name].toString()})`
-}
-
 /* Duration
   ------------------------------------------------- */
 
@@ -335,6 +324,9 @@ export const easeValues: Eases = {
   easeInBack: [0.6, -0.28, 0.735, 0.045],
   easeOutBack: [0.175, 0.885, 0.32, 1.275],
   easeInOutBack: [0.68, -0.55, 0.265, 1.55],
+
+  // Subtle bounce
+  subtleBounce: [0.15, 0.585, 0.225, 1.26],
 }
 
 export const ease = (easeName: EaseName) =>
