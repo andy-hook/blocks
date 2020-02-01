@@ -5,12 +5,8 @@ interface Props {
   onClick: () => void
 }
 
-const ProjectList: React.FunctionComponent<Props> = memo(
-  () => {
-    return (
-      <>Items</>
-    )
-  }
-)
+const ProjectList: React.FunctionComponent<Props> = memo(() => {
+  return <>Items</>
+})
 
 export default ProjectList

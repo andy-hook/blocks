@@ -99,10 +99,7 @@ const Menu: React.FunctionComponent<AllProps> = memo(
           <S.Contents>
             <S.SidebarNav>
               <S.SidebarNavInner>
-                <ProjectListComponent
-                  onClick={handleMenuClose}
-                  open={open}
-                />
+                <ProjectListComponent onClick={handleMenuClose} open={open} />
 
                 <MenuNavList onClick={handleMenuClose} open={open} />
               </S.SidebarNavInner>
