@@ -37,7 +37,6 @@ const Menu: React.FunctionComponent<AllProps> = memo(
 
     const animateOpen = () => {
       gsap.set(containerRef.current, { visibility: "visible" })
-
       gsap.fromTo(
         sidebar.current,
         {
@@ -52,7 +51,6 @@ const Menu: React.FunctionComponent<AllProps> = memo(
           },
         }
       )
-
       // Scrim
       gsap.to(animationScrim.current, {
         duration: 0.4,
@@ -73,12 +71,10 @@ const Menu: React.FunctionComponent<AllProps> = memo(
           clearProps: "transform, opacity",
           onComplete: () => {
             menuIsAnimating = false
-
             gsap.set(containerRef.current, { clearProps: "visibility" })
           },
         }
       )
-
       // Scrim
       gsap.to(animationScrim.current, {
         duration: slideOutSpeed,

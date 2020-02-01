@@ -33,11 +33,7 @@ type Refs<T> = Array<MutableRefObject<T>>
 
 const MenuNavList: React.FunctionComponent<Props> = memo(
   ({ onClick, open }) => {
-    const refs = [
-      React.createRef(),
-      React.createRef(),
-      React.createRef(),
-    ] as Refs<HTMLLIElement>
+    const refs = [React.createRef(), React.createRef()] as Refs<HTMLLIElement>
     const cachedRefs = React.useRef<Refs<HTMLLIElement>>(refs)
     const listRef = React.useRef() as MutableRefObject<HTMLUListElement>
 
