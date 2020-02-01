@@ -15,7 +15,7 @@ exports[`<Navigation /> renders correctly 1`] = `
         href="/"
         onClick={[Function]}
       >
-        Work
+        Ten Blocks
       </a>
     </li>
     <li
@@ -27,17 +27,6 @@ exports[`<Navigation /> renders correctly 1`] = `
         onClick={[Function]}
       >
         About
-      </a>
-    </li>
-    <li
-      className="sc-htpNat iaJVDJ"
-    >
-      <a
-        className="sc-bxivhb fAbNOD"
-        href="/playground/"
-        onClick={[Function]}
-      >
-        Playground
       </a>
     </li>
   </ul>
