@@ -13,6 +13,7 @@ export interface Store {
   menuOpen: boolean
   topbarVisible: boolean
   lockTopbar: boolean
+  lightThemeEnabled: boolean
 }
 
 export interface LoaderVisibleAction
@@ -28,3 +29,6 @@ export interface TopbarVisibleAction
 
 export interface LockTopbarAction
   extends PayloadedAction<"lock-topbar", boolean> {}
+
+export interface LightThemeEnabledAction
+  extends PayloadedAction<"light-theme-enabled", boolean> {}

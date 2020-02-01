@@ -218,7 +218,7 @@ exports[`<Menu /> renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-bdVaJa ddGqC"
+    className="sc-bdVaJa erbQPL"
     onClick={[Function]}
   />
 </div>

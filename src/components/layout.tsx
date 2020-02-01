@@ -8,23 +8,39 @@ import "@style/fonts.css"
 import { ThemeProvider } from "styled-components"
 import { themes } from "@style/theme"
 import MediaQueryProvider from "@components/shared/media-query-provider/media-query-provider"
-import * as S from "./layout.style"
+import { Store } from "@custom-types/store"
+import { connect } from "react-redux"
 
-const Layout: React.FunctionComponent = memo(({ children }) => {
-  return (
-    <MediaQueryProvider>
-      <GlobalStyle />
-      <ThemeProvider theme={themes.dark}>
-        <S.SiteWrapper>
-          <LoaderContainer />
-          <TopbarContainer />
-          <MenuContainer />
-          {children}
-          <S.SiteTexture />
-        </S.SiteWrapper>
-      </ThemeProvider>
-    </MediaQueryProvider>
-  )
-})
+interface DispatchProps {
+  switchToLightTheme: () => void
+  lightThemeEnabled: Store["lightThemeEnabled"]
+}
 
-export default Layout
+type ContainerProps = DispatchProps
+
+const mapStateToProps = ({ lightThemeEnabled }: Store) => {
+  return { lightThemeEnabled }
+}
+
+const Layout: React.FunctionComponent<ContainerProps> = memo(
+  ({ children, lightThemeEnabled }) => {
+    return (
+      <MediaQueryProvider>
+        <ThemeProvider theme={lightThemeEnabled ? themes.light : themes.dark}>
+          <>
+            <GlobalStyle />
+
+            <LoaderContainer />
+            <TopbarContainer />
+            <MenuContainer />
+            {children}
+          </>
+        </ThemeProvider>
+      </MediaQueryProvider>
+    )
+  }
+)
+
+const ConnectedLayout = connect(mapStateToProps)(Layout)
+
+export default ConnectedLayout

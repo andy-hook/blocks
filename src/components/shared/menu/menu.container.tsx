@@ -3,8 +3,6 @@ import Menu from "./menu"
 import { connect } from "react-redux"
 import { Store } from "@custom-types/store"
 import { useStaticQuery, graphql } from "gatsby"
-import { themes } from "@style/theme"
-import { ThemeProvider } from "styled-components"
 import { Dispatch } from "redux"
 import { menuOpenAction } from "@store/actions"
 
@@ -40,13 +38,11 @@ const MenuContainer: React.FunctionComponent<AllProps> = memo(
       }
     `)
     return (
-      <ThemeProvider theme={themes.light}>
-        <Menu
-          open={menuOpen}
-          social={data.socialData.siteMetadata.social}
-          dispatchCloseMenuAction={dispatchCloseMenuAction}
-        />
-      </ThemeProvider>
+      <Menu
+        open={menuOpen}
+        social={data.socialData.siteMetadata.social}
+        dispatchCloseMenuAction={dispatchCloseMenuAction}
+      />
     )
   }
 )

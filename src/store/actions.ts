@@ -5,6 +5,7 @@ import {
   MenuOpenAction,
   TopbarVisibleAction,
   LockTopbarAction,
+  LightThemeEnabledAction,
 } from "@custom-types/store"
 
 export const loaderVisibleAction = createPayloadedAction<LoaderVisibleAction>(
@@ -24,3 +25,7 @@ export const topbarVisibleAction = createPayloadedAction<TopbarVisibleAction>(
 export const lockTopbarAction = createPayloadedAction<LockTopbarAction>(
   "lock-topbar"
 )
+
+export const lightThemeEnabledAction = createPayloadedAction<
+  LightThemeEnabledAction
+>("light-theme-enabled")

@@ -6,6 +6,7 @@ import {
   MenuOpenAction,
   TopbarVisibleAction,
   LockTopbarAction,
+  LightThemeEnabledAction,
 } from "@custom-types/store"
 
 const loaderVisible = (
@@ -57,11 +58,23 @@ const topbarVisible = (
 }
 
 const lockTopbar = (
-  state: Store["topbarVisible"] = false,
+  state: Store["lockTopbar"] = false,
   action: LockTopbarAction
 ): Store["lockTopbar"] => {
   switch (action.type) {
     case "lock-topbar":
+      return action.payload
+    default:
+      return state
+  }
+}
+
+const lightThemeEnabled = (
+  state: Store["lightThemeEnabled"] = false,
+  action: LightThemeEnabledAction
+): Store["lightThemeEnabled"] => {
+  switch (action.type) {
+    case "light-theme-enabled":
       return action.payload
     default:
       return state
@@ -74,6 +87,7 @@ const rootReducer = combineReducers<Store>({
   menuOpen,
   topbarVisible,
   lockTopbar,
+  lightThemeEnabled,
 })
 
 export default rootReducer

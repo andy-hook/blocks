@@ -1,7 +1,8 @@
 import React from "react"
 import { Normalize } from "styled-normalize"
 import { createGlobalStyle } from "styled-components"
-import { zIndex, darkGrey } from "@style/variables"
+import { zIndex } from "@style/variables"
+import { themeTone } from "./theme"
 
 const Global = createGlobalStyle`
 
@@ -122,7 +123,7 @@ const Global = createGlobalStyle`
 
 const GlobalPageBackground = createGlobalStyle`
   body {
-    background-color: ${darkGrey(100)}
+    background-color: ${themeTone(100)}
   }
 `
 

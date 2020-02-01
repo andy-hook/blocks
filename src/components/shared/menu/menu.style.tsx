@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import { zIndex, darkGrey, spacingScale, typeScale } from "@style/variables"
+import { zIndex, spacingScale, typeScale } from "@style/variables"
 import { themeTone } from "@style/theme"
 import { mq, scaleBetween, scaleGreaterThan } from "@style/media-queries"
 
 export const menuZindex = zIndex.highest
 
 export const AnimationScrim = styled.div`
-  background-color: ${darkGrey(100)};
+  background-color: ${themeTone(100)};
   position: fixed;
   opacity: 0;
   top: 0;

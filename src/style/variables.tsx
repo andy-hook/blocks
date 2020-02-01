@@ -206,48 +206,6 @@ export const zIndex = {
   highest: 400,
 }
 
-/* Light greys
-  ------------------------------------------------- */
-
-export const lightGreyHSL: Greys = {
-  100: "240, 3%, 100%",
-  200: "240, 3%, 97%",
-  300: "240, 3%, 95%",
-  400: "240, 3%, 93%",
-  500: "240, 3%, 90%",
-  600: "240, 3%, 86%",
-  700: "240, 3%, 83%",
-  800: "240, 3%, 60%",
-  900: "240, 3%, 40%",
-  1000: "240, 3%, 30%",
-}
-
-export const lightGrey = (value: GreyNames) => createHsl(lightGreyHSL[value])
-
-export const lightGreyAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(lightGreyHSL[value], alpha)
-
-/* Dark greys
-------------------------------------------------- */
-
-export const darkGreyHSL: Greys = {
-  100: "240, 17%, 2%",
-  200: "240, 15%, 5%",
-  300: "240, 15%, 11%",
-  400: "240, 10%, 14%",
-  500: "240, 8%, 18%",
-  600: "240, 8%, 21%",
-  700: "240, 8%, 26%",
-  800: "240, 8%, 30%",
-  900: "240, 8%, 40%",
-  1000: "240, 8%, 60%",
-}
-
-export const darkGrey = (value: GreyNames) => createHsl(darkGreyHSL[value])
-
-export const darkGreyAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(darkGreyHSL[value], alpha)
-
 /* Dark theme greys
 ------------------------------------------------- */
 
@@ -333,6 +291,9 @@ export const lightThemeText = (value: GreyNames) =>
 
 export const lightThemeTextAlpha = (value: GreyNames, alpha: number) =>
   createHsla(darkThemeTextHSL[value], alpha)
+
+/* Ease values
+------------------------------------------------- */
 
 export const easeValues: Eases = {
   // Cubic
