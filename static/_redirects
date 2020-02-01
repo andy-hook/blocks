@@ -1,0 +1,6 @@
+# Redirect old domain to primary domain
+https://andy-hook.co.uk/* https://andyhook.dev/:splat 301!
+https://www.andy-hook.co.uk/* https://andyhook.dev/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+https://andyhook.netlify.com/* https://andyhook.dev/:splat 301!

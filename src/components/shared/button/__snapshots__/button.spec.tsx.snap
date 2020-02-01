@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders correctly 1`] = `
+<a
+  className="sc-bdVaJa hwoiCO"
+  href="https://www.google.com"
+  onClick={[Function]}
+  target="_blank"
+>
+  <span
+    className="sc-bwzfXH kItmmw"
+  >
+    This is a button
+  </span>
+</a>
+`;

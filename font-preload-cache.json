@@ -1,0 +1,86 @@
+{
+  "timestamp": 1574528374106,
+  "hash": "968980acad0c2f937a5aad8da113aa53",
+  "assets": {
+    "/404/": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/brandwatch/": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/bright/": {
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/cymbiosis/": {
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/monster/": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/experiments/": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/404.html": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/dev-404-page/": {
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    },
+    "/about/": {
+      "/fonts/inter-medium.woff2": true,
+      "/fonts/maison-neue-bold.woff2": true,
+      "/fonts/inter-medium.woff": true,
+      "/fonts/maison-neue-bold.woff": true,
+      "/fonts/inter-semibold.woff2": true,
+      "/fonts/inter-regular.woff2": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CommonPage /> renders correctly 1`] = `
+<div
+  className="sc-EHOje PRAcs"
+>
+  Content
+  <footer
+    className="sc-ifAKCX hSmABr"
+  >
+    <div
+      className="sc-bdVaJa bUDcPf"
+    >
+      <div
+        className="sc-htpNat dzobEj"
+      >
+        I am a footer
+      </div>
+    </div>
+  </footer>
+</div>
+`;

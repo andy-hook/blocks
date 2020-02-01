@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Limiter /> renders as large 1`] = `
+<div
+  className="sc-htpNat jgnjPb"
+>
+  Child text
+</div>
+`;
+
+exports[`<Limiter /> renders as medium 1`] = `
+<div
+  className="sc-bwzfXH jXoYnq"
+>
+  Child text
+</div>
+`;
+
+exports[`<Limiter /> renders as small 1`] = `
+<div
+  className="sc-bdVaJa eriKRN"
+>
+  Child text
+</div>
+`;
+
+exports[`<Limiter /> renders correctly 1`] = `
+<div
+  className="sc-bwzfXH jXoYnq"
+>
+  Child text
+</div>
+`;

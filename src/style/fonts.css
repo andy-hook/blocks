@@ -1,0 +1,37 @@
+/* Base */
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-regular.woff2") format("woff2"),
+    url("/fonts/inter-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-medium.woff2") format("woff2"),
+    url("/fonts/inter-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-semibold.woff2") format("woff2"),
+    url("/fonts/inter-semibold.woff") format("woff");
+}
+
+/* Display */
+@font-face {
+  font-family: "maison-neue";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/maison-neue-bold.woff2") format("woff2"),
+    url("/fonts/maison-neue-bold.woff") format("woff");
+}

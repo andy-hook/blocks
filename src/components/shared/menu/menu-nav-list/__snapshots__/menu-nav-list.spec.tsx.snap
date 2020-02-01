@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuNavList /> renders correctly 1`] = `
+<ul
+  className="sc-bdVaJa jGpbbu"
+>
+  <li
+    className="sc-bwzfXH gdYRbz"
+  >
+    <a
+      className="sc-htpNat jzrKZq"
+      href="/"
+      onClick={[Function]}
+    >
+      Work
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH gdYRbz"
+  >
+    <a
+      className="sc-htpNat jzrKZq"
+      href="/about/"
+      onClick={[Function]}
+    >
+      About
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH gdYRbz"
+  >
+    <a
+      className="sc-htpNat jzrKZq"
+      href="/projects/"
+      onClick={[Function]}
+    >
+      Playground
+    </a>
+  </li>
+</ul>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly 1`] = `
+<footer
+  className="sc-ifAKCX hSmABr"
+>
+  <div
+    className="sc-bdVaJa bUDcPf"
+  >
+    <div
+      className="sc-htpNat dzobEj"
+    >
+      I am a footer
+    </div>
+  </div>
+</footer>
+`;

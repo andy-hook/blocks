@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> renders correctly 1`] = `
+<div
+  className="sc-EHOje gLAiCf"
+>
+  <div
+    className="sc-bZQynM fTouIf"
+  >
+    <div
+      className="sc-gzVnrw eWSOkD"
+    >
+      <nav
+        className="sc-htoDjs bhLJRo"
+      >
+        <div
+          className="sc-dnqmqq gknZaR"
+        >
+          <div
+            className="sc-bdVaJa eYZmLV"
+          >
+            <ul
+              className="sc-bwzfXH eDFgnQ"
+            >
+              <li
+                className="sc-htpNat eeRFYY"
+              >
+                <a
+                  className="sc-bxivhb kdHtVe"
+                  href="/bright"
+                  onClick={[Function]}
+                >
+                  Bright
+                </a>
+              </li>
+              <li
+                className="sc-htpNat eeRFYY"
+              >
+                <a
+                  className="sc-bxivhb kdHtVe"
+                  href="/brandwatch"
+                  onClick={[Function]}
+                >
+                  Brandwatch
+                </a>
+              </li>
+              <li
+                className="sc-htpNat eeRFYY"
+              >
+                <a
+                  className="sc-bxivhb kdHtVe"
+                  href="/monster"
+                  onClick={[Function]}
+                >
+                  Monster
+                </a>
+              </li>
+              <li
+                className="sc-htpNat eeRFYY"
+              >
+                <a
+                  className="sc-bxivhb kdHtVe"
+                  href="/cymbiosis"
+                  onClick={[Function]}
+                >
+                  Cymbiosis
+                </a>
+              </li>
+              <li
+                className="sc-htpNat eeRFYY"
+              >
+                <a
+                  className="sc-bxivhb kdHtVe"
+                  href="/experiments"
+                  onClick={[Function]}
+                >
+                  Experiments
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul
+            className="sc-cSHVUG fPREAD"
+          >
+            <li
+              className="sc-kAzzGY BNLVl"
+            >
+              <a
+                className="sc-chPdSV ccWwS"
+                href="/"
+                onClick={[Function]}
+              >
+                Work
+              </a>
+            </li>
+            <li
+              className="sc-kAzzGY BNLVl"
+            >
+              <a
+                className="sc-chPdSV ccWwS"
+                href="/about/"
+                onClick={[Function]}
+              >
+                About
+              </a>
+            </li>
+            <li
+              className="sc-kAzzGY BNLVl"
+            >
+              <a
+                className="sc-chPdSV ccWwS"
+                href="/projects/"
+                onClick={[Function]}
+              >
+                Playground
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        className="sc-iwsKbI yhqZK"
+      >
+        <ul
+          className="sc-VigVT kjkERR"
+        >
+          <li
+            className="sc-jTzLTM dHDDRb"
+          >
+            <a
+              aria-label="Email"
+              className="sc-fjdhpX LVHjD"
+              href="email address"
+              onClick={[Function]}
+              target="_blank"
+            >
+              <div
+                className="sc-jzJRlG dUyAGB"
+              >
+                <div
+                  className="sc-gZMcBi fAMQka"
+                >
+                  <svg
+                    className="sc-gqjmRU jsCjvz icon"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#mail"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            className="sc-jTzLTM dHDDRb"
+          >
+            <a
+              aria-label="Twitter"
+              className="sc-fjdhpX LVHjD"
+              href="path/to/social/profile"
+              onClick={[Function]}
+              target="_blank"
+            >
+              <div
+                className="sc-jzJRlG dUyAGB"
+              >
+                <div
+                  className="sc-gZMcBi fAMQka"
+                >
+                  <svg
+                    className="sc-gqjmRU jsCjvz icon"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#twitter"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            className="sc-jTzLTM dHDDRb"
+          >
+            <a
+              aria-label="Instagram"
+              className="sc-fjdhpX LVHjD"
+              href="path/to/social/profile"
+              onClick={[Function]}
+              target="_blank"
+            >
+              <div
+                className="sc-jzJRlG dUyAGB"
+              >
+                <div
+                  className="sc-gZMcBi fAMQka"
+                >
+                  <svg
+                    className="sc-gqjmRU jsCjvz icon"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#instagram"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            className="sc-jTzLTM dHDDRb"
+          >
+            <a
+              aria-label="Linkedin"
+              className="sc-fjdhpX LVHjD"
+              href="path/to/social/profile"
+              onClick={[Function]}
+              target="_blank"
+            >
+              <div
+                className="sc-jzJRlG dUyAGB"
+              >
+                <div
+                  className="sc-gZMcBi fAMQka"
+                >
+                  <svg
+                    className="sc-gqjmRU jsCjvz icon"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#linkedin"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            className="sc-jTzLTM dHDDRb"
+          >
+            <a
+              aria-label="Dribbble"
+              className="sc-fjdhpX LVHjD"
+              href="path/to/social/profile"
+              onClick={[Function]}
+              target="_blank"
+            >
+              <div
+                className="sc-jzJRlG dUyAGB"
+              >
+                <div
+                  className="sc-gZMcBi fAMQka"
+                >
+                  <svg
+                    className="sc-gqjmRU jsCjvz icon"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#dribbble"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li
+            className="sc-jTzLTM dHDDRb"
+          >
+            <a
+              aria-label="Github"
+              className="sc-fjdhpX LVHjD"
+              href="path/to/social/profile"
+              onClick={[Function]}
+              target="_blank"
+            >
+              <div
+                className="sc-jzJRlG dUyAGB"
+              >
+                <div
+                  className="sc-gZMcBi fAMQka"
+                >
+                  <svg
+                    className="sc-gqjmRU jsCjvz icon"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#github"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-ifAKCX hPzDTW"
+    onClick={[Function]}
+  />
+</div>
+`;
