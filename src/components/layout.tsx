@@ -5,11 +5,12 @@ import TopbarContainer from "@components/shared/topbar/topbar.container"
 import MenuContainer from "@components/shared/menu/menu.container"
 
 import "@style/fonts.css"
-import { ThemeProvider } from "styled-components"
 import { themes } from "@style/theme"
-import MediaQueryProvider from "@components/shared/media-query-provider/media-query-provider"
 import { Store } from "@custom-types/store"
+import MediaQueryProvider from "@components/shared/media-query-provider/media-query-provider"
+import { ThemeProvider } from "styled-components"
 import { connect } from "react-redux"
+import Web3Provider from "./shared/web3-provider/web3-provider"
 
 interface DispatchProps {
   switchToLightTheme: () => void
@@ -27,14 +28,15 @@ const Layout: React.FunctionComponent<ContainerProps> = memo(
     return (
       <MediaQueryProvider>
         <ThemeProvider theme={lightThemeEnabled ? themes.light : themes.dark}>
-          <>
-            <GlobalStyle />
-
-            <LoaderContainer />
-            <TopbarContainer />
-            <MenuContainer />
-            {children}
-          </>
+          <Web3Provider>
+            <>
+              <GlobalStyle />
+              <LoaderContainer />
+              <TopbarContainer />
+              <MenuContainer />
+              {children}
+            </>
+          </Web3Provider>
         </ThemeProvider>
       </MediaQueryProvider>
     )

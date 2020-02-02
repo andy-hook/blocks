@@ -27,3 +27,13 @@ declare module "gatsby-plugin-transition-link/hooks" {
 
   export const useTransitionState: () => TransitionState
 }
+
+// Ignore windows on window object
+declare module "*" {
+  global {
+    interface Window {
+      ethereum: any
+      web3: any
+    }
+  }
+}

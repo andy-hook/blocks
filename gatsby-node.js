@@ -25,3 +25,12 @@ exports.createPages = ({ actions }) => {
     redirectInBrowser: true,
   })
 }
+
+// Work around issue with gatsby ssr failing because of web3 package
+const webpack = require("webpack")
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  actions.setWebpackConfig({
+    plugins: [new webpack.IgnorePlugin(/^electron$/)],
+  })
+}
