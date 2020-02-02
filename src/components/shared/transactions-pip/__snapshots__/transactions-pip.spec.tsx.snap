@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TransactionPip /> renders correctly 1`] = `
+Array [
+  <div>
+    string
+  </div>,
+  <div>
+    string
+  </div>,
+  <div>
+    string
+  </div>,
+]
+`;

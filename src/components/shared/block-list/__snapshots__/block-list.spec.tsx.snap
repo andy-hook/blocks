@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockList /> renders correctly 1`] = `
+<footer
+  className="sc-ifAKCX iUNcxj"
+>
+  <div
+    className="sc-bdVaJa bUDcPf"
+  >
+    <div
+      className="sc-htpNat dzobEj"
+    >
+      <a
+        href="/blocks/7250672"
+      >
+        Go to block 
+        7250672
+      </a>
+      <a
+        href="/blocks/7250672"
+      >
+        Go to block 
+        7250672
+      </a>
+    </div>
+  </div>
+</footer>
+`;

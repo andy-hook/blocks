@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockItem /> renders correctly 1`] = `
+<a
+  href="/blocks/100"
+>
+  Go to block 
+  100
+</a>
+`;
