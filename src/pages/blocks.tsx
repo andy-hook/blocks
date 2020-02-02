@@ -1,8 +1,7 @@
 import React from "react"
 import SEO from "@components/seo"
 import { Router } from "@reach/router"
-import Block from "@components/block/block"
-import IndexPage from "."
+import Block from "@components/page-content/block"
 
 const BlocksPage: React.FunctionComponent = () => {
   return (
@@ -10,7 +9,6 @@ const BlocksPage: React.FunctionComponent = () => {
       <SEO />
 
       <Router>
-        <IndexPage path="/blocks" />
         <Block path="/blocks/:blockHash" />
       </Router>
     </>

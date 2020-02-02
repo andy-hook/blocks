@@ -1,7 +1,7 @@
 import React, { memo } from "react"
 
 import SEO from "@components/seo"
-import Home from "@components/home/home"
+import Home from "@components/page-content/home"
 
 interface Props {
   path: string
