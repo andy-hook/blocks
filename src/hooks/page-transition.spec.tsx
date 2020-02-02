@@ -1,15 +1,14 @@
 import React, { useState } from "react"
-import usePageTransition from "@hooks/page-transition"
 import { render } from "@testing-library/react"
 import { mocked } from "ts-jest/utils"
-import {
+import usePageTransition, {
   TRANSITION_TYPE_ENTER,
   TRANSITION_TYPE_POP,
   TRANSITION_TYPE_EXIT,
   TRANSITION_TYPE_MENU_ENTER,
   TRANSITION_TYPE_NEXT_PROJECT_ENTER,
   TRANSITION_TYPE_NEXT_PROJECT_EXIT,
-} from "@constants"
+} from "@hooks/page-transition"
 import { mockAllIsIntersecting } from "react-intersection-observer/test-utils"
 import { useTransitionState } from "gatsby-plugin-transition-link/hooks"
 import { createStateMock } from "@data/mocks"

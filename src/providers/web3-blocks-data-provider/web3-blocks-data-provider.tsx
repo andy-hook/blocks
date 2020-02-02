@@ -66,7 +66,8 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
       }
     }
 
-    if (web3) {
+    // Make sure to only request the blocks once per app bootstrap
+    if (web3 && !blocksState.data) {
       fetch()
     }
   }, [web3])

@@ -4,7 +4,7 @@ import {
   PAGE_LEAVE_DURATION,
   TRANSITION_TYPE_EXIT,
   TRANSITION_TYPE_MENU_ENTER,
-} from "@constants"
+} from "@hooks/page-transition"
 import useDeferredRunEffect from "@hooks/deferred-run"
 import gsap from "gsap"
 
