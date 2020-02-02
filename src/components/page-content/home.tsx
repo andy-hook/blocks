@@ -5,14 +5,14 @@ import { useWeb3BlocksDataContext } from "@providers/web3-blocks-data-provider/w
 import BlockList from "@components/shared/block-list/block-list"
 
 const Home: React.FunctionComponent = memo(() => {
-  const web3Blocks = useWeb3BlocksDataContext()
+  const { data: blocksData } = useWeb3BlocksDataContext()
 
   return (
     <>
       <Container>
         <Link to={`/blocks/3235634`}>Go to block</Link>
 
-        {web3Blocks.data && <BlockList blocks={web3Blocks.data} />}
+        {blocksData && <BlockList blocks={blocksData} />}
       </Container>
     </>
   )
@@ -21,7 +21,5 @@ const Home: React.FunctionComponent = memo(() => {
 export default Home
 
 const Container = styled.div`
-  color: red;
-  padding-top: 300px;
-  height: 2000px;
+  padding-top: 100px;
 `
