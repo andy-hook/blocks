@@ -4,7 +4,7 @@ import {
   PAGE_LEAVE_DURATION,
   TRANSITION_TYPE_EXIT,
   TRANSITION_TYPE_ENTER,
-} from "@constants"
+} from "@hooks/page-transition"
 import classNames from "classnames"
 
 export interface Props {

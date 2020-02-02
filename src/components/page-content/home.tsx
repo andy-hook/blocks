@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React, { memo } from "react"
 import Link from "gatsby-plugin-transition-link"
-import { useWeb3BlocksDataContext } from "@components/shared/web3-blocks-data-provider/web3-blocks-data-provider"
+import { useWeb3BlocksDataContext } from "@providers/web3-blocks-data-provider/web3-blocks-data-provider"
 
 const Home: React.FunctionComponent = memo(() => {
   const web3Blocks = useWeb3BlocksDataContext()

@@ -1,7 +1,7 @@
 import { SocialMeta } from "@custom-types/model"
 import { FluidObject } from "gatsby-image"
 import { TransitionType } from "@custom-types/gatsby-plugin-transition-link"
-import { TRANSITION_STATUS_ENTERING } from "@constants"
+import { TRANSITION_STATUS_ENTERING } from "@hooks/page-transition"
 
 export const mockSocialIcons: SocialMeta = {
   email: {

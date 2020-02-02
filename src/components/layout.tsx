@@ -7,11 +7,11 @@ import MenuContainer from "@components/shared/menu/menu.container"
 import "@style/fonts.css"
 import { themes } from "@style/theme"
 import { Store } from "@custom-types/store"
-import MediaQueryProvider from "@components/shared/media-query-provider/media-query-provider"
+import MediaQueryProvider from "@providers/media-query-provider/media-query-provider"
 import { ThemeProvider } from "styled-components"
 import { connect } from "react-redux"
-import Web3Provider from "./shared/web3-provider/web3-provider"
-import Web3BlocksDataProvider from "./shared/web3-blocks-data-provider/web3-blocks-data-provider"
+import Web3Provider from "@providers/web3-provider/web3-provider"
+import Web3BlocksDataProvider from "@providers/web3-blocks-data-provider/web3-blocks-data-provider"
 
 interface DispatchProps {
   switchToLightTheme: () => void

@@ -55,14 +55,14 @@
 
       "@style/*": ["./src/style/*"],
       "@data/*": ["./src/data/*"],
-      "@constants": ["./src/constants/index.tsx"],
       "@test-utils": ["./src/test-utils/index.tsx"],
       "@components/*": ["./src/components/*"],
       "@store/*": ["./src/store/*"],
       "@custom-types/*": ["./src/types/*"],
       "@images/*": ["./src/images/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@utils": ["./src/utils/index.tsx"]
+      "@utils": ["./src/utils/index.tsx"],
+      "@providers/*": ["./src/providers/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
