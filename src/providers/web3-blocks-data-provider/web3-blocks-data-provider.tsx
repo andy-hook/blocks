@@ -68,7 +68,7 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
       }
     }
 
-    // Make sure to only request transactions once
+    // Request blocks only once
     if (web3 && !blocksState.data) {
       fetch()
     }

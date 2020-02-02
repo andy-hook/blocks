@@ -27,20 +27,6 @@ export const Web3TransactionsDataProvider: React.FunctionComponent<Props> = ({
   })
 
   const requestTransactions = () => {
-    // const batchRequest = new web3.eth.BatchRequest()
-
-    // const batchPromise = blocks.map(block => {
-    //   return new Promise((resolve, reject) => {
-    //     batchRequest.add(
-    //       web3.eth.getBlock.request(block, (error: any, data: []) => {
-    //         error ? reject(error) : resolve(data)
-    //       })
-    //     )
-    //   })
-    // })
-
-    // batchRequest.execute()
-    // return Promise.all(batchPromise)
     const batchRequest = new web3.eth.BatchRequest()
 
     const batchPromise = transactions.map(transaction => {
