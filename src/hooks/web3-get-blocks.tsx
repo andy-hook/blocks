@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react"
 import { useWeb3Context } from "@components/shared/web3-provider/web3-provider"
 import { lastNumbersFromRange } from "@utils"
+import { Web3BlockData } from "model"
 
 const maxBlocks = 10
 
 interface StateProps {
-  data?: any
+  data: Web3BlockData[] | null
   loading: boolean
   error: null
 }
@@ -46,13 +47,15 @@ const useWeb3GetBlocks = () => {
       })
 
       try {
-        const allBlocksData = await requestBlocks(blocksToRequest)
+        const allBlocksData = (await requestBlocks(
+          blocksToRequest
+        )) as Web3BlockData[]
 
         // Success
         setBlocksState({ data: allBlocksData, loading: false, error: null })
       } catch (error) {
         // Failure
-        setBlocksState({ loading: false, error })
+        setBlocksState({ data: null, loading: false, error })
       }
     }
 
