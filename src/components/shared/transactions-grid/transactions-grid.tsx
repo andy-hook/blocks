@@ -1,24 +1,31 @@
 import React from "react"
-import { Web3TransactionData } from "model"
+import { Web3BlockData } from "model"
 import TransactionPip from "../transactions-pip/transactions-pip"
+import useWeb3TransactionData from "@hooks/web3-transaction-data"
 
 interface Props {
-  transactions: Web3TransactionData[]
+  transactions: Web3BlockData["transactions"]
 }
 
 const TransactionsGrid: React.FunctionComponent<Props> = ({ transactions }) => {
-  const transactionsToRender = transactions.map((ItemData, index) => {
-    return (
-      <TransactionPip
-        key={index}
-        value={ItemData.value}
-        from={ItemData.from}
-        to={ItemData.to}
-      />
-    )
-  })
+  const { data } = useWeb3TransactionData(transactions)
 
-  return <div>{transactionsToRender}</div>
+  const transactionsToRender = () => {
+    if (data) {
+      return data.map((ItemData, index) => {
+        return (
+          <TransactionPip
+            key={index}
+            value={ItemData.value}
+            from={ItemData.from}
+            to={ItemData.to}
+          />
+        )
+      })
+    }
+  }
+
+  return <div>{transactionsToRender()}</div>
 }
 
 export default TransactionsGrid
