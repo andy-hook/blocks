@@ -10,7 +10,7 @@ interface Props {
 interface DataState {
   data: Web3BlockData[] | null
   loading: boolean
-  error: null
+  error: {} | null
 }
 
 export const Web3BlocksData = createContext<Partial<DataState>>({})
@@ -33,7 +33,7 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
     const batchPromise = blocks.map(block => {
       return new Promise((resolve, reject) => {
         batchRequest.add(
-          web3.eth.getBlock.request(block, (error: any, data: []) => {
+          web3.eth.getBlock.request(block, (error: {}, data: Web3BlockData) => {
             error ? reject(error) : resolve(data)
           })
         )
@@ -60,13 +60,15 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
 
         // Success
         setBlocksState({ data: allBlocksData, loading: false, error: null })
+
+        console.log(allBlocksData)
       } catch (error) {
         // Failure
         setBlocksState({ data: null, loading: false, error })
       }
     }
 
-    // Make sure to only request the blocks once per app bootstrap
+    // Make sure to only request transactions once
     if (web3 && !blocksState.data) {
       fetch()
     }
