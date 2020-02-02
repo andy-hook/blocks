@@ -6,16 +6,16 @@ import React, { createContext, useState, useEffect, useContext } from "react"
 // Using a typical import fails to build production because of type errors
 const Web3Require = require("web3")
 
-interface Props {
-  web3: any // Types are broken :'(
+interface StateProps {
+  web3: any // Package types are broken :'(
   error?: "DENIED" | "FORBIDDEN"
   loading: boolean
 }
 
-export const Web3Context = createContext<Partial<Props>>({})
+export const Web3Context = createContext<Partial<StateProps>>({})
 
 export const Web3Provider: React.FunctionComponent = ({ children }) => {
-  const [web3State, setState] = useState<Props>({
+  const [web3State, setState] = useState<StateProps>({
     web3: null,
     loading: true,
   })
@@ -29,26 +29,33 @@ export const Web3Provider: React.FunctionComponent = ({ children }) => {
       setState({ web3: new Web3Require(provider), loading: false })
     }
 
-    // Happy path
-    if (window.ethereum) {
-      window.ethereum.autoRefreshOnNetworkChange = false
+    async function checkMetaMask() {
+      if (window.ethereum) {
+        // Happy path
+        window.ethereum.autoRefreshOnNetworkChange = false
 
-      try {
-        window.ethereum.enable()
+        try {
+          console.log("awaiting log in")
+          await window.ethereum.enable()
 
-        // Let's go
+          console.log("logged in")
+          // Let's go
+          configureProvider()
+        } catch {
+          console.log("not logged in")
+          // There was an error while enabling
+          setState({ web3: null, error: "DENIED", loading: false })
+        }
+
+        // Legacy dapp browsers...
+      } else if (window.web3) {
         configureProvider()
-      } catch {
-        // There was an error while enabling
-        setState({ web3: null, error: "DENIED", loading: false })
+      } else {
+        setState({ web3: null, error: "FORBIDDEN", loading: false })
       }
-
-      // Legacy dapp browsers...
-    } else if (window.web3) {
-      configureProvider()
-    } else {
-      setState({ web3: null, error: "FORBIDDEN", loading: false })
     }
+
+    checkMetaMask()
   }, [])
 
   return (

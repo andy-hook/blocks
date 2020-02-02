@@ -8,7 +8,7 @@ import {
   topbarVisibleAction,
   lightThemeEnabledAction,
 } from "@store/actions"
-import useScrollPosition from "@hooks/use-scroll-position"
+import useScrollPosition from "@hooks/scroll-position"
 import { useInView } from "react-intersection-observer"
 import { menuZindex } from "../menu/menu.style"
 import { rem } from "polished"
