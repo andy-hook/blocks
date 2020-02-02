@@ -8245,6 +8245,13 @@ gatsby-plugin-alias-imports@^1.0.5:
   dependencies:
     "@babel/runtime" "^7.2.0"
 
+gatsby-plugin-create-client-paths@^2.1.22:
+  version "2.1.22"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-2.1.22.tgz#c84d984471a6b8c62280d0c1e4a45251fbc8f9d6"
+  integrity sha512-XrJeuvqACwPb2IYIBP3G27XUutpGc0/gQ80VfeP3jWf7Y5QOyxeCOknSIerkkh/pNzZo3E/kCkyhjDdsktUbvA==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+
 gatsby-plugin-google-analytics@^2.0.18:
   version "2.1.23"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.23.tgz#7bad5dc36787a5b2317f3c8043ff2febe7c0932e"

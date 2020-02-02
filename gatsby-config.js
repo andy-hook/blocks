@@ -115,6 +115,12 @@ module.exports = {
       },
     },
 
+    // Client only routing for block urls
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/blocks/*`] },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // {
