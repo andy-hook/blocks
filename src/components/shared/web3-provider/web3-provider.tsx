@@ -4,6 +4,7 @@ import React, { createContext, useState, useEffect, useContext } from "react"
 /* tslint:disable: no-var-requires */
 // There are problems with the types provided by web3
 // Using a typical import fails to build production because of type errors
+// Ignore your linter, this should stay a require
 const Web3Require = require("web3")
 
 interface StateProps {
@@ -15,7 +16,7 @@ interface StateProps {
 export const Web3Context = createContext<Partial<StateProps>>({})
 
 export const Web3Provider: React.FunctionComponent = ({ children }) => {
-  const [web3State, setState] = useState<StateProps>({
+  const [web3State, setWeb3State] = useState<StateProps>({
     web3: null,
     loading: true,
   })
@@ -26,7 +27,7 @@ export const Web3Provider: React.FunctionComponent = ({ children }) => {
         "https://ropsten.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0"
       )
 
-      setState({ web3: new Web3Require(provider), loading: false })
+      setWeb3State({ web3: new Web3Require(provider), loading: false })
     }
 
     async function checkMetaMask() {
@@ -44,14 +45,14 @@ export const Web3Provider: React.FunctionComponent = ({ children }) => {
         } catch {
           console.log("not logged in")
           // There was an error while enabling
-          setState({ web3: null, error: "DENIED", loading: false })
+          setWeb3State({ web3: null, error: "DENIED", loading: false })
         }
 
         // Legacy dapp browsers...
       } else if (window.web3) {
         configureProvider()
       } else {
-        setState({ web3: null, error: "FORBIDDEN", loading: false })
+        setWeb3State({ web3: null, error: "FORBIDDEN", loading: false })
       }
     }
 

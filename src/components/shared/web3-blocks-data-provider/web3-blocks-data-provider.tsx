@@ -1,20 +1,27 @@
-import { useEffect, useState } from "react"
-import { useWeb3Context } from "@components/shared/web3-provider/web3-provider"
-import { lastNumbersFromRange } from "@utils"
+import React, { createContext, useState, useEffect, useContext } from "react"
 import { Web3BlockData } from "model"
+import { useWeb3Context } from "../web3-provider/web3-provider"
+import { lastNumbersFromRange } from "@utils"
 
-const maxBlocks = 10
+interface Props {
+  maxBlocks?: number
+}
 
-interface StateProps {
+interface DataState {
   data: Web3BlockData[] | null
   loading: boolean
   error: null
 }
 
-const useWeb3GetBlocks = () => {
+export const Web3BlocksData = createContext<Partial<DataState>>({})
+
+export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
+  children,
+  maxBlocks = 10,
+}) => {
   const context = useWeb3Context()
   const web3 = context.web3
-  const [blocksState, setBlocksState] = useState<StateProps>({
+  const [blocksState, setBlocksState] = useState<DataState>({
     data: null,
     loading: true,
     error: null,
@@ -64,7 +71,15 @@ const useWeb3GetBlocks = () => {
     }
   }, [web3])
 
-  return blocksState
+  return (
+    <Web3BlocksData.Provider value={blocksState}>
+      {children}
+    </Web3BlocksData.Provider>
+  )
 }
 
-export default useWeb3GetBlocks
+export default Web3BlocksDataProvider
+
+export function useWeb3BlocksDataContext() {
+  return useContext(Web3BlocksData)
+}

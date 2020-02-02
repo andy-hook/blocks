@@ -1,12 +1,15 @@
 import styled from "styled-components"
 import React, { memo } from "react"
 import Link from "gatsby-plugin-transition-link"
-import useWeb3GetBlocks from "@hooks/web3-get-blocks"
+import { useWeb3BlocksDataContext } from "@components/shared/web3-blocks-data-provider/web3-blocks-data-provider"
 
 const Home: React.FunctionComponent = memo(() => {
-  const { data, loading, error } = useWeb3GetBlocks()
+  const web3Blocks = useWeb3BlocksDataContext()
 
-  console.log(data, loading, error)
+  if (!web3Blocks.loading) {
+    console.log(web3Blocks.data)
+  }
+
   return (
     <Container>
       <Link to={`/blocks/3235634`}>Go to block</Link>
