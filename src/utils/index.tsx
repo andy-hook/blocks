@@ -5,3 +5,23 @@ export function removeWidow(str: string) {
 export function keys<O extends object>(obj: O): Array<keyof O> {
   return Object.keys(obj) as Array<keyof O>
 }
+
+export function lastNumbersFromRange({
+  start,
+  size,
+}: {
+  start: number
+  size: number
+}): number[] {
+  const bottomOfRange = start - size + 1
+  const matching = []
+  let currentItem = bottomOfRange
+
+  while (currentItem <= start) {
+    matching.push(currentItem)
+
+    currentItem++
+  }
+
+  return matching
+}
