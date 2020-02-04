@@ -4,7 +4,7 @@ import { useWeb3Context } from "../web3-provider/web3-provider"
 import { useWeb3BlocksDataContext } from "@providers/web3-blocks-data-provider/web3-blocks-data-provider"
 
 interface DataState {
-  data: Web3TransactionData[] | null
+  data: Web3TransactionData[][] | null
   loading: boolean
   error: {} | null
 }
@@ -58,13 +58,16 @@ export const Web3TransactionsDataProvider: React.FunctionComponent = ({
     // console.log(batchPromise)
 
     batchRequest.execute()
+
     return Promise.all(batchPromise)
   }
 
   useEffect(() => {
-    const fetch = async (data: Web3TransactionData[]) => {
+    const fetch = async (blockData: Web3BlockData[]) => {
       try {
-        const allTransactionsData = await requestTransactions(data)
+        const allTransactionsData = (await requestTransactions(
+          blockData
+        )) as Web3TransactionData[][]
 
         // Success
         setTransactionsState({
@@ -81,7 +84,7 @@ export const Web3TransactionsDataProvider: React.FunctionComponent = ({
     }
 
     // Make sure to only request the blocks once per app bootstrap
-    if (web3 && !blockDataContext.loading) {
+    if (web3 && blockDataContext.data) {
       fetch(blockDataContext.data)
     }
   }, [blockDataContext.loading])
