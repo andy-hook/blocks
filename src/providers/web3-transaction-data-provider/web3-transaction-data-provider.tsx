@@ -1,10 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from "react"
 import { Web3BlockData, Web3TransactionData } from "model"
 import { useWeb3Context } from "../web3-provider/web3-provider"
-
-interface Props {
-  transactions: Web3BlockData["transactions"]
-}
+import { useWeb3BlocksDataContext } from "@providers/web3-blocks-data-provider/web3-blocks-data-provider"
 
 interface DataState {
   data: Web3TransactionData[] | null
@@ -14,11 +11,11 @@ interface DataState {
 
 export const Web3TransactionsData = createContext<Partial<DataState>>({})
 
-export const Web3TransactionsDataProvider: React.FunctionComponent<Props> = ({
+export const Web3TransactionsDataProvider: React.FunctionComponent = ({
   children,
-  transactions,
 }) => {
   const context = useWeb3Context()
+  const blockDataContext = useWeb3BlocksDataContext()
   const web3 = context.web3
   const [transactionsState, setTransactionsState] = useState<DataState>({
     data: null,
@@ -26,42 +23,48 @@ export const Web3TransactionsDataProvider: React.FunctionComponent<Props> = ({
     error: null,
   })
 
-  const requestTransactions = () => {
+  const requestTransactions = (blockData: Web3BlockData[]) => {
     const batchRequest = new web3.eth.BatchRequest()
 
-    const batchPromise = transactions.map(transaction => {
-      return new Promise((resolve, reject) => {
-        batchRequest.add(
-          web3.eth.getTransaction.request(
-            transaction,
-            async (error: {}, data: Web3TransactionData) => {
-              if (error) {
-                reject(error)
-              } else {
-                const { gasUsed } = await web3.eth.getTransactionReceipt(
-                  data.hash
-                )
-                const transactionFee = parseFloat(data.gasPrice) * gasUsed // calculate the transaction fee
-                resolve({
-                  ...data,
-                  fee: web3.utils.fromWei(`${transactionFee}`),
-                  ether: web3.utils.fromWei(new web3.utils.BN(data.value)),
-                })
-              }
-            }
-          )
-        )
-      })
+    const batchPromise = blockData.map(block => {
+      return Promise.all(
+        block.transactions.map(transaction => {
+          return new Promise((resolve, reject) => {
+            batchRequest.add(
+              web3.eth.getTransaction.request(
+                transaction,
+                async (error: {}, data: Web3TransactionData) => {
+                  if (error) {
+                    reject(error)
+                  } else {
+                    // const { gasUsed } = await web3.eth.getTransactionReceipt(
+                    //   data.hash
+                    // )
+                    // const transactionFee = parseFloat(data.gasPrice) * gasUsed // calculate the transaction fee
+                    resolve({
+                      ...data,
+                      // fee: web3.utils.fromWei(`${transactionFee}`),
+                      ether: web3.utils.fromWei(new web3.utils.BN(data.value)),
+                    })
+                  }
+                }
+              )
+            )
+          })
+        })
+      )
     })
+
+    // console.log(batchPromise)
 
     batchRequest.execute()
     return Promise.all(batchPromise)
   }
 
   useEffect(() => {
-    const fetch = async () => {
+    const fetch = async (data: Web3TransactionData[]) => {
       try {
-        const allTransactionsData = (await requestTransactions()) as Web3TransactionData[]
+        const allTransactionsData = await requestTransactions(data)
 
         // Success
         setTransactionsState({
@@ -78,10 +81,10 @@ export const Web3TransactionsDataProvider: React.FunctionComponent<Props> = ({
     }
 
     // Make sure to only request the blocks once per app bootstrap
-    if (web3 && !transactionsState.data) {
-      fetch()
+    if (web3 && !blockDataContext.loading) {
+      fetch(blockDataContext.data)
     }
-  }, [web3])
+  }, [blockDataContext.loading])
 
   return (
     <Web3TransactionsData.Provider value={transactionsState}>

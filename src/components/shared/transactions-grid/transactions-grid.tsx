@@ -8,24 +8,24 @@ interface Props {
 }
 
 const TransactionsGrid: React.FunctionComponent<Props> = ({ transactions }) => {
-  const { data } = useWeb3TransactionData(transactions)
+  // const { data } = useWeb3TransactionData(transactions)
 
-  const transactionsToRender = () => {
-    if (data) {
-      return data.map((ItemData, index) => {
-        return (
-          <TransactionPip
-            key={index}
-            value={ItemData.value}
-            from={ItemData.from}
-            to={ItemData.to}
-          />
-        )
-      })
-    }
-  }
+  // const transactionsToRender = () => {
+  //   if (data) {
+  //     return data.map((ItemData, index) => {
+  //       return (
+  //         <TransactionPip
+  //           key={index}
+  //           value={ItemData.value}
+  //           from={ItemData.from}
+  //           to={ItemData.to}
+  //         />
+  //       )
+  //     })
+  //   }
+  // }
 
-  return <div>{transactionsToRender()}</div>
+  return <div></div>
 }
 
 export default TransactionsGrid
