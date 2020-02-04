@@ -12,6 +12,7 @@ import { ThemeProvider } from "styled-components"
 import { connect } from "react-redux"
 import Web3Provider from "@providers/web3-provider/web3-provider"
 import Web3BlocksDataProvider from "@providers/web3-blocks-data-provider/web3-blocks-data-provider"
+import Web3TransactionsDataProvider from "@providers/web3-transaction-data-provider/web3-transaction-data-provider"
 
 interface DispatchProps {
   switchToLightTheme: () => void
@@ -31,13 +32,15 @@ const Layout: React.FunctionComponent<ContainerProps> = memo(
         <ThemeProvider theme={lightThemeEnabled ? themes.light : themes.dark}>
           <Web3Provider>
             <Web3BlocksDataProvider maxBlocks={10}>
-              <>
-                <GlobalStyle />
-                <LoaderContainer />
-                <TopbarContainer />
-                <MenuContainer />
-                {children}
-              </>
+              <Web3TransactionsDataProvider>
+                <>
+                  <GlobalStyle />
+                  <LoaderContainer />
+                  <TopbarContainer />
+                  <MenuContainer />
+                  {children}
+                </>
+              </Web3TransactionsDataProvider>
             </Web3BlocksDataProvider>
           </Web3Provider>
         </ThemeProvider>
