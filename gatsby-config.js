@@ -92,6 +92,7 @@ module.exports = {
           "@hooks": path.resolve(__dirname, "src/hooks"),
           "@utils": path.resolve(__dirname, "src/utils"),
           "@providers": path.resolve(__dirname, "src/providers"),
+          "@web3": path.resolve(__dirname, "src/web3"),
         },
         extensions: [],
       },
