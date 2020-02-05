@@ -5,6 +5,7 @@ import { Store } from "@custom-types/store"
 import { useStaticQuery, graphql } from "gatsby"
 import { Dispatch } from "redux"
 import { menuOpenAction } from "@store/actions"
+import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 
 interface DispatchProps {
   dispatchCloseMenuAction: () => void
@@ -30,7 +31,9 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
 
 const MenuContainer: React.FunctionComponent<AllProps> = memo(
   ({ menuOpen, dispatchCloseMenuAction }) => {
-    const data = useStaticQuery(graphql`
+    const { data } = useWeb3BlocksDataContext()
+
+    const graphData = useStaticQuery(graphql`
       query {
         socialData: site {
           ...Social
@@ -40,7 +43,8 @@ const MenuContainer: React.FunctionComponent<AllProps> = memo(
     return (
       <Menu
         open={menuOpen}
-        social={data.socialData.siteMetadata.social}
+        blockData={data}
+        social={graphData.socialData.siteMetadata.social}
         dispatchCloseMenuAction={dispatchCloseMenuAction}
       />
     )

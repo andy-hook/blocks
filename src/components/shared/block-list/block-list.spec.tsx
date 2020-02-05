@@ -7,7 +7,7 @@ describe("<BlockList />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "dark",
-      <BlockList blocks={mockMultipleWeb3BlockData} />
+      <BlockList blockData={mockMultipleWeb3BlockData} />
     )
     expect(tree).toMatchSnapshot()
   })

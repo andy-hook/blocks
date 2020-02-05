@@ -7,16 +7,16 @@ import { Web3BlockData } from "model"
 import BlockItem from "@components/shared/block-item/block-item"
 
 interface Props {
-  blocks: Web3BlockData[]
+  blockData: Web3BlockData[]
 }
 
-const BlockList: React.FunctionComponent<Props> = ({ blocks }) => {
-  const blocksToRender = blocks.map((ItemData, index) => {
+const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
+  const blocksToRender = blockData.map((ItemData, index) => {
     return (
       <BlockItem
         key={index}
         blockNumber={ItemData.number}
-        transactions={ItemData.transactions}
+        transactions={ItemData.transactionsData}
       />
     )
   })

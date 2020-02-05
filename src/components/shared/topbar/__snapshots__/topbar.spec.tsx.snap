@@ -3,10 +3,10 @@
 exports[`<Topbar /> renders as closed correctly 1`] = `
 Array [
   <div
-    className="sc-dxgOiQ sc-ckVGcZ QGEzC"
+    className="sc-ckVGcZ sc-jKJlTe fgbUEF"
   >
     <div
-      className="sc-kEYyzF bpRDFk"
+      className="sc-kkGfuU kqtKxb"
     >
       <button
         className="sc-bdVaJa IrEnj"
@@ -57,22 +57,22 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-dxgOiQ sc-jKJlTe eFycZW"
+    className="sc-ckVGcZ sc-eNQAEJ iqKeeK"
   >
     <div
-      className="sc-eNQAEJ dJHnEc"
+      className="sc-hMqMXs ibhGtN"
     >
       <nav
-        className="sc-chPdSV byfFmt sc-hMqMXs kCzXsS"
+        className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
       >
         <ul
-          className="sc-kgoBCf bgutCz"
+          className="sc-kGXeez imRPKT"
         >
           <li
-            className="sc-kGXeez laWsXz"
+            className="sc-kpOJdX hfUBhb"
           >
             <a
-              className="sc-kpOJdX ihyrnG"
+              className="sc-dxgOiQ hhhJTO"
               href="/"
               onClick={[Function]}
             >
@@ -80,10 +80,10 @@ Array [
             </a>
           </li>
           <li
-            className="sc-kGXeez laWsXz"
+            className="sc-kpOJdX hfUBhb"
           >
             <a
-              className="sc-kpOJdX ihyrnG"
+              className="sc-dxgOiQ hhhJTO"
               href="/about/"
               onClick={[Function]}
             >
@@ -100,10 +100,10 @@ Array [
 exports[`<Topbar /> renders as hidden correctly 1`] = `
 Array [
   <div
-    className="sc-dxgOiQ sc-ckVGcZ cmOXBx"
+    className="sc-ckVGcZ sc-jKJlTe exVNjm"
   >
     <div
-      className="sc-kEYyzF bpRDFk"
+      className="sc-kkGfuU kqtKxb"
     >
       <button
         className="sc-bdVaJa IrEnj"
@@ -154,22 +154,22 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-dxgOiQ sc-jKJlTe eaZAeO"
+    className="sc-ckVGcZ sc-eNQAEJ eqnLup"
   >
     <div
-      className="sc-eNQAEJ dJHnEc"
+      className="sc-hMqMXs ibhGtN"
     >
       <nav
-        className="sc-chPdSV byfFmt sc-hMqMXs kCzXsS"
+        className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
       >
         <ul
-          className="sc-kgoBCf bgutCz"
+          className="sc-kGXeez imRPKT"
         >
           <li
-            className="sc-kGXeez laWsXz"
+            className="sc-kpOJdX hfUBhb"
           >
             <a
-              className="sc-kpOJdX ihyrnG"
+              className="sc-dxgOiQ hhhJTO"
               href="/"
               onClick={[Function]}
             >
@@ -177,10 +177,10 @@ Array [
             </a>
           </li>
           <li
-            className="sc-kGXeez laWsXz"
+            className="sc-kpOJdX hfUBhb"
           >
             <a
-              className="sc-kpOJdX ihyrnG"
+              className="sc-dxgOiQ hhhJTO"
               href="/about/"
               onClick={[Function]}
             >
@@ -197,10 +197,10 @@ Array [
 exports[`<Topbar /> renders correctly 1`] = `
 Array [
   <div
-    className="sc-dxgOiQ sc-ckVGcZ QGEzC"
+    className="sc-ckVGcZ sc-jKJlTe fgbUEF"
   >
     <div
-      className="sc-kEYyzF bpRDFk"
+      className="sc-kkGfuU kqtKxb"
     >
       <button
         className="sc-bdVaJa IrEnj"
@@ -251,22 +251,22 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-dxgOiQ sc-jKJlTe eFycZW"
+    className="sc-ckVGcZ sc-eNQAEJ iqKeeK"
   >
     <div
-      className="sc-eNQAEJ dJHnEc"
+      className="sc-hMqMXs ibhGtN"
     >
       <nav
-        className="sc-chPdSV byfFmt sc-hMqMXs kCzXsS"
+        className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
       >
         <ul
-          className="sc-kgoBCf bgutCz"
+          className="sc-kGXeez imRPKT"
         >
           <li
-            className="sc-kGXeez laWsXz"
+            className="sc-kpOJdX hfUBhb"
           >
             <a
-              className="sc-kpOJdX ihyrnG"
+              className="sc-dxgOiQ hhhJTO"
               href="/"
               onClick={[Function]}
             >
@@ -274,10 +274,10 @@ Array [
             </a>
           </li>
           <li
-            className="sc-kGXeez laWsXz"
+            className="sc-kpOJdX hfUBhb"
           >
             <a
-              className="sc-kpOJdX ihyrnG"
+              className="sc-dxgOiQ hhhJTO"
               href="/about/"
               onClick={[Function]}
             >

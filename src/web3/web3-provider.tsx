@@ -10,7 +10,6 @@ const Web3Require = require("web3")
 interface StateProps {
   web3: any // Package types are broken :'(
   error?: "DENIED" | "FORBIDDEN"
-  loading: boolean
 }
 
 export const Web3Context = createContext<Partial<StateProps>>({})
@@ -18,7 +17,6 @@ export const Web3Context = createContext<Partial<StateProps>>({})
 export const Web3Provider: React.FunctionComponent = ({ children }) => {
   const [web3State, setWeb3State] = useState<StateProps>({
     web3: null,
-    loading: true,
   })
 
   useEffect(() => {
@@ -27,32 +25,35 @@ export const Web3Provider: React.FunctionComponent = ({ children }) => {
         "https://ropsten.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0"
       )
 
-      setWeb3State({ web3: new Web3Require(provider), loading: false })
+      setWeb3State({ web3: new Web3Require(provider) })
     }
 
     async function checkMetaMask() {
+      // @ts-ignore
       if (window.ethereum) {
         // Happy path
+        // @ts-ignore
         window.ethereum.autoRefreshOnNetworkChange = false
 
         try {
-          console.log("awaiting log in")
+          // Awaiting log in
+          // @ts-ignore
           await window.ethereum.enable()
 
-          console.log("logged in")
-          // Let's go
+          // Logged in
           configureProvider()
         } catch {
-          console.log("not logged in")
+          // Not logged in
           // There was an error while enabling
-          setWeb3State({ web3: null, error: "DENIED", loading: false })
+          setWeb3State({ web3: null, error: "DENIED" })
         }
 
         // Legacy dapp browsers...
+        // @ts-ignore
       } else if (window.web3) {
         configureProvider()
       } else {
-        setWeb3State({ web3: null, error: "FORBIDDEN", loading: false })
+        setWeb3State({ web3: null, error: "FORBIDDEN" })
       }
     }
 

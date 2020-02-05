@@ -10,7 +10,6 @@ interface Props {
 
 interface DataState {
   data: Web3BlockData[] | null
-  loading: boolean
   error: {} | null
 }
 
@@ -23,7 +22,6 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
   const web3 = useWeb3Context().web3
   const [blocksState, setBlocksState] = useState<DataState>({
     data: null,
-    loading: true,
     error: null,
   })
 
@@ -41,13 +39,11 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
         blocksToRequest
       )) as Web3BlockData[]
 
-      console.log(allBlocksData)
-
       // Success
-      setBlocksState({ data: allBlocksData, loading: false, error: null })
+      setBlocksState({ data: allBlocksData, error: null })
     } catch (error) {
       // Failure
-      setBlocksState({ data: null, loading: false, error })
+      setBlocksState({ data: null, error })
     }
   }
 

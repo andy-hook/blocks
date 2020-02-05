@@ -12,18 +12,16 @@ interface Props {
 
 interface DataState {
   data: Web3BlockData | null
-  loading: boolean
   error: {} | null
 }
 
 const Block: React.FunctionComponent<Props> = memo(({ blockNumberFromUrl }) => {
   const web3 = useWeb3Context().web3
-  const { data: blocksData, loading } = useWeb3BlocksDataContext()
+  const { data: blocksData } = useWeb3BlocksDataContext()
   const blockNumber = parseFloat(blockNumberFromUrl as string)
 
   const [blockData, setBlockData] = useState<DataState>({
     data: null,
-    loading: false,
     error: null,
   })
 
@@ -36,32 +34,31 @@ const Block: React.FunctionComponent<Props> = memo(({ blockNumberFromUrl }) => {
       // Success
       setBlockData({
         data: { ...currentBlockData[0] },
-        loading: false,
         error: null,
       })
     } catch (error) {
       // Failure
-      setBlockData({ data: null, loading: false, error })
+      setBlockData({ data: null, error })
     }
   }
 
   useEffect(() => {
     if (blocksData) {
+      // Get the current block from context if possible
       const currentCachedBlockData = blocksData.find(
         element => element.number === blockNumber
       ) as Web3BlockData
 
-      // Use existing value from cached 10 blocks if it already exists there...
+      // Use value from context if it exists...
       currentCachedBlockData
         ? setBlockData({
             data: { ...currentCachedBlockData },
-            loading: false,
             error: null,
           })
         : // Or fetch new data for the view
           fetchFreshBlockData()
     }
-  }, [loading])
+  }, [blocksData])
 
   return (
     <Container>

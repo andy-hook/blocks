@@ -5,7 +5,7 @@ import TransactionsGrid from "../transactions-grid/transactions-grid"
 
 interface Props {
   blockNumber: Web3BlockData["number"]
-  transactions: Web3BlockData["transactions"]
+  transactions: Web3BlockData["transactionsData"]
 }
 
 const BlockItem: React.FunctionComponent<Props> = ({
