@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect, useContext } from "react"
-import { Web3BlockData } from "model"
+import { Web3BlockData, Web3TransactionData } from "model"
 import { useWeb3Context } from "../web3-provider/web3-provider"
 import { lastNumbersFromRange } from "@utils"
 
@@ -27,15 +27,58 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
     error: null,
   })
 
+  const requestTransactions = (transactions: string[]) => {
+    const batchRequest = new web3.eth.BatchRequest()
+
+    const batchPromise = transactions.map(transaction => {
+      return new Promise((resolve, reject) => {
+        batchRequest.add(
+          web3.eth.getTransaction.request(
+            transaction,
+            async (error: {}, data: Web3TransactionData) => {
+              if (error) {
+                reject(error)
+              } else {
+                resolve({
+                  ...data,
+                  ether: web3.utils.fromWei(new web3.utils.BN(data.value)),
+                })
+              }
+            }
+          )
+        )
+      })
+    })
+
+    batchRequest.execute()
+
+    return Promise.all(batchPromise)
+  }
+
   const requestBlocks = (blocks: number[]) => {
     const batchRequest = new web3.eth.BatchRequest()
 
     const batchPromise = blocks.map(block => {
       return new Promise((resolve, reject) => {
         batchRequest.add(
-          web3.eth.getBlock.request(block, (error: {}, data: Web3BlockData) => {
-            error ? reject(error) : resolve(data)
-          })
+          web3.eth.getBlock.request(
+            block,
+            async (error: {}, data: Web3BlockData) => {
+              if (error) {
+                reject(error)
+              } else {
+                const transactionsData = await requestTransactions(
+                  data.transactions
+                )
+
+                resolve({
+                  ...data,
+                  transactionsData,
+                  transactionCount: transactionsData.length,
+                })
+              }
+            }
+          )
         )
       })
     })
@@ -45,7 +88,7 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
   }
 
   useEffect(() => {
-    const fetch = async () => {
+    const fetchAllData = async () => {
       const latestBlockNumber = await web3.eth.getBlockNumber()
 
       const blocksToRequest = lastNumbersFromRange({
@@ -68,9 +111,9 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
       }
     }
 
-    // Request blocks only once
+    // Request only once
     if (web3 && !blocksState.data) {
-      fetch()
+      fetchAllData()
     }
   }, [web3])
 
