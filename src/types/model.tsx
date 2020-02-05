@@ -35,6 +35,25 @@ export interface MetaData {
   siteMetadata: Meta
 }
 
+export interface Web3TransactionData {
+  blockHash: string
+  blockNumber: number
+  from: string
+  gas: number
+  gasPrice: string
+  hash: string
+  input: string
+  nonce: number
+  r: string
+  s: string
+  to: string
+  transactionIndex: number
+  v: string
+  value: string
+  fee: string
+  ether: string
+}
+
 export interface Web3BlockData {
   difficulty: string
   extraData: string
@@ -56,23 +75,6 @@ export interface Web3BlockData {
   transactions: string[]
   transactionsRoot: string
   uncles: []
-}
-
-export interface Web3TransactionData {
-  blockHash: string
-  blockNumber: number
-  from: string
-  gas: number
-  gasPrice: string
-  hash: string
-  input: string
-  nonce: number
-  r: string
-  s: string
-  to: string
-  transactionIndex: number
-  v: string
-  value: string
-  fee: string
-  ether: string
+  transactionsData: Web3TransactionData[]
+  transactionCount: number
 }
