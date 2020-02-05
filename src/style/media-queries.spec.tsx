@@ -1,6 +1,12 @@
 import React from "react"
 import { stripUnit } from "polished"
-import { uniformScale, scaleBetween, scaleGreaterThan } from "./media-queries"
+import {
+  uniformScale,
+  scaleBetween,
+  scaleGreaterThan,
+  constructMaxMediaString,
+  constructMinMediaString,
+} from "./media-queries"
 import renderer from "react-test-renderer"
 import styled from "styled-components"
 import "jest-styled-components"
@@ -12,6 +18,18 @@ const ScaleBetweenComponent = styled.div`
 const ScaleGreaterThanComponent = styled.div`
   ${scaleGreaterThan("font-size", "10rem", "bottomThumb")}
 `
+
+describe("constructMaxMediaString", () => {
+  test("should return correctly formatted media string", () => {
+    expect(constructMaxMediaString("100px")).toEqual("(max-width: 100px)")
+  })
+})
+
+describe("constructMinMediaString", () => {
+  test("should return correctly formatted media string", () => {
+    expect(constructMinMediaString("100px")).toEqual("(min-width: 100px)")
+  })
+})
 
 describe("uniformScale", () => {
   test("should return a viewport unit", () => {

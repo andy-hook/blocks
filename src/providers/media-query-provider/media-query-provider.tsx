@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useMemo } from "react"
 import useMedia from "use-media"
-import { matchMediaStrings } from "@style/variables"
+import { matchMediaStrings } from "@style/media-queries"
 
 interface ContextProps {
   bottomThumb: boolean
