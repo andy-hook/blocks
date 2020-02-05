@@ -9,7 +9,7 @@ const BlocksPage: React.FunctionComponent = () => {
       <SEO />
 
       <Router>
-        <Block path="/blocks/:blockHash" />
+        <Block path="/blocks/:blockNumberFromUrl" />
       </Router>
     </>
   )
