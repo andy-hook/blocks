@@ -97,6 +97,31 @@ export const mockWeb3BlockTransactions = [
   "0xbc164a9936be0188ce2acc2ad4c72cd2faaa377ee2d0031d6f579bb4e0063582",
 ]
 
+export const mockWeb3TransactionData: Web3TransactionData = {
+  blockHash:
+    "0xf4efc352a708b14e5345698886c3b8a3711e29417b599dc7948a6baa5b86a39f",
+  blockNumber: 7250676,
+  from: "0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5",
+  gas: 100000,
+  gasPrice: "2000000000",
+  hash: "0x414a1b09ff2a1cafb2ddd13ed1cc229948ee349b7accd4ad3c3b250e46cddb8d",
+  input: "0x",
+  nonce: 8939,
+  r: "0xe049499f710167dcd3c3228b056784b0148abae5bf10a3afee893343edbb210c",
+  s: "0xbb03bb3cca747a8ea86bbd532d0414f14f63b9aac5ee77cfabeedc12f14522e",
+  to: "0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9",
+  transactionIndex: 0,
+  v: "0x29",
+  value: "1",
+  fee: "0.000042",
+  ether: "0.000000000000000001",
+}
+
+export const mockMultipleWeb3TransactionData: Web3TransactionData[] = [
+  { ...mockWeb3TransactionData },
+  { ...mockWeb3TransactionData },
+]
+
 export const mockWeb3BlockData: Web3BlockData = {
   difficulty: "1527190616",
   extraData: "0xde8302050d8f5061726974792d457468657265756d86312e33382e30826c69",
@@ -124,34 +149,11 @@ export const mockWeb3BlockData: Web3BlockData = {
   transactionsRoot:
     "0x88c10aed5d4d8615d01e8bd73f20e142d71874992d4af917196412380fe19801",
   uncles: [],
+  transactionsData: mockMultipleWeb3TransactionData,
+  transactionCount: 34,
 }
 
 export const mockMultipleWeb3BlockData: Web3BlockData[] = [
   { ...mockWeb3BlockData },
   { ...mockWeb3BlockData },
-]
-
-export const mockWeb3TransactionData: Web3TransactionData = {
-  blockHash:
-    "0xf4efc352a708b14e5345698886c3b8a3711e29417b599dc7948a6baa5b86a39f",
-  blockNumber: 7250676,
-  from: "0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5",
-  gas: 100000,
-  gasPrice: "2000000000",
-  hash: "0x414a1b09ff2a1cafb2ddd13ed1cc229948ee349b7accd4ad3c3b250e46cddb8d",
-  input: "0x",
-  nonce: 8939,
-  r: "0xe049499f710167dcd3c3228b056784b0148abae5bf10a3afee893343edbb210c",
-  s: "0xbb03bb3cca747a8ea86bbd532d0414f14f63b9aac5ee77cfabeedc12f14522e",
-  to: "0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9",
-  transactionIndex: 0,
-  v: "0x29",
-  value: "1",
-  fee: "0.000042",
-  ether: "0.000000000000000001",
-}
-
-export const mockMultipleWeb3TransactionData: Web3TransactionData[] = [
-  { ...mockWeb3TransactionData },
-  { ...mockWeb3TransactionData },
 ]

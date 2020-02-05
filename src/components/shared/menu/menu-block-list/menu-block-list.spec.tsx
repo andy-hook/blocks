@@ -1,12 +1,12 @@
 import React from "react"
-import ProjectList from "./project-list"
+import MenuBlockList from "./menu-block-list"
 import { renderWithTheme } from "@test-utils"
 
-describe("<ProjectList />", () => {
+describe("<MenuBlockList />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "light",
-      <ProjectList onClick={jest.fn} open={true} />
+      <MenuBlockList onClick={jest.fn} open={true} />
     )
     expect(tree).toMatchSnapshot()
   })

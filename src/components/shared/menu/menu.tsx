@@ -1,8 +1,8 @@
 import React, { memo, MutableRefObject } from "react"
-import { SocialMeta } from "model"
+import { SocialMeta, Web3BlockData } from "model"
 import gsap from "gsap"
 import useDeferredRunEffect from "@hooks/deferred-run"
-import ProjectListComponent from "./project-list/project-list"
+import MenuBlockList from "./menu-block-list/menu-block-list"
 import * as S from "./menu.style"
 import Social from "./social/social"
 import MenuNavList from "./menu-nav-list/menu-nav-list"
@@ -10,6 +10,7 @@ import MenuNavList from "./menu-nav-list/menu-nav-list"
 interface Props {
   open: boolean
   dispatchCloseMenuAction: () => void
+  blockData?: Web3BlockData[] | null
 }
 
 interface DataProps {
@@ -24,7 +25,7 @@ const slideInSpeed = 0.6
 const slideOutSpeed = 0.3
 
 const Menu: React.FunctionComponent<AllProps> = memo(
-  ({ open, social, dispatchCloseMenuAction }) => {
+  ({ open, social, dispatchCloseMenuAction, blockData }) => {
     const sidebar = React.useRef() as MutableRefObject<HTMLDivElement>
     const containerRef = React.useRef() as MutableRefObject<HTMLDivElement>
     const animationScrim = React.useRef() as MutableRefObject<HTMLDivElement>
@@ -95,7 +96,11 @@ const Menu: React.FunctionComponent<AllProps> = memo(
           <S.Contents>
             <S.SidebarNav>
               <S.SidebarNavInner>
-                <ProjectListComponent onClick={handleMenuClose} open={open} />
+                <MenuBlockList
+                  blockData={blockData}
+                  onClick={handleMenuClose}
+                  open={open}
+                />
 
                 <MenuNavList onClick={handleMenuClose} open={open} />
               </S.SidebarNavInner>
