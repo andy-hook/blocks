@@ -4,6 +4,7 @@ import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 import { Web3BlockData } from "model"
 import { requestBlocks } from "@web3/web3-data-request"
 import { useWeb3Context } from "@web3/web3-provider"
+import Page from "@components/shared/page/page"
 
 interface Props {
   path: string
@@ -61,10 +62,12 @@ const Block: React.FunctionComponent<Props> = memo(({ blockNumberFromUrl }) => {
   }, [blocksData])
 
   return (
-    <Container>
-      Hello from block #{blockNumberFromUrl} <br />{" "}
-      {blockData.data && blockData.data.transactionCount}
-    </Container>
+    <Page>
+      <Container>
+        Hello from block #{blockNumberFromUrl} <br />{" "}
+        {blockData.data && blockData.data.transactionCount}
+      </Container>
+    </Page>
   )
 })
 

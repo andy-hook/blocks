@@ -10,7 +10,7 @@ import {
 } from "@store/actions"
 import useScrollPosition from "@hooks/scroll-position"
 import { useInView } from "react-intersection-observer"
-import { menuZindex } from "../menu/menu.style"
+import { menuZindex } from "../menu/menu"
 import { rem } from "polished"
 import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 import styled from "styled-components"

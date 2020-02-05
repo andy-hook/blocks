@@ -1,12 +1,14 @@
 import React from "react"
 import { Web3BlockData } from "model"
-import TransactionPip from "../transactions-pip/transactions-pip"
+import TransactionPip from "@components/shared/block-card/transaction-pip/transaction-pip"
 
 interface Props {
   transactions: Web3BlockData["transactionsData"]
 }
 
-const TransactionsGrid: React.FunctionComponent<Props> = ({ transactions }) => {
+const TransactionsSummary: React.FunctionComponent<Props> = ({
+  transactions,
+}) => {
   const transactionsToRender = () => {
     if (transactions) {
       return transactions.map((transaction, index) => {
@@ -25,4 +27,4 @@ const TransactionsGrid: React.FunctionComponent<Props> = ({ transactions }) => {
   return <div>{transactionsToRender()}</div>
 }
 
-export default TransactionsGrid
+export default TransactionsSummary
