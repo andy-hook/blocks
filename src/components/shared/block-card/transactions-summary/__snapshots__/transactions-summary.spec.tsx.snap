@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlockItem /> renders correctly 1`] = `
+exports[`<TransactionsSummary /> renders correctly 1`] = `
 <div>
   <div>
     1

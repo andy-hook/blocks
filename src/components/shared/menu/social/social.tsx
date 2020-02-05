@@ -2,9 +2,12 @@ import React, { memo, MutableRefObject } from "react"
 import { SocialMeta } from "@custom-types/model"
 import { keys } from "@utils"
 import Icon from "@components/shared/icon/icon"
-import * as S from "./social.style"
 import gsap from "gsap"
 import useDeferredRunEffect from "@hooks/deferred-run"
+import styled from "styled-components"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { themeText, isTheme } from "@style/theme"
+import { duration, ease, borderThickness, borderRadius } from "@style/variables"
 
 interface Props {
   items: SocialMeta
@@ -74,21 +77,84 @@ const Social: React.FunctionComponent<Props> = memo(({ items, open }) => {
     const ref = cachedRefs.current[index]
 
     return (
-      <S.SocialItem key={key} ref={ref}>
-        <S.Link
+      <SocialItem key={key} ref={ref}>
+        <Link
           aria-label={items[key].label}
           target={items[key].url.includes("mailto:") ? "" : "_blank"}
           href={items[key].url}
         >
-          <S.IconPos>
+          <IconPos>
             <Icon name={items[key].icon} />
-          </S.IconPos>
-        </S.Link>
-      </S.SocialItem>
+          </IconPos>
+        </Link>
+      </SocialItem>
     )
   })
 
-  return <S.SocialList ref={listRef}>{icons}</S.SocialList>
+  return <SocialList ref={listRef}>{icons}</SocialList>
 })
+
+const padding = "0.7em"
+
+const SocialList = styled.ul`
+  display: flex;
+
+  font-size: 1em;
+
+  margin: -${padding};
+`
+
+const SocialItem = styled.li`
+  opacity: 0;
+`
+
+const Link = styled(OutboundLink)`
+  position: relative;
+  display: block;
+  color: ${themeText(100)};
+
+  padding: ${padding};
+
+  &::after {
+    transition: transform ${duration.slow} ${ease("subtleBounce")},
+      opacity ${duration.fast} linear;
+
+    content: "";
+    position: absolute;
+
+    top: 0.1em;
+    left: 0.1em;
+    right: 0.1em;
+    bottom: 0.1em;
+    border: ${borderThickness.regular} solid ${themeText(100)};
+
+    border-radius: ${borderRadius.circle};
+
+    opacity: 0;
+
+    transform: scale(1.5);
+
+    pointer-events: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+`
+const IconPos = styled.div`
+  transition: opacity ${duration.slow} ${ease("subtleBounce")};
+  opacity: ${isTheme("dark", "0.25", "0.4")};
+
+  ${Link}:hover &,
+  ${Link}:focus & {
+    opacity: 1;
+  }
+`
 
 export default Social

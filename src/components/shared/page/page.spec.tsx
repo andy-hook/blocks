@@ -1,10 +1,10 @@
 import React from "react"
-import CommonPage from "./common-page"
+import Page from "./page"
 import { renderWithTheme } from "@test-utils"
 
-describe("<CommonPage />", () => {
+describe("<Page />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <CommonPage>Content</CommonPage>)
+    const tree = renderWithTheme("dark", <Page>Content</Page>)
     expect(tree).toMatchSnapshot()
   })
 })

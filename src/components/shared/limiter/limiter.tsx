@@ -1,5 +1,7 @@
 import React, { memo, PropsWithChildren } from "react"
-import * as S from "./limiter.style"
+import { rem } from "polished"
+import styled, { css } from "styled-components"
+import { scaleGreaterThan } from "@style/media-queries"
 
 interface Props {
   size?: "small" | "medium" | "large"
@@ -11,11 +13,11 @@ const Limiter: React.FunctionComponent<PropsWithChildren<Props>> = memo(
       const renderLimiter = () => {
         switch (size) {
           case "small":
-            return <S.SmallLimiter ref={ref}>{children}</S.SmallLimiter>
+            return <SmallLimiter ref={ref}>{children}</SmallLimiter>
           case "medium":
-            return <S.MediumLimiter ref={ref}>{children}</S.MediumLimiter>
+            return <MediumLimiter ref={ref}>{children}</MediumLimiter>
           case "large":
-            return <S.LargeLimiter ref={ref}>{children}</S.LargeLimiter>
+            return <LargeLimiter ref={ref}>{children}</LargeLimiter>
         }
       }
 
@@ -23,5 +25,37 @@ const Limiter: React.FunctionComponent<PropsWithChildren<Props>> = memo(
     }
   )
 )
+
+const smallSize = rem("900px")
+const mediumSize = rem("1200px")
+const largeSize = rem("1500px")
+
+const commonStyles = css`
+  margin: auto;
+`
+
+const SmallLimiter = styled.div`
+  ${commonStyles}
+
+  max-width: ${smallSize};
+
+  ${scaleGreaterThan("max-width", smallSize, "topWall")}
+`
+
+const MediumLimiter = styled.div`
+  ${commonStyles}
+
+  max-width: ${mediumSize};
+
+  ${scaleGreaterThan("max-width", mediumSize, "topWall")}
+`
+
+const LargeLimiter = styled.div`
+  ${commonStyles}
+
+  max-width: ${largeSize};
+
+  ${scaleGreaterThan("max-width", largeSize, "topWall")}
+`
 
 export default Limiter

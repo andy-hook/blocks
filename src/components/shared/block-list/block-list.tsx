@@ -4,7 +4,7 @@ import Limiter from "../limiter/limiter"
 import styled from "styled-components"
 import { typeTitle } from "@style/typography"
 import { Web3BlockData } from "model"
-import BlockItem from "@components/shared/block-item/block-item"
+import BlockCard from "@components/shared/block-card/block-card"
 
 interface Props {
   blockData: Web3BlockData[]
@@ -13,7 +13,7 @@ interface Props {
 const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
   const blocksToRender = blockData.map((ItemData, index) => {
     return (
-      <BlockItem
+      <BlockCard
         key={index}
         blockNumber={ItemData.number}
         transactions={ItemData.transactionsData}

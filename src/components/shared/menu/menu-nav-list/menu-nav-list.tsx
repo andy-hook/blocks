@@ -1,5 +1,4 @@
 import React, { memo, MutableRefObject } from "react"
-import * as S from "./menu-nav-list.style"
 import {
   PAGE_LEAVE_DURATION,
   TRANSITION_TYPE_EXIT,
@@ -7,6 +6,9 @@ import {
 } from "@hooks/page-transition"
 import useDeferredRunEffect from "@hooks/deferred-run"
 import gsap from "gsap"
+import styled from "styled-components"
+import { typeBodySubtle, typeSizeBaseXs } from "@style/typography"
+import Link from "gatsby-plugin-transition-link"
 
 interface Props {
   onClick: () => void
@@ -90,20 +92,41 @@ const MenuNavList: React.FunctionComponent<Props> = memo(
     }, [open])
 
     return (
-      <S.List ref={listRef}>
-        <S.ListItem ref={cachedRefs.current[0]}>
-          <S.ListItemLink to="/" onClick={onClick} {...linkProps}>
+      <List ref={listRef}>
+        <ListItem ref={cachedRefs.current[0]}>
+          <ListItemLink to="/" onClick={onClick} {...linkProps}>
             Ten Blocks
-          </S.ListItemLink>
-        </S.ListItem>
-        <S.ListItem ref={cachedRefs.current[1]}>
-          <S.ListItemLink to="/about/" onClick={onClick} {...linkProps}>
+          </ListItemLink>
+        </ListItem>
+        <ListItem ref={cachedRefs.current[1]}>
+          <ListItemLink to="/about/" onClick={onClick} {...linkProps}>
             About
-          </S.ListItemLink>
-        </S.ListItem>
-      </S.List>
+          </ListItemLink>
+        </ListItem>
+      </List>
     )
   }
 )
+
+const List = styled.ul`
+  ${typeSizeBaseXs}
+
+  display: flex;
+  flex-direction: column;
+`
+
+const ListItem = styled.li`
+  margin-bottom: 0.5em;
+  opacity: 0;
+`
+
+const ListItemLink = styled(Link)`
+  ${typeBodySubtle}
+
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+
+  display: block;
+`
 
 export default MenuNavList

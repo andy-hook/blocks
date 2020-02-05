@@ -2,28 +2,28 @@
 
 exports[`<Menu /> renders correctly 1`] = `
 <div
-  className="sc-htpNat iGYztT"
+  className="sc-gZMcBi kAqgb"
 >
   <div
-    className="sc-bxivhb eoFpkh"
+    className="sc-gqjmRU iVvGAz"
   >
     <div
-      className="sc-ifAKCX KzCvG"
+      className="sc-VigVT cBJbjo"
     >
       <nav
-        className="sc-EHOje bxhcwY"
+        className="sc-jTzLTM ezrWJx"
       >
         <div
-          className="sc-bZQynM iFscNc"
+          className="sc-fjdhpX jCIpEH"
         >
           <ul
-            className="sc-jTzLTM hsAHyK"
+            className="sc-gzVnrw cRrbZK"
           >
             <li
-              className="sc-fjdhpX hspVsb"
+              className="sc-htoDjs fdzoDX"
             >
               <a
-                className="sc-jzJRlG iWSWav"
+                className="sc-dnqmqq iYXKjM"
                 href="/"
                 onClick={[Function]}
               >
@@ -31,10 +31,10 @@ exports[`<Menu /> renders correctly 1`] = `
               </a>
             </li>
             <li
-              className="sc-fjdhpX hspVsb"
+              className="sc-htoDjs fdzoDX"
             >
               <a
-                className="sc-jzJRlG iWSWav"
+                className="sc-dnqmqq iYXKjM"
                 href="/about/"
                 onClick={[Function]}
               >
@@ -45,29 +45,29 @@ exports[`<Menu /> renders correctly 1`] = `
         </div>
       </nav>
       <div
-        className="sc-gzVnrw hAUYfE"
+        className="sc-jzJRlG hMihaT"
       >
         <ul
-          className="sc-iwsKbI ilMCvU"
+          className="sc-bxivhb jqTeod"
         >
           <li
-            className="sc-gZMcBi cYDYox"
+            className="sc-ifAKCX cpRTbq"
           >
             <a
               aria-label="Email"
-              className="sc-gqjmRU fooKRg"
+              className="sc-EHOje dfURPr"
               href="email address"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-VigVT bDzzYU"
+                className="sc-bZQynM krxqdl"
               >
                 <div
-                  className="sc-htoDjs hZurrr"
+                  className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-dnqmqq iydQTw icon"
+                    className="sc-htpNat jBmPeL icon"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#mail"
@@ -78,23 +78,23 @@ exports[`<Menu /> renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="sc-gZMcBi cYDYox"
+            className="sc-ifAKCX cpRTbq"
           >
             <a
               aria-label="Twitter"
-              className="sc-gqjmRU fooKRg"
+              className="sc-EHOje dfURPr"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-VigVT bDzzYU"
+                className="sc-bZQynM krxqdl"
               >
                 <div
-                  className="sc-htoDjs hZurrr"
+                  className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-dnqmqq iydQTw icon"
+                    className="sc-htpNat jBmPeL icon"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#twitter"
@@ -105,23 +105,23 @@ exports[`<Menu /> renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="sc-gZMcBi cYDYox"
+            className="sc-ifAKCX cpRTbq"
           >
             <a
               aria-label="Instagram"
-              className="sc-gqjmRU fooKRg"
+              className="sc-EHOje dfURPr"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-VigVT bDzzYU"
+                className="sc-bZQynM krxqdl"
               >
                 <div
-                  className="sc-htoDjs hZurrr"
+                  className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-dnqmqq iydQTw icon"
+                    className="sc-htpNat jBmPeL icon"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#instagram"
@@ -132,23 +132,23 @@ exports[`<Menu /> renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="sc-gZMcBi cYDYox"
+            className="sc-ifAKCX cpRTbq"
           >
             <a
               aria-label="Linkedin"
-              className="sc-gqjmRU fooKRg"
+              className="sc-EHOje dfURPr"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-VigVT bDzzYU"
+                className="sc-bZQynM krxqdl"
               >
                 <div
-                  className="sc-htoDjs hZurrr"
+                  className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-dnqmqq iydQTw icon"
+                    className="sc-htpNat jBmPeL icon"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#linkedin"
@@ -159,23 +159,23 @@ exports[`<Menu /> renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="sc-gZMcBi cYDYox"
+            className="sc-ifAKCX cpRTbq"
           >
             <a
               aria-label="Dribbble"
-              className="sc-gqjmRU fooKRg"
+              className="sc-EHOje dfURPr"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-VigVT bDzzYU"
+                className="sc-bZQynM krxqdl"
               >
                 <div
-                  className="sc-htoDjs hZurrr"
+                  className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-dnqmqq iydQTw icon"
+                    className="sc-htpNat jBmPeL icon"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#dribbble"
@@ -186,23 +186,23 @@ exports[`<Menu /> renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="sc-gZMcBi cYDYox"
+            className="sc-ifAKCX cpRTbq"
           >
             <a
               aria-label="Github"
-              className="sc-gqjmRU fooKRg"
+              className="sc-EHOje dfURPr"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-VigVT bDzzYU"
+                className="sc-bZQynM krxqdl"
               >
                 <div
-                  className="sc-htoDjs hZurrr"
+                  className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-dnqmqq iydQTw icon"
+                    className="sc-htpNat jBmPeL icon"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#github"
@@ -217,7 +217,7 @@ exports[`<Menu /> renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-bwzfXH edSLVU"
+    className="sc-iwsKbI zTWza"
     onClick={[Function]}
   />
 </div>

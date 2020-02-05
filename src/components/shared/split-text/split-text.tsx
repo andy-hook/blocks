@@ -5,8 +5,8 @@ import React, {
   useCallback,
   useMemo,
 } from "react"
-import * as S from "./split-text.style"
 import gsap from "gsap"
+import styled from "styled-components"
 
 interface Props {
   children: string
@@ -36,17 +36,17 @@ const SplitText: React.FunctionComponent<Props> = memo(
           refPos++
 
           return (
-            <S.TitleWord key={letterIndex} ref={ref}>
+            <TitleWord key={letterIndex} ref={ref}>
               {letter}
-            </S.TitleWord>
+            </TitleWord>
           )
         })
 
         return (
-          <S.TitleWord key={wordIndex}>
+          <TitleWord key={wordIndex}>
             {renderLetters}
             {wordIndex !== wordArray.length - 1 ? " " : ""}
-          </S.TitleWord>
+          </TitleWord>
         )
       })
 
@@ -54,9 +54,7 @@ const SplitText: React.FunctionComponent<Props> = memo(
         const combineLastTwoWords = words.splice(wordArray.length - 2, 2)
 
         words.push(
-          <S.TitleWord key={wordArray.length}>
-            {combineLastTwoWords}
-          </S.TitleWord>
+          <TitleWord key={wordArray.length}>{combineLastTwoWords}</TitleWord>
         )
       }
 
@@ -140,5 +138,10 @@ const SplitText: React.FunctionComponent<Props> = memo(
     return <>{splitTextNodes}</>
   }
 )
+
+const TitleWord = styled.div`
+  display: inline-block;
+  white-space: pre;
+`
 
 export default SplitText

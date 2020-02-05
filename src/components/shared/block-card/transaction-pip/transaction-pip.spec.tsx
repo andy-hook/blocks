@@ -1,5 +1,5 @@
 import React from "react"
-import TransactionPip from "./transactions-pip"
+import TransactionPip from "./transaction-pip"
 import { renderWithTheme } from "@test-utils"
 
 describe("<TransactionPip />", () => {

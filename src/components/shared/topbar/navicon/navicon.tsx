@@ -2,7 +2,8 @@ import React, { memo, MutableRefObject } from "react"
 import classNames from "classnames"
 import gsap from "gsap"
 import useDeferredRunEffect from "@hooks/deferred-run"
-import * as S from "./navicon.style"
+import styled from "styled-components"
+import { zIndex } from "@style/variables"
 
 export interface Props {
   open?: boolean
@@ -55,18 +56,51 @@ const Navicon: React.FunctionComponent<Props> = memo(
     }, [open])
 
     return (
-      <S.NaviconContainer
+      <NaviconContainer
         className={classNames("", className)}
         onClick={onClick}
         open={open}
       >
-        <S.BarsSVG viewBox="0 0 25 25">
+        <BarsSVG viewBox="0 0 25 25">
           <rect x="1" y="8" width="23" height="2" ref={topBar} />
           <rect x="1" y="15" width="23" height="2" ref={bottomBar} />
-        </S.BarsSVG>
-      </S.NaviconContainer>
+        </BarsSVG>
+      </NaviconContainer>
     )
   }
 )
+
+const NaviconContainer = styled.button<Props>`
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 4.5em;
+
+  width: 1em;
+  height: 1em;
+`
+
+const BarsSVG = styled.svg`
+  display: block;
+
+  font-size: 0.425em;
+
+  height: 1em;
+  width: 1em;
+
+  margin-bottom: -0.05em;
+
+  z-index: ${zIndex.low};
+
+  fill: white;
+
+  & rect {
+    fill: inherit;
+  }
+`
 
 export default Navicon

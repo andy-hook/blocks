@@ -1,5 +1,7 @@
 import React, { memo, ReactNode } from "react"
-import * as S from "./gutter.style"
+import { mq } from "@style/media-queries"
+import styled from "styled-components"
+import { rem } from "polished"
 
 interface Props {
   children: ReactNode
@@ -7,8 +9,27 @@ interface Props {
 
 const Gutter = memo(
   React.forwardRef<HTMLDivElement, Props>(({ children }, ref) => (
-    <S.GutterContainer ref={ref}>{children}</S.GutterContainer>
+    <GutterContainer ref={ref}>{children}</GutterContainer>
   ))
 )
+
+export const smallScreenGutter = rem("25px")
+
+const GutterContainer = styled.div`
+  padding-left: ${smallScreenGutter};
+  padding-right: ${smallScreenGutter};
+
+  ${mq.between("topThumb", "topDesk")`
+    padding-left: 7%;
+    padding-right: 7%;
+  `}
+
+  ${mq.between("bottomDesk", "bottomUltra")`
+    padding-left: 9%;
+    padding-right: 9%;
+  `}
+
+  width: 100%;
+`
 
 export default Gutter
