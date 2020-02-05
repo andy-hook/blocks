@@ -1,7 +1,6 @@
 import { pxToEm, pxToRem } from "styled-media-query"
 import { rem } from "polished"
-import { Greys, GreyNames } from "@custom-types/theme"
-import { createHsl, createHsla, createCubicBezier } from "@style/utils"
+import { createCubicBezier } from "@style/utils"
 import { Breakpoints } from "@custom-types/breakpoints"
 import { EaseName, Eases } from "ease"
 
@@ -105,6 +104,14 @@ export const textShadow = {
   heavy: "0 0 1em rgba(0, 0, 0.6)",
 }
 
+/* Border thickness
+  ------------------------------------------------- */
+
+export const borderThickness = {
+  regular: "1px",
+  thick: "2px",
+}
+
 /* Duration
   ------------------------------------------------- */
 
@@ -114,14 +121,6 @@ export const duration = {
   fast: `${durationUnit}ms`,
   base: `${durationUnit * 2}ms`,
   slow: `${durationUnit * 3}ms`,
-}
-
-/* Border thickness
-  ------------------------------------------------- */
-
-export const borderThickness = {
-  regular: "1px",
-  thick: "2px",
 }
 
 /* Breakpoints
@@ -195,96 +194,10 @@ export const zIndex = {
   highest: 400,
 }
 
-/* Dark theme greys
-------------------------------------------------- */
-
-// Tone
-export const darkThemeToneHSL: Greys = {
-  100: "240, 6%, 7%",
-  200: "240, 5%, 8%",
-  300: "240, 4%, 10%",
-  400: "240, 4%, 11%",
-  500: "240, 2%, 12%",
-  600: "240, 3%, 13%",
-  700: "240, 3%, 14%",
-  800: "240, 3%, 15%",
-  900: "240, 2%, 16%",
-  1000: "240, 2%, 17%",
-}
-
-export const darkThemeTone = (value: GreyNames) =>
-  createHsl(darkThemeToneHSL[value])
-
-export const darkThemeToneAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(darkThemeToneHSL[value], alpha)
-
-// Text
-export const darkThemeTextHSL: Greys = {
-  100: "240, 3%, 100%",
-  200: "240, 3%, 97%",
-  300: "240, 3%, 95%",
-  400: "240, 3%, 93%",
-  500: "240, 3%, 90%",
-  600: "240, 3%, 86%",
-  700: "240, 3%, 83%",
-  800: "240, 3%, 60%",
-  900: "240, 3%, 40%",
-  1000: "240, 3%, 30%",
-}
-
-export const darkThemeText = (value: GreyNames) =>
-  createHsl(darkThemeTextHSL[value])
-
-export const darkThemeTextAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(darkThemeTextHSL[value], alpha)
-
-/* Light theme greys
-------------------------------------------------- */
-
-// Tone
-export const lightThemeToneHSL: Greys = {
-  100: "240, 3%, 100%",
-  200: "240, 3%, 97%",
-  300: "240, 3%, 95%",
-  400: "240, 3%, 93%",
-  500: "240, 3%, 90%",
-  600: "240, 3%, 86%",
-  700: "240, 3%, 83%",
-  800: "240, 3%, 60%",
-  900: "240, 3%, 40%",
-  1000: "240, 3%, 30%",
-}
-
-export const lightThemeTone = (value: GreyNames) =>
-  createHsl(lightThemeToneHSL[value])
-
-export const lightThemeToneAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(lightThemeToneHSL[value], alpha)
-
-// Text
-export const lightThemeTextHSL: Greys = {
-  100: "240, 17%, 2%",
-  200: "240, 15%, 5%",
-  300: "240, 15%, 11%",
-  400: "240, 10%, 14%",
-  500: "240, 8%, 18%",
-  600: "240, 8%, 21%",
-  700: "240, 8%, 26%",
-  800: "240, 8%, 30%",
-  900: "240, 8%, 40%",
-  1000: "240, 8%, 60%",
-}
-
-export const lightThemeText = (value: GreyNames) =>
-  createHsl(darkThemeTextHSL[value])
-
-export const lightThemeTextAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(darkThemeTextHSL[value], alpha)
-
 /* Ease values
 ------------------------------------------------- */
 
-export const easeValues: Eases = {
+const easeValues: Eases = {
   // Cubic
   easeInCubic: [0.55, 0.055, 0.675, 0.19],
   easeOutCubic: [0.215, 0.61, 0.355, 1.0],
@@ -331,3 +244,26 @@ export const easeValues: Eases = {
 
 export const ease = (easeName: EaseName) =>
   createCubicBezier(easeValues[easeName])
+
+// const designTokens = {
+//   type: {
+//     baseFontSize,
+//     fontFamily,
+//     letterSpacing,
+//     lineHeight,
+//     fontWeight,
+//     typeScale,
+//   },
+//   layout: {
+//     spacingScale,
+//     zIndex,
+//   },
+//   appearance: {
+//     borderRadius,
+//     textShadow,
+//     borderThickness,
+//   },
+//   animation: {
+//     duration,
+//   },
+// }
