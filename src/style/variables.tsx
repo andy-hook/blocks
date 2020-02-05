@@ -1,7 +1,5 @@
-import { pxToEm, pxToRem } from "styled-media-query"
 import { rem } from "polished"
 import { createCubicBezier } from "@style/utils"
-import { Breakpoints } from "@custom-types/breakpoints"
 import { EaseName, Eases } from "ease"
 
 /* Typography
@@ -121,66 +119,6 @@ export const duration = {
   fast: `${durationUnit}ms`,
   base: `${durationUnit * 2}ms`,
   slow: `${durationUnit * 3}ms`,
-}
-
-/* Breakpoints
-  ------------------------------------------------- */
-
-export const breakpoints: Breakpoints = {
-  bottomThumb: "479px",
-  topThumb: "480px",
-
-  bottomPalm: "599px",
-  topPalm: "600px",
-
-  bottomLap: "899px",
-  topLap: "900px",
-
-  bottomDesk: "1199px",
-  topDesk: "1200px",
-
-  bottomWide: "1499px",
-  topWide: "1500px",
-
-  bottomWall: "1799px",
-  topWall: "1800px",
-
-  bottomUltra: "2200px",
-  topUltra: "2200px",
-}
-
-export const emBreakpoints = pxToEm(breakpoints, baseFontSize)
-export const remBreakpoints = pxToRem(breakpoints, baseFontSize)
-
-export const constructMaxMediaString = (breakpoint: string) => {
-  return `(max-width: ${breakpoint})`
-}
-
-export const constructMinMediaString = (breakpoint: string) => {
-  return `(min-width: ${breakpoint})`
-}
-
-export const matchMediaStrings: Breakpoints = {
-  bottomThumb: constructMaxMediaString(breakpoints.bottomThumb),
-  topThumb: constructMinMediaString(breakpoints.bottomThumb),
-
-  bottomPalm: constructMaxMediaString(breakpoints.bottomPalm),
-  topPalm: constructMinMediaString(breakpoints.topPalm),
-
-  bottomLap: constructMaxMediaString(breakpoints.bottomLap),
-  topLap: constructMinMediaString(breakpoints.topLap),
-
-  bottomDesk: constructMaxMediaString(breakpoints.bottomDesk),
-  topDesk: constructMinMediaString(breakpoints.topDesk),
-
-  bottomWide: constructMaxMediaString(breakpoints.bottomWide),
-  topWide: constructMinMediaString(breakpoints.topWide),
-
-  bottomWall: constructMaxMediaString(breakpoints.bottomWall),
-  topWall: constructMinMediaString(breakpoints.topWall),
-
-  bottomUltra: constructMaxMediaString(breakpoints.bottomUltra),
-  topUltra: constructMinMediaString(breakpoints.topUltra),
 }
 
 /* Index
