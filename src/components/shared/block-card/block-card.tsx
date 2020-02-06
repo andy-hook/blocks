@@ -12,6 +12,7 @@ interface Props {
   size?: number
   difficulty?: string
   miner?: string
+  loading?: boolean
 }
 
 const BlockCard: React.FunctionComponent<Props> = ({
@@ -20,6 +21,7 @@ const BlockCard: React.FunctionComponent<Props> = ({
   size,
   difficulty,
   miner,
+  loading,
 }) => {
   const renderTrxAsPlaceholderOrPopulated = (
     blockTransactions: Props["transactions"]
@@ -35,7 +37,9 @@ const BlockCard: React.FunctionComponent<Props> = ({
     <Card>
       {/* Title info */}
       <LabelText>Block number</LabelText>
-      <LabelText>{blockNumber}</LabelText>
+      <LabelText loading={loading} skeletonWidth="xl">
+        {blockNumber}
+      </LabelText>
 
       {/* Transactions */}
 
@@ -43,9 +47,24 @@ const BlockCard: React.FunctionComponent<Props> = ({
 
       {/* Details */}
       <CardDetails>
-        <CardDetailsItem>Size: {size}</CardDetailsItem>
-        <CardDetailsItem>Difficulty: {difficulty}</CardDetailsItem>
-        <CardDetailsItem>Miner: {miner}</CardDetailsItem>
+        <CardDetailsItem>
+          Size:{" "}
+          <LabelText loading={loading} skeletonWidth="xs">
+            {size}
+          </LabelText>
+        </CardDetailsItem>
+        <CardDetailsItem>
+          Difficulty:{" "}
+          <LabelText loading={loading} skeletonWidth="md">
+            {difficulty}
+          </LabelText>
+        </CardDetailsItem>
+        <CardDetailsItem>
+          Miner:{" "}
+          <LabelText loading={loading} skeletonWidth="lg">
+            {miner}
+          </LabelText>
+        </CardDetailsItem>
       </CardDetails>
 
       {/* CTA */}

@@ -2,21 +2,21 @@
 
 exports[`<BlockList /> renders correctly 1`] = `
 <ul
-  className="sc-gzVnrw eqsxYy"
+  className="sc-htoDjs iRovER"
 >
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         7250672
       </div>
@@ -97,25 +97,40 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
-          2900
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            2900
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
-          1527190616
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            1527190616
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
-          0x635B4764D1939DfAcD3a8014726159abC277BecC
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            0x635B4764D1939DfAcD3a8014726159abC277BecC
+          </div>
         </div>
       </div>
       <a
@@ -127,18 +142,18 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         7250672
       </div>
@@ -219,25 +234,40 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
-          2900
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            2900
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
-          1527190616
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            1527190616
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
-          0x635B4764D1939DfAcD3a8014726159abC277BecC
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            0x635B4764D1939DfAcD3a8014726159abC277BecC
+          </div>
         </div>
       </div>
       <a
@@ -249,19 +279,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -327,22 +364,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -353,19 +423,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -431,22 +508,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -457,19 +567,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -535,22 +652,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -561,19 +711,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -639,22 +796,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -665,19 +855,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -743,22 +940,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -769,19 +999,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -847,22 +1084,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -873,19 +1143,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -951,22 +1228,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a
@@ -977,19 +1287,26 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-htoDjs gKEykO"
+    className="sc-dnqmqq dwDKdg"
   >
     <div
-      className="sc-htpNat hKayrz"
+      className="sc-bxivhb kbScoB"
     >
       <div
-        className="sc-bwzfXH gbDrYy"
+        className="sc-htpNat kyBtDl"
       >
         Block number
       </div>
       <div
-        className="sc-bwzfXH gbDrYy"
-      />
+        className="sc-htpNat kyBtDl"
+      >
+        <div
+          className="sc-bwzfXH kVEtYr"
+          width="xl"
+        >
+           
+        </div>
+      </div>
       <ul
         className="sc-bdVaJa dBUyqz"
       >
@@ -1055,22 +1372,55 @@ exports[`<BlockList /> renders correctly 1`] = `
         <div />
       </ul>
       <div
-        className="sc-EHOje jvzENE"
+        className="sc-bZQynM bOrPFB"
       >
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Size: 
+          Size:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH hcNvNj"
+              width="xs"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Difficulty: 
+          Difficulty:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH llVVGS"
+              width="md"
+            >
+               
+            </div>
+          </div>
         </div>
         <div
-          className="sc-bZQynM bOrPFB"
+          className="sc-gzVnrw ibZhkv"
         >
-          Miner: 
+          Miner:
+           
+          <div
+            className="sc-htpNat kyBtDl"
+          >
+            <div
+              className="sc-bwzfXH fSrPrO"
+              width="lg"
+            >
+               
+            </div>
+          </div>
         </div>
       </div>
       <a

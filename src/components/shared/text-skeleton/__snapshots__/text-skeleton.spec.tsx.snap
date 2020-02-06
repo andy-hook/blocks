@@ -2,6 +2,9 @@
 
 exports[`<LabelText /> renders correctly 1`] = `
 <div
-  className="sc-bwzfXH gbDrYy"
-/>
+  className="sc-bdVaJa hqpQZd"
+  width="md"
+>
+   
+</div>
 `;

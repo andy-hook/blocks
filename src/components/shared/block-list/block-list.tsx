@@ -22,7 +22,7 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
         />
       )
     } else {
-      return <BlockCard />
+      return <BlockCard loading={true} />
     }
   }
 
