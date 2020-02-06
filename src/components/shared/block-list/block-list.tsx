@@ -43,7 +43,9 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
 export const Grid = styled.ul`
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  min-width: 0;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: auto;
   grid-gap: ${layout.scale[12]};
 `
