@@ -5,7 +5,7 @@ exports[`<Menu /> renders correctly 1`] = `
   className="sc-gZMcBi kAqgb"
 >
   <div
-    className="sc-gqjmRU iVvGAz"
+    className="sc-gqjmRU kkPaUb"
   >
     <div
       className="sc-VigVT cBJbjo"
@@ -17,7 +17,7 @@ exports[`<Menu /> renders correctly 1`] = `
           className="sc-fjdhpX jCIpEH"
         >
           <ul
-            className="sc-gzVnrw cRrbZK"
+            className="sc-gzVnrw iNshuK"
           >
             <li
               className="sc-htoDjs fdzoDX"
@@ -45,7 +45,7 @@ exports[`<Menu /> renders correctly 1`] = `
         </div>
       </nav>
       <div
-        className="sc-jzJRlG hMihaT"
+        className="sc-jzJRlG bCtzFP"
       >
         <ul
           className="sc-bxivhb jqTeod"

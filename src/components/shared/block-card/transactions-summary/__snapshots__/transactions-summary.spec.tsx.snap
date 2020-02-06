@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TransactionsSummary /> renders correctly 1`] = `
-<div>
+<ul
+  className="sc-bdVaJa dBUyqz"
+>
   <div>
     1
   </div>
@@ -20,5 +22,59 @@ exports[`<TransactionsSummary /> renders correctly 1`] = `
   <div>
     0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
   </div>
-</div>
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+</ul>
 `;

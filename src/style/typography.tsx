@@ -233,10 +233,10 @@ export const typeSizeDisplayXl = css`
   ${scaleBetween(
     "font-size",
     type.scale[11],
-    type.scale[12],
+    type.scale[11],
     "topDesk",
     "bottomUltra"
   )}
 
-  ${scaleGreaterThan("font-size", type.scale[12], "topUltra")}
+  ${scaleGreaterThan("font-size", type.scale[11], "topUltra")}
 `
