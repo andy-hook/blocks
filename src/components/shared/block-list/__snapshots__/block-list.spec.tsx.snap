@@ -1,22 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockList /> renders correctly 1`] = `
-<footer
-  className="sc-ifAKCX iUNcxj"
+<ul
+  className="sc-gzVnrw eqsxYy"
 >
-  <div
-    className="sc-bdVaJa bUDcPf"
+  <li
+    className="sc-htoDjs gKEykO"
   >
     <div
-      className="sc-htpNat dzobEj"
+      className="sc-htpNat hKayrz"
     >
-      <a
-        href="/blocks/7250672"
+      <div
+        className="sc-bwzfXH gbDrYy"
       >
-        Go to block 
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
         7250672
-      </a>
-      <div>
+      </div>
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
         <div>
           1
         </div>
@@ -34,6 +40,82 @@ exports[`<BlockList /> renders correctly 1`] = `
         </div>
         <div>
           0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
+        </div>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+          2900
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+          1527190616
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+          0x635B4764D1939DfAcD3a8014726159abC277BecC
         </div>
       </div>
       <a
@@ -42,27 +124,961 @@ exports[`<BlockList /> renders correctly 1`] = `
         Go to block 
         7250672
       </a>
-      <div>
-        <div>
-          1
-        </div>
-        <div>
-          0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9
-        </div>
-        <div>
-          0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
-        </div>
-        <div>
-          1
-        </div>
-        <div>
-          0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9
-        </div>
-        <div>
-          0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
-        </div>
-      </div>
     </div>
-  </div>
-</footer>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        7250672
+      </div>
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div>
+          1
+        </div>
+        <div>
+          0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9
+        </div>
+        <div>
+          0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
+        </div>
+        <div>
+          1
+        </div>
+        <div>
+          0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9
+        </div>
+        <div>
+          0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
+        </div>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+          2900
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+          1527190616
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+          0x635B4764D1939DfAcD3a8014726159abC277BecC
+        </div>
+      </div>
+      <a
+        href="/blocks/7250672"
+      >
+        Go to block 
+        7250672
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+  <li
+    className="sc-htoDjs gKEykO"
+  >
+    <div
+      className="sc-htpNat hKayrz"
+    >
+      <div
+        className="sc-bwzfXH gbDrYy"
+      >
+        Block number
+      </div>
+      <div
+        className="sc-bwzfXH gbDrYy"
+      />
+      <ul
+        className="sc-bdVaJa dBUyqz"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </ul>
+      <div
+        className="sc-EHOje jvzENE"
+      >
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Size: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Difficulty: 
+        </div>
+        <div
+          className="sc-bZQynM bOrPFB"
+        >
+          Miner: 
+        </div>
+      </div>
+      <a
+        href="/blocks/undefined"
+      >
+        Go to block 
+      </a>
+    </div>
+  </li>
+</ul>
 `;

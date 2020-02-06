@@ -12,6 +12,7 @@ import { ThemeProvider } from "styled-components"
 import { connect } from "react-redux"
 import Web3Provider from "@web3/web3-provider"
 import Web3BlocksDataProvider from "@web3/web3-blocks-data-provider"
+import { BLOCK_COUNT } from "@utils"
 
 interface DispatchProps {
   switchToLightTheme: () => void
@@ -30,7 +31,7 @@ const Layout: React.FunctionComponent<ContainerProps> = memo(
       <MediaQueryProvider>
         <ThemeProvider theme={lightThemeEnabled ? themes.light : themes.dark}>
           <Web3Provider>
-            <Web3BlocksDataProvider maxBlocks={10}>
+            <Web3BlocksDataProvider maxBlocks={BLOCK_COUNT}>
               <>
                 <GlobalStyle />
                 <LoaderContainer />

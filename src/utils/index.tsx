@@ -1,3 +1,5 @@
+export const BLOCK_COUNT = 10
+
 export function removeWidow(str: string) {
   return str.replace(/\s(?=[^\s]*$)/g, "\u00A0")
 }
