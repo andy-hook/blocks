@@ -3,7 +3,7 @@ import Gutter from "../gutter/gutter"
 import Limiter from "../limiter/limiter"
 import styled from "styled-components"
 import { typeTitle } from "@style/typography"
-import { borderThickness } from "@style/variables"
+import { appearance } from "@style/variables"
 import { themeTone } from "@style/theme"
 
 const Footer: React.FunctionComponent = memo(() => (
@@ -17,7 +17,7 @@ const Footer: React.FunctionComponent = memo(() => (
 const Container = styled.footer`
   ${typeTitle}
   height: 100px;
-  border-top: ${borderThickness.regular} solid ${themeTone(300)};
+  border-top: ${appearance.borderThickness.regular} solid ${themeTone(300)};
 `
 
 export default Footer

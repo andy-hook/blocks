@@ -1,14 +1,7 @@
 import React, { memo } from "react"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import {
-  typeScale,
-  borderRadius,
-  duration,
-  zIndex,
-  lineHeight,
-  textShadow,
-} from "@style/variables"
+import { type, appearance, animation, layout } from "@style/variables"
 import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 import {
   setDisplayCropAndLineHeight,
@@ -34,9 +27,9 @@ const StyledButton = styled(OutboundLink)`
 
   overflow: hidden;
 
-  font-size: ${typeScale[2]};
+  font-size: ${type.scale[2]};
 
-  border-radius: ${borderRadius.pill};
+  border-radius: ${appearance.radius.pill};
 
   text-decoration: none;
 
@@ -45,7 +38,7 @@ const StyledButton = styled(OutboundLink)`
 
   &::before,
   &::after {
-    transition: opacity ${duration.fast} linear;
+    transition: opacity ${animation.duration.fast} linear;
     content: "";
 
     position: absolute;
@@ -58,17 +51,17 @@ const StyledButton = styled(OutboundLink)`
 
     opacity: 0;
 
-    border-radius: ${borderRadius.pill};
+    border-radius: ${appearance.radius.pill};
   }
 
   &::before {
     box-shadow: inset 0 -0.25em 1em 0 #c615a8;
-    z-index: ${zIndex.medium};
+    z-index: ${layout.zIndex.medium};
   }
 
   &::after {
     background: linear-gradient(160deg, #c615a8 0%, #4d0fbe 100%);
-    z-index: ${zIndex.low};
+    z-index: ${layout.zIndex.low};
   }
 
   &:focus {
@@ -88,26 +81,26 @@ const StyledButton = styled(OutboundLink)`
 
   ${scaleBetween(
     "font-size",
-    typeScale[2],
-    typeScale[5],
+    type.scale[2],
+    type.scale[5],
     "bottomThumb",
     "bottomUltra"
   )}
 
-  ${scaleGreaterThan("font-size", typeScale[5], "topUltra")}
+  ${scaleGreaterThan("font-size", type.scale[5], "topUltra")}
 `
 
 const StyledButtonInner = styled.span`
-  ${setDisplayCropAndLineHeight(lineHeight.flat)}
+  ${setDisplayCropAndLineHeight(type.lineHeight.flat)}
   ${typeDisplayButton}
 
   color: ${themeText(100)};
 
   display: block;
   position: relative;
-  z-index: ${zIndex.medium};
+  z-index: ${layout.zIndex.medium};
 
-  text-shadow: ${textShadow.subtle};
+  text-shadow: ${appearance.textShadow.subtle};
 `
 
 export default Button

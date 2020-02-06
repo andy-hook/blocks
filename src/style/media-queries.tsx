@@ -1,8 +1,8 @@
 import { generateMedia, pxToEm } from "styled-media-query"
 import { stripUnit, between } from "polished"
-import { baseFontSize } from "@style/variables"
 import { css, CSSProp } from "styled-components"
 import { BreakpointName, Breakpoints } from "@custom-types/breakpoints"
+import { type } from "./variables"
 
 /* Breakpoints
   ------------------------------------------------- */
@@ -30,7 +30,7 @@ const breakpoints: Breakpoints = {
   topUltra: "2200px",
 }
 
-const emBreakpoints = pxToEm(breakpoints, baseFontSize)
+const emBreakpoints = pxToEm(breakpoints, type.baseFontSize)
 
 export const constructMaxMediaString = (breakpoint: string) => {
   return `(max-width: ${breakpoint})`
@@ -75,7 +75,7 @@ export const uniformScale = (
   const breakpoint = breakpoints[targetMediaQuery]
 
   // Convert from relative to px value
-  const convertedUnit = unit === "px" ? value : value * baseFontSize
+  const convertedUnit = unit === "px" ? value : value * type.baseFontSize
 
   const bpValue = stripUnit(breakpoint)
 

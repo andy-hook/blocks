@@ -3,7 +3,7 @@ import classNames from "classnames"
 import gsap from "gsap"
 import useDeferredRunEffect from "@hooks/deferred-run"
 import styled from "styled-components"
-import { zIndex } from "@style/variables"
+import { layout } from "@style/variables"
 
 export interface Props {
   open?: boolean
@@ -94,7 +94,7 @@ const BarsSVG = styled.svg`
 
   margin-bottom: -0.05em;
 
-  z-index: ${zIndex.low};
+  z-index: ${layout.zIndex.low};
 
   fill: white;
 

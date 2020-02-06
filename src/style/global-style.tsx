@@ -1,8 +1,8 @@
 import React from "react"
 import { Normalize } from "styled-normalize"
 import { createGlobalStyle } from "styled-components"
-import { zIndex } from "@style/variables"
 import { themeTone } from "./theme"
+import { layout } from "./variables"
 
 const Global = createGlobalStyle`
 
@@ -133,11 +133,11 @@ const GlobalTransitionLink = createGlobalStyle`
   /* position: fixed is also set on the portal which messes up the width of the wrapped page */
   .gatsby-plugin-transition-link-portal {
     width: 100%;
-    z-index: ${zIndex.low} !important;
+    z-index: ${layout.zIndex.low} !important;
   }
 
   .tl-wrapper {
-    z-index: ${zIndex.low} !important;
+    z-index: ${layout.zIndex.low} !important;
   }
 
   .tl-edges {
@@ -153,11 +153,11 @@ const GlobalTransitionLink = createGlobalStyle`
   /* This is primarily used to prevent jank when switching routes */
   .tl-wrapper-status--entering,
   .tl-wrapper-status--entered {
-    z-index: ${zIndex.low + 1} !important;
+    z-index: ${layout.zIndex.low + 1} !important;
   }
 
   .tl-wrapper-status--exiting {
-    z-index: ${zIndex.low} !important;
+    z-index: ${layout.zIndex.low} !important;
   }
 `
 

@@ -55,13 +55,13 @@ exports[`<Menu /> renders correctly 1`] = `
           >
             <a
               aria-label="Email"
-              className="sc-EHOje dfURPr"
+              className="sc-EHOje eFGUOZ"
               href="email address"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-bZQynM krxqdl"
+                className="sc-bZQynM iMiXys"
               >
                 <div
                   className="sc-bwzfXH gUlMwG"
@@ -82,13 +82,13 @@ exports[`<Menu /> renders correctly 1`] = `
           >
             <a
               aria-label="Twitter"
-              className="sc-EHOje dfURPr"
+              className="sc-EHOje eFGUOZ"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-bZQynM krxqdl"
+                className="sc-bZQynM iMiXys"
               >
                 <div
                   className="sc-bwzfXH gUlMwG"
@@ -109,13 +109,13 @@ exports[`<Menu /> renders correctly 1`] = `
           >
             <a
               aria-label="Instagram"
-              className="sc-EHOje dfURPr"
+              className="sc-EHOje eFGUOZ"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-bZQynM krxqdl"
+                className="sc-bZQynM iMiXys"
               >
                 <div
                   className="sc-bwzfXH gUlMwG"
@@ -136,13 +136,13 @@ exports[`<Menu /> renders correctly 1`] = `
           >
             <a
               aria-label="Linkedin"
-              className="sc-EHOje dfURPr"
+              className="sc-EHOje eFGUOZ"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-bZQynM krxqdl"
+                className="sc-bZQynM iMiXys"
               >
                 <div
                   className="sc-bwzfXH gUlMwG"
@@ -163,13 +163,13 @@ exports[`<Menu /> renders correctly 1`] = `
           >
             <a
               aria-label="Dribbble"
-              className="sc-EHOje dfURPr"
+              className="sc-EHOje eFGUOZ"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-bZQynM krxqdl"
+                className="sc-bZQynM iMiXys"
               >
                 <div
                   className="sc-bwzfXH gUlMwG"
@@ -190,13 +190,13 @@ exports[`<Menu /> renders correctly 1`] = `
           >
             <a
               aria-label="Github"
-              className="sc-EHOje dfURPr"
+              className="sc-EHOje eFGUOZ"
               href="path/to/social/profile"
               onClick={[Function]}
               target="_blank"
             >
               <div
-                className="sc-bZQynM krxqdl"
+                className="sc-bZQynM iMiXys"
               >
                 <div
                   className="sc-bwzfXH gUlMwG"

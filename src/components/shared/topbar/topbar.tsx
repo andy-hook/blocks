@@ -5,11 +5,11 @@ import { smallScreenGutter } from "../gutter/gutter"
 import { rem } from "polished"
 import styled, { css } from "styled-components"
 import { scaleBetween, scaleGreaterThan, mq } from "@style/media-queries"
-import { ease, zIndex } from "@style/variables"
 import { menuZindex } from "../menu/menu"
 import { themeTone } from "@style/theme"
 import NavList from "./nav-list/nav-list"
 import { typeSizeBaseXs } from "@style/typography"
+import { layout, animation } from "@style/variables"
 
 interface Props {
   open: boolean
@@ -94,7 +94,7 @@ const paddingX = css`
 const visiblityTransition = styled.div<{ visible: boolean }>`
   ${topbarFixed}
 
-  transition: transform 1.5s ${ease("easeOutCirc")};
+  transition: transform 1.5s ${animation.ease("easeOutCirc")};
 
   transform: translate3d(0, -100%, 0);
 
@@ -148,14 +148,14 @@ export const TopbarNavContainer = styled.div`
 
     background-color: ${themeTone(200)};
 
-    z-index: ${zIndex.floor};
+    z-index: ${layout.zIndex.floor};
 
     opacity: 1;
   }
 `
 
 export const StyledNavList = styled(NavList)`
-  z-index: ${zIndex.medium};
+  z-index: ${layout.zIndex.medium};
   display: flex;
 
   align-items: center;

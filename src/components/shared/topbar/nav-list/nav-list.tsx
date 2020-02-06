@@ -12,8 +12,8 @@ import {
   setBaseCropAndLineHeight,
 } from "@style/typography"
 import Link from "gatsby-plugin-transition-link"
-import { lineHeight } from "@style/variables"
 import { themeText } from "@style/theme"
+import { type } from "@style/variables"
 
 export interface Props {
   className?: string
@@ -78,7 +78,7 @@ export const ListItem = styled.li`
 `
 
 export const ListItemLink = styled(Link)`
-  ${setBaseCropAndLineHeight(lineHeight.display.regular)}
+  ${setBaseCropAndLineHeight(type.lineHeight.display.regular)}
 
   display: block;
   color: ${themeText(1000)};
