@@ -2,7 +2,7 @@ import { css } from "styled-components"
 import { themeText, isTheme } from "@style/theme"
 import { scaleBetween, scaleGreaterThan } from "./media-queries"
 import { createTextCrop } from "./utils"
-import { type, appearance } from "./variables"
+import { type, appearance } from "./design-tokens"
 
 /* Base text cropping
   ------------------------------------------------- */

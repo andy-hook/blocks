@@ -3,7 +3,7 @@ import classNames from "classnames"
 import gsap from "gsap"
 import useDeferredRunEffect from "@hooks/deferred-run"
 import styled from "styled-components"
-import { layout } from "@style/variables"
+import { layout } from "@style/design-tokens"
 
 export interface Props {
   open?: boolean

@@ -2,7 +2,7 @@ import React from "react"
 import { Normalize } from "styled-normalize"
 import { createGlobalStyle } from "styled-components"
 import { themeTone } from "./theme"
-import { layout } from "./variables"
+import { layout } from "./design-tokens"
 
 const Global = createGlobalStyle`
 

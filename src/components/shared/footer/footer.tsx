@@ -3,7 +3,7 @@ import Gutter from "../gutter/gutter"
 import Limiter from "../limiter/limiter"
 import styled from "styled-components"
 import { typeTitle } from "@style/typography"
-import { appearance } from "@style/variables"
+import { appearance } from "@style/design-tokens"
 import { themeTone } from "@style/theme"
 
 const Footer: React.FunctionComponent = memo(() => (

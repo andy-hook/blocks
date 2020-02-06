@@ -1,7 +1,7 @@
 import React, { useEffect, memo } from "react"
 import gsap from "gsap"
 import styled from "styled-components"
-import { layout } from "@style/variables"
+import { layout } from "@style/design-tokens"
 import { rem } from "polished"
 import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 

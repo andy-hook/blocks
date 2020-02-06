@@ -9,7 +9,7 @@ import { menuZindex } from "../menu/menu"
 import { themeTone } from "@style/theme"
 import NavList from "./nav-list/nav-list"
 import { typeSizeBaseXs } from "@style/typography"
-import { layout, animation } from "@style/variables"
+import { layout, animation } from "@style/design-tokens"
 
 interface Props {
   open: boolean
