@@ -13,7 +13,7 @@ import {
 } from "@style/typography"
 import Link from "gatsby-plugin-transition-link"
 import { themeText } from "@style/theme"
-import { type } from "@style/variables"
+import { type } from "@style/design-tokens"
 
 export interface Props {
   className?: string

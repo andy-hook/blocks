@@ -7,7 +7,7 @@ import useDeferredRunEffect from "@hooks/deferred-run"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { themeText, isTheme } from "@style/theme"
-import { animation, appearance } from "@style/variables"
+import { animation, appearance } from "@style/design-tokens"
 
 interface Props {
   items: SocialMeta

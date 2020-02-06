@@ -1,7 +1,7 @@
 import React, { memo } from "react"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import { type, appearance, animation, layout } from "@style/variables"
+import { type, appearance, animation, layout } from "@style/design-tokens"
 import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 import {
   setDisplayCropAndLineHeight,
