@@ -2,15 +2,15 @@
 
 exports[`<BlockCard /> renders correctly 1`] = `
 <div
-  className="sc-htpNat hKayrz"
+  className="sc-bxivhb kbScoB"
 >
   <div
-    className="sc-bwzfXH gbDrYy"
+    className="sc-htpNat kyBtDl"
   >
     Block number
   </div>
   <div
-    className="sc-bwzfXH gbDrYy"
+    className="sc-htpNat kyBtDl"
   >
     100
   </div>
@@ -91,22 +91,34 @@ exports[`<BlockCard /> renders correctly 1`] = `
     <div />
   </ul>
   <div
-    className="sc-EHOje jvzENE"
+    className="sc-bZQynM bOrPFB"
   >
     <div
-      className="sc-bZQynM bOrPFB"
+      className="sc-gzVnrw ibZhkv"
     >
-      Size: 
+      Size:
+       
+      <div
+        className="sc-htpNat kyBtDl"
+      />
     </div>
     <div
-      className="sc-bZQynM bOrPFB"
+      className="sc-gzVnrw ibZhkv"
     >
-      Difficulty: 
+      Difficulty:
+       
+      <div
+        className="sc-htpNat kyBtDl"
+      />
     </div>
     <div
-      className="sc-bZQynM bOrPFB"
+      className="sc-gzVnrw ibZhkv"
     >
-      Miner: 
+      Miner:
+       
+      <div
+        className="sc-htpNat kyBtDl"
+      />
     </div>
   </div>
   <a

@@ -15,7 +15,7 @@ const TransactionsSummary: React.FunctionComponent<Props> = ({
 }) => {
   const renderAsHolderOrPopulated = (
     index: number,
-    transaction?: Web3TransactionData | null
+    transaction?: Web3TransactionData
   ) => {
     if (transaction) {
       return (
