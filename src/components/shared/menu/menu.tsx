@@ -5,7 +5,7 @@ import useDeferredRunEffect from "@hooks/deferred-run"
 import MenuBlockList from "./menu-block-list/menu-block-list"
 import Social from "./social/social"
 import MenuNavList from "./menu-nav-list/menu-nav-list"
-import { zIndex, spacingScale, typeScale } from "@style/variables"
+import { layout, type } from "@style/variables"
 import styled from "styled-components"
 import { themeTone } from "@style/theme"
 import { mq, scaleBetween, scaleGreaterThan } from "@style/media-queries"
@@ -121,7 +121,7 @@ const Menu: React.FunctionComponent<AllProps> = memo(
   }
 )
 
-export const menuZindex = zIndex.highest
+export const menuZindex = layout.zIndex.highest
 
 const AnimationScrim = styled.div`
   background-color: ${themeTone(100)};
@@ -133,7 +133,7 @@ const AnimationScrim = styled.div`
   width: 100%;
   height: 100%;
 
-  z-index: ${zIndex.low};
+  z-index: ${layout.zIndex.low};
 `
 
 const Fixer = styled.div`
@@ -162,13 +162,13 @@ const Sidebar = styled.div`
 
   align-items: center;
 
-  padding-left: ${spacingScale[8]};
-  padding-right: ${spacingScale[8]};
-  padding-bottom: ${spacingScale[8]};
+  padding-left: ${layout.scale[8]};
+  padding-right: ${layout.scale[8]};
+  padding-bottom: ${layout.scale[8]};
 
   height: 100%;
 
-  z-index: ${zIndex.high + 1};
+  z-index: ${layout.zIndex.high + 1};
 
   overflow: hidden;
 
@@ -181,31 +181,31 @@ const Sidebar = styled.div`
 
   ${scaleBetween(
     "padding-left",
-    spacingScale[8],
-    spacingScale[9],
+    layout.scale[8],
+    layout.scale[9],
     "topThumb",
     "bottomUltra"
   )}
 
   ${scaleBetween(
     "padding-bottom",
-    spacingScale[8],
-    spacingScale[9],
+    layout.scale[8],
+    layout.scale[9],
     "topThumb",
     "bottomUltra"
   )}
 
   ${scaleBetween(
     "padding-right",
-    spacingScale[8],
-    spacingScale[9],
+    layout.scale[8],
+    layout.scale[9],
     "topThumb",
     "bottomUltra"
   )}
 
-  ${scaleGreaterThan("padding-left", spacingScale[9], "topUltra")}
-  ${scaleGreaterThan("padding-right", spacingScale[9], "topUltra")}
-  ${scaleGreaterThan("padding-bottom", spacingScale[9], "topUltra")}
+  ${scaleGreaterThan("padding-left", layout.scale[9], "topUltra")}
+  ${scaleGreaterThan("padding-right", layout.scale[9], "topUltra")}
+  ${scaleGreaterThan("padding-bottom", layout.scale[9], "topUltra")}
 `
 
 const Contents = styled.div`
@@ -215,7 +215,7 @@ const Contents = styled.div`
   height: 100%;
   width: 100%;
 
-  z-index: ${zIndex.high};
+  z-index: ${layout.zIndex.high};
 `
 
 const SidebarNav = styled.nav`
@@ -232,25 +232,25 @@ const SidebarNavInner = styled.div`
 `
 
 const SocialContainer = styled.div`
-  font-size: ${typeScale[5]};
+  font-size: ${type.scale[5]};
   
   ${scaleBetween(
     "font-size",
-    typeScale[5],
-    typeScale[6],
+    type.scale[5],
+    type.scale[6],
     "topThumb",
     "bottomWide"
   )}
 
   ${scaleBetween(
     "font-size",
-    typeScale[6],
-    typeScale[7],
+    type.scale[6],
+    type.scale[7],
     "topWide",
     "bottomUltra"
   )}
 
-  ${scaleGreaterThan("font-size", typeScale[7], "topUltra")}
+  ${scaleGreaterThan("font-size", type.scale[7], "topUltra")}
 `
 
 export default Menu

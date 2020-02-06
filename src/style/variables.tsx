@@ -7,12 +7,12 @@ import { EaseName, Eases } from "ease"
 
 export const baseFontSize = 16
 
-export const fontFamily = {
+const fontFamily = {
   base: `'inter', -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans, Ubuntu,Cantarell, "Helvetica Neue", sans-serif`,
   display: `'maison-neue', -apple-system,BlinkMacSystemFont, "Segoe UI", Roboto,Oxygen-Sans, Ubuntu,Cantarell, "Helvetica Neue", sans-serif`,
 }
 
-export const letterSpacing = {
+const letterSpacing = {
   base: {
     regular: "0.01em",
     medium: "0.01em",
@@ -25,7 +25,7 @@ export const letterSpacing = {
   uppercase: "0.06em",
 }
 
-export const lineHeight = {
+const lineHeight = {
   flat: 1,
   base: {
     regular: 1.4,
@@ -39,7 +39,7 @@ export const lineHeight = {
   },
 }
 
-export const fontWeight = {
+const fontWeight = {
   base: {
     regular: "400",
     medium: "500",
@@ -50,7 +50,7 @@ export const fontWeight = {
   },
 }
 
-export const typeScale = {
+const typeScale = {
   1: rem("12px"),
   2: rem("13px"),
   3: rem("14px"),
@@ -65,7 +65,7 @@ export const typeScale = {
   12: rem("74px"),
 }
 
-export const spacingScale = {
+const spacingScale = {
   1: rem("4px"),
   2: rem("8px"),
   3: rem("12px"),
@@ -87,7 +87,7 @@ export const spacingScale = {
 /* Border radius
   ------------------------------------------------- */
 
-export const borderRadius = {
+const borderRadius = {
   base: "4px",
   large: "10px",
   pill: "50000px",
@@ -97,7 +97,7 @@ export const borderRadius = {
 /* Text shadow
   ------------------------------------------------- */
 
-export const textShadow = {
+const textShadow = {
   subtle: "0 0 0.03em rgba(0, 0, 0, 0.5)",
   heavy: "0 0 1em rgba(0, 0, 0.6)",
 }
@@ -105,7 +105,7 @@ export const textShadow = {
 /* Border thickness
   ------------------------------------------------- */
 
-export const borderThickness = {
+const borderThickness = {
   regular: "1px",
   thick: "2px",
 }
@@ -115,7 +115,7 @@ export const borderThickness = {
 
 const durationUnit = 100
 
-export const duration = {
+const duration = {
   fast: `${durationUnit}ms`,
   base: `${durationUnit * 2}ms`,
   slow: `${durationUnit * 3}ms`,
@@ -124,7 +124,7 @@ export const duration = {
 /* Index
   ------------------------------------------------- */
 
-export const zIndex = {
+const zIndex = {
   floor: 0,
   low: 100,
   medium: 200,
@@ -180,28 +180,38 @@ const easeValues: Eases = {
   subtleBounce: [0.15, 0.585, 0.225, 1.26],
 }
 
-export const ease = (easeName: EaseName) =>
-  createCubicBezier(easeValues[easeName])
+const ease = (easeName: EaseName) => createCubicBezier(easeValues[easeName])
 
-// const designTokens = {
-//   type: {
-//     baseFontSize,
-//     fontFamily,
-//     letterSpacing,
-//     lineHeight,
-//     fontWeight,
-//     typeScale,
-//   },
-//   layout: {
-//     spacingScale,
-//     zIndex,
-//   },
-//   appearance: {
-//     borderRadius,
-//     textShadow,
-//     borderThickness,
-//   },
-//   animation: {
-//     duration,
-//   },
-// }
+/* Public
+------------------------------------------------- */
+
+export const type = {
+  baseFontSize,
+  fontFamily,
+  letterSpacing,
+  lineHeight,
+  fontWeight,
+  scale: {
+    ...typeScale,
+  },
+}
+
+export const layout = {
+  zIndex,
+  scale: {
+    ...spacingScale,
+  },
+}
+
+export const appearance = {
+  radius: {
+    ...borderRadius,
+  },
+  textShadow,
+  borderThickness,
+}
+
+export const animation = {
+  duration,
+  ease,
+}

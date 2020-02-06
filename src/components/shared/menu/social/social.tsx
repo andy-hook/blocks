@@ -7,7 +7,7 @@ import useDeferredRunEffect from "@hooks/deferred-run"
 import styled from "styled-components"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { themeText, isTheme } from "@style/theme"
-import { duration, ease, borderThickness, borderRadius } from "@style/variables"
+import { animation, appearance } from "@style/variables"
 
 interface Props {
   items: SocialMeta
@@ -116,8 +116,9 @@ const Link = styled(OutboundLink)`
   padding: ${padding};
 
   &::after {
-    transition: transform ${duration.slow} ${ease("subtleBounce")},
-      opacity ${duration.fast} linear;
+    transition: transform ${animation.duration.slow}
+        ${animation.ease("subtleBounce")},
+      opacity ${animation.duration.fast} linear;
 
     content: "";
     position: absolute;
@@ -126,9 +127,9 @@ const Link = styled(OutboundLink)`
     left: 0.1em;
     right: 0.1em;
     bottom: 0.1em;
-    border: ${borderThickness.regular} solid ${themeText(100)};
+    border: ${appearance.borderThickness.regular} solid ${themeText(100)};
 
-    border-radius: ${borderRadius.circle};
+    border-radius: ${appearance.radius.circle};
 
     opacity: 0;
 
@@ -148,7 +149,8 @@ const Link = styled(OutboundLink)`
   }
 `
 const IconPos = styled.div`
-  transition: opacity ${duration.slow} ${ease("subtleBounce")};
+  transition: opacity ${animation.duration.slow}
+    ${animation.ease("subtleBounce")};
   opacity: ${isTheme("dark", "0.25", "0.4")};
 
   ${Link}:hover &,

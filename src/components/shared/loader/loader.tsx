@@ -1,7 +1,7 @@
 import React, { useEffect, memo } from "react"
 import gsap from "gsap"
 import styled from "styled-components"
-import { zIndex } from "@style/variables"
+import { layout } from "@style/variables"
 import { rem } from "polished"
 import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 
@@ -126,7 +126,7 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  z-index: ${zIndex.highest};
+  z-index: ${layout.zIndex.highest};
 `
 
 const Mark = styled.div`
