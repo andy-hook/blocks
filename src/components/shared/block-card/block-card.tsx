@@ -61,7 +61,7 @@ const BlockCard: React.FunctionComponent<Props> = ({
         </CardDetailsItem>
         <CardDetailsItem>
           Miner:{" "}
-          <LabelText loading={loading} skeletonWidth="lg">
+          <LabelText loading={loading} truncate={true} skeletonWidth="lg">
             {miner}
           </LabelText>
         </CardDetailsItem>

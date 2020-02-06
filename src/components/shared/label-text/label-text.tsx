@@ -7,15 +7,17 @@ import TextSkeleton, {
 interface Props {
   loading?: boolean
   skeletonWidth?: SkeletonWidth
+  truncate?: boolean
 }
 
 const LabelText: React.FunctionComponent<Props> = ({
   children,
   loading,
   skeletonWidth,
+  truncate = false,
 }) => {
   return (
-    <Text>
+    <Text truncate={truncate}>
       {loading ? (
         <TextSkeleton width={skeletonWidth}>&nbsp;</TextSkeleton>
       ) : (
@@ -25,9 +27,17 @@ const LabelText: React.FunctionComponent<Props> = ({
   )
 }
 
-const Text = styled.div`
+const Text = styled.div<{ truncate: boolean }>`
+  position: relative;
   color: white;
   background-color: orange;
+
+  ${props =>
+    props.truncate &&
+    `
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;`}
 `
 
 export default LabelText
