@@ -29,7 +29,7 @@ const BlockCard: React.FunctionComponent<Props> = ({
     if (blockTransactions) {
       return <TransactionsSummary transactions={blockTransactions} />
     } else {
-      return <TransactionsSummary />
+      return <TransactionsSummary loading={true} />
     }
   }
 
@@ -42,7 +42,6 @@ const BlockCard: React.FunctionComponent<Props> = ({
       </LabelText>
 
       {/* Transactions */}
-
       {renderTrxAsPlaceholderOrPopulated(transactions)}
 
       {/* Details */}
@@ -74,7 +73,7 @@ const BlockCard: React.FunctionComponent<Props> = ({
 }
 
 export const Card = styled.div`
-  padding: ${layout.scale[9]};
+  padding: ${layout.scale[10]};
 `
 
 export const CardTitle = styled.div`

@@ -47,7 +47,7 @@ export const Grid = styled.ul`
 
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: auto;
-  grid-gap: ${layout.scale[12]};
+  grid-gap: ${layout.scale[13]};
 `
 
 export const GridItem = styled.li`
