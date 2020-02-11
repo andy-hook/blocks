@@ -51,7 +51,7 @@ export interface Web3TransactionData {
   v: string
   value: string
   fee: string
-  ether: string
+  ether: number
 }
 
 export interface Web3BlockData {

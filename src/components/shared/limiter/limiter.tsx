@@ -1,7 +1,6 @@
 import React, { memo, PropsWithChildren } from "react"
 import { rem } from "polished"
 import styled, { css } from "styled-components"
-import { scaleGreaterThan } from "@style/media-queries"
 
 interface Props {
   size?: "small" | "medium" | "large"
@@ -28,7 +27,7 @@ const Limiter: React.FunctionComponent<PropsWithChildren<Props>> = memo(
 
 const smallSize = rem("900px")
 const mediumSize = rem("1200px")
-const largeSize = rem("1500px")
+const largeSize = rem("1650px")
 
 const commonStyles = css`
   margin: auto;
@@ -38,24 +37,18 @@ const SmallLimiter = styled.div`
   ${commonStyles}
 
   max-width: ${smallSize};
-
-  ${scaleGreaterThan("max-width", smallSize, "topWall")}
 `
 
 const MediumLimiter = styled.div`
   ${commonStyles}
 
   max-width: ${mediumSize};
-
-  ${scaleGreaterThan("max-width", mediumSize, "topWall")}
 `
 
 const LargeLimiter = styled.div`
   ${commonStyles}
 
   max-width: ${largeSize};
-
-  ${scaleGreaterThan("max-width", largeSize, "topWall")}
 `
 
 export default Limiter

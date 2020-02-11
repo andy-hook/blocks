@@ -14,8 +14,10 @@ function requestTransactions(web3Instance: any, transactions: string[]) {
             } else {
               resolve({
                 ...data,
-                ether: web3Instance.utils.fromWei(
-                  new web3Instance.utils.BN(data.value)
+                ether: parseFloat(
+                  web3Instance.utils.fromWei(
+                    new web3Instance.utils.BN(data.value)
+                  )
                 ),
               })
             }

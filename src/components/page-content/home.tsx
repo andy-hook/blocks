@@ -11,7 +11,7 @@ const Home: React.FunctionComponent = memo(() => {
   return (
     <Page>
       <Gutter>
-        <Limiter>
+        <Limiter size="large">
           <BlockList blockData={data} />
         </Limiter>
       </Gutter>

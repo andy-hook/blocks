@@ -8,16 +8,17 @@ interface Props {
   loading?: boolean
 }
 
-const MAX_TRANSACTIONS = 50
+const MAX_TRANSACTIONS = 60
 
 const TransactionsSummary: React.FunctionComponent<Props> = ({
   transactions,
+  loading,
 }) => {
   const renderAsHolderOrPopulated = (transaction?: Web3TransactionData) => {
     if (transaction) {
       return (
         <TransactionPip
-          value={transaction.value}
+          value={transaction.ether}
           from={transaction.from}
           to={transaction.to}
         />
@@ -27,13 +28,17 @@ const TransactionsSummary: React.FunctionComponent<Props> = ({
     }
   }
 
-  // Render holding items while awaiting data
+  // Renders items
   const renderItems = () => {
     return Array.from(Array(MAX_TRANSACTIONS)).map((_, index) => {
       return (
-        <div key={index}>
-          {renderAsHolderOrPopulated(transactions && transactions[index])}
-        </div>
+        <GridItem key={index}>
+          {loading ? (
+            <TransactionPip loading={true} />
+          ) : (
+            renderAsHolderOrPopulated(transactions && transactions[index])
+          )}
+        </GridItem>
       )
     })
   }
@@ -46,7 +51,9 @@ export const Grid = styled.ul`
 
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(1em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(1em, 1em));
+
+  grid-gap: 8px;
 
   background-color: blue;
 `

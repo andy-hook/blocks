@@ -3,30 +3,32 @@ import { Web3TransactionData } from "model"
 import styled from "styled-components"
 
 interface Props {
-  value?: Web3TransactionData["value"]
+  value?: number
   to?: Web3TransactionData["to"]
   from?: Web3TransactionData["from"]
+  loading?: boolean
 }
 
 const TransactionPip: React.FunctionComponent<Props> = ({
   value,
   to,
   from,
+  loading,
 }) => {
-  return (
-    <Pip>
-      {/* <div>{value}</div>
-      <div>{to}</div>
-      <div>{from}</div> */}
-    </Pip>
-  )
+  return <Pip hasValue={value ? value > 0 : false} isLoading={loading} />
 }
 
-export const Pip = styled.div`
+export const Pip = styled.div<{
+  isLoading: Props["loading"]
+  hasValue?: boolean
+}>`
   width: 1em;
   height: 1em;
 
-  background-color: black;
+  background-color: hotpink;
+
+  ${props => props.hasValue && `background-color: brown;`}
+  ${props => props.isLoading && `background-color: purple;`}
 `
 
 export default TransactionPip
