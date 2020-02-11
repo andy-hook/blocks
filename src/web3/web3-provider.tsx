@@ -22,7 +22,7 @@ export const Web3Provider: React.FunctionComponent = ({ children }) => {
   useEffect(() => {
     const configureProvider = () => {
       const provider = new Web3Require.providers.HttpProvider(
-        "https://ropsten.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0"
+        "https://mainnet.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0"
       )
 
       setWeb3State({ web3: new Web3Require(provider) })
