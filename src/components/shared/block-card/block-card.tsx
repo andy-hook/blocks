@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import TransactionsSummary from "@components/shared/block-card/transactions-summary/transactions-summary"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
-import Value from "@components/shared/value/value"
 import Label from "@components/shared/label/label"
 
 interface Props {
@@ -37,10 +36,10 @@ const BlockCard: React.FunctionComponent<Props> = ({
   return (
     <Card>
       {/* Title info */}
-      <Label>Block number</Label>
-      <Value loading={loading} skeletonWidth="sm">
+      <Label intensity="low">Block number</Label>
+      <Label loading={loading} skeletonWidth="sm">
         {blockNumber}
-      </Value>
+      </Label>
 
       {/* Transactions */}
       {renderTrxAsPlaceholderOrPopulated(transactions)}
@@ -49,21 +48,21 @@ const BlockCard: React.FunctionComponent<Props> = ({
       <CardDetails>
         <CardDetailsItem>
           <Label>Size:</Label>
-          <Value loading={loading} skeletonWidth="sm">
+          <Label loading={loading} skeletonWidth="sm">
             {size}
-          </Value>
+          </Label>
         </CardDetailsItem>
         <CardDetailsItem>
           <Label>Difficulty:</Label>
-          <Value loading={loading} skeletonWidth="md">
+          <Label loading={loading} skeletonWidth="md">
             {difficulty}
-          </Value>
+          </Label>
         </CardDetailsItem>
         <CardDetailsItem>
           <Label>Miner:</Label>
-          <Value loading={loading} truncate={true} skeletonWidth="lg">
+          <Label loading={loading} truncate={true} skeletonWidth="lg">
             {miner}
-          </Value>
+          </Label>
         </CardDetailsItem>
       </CardDetails>
 
@@ -75,14 +74,6 @@ const BlockCard: React.FunctionComponent<Props> = ({
 
 export const Card = styled.div`
   padding: ${layout.scale[10]};
-`
-
-export const CardTitle = styled.div`
-  color: white;
-`
-
-export const CardNumber = styled.div`
-  color: white;
 `
 
 export const CardDetails = styled.div``

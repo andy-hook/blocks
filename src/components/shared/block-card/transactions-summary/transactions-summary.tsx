@@ -2,6 +2,7 @@ import React from "react"
 import { Web3TransactionData } from "model"
 import TransactionPip from "@components/shared/block-card/transaction-pip/transaction-pip"
 import styled from "styled-components"
+import { layout } from "@style/design-tokens"
 
 interface Props {
   transactions?: Web3TransactionData[]
@@ -49,13 +50,10 @@ const TransactionsSummary: React.FunctionComponent<Props> = ({
 export const Grid = styled.ul`
   position: relative;
 
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(1em, 1em));
+  display: flex;
+  flex-wrap: wrap;
 
-  grid-gap: 8px;
-
-  background-color: blue;
+  margin: -${layout.scale[1]};
 `
 
 export const GridItem = styled.li``
