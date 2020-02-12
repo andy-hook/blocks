@@ -1,8 +1,9 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import Label from "@components/shared/label/label"
 import { layout } from "@style/design-tokens"
 import TruncateString from "react-truncate-string"
+import { mq } from "@style/media-queries"
 
 interface Props {
   size?: number
@@ -22,25 +23,25 @@ const CardDetails: React.FunctionComponent<Props> = ({
       {/* Size */}
       <SizeItem>
         <DetailsTitle intensity="low">Size:</DetailsTitle>
-        <Label loading={loading} skeletonWidth="sm">
+        <DetailsValue loading={loading} skeletonWidth="sm">
           {size}
-        </Label>
+        </DetailsValue>
       </SizeItem>
 
       {/* Difficulty */}
       <DifficultyItem>
         <DetailsTitle intensity="low">Difficulty:</DetailsTitle>
-        <Label loading={loading} skeletonWidth="md">
+        <DetailsValue loading={loading} skeletonWidth="md">
           <TruncateString text={difficulty} truncateAt={20} />
-        </Label>
+        </DetailsValue>
       </DifficultyItem>
 
       {/* Miner */}
       <MinerItem>
         <DetailsTitle intensity="low">Miner:</DetailsTitle>
-        <Label loading={loading} skeletonWidth="lg">
+        <DetailsValue loading={loading} skeletonWidth="lg">
           <TruncateString text={miner} truncateAt={40} />
-        </Label>
+        </DetailsValue>
       </MinerItem>
     </Details>
   )
@@ -48,22 +49,81 @@ const CardDetails: React.FunctionComponent<Props> = ({
 
 const Details = styled.div`
   display: flex;
+
+  ${mq.lessThan("bottomDesk")`
+    flex-direction: column;
+  `}
+
+  ${mq.greaterThan("topDesk")`
+    margin-left: -${layout.scale[3]};
+    margin-right: -${layout.scale[3]};
+  `}
 `
 
 const DetailsTitle = styled(Label)`
-  margin-bottom: ${layout.scale[2]};
+  ${mq.greaterThan("topDesk")`
+    margin-bottom: ${layout.scale[2]};
+  `}
+`
+
+const DetailsValue = styled(Label)`
+  ${mq.lessThan("bottomDesk")`
+    width: 60%;
+    text-align: right;
+  `}
+`
+
+const DetailsItem = css`
+  ${mq.lessThan("bottomDesk")`
+    display: flex;
+
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: ${layout.scale[3]};
+    }
+  `}
+
+  ${mq.greaterThan("topDesk")`
+    padding-left: ${layout.scale[3]};
+    padding-right: ${layout.scale[3]};
+  `}
 `
 
 const SizeItem = styled.div`
-  width: 16%;
+  ${DetailsItem}
+
+  ${mq.between("topDesk", "bottomWide")`
+    width: 20%;
+  `}
+
+  ${mq.greaterThan("topWide")`
+    width: 16%;
+  `}
 `
 
 const DifficultyItem = styled.div`
-  width: 32%;
+  ${DetailsItem}
+
+  ${mq.between("topDesk", "bottomWide")`
+    width: 30%;
+  `}
+
+  ${mq.greaterThan("topWide")`
+    width: 32%;
+  `}
 `
 
 const MinerItem = styled.div`
-  width: 40%;
+  ${DetailsItem}
+
+  ${mq.between("topDesk", "bottomWide")`
+    width: 50%;
+  `}
+
+  ${mq.greaterThan("topWide")`
+    width: 40%;
+  `}
 `
 
 export default CardDetails
