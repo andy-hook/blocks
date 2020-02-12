@@ -2,6 +2,8 @@ import React from "react"
 import { Web3BlockData } from "model"
 import BlockContent from "./block-content/block-content"
 import { toString } from "lodash"
+import styled from "styled-components"
+import { themeTone } from "@style/theme"
 
 interface Props {
   blockData?: Web3BlockData | null
@@ -26,7 +28,11 @@ const BlockDetails: React.FunctionComponent<Props> = ({ blockData }) => {
     }
   }
 
-  return <>{renderAsSkeletonOrPopulated()}</>
+  return <Block>{renderAsSkeletonOrPopulated()}</Block>
 }
+
+const Block = styled.div`
+  background-color: ${themeTone(500)};
+`
 
 export default BlockDetails

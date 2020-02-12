@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import BlockInfoRow from "../block-info-row/block-info-row"
-import { themeTone } from "@style/theme"
+import { layout, appearance } from "@style/design-tokens"
+import BlockHeader from "../block-header/block-header"
+import { themeText } from "@style/theme"
 
 interface Props {
   blockNumber?: string
@@ -26,8 +28,11 @@ const BlockContent: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <Container>
-      Block number {blockNumber}
-      {transactionCount} Transactions
+      <BlockHeader
+        transactionCount={transactionCount}
+        blockNumber={blockNumber}
+        loading={loading}
+      />
       <InfoList>
         <InfoRow
           name="Size"
@@ -64,17 +69,19 @@ const BlockContent: React.FunctionComponent<Props> = ({
   )
 }
 
-const Container = styled.div`
-  background-color: ${themeTone(300)};
-  background-color: red;
-
-  height: 500px;
+const Container = styled.article`
+  padding: ${layout.scale[11]};
 `
 
 const InfoList = styled.ul``
 
 const InfoRow = styled(BlockInfoRow)`
-  border-top: 1px solid black;
+  border-top: ${appearance.borderThickness.regular} solid ${themeText(1000)};
+
+  /* Sit optically flush against container */
+  &:last-child {
+    padding-bottom: 0;
+  }
 `
 
 export default BlockContent

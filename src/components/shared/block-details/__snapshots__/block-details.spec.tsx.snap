@@ -2,42 +2,30 @@
 
 exports[`<BlockDetails /> renders correctly 1`] = `
 <div
-  className="sc-ifAKCX jmbKll"
+  className="sc-jTzLTM jeaEVH"
 >
-  Block number 
-   Transactions
-  <ul
-    className="sc-EHOje jvzENE"
+  <article
+    className="sc-gZMcBi kxLsOT"
   >
-    <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+    <header
+      className="sc-htoDjs bzhYRm"
     >
-      Size
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-iwsKbI ldERec"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-htpNat bHaBzt sc-dnqmqq ctRtNT"
+          size="lg"
         >
           <div
-            className="sc-bwzfXH eAbjIM"
+            className="sc-bxivhb dsXjOH"
           >
              
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
-    >
-      Difficulty
-      <div
-        className="sc-bxivhb qtnqi"
-      >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-bdVaJa jfEAsh"
+          size="lg"
         >
           <div
             className="sc-bwzfXH dXrMlk"
@@ -46,64 +34,142 @@ exports[`<BlockDetails /> renders correctly 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+      <a
+        className="sc-bZQynM fJEiEe"
+        href="https://www.google.com"
+        type="primary"
+      >
+        <span
+          className="sc-gzVnrw feWhnB"
+        >
+          View transactions
+        </span>
+      </a>
+    </header>
+    <ul
+      className="sc-gqjmRU hnZXkc"
     >
-      Total Difficulty
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-htpNat hwnZXv"
+          size="sm"
+        >
+          Size
+        </div>
+        <div
+          className="sc-EHOje foZbCf"
         >
           <div
-            className="sc-bwzfXH dTNUzo"
+            className="sc-bdVaJa htfwrO"
+            size="lg"
           >
-             
+            <div
+              className="sc-bwzfXH eAbjIM"
+            >
+               
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
-    >
-      Gas Used
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-htpNat hwnZXv"
+          size="sm"
+        >
+          Difficulty
+        </div>
+        <div
+          className="sc-EHOje foZbCf"
         >
           <div
-            className="sc-bwzfXH dXrMlk"
+            className="sc-bdVaJa htfwrO"
+            size="lg"
           >
-             
+            <div
+              className="sc-bwzfXH dXrMlk"
+            >
+               
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
-    >
-      Gas Limit
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-htpNat hwnZXv"
+          size="sm"
+        >
+          Total Difficulty
+        </div>
+        <div
+          className="sc-EHOje foZbCf"
         >
           <div
-            className="sc-bwzfXH eAbjIM"
+            className="sc-bdVaJa htfwrO"
+            size="lg"
           >
-             
+            <div
+              className="sc-bwzfXH dTNUzo"
+            >
+               
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </ul>
+      <div
+        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+      >
+        <div
+          className="sc-htpNat hwnZXv"
+          size="sm"
+        >
+          Gas Used
+        </div>
+        <div
+          className="sc-EHOje foZbCf"
+        >
+          <div
+            className="sc-bdVaJa htfwrO"
+            size="lg"
+          >
+            <div
+              className="sc-bwzfXH dXrMlk"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+      >
+        <div
+          className="sc-htpNat hwnZXv"
+          size="sm"
+        >
+          Gas Limit
+        </div>
+        <div
+          className="sc-EHOje foZbCf"
+        >
+          <div
+            className="sc-bdVaJa htfwrO"
+            size="lg"
+          >
+            <div
+              className="sc-bwzfXH eAbjIM"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </article>
 </div>
 `;

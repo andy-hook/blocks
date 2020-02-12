@@ -5,7 +5,7 @@ exports[`<CardContent /> renders correctly 1`] = `
   className="sc-cSHVUG iEUGjl"
 >
   <div
-    className="sc-EHOje lDWDu sc-kAzzGY bttNCU"
+    className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
     size="md"
   >
     Block number
@@ -692,13 +692,13 @@ exports[`<CardContent /> renders correctly 1`] = `
       className="sc-iwsKbI dVxxQe"
     >
       <div
-        className="sc-EHOje lDWDu sc-htoDjs dARhit"
+        className="sc-EHOje jbJQDV sc-htoDjs dARhit"
         size="md"
       >
         Size
       </div>
       <div
-        className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
+        className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
         size="md"
       />
     </div>
@@ -706,13 +706,13 @@ exports[`<CardContent /> renders correctly 1`] = `
       className="sc-gZMcBi jWPKqd"
     >
       <div
-        className="sc-EHOje lDWDu sc-htoDjs dARhit"
+        className="sc-EHOje jbJQDV sc-htoDjs dARhit"
         size="md"
       >
         Difficulty
       </div>
       <div
-        className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
+        className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
         size="md"
       />
     </div>
@@ -720,13 +720,13 @@ exports[`<CardContent /> renders correctly 1`] = `
       className="sc-gqjmRU jpVdfh"
     >
       <div
-        className="sc-EHOje lDWDu sc-htoDjs dARhit"
+        className="sc-EHOje jbJQDV sc-htoDjs dARhit"
         size="md"
       >
         Miner
       </div>
       <div
-        className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
+        className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
         size="md"
       />
     </div>

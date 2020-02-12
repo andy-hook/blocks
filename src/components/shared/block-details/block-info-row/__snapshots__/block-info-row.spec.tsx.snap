@@ -2,15 +2,20 @@
 
 exports[`<BlockInfoRow /> renders correctly 1`] = `
 <div
-  className="sc-htpNat fPsaOJ"
+  className="sc-ifAKCX kEvjdA"
 >
-  string
   <div
-    className="sc-bxivhb qtnqi"
+    className="sc-htpNat hwnZXv"
+    size="sm"
+  >
+    string
+  </div>
+  <div
+    className="sc-EHOje foZbCf"
   >
     <div
-      className="sc-bdVaJa jmbRgh"
-      size="md"
+      className="sc-bdVaJa htfwrO"
+      size="lg"
     />
   </div>
 </div>
