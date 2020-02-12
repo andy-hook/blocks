@@ -2,733 +2,745 @@
 
 exports[`<BlockCard /> renders correctly 1`] = `
 <div
-  className="sc-bZQynM bYoYca"
+  className="sc-gZMcBi hxTbPZ"
 >
   <div
-    className="sc-ifAKCX hSVFqZ"
-  >
-    Block number
-  </div>
-  <div
-    className="sc-ifAKCX bAocBT"
-  >
-    7250672
-  </div>
-  <ul
-    className="sc-htpNat TKkfN"
-  >
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH iZUhsD"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH iZUhsD"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-    <li
-      className="sc-bxivhb bUZGRr"
-    >
-      <div
-        className="sc-bdVaJa ldkUXY"
-      >
-        <div
-          className="sc-bwzfXH MVFvm"
-        />
-      </div>
-    </li>
-  </ul>
-  <div
-    className="sc-gzVnrw ibZhkv"
+    className="sc-dnqmqq cSfvDb"
   >
     <div
-      className="sc-htoDjs bZzhDu"
+      className="sc-ifAKCX eNFEAQ sc-iwsKbI MkwSA"
+      size="md"
     >
-      <div
-        className="sc-ifAKCX bAocBT"
-      >
-        Size:
-      </div>
-      <div
-        className="sc-ifAKCX bAocBT"
-      >
-        2900
-      </div>
+      Block number
     </div>
     <div
-      className="sc-htoDjs bZzhDu"
+      className="sc-ifAKCX fzlNdf"
+      size="md"
     >
-      <div
-        className="sc-ifAKCX bAocBT"
-      >
-        Difficulty:
-      </div>
-      <div
-        className="sc-ifAKCX bAocBT"
-      >
-        1527190616
-      </div>
+      7250672
     </div>
+    <ul
+      className="sc-htpNat TKkfN"
+    >
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH iZUhsD"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH iZUhsD"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-bxivhb bUZGRr"
+      >
+        <div
+          className="sc-bdVaJa ldkUXY"
+        >
+          <div
+            className="sc-bwzfXH MVFvm"
+          />
+        </div>
+      </li>
+    </ul>
     <div
-      className="sc-htoDjs bZzhDu"
+      className="sc-bZQynM dWQCZw"
     >
       <div
-        className="sc-ifAKCX bAocBT"
+        className="sc-htoDjs kBLjtJ"
       >
-        Miner:
+        <div
+          className="sc-ifAKCX eNFEAQ sc-gzVnrw eyYgYP"
+          size="md"
+        >
+          Size:
+        </div>
+        <div
+          className="sc-ifAKCX fzlNdf"
+          size="md"
+        >
+          2900
+        </div>
       </div>
       <div
-        className="sc-ifAKCX kVcjMh"
+        className="sc-htoDjs kBLjtJ"
       >
-        0x635B4764D1939DfAcD3a8014726159abC277BecC
+        <div
+          className="sc-ifAKCX eNFEAQ sc-gzVnrw eyYgYP"
+          size="md"
+        >
+          Difficulty:
+        </div>
+        <div
+          className="sc-ifAKCX fzlNdf"
+          size="md"
+        >
+          1527190616
+        </div>
+      </div>
+      <div
+        className="sc-htoDjs kBLjtJ"
+      >
+        <div
+          className="sc-ifAKCX eNFEAQ sc-gzVnrw eyYgYP"
+          size="md"
+        >
+          Miner:
+        </div>
+        <div
+          className="sc-ifAKCX fzlNdf"
+          size="md"
+        >
+          0x635B4764D1939DfAcD3a8014726159abC277BecC
+        </div>
       </div>
     </div>
+    <a
+      href="/blocks/7250672"
+    >
+      Go to block 
+      7250672
+    </a>
   </div>
-  <a
-    href="/blocks/7250672"
-  >
-    Go to block 
-    7250672
-  </a>
 </div>
 `;

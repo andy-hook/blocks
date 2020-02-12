@@ -24,7 +24,7 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
   return <Grid>{renderItems()}</Grid>
 }
 
-export const Grid = styled.ul`
+const Grid = styled.ul`
   display: grid;
 
   min-width: 0;
@@ -34,8 +34,6 @@ export const Grid = styled.ul`
   grid-gap: ${layout.scale[13]};
 `
 
-export const GridItem = styled.li`
-  background-color: red;
-`
+const GridItem = styled.li``
 
 export default BlockList

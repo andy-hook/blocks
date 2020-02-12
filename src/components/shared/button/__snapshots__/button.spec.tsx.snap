@@ -8,7 +8,7 @@ exports[`<Button /> renders correctly 1`] = `
   target="_blank"
 >
   <span
-    className="sc-bwzfXH nlzby"
+    className="sc-bwzfXH kItmmw"
   >
     This is a button
   </span>

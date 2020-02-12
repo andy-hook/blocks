@@ -5,13 +5,13 @@ exports[`<Navigation /> renders correctly 1`] = `
   className="sc-bdVaJa bDWFJH"
 >
   <ul
-    className="sc-bwzfXH bxahJb"
+    className="sc-bwzfXH ekxecS"
   >
     <li
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb jxIoPa"
+        className="sc-bxivhb jCgkBP"
         href="/"
         onClick={[Function]}
       >
@@ -22,7 +22,7 @@ exports[`<Navigation /> renders correctly 1`] = `
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb jxIoPa"
+        className="sc-bxivhb jCgkBP"
         href="/about/"
         onClick={[Function]}
       >

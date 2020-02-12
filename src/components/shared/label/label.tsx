@@ -4,28 +4,39 @@ import {
   typeBaseSemibold,
   setBaseCropAndLineHeight,
   setBasePlaceholderCrop,
+  typeSizeBaseSm,
+  typeSizeBaseMd,
+  typeSizeBaseLg,
 } from "@style/typography"
 import { type, appearance } from "@style/design-tokens"
 import { isTheme, themeText } from "@style/theme"
+import classNames from "classnames"
 
-type IntensityTypes = "low" | "medium" | "high"
+type Intensity = "low" | "medium" | "high"
+type Size = "sm" | "md" | "lg"
 
 interface Props {
   loading?: boolean
   skeletonWidth?: "sm" | "md" | "lg"
-  truncate?: boolean
-  intensity?: IntensityTypes
+  size?: Size
+  intensity?: Intensity
+  className?: string
 }
 
 const Label: React.FunctionComponent<Props> = ({
   children,
+  className,
   loading,
   skeletonWidth = "md",
-  truncate = false,
   intensity = "medium",
+  size = "md",
 }) => {
   return (
-    <Text truncate={truncate} intensity={intensity}>
+    <Text
+      intensity={intensity}
+      size={size}
+      className={classNames("", className)}
+    >
       {loading ? (
         <Skeleton skeletonWidth={skeletonWidth}>&nbsp;</Skeleton>
       ) : (
@@ -41,28 +52,32 @@ const skeletonWidths = {
   lg: "7em",
 }
 
+const textSize = {
+  sm: typeSizeBaseSm,
+  md: typeSizeBaseMd,
+  lg: typeSizeBaseLg,
+}
+
 const textColors = {
-  low: themeText(800),
+  low: themeText(900),
   medium: themeText(500),
   high: themeText(700),
 }
 
 const Text = styled.div<{
-  truncate: boolean
-  intensity: IntensityTypes
+  intensity: Intensity
+  size: Size
 }>`
   ${setBaseCropAndLineHeight(type.lineHeight.base.regular)}
   ${typeBaseSemibold}
+  ${props => textSize[props.size]};
+
   position: relative;
 
   color: ${props => textColors[props.intensity]};
 
-  ${props =>
-    props.truncate &&
-    `
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;`}
+  
+
   ${isTheme(
     "dark",
     css`

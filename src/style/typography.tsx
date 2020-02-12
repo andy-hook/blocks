@@ -6,8 +6,8 @@ import { type } from "./design-tokens"
 /* Base text cropping
   ------------------------------------------------- */
 const baseCropSettings = {
-  topCrop: 6,
-  bottomCrop: 11,
+  topCrop: 11,
+  bottomCrop: 20,
 }
 
 export const setBaseCropAndLineHeight = (lHeight: number) => {
@@ -27,8 +27,8 @@ export const setBasePlaceholderCrop = (lHeight: number) => {
 /* Display text cropping
   ------------------------------------------------- */
 const displayCropSettings = {
-  topCrop: 6,
-  bottomCrop: 11,
+  topCrop: 4,
+  bottomCrop: 19,
 }
 
 export const setDisplayCropAndLineHeight = (lHeight: number) => {
@@ -89,68 +89,16 @@ export const typeDisplayButton = css`
 
 /* Base type sizes
   ------------------------------------------------- */
-export const typeSizeBaseXs = css`
-  font-size: ${type.scale[1]};
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[1],
-    type.scale[4],
-    "topThumb",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[4], "topUltra")}
-`
-
 export const typeSizeBaseSm = css`
-  font-size: ${type.scale[3]};
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[3],
-    type.scale[5],
-    "topThumb",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[5], "topUltra")}
+  font-size: ${type.scale[1]};
 `
 
 export const typeSizeBaseMd = css`
-  font-size: ${type.scale[5]};
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[5],
-    type.scale[6],
-    "topThumb",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[6], "topUltra")}
+  font-size: ${type.scale[2]};
 `
 
 export const typeSizeBaseLg = css`
-  font-size: ${type.scale[4]};
-  
-  ${scaleBetween(
-    "font-size",
-    type.scale[4],
-    type.scale[6],
-    "topThumb",
-    "bottomWide"
-  )}
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[6],
-    type.scale[7],
-    "topWide",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[7], "topUltra")}
+  font-size: ${type.scale[3]};
 `
 
 /* Display type sizes

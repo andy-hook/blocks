@@ -5,6 +5,7 @@ import TransactionsSummary from "@components/shared/block-card/transactions-summ
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
+import CardDetails from "../card-details/card-details"
 
 interface Props {
   blockNumber?: number
@@ -36,7 +37,7 @@ const CardContent: React.FunctionComponent<Props> = ({
   return (
     <Card>
       {/* Title info */}
-      <Label intensity="low">Block number</Label>
+      <NumberLabel intensity="low">Block number</NumberLabel>
       <Label loading={loading} skeletonWidth="sm">
         {blockNumber}
       </Label>
@@ -45,26 +46,12 @@ const CardContent: React.FunctionComponent<Props> = ({
       {renderTrxAsPlaceholderOrPopulated(transactions)}
 
       {/* Details */}
-      <CardDetails>
-        <CardDetailsItem>
-          <Label>Size:</Label>
-          <Label loading={loading} skeletonWidth="sm">
-            {size}
-          </Label>
-        </CardDetailsItem>
-        <CardDetailsItem>
-          <Label>Difficulty:</Label>
-          <Label loading={loading} skeletonWidth="md">
-            {difficulty}
-          </Label>
-        </CardDetailsItem>
-        <CardDetailsItem>
-          <Label>Miner:</Label>
-          <Label loading={loading} truncate={true} skeletonWidth="lg">
-            {miner}
-          </Label>
-        </CardDetailsItem>
-      </CardDetails>
+      <CardDetails
+        size={size}
+        difficulty={difficulty}
+        miner={miner}
+        loading={loading}
+      />
 
       {/* CTA */}
       <Link to={`/blocks/${blockNumber}`}>Go to block {blockNumber}</Link>
@@ -72,12 +59,12 @@ const CardContent: React.FunctionComponent<Props> = ({
   )
 }
 
-export const Card = styled.div`
+const Card = styled.div`
   padding: ${layout.scale[10]};
 `
 
-export const CardDetails = styled.div``
-
-export const CardDetailsItem = styled.div``
+const NumberLabel = styled(Label)`
+  margin-bottom: ${layout.scale[5]};
+`
 
 export default CardContent
