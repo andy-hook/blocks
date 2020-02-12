@@ -5,7 +5,7 @@ exports[`<CardDetails /> renders correctly 1`] = `
   className="sc-htpNat cixthU"
 >
   <div
-    className="sc-ifAKCX gGIkVs"
+    className="sc-ifAKCX kYjtTL"
   >
     <div
       className="sc-bdVaJa xGfmu sc-bxivhb cCMofR"
@@ -19,7 +19,7 @@ exports[`<CardDetails /> renders correctly 1`] = `
     />
   </div>
   <div
-    className="sc-ifAKCX gGIkVs"
+    className="sc-EHOje AjppZ"
   >
     <div
       className="sc-bdVaJa xGfmu sc-bxivhb cCMofR"
@@ -33,7 +33,7 @@ exports[`<CardDetails /> renders correctly 1`] = `
     />
   </div>
   <div
-    className="sc-ifAKCX gGIkVs"
+    className="sc-bZQynM idaocs"
   >
     <div
       className="sc-bdVaJa xGfmu sc-bxivhb cCMofR"

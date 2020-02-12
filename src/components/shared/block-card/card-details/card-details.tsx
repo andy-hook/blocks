@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Label from "@components/shared/label/label"
 import { layout } from "@style/design-tokens"
+import TruncateString from "react-truncate-string"
 
 interface Props {
   size?: number
@@ -18,24 +19,24 @@ const CardDetails: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <Details>
-      <DetailsItem>
+      <SizeItem>
         <DetailsTitle intensity="low">Size:</DetailsTitle>
         <Label loading={loading} skeletonWidth="sm">
           {size}
         </Label>
-      </DetailsItem>
-      <DetailsItem>
+      </SizeItem>
+      <DifficultyItem>
         <DetailsTitle intensity="low">Difficulty:</DetailsTitle>
         <Label loading={loading} skeletonWidth="md">
           {difficulty}
         </Label>
-      </DetailsItem>
-      <DetailsItem>
+      </DifficultyItem>
+      <MinerItem>
         <DetailsTitle intensity="low">Miner:</DetailsTitle>
         <Label loading={loading} skeletonWidth="lg">
-          {miner}
+          <TruncateString text={miner} truncateAt={40} />
         </Label>
-      </DetailsItem>
+      </MinerItem>
     </Details>
   )
 }
@@ -48,8 +49,16 @@ const DetailsTitle = styled(Label)`
   margin-bottom: ${layout.scale[2]};
 `
 
-const DetailsItem = styled.div`
-  width: 33.333%;
+const SizeItem = styled.div`
+  width: 16%;
+`
+
+const DifficultyItem = styled.div`
+  width: 34%;
+`
+
+const MinerItem = styled.div`
+  width: 40%;
 `
 
 export default CardDetails

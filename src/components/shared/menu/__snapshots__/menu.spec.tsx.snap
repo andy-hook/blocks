@@ -17,13 +17,13 @@ exports[`<Menu /> renders correctly 1`] = `
           className="sc-fjdhpX jCIpEH"
         >
           <ul
-            className="sc-gzVnrw fmKEjx"
+            className="sc-gzVnrw kvhoeX"
           >
             <li
               className="sc-htoDjs fdzoDX"
             >
               <a
-                className="sc-dnqmqq kSpATj"
+                className="sc-dnqmqq cjatOd"
                 href="/"
                 onClick={[Function]}
               >
@@ -34,7 +34,7 @@ exports[`<Menu /> renders correctly 1`] = `
               className="sc-htoDjs fdzoDX"
             >
               <a
-                className="sc-dnqmqq kSpATj"
+                className="sc-dnqmqq cjatOd"
                 href="/about/"
                 onClick={[Function]}
               >

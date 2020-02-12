@@ -2,13 +2,13 @@
 
 exports[`<MenuNavList /> renders correctly 1`] = `
 <ul
-  className="sc-bdVaJa dlvKWQ"
+  className="sc-bdVaJa bPGLpq"
 >
   <li
     className="sc-bwzfXH gdYRbz"
   >
     <a
-      className="sc-htpNat fuNnyw"
+      className="sc-htpNat dzlMcZ"
       href="/"
       onClick={[Function]}
     >
@@ -19,7 +19,7 @@ exports[`<MenuNavList /> renders correctly 1`] = `
     className="sc-bwzfXH gdYRbz"
   >
     <a
-      className="sc-htpNat fuNnyw"
+      className="sc-htpNat dzlMcZ"
       href="/about/"
       onClick={[Function]}
     >

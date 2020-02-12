@@ -2,19 +2,19 @@
 
 exports[`<BlockCard /> renders correctly 1`] = `
 <div
-  className="sc-cSHVUG dXYPjI"
+  className="sc-chPdSV evKbJl"
 >
   <div
-    className="sc-jTzLTM dcymiG"
+    className="sc-jzJRlG hJqnBo"
   >
     <div
-      className="sc-EHOje lDWDu sc-fjdhpX ipPrjQ"
+      className="sc-EHOje lDWDu sc-cSHVUG hgJMFS"
       size="md"
     >
       Block number
     </div>
     <div
-      className="sc-iwsKbI jGtia"
+      className="sc-gqjmRU clhTnE"
       size="md"
     >
       # 
@@ -692,7 +692,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
       className="sc-gzVnrw tDqEr"
     >
       <div
-        className="sc-dnqmqq kwSpaS"
+        className="sc-dnqmqq fIzaDg"
       >
         <div
           className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
@@ -708,7 +708,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-dnqmqq kwSpaS"
+        className="sc-iwsKbI oGtyr"
       >
         <div
           className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
@@ -724,7 +724,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-dnqmqq kwSpaS"
+        className="sc-gZMcBi hLskcw"
       >
         <div
           className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
@@ -735,21 +735,19 @@ exports[`<BlockCard /> renders correctly 1`] = `
         <div
           className="sc-EHOje bxudVz"
           size="md"
-        >
-          0x635B4764D1939DfAcD3a8014726159abC277BecC
-        </div>
+        />
       </div>
     </div>
     <div
-      className="sc-jzJRlG kAhIWh"
+      className="sc-kAzzGY jGZfpE"
     >
       <a
         buttonType="secondary"
-        className="sc-gqjmRU bbiiUi"
+        className="sc-jTzLTM AcgRr"
         href="/blocks/7250672"
       >
         <span
-          className="sc-VigVT ermOJc"
+          className="sc-fjdhpX bfkhVz"
         >
           More Details
         </span>
