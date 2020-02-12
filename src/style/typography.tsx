@@ -1,5 +1,4 @@
 import { css } from "styled-components"
-import { scaleBetween, scaleGreaterThan } from "./media-queries"
 import { createTextCrop, createPlaceholderCrop } from "./utils"
 import { type } from "./design-tokens"
 
@@ -103,72 +102,14 @@ export const typeSizeBaseLg = css`
 
 /* Display type sizes
   ------------------------------------------------- */
-export const typeSizeDisplayXs = css``
-
-export const typeSizeDisplaySm = css``
+export const typeSizeDisplaySm = css`
+  font-size: ${type.scale[7]};
+`
 
 export const typeSizeDisplayMd = css`
-  font-size: ${type.scale[7]};
-  
-  ${scaleBetween(
-    "font-size",
-    type.scale[7],
-    type.scale[9],
-    "topThumb",
-    "bottomWide"
-  )}
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[9],
-    type.scale[10],
-    "topWide",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[10], "topUltra")}
+  font-size: ${type.scale[10]};
 `
 
 export const typeSizeDisplayLg = css`
-  font-size: ${type.scale[8]};
-  
-  ${scaleBetween(
-    "font-size",
-    type.scale[8],
-    type.scale[10],
-    "topThumb",
-    "bottomWide"
-  )}
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[10],
-    type.scale[11],
-    "topWide",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[11], "topUltra")}
-`
-
-export const typeSizeDisplayXl = css`
-  font-size: ${type.scale[9]};
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[9],
-    type.scale[11],
-    "bottomThumb",
-    "bottomDesk"
-  )}
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[11],
-    type.scale[11],
-    "topDesk",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[11], "topUltra")}
+  font-size: ${type.scale[11]};
 `
