@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardDetails /> renders correctly 1`] = `
+<div
+  className="sc-htpNat hVfoDw"
+>
+  <div
+    className="sc-ifAKCX gGIkVs"
+  >
+    <div
+      className="sc-bdVaJa ewYFtG sc-bxivhb cCMofR"
+      size="md"
+    >
+      Size:
+    </div>
+    <div
+      className="sc-bdVaJa loxQHx"
+      size="md"
+    />
+  </div>
+  <div
+    className="sc-ifAKCX gGIkVs"
+  >
+    <div
+      className="sc-bdVaJa ewYFtG sc-bxivhb cCMofR"
+      size="md"
+    >
+      Difficulty:
+    </div>
+    <div
+      className="sc-bdVaJa loxQHx"
+      size="md"
+    />
+  </div>
+  <div
+    className="sc-ifAKCX gGIkVs"
+  >
+    <div
+      className="sc-bdVaJa ewYFtG sc-bxivhb cCMofR"
+      size="md"
+    >
+      Miner:
+    </div>
+    <div
+      className="sc-bdVaJa loxQHx"
+      size="md"
+    />
+  </div>
+</div>
+`;
