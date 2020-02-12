@@ -16,7 +16,7 @@ const letterSpacing = {
   base: {
     regular: "0.01em",
     medium: "0.01em",
-    semibold: "0.01em",
+    semibold: "0.0025em",
   },
   display: {
     bold: "-0.02em",

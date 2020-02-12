@@ -1,6 +1,7 @@
 import React from "react"
 import { Web3TransactionData } from "model"
 import styled from "styled-components"
+import { layout, appearance } from "@style/design-tokens"
 
 interface Props {
   value?: number
@@ -10,20 +11,29 @@ interface Props {
 }
 
 const TransactionPip: React.FunctionComponent<Props> = ({ value, loading }) => {
-  return <Pip hasValue={value ? value > 0 : false} isLoading={loading} />
+  return (
+    <PipOuter>
+      <PipInner hasValue={value ? value > 0 : false} isLoading={loading} />
+    </PipOuter>
+  )
 }
 
-export const Pip = styled.div<{
+const PipOuter = styled.div`
+  padding: ${layout.scale[1]};
+`
+
+const PipInner = styled.div<{
   isLoading: Props["loading"]
   hasValue?: boolean
 }>`
-  width: 1em;
-  height: 1em;
+  width: ${layout.scale[4]};
+  height: ${layout.scale[4]};
 
   background-color: brown;
 
+  border-radius: ${appearance.radius.circle};
   ${props => props.hasValue && `background-color: hotpink;`}
-  ${props => props.isLoading && `background-color: purple;`}
+  ${props => props.isLoading && `background-color: purple;`};
 `
 
 export default TransactionPip
