@@ -4,6 +4,7 @@ import TransactionPip from "@components/shared/block-card/transaction-pip/transa
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { themeText } from "@style/theme"
+import { mq } from "@style/media-queries"
 
 interface Props {
   transactions?: Web3TransactionData[]
@@ -68,6 +69,10 @@ const Grid = styled.ul`
   flex-wrap: wrap;
 
   margin: -${layout.scale[1]};
+
+  ${mq.greaterThan("topDesk")`
+    max-width: 90%;
+  `}
 `
 
 const GridItem = styled.li``

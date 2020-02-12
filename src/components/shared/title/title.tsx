@@ -58,7 +58,7 @@ const textSize = {
   lg: typeSizeDisplayLg,
 }
 
-const textColors = {
+const textIntensity = {
   low: themeText(900),
   medium: themeText(500),
   high: themeText(100),
@@ -73,7 +73,7 @@ const Text = styled.div<{
   ${props => textSize[props.size]};
 
   position: relative;
-  color: ${props => textColors[props.intensity]};
+  color: ${props => textIntensity[props.intensity]};
 
   ${isTheme(
     "dark",
