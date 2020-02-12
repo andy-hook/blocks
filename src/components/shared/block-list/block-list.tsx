@@ -16,7 +16,9 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
     return Array.from(Array(BLOCK_COUNT)).map((_, index) => {
       return (
         <GridItem key={index}>
-          <BlockCard blockData={blockData && blockData[index]} />
+          <GridItemOffset isEven={(index + 1) % 2 === 0}>
+            <BlockCard blockData={blockData && blockData[index]} />
+          </GridItemOffset>
         </GridItem>
       )
     })
@@ -24,6 +26,8 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
 
   return <Grid>{renderItems()}</Grid>
 }
+
+const gridItemOffsetAmount = layout.scale[16]
 
 const Grid = styled.ul`
   display: grid;
@@ -37,6 +41,8 @@ const Grid = styled.ul`
   ${mq.greaterThan("topLap")`
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: ${layout.scale[10]};
+
+    padding-bottom: ${gridItemOffsetAmount};
   `}
 
   ${mq.greaterThan("topDesk")`
@@ -53,5 +59,14 @@ const Grid = styled.ul`
 `
 
 const GridItem = styled.li``
+
+const GridItemOffset = styled.div<{ isEven: boolean }>`
+  ${props =>
+    props.isEven &&
+    mq.greaterThan("topLap")`
+    position: relative;
+    top: ${gridItemOffsetAmount};
+  `};
+`
 
 export default BlockList

@@ -1,6 +1,7 @@
 import { css } from "styled-components"
 import { createTextCrop, createPlaceholderCrop } from "./utils"
 import { type } from "./design-tokens"
+import { mq } from "./media-queries"
 
 /* Base text cropping
   ------------------------------------------------- */
@@ -107,7 +108,11 @@ export const typeSizeDisplaySm = css`
 `
 
 export const typeSizeDisplayMd = css`
-  font-size: ${type.scale[10]};
+  font-size: ${type.scale[9]};
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[10]};
+  `}
 `
 
 export const typeSizeDisplayLg = css`
