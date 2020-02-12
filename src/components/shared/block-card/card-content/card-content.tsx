@@ -10,9 +10,9 @@ import Button from "@components/shared/button/button"
 import { mq } from "@style/media-queries"
 
 interface Props {
-  blockNumber?: number
+  blockNumber?: string
   transactions?: Web3BlockData["transactionsData"]
-  size?: number
+  size?: string
   difficulty?: string
   miner?: string
   loading?: boolean

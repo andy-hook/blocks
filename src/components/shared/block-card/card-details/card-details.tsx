@@ -6,7 +6,7 @@ import TruncateString from "react-truncate-string"
 import { mq } from "@style/media-queries"
 
 interface Props {
-  size?: number
+  size?: string
   difficulty?: string
   miner?: string
   loading?: boolean
@@ -24,7 +24,7 @@ const CardDetails: React.FunctionComponent<Props> = ({
       <SizeItem>
         <DetailsTitle intensity="low">Size</DetailsTitle>
         <DetailsValue loading={loading} skeletonWidth="sm">
-          {size}
+          <TruncateString text={size + "B"} truncateAt={20} />
         </DetailsValue>
       </SizeItem>
 
