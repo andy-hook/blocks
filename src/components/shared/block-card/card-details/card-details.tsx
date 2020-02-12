@@ -22,7 +22,7 @@ const CardDetails: React.FunctionComponent<Props> = ({
     <Details>
       {/* Size */}
       <SizeItem>
-        <DetailsTitle intensity="low">Size:</DetailsTitle>
+        <DetailsTitle intensity="low">Size</DetailsTitle>
         <DetailsValue loading={loading} skeletonWidth="sm">
           {size}
         </DetailsValue>
@@ -30,7 +30,7 @@ const CardDetails: React.FunctionComponent<Props> = ({
 
       {/* Difficulty */}
       <DifficultyItem>
-        <DetailsTitle intensity="low">Difficulty:</DetailsTitle>
+        <DetailsTitle intensity="low">Difficulty</DetailsTitle>
         <DetailsValue loading={loading} skeletonWidth="md">
           <TruncateString text={difficulty} truncateAt={20} />
         </DetailsValue>
@@ -38,7 +38,7 @@ const CardDetails: React.FunctionComponent<Props> = ({
 
       {/* Miner */}
       <MinerItem>
-        <DetailsTitle intensity="low">Miner:</DetailsTitle>
+        <DetailsTitle intensity="low">Miner</DetailsTitle>
         <DetailsValue loading={loading} skeletonWidth="lg">
           <TruncateString text={miner} truncateAt={40} />
         </DetailsValue>
