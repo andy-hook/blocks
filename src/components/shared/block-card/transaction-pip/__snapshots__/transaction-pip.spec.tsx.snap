@@ -2,6 +2,10 @@
 
 exports[`<TransactionPip /> renders correctly 1`] = `
 <div
-  className="sc-bdVaJa bcFhNJ"
-/>
+  className="sc-bdVaJa ldkUXY"
+>
+  <div
+    className="sc-bwzfXH iZUhsD"
+  />
+</div>
 `;
