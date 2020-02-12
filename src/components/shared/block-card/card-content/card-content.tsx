@@ -7,6 +7,7 @@ import Label from "@components/shared/label/label"
 import CardDetails from "../card-details/card-details"
 import Title from "@components/shared/title/title"
 import Button from "@components/shared/button/button"
+import { mq } from "@style/media-queries"
 
 interface Props {
   blockNumber?: number
@@ -65,7 +66,23 @@ const CardContent: React.FunctionComponent<Props> = ({
 }
 
 const Card = styled.div`
-  padding: ${layout.scale[10]};
+  padding: ${layout.scale[7]};
+
+  ${mq.greaterThan("topPalm")`
+    padding: ${layout.scale[9]};
+  `}
+
+  ${mq.greaterThan("topLap")`
+    padding: ${layout.scale[8]};
+  `}
+
+  ${mq.greaterThan("topWide")`
+    padding: ${layout.scale[9]};
+  `}
+
+  ${mq.greaterThan("topWall")`
+    padding: ${layout.scale[10]};
+  `}
 `
 
 const NumberLabel = styled(Label)`
