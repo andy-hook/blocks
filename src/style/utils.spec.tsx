@@ -7,10 +7,19 @@ import {
   createHsla,
   createCubicBezier,
   createTextCrop,
+  createPlaceholderCrop,
 } from "./utils"
 
 const CroppedTextComponent = styled.div`
   ${createTextCrop({
+    lHeight: 1.5,
+    topCrop: 10,
+    bottomCrop: 15,
+  })}
+`
+
+const CroppedPlaceholderComponent = styled.div`
+  ${createPlaceholderCrop({
     lHeight: 1.5,
     topCrop: 10,
     bottomCrop: 15,
@@ -48,5 +57,15 @@ describe("createTextCrop", () => {
     expect(tree).toHaveStyleRule("margin-top", "calc(-0.4em + 0px)", {
       modifier: "::after",
     })
+  })
+})
+
+fdescribe("createPlaceholderCrop", () => {
+  test("should apply correct top and bottom crop offsetting", () => {
+    const tree = renderer.create(<CroppedPlaceholderComponent />).toJSON()
+
+    expect(tree).toHaveStyleRule("top", "calc(0.35em + 0px)")
+
+    expect(tree).toHaveStyleRule("bottom", "calc(0.4em + 0px)")
   })
 })

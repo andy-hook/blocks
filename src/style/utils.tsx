@@ -54,3 +54,26 @@ export function createTextCrop(
     }
   `
 }
+
+export function createPlaceholderCrop(
+  settings: CropSettings,
+  topAdjustment = "0px",
+  bottomAdjustment = "0px"
+) {
+  const { lHeight, topCrop, bottomCrop } = settings
+
+  const cropFontSize = 100
+  const cropLineHeight = 1
+
+  const dynamicTopCrop =
+    Math.max(topCrop + (lHeight - cropLineHeight) * (cropFontSize / 2), 0) /
+    cropFontSize
+  const dynamicBottomCrop =
+    Math.max(bottomCrop + (lHeight - cropLineHeight) * (cropFontSize / 2), 0) /
+    cropFontSize
+
+  return css`
+    top: calc(${dynamicTopCrop}em + ${topAdjustment});
+    bottom: calc(${dynamicBottomCrop}em + ${bottomAdjustment});
+  `
+}

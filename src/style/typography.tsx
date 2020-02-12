@@ -1,30 +1,51 @@
 import { css } from "styled-components"
-import { themeText, isTheme } from "@style/theme"
 import { scaleBetween, scaleGreaterThan } from "./media-queries"
-import { createTextCrop } from "./utils"
-import { type, appearance } from "./design-tokens"
+import { createTextCrop, createPlaceholderCrop } from "./utils"
+import { type } from "./design-tokens"
 
 /* Base text cropping
   ------------------------------------------------- */
+const baseCropSettings = {
+  topCrop: 6,
+  bottomCrop: 11,
+}
+
 export const setBaseCropAndLineHeight = (lHeight: number) => {
   return createTextCrop({
+    ...baseCropSettings,
     lHeight,
-    topCrop: 10,
-    bottomCrop: 15,
+  })
+}
+
+export const setBasePlaceholderCrop = (lHeight: number) => {
+  return createPlaceholderCrop({
+    ...baseCropSettings,
+    lHeight,
   })
 }
 
 /* Display text cropping
   ------------------------------------------------- */
+const displayCropSettings = {
+  topCrop: 6,
+  bottomCrop: 11,
+}
+
 export const setDisplayCropAndLineHeight = (lHeight: number) => {
   return createTextCrop({
+    ...displayCropSettings,
     lHeight,
-    topCrop: 4,
-    bottomCrop: 19,
   })
 }
 
-/* Re-composibles
+export const setDisplayPlaceholderCrop = (lHeight: number) => {
+  return createPlaceholderCrop({
+    ...displayCropSettings,
+    lHeight,
+  })
+}
+
+/* Recomposibles
   ------------------------------------------------- */
 export const typeBase = css`
   font-family: ${type.fontFamily.base};
@@ -64,43 +85,6 @@ export const typeDisplayButton = css`
   font-family: ${type.fontFamily.display};
   font-weight: ${type.fontWeight.display.bold};
   letter-spacing: ${type.letterSpacing.display.button};
-`
-
-/* Composites
-  ------------------------------------------------- */
-export const typeTitle = css`
-  ${setDisplayCropAndLineHeight(type.lineHeight.display.tight)}
-  ${typeDisplayBold}
-
-  color: ${themeText(200)};
-
-  ${isTheme(
-    "dark",
-    css`
-      text-shadow: ${appearance.textShadow.heavy};
-    `
-  )};
-`
-
-export const typeSupTitle = css`
-  ${setBaseCropAndLineHeight(type.lineHeight.display.tight)}
-  ${typeBaseMedium}
-
-  color: ${themeText(900)};
-`
-
-export const typeBody = css`
-  ${setBaseCropAndLineHeight(type.lineHeight.base.regular)}
-  ${typeBaseRegular}
-
-  color: ${themeText(800)};
-`
-
-export const typeBodySubtle = css`
-  ${setBaseCropAndLineHeight(type.lineHeight.base.regular)}
-  ${typeBaseRegular}
-
-  color: ${themeText(900)};
 `
 
 /* Base type sizes

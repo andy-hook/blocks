@@ -1,10 +1,10 @@
 import React from "react"
-import TextSkeleton from "./text-skeleton"
+import Value from "./value"
 import { renderWithTheme } from "@test-utils"
 
-describe("<LabelText />", () => {
+describe("<Value />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <TextSkeleton />)
+    const tree = renderWithTheme("dark", <Value />)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -23,7 +23,7 @@ exports[`<Menu /> renders correctly 1`] = `
               className="sc-htoDjs fdzoDX"
             >
               <a
-                className="sc-dnqmqq iYXKjM"
+                className="sc-dnqmqq kSpATj"
                 href="/"
                 onClick={[Function]}
               >
@@ -34,7 +34,7 @@ exports[`<Menu /> renders correctly 1`] = `
               className="sc-htoDjs fdzoDX"
             >
               <a
-                className="sc-dnqmqq iYXKjM"
+                className="sc-dnqmqq kSpATj"
                 href="/about/"
                 onClick={[Function]}
               >
