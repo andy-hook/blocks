@@ -42,11 +42,6 @@ const CardDetails: React.FunctionComponent<Props> = ({
 
 const Details = styled.div`
   display: flex;
-
-  border-top: 1px solid red;
-
-  margin-top: ${layout.scale[7]};
-  padding-top: ${layout.scale[7]};
 `
 
 const DetailsTitle = styled(Label)`

@@ -6,6 +6,7 @@ import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
 import CardDetails from "../card-details/card-details"
+import Title from "@components/shared/title/title"
 
 interface Props {
   blockNumber?: number
@@ -38,9 +39,9 @@ const CardContent: React.FunctionComponent<Props> = ({
     <Card>
       {/* Title info */}
       <NumberLabel intensity="low">Block number</NumberLabel>
-      <Label loading={loading} skeletonWidth="sm">
-        {blockNumber}
-      </Label>
+      <Title intensity="high" loading={loading} skeletonWidth="sm">
+        &#x23;&nbsp;{blockNumber}
+      </Title>
 
       {/* Transactions */}
       {renderTrxAsPlaceholderOrPopulated(transactions)}

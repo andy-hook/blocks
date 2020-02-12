@@ -6,11 +6,7 @@ import {
 } from "@hooks/page-transition"
 import classNames from "classnames"
 import styled from "styled-components"
-import {
-  typeBaseSemibold,
-  typeSizeBaseXs,
-  setBaseCropAndLineHeight,
-} from "@style/typography"
+import { typeBaseSemibold, setBaseCropAndLineHeight } from "@style/typography"
 import Link from "gatsby-plugin-transition-link"
 import { themeText } from "@style/theme"
 import { type } from "@style/design-tokens"
@@ -64,7 +60,6 @@ const itemPadding = "1em"
 
 export const List = styled.ul`
   ${typeBaseSemibold}
-  ${typeSizeBaseXs}
 
   display: flex;
   margin-right: -${itemPadding};
