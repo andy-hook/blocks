@@ -1,10 +1,12 @@
-import styled from "styled-components"
 import React, { memo, useEffect, useState } from "react"
 import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 import { Web3BlockData } from "model"
 import { requestBlocks } from "@web3/web3-data-request"
 import { useWeb3Context } from "@web3/web3-provider"
 import Page from "@components/shared/page/page"
+import Gutter from "@components/shared/gutter/gutter"
+import Limiter from "@components/shared/limiter/limiter"
+import BlockDetails from "@components/shared/block-details/block-details"
 
 interface Props {
   path: string
@@ -63,18 +65,13 @@ const Block: React.FunctionComponent<Props> = memo(({ blockNumberFromUrl }) => {
 
   return (
     <Page>
-      <Container>
-        Hello from block #{blockNumberFromUrl} <br />{" "}
-        {blockData.data && blockData.data.transactionCount}
-      </Container>
+      <Gutter>
+        <Limiter size="large">
+          <BlockDetails blockData={blockData.data} />
+        </Limiter>
+      </Gutter>
     </Page>
   )
 })
 
 export default Block
-
-const Container = styled.div`
-  color: red;
-  padding-top: 300px;
-  height: 2000px;
-`

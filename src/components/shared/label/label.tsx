@@ -14,10 +14,11 @@ import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
 type Size = "sm" | "md" | "lg"
+export type SkeletonWidth = "sm" | "md" | "lg"
 
 interface Props {
   loading?: boolean
-  skeletonWidth?: "sm" | "md" | "lg"
+  skeletonWidth?: SkeletonWidth
   size?: Size
   intensity?: Intensity
   className?: string
@@ -87,7 +88,13 @@ const Text = styled.div<{
 `
 
 const Skeleton = styled.div<Props>`
+  display: inline-block;
   position: relative;
+
+  width: 100%;
+
+  ${props =>
+    props.skeletonWidth && `max-width: ${skeletonWidths[props.skeletonWidth]}`};
 
   &:before {
     ${setBasePlaceholderCrop(type.lineHeight.base.regular)}
@@ -100,10 +107,6 @@ const Skeleton = styled.div<Props>`
     width: 100%;
 
     background-color: currentColor;
-
-    ${props =>
-      props.skeletonWidth &&
-      `max-width: ${skeletonWidths[props.skeletonWidth]}`};
   }
 `
 

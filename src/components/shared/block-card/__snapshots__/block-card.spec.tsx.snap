@@ -703,9 +703,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
         <div
           className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
           size="md"
-        >
-          2900
-        </div>
+        />
       </div>
       <div
         className="sc-gZMcBi jWPKqd"

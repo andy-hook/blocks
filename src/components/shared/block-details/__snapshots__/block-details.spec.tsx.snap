@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockDetails /> renders correctly 1`] = `
+<div
+  className="sc-ifAKCX jmbKll"
+>
+  Block number 
+   Transactions
+  <ul
+    className="sc-EHOje jvzENE"
+  >
+    <div
+      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+    >
+      Size
+      <div
+        className="sc-bxivhb qtnqi"
+      >
+        <div
+          className="sc-bdVaJa jmbRgh"
+          size="md"
+        >
+          <div
+            className="sc-bwzfXH eAbjIM"
+          >
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+    >
+      Difficulty
+      <div
+        className="sc-bxivhb qtnqi"
+      >
+        <div
+          className="sc-bdVaJa jmbRgh"
+          size="md"
+        >
+          <div
+            className="sc-bwzfXH dXrMlk"
+          >
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+    >
+      Total Difficulty
+      <div
+        className="sc-bxivhb qtnqi"
+      >
+        <div
+          className="sc-bdVaJa jmbRgh"
+          size="md"
+        >
+          <div
+            className="sc-bwzfXH dTNUzo"
+          >
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+    >
+      Gas Used
+      <div
+        className="sc-bxivhb qtnqi"
+      >
+        <div
+          className="sc-bdVaJa jmbRgh"
+          size="md"
+        >
+          <div
+            className="sc-bwzfXH dXrMlk"
+          >
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+    >
+      Gas Limit
+      <div
+        className="sc-bxivhb qtnqi"
+      >
+        <div
+          className="sc-bdVaJa jmbRgh"
+          size="md"
+        >
+          <div
+            className="sc-bwzfXH eAbjIM"
+          >
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>
+`;

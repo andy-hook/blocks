@@ -712,9 +712,7 @@ exports[`<BlockList /> renders correctly 1`] = `
               <div
                 className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
                 size="md"
-              >
-                2900
-              </div>
+              />
             </div>
             <div
               className="sc-gZMcBi jWPKqd"
@@ -1472,9 +1470,7 @@ exports[`<BlockList /> renders correctly 1`] = `
               <div
                 className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
                 size="md"
-              >
-                2900
-              </div>
+              />
             </div>
             <div
               className="sc-gZMcBi jWPKqd"
@@ -2237,7 +2233,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -2257,7 +2253,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -2277,7 +2273,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -3016,7 +3012,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -3036,7 +3032,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -3056,7 +3052,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -3795,7 +3791,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -3815,7 +3811,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -3835,7 +3831,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -4574,7 +4570,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -4594,7 +4590,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -4614,7 +4610,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -5353,7 +5349,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -5373,7 +5369,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -5393,7 +5389,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -6132,7 +6128,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -6152,7 +6148,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -6172,7 +6168,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -6911,7 +6907,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -6931,7 +6927,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -6951,7 +6947,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>
@@ -7690,7 +7686,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM cZVjXQ"
+                  className="sc-bZQynM dOkkps"
                 >
                    
                 </div>
@@ -7710,7 +7706,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM UXhzX"
+                  className="sc-bZQynM jGlszk"
                 >
                    
                 </div>
@@ -7730,7 +7726,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 size="md"
               >
                 <div
-                  className="sc-bZQynM falsAF"
+                  className="sc-bZQynM FOkfj"
                 >
                    
                 </div>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockInfoRow /> renders correctly 1`] = `
+<div
+  className="sc-htpNat fPsaOJ"
+>
+  string
+  <div
+    className="sc-bxivhb qtnqi"
+  >
+    <div
+      className="sc-bdVaJa jmbRgh"
+      size="md"
+    />
+  </div>
+</div>
+`;
