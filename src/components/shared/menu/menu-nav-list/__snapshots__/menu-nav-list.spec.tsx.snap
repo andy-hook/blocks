@@ -8,7 +8,7 @@ exports[`<MenuNavList /> renders correctly 1`] = `
     className="sc-bwzfXH gdYRbz"
   >
     <a
-      className="sc-htpNat jzrKZq"
+      className="sc-htpNat fuNnyw"
       href="/"
       onClick={[Function]}
     >
@@ -19,7 +19,7 @@ exports[`<MenuNavList /> renders correctly 1`] = `
     className="sc-bwzfXH gdYRbz"
   >
     <a
-      className="sc-htpNat jzrKZq"
+      className="sc-htpNat fuNnyw"
       href="/about/"
       onClick={[Function]}
     >

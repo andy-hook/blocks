@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 import TransactionsSummary from "@components/shared/block-card/transactions-summary/transactions-summary"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
-import LabelText from "@components/shared/label-text/label-text"
+import Value from "@components/shared/value/value"
+import Label from "@components/shared/label/label"
 
 interface Props {
   blockNumber?: number
@@ -36,10 +37,10 @@ const BlockCard: React.FunctionComponent<Props> = ({
   return (
     <Card>
       {/* Title info */}
-      <LabelText>Block number</LabelText>
-      <LabelText loading={loading} skeletonWidth="xl">
+      <Label>Block number</Label>
+      <Value loading={loading} skeletonWidth="sm">
         {blockNumber}
-      </LabelText>
+      </Value>
 
       {/* Transactions */}
       {renderTrxAsPlaceholderOrPopulated(transactions)}
@@ -47,22 +48,22 @@ const BlockCard: React.FunctionComponent<Props> = ({
       {/* Details */}
       <CardDetails>
         <CardDetailsItem>
-          Size:{" "}
-          <LabelText loading={loading} skeletonWidth="xs">
+          <Label>Size:</Label>
+          <Value loading={loading} skeletonWidth="sm">
             {size}
-          </LabelText>
+          </Value>
         </CardDetailsItem>
         <CardDetailsItem>
-          Difficulty:{" "}
-          <LabelText loading={loading} skeletonWidth="md">
+          <Label>Difficulty:</Label>
+          <Value loading={loading} skeletonWidth="md">
             {difficulty}
-          </LabelText>
+          </Value>
         </CardDetailsItem>
         <CardDetailsItem>
-          Miner:{" "}
-          <LabelText loading={loading} truncate={true} skeletonWidth="lg">
+          <Label>Miner:</Label>
+          <Value loading={loading} truncate={true} skeletonWidth="lg">
             {miner}
-          </LabelText>
+          </Value>
         </CardDetailsItem>
       </CardDetails>
 

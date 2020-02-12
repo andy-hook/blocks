@@ -2,13 +2,13 @@
 
 exports[`<Footer /> renders correctly 1`] = `
 <footer
-  className="sc-ifAKCX hSmABr"
+  className="sc-ifAKCX emExsh"
 >
   <div
     className="sc-bdVaJa bUDcPf"
   >
     <div
-      className="sc-htpNat dzobEj"
+      className="sc-htpNat kYCaBa"
     >
       I am a footer
     </div>

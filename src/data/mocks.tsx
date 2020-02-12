@@ -114,7 +114,7 @@ export const mockWeb3TransactionData: Web3TransactionData = {
   v: "0x29",
   value: "1",
   fee: "0.000042",
-  ether: "0.000000000000000001",
+  ether: 0.000000000000000001,
 }
 
 export const mockMultipleWeb3TransactionData: Web3TransactionData[] = [

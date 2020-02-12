@@ -2,79 +2,427 @@
 
 exports[`<TransactionsSummary /> renders correctly 1`] = `
 <ul
-  className="sc-bdVaJa dBUyqz"
+  className="sc-bwzfXH kkbZxf"
 >
-  <div>
-    1
-  </div>
-  <div>
-    0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9
-  </div>
-  <div>
-    0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
-  </div>
-  <div>
-    1
-  </div>
-  <div>
-    0xF39d8b9B8C130ac08d4A32E50bb7bbD41C054EB9
-  </div>
-  <div>
-    0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
-  </div>
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
-  <div />
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa bcFhNJ"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa bcFhNJ"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
+  <li
+    className="sc-htpNat KtFsv"
+  >
+    <div
+      className="sc-bdVaJa dndCLb"
+    />
+  </li>
 </ul>
 `;

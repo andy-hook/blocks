@@ -1,10 +1,10 @@
 import React from "react"
-import LabelText from "./label-text"
+import Label from "./label"
 import { renderWithTheme } from "@test-utils"
 
-describe("<LabelText />", () => {
+describe("<Label />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <LabelText />)
+    const tree = renderWithTheme("dark", <Label />)
     expect(tree).toMatchSnapshot()
   })
 })

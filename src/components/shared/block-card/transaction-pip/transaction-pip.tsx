@@ -9,12 +9,7 @@ interface Props {
   loading?: boolean
 }
 
-const TransactionPip: React.FunctionComponent<Props> = ({
-  value,
-  to,
-  from,
-  loading,
-}) => {
+const TransactionPip: React.FunctionComponent<Props> = ({ value, loading }) => {
   return <Pip hasValue={value ? value > 0 : false} isLoading={loading} />
 }
 
@@ -25,9 +20,9 @@ export const Pip = styled.div<{
   width: 1em;
   height: 1em;
 
-  background-color: hotpink;
+  background-color: brown;
 
-  ${props => props.hasValue && `background-color: brown;`}
+  ${props => props.hasValue && `background-color: hotpink;`}
   ${props => props.isLoading && `background-color: purple;`}
 `
 

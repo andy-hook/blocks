@@ -6,7 +6,7 @@ describe("<TransactionPip />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "dark",
-      <TransactionPip value={"string"} from="string" to="string" />
+      <TransactionPip value={0.0002} from="string" to="string" />
     )
     expect(tree).toMatchSnapshot()
   })
