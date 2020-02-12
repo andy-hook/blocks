@@ -2,10 +2,9 @@
 
 exports[`<Button /> renders correctly 1`] = `
 <a
-  className="sc-bdVaJa bnpQQb"
+  buttonType="primary"
+  className="sc-bdVaJa evISj"
   href="https://www.google.com"
-  onClick={[Function]}
-  target="_blank"
 >
   <span
     className="sc-bwzfXH kItmmw"

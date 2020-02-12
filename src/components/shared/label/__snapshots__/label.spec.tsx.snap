@@ -2,7 +2,7 @@
 
 exports[`<Label /> renders correctly 1`] = `
 <div
-  className="sc-bdVaJa loxQHx"
+  className="sc-bdVaJa jmbRgh"
   size="md"
 />
 `;

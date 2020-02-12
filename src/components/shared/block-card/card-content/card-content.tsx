@@ -1,12 +1,12 @@
 import React from "react"
 import { Web3BlockData } from "model"
-import { Link } from "gatsby"
 import TransactionsSummary from "@components/shared/block-card/transactions-summary/transactions-summary"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
 import CardDetails from "../card-details/card-details"
 import Title from "@components/shared/title/title"
+import Button from "@components/shared/button/button"
 
 interface Props {
   blockNumber?: number
@@ -55,7 +55,11 @@ const CardContent: React.FunctionComponent<Props> = ({
       />
 
       {/* CTA */}
-      <Link to={`/blocks/${blockNumber}`}>Go to block {blockNumber}</Link>
+      <CardActions>
+        <Button buttonType="secondary" to={`/blocks/${blockNumber}`}>
+          More Details
+        </Button>
+      </CardActions>
     </Card>
   )
 }
@@ -66,6 +70,10 @@ const Card = styled.div`
 
 const NumberLabel = styled(Label)`
   margin-bottom: ${layout.scale[5]};
+`
+
+const CardActions = styled.div`
+  padding-top: ${layout.scale[8]};
 `
 
 export default CardContent

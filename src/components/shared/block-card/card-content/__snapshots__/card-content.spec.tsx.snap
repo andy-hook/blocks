@@ -2,10 +2,10 @@
 
 exports[`<CardContent /> renders correctly 1`] = `
 <div
-  className="sc-gqjmRU haBDWF"
+  className="sc-jTzLTM dcymiG"
 >
   <div
-    className="sc-EHOje decWoR sc-VigVT gJBbSw"
+    className="sc-EHOje lDWDu sc-fjdhpX ipPrjQ"
     size="md"
   >
     Block number
@@ -692,13 +692,13 @@ exports[`<CardContent /> renders correctly 1`] = `
       className="sc-dnqmqq kwSpaS"
     >
       <div
-        className="sc-EHOje decWoR sc-htoDjs fQTEmD"
+        className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
         size="md"
       >
         Size:
       </div>
       <div
-        className="sc-EHOje bbenVT"
+        className="sc-EHOje bxudVz"
         size="md"
       />
     </div>
@@ -706,13 +706,13 @@ exports[`<CardContent /> renders correctly 1`] = `
       className="sc-dnqmqq kwSpaS"
     >
       <div
-        className="sc-EHOje decWoR sc-htoDjs fQTEmD"
+        className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
         size="md"
       >
         Difficulty:
       </div>
       <div
-        className="sc-EHOje bbenVT"
+        className="sc-EHOje bxudVz"
         size="md"
       />
     </div>
@@ -720,22 +720,31 @@ exports[`<CardContent /> renders correctly 1`] = `
       className="sc-dnqmqq kwSpaS"
     >
       <div
-        className="sc-EHOje decWoR sc-htoDjs fQTEmD"
+        className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
         size="md"
       >
         Miner:
       </div>
       <div
-        className="sc-EHOje bbenVT"
+        className="sc-EHOje bxudVz"
         size="md"
       />
     </div>
   </div>
-  <a
-    href="/blocks/100"
+  <div
+    className="sc-jzJRlG kAhIWh"
   >
-    Go to block 
-    100
-  </a>
+    <a
+      buttonType="secondary"
+      className="sc-gqjmRU bbiiUi"
+      href="/blocks/100"
+    >
+      <span
+        className="sc-VigVT ermOJc"
+      >
+        More Details
+      </span>
+    </a>
+  </div>
 </div>
 `;

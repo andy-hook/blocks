@@ -2,13 +2,13 @@
 
 exports[`<BlockCard /> renders correctly 1`] = `
 <div
-  className="sc-jTzLTM jeaEVH"
+  className="sc-cSHVUG dXYPjI"
 >
   <div
-    className="sc-gqjmRU haBDWF"
+    className="sc-jTzLTM dcymiG"
   >
     <div
-      className="sc-EHOje decWoR sc-VigVT gJBbSw"
+      className="sc-EHOje lDWDu sc-fjdhpX ipPrjQ"
       size="md"
     >
       Block number
@@ -695,13 +695,13 @@ exports[`<BlockCard /> renders correctly 1`] = `
         className="sc-dnqmqq kwSpaS"
       >
         <div
-          className="sc-EHOje decWoR sc-htoDjs fQTEmD"
+          className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
           size="md"
         >
           Size:
         </div>
         <div
-          className="sc-EHOje bbenVT"
+          className="sc-EHOje bxudVz"
           size="md"
         >
           2900
@@ -711,13 +711,13 @@ exports[`<BlockCard /> renders correctly 1`] = `
         className="sc-dnqmqq kwSpaS"
       >
         <div
-          className="sc-EHOje decWoR sc-htoDjs fQTEmD"
+          className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
           size="md"
         >
           Difficulty:
         </div>
         <div
-          className="sc-EHOje bbenVT"
+          className="sc-EHOje bxudVz"
           size="md"
         >
           1527190616
@@ -727,25 +727,34 @@ exports[`<BlockCard /> renders correctly 1`] = `
         className="sc-dnqmqq kwSpaS"
       >
         <div
-          className="sc-EHOje decWoR sc-htoDjs fQTEmD"
+          className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
           size="md"
         >
           Miner:
         </div>
         <div
-          className="sc-EHOje bbenVT"
+          className="sc-EHOje bxudVz"
           size="md"
         >
           0x635B4764D1939DfAcD3a8014726159abC277BecC
         </div>
       </div>
     </div>
-    <a
-      href="/blocks/7250672"
+    <div
+      className="sc-jzJRlG kAhIWh"
     >
-      Go to block 
-      7250672
-    </a>
+      <a
+        buttonType="secondary"
+        className="sc-gqjmRU bbiiUi"
+        href="/blocks/7250672"
+      >
+        <span
+          className="sc-VigVT ermOJc"
+        >
+          More Details
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;
