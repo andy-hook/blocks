@@ -2,9 +2,9 @@
 
 exports[`<Button /> renders correctly 1`] = `
 <a
-  buttonType="primary"
-  className="sc-bdVaJa evISj"
+  className="sc-bdVaJa ZTRie"
   href="https://www.google.com"
+  type="primary"
 >
   <span
     className="sc-bwzfXH kItmmw"

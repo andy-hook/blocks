@@ -2,16 +2,16 @@
 
 exports[`<CardContent /> renders correctly 1`] = `
 <div
-  className="sc-jzJRlG hJqnBo"
+  className="sc-cSHVUG iEUGjl"
 >
   <div
-    className="sc-EHOje lDWDu sc-cSHVUG hgJMFS"
+    className="sc-EHOje lDWDu sc-kAzzGY bttNCU"
     size="md"
   >
     Block number
   </div>
   <div
-    className="sc-gqjmRU clhTnE"
+    className="sc-VigVT hgupYT"
     size="md"
   >
     # 
@@ -21,7 +21,7 @@ exports[`<CardContent /> renders correctly 1`] = `
     className="sc-htpNat iWifPQ"
   >
     <ul
-      className="sc-bxivhb gKrcp"
+      className="sc-bxivhb gNgCgd"
     >
       <li
         className="sc-ifAKCX cFlEyZ"
@@ -30,7 +30,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH iZUhsD"
+            className="sc-bwzfXH jBZlEg"
           />
         </div>
       </li>
@@ -41,7 +41,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH iZUhsD"
+            className="sc-bwzfXH jBZlEg"
           />
         </div>
       </li>
@@ -52,7 +52,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -63,7 +63,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -74,7 +74,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -85,7 +85,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -96,7 +96,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -107,7 +107,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -118,7 +118,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -129,7 +129,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -140,7 +140,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -151,7 +151,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -162,7 +162,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -173,7 +173,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -184,7 +184,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -195,7 +195,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -206,7 +206,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -217,7 +217,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -228,7 +228,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -239,7 +239,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -250,7 +250,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -261,7 +261,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -272,7 +272,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -283,7 +283,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -294,7 +294,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -305,7 +305,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -316,7 +316,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -327,7 +327,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -338,7 +338,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -349,7 +349,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -360,7 +360,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -371,7 +371,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -382,7 +382,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -393,7 +393,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -404,7 +404,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -415,7 +415,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -426,7 +426,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -437,7 +437,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -448,7 +448,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -459,7 +459,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -470,7 +470,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -481,7 +481,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -492,7 +492,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -503,7 +503,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -514,7 +514,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -525,7 +525,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -536,7 +536,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -547,7 +547,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -558,7 +558,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -569,7 +569,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -580,7 +580,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -591,7 +591,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -602,7 +602,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -613,7 +613,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -624,7 +624,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -635,7 +635,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -646,7 +646,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -657,7 +657,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -668,7 +668,7 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
@@ -679,68 +679,68 @@ exports[`<CardContent /> renders correctly 1`] = `
           className="sc-bdVaJa ldkUXY"
         >
           <div
-            className="sc-bwzfXH MVFvm"
+            className="sc-bwzfXH yNbqn"
           />
         </div>
       </li>
     </ul>
   </div>
   <div
-    className="sc-gzVnrw tDqEr"
+    className="sc-gzVnrw gxhySI"
   >
     <div
-      className="sc-dnqmqq fIzaDg"
+      className="sc-iwsKbI dVxxQe"
     >
       <div
-        className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
+        className="sc-EHOje lDWDu sc-htoDjs dARhit"
         size="md"
       >
         Size:
       </div>
       <div
-        className="sc-EHOje bxudVz"
+        className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
         size="md"
       />
     </div>
     <div
-      className="sc-iwsKbI jpJffI"
+      className="sc-gZMcBi jWPKqd"
     >
       <div
-        className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
+        className="sc-EHOje lDWDu sc-htoDjs dARhit"
         size="md"
       >
         Difficulty:
       </div>
       <div
-        className="sc-EHOje bxudVz"
+        className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
         size="md"
       />
     </div>
     <div
-      className="sc-gZMcBi hLskcw"
+      className="sc-gqjmRU jpVdfh"
     >
       <div
-        className="sc-EHOje lDWDu sc-htoDjs fQTEmD"
+        className="sc-EHOje lDWDu sc-htoDjs dARhit"
         size="md"
       >
         Miner:
       </div>
       <div
-        className="sc-EHOje bxudVz"
+        className="sc-EHOje bxudVz sc-dnqmqq koHliJ"
         size="md"
       />
     </div>
   </div>
   <div
-    className="sc-kAzzGY jGZfpE"
+    className="sc-chPdSV bpNxBw"
   >
     <a
-      buttonType="secondary"
-      className="sc-jTzLTM AcgRr"
+      className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
       href="/blocks/100"
+      type="secondary"
     >
       <span
-        className="sc-fjdhpX bfkhVz"
+        className="sc-jzJRlG hHPqaR"
       >
         More Details
       </span>

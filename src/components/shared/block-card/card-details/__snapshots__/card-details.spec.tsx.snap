@@ -2,47 +2,47 @@
 
 exports[`<CardDetails /> renders correctly 1`] = `
 <div
-  className="sc-htpNat cixthU"
+  className="sc-htpNat kqEEqD"
 >
   <div
-    className="sc-ifAKCX kYjtTL"
+    className="sc-EHOje ffvkok"
   >
     <div
-      className="sc-bdVaJa xGfmu sc-bxivhb cCMofR"
+      className="sc-bdVaJa xGfmu sc-bxivhb hIEsEO"
       size="md"
     >
       Size:
     </div>
     <div
-      className="sc-bdVaJa jmbRgh"
+      className="sc-bdVaJa jmbRgh sc-ifAKCX dHHSVa"
       size="md"
     />
   </div>
   <div
-    className="sc-EHOje idIRRg"
+    className="sc-bZQynM hNVbvw"
   >
     <div
-      className="sc-bdVaJa xGfmu sc-bxivhb cCMofR"
+      className="sc-bdVaJa xGfmu sc-bxivhb hIEsEO"
       size="md"
     >
       Difficulty:
     </div>
     <div
-      className="sc-bdVaJa jmbRgh"
+      className="sc-bdVaJa jmbRgh sc-ifAKCX dHHSVa"
       size="md"
     />
   </div>
   <div
-    className="sc-bZQynM idaocs"
+    className="sc-gzVnrw jnrzUa"
   >
     <div
-      className="sc-bdVaJa xGfmu sc-bxivhb cCMofR"
+      className="sc-bdVaJa xGfmu sc-bxivhb hIEsEO"
       size="md"
     >
       Miner:
     </div>
     <div
-      className="sc-bdVaJa jmbRgh"
+      className="sc-bdVaJa jmbRgh sc-ifAKCX dHHSVa"
       size="md"
     />
   </div>
