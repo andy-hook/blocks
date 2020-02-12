@@ -7,6 +7,8 @@ import {
 } from "@style/typography"
 import { themeText } from "@style/theme"
 import { Link } from "gatsby"
+import { mq } from "@style/media-queries"
+import classNames from "classnames"
 
 type ButtonType = "primary" | "secondary"
 
@@ -14,15 +16,21 @@ interface Props {
   to: string
   children: string
   buttonType?: ButtonType
+  className?: string
 }
 
 const Button: React.FunctionComponent<Props> = ({
   to,
   children,
+  className,
   buttonType = "primary",
 }) => {
   return (
-    <StyledButton to={to} type={buttonType}>
+    <StyledButton
+      to={to}
+      type={buttonType}
+      className={classNames("", className)}
+    >
       <Inner>{children}</Inner>
     </StyledButton>
   )
@@ -34,12 +42,18 @@ const StyledButton = styled(Link)<{ type: ButtonType }>`
   display: inline-block;
 
   overflow: hidden;
-  font-size: ${type.scale[3]};
+  font-size: ${type.scale[2]};
   border-radius: ${appearance.radius.pill};
 
   text-decoration: none;
+  text-align: center;
 
-  padding: ${layout.scale[5]} ${layout.scale[7]};
+  padding: ${layout.scale[4]} ${layout.scale[6]};
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[3]};
+    padding: ${layout.scale[5]} ${layout.scale[7]};
+  `}
 
   ${props => props.type === "primary" && primaryStyles}
   ${props => props.type === "secondary" && secondaryStyles}

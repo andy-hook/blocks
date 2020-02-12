@@ -57,9 +57,9 @@ const CardContent: React.FunctionComponent<Props> = ({
 
       {/* CTA */}
       <CardActions>
-        <Button buttonType="secondary" to={`/blocks/${blockNumber}`}>
+        <CardButton buttonType="secondary" to={`/blocks/${blockNumber}`}>
           More Details
-        </Button>
+        </CardButton>
       </CardActions>
     </Card>
   )
@@ -91,6 +91,12 @@ const NumberLabel = styled(Label)`
 
 const CardActions = styled.div`
   padding-top: ${layout.scale[9]};
+`
+
+const CardButton = styled(Button)`
+  ${mq.lessThan("bottomDesk")`
+    width: 100%;
+  `}
 `
 
 export default CardContent
