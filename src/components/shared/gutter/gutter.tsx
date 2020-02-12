@@ -20,13 +20,13 @@ const GutterContainer = styled.div`
   padding-right: ${smallScreenGutter};
 
   ${mq.between("topThumb", "topDesk")`
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
   `}
 
-  ${mq.between("bottomDesk", "bottomUltra")`
-    padding-left: 9%;
-    padding-right: 9%;
+  ${mq.between("topDesk", "bottomUltra")`
+    padding-left: 7%;
+    padding-right: 7%;
   `}
 
   width: 100%;

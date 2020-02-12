@@ -22,13 +22,13 @@ const Button: React.FunctionComponent<Props> = ({
   buttonType = "primary",
 }) => {
   return (
-    <StyledButton to={to} buttonType={buttonType}>
-      <StyledButtonInner>{children}</StyledButtonInner>
+    <StyledButton to={to} type={buttonType}>
+      <Inner>{children}</Inner>
     </StyledButton>
   )
 }
 
-const StyledButton = styled(Link)<{ buttonType: ButtonType }>`
+const StyledButton = styled(Link)<{ type: ButtonType }>`
   position: relative;
 
   display: inline-block;
@@ -41,11 +41,11 @@ const StyledButton = styled(Link)<{ buttonType: ButtonType }>`
 
   padding: ${layout.scale[5]} ${layout.scale[7]};
 
-  ${props => props.buttonType === "primary" && primaryStyles}
-  ${props => props.buttonType === "secondary" && secondaryStyles}
+  ${props => props.type === "primary" && primaryStyles}
+  ${props => props.type === "secondary" && secondaryStyles}
 `
 
-const StyledButtonInner = styled.span`
+const Inner = styled.span`
   ${setDisplayCropAndLineHeight(type.lineHeight.flat)}
   ${typeDisplayButton}
 

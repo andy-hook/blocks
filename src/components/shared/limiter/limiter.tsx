@@ -1,4 +1,4 @@
-import React, { memo, PropsWithChildren } from "react"
+import React, { PropsWithChildren } from "react"
 import { rem } from "polished"
 import styled, { css } from "styled-components"
 
@@ -6,24 +6,23 @@ interface Props {
   size?: "small" | "medium" | "large"
 }
 
-const Limiter: React.FunctionComponent<PropsWithChildren<Props>> = memo(
-  React.forwardRef<HTMLDivElement, PropsWithChildren<Props>>(
-    ({ size = "medium", children }, ref) => {
-      const renderLimiter = () => {
-        switch (size) {
-          case "small":
-            return <SmallLimiter ref={ref}>{children}</SmallLimiter>
-          case "medium":
-            return <MediumLimiter ref={ref}>{children}</MediumLimiter>
-          case "large":
-            return <LargeLimiter ref={ref}>{children}</LargeLimiter>
-        }
-      }
-
-      return <>{renderLimiter()}</>
+const Limiter: React.FunctionComponent<Props> = React.forwardRef<
+  HTMLDivElement,
+  PropsWithChildren<Props>
+>(({ size = "medium", children }, ref) => {
+  const renderLimiter = () => {
+    switch (size) {
+      case "small":
+        return <SmallLimiter ref={ref}>{children}</SmallLimiter>
+      case "medium":
+        return <MediumLimiter ref={ref}>{children}</MediumLimiter>
+      case "large":
+        return <LargeLimiter ref={ref}>{children}</LargeLimiter>
     }
-  )
-)
+  }
+
+  return <>{renderLimiter()}</>
+})
 
 const smallSize = rem("900px")
 const mediumSize = rem("1200px")
