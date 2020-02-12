@@ -3,6 +3,8 @@ import BlockCard from "./block-card"
 import { renderWithTheme } from "@test-utils"
 import { mockWeb3BlockData } from "@data/mocks"
 
+jest.mock("react-truncate-string")
+
 describe("<BlockCard />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(

@@ -73,7 +73,7 @@ const NumberLabel = styled(Label)`
 `
 
 const CardActions = styled.div`
-  padding-top: ${layout.scale[8]};
+  padding-top: ${layout.scale[9]};
 `
 
 export default CardContent

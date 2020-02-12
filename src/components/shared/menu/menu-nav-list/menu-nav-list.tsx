@@ -7,7 +7,6 @@ import {
 import useDeferredRunEffect from "@hooks/deferred-run"
 import gsap from "gsap"
 import styled from "styled-components"
-import { typeBodySubtle, typeSizeBaseXs } from "@style/typography"
 import Link from "gatsby-plugin-transition-link"
 
 interface Props {
@@ -109,8 +108,6 @@ const MenuNavList: React.FunctionComponent<Props> = memo(
 )
 
 const List = styled.ul`
-  ${typeSizeBaseXs}
-
   display: flex;
   flex-direction: column;
 `
@@ -121,8 +118,6 @@ const ListItem = styled.li`
 `
 
 const ListItemLink = styled(Link)`
-  ${typeBodySubtle}
-
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 

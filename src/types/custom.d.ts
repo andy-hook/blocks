@@ -27,3 +27,9 @@ declare module "gatsby-plugin-transition-link/hooks" {
 
   export const useTransitionState: () => TransitionState
 }
+
+// "react-truncate-string" doesn't current have type declarations
+declare module "react-truncate-string" {
+  const TruncateString: any
+  export default TruncateString
+}
