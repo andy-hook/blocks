@@ -1,39 +1,64 @@
-import React, { memo } from "react"
-import styled from "styled-components"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import React from "react"
+import styled, { css } from "styled-components"
 import { type, appearance, animation, layout } from "@style/design-tokens"
-import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 import {
   setDisplayCropAndLineHeight,
   typeDisplayButton,
 } from "@style/typography"
 import { themeText } from "@style/theme"
+import { Link } from "gatsby"
+
+type ButtonType = "primary" | "secondary"
 
 interface Props {
-  href: string
+  to: string
   children: string
+  buttonType?: ButtonType
 }
 
-const Button: React.FunctionComponent<Props> = memo(({ href, children }) => {
+const Button: React.FunctionComponent<Props> = ({
+  to,
+  children,
+  buttonType = "primary",
+}) => {
   return (
-    <StyledButton href={href} target="_blank">
+    <StyledButton to={to} buttonType={buttonType}>
       <StyledButtonInner>{children}</StyledButtonInner>
     </StyledButton>
   )
-})
+}
 
-const StyledButton = styled(OutboundLink)`
+const StyledButton = styled(Link)<{ buttonType: ButtonType }>`
   position: relative;
 
+  display: inline-block;
+
   overflow: hidden;
-
-  font-size: ${type.scale[2]};
-
+  font-size: ${type.scale[3]};
   border-radius: ${appearance.radius.pill};
 
   text-decoration: none;
 
-  padding: 1.18em 2.15em;
+  padding: ${layout.scale[5]} ${layout.scale[7]};
+
+  ${props => props.buttonType === "primary" && primaryStyles}
+  ${props => props.buttonType === "secondary" && secondaryStyles}
+`
+
+const StyledButtonInner = styled.span`
+  ${setDisplayCropAndLineHeight(type.lineHeight.flat)}
+  ${typeDisplayButton}
+
+  color: ${themeText(100)};
+
+  display: block;
+  position: relative;
+  z-index: ${layout.zIndex.medium};
+
+  text-shadow: ${appearance.textShadow.subtle};
+`
+
+const primaryStyles = css`
   background: linear-gradient(160deg, #c700b1 0%, #6609e1 100%);
 
   &::before,
@@ -64,10 +89,6 @@ const StyledButton = styled(OutboundLink)`
     z-index: ${layout.zIndex.low};
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:hover,
   &:focus {
     &::before {
@@ -78,29 +99,10 @@ const StyledButton = styled(OutboundLink)`
       opacity: 0.75;
     }
   }
-
-  ${scaleBetween(
-    "font-size",
-    type.scale[2],
-    type.scale[5],
-    "bottomThumb",
-    "bottomUltra"
-  )}
-
-  ${scaleGreaterThan("font-size", type.scale[5], "topUltra")}
 `
 
-const StyledButtonInner = styled.span`
-  ${setDisplayCropAndLineHeight(type.lineHeight.flat)}
-  ${typeDisplayButton}
-
-  color: ${themeText(100)};
-
-  display: block;
-  position: relative;
-  z-index: ${layout.zIndex.medium};
-
-  text-shadow: ${appearance.textShadow.subtle};
+const secondaryStyles = css`
+  border: ${appearance.borderThickness.regular} solid ${themeText(800)};
 `
 
 export default Button

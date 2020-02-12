@@ -6,7 +6,7 @@ import { type } from "./design-tokens"
   ------------------------------------------------- */
 const baseCropSettings = {
   topCrop: 11,
-  bottomCrop: 20,
+  bottomCrop: 15,
 }
 
 export const setBaseCropAndLineHeight = (lHeight: number) => {

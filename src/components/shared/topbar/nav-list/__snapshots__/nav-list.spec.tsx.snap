@@ -11,7 +11,7 @@ exports[`<Navigation /> renders correctly 1`] = `
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb jCgkBP"
+        className="sc-bxivhb bFEVbR"
         href="/"
         onClick={[Function]}
       >
@@ -22,7 +22,7 @@ exports[`<Navigation /> renders correctly 1`] = `
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb jCgkBP"
+        className="sc-bxivhb bFEVbR"
         href="/about/"
         onClick={[Function]}
       >

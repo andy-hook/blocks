@@ -7,7 +7,7 @@ describe("<Button />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "dark",
-      <Button href="https://www.google.com">This is a button</Button>
+      <Button to="https://www.google.com">This is a button</Button>
     )
 
     expect(tree).toMatchSnapshot()
