@@ -74,10 +74,7 @@ const Text = styled.div<{
   ${props => textSize[props.size]};
 
   position: relative;
-
   color: ${props => textColors[props.intensity]};
-
-  
 
   ${isTheme(
     "dark",

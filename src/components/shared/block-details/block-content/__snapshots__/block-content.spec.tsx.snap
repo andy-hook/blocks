@@ -1,79 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockContent /> renders correctly 1`] = `
-<div
-  className="sc-ifAKCX jmbKll"
+<article
+  className="sc-gZMcBi kxLsOT"
 >
-  Block number 
-   Transactions
-  <ul
-    className="sc-EHOje jvzENE"
+  <header
+    className="sc-htoDjs bzhYRm"
   >
     <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+      className="sc-iwsKbI ldERec"
     >
-      Size
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-htpNat bHaBzt sc-dnqmqq ctRtNT"
+        size="lg"
+      >
+        # 
+      </div>
+      <div
+        className="sc-bdVaJa jfEAsh"
+        size="lg"
+      >
+         Transactions
+      </div>
+    </div>
+    <a
+      className="sc-bZQynM fJEiEe"
+      href="https://www.google.com"
+      type="primary"
+    >
+      <span
+        className="sc-gzVnrw feWhnB"
+      >
+        View transactions
+      </span>
+    </a>
+  </header>
+  <ul
+    className="sc-gqjmRU hnZXkc"
+  >
+    <div
+      className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+    >
+      <div
+        className="sc-htpNat hwnZXv"
+        size="sm"
+      >
+        Size
+      </div>
+      <div
+        className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-bdVaJa htfwrO"
+          size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+      className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
     >
-      Difficulty
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-htpNat hwnZXv"
+        size="sm"
+      >
+        Difficulty
+      </div>
+      <div
+        className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-bdVaJa htfwrO"
+          size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+      className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
     >
-      Total Difficulty
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-htpNat hwnZXv"
+        size="sm"
+      >
+        Total Difficulty
+      </div>
+      <div
+        className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-bdVaJa htfwrO"
+          size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+      className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
     >
-      Gas Used
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-htpNat hwnZXv"
+        size="sm"
+      >
+        Gas Used
+      </div>
+      <div
+        className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-bdVaJa htfwrO"
+          size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-htpNat fPsaOJ sc-bZQynM BSQHS"
+      className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
     >
-      Gas Limit
       <div
-        className="sc-bxivhb qtnqi"
+        className="sc-htpNat hwnZXv"
+        size="sm"
+      >
+        Gas Limit
+      </div>
+      <div
+        className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa jmbRgh"
-          size="md"
+          className="sc-bdVaJa htfwrO"
+          size="lg"
         />
       </div>
     </div>
   </ul>
-</div>
+</article>
 `;

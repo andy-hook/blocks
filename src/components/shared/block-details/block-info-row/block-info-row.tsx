@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Label, { SkeletonWidth } from "@components/shared/label/label"
 import classNames from "classnames"
 import TruncateString from "react-truncate-string"
+import Title from "@components/shared/title/title"
+import { layout } from "@style/design-tokens"
 
 interface Props {
   name: string
@@ -21,10 +23,15 @@ const BlockInfoRow: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <Row className={classNames("", className)}>
-      {name}
+      <Title size="sm">{name}</Title>
 
       <ValueLabel>
-        <Label loading={loading} skeletonWidth={skeletonWidth}>
+        <Label
+          loading={loading}
+          skeletonWidth={skeletonWidth}
+          intensity="medium"
+          size="lg"
+        >
           <TruncateString text={value} truncateAt={40} />
         </Label>
       </ValueLabel>
@@ -37,6 +44,9 @@ const Row = styled.div`
 
   justify-content: space-between;
   align-items: center;
+
+  padding-top: ${layout.scale[8]};
+  padding-bottom: ${layout.scale[8]};
 `
 
 const ValueLabel = styled.div`
