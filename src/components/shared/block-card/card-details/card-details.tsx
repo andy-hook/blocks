@@ -19,18 +19,23 @@ const CardDetails: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <Details>
+      {/* Size */}
       <SizeItem>
         <DetailsTitle intensity="low">Size:</DetailsTitle>
         <Label loading={loading} skeletonWidth="sm">
           {size}
         </Label>
       </SizeItem>
+
+      {/* Difficulty */}
       <DifficultyItem>
         <DetailsTitle intensity="low">Difficulty:</DetailsTitle>
         <Label loading={loading} skeletonWidth="md">
-          {difficulty}
+          <TruncateString text={difficulty} truncateAt={20} />
         </Label>
       </DifficultyItem>
+
+      {/* Miner */}
       <MinerItem>
         <DetailsTitle intensity="low">Miner:</DetailsTitle>
         <Label loading={loading} skeletonWidth="lg">
@@ -54,7 +59,7 @@ const SizeItem = styled.div`
 `
 
 const DifficultyItem = styled.div`
-  width: 34%;
+  width: 32%;
 `
 
 const MinerItem = styled.div`
