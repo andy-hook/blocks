@@ -10,28 +10,12 @@ interface Props {
 }
 
 const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
-  const renderAsSkeletonOrPopulated = (block?: Web3BlockData | null) => {
-    if (block) {
-      return (
-        <BlockCard
-          blockNumber={block.number}
-          size={block.size}
-          difficulty={block.difficulty}
-          miner={block.miner}
-          transactions={block.transactionsData}
-        />
-      )
-    } else {
-      return <BlockCard loading={true} />
-    }
-  }
-
   // Render skeleton items while awaiting data
   const renderItems = () => {
     return Array.from(Array(BLOCK_COUNT)).map((_, index) => {
       return (
         <GridItem key={index}>
-          {renderAsSkeletonOrPopulated(blockData && blockData[index])}
+          <BlockCard blockData={blockData && blockData[index]} />
         </GridItem>
       )
     })

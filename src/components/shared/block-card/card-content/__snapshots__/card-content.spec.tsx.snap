@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlockCard /> renders correctly 1`] = `
+exports[`<CardContent /> renders correctly 1`] = `
 <div
   className="sc-bZQynM bYoYca"
 >
@@ -12,7 +12,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
   <div
     className="sc-ifAKCX bAocBT"
   >
-    7250672
+    100
   </div>
   <ul
     className="sc-htpNat TKkfN"
@@ -691,9 +691,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
       </div>
       <div
         className="sc-ifAKCX bAocBT"
-      >
-        2900
-      </div>
+      />
     </div>
     <div
       className="sc-htoDjs bZzhDu"
@@ -705,9 +703,7 @@ exports[`<BlockCard /> renders correctly 1`] = `
       </div>
       <div
         className="sc-ifAKCX bAocBT"
-      >
-        1527190616
-      </div>
+      />
     </div>
     <div
       className="sc-htoDjs bZzhDu"
@@ -719,16 +715,14 @@ exports[`<BlockCard /> renders correctly 1`] = `
       </div>
       <div
         className="sc-ifAKCX kVcjMh"
-      >
-        0x635B4764D1939DfAcD3a8014726159abC277BecC
-      </div>
+      />
     </div>
   </div>
   <a
-    href="/blocks/7250672"
+    href="/blocks/100"
   >
     Go to block 
-    7250672
+    100
   </a>
 </div>
 `;
