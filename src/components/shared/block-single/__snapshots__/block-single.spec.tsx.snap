@@ -2,45 +2,45 @@
 
 exports[`<BlockSingle /> renders correctly 1`] = `
 <article
-  className="sc-fjdhpX nsimD"
+  className="sc-kgoBCf kVSTZj"
 >
   <div
-    className="sc-gZMcBi bMScgA"
+    className="sc-bZQynM ffdLeK"
   >
     <header
-      className="sc-gqjmRU fwHxgf"
+      className="sc-gzVnrw gQWIyA"
     >
       <div
-        className="sc-jTzLTM hqFTZt"
+        className="sc-dnqmqq iJSVUv"
       >
         <div
-          className="sc-bdVaJa jfEAsh sc-VigVT gHXSEb"
+          className="sc-htpNat iflsxI sc-htoDjs bKpsbV"
           size="lg"
         >
           <div
-            className="sc-bwzfXH dXrMlk"
+            className="sc-bxivhb kzfWct"
           >
              
           </div>
         </div>
         <div
-          className="sc-htpNat bHaBzt"
+          className="sc-bdVaJa jlBogh"
           size="lg"
         >
           <div
-            className="sc-bxivhb dsXjOH"
+            className="sc-bwzfXH csGlom"
           >
              
           </div>
         </div>
       </div>
       <a
-        className="sc-dnqmqq FLpyy"
+        className="sc-ifAKCX iaVtiE"
         href="/"
         type="primary"
       >
         <span
-          className="sc-iwsKbI bihoxR"
+          className="sc-EHOje bnYxDG"
         >
           View transactions
         </span>
@@ -48,29 +48,29 @@ exports[`<BlockSingle /> renders correctly 1`] = `
     </header>
   </div>
   <section
-    className="sc-bZQynM kUwNZg"
+    className="sc-gqjmRU bqaoid"
   >
     <ul
-      className="sc-gzVnrw gjsEYR"
+      className="sc-VigVT eRKSIV"
     >
       <div
-        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
+        className="sc-iwsKbI bIEZDU sc-jTzLTM bAVvha"
       >
         <div
-          className="sc-htpNat hwnZXv"
+          className="sc-bdVaJa ftOOkT"
           size="sm"
         >
           Size
         </div>
         <div
-          className="sc-EHOje foZbCf"
+          className="sc-gZMcBi hqKcqg"
         >
           <div
-            className="sc-bdVaJa htfwrO"
+            className="sc-htpNat fjqEwh"
             size="lg"
           >
             <div
-              className="sc-bwzfXH eAbjIM"
+              className="sc-bxivhb dAzbVZ"
             >
                
             </div>
@@ -78,23 +78,23 @@ exports[`<BlockSingle /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
+        className="sc-iwsKbI bIEZDU sc-jTzLTM bAVvha"
       >
         <div
-          className="sc-htpNat hwnZXv"
+          className="sc-bdVaJa ftOOkT"
           size="sm"
         >
           Difficulty
         </div>
         <div
-          className="sc-EHOje foZbCf"
+          className="sc-gZMcBi hqKcqg"
         >
           <div
-            className="sc-bdVaJa htfwrO"
+            className="sc-htpNat fjqEwh"
             size="lg"
           >
             <div
-              className="sc-bwzfXH dXrMlk"
+              className="sc-bxivhb kzfWct"
             >
                
             </div>
@@ -102,23 +102,23 @@ exports[`<BlockSingle /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
+        className="sc-iwsKbI bIEZDU sc-jTzLTM bAVvha"
       >
         <div
-          className="sc-htpNat hwnZXv"
+          className="sc-bdVaJa ftOOkT"
           size="sm"
         >
           Total Difficulty
         </div>
         <div
-          className="sc-EHOje foZbCf"
+          className="sc-gZMcBi hqKcqg"
         >
           <div
-            className="sc-bdVaJa htfwrO"
+            className="sc-htpNat fjqEwh"
             size="lg"
           >
             <div
-              className="sc-bwzfXH dTNUzo"
+              className="sc-bxivhb drrWxJ"
             >
                
             </div>
@@ -126,23 +126,23 @@ exports[`<BlockSingle /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
+        className="sc-iwsKbI bIEZDU sc-jTzLTM bAVvha"
       >
         <div
-          className="sc-htpNat hwnZXv"
+          className="sc-bdVaJa ftOOkT"
           size="sm"
         >
           Gas Used
         </div>
         <div
-          className="sc-EHOje foZbCf"
+          className="sc-gZMcBi hqKcqg"
         >
           <div
-            className="sc-bdVaJa htfwrO"
+            className="sc-htpNat fjqEwh"
             size="lg"
           >
             <div
-              className="sc-bwzfXH dXrMlk"
+              className="sc-bxivhb kzfWct"
             >
                
             </div>
@@ -150,23 +150,151 @@ exports[`<BlockSingle /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
+        className="sc-iwsKbI bIEZDU sc-jTzLTM bAVvha"
       >
         <div
-          className="sc-htpNat hwnZXv"
+          className="sc-bdVaJa ftOOkT"
           size="sm"
         >
           Gas Limit
         </div>
         <div
-          className="sc-EHOje foZbCf"
+          className="sc-gZMcBi hqKcqg"
         >
           <div
-            className="sc-bdVaJa htfwrO"
+            className="sc-htpNat fjqEwh"
             size="lg"
           >
             <div
-              className="sc-bwzfXH eAbjIM"
+              className="sc-bxivhb dAzbVZ"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </section>
+  <section
+    className="sc-cSHVUG jEFUfH"
+  >
+    <ul
+      className="sc-kAzzGY dybAEG"
+    >
+      <div
+        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
+      >
+        <div
+          className="sc-bdVaJa ftOOkT"
+          size="sm"
+        >
+          Size
+        </div>
+        <div
+          className="sc-jzJRlG ccPiMY"
+        >
+          <div
+            className="sc-htpNat fjqEwh"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb dAzbVZ"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
+      >
+        <div
+          className="sc-bdVaJa ftOOkT"
+          size="sm"
+        >
+          Difficulty
+        </div>
+        <div
+          className="sc-jzJRlG ccPiMY"
+        >
+          <div
+            className="sc-htpNat fjqEwh"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb kzfWct"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
+      >
+        <div
+          className="sc-bdVaJa ftOOkT"
+          size="sm"
+        >
+          Total Difficulty
+        </div>
+        <div
+          className="sc-jzJRlG ccPiMY"
+        >
+          <div
+            className="sc-htpNat fjqEwh"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb drrWxJ"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
+      >
+        <div
+          className="sc-bdVaJa ftOOkT"
+          size="sm"
+        >
+          Gas Used
+        </div>
+        <div
+          className="sc-jzJRlG ccPiMY"
+        >
+          <div
+            className="sc-htpNat fjqEwh"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb kzfWct"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
+      >
+        <div
+          className="sc-bdVaJa ftOOkT"
+          size="sm"
+        >
+          Gas Limit
+        </div>
+        <div
+          className="sc-jzJRlG ccPiMY"
+        >
+          <div
+            className="sc-htpNat fjqEwh"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb dAzbVZ"
             >
                
             </div>
