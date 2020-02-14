@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockTransactionRow /> renders correctly 1`] = `
+<tr
+  className="sc-bdVaJa bDWFJH"
+>
+  <td
+    className="sc-bwzfXH sc-htpNat KtFsv"
+  />
+  <td
+    className="sc-bwzfXH sc-bxivhb bUZGRr"
+  />
+  <td
+    className="sc-bwzfXH sc-ifAKCX cFlEyZ"
+  >
+    <div />
+  </td>
+  <td
+    className="sc-bwzfXH sc-EHOje jvzENE"
+  />
+</tr>
+`;

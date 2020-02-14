@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Card: React.FunctionComponent<Props> = ({ blockData }) => {
-  const renderAsSkeletonOrPopulated = () => {
+  function renderAsSkeletonOrPopulated() {
     if (blockData) {
       return (
         <CardContent

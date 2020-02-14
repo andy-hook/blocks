@@ -97,6 +97,18 @@ const Global = createGlobalStyle`
   }
 
 
+  /* Tables
+  ------------------------------------------------- */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    text-align: inherit;
+    font-weight: inherit;
+  }
+
   /* Images
   ------------------------------------------------- */
 
@@ -160,9 +172,6 @@ const GlobalTransitionLink = createGlobalStyle`
     z-index: ${layout.zIndex.low} !important;
   }
 `
-
-/* Images
-  ------------------------------------------------- */
 
 const GlobalStyle: React.FunctionComponent = () => {
   return (

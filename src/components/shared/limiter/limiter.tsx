@@ -10,7 +10,7 @@ const Limiter: React.FunctionComponent<Props> = React.forwardRef<
   HTMLDivElement,
   PropsWithChildren<Props>
 >(({ size = "medium", children }, ref) => {
-  const renderLimiter = () => {
+  function renderLimiter() {
     switch (size) {
       case "small":
         return <SmallLimiter ref={ref}>{children}</SmallLimiter>
