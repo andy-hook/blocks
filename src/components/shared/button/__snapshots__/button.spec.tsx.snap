@@ -2,12 +2,12 @@
 
 exports[`<Button /> renders correctly 1`] = `
 <a
-  className="sc-bdVaJa ZTRie"
+  className="sc-bdVaJa gkCdZm"
   href="https://www.google.com"
   type="primary"
 >
   <span
-    className="sc-bwzfXH kItmmw"
+    className="sc-bwzfXH egjIfW"
   >
     This is a button
   </span>

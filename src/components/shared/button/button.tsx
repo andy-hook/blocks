@@ -5,7 +5,7 @@ import {
   setDisplayCropAndLineHeight,
   typeDisplayButton,
 } from "@style/typography"
-import { themeText } from "@style/theme"
+import { themeText, isTheme } from "@style/theme"
 import { Link } from "gatsby"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
@@ -39,14 +39,14 @@ const Button: React.FunctionComponent<Props> = ({
 const StyledButton = styled(Link)<{ type: ButtonType }>`
   position: relative;
 
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
 
   overflow: hidden;
   font-size: ${type.scale[2]};
   border-radius: ${appearance.radius.pill};
 
   text-decoration: none;
-  text-align: center;
 
   padding: ${layout.scale[4]} ${layout.scale[6]};
 
@@ -69,7 +69,12 @@ const Inner = styled.span`
   position: relative;
   z-index: ${layout.zIndex.medium};
 
-  text-shadow: ${appearance.textShadow.subtle};
+  ${isTheme(
+    "dark",
+    css`
+      text-shadow: ${appearance.textShadow.subtle};
+    `
+  )};
 `
 
 const primaryStyles = css`

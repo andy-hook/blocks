@@ -14,17 +14,7 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         className="sc-iwsKbI ldERec"
       >
         <div
-          className="sc-htpNat bHaBzt sc-dnqmqq ctRtNT"
-          size="lg"
-        >
-          <div
-            className="sc-bxivhb dsXjOH"
-          >
-             
-          </div>
-        </div>
-        <div
-          className="sc-bdVaJa jfEAsh"
+          className="sc-bdVaJa jfEAsh sc-dnqmqq dpESLn"
           size="lg"
         >
           <div
@@ -33,14 +23,24 @@ exports[`<BlockDetails /> renders correctly 1`] = `
              
           </div>
         </div>
+        <div
+          className="sc-htpNat bHaBzt"
+          size="lg"
+        >
+          <div
+            className="sc-bxivhb dsXjOH"
+          >
+             
+          </div>
+        </div>
       </div>
       <a
-        className="sc-bZQynM fJEiEe"
+        className="sc-bZQynM cSTeFT"
         href="https://www.google.com"
         type="primary"
       >
         <span
-          className="sc-gzVnrw feWhnB"
+          className="sc-gzVnrw ipIBGD"
         >
           View transactions
         </span>
