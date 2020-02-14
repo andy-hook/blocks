@@ -749,7 +749,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/7250672"
+              href="/block/7250672"
               type="secondary"
             >
               <span
@@ -1508,7 +1508,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/7250672"
+              href="/block/7250672"
               type="secondary"
             >
               <span
@@ -2291,7 +2291,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -3074,7 +3074,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -3857,7 +3857,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -4640,7 +4640,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -5423,7 +5423,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -6206,7 +6206,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -6989,7 +6989,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span
@@ -7772,7 +7772,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           >
             <a
               className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-              href="/blocks/undefined"
+              href="/block/undefined"
               type="secondary"
             >
               <span

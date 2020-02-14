@@ -61,7 +61,7 @@ const CardContent: React.FunctionComponent<Props> = ({
 
       {/* CTA */}
       <CardActions>
-        <CardButton buttonType="secondary" to={`/blocks/${blockNumber}`}>
+        <CardButton buttonType="secondary" to={`/block/${blockNumber}`}>
           More Details
         </CardButton>
       </CardActions>

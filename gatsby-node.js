@@ -12,14 +12,14 @@ exports.createPages = ({ actions }) => {
 
   // Redirect blocks to index
   createRedirect({
-    fromPath: `/blocks`,
+    fromPath: `/block`,
     toPath: `/`,
     isPermanent: true,
     redirectInBrowser: true,
   })
 
   createRedirect({
-    fromPath: `/blocks/`,
+    fromPath: `/block/`,
     toPath: `/`,
     isPermanent: true,
     redirectInBrowser: true,
