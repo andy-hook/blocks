@@ -1,13 +1,18 @@
 import React from "react"
-import TransactionsSummary from "./transactions-summary"
+import CardContent from "./card-content"
 import { renderWithTheme } from "@test-utils"
 import { mockMultipleWeb3TransactionData } from "@data/mocks"
 
-describe("<TransactionsSummary />", () => {
+jest.mock("react-truncate-string")
+
+describe("<CardContent />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "dark",
-      <TransactionsSummary transactions={mockMultipleWeb3TransactionData} />
+      <CardContent
+        blockNumber={"100"}
+        transactions={mockMultipleWeb3TransactionData}
+      />
     )
     expect(tree).toMatchSnapshot()
   })

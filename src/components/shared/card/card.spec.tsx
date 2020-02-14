@@ -1,16 +1,13 @@
 import React from "react"
-import BlockCard from "./block-card"
+import Card from "./card"
 import { renderWithTheme } from "@test-utils"
 import { mockWeb3BlockData } from "@data/mocks"
 
 jest.mock("react-truncate-string")
 
-describe("<BlockCard />", () => {
+describe("<Card />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme(
-      "dark",
-      <BlockCard blockData={mockWeb3BlockData} />
-    )
+    const tree = renderWithTheme("dark", <Card blockData={mockWeb3BlockData} />)
     expect(tree).toMatchSnapshot()
   })
 })

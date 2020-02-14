@@ -1,6 +1,6 @@
 import React from "react"
 import { Web3BlockData } from "model"
-import TransactionsSummary from "@components/shared/block-card/transactions-summary/transactions-summary"
+import CardTrxSummary from "@components/shared/card/card-trx-summary/card-trx-summary"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
@@ -32,9 +32,9 @@ const CardContent: React.FunctionComponent<Props> = ({
     blockTransactions: Props["transactions"]
   ) => {
     if (blockTransactions) {
-      return <TransactionsSummary transactions={blockTransactions} />
+      return <CardTrxSummary transactions={blockTransactions} />
     } else {
-      return <TransactionsSummary loading={true} />
+      return <CardTrxSummary loading={true} />
     }
   }
 

@@ -9,7 +9,7 @@ interface Props {
   blockData?: Web3BlockData | null
 }
 
-const BlockCard: React.FunctionComponent<Props> = ({ blockData }) => {
+const Card: React.FunctionComponent<Props> = ({ blockData }) => {
   const renderAsSkeletonOrPopulated = () => {
     if (blockData) {
       return (
@@ -27,11 +27,11 @@ const BlockCard: React.FunctionComponent<Props> = ({ blockData }) => {
     }
   }
 
-  return <Card>{renderAsSkeletonOrPopulated()}</Card>
+  return <CardContainer>{renderAsSkeletonOrPopulated()}</CardContainer>
 }
 
-const Card = styled.div`
+const CardContainer = styled.div`
   background-color: ${themeTone(500)};
 `
 
-export default BlockCard
+export default Card
