@@ -2,5 +2,5 @@
 https://ten-blocks.netlify.com/* https://ten-blocks.andyhook.dev/:splat 301!
 
 # Prevent hitting blank template when navigating directly to /blocks
-https://ten-blocks.netlify.com/blocks https://ten-blocks.andyhook.dev 301!
-https://ten-blocks.netlify.com/blocks/ https://ten-blocks.andyhook.dev 301!
+https://ten-blocks.netlify.com/block https://ten-blocks.andyhook.dev 301!
+https://ten-blocks.netlify.com/block/ https://ten-blocks.andyhook.dev 301!

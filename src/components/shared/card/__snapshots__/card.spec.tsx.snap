@@ -740,7 +740,7 @@ exports[`<Card /> renders correctly 1`] = `
     >
       <a
         className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
-        href="/blocks/7250672"
+        href="/block/7250672"
         type="secondary"
       >
         <span

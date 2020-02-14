@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BlockHeader /> renders correctly 1`] = `
+<div
+  className="sc-gzVnrw iCGcXq"
+>
+  <header
+    className="sc-htoDjs dEgfPh"
+  >
+    <div
+      className="sc-iwsKbI ldERec"
+    >
+      <div
+        className="sc-htpNat iflsxI sc-dnqmqq dpESLn"
+        size="lg"
+      >
+         Transactions
+      </div>
+      <div
+        className="sc-bdVaJa jlBogh"
+        size="lg"
+      >
+        # 
+      </div>
+    </div>
+    <section
+      className="sc-ifAKCX kWjkTO"
+    >
+      <button
+        className="sc-EHOje jvzENE"
+      >
+        Details
+      </button>
+      <button
+        className="sc-bZQynM bOrPFB"
+      >
+        Transactions
+      </button>
+    </section>
+  </header>
+</div>
+`;
