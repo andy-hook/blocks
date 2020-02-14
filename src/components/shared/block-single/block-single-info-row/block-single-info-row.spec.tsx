@@ -1,14 +1,14 @@
 import React from "react"
-import BlockInfoRow from "./block-info-row"
+import BlockSingleInfoRow from "./block-single-info-row"
 import { renderWithTheme } from "@test-utils"
 
 jest.mock("react-truncate-string")
 
-describe("<BlockInfoRow />", () => {
+describe("<BlockSingleInfoRow />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "dark",
-      <BlockInfoRow name="string" value="string" />
+      <BlockSingleInfoRow name="string" value="string" />
     )
     expect(tree).toMatchSnapshot()
   })

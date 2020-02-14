@@ -1,12 +1,12 @@
 import React from "react"
-import BlockInfoList from "./block-info-list"
+import BlockSingleInfo from "./block-single-info"
 import { renderWithTheme } from "@test-utils"
 
 jest.mock("react-truncate-string")
 
-describe("<BlockContent />", () => {
+describe("<BlockSingleInfo />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <BlockInfoList />)
+    const tree = renderWithTheme("dark", <BlockSingleInfo />)
     expect(tree).toMatchSnapshot()
   })
 })

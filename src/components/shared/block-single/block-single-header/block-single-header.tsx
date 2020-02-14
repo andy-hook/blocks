@@ -12,7 +12,7 @@ interface Props {
   loading?: boolean
 }
 
-const BlockHeader: React.FunctionComponent<Props> = ({
+const BlockSingleHeader: React.FunctionComponent<Props> = ({
   blockNumber,
   transactionCount,
   loading,
@@ -62,4 +62,4 @@ const DetailCouple = styled.div`
   padding-left: ${layout.scale[12]};
 `
 
-export default BlockHeader
+export default BlockSingleHeader
