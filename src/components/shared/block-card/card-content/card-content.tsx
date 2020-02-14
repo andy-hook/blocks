@@ -12,6 +12,7 @@ import { mq } from "@style/media-queries"
 interface Props {
   blockNumber?: string
   transactions?: Web3BlockData["transactionsData"]
+  transactionCount?: number
   size?: string
   difficulty?: string
   miner?: string
@@ -25,6 +26,7 @@ const CardContent: React.FunctionComponent<Props> = ({
   difficulty,
   miner,
   loading,
+  transactionCount,
 }) => {
   const renderTrxAsPlaceholderOrPopulated = (
     blockTransactions: Props["transactions"]
@@ -39,7 +41,9 @@ const CardContent: React.FunctionComponent<Props> = ({
   return (
     <Card>
       {/* Title info */}
-      <NumberLabel intensity="low">Block number</NumberLabel>
+      <TransactionsCountLabel intensity="low" loading={loading}>
+        {transactionCount} Transactions
+      </TransactionsCountLabel>
       <Title intensity="high" loading={loading} skeletonWidth="sm">
         &#x23;&nbsp;{blockNumber}
       </Title>
@@ -85,7 +89,7 @@ const Card = styled.div`
   `}
 `
 
-const NumberLabel = styled(Label)`
+const TransactionsCountLabel = styled(Label)`
   margin-bottom: ${layout.scale[5]};
 `
 
