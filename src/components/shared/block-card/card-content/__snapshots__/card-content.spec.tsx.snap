@@ -8,7 +8,7 @@ exports[`<CardContent /> renders correctly 1`] = `
     className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
     size="md"
   >
-    Block number
+     Transactions
   </div>
   <div
     className="sc-VigVT hgupYT"
@@ -735,12 +735,12 @@ exports[`<CardContent /> renders correctly 1`] = `
     className="sc-chPdSV bpNxBw"
   >
     <a
-      className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+      className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
       href="/blocks/100"
       type="secondary"
     >
       <span
-        className="sc-jzJRlG hHPqaR"
+        className="sc-jzJRlG lkILP"
       >
         More Details
       </span>

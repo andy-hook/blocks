@@ -18,6 +18,7 @@ const BlockCard: React.FunctionComponent<Props> = ({ blockData }) => {
           size={toString(blockData.size)}
           difficulty={blockData.difficulty}
           miner={blockData.miner}
+          transactionCount={blockData.transactionCount}
           transactions={blockData.transactionsData}
         />
       )
