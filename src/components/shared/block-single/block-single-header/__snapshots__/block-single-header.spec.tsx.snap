@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlockHeader /> renders correctly 1`] = `
+exports[`<BlockSingleHeader /> renders correctly 1`] = `
 <div
   className="sc-bZQynM ffdLeK"
 >

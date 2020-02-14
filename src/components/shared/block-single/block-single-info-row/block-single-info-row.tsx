@@ -14,7 +14,7 @@ interface Props {
   skeletonWidth?: SkeletonWidth
 }
 
-const BlockInfoRow: React.FunctionComponent<Props> = ({
+const BlockSingleInfoRow: React.FunctionComponent<Props> = ({
   name,
   value,
   loading,
@@ -54,4 +54,4 @@ const ValueLabel = styled.div`
   width: 50%;
 `
 
-export default BlockInfoRow
+export default BlockSingleInfoRow

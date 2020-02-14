@@ -2,31 +2,31 @@ import React from "react"
 import { Web3BlockData } from "model"
 import { toString } from "lodash"
 import styled from "styled-components"
-import BlockInfoList from "./block-info-list/block-info-list"
-import BlockHeader from "./block-header/block-header"
+import BlockSingleInfo from "./block-single-info/block-single-info"
+import BlockSingleHeader from "./block-single-header/block-single-header"
 
 interface Props {
   blockData?: Web3BlockData | null
 }
 
-const BlockDetails: React.FunctionComponent<Props> = ({ blockData }) => {
+const BlockSingle: React.FunctionComponent<Props> = ({ blockData }) => {
   const renderHeaderAsSkeletonOrPopulated = () => {
     if (blockData) {
       return (
-        <BlockHeader
+        <BlockSingleHeader
           blockNumber={toString(blockData.number)}
           transactionCount={toString(blockData.transactionCount)}
         />
       )
     } else {
-      return <BlockHeader loading={true} />
+      return <BlockSingleHeader loading={true} />
     }
   }
 
   const renderInfoListAsSkeletonOrPopulated = () => {
     if (blockData) {
       return (
-        <BlockInfoList
+        <BlockSingleInfo
           size={toString(blockData.size + "B")}
           difficulty={blockData.difficulty}
           totalDifficulty={blockData.totalDifficulty}
@@ -35,7 +35,7 @@ const BlockDetails: React.FunctionComponent<Props> = ({ blockData }) => {
         />
       )
     } else {
-      return <BlockInfoList loading={true} />
+      return <BlockSingleInfo loading={true} />
     }
   }
 
@@ -49,4 +49,4 @@ const BlockDetails: React.FunctionComponent<Props> = ({ blockData }) => {
 
 const Container = styled.article``
 
-export default BlockDetails
+export default BlockSingle

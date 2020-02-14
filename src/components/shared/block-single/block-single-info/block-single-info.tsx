@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import BlockInfoRow from "../block-info-row/block-info-row"
+import BlockSingleInfoRow from "../block-single-info-row/block-single-info-row"
 import { layout, appearance } from "@style/design-tokens"
 import { themeText, themeTone } from "@style/theme"
 
@@ -15,7 +15,7 @@ interface Props {
   loading?: boolean
 }
 
-const BlockInfoList: React.FunctionComponent<Props> = ({
+const BlockSingleInfo: React.FunctionComponent<Props> = ({
   size,
   difficulty,
   totalDifficulty,
@@ -26,31 +26,26 @@ const BlockInfoList: React.FunctionComponent<Props> = ({
   return (
     <Container>
       <InfoList>
-        <InfoRow
-          name="Size"
-          value={size}
-          loading={loading}
-          skeletonWidth="sm"
-        />
-        <InfoRow
+        <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
+        <Row
           name="Difficulty"
           value={difficulty}
           loading={loading}
           skeletonWidth="md"
         />
-        <InfoRow
+        <Row
           name="Total Difficulty"
           value={totalDifficulty}
           loading={loading}
           skeletonWidth="lg"
         />
-        <InfoRow
+        <Row
           name="Gas Used"
           value={gasUsed}
           loading={loading}
           skeletonWidth="md"
         />
-        <InfoRow
+        <Row
           name="Gas Limit"
           value={gasLimit}
           loading={loading}
@@ -72,10 +67,10 @@ const InfoList = styled.ul`
   margin-bottom: -${layout.scale[8]};
 `
 
-const InfoRow = styled(BlockInfoRow)`
+const Row = styled(BlockSingleInfoRow)`
   &:not(:first-child) {
     border-top: ${appearance.borderThickness.regular} solid ${themeText(1000)};
   }
 `
 
-export default BlockInfoList
+export default BlockSingleInfo
