@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import BlockSingleInfoRow from "../block-single-info-row/block-single-info-row"
+import BlockSingleInfoRow from "./block-single-info-row/block-single-info-row"
 import { layout, appearance } from "@style/design-tokens"
 import { themeText, themeTone } from "@style/theme"
 

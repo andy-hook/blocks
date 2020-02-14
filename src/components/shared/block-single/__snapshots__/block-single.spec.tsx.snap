@@ -2,7 +2,7 @@
 
 exports[`<BlockSingle /> renders correctly 1`] = `
 <article
-  className="sc-kgoBCf kVSTZj"
+  className="sc-chPdSV byfFmt"
 >
   <div
     className="sc-bZQynM ffdLeK"
@@ -160,134 +160,6 @@ exports[`<BlockSingle /> renders correctly 1`] = `
         </div>
         <div
           className="sc-gZMcBi hqKcqg"
-        >
-          <div
-            className="sc-htpNat fjqEwh"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb dAzbVZ"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-    </ul>
-  </section>
-  <section
-    className="sc-cSHVUG jEFUfH"
-  >
-    <ul
-      className="sc-kAzzGY dybAEG"
-    >
-      <div
-        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
-      >
-        <div
-          className="sc-bdVaJa ftOOkT"
-          size="sm"
-        >
-          Size
-        </div>
-        <div
-          className="sc-jzJRlG ccPiMY"
-        >
-          <div
-            className="sc-htpNat fjqEwh"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb dAzbVZ"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
-      >
-        <div
-          className="sc-bdVaJa ftOOkT"
-          size="sm"
-        >
-          Difficulty
-        </div>
-        <div
-          className="sc-jzJRlG ccPiMY"
-        >
-          <div
-            className="sc-htpNat fjqEwh"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb kzfWct"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
-      >
-        <div
-          className="sc-bdVaJa ftOOkT"
-          size="sm"
-        >
-          Total Difficulty
-        </div>
-        <div
-          className="sc-jzJRlG ccPiMY"
-        >
-          <div
-            className="sc-htpNat fjqEwh"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb drrWxJ"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
-      >
-        <div
-          className="sc-bdVaJa ftOOkT"
-          size="sm"
-        >
-          Gas Used
-        </div>
-        <div
-          className="sc-jzJRlG ccPiMY"
-        >
-          <div
-            className="sc-htpNat fjqEwh"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb kzfWct"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-fjdhpX bQjLwb sc-chPdSV WSTWU"
-      >
-        <div
-          className="sc-bdVaJa ftOOkT"
-          size="sm"
-        >
-          Gas Limit
-        </div>
-        <div
-          className="sc-jzJRlG ccPiMY"
         >
           <div
             className="sc-htpNat fjqEwh"
