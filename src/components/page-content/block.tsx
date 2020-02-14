@@ -6,7 +6,7 @@ import { useWeb3Context } from "@web3/web3-provider"
 import Page from "@components/shared/page/page"
 import Gutter from "@components/shared/gutter/gutter"
 import Limiter from "@components/shared/limiter/limiter"
-import BlockDetails from "@components/shared/block-details/block-details"
+import BlockSingle from "@components/shared/block-single/block-single"
 
 interface Props {
   path: string
@@ -67,7 +67,7 @@ const Block: React.FunctionComponent<Props> = memo(({ blockNumberFromUrl }) => {
     <Page>
       <Gutter>
         <Limiter size="large">
-          <BlockDetails blockData={blockData.data} />
+          <BlockSingle blockData={blockData.data} />
         </Limiter>
       </Gutter>
     </Page>
