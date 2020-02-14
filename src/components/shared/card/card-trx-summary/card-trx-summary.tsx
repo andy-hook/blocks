@@ -1,6 +1,6 @@
 import React from "react"
 import { Web3TransactionData } from "model"
-import TransactionPip from "@components/shared/block-card/transaction-pip/transaction-pip"
+import CardTrxPip from "@components/shared/card/card-trx-pip/card-trx-pip"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { themeText } from "@style/theme"
@@ -13,21 +13,21 @@ interface Props {
 
 const MAX_TRANSACTIONS = 60
 
-const TransactionsSummary: React.FunctionComponent<Props> = ({
+const CardTrxSummary: React.FunctionComponent<Props> = ({
   transactions,
   loading,
 }) => {
   const renderAsHolderOrPopulated = (transaction?: Web3TransactionData) => {
     if (transaction) {
       return (
-        <TransactionPip
+        <CardTrxPip
           value={transaction.ether}
           from={transaction.from}
           to={transaction.to}
         />
       )
     } else {
-      return <TransactionPip />
+      return <CardTrxPip />
     }
   }
 
@@ -37,7 +37,7 @@ const TransactionsSummary: React.FunctionComponent<Props> = ({
       return (
         <GridItem key={index}>
           {loading ? (
-            <TransactionPip loading={true} />
+            <CardTrxPip loading={true} />
           ) : (
             renderAsHolderOrPopulated(transactions && transactions[index])
           )}
@@ -77,4 +77,4 @@ const Grid = styled.ul`
 
 const GridItem = styled.li``
 
-export default TransactionsSummary
+export default CardTrxSummary

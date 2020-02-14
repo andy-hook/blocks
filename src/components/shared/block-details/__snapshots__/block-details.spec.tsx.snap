@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockDetails /> renders correctly 1`] = `
-<div
-  className="sc-jTzLTM jeaEVH"
+<article
+  className="sc-fjdhpX nsimD"
 >
-  <article
-    className="sc-gZMcBi kxLsOT"
+  <div
+    className="sc-gZMcBi bMScgA"
   >
     <header
-      className="sc-htoDjs bzhYRm"
+      className="sc-gqjmRU fwHxgf"
     >
       <div
-        className="sc-iwsKbI ldERec"
+        className="sc-jTzLTM hqFTZt"
       >
         <div
-          className="sc-bdVaJa jfEAsh sc-dnqmqq dpESLn"
+          className="sc-bdVaJa jfEAsh sc-VigVT gHXSEb"
           size="lg"
         >
           <div
@@ -35,22 +35,26 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         </div>
       </div>
       <a
-        className="sc-bZQynM cSTeFT"
-        href="https://www.google.com"
+        className="sc-dnqmqq FLpyy"
+        href="/"
         type="primary"
       >
         <span
-          className="sc-gzVnrw ipIBGD"
+          className="sc-iwsKbI bihoxR"
         >
           View transactions
         </span>
       </a>
     </header>
+  </div>
+  <section
+    className="sc-bZQynM kUwNZg"
+  >
     <ul
-      className="sc-gqjmRU hnZXkc"
+      className="sc-gzVnrw gjsEYR"
     >
       <div
-        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
       >
         <div
           className="sc-htpNat hwnZXv"
@@ -74,7 +78,7 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
       >
         <div
           className="sc-htpNat hwnZXv"
@@ -98,7 +102,7 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
       >
         <div
           className="sc-htpNat hwnZXv"
@@ -122,7 +126,7 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
       >
         <div
           className="sc-htpNat hwnZXv"
@@ -146,7 +150,7 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX kEvjdA sc-VigVT bcVrsj"
+        className="sc-ifAKCX kEvjdA sc-htoDjs bdMEGW"
       >
         <div
           className="sc-htpNat hwnZXv"
@@ -170,6 +174,6 @@ exports[`<BlockDetails /> renders correctly 1`] = `
         </div>
       </div>
     </ul>
-  </article>
-</div>
+  </section>
+</article>
 `;

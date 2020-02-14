@@ -1,35 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockHeader /> renders correctly 1`] = `
-<header
-  className="sc-bZQynM leOjQD"
+<div
+  className="sc-bZQynM ffdLeK"
 >
-  <div
-    className="sc-htoDjs jzmsjH"
+  <header
+    className="sc-gzVnrw gQWIyA"
   >
     <div
-      className="sc-htpNat iflsxI sc-gzVnrw jSzjMf"
-      size="lg"
+      className="sc-dnqmqq iJSVUv"
     >
-       Transactions
+      <div
+        className="sc-htpNat iflsxI sc-htoDjs bKpsbV"
+        size="lg"
+      >
+         Transactions
+      </div>
+      <div
+        className="sc-bdVaJa jlBogh"
+        size="lg"
+      >
+        # 
+      </div>
     </div>
-    <div
-      className="sc-bdVaJa jlBogh"
-      size="lg"
+    <a
+      className="sc-ifAKCX iaVtiE"
+      href="/"
+      type="primary"
     >
-      # 
-    </div>
-  </div>
-  <a
-    className="sc-ifAKCX iaVtiE"
-    href="https://www.google.com"
-    type="primary"
-  >
-    <span
-      className="sc-EHOje bnYxDG"
-    >
-      View transactions
-    </span>
-  </a>
-</header>
+      <span
+        className="sc-EHOje bnYxDG"
+      >
+        View transactions
+      </span>
+    </a>
+  </header>
+</div>
 `;

@@ -11,7 +11,7 @@ interface Props {
   loading?: boolean
 }
 
-const TransactionPip: React.FunctionComponent<Props> = ({ value, loading }) => {
+const CardTrxPip: React.FunctionComponent<Props> = ({ value, loading }) => {
   return (
     <PipOuter>
       <PipInner hasValue={value ? value > 0 : false} isLoading={loading} />
@@ -43,4 +43,4 @@ const PipInner = styled.div<{
   ${props => props.isLoading && `background-color: purple;`};
 `
 
-export default TransactionPip
+export default CardTrxPip

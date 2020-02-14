@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Web3BlockData } from "model"
-import BlockCard from "@components/shared/block-card/block-card"
+import Card from "@components/shared/card/card"
 import { layout } from "@style/design-tokens"
 import { BLOCK_COUNT } from "@utils"
 import { mq } from "@style/media-queries"
@@ -17,7 +17,7 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
       return (
         <GridItem key={index}>
           <GridItemOffset isEven={(index + 1) % 2 === 0}>
-            <BlockCard blockData={blockData && blockData[index]} />
+            <Card blockData={blockData && blockData[index]} />
           </GridItemOffset>
         </GridItem>
       )
