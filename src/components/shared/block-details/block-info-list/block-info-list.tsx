@@ -2,8 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import BlockInfoRow from "../block-info-row/block-info-row"
 import { layout, appearance } from "@style/design-tokens"
-import BlockHeader from "../block-header/block-header"
-import { themeText } from "@style/theme"
+import { themeText, themeTone } from "@style/theme"
 
 interface Props {
   blockNumber?: string
@@ -16,9 +15,7 @@ interface Props {
   loading?: boolean
 }
 
-const BlockContent: React.FunctionComponent<Props> = ({
-  blockNumber,
-  transactionCount,
+const BlockInfoList: React.FunctionComponent<Props> = ({
   size,
   difficulty,
   totalDifficulty,
@@ -28,11 +25,6 @@ const BlockContent: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <Container>
-      <BlockHeader
-        transactionCount={transactionCount}
-        blockNumber={blockNumber}
-        loading={loading}
-      />
       <InfoList>
         <InfoRow
           name="Size"
@@ -69,19 +61,21 @@ const BlockContent: React.FunctionComponent<Props> = ({
   )
 }
 
-const Container = styled.article`
+const Container = styled.section`
   padding: ${layout.scale[11]};
+  background-color: ${themeTone(500)};
 `
 
-const InfoList = styled.ul``
+const InfoList = styled.ul`
+  /* Sit optically flush against container */
+  margin-top: -${layout.scale[8]};
+  margin-bottom: -${layout.scale[8]};
+`
 
 const InfoRow = styled(BlockInfoRow)`
-  border-top: ${appearance.borderThickness.regular} solid ${themeText(1000)};
-
-  /* Sit optically flush against container */
-  &:last-child {
-    padding-bottom: 0;
+  &:not(:first-child) {
+    border-top: ${appearance.borderThickness.regular} solid ${themeText(1000)};
   }
 `
 
-export default BlockContent
+export default BlockInfoList

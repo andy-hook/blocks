@@ -1,21 +1,32 @@
 import React from "react"
 import { Web3BlockData } from "model"
-import BlockContent from "./block-content/block-content"
 import { toString } from "lodash"
 import styled from "styled-components"
-import { themeTone } from "@style/theme"
+import BlockInfoList from "./block-info-list/block-info-list"
+import BlockHeader from "./block-header/block-header"
 
 interface Props {
   blockData?: Web3BlockData | null
 }
 
 const BlockDetails: React.FunctionComponent<Props> = ({ blockData }) => {
-  const renderAsSkeletonOrPopulated = () => {
+  const renderHeaderAsSkeletonOrPopulated = () => {
     if (blockData) {
       return (
-        <BlockContent
+        <BlockHeader
           blockNumber={toString(blockData.number)}
           transactionCount={toString(blockData.transactionCount)}
+        />
+      )
+    } else {
+      return <BlockHeader loading={true} />
+    }
+  }
+
+  const renderInfoListAsSkeletonOrPopulated = () => {
+    if (blockData) {
+      return (
+        <BlockInfoList
           size={toString(blockData.size + "B")}
           difficulty={blockData.difficulty}
           totalDifficulty={blockData.totalDifficulty}
@@ -24,15 +35,18 @@ const BlockDetails: React.FunctionComponent<Props> = ({ blockData }) => {
         />
       )
     } else {
-      return <BlockContent loading={true} />
+      return <BlockInfoList loading={true} />
     }
   }
 
-  return <Block>{renderAsSkeletonOrPopulated()}</Block>
+  return (
+    <Container>
+      {renderHeaderAsSkeletonOrPopulated()}
+      {renderInfoListAsSkeletonOrPopulated()}
+    </Container>
+  )
 }
 
-const Block = styled.div`
-  background-color: ${themeTone(500)};
-`
+const Container = styled.article``
 
 export default BlockDetails

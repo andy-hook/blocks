@@ -20,7 +20,8 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            34
+             Transactions
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -747,12 +748,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/7250672"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -778,7 +779,8 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            34
+             Transactions
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -1505,12 +1507,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/7250672"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -1536,7 +1538,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -2284,12 +2290,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -2315,7 +2321,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -3063,12 +3073,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -3094,7 +3104,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -3842,12 +3856,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -3873,7 +3887,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -4621,12 +4639,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -4652,7 +4670,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -5400,12 +5422,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -5431,7 +5453,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -6179,12 +6205,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -6210,7 +6236,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -6958,12 +6988,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>
@@ -6989,7 +7019,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
             size="md"
           >
-            Block number
+            <div
+              className="sc-bZQynM jGlszk"
+            >
+               
+            </div>
           </div>
           <div
             className="sc-VigVT hgupYT"
@@ -7737,12 +7771,12 @@ exports[`<BlockList /> renders correctly 1`] = `
             className="sc-chPdSV bpNxBw"
           >
             <a
-              className="sc-fjdhpX jGxuuI sc-kgoBCf dimznU"
+              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
               href="/blocks/undefined"
               type="secondary"
             >
               <span
-                className="sc-jzJRlG hHPqaR"
+                className="sc-jzJRlG lkILP"
               >
                 More Details
               </span>

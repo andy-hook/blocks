@@ -8,25 +8,25 @@ exports[`<BlockHeader /> renders correctly 1`] = `
     className="sc-htoDjs jzmsjH"
   >
     <div
-      className="sc-bdVaJa jlBogh sc-gzVnrw hBjlQU"
-      size="lg"
-    >
-      # 
-    </div>
-    <div
-      className="sc-htpNat iflsxI"
+      className="sc-htpNat iflsxI sc-gzVnrw jSzjMf"
       size="lg"
     >
        Transactions
     </div>
+    <div
+      className="sc-bdVaJa jlBogh"
+      size="lg"
+    >
+      # 
+    </div>
   </div>
   <a
-    className="sc-ifAKCX gyAyBF"
+    className="sc-ifAKCX iaVtiE"
     href="https://www.google.com"
     type="primary"
   >
     <span
-      className="sc-EHOje dkmHZI"
+      className="sc-EHOje bnYxDG"
     >
       View transactions
     </span>
