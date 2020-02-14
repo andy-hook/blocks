@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Web3BlockData } from "model"
 import { toString } from "lodash"
 import styled from "styled-components"
@@ -10,12 +10,24 @@ interface Props {
 }
 
 const BlockSingle: React.FunctionComponent<Props> = ({ blockData }) => {
+  const [trxVisible, setTrxVisible] = useState<boolean>(false)
+
+  function handleDetailsClick() {
+    setTrxVisible(false)
+  }
+
+  function handleTransactionsClick() {
+    setTrxVisible(true)
+  }
+
   const renderHeaderAsSkeletonOrPopulated = () => {
     if (blockData) {
       return (
         <BlockSingleHeader
           blockNumber={toString(blockData.number)}
           transactionCount={toString(blockData.transactionCount)}
+          handleDetailsClick={handleDetailsClick}
+          handleTransactionsClick={handleTransactionsClick}
         />
       )
     } else {
@@ -26,7 +38,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({ blockData }) => {
   return (
     <Container>
       {renderHeaderAsSkeletonOrPopulated()}
-      <BlockSingleBody blockData={blockData} />
+      <BlockSingleBody trxVisible={trxVisible} blockData={blockData} />
     </Container>
   )
 }
