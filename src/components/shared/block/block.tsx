@@ -20,7 +20,7 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
     setTrxVisible(true)
   }
 
-  const renderHeaderAsSkeletonOrPopulated = () => {
+  function renderHeaderAsSkeletonOrPopulated() {
     if (blockData) {
       return (
         <BlockHeader

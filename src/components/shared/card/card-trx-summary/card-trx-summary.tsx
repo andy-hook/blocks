@@ -17,7 +17,7 @@ const CardTrxSummary: React.FunctionComponent<Props> = ({
   transactions,
   loading,
 }) => {
-  const renderAsHolderOrPopulated = (transaction?: Web3TransactionData) => {
+  function renderAsHolderOrPopulated(transaction?: Web3TransactionData) {
     if (transaction) {
       return (
         <CardTrxPip
@@ -32,7 +32,7 @@ const CardTrxSummary: React.FunctionComponent<Props> = ({
   }
 
   // Renders items
-  const renderItems = () => {
+  function renderItems() {
     return Array.from(Array(MAX_TRANSACTIONS)).map((_, index) => {
       return (
         <GridItem key={index}>

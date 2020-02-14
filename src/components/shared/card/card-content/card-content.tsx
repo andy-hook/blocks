@@ -28,9 +28,9 @@ const CardContent: React.FunctionComponent<Props> = ({
   loading,
   transactionCount,
 }) => {
-  const renderTrxAsPlaceholderOrPopulated = (
+  function renderTrxAsPlaceholderOrPopulated(
     blockTransactions: Props["transactions"]
-  ) => {
+  ) {
     if (blockTransactions) {
       return <CardTrxSummary transactions={blockTransactions} />
     } else {

@@ -12,7 +12,7 @@ interface Props {
 
 const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
   // Render skeleton items while awaiting data
-  const renderItems = () => {
+  function renderItems() {
     return Array.from(Array(BLOCK_COUNT)).map((_, index) => {
       return (
         <GridItem key={index}>

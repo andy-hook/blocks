@@ -10,7 +10,7 @@ interface Props {
 }
 
 const MenuBlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
-  const itemsToRender = () => {
+  function renderItems() {
     if (blockData) {
       return blockData.map((block, index) => {
         return (
@@ -24,7 +24,7 @@ const MenuBlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
     }
   }
 
-  return <>{itemsToRender()}</>
+  return <>{renderItems()}</>
 })
 
 export const Item = styled.div`
