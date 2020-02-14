@@ -6,10 +6,7 @@ jest.mock("react-truncate-string")
 
 describe("<BlockSingleTrxRow />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme(
-      "dark",
-      <BlockSingleTrxRow name="string" value="string" />
-    )
+    const tree = renderWithTheme("dark", <BlockSingleTrxRow />)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -6,21 +6,25 @@ import BlockSingleTrx from "./block-single-trx/block-single-trx"
 
 interface Props {
   blockData?: Web3BlockData | null
+  trxVisible: boolean
 }
 
-const BlockSingleBody: React.FunctionComponent<Props> = ({ blockData }) => {
+const BlockSingleBody: React.FunctionComponent<Props> = ({
+  blockData,
+  trxVisible,
+}) => {
   const renderInfoAsSkeletonOrPopulated = () => {
     if (blockData) {
-      return (
-        <>
-          <BlockSingleInfo
-            size={toString(blockData.size + "B")}
-            difficulty={blockData.difficulty}
-            totalDifficulty={blockData.totalDifficulty}
-            gasLimit={toString(blockData.gasLimit)}
-            gasUsed={toString(blockData.gasUsed)}
-          />
-        </>
+      return trxVisible ? (
+        <BlockSingleTrx transactions={blockData.transactionsData} />
+      ) : (
+        <BlockSingleInfo
+          size={toString(blockData.size + "B")}
+          difficulty={blockData.difficulty}
+          totalDifficulty={blockData.totalDifficulty}
+          gasLimit={toString(blockData.gasLimit)}
+          gasUsed={toString(blockData.gasUsed)}
+        />
       )
     } else {
       return (
@@ -31,14 +35,7 @@ const BlockSingleBody: React.FunctionComponent<Props> = ({ blockData }) => {
     }
   }
 
-  return (
-    <>
-      {renderInfoAsSkeletonOrPopulated()}
-      {blockData && (
-        <BlockSingleTrx transactions={blockData.transactionsData} />
-      )}
-    </>
-  )
+  return <>{renderInfoAsSkeletonOrPopulated()}</>
 }
 
 export default BlockSingleBody

@@ -2,16 +2,16 @@
 
 exports[`<BlockSingleHeader /> renders correctly 1`] = `
 <div
-  className="sc-bZQynM ffdLeK"
+  className="sc-gzVnrw iCGcXq"
 >
   <header
-    className="sc-gzVnrw gQWIyA"
+    className="sc-htoDjs dEgfPh"
   >
     <div
-      className="sc-dnqmqq iJSVUv"
+      className="sc-iwsKbI ldERec"
     >
       <div
-        className="sc-htpNat iflsxI sc-htoDjs bKpsbV"
+        className="sc-htpNat iflsxI sc-dnqmqq dpESLn"
         size="lg"
       >
          Transactions
@@ -23,17 +23,20 @@ exports[`<BlockSingleHeader /> renders correctly 1`] = `
         # 
       </div>
     </div>
-    <a
-      className="sc-ifAKCX iaVtiE"
-      href="/"
-      type="primary"
+    <section
+      className="sc-ifAKCX kWjkTO"
     >
-      <span
-        className="sc-EHOje bnYxDG"
+      <button
+        className="sc-EHOje jvzENE"
       >
-        View transactions
-      </span>
-    </a>
+        Details
+      </button>
+      <button
+        className="sc-bZQynM bOrPFB"
+      >
+        Transactions
+      </button>
+    </section>
   </header>
 </div>
 `;

@@ -4,7 +4,7 @@ import { renderWithTheme } from "@test-utils"
 
 describe("<BlockSingleBody />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <BlockSingleBody />)
+    const tree = renderWithTheme("dark", <BlockSingleBody trxVisible={false} />)
     expect(tree).toMatchSnapshot()
   })
 })

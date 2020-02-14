@@ -3,7 +3,5 @@
 exports[`<BlockSingleTrxRow /> renders correctly 1`] = `
 <div
   className="sc-bdVaJa fgoXiO"
->
-  string
-</div>
+/>
 `;
