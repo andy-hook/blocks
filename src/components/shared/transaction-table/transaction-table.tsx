@@ -1,11 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import BlockTransactionRow, {
-  rowPaddingX,
-} from "./block-transaction-row/block-transaction-row"
+import Transaction, { rowPaddingX } from "./transaction/transaction"
 import { themeTone } from "@style/theme"
 import { Web3BlockData } from "model"
-import BlockTransactionCols from "./block-transaction-cols/block-transaction-cols"
+import ColumnsTemplate from "./columns-template/columns-template"
 import Label from "../label/label"
 import { layout } from "@style/design-tokens"
 import { toString } from "lodash"
@@ -14,9 +12,7 @@ interface Props {
   transactions: Web3BlockData["transactionsData"]
 }
 
-const BlockTransactions: React.FunctionComponent<Props> = ({
-  transactions,
-}) => {
+const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
   function renderBodyRows() {
     return transactions.map((trx, index) => {
       return (
@@ -36,7 +32,7 @@ const BlockTransactions: React.FunctionComponent<Props> = ({
     <Table>
       <TableHead>
         <TableHeadRow>
-          <BlockTransactionCols
+          <ColumnsTemplate
             tableHeader={true}
             block={<Heading>Block</Heading>}
             hash={<Heading>Hash</Heading>}
@@ -57,14 +53,13 @@ const Heading: React.FunctionComponent = ({ children }) => (
 )
 
 const Table = styled.table`
-  background-color: ${themeTone(500)};
   display: block;
 `
 
 const TableHead = styled.thead`
   display: block;
-  padding: ${layout.scale[5]} ${rowPaddingX};
-  background-color: orange;
+  padding: ${layout.scale[7]} ${rowPaddingX};
+  background-color: ${themeTone(500)};
 `
 
 const TableHeadRow = styled.tr`
@@ -76,8 +71,8 @@ const TableBody = styled.tbody`
   display: block;
 `
 
-const DataRow = styled(BlockTransactionRow)`
+const DataRow = styled(Transaction)`
   margin-top: ${layout.scale[5]};
 `
 
-export default BlockTransactions
+export default TransactionTable

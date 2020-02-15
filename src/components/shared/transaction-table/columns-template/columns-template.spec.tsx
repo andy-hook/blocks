@@ -1,15 +1,19 @@
 import React from "react"
-import BlockTransactions from "./block-transactions"
+import ColumnsTemplate from "./columns-template"
 import { renderWithTheme } from "@test-utils"
-import { mockMultipleWeb3TransactionData } from "@data/mocks"
 
 jest.mock("react-truncate-string")
 
-describe("<BlockSingleTrx />", () => {
+describe("<ColumnsTemplate />", () => {
   it("renders correctly", () => {
     const tree = renderWithTheme(
       "dark",
-      <BlockTransactions transactions={mockMultipleWeb3TransactionData} />
+      <ColumnsTemplate
+        block="string"
+        hash="string"
+        fromTo="string"
+        value="string"
+      />
     )
     expect(tree).toMatchSnapshot()
   })

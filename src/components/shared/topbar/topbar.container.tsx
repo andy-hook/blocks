@@ -14,6 +14,8 @@ import { menuZindex } from "../menu/menu"
 import { rem } from "polished"
 import { scaleBetween, scaleGreaterThan } from "@style/media-queries"
 import styled from "styled-components"
+import LoadingStrip from "@components/shared/loading-strip/loading-strip"
+import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 
 interface DispatchProps {
   openMenu: () => void
@@ -73,6 +75,7 @@ const TopbarContainer: React.FunctionComponent<ContainerProps> = memo(
     lightThemeEnabled,
     toggleTheme,
   }) => {
+    const { loading } = useLoadingStatusContext()
     const [offsetHolderInviewRef, inView] = useInView()
 
     useScrollPosition(({ prevPos, currPos }) => {
@@ -94,6 +97,7 @@ const TopbarContainer: React.FunctionComponent<ContainerProps> = memo(
 
     return (
       <>
+        <LoadingStrip loading={loading} />
         <Topbar
           open={menuOpen}
           visible={topbarVisible}

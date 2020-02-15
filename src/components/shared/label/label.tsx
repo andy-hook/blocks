@@ -61,8 +61,8 @@ const textSize = {
 
 const textColors = {
   low: themeText(900),
-  medium: themeText(500),
-  high: themeText(700),
+  medium: themeText(800),
+  high: themeText(500),
 }
 
 const Text = styled.div<{

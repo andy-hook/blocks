@@ -2,7 +2,7 @@ import React from "react"
 import { Web3BlockData } from "model"
 import BlockInfo from "@components/shared/block-info/block-info"
 import { toString } from "lodash"
-import BlockTransactions from "@components/shared/block-transactions/block-transactions"
+import TransactionTable from "@components/shared/transaction-table/transaction-table"
 
 interface Props {
   blockData?: Web3BlockData | null
@@ -16,10 +16,10 @@ const BlockBody: React.FunctionComponent<Props> = ({
   function renderInfoAsSkeletonOrPopulated() {
     if (blockData) {
       return trxVisible ? (
-        <BlockTransactions transactions={blockData.transactionsData} />
+        <TransactionTable transactions={blockData.transactionsData} />
       ) : (
         <>
-          <BlockTransactions transactions={blockData.transactionsData} />
+          <TransactionTable transactions={blockData.transactionsData} />
           <BlockInfo
             size={toString(blockData.size + "B")}
             difficulty={blockData.difficulty}

@@ -10,7 +10,7 @@ interface Props {
   value: any
 }
 
-const BlockTransactionCols: React.FunctionComponent<Props> = ({
+const ColumnsTemplate: React.FunctionComponent<Props> = ({
   tableHeader = false,
   block,
   hash,
@@ -33,8 +33,8 @@ const Col = styled.td`
   display: flex;
   align-items: center;
 
-  padding-left: ${layout.scale[4]};
-  padding-right: ${layout.scale[4]};
+  padding-left: ${layout.scale[5]};
+  padding-right: ${layout.scale[5]};
 `
 
 const Hash = styled(Col)`
@@ -53,4 +53,4 @@ const Value = styled(Col)`
   width: 15%;
 `
 
-export default BlockTransactionCols
+export default ColumnsTemplate

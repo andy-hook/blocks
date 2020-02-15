@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlockSingleTrx /> renders correctly 1`] = `
+exports[`<TransactionTable /> renders correctly 1`] = `
 <table
-  className="sc-iwsKbI dHZycU"
+  className="sc-iwsKbI jiPRqw"
 >
   <thead
-    className="sc-gZMcBi jKHKPE"
+    className="sc-gZMcBi cDcUiF"
   >
     <tr
       className="sc-gqjmRU iRDvLn"
     >
       <th
-        className="sc-bdVaJa sc-bwzfXH kIQmTZ"
+        className="sc-bdVaJa sc-bwzfXH bYluML"
       >
         <div
           className="sc-gzVnrw drvdmO"
@@ -21,7 +21,7 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </th>
       <th
-        className="sc-bdVaJa sc-htpNat fwPHmk"
+        className="sc-bdVaJa sc-htpNat ktEnks"
       >
         <div
           className="sc-gzVnrw drvdmO"
@@ -31,7 +31,7 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </th>
       <th
-        className="sc-bdVaJa sc-bxivhb dUdiVs"
+        className="sc-bdVaJa sc-bxivhb jyedSb"
       >
         <div
           className="sc-gzVnrw drvdmO"
@@ -41,7 +41,7 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </th>
       <th
-        className="sc-bdVaJa sc-ifAKCX qNfRk"
+        className="sc-bdVaJa sc-ifAKCX lppyUR"
       >
         <div
           className="sc-gzVnrw drvdmO"
@@ -56,10 +56,10 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
     className="sc-VigVT bCcJUc"
   >
     <tr
-      className="sc-dnqmqq bAdZNb sc-jTzLTM ePCJr"
+      className="sc-dnqmqq hnNEMU sc-jTzLTM ePCJr"
     >
       <td
-        className="sc-bdVaJa sc-bwzfXH kIQmTZ"
+        className="sc-bdVaJa sc-bwzfXH bYluML"
       >
         <div
           className="sc-EHOje fKjTYp"
@@ -67,15 +67,15 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         />
       </td>
       <td
-        className="sc-bdVaJa sc-htpNat fwPHmk"
+        className="sc-bdVaJa sc-htpNat ktEnks"
       >
         <div
-          className="sc-gzVnrw hicXCb"
+          className="sc-gzVnrw hySMDL"
           size="md"
         />
       </td>
       <td
-        className="sc-bdVaJa sc-bxivhb dUdiVs"
+        className="sc-bdVaJa sc-bxivhb jyedSb"
       >
         <div>
           0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
@@ -83,19 +83,19 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </td>
       <td
-        className="sc-bdVaJa sc-ifAKCX qNfRk"
+        className="sc-bdVaJa sc-ifAKCX lppyUR"
       >
         <div
-          className="sc-gzVnrw hicXCb"
+          className="sc-gzVnrw hySMDL"
           size="md"
         />
       </td>
     </tr>
     <tr
-      className="sc-dnqmqq bAdZNb sc-jTzLTM ePCJr"
+      className="sc-dnqmqq hnNEMU sc-jTzLTM ePCJr"
     >
       <td
-        className="sc-bdVaJa sc-bwzfXH kIQmTZ"
+        className="sc-bdVaJa sc-bwzfXH bYluML"
       >
         <div
           className="sc-EHOje fKjTYp"
@@ -103,15 +103,15 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         />
       </td>
       <td
-        className="sc-bdVaJa sc-htpNat fwPHmk"
+        className="sc-bdVaJa sc-htpNat ktEnks"
       >
         <div
-          className="sc-gzVnrw hicXCb"
+          className="sc-gzVnrw hySMDL"
           size="md"
         />
       </td>
       <td
-        className="sc-bdVaJa sc-bxivhb dUdiVs"
+        className="sc-bdVaJa sc-bxivhb jyedSb"
       >
         <div>
           0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
@@ -119,10 +119,10 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </td>
       <td
-        className="sc-bdVaJa sc-ifAKCX qNfRk"
+        className="sc-bdVaJa sc-ifAKCX lppyUR"
       >
         <div
-          className="sc-gzVnrw hicXCb"
+          className="sc-gzVnrw hySMDL"
           size="md"
         />
       </td>

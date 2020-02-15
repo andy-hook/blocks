@@ -1,11 +1,12 @@
 import React from "react"
 import classNames from "classnames"
-import BlockTransactionCols from "../block-transaction-cols/block-transaction-cols"
+import ColumnsTemplate from "../columns-template/columns-template"
 import styled from "styled-components"
 import TruncateString from "react-truncate-string"
 import { layout } from "@style/design-tokens"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
+import { themeTone } from "@style/theme"
 
 interface Props {
   blockNumber?: string
@@ -16,7 +17,7 @@ interface Props {
   className?: string
 }
 
-const BlockTransactionRow: React.FunctionComponent<Props> = ({
+const Transaction: React.FunctionComponent<Props> = ({
   blockNumber,
   trxHash,
   from,
@@ -26,7 +27,7 @@ const BlockTransactionRow: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <Row className={classNames("", className)}>
-      <BlockTransactionCols
+      <ColumnsTemplate
         hash={
           <Title size="xs">
             <TruncateString text={trxHash} truncateAt={50} />
@@ -57,9 +58,9 @@ export const rowPaddingX = layout.scale[8]
 
 const Row = styled.tr`
   display: flex;
-  background-color: red;
+  background-color: ${themeTone(500)};
 
-  padding: ${layout.scale[5]} ${layout.scale[8]};
+  padding: ${layout.scale[8]} ${layout.scale[8]};
 `
 
-export default BlockTransactionRow
+export default Transaction

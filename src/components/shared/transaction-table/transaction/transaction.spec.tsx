@@ -1,12 +1,12 @@
 import React from "react"
-import BlockTransactionRow from "./block-transaction-row"
+import Transaction from "./transaction"
 import { renderWithTheme } from "@test-utils"
 
 jest.mock("react-truncate-string")
 
-describe("<BlockTransactionRow />", () => {
+describe("<Transaction />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <BlockTransactionRow />)
+    const tree = renderWithTheme("dark", <Transaction />)
     expect(tree).toMatchSnapshot()
   })
 })
