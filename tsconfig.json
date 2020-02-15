@@ -58,7 +58,7 @@
       "@test-utils": ["./src/test-utils/index.tsx"],
       "@components/*": ["./src/components/*"],
       "@custom-types/*": ["./src/types/*"],
-      "@images/*": ["./src/images/*"],
+      "@svg/*": ["./src/svg/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@utils": ["./src/utils/index.tsx"],
       "@providers/*": ["./src/providers/*"],

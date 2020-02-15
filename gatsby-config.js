@@ -87,23 +87,13 @@ module.exports = {
           "@data": path.resolve(__dirname, "src/data"),
           "@components": path.resolve(__dirname, "src/components"),
           "@custom-types": path.resolve(__dirname, "src/types"),
-          "@images": path.resolve(__dirname, "src/images"),
+          "@svg": path.resolve(__dirname, "src/svg"),
           "@hooks": path.resolve(__dirname, "src/hooks"),
           "@utils": path.resolve(__dirname, "src/utils"),
           "@providers": path.resolve(__dirname, "src/providers"),
           "@web3": path.resolve(__dirname, "src/web3"),
         },
         extensions: [],
-      },
-    },
-
-    // Import SVG as react components
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: `${__dirname}/src/images/svg-import`,
-        },
       },
     },
 
