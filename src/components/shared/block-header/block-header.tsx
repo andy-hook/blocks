@@ -42,7 +42,7 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
     }
 
     return (
-      <Container>
+      <HeaderPanel yPadding="lg" xPadding="lg">
         <Button to="/" buttonType="tertiary" icon="arrow-left">
           All Blocks
         </Button>
@@ -68,12 +68,12 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
             />
           </HeaderInner>
         </Header>
-      </Container>
+      </HeaderPanel>
     )
   }
 )
 
-const Container = styled(Panel)`
+const HeaderPanel = styled(Panel)`
   margin-bottom: ${layout.scale[8]};
 `
 

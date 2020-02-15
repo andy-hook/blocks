@@ -2,19 +2,19 @@
 
 exports[`<TransactionTable /> renders correctly 1`] = `
 <table
-  className="sc-cSHVUG kKMZZz"
+  className="sc-kAzzGY busMyf"
 >
   <thead
-    className="sc-kAzzGY fnJGrR"
+    className="sc-chPdSV fESGkf"
   >
     <tr
-      className="sc-chPdSV dxNFWQ"
+      className="sc-kgoBCf beOYFC"
     >
       <th
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-gzVnrw drvdmO"
+          className="sc-gzVnrw bzArvE"
           size="lg"
         >
           Block
@@ -24,7 +24,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw drvdmO"
+          className="sc-gzVnrw bzArvE"
           size="lg"
         >
           Hash
@@ -34,7 +34,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bxivhb hxXuRT"
       >
         <div
-          className="sc-gzVnrw drvdmO"
+          className="sc-gzVnrw bzArvE"
           size="lg"
         >
           From / To
@@ -44,7 +44,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-ifAKCX gEVBXo"
       >
         <div
-          className="sc-gzVnrw drvdmO"
+          className="sc-gzVnrw bzArvE"
           size="lg"
         >
           Value
@@ -53,10 +53,10 @@ exports[`<TransactionTable /> renders correctly 1`] = `
     </tr>
   </thead>
   <tbody
-    className="sc-kgoBCf hzZlFC"
+    className="sc-kGXeez htkide"
   >
     <tr
-      className="sc-jzJRlG cCQXGv sc-kGXeez cRMEME"
+      className="sc-cSHVUG izuQkF sc-kpOJdX gigAWr"
     >
       <td
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
@@ -70,7 +70,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw hySMDL sc-fjdhpX kcoeae"
+          className="sc-gzVnrw hySMDL sc-jzJRlG dHdNug"
           size="md"
         />
       </td>
@@ -123,7 +123,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
       </td>
     </tr>
     <tr
-      className="sc-jzJRlG cCQXGv sc-kGXeez cRMEME"
+      className="sc-cSHVUG izuQkF sc-kpOJdX gigAWr"
     >
       <td
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
@@ -137,7 +137,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw hySMDL sc-fjdhpX kcoeae"
+          className="sc-gzVnrw hySMDL sc-jzJRlG dHdNug"
           size="md"
         />
       </td>

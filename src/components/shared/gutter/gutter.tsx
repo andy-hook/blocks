@@ -13,15 +13,15 @@ const Gutter = memo(
   ))
 )
 
-export const smallScreenGutter = rem("25px")
+export const smallScreenGutter = rem("15px")
 
 const GutterContainer = styled.div`
   padding-left: ${smallScreenGutter};
   padding-right: ${smallScreenGutter};
 
   ${mq.between("topThumb", "topDesk")`
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
   `}
 
   ${mq.between("topDesk", "bottomUltra")`
