@@ -2,16 +2,16 @@
 
 exports[`<BlockHeader /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw iCGcXq"
+  className="sc-gzVnrw eNMNUi sc-htoDjs fHvRim"
 >
   <header
-    className="sc-htoDjs dEgfPh"
+    className="sc-dnqmqq adqDD"
   >
     <div
-      className="sc-iwsKbI ldERec"
+      className="sc-gZMcBi cwYwrq"
     >
       <div
-        className="sc-htpNat brNyGz sc-dnqmqq dpESLn"
+        className="sc-htpNat brNyGz sc-iwsKbI leOnVy"
         size="lg"
       >
          Transactions

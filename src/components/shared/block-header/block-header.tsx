@@ -3,8 +3,8 @@ import styled from "styled-components"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
 import { layout } from "@style/design-tokens"
-import { themeTone } from "@style/theme"
 import BlockHeaderSwitch from "./block-header-switch/block-header-switch"
+import Panel from "@components/shared/panel/panel"
 
 interface Props {
   blockNumber?: string
@@ -46,9 +46,7 @@ const BlockHeader: React.FunctionComponent<Props> = ({
   )
 }
 
-const Container = styled.div`
-  padding: ${layout.scale[11]};
-  background-color: ${themeTone(500)};
+const Container = styled(Panel)`
   margin-bottom: ${layout.scale[8]};
 `
 
