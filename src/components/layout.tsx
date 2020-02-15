@@ -9,7 +9,7 @@ import Web3BlocksDataProvider from "@web3/web3-blocks-data-provider"
 import { BLOCK_COUNT, USE_MAINNET } from "@utils"
 import LoadingStatusProvider from "@providers/loading-status-provider/loading-status-provider"
 import ThemeSwitchProvider from "@providers/theme-switch-provider/theme-switch-provider"
-import LoadingStrip from "@components/shared/loading-strip/loading-strip"
+import LoadingIndicator from "@components/shared/loading-indicator/loading-indicator"
 
 const Layout: React.FunctionComponent = memo(({ children }) => {
   return (
@@ -20,7 +20,7 @@ const Layout: React.FunctionComponent = memo(({ children }) => {
             <LoadingStatusProvider>
               <>
                 <GlobalStyle />
-                <LoadingStrip />
+                <LoadingIndicator />
                 <Topbar />
                 {children}
               </>

@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 
-const LoadingStrip: React.FunctionComponent = memo(() => {
+const LoadingIndicator: React.FunctionComponent = memo(() => {
   const { loading } = useLoadingStatusContext()
   return <>{loading && <LoadingContainer />}</>
 })
@@ -21,4 +21,4 @@ const LoadingContainer = styled.div`
   height: 10px;
 `
 
-export default LoadingStrip
+export default LoadingIndicator
