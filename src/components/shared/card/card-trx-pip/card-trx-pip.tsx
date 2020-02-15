@@ -1,25 +1,49 @@
 import React, { memo } from "react"
 import { Web3TransactionData } from "model"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
+import { themeTone } from "@style/theme"
 
 interface Props {
   value?: number
   to?: Web3TransactionData["to"]
   from?: Web3TransactionData["from"]
   loading?: boolean
+  isEmpty?: boolean
 }
 
 const CardTrxPip: React.FunctionComponent<Props> = memo(
-  ({ value, loading }) => {
+  ({ value, loading, isEmpty }) => {
     return (
       <PipOuter>
-        <PipInner hasValue={value ? value > 0 : false} isLoading={loading} />
+        <PipInner
+          hasValue={value ? value > 0 : false}
+          zeroValue={value === 0}
+          isEmpty={isEmpty}
+          isLoading={loading}
+        />
       </PipOuter>
     )
   }
 )
+
+const empty = css`
+  border: ${appearance.borderThickness.thick} solid ${themeTone(1000)};
+`
+
+const zeroValue = css`
+  background-color: hotpink;
+  opacity: 0.15;
+`
+
+const hasValue = css`
+  background-color: hotpink;
+`
+
+const isLoading = css`
+  background-color: purple;
+`
 
 const PipOuter = styled.div`
   padding: ${layout.scale[1]};
@@ -27,12 +51,12 @@ const PipOuter = styled.div`
 
 const PipInner = styled.div<{
   isLoading: Props["loading"]
+  isEmpty?: boolean
   hasValue?: boolean
+  zeroValue?: boolean
 }>`
   width: ${layout.scale[3]};
   height: ${layout.scale[3]};
-
-  background-color: brown;
 
   border-radius: ${appearance.radius.circle};
 
@@ -41,8 +65,10 @@ const PipInner = styled.div<{
     height: ${layout.scale[4]};
   `}
 
-  ${props => props.hasValue && `background-color: hotpink;`}
-  ${props => props.isLoading && `background-color: purple;`};
+  ${props => props.isEmpty && empty}
+  ${props => props.zeroValue && zeroValue}
+  ${props => props.hasValue && hasValue}
+  ${props => props.isLoading && isLoading};
 `
 
 export default CardTrxPip

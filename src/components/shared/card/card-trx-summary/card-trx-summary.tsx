@@ -5,13 +5,12 @@ import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { themeText } from "@style/theme"
 import { mq } from "@style/media-queries"
+import { SUMMARY_MAX_TRANSACTIONS } from "@utils"
 
 interface Props {
   transactions?: Web3TransactionData[]
   loading?: boolean
 }
-
-const MAX_TRANSACTIONS = 60
 
 const CardTrxSummary: React.FunctionComponent<Props> = memo(
   ({ transactions, loading }) => {
@@ -25,13 +24,13 @@ const CardTrxSummary: React.FunctionComponent<Props> = memo(
           />
         )
       } else {
-        return <CardTrxPip />
+        return <CardTrxPip isEmpty={true} />
       }
     }
 
     // Renders items
     function renderItems() {
-      return Array.from(Array(MAX_TRANSACTIONS)).map((_, index) => {
+      return Array.from(Array(SUMMARY_MAX_TRANSACTIONS)).map((_, index) => {
         return (
           <GridItem key={index}>
             {loading ? (
@@ -55,7 +54,6 @@ const CardTrxSummary: React.FunctionComponent<Props> = memo(
 const GridContainer = styled.div`
   padding-top: ${layout.scale[7]};
   padding-bottom: ${layout.scale[7]};
-
   margin-bottom: ${layout.scale[7]};
 
   border-bottom: ${appearance.borderThickness.regular} solid ${themeText(1000)};
