@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ColumnsTemplate /> renders correctly 1`] = `
+Array [
+  <td
+    className="sc-bdVaJa sc-bwzfXH bYluML"
+  >
+    string
+  </td>,
+  <td
+    className="sc-bdVaJa sc-htpNat ktEnks"
+  >
+    string
+  </td>,
+  <td
+    className="sc-bdVaJa sc-bxivhb jyedSb"
+  >
+    string
+  </td>,
+  <td
+    className="sc-bdVaJa sc-ifAKCX lppyUR"
+  >
+    string
+  </td>,
+]
+`;

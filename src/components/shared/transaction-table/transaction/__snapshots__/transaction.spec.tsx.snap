@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Transaction /> renders correctly 1`] = `
+<tr
+  className="sc-dnqmqq hnNEMU"
+>
+  <td
+    className="sc-bdVaJa sc-bwzfXH bYluML"
+  >
+    <div
+      className="sc-EHOje fKjTYp"
+      size="xs"
+    />
+  </td>
+  <td
+    className="sc-bdVaJa sc-htpNat ktEnks"
+  >
+    <div
+      className="sc-gzVnrw hySMDL"
+      size="md"
+    />
+  </td>
+  <td
+    className="sc-bdVaJa sc-bxivhb jyedSb"
+  >
+    <div />
+  </td>
+  <td
+    className="sc-bdVaJa sc-ifAKCX lppyUR"
+  >
+    <div
+      className="sc-gzVnrw hySMDL"
+      size="md"
+    />
+  </td>
+</tr>
+`;
