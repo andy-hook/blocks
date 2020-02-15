@@ -8,6 +8,7 @@ import CardDetails from "../card-details/card-details"
 import Title from "@components/shared/title/title"
 import Button from "@components/shared/button/button"
 import { mq } from "@style/media-queries"
+import Panel from "@components/shared/panel/panel"
 
 interface Props {
   blockNumber?: string
@@ -39,7 +40,7 @@ const CardContent: React.FunctionComponent<Props> = ({
   }
 
   return (
-    <Card>
+    <Panel>
       {/* Title info */}
       <TransactionsCountLabel intensity="low" loading={loading}>
         {transactionCount} Transactions
@@ -65,29 +66,9 @@ const CardContent: React.FunctionComponent<Props> = ({
           More Details
         </CardButton>
       </CardActions>
-    </Card>
+    </Panel>
   )
 }
-
-const Card = styled.div`
-  padding: ${layout.scale[7]};
-
-  ${mq.greaterThan("topPalm")`
-    padding: ${layout.scale[9]};
-  `}
-
-  ${mq.greaterThan("topLap")`
-    padding: ${layout.scale[8]};
-  `}
-
-  ${mq.greaterThan("topWide")`
-    padding: ${layout.scale[9]};
-  `}
-
-  ${mq.greaterThan("topWall")`
-    padding: ${layout.scale[10]};
-  `}
-`
 
 const TransactionsCountLabel = styled(Label)`
   margin-bottom: ${layout.scale[5]};
