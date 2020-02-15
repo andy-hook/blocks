@@ -11,13 +11,15 @@ interface Props {
   loading?: boolean
 }
 
-const CardTrxPip: React.FunctionComponent<Props> = ({ value, loading }) => {
-  return (
-    <PipOuter>
-      <PipInner hasValue={value ? value > 0 : false} isLoading={loading} />
-    </PipOuter>
-  )
-}
+const CardTrxPip: React.FunctionComponent<Props> = memo(
+  ({ value, loading }) => {
+    return (
+      <PipOuter>
+        <PipInner hasValue={value ? value > 0 : false} isLoading={loading} />
+      </PipOuter>
+    )
+  }
+)
 
 const PipOuter = styled.div`
   padding: ${layout.scale[1]};
@@ -43,4 +45,4 @@ const PipInner = styled.div<{
   ${props => props.isLoading && `background-color: purple;`};
 `
 
-export default memo(CardTrxPip)
+export default CardTrxPip

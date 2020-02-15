@@ -13,45 +13,44 @@ interface Props {
 
 const MAX_TRANSACTIONS = 60
 
-const CardTrxSummary: React.FunctionComponent<Props> = ({
-  transactions,
-  loading,
-}) => {
-  function renderAsHolderOrPopulated(transaction?: Web3TransactionData) {
-    if (transaction) {
-      return (
-        <CardTrxPip
-          value={transaction.ether}
-          from={transaction.from}
-          to={transaction.to}
-        />
-      )
-    } else {
-      return <CardTrxPip />
+const CardTrxSummary: React.FunctionComponent<Props> = memo(
+  ({ transactions, loading }) => {
+    function renderAsHolderOrPopulated(transaction?: Web3TransactionData) {
+      if (transaction) {
+        return (
+          <CardTrxPip
+            value={transaction.ether}
+            from={transaction.from}
+            to={transaction.to}
+          />
+        )
+      } else {
+        return <CardTrxPip />
+      }
     }
-  }
 
-  // Renders items
-  function renderItems() {
-    return Array.from(Array(MAX_TRANSACTIONS)).map((_, index) => {
-      return (
-        <GridItem key={index}>
-          {loading ? (
-            <CardTrxPip loading={true} />
-          ) : (
-            renderAsHolderOrPopulated(transactions && transactions[index])
-          )}
-        </GridItem>
-      )
-    })
-  }
+    // Renders items
+    function renderItems() {
+      return Array.from(Array(MAX_TRANSACTIONS)).map((_, index) => {
+        return (
+          <GridItem key={index}>
+            {loading ? (
+              <CardTrxPip loading={true} />
+            ) : (
+              renderAsHolderOrPopulated(transactions && transactions[index])
+            )}
+          </GridItem>
+        )
+      })
+    }
 
-  return (
-    <GridContainer>
-      <Grid>{renderItems()}</Grid>
-    </GridContainer>
-  )
-}
+    return (
+      <GridContainer>
+        <Grid>{renderItems()}</Grid>
+      </GridContainer>
+    )
+  }
+)
 
 const GridContainer = styled.div`
   padding-top: ${layout.scale[7]};
@@ -77,4 +76,4 @@ const Grid = styled.ul`
 
 const GridItem = styled.li``
 
-export default memo(CardTrxSummary)
+export default CardTrxSummary

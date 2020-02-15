@@ -8,7 +8,7 @@ interface Props {
   blockData?: Web3BlockData | null
 }
 
-const Card: React.FunctionComponent<Props> = ({ blockData }) => {
+const Card: React.FunctionComponent<Props> = memo(({ blockData }) => {
   function renderAsSkeletonOrPopulated() {
     if (blockData) {
       return (
@@ -27,8 +27,8 @@ const Card: React.FunctionComponent<Props> = ({ blockData }) => {
   }
 
   return <CardContainer>{renderAsSkeletonOrPopulated()}</CardContainer>
-}
+})
 
 const CardContainer = styled.div``
 
-export default memo(Card)
+export default Card

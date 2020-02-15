@@ -13,39 +13,41 @@ interface Props {
   transactions: Web3BlockData["transactionsData"]
 }
 
-const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
-  function renderBodyRows() {
-    return transactions.map((trx, index) => {
-      return (
-        <DataRow
-          key={index}
-          blockNumber={toString(trx.blockNumber)}
-          trxHash={trx.hash}
-          from={trx.from}
-          to={trx.to}
-          value={toString(trx.ether) + " Ether"}
-        />
-      )
-    })
-  }
-
-  return (
-    <Table>
-      <TableHead>
-        <TableHeadRow>
-          <ColumnsTemplate
-            tableHeader={true}
-            block={<Heading>Block</Heading>}
-            hash={<Heading>Hash</Heading>}
-            fromTo={<Heading>From / To</Heading>}
-            value={<Heading>Value</Heading>}
+const TransactionTable: React.FunctionComponent<Props> = memo(
+  ({ transactions }) => {
+    function renderBodyRows() {
+      return transactions.map((trx, index) => {
+        return (
+          <DataRow
+            key={index}
+            blockNumber={toString(trx.blockNumber)}
+            trxHash={trx.hash}
+            from={trx.from}
+            to={trx.to}
+            value={toString(trx.ether) + " Ether"}
           />
-        </TableHeadRow>
-      </TableHead>
-      <TableBody>{renderBodyRows()}</TableBody>
-    </Table>
-  )
-}
+        )
+      })
+    }
+
+    return (
+      <Table>
+        <TableHead>
+          <TableHeadRow>
+            <ColumnsTemplate
+              tableHeader={true}
+              block={<Heading>Block</Heading>}
+              hash={<Heading>Hash</Heading>}
+              fromTo={<Heading>From / To</Heading>}
+              value={<Heading>Value</Heading>}
+            />
+          </TableHeadRow>
+        </TableHead>
+        <TableBody>{renderBodyRows()}</TableBody>
+      </Table>
+    )
+  }
+)
 
 const Heading: React.FunctionComponent = ({ children }) => (
   <Label intensity="low" size="lg">
@@ -89,4 +91,4 @@ const DataRow = styled(Transaction)`
   `}
 `
 
-export default memo(TransactionTable)
+export default TransactionTable

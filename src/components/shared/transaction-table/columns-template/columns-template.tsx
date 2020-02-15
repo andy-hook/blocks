@@ -11,24 +11,20 @@ interface Props {
   value: any
 }
 
-const ColumnsTemplate: React.FunctionComponent<Props> = ({
-  tableHeader = false,
-  block,
-  hash,
-  fromTo,
-  value,
-}) => {
-  const colTagType = tableHeader ? "th" : "td"
+const ColumnsTemplate: React.FunctionComponent<Props> = memo(
+  ({ tableHeader = false, block, hash, fromTo, value }) => {
+    const colTagType = tableHeader ? "th" : "td"
 
-  return (
-    <>
-      <Block as={colTagType}>{block}</Block>
-      <Hash as={colTagType}>{hash}</Hash>
-      <FromTo as={colTagType}>{fromTo}</FromTo>
-      <Value as={colTagType}>{value}</Value>
-    </>
-  )
-}
+    return (
+      <>
+        <Block as={colTagType}>{block}</Block>
+        <Hash as={colTagType}>{hash}</Hash>
+        <FromTo as={colTagType}>{fromTo}</FromTo>
+        <Value as={colTagType}>{value}</Value>
+      </>
+    )
+  }
+)
 
 const Col = styled.td`
   display: flex;
@@ -83,4 +79,4 @@ const Value = styled(Col)`
   `}
 `
 
-export default memo(ColumnsTemplate)
+export default ColumnsTemplate

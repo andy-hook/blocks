@@ -16,60 +16,62 @@ interface Props {
   handleTransactionsClick?: () => void
 }
 
-const BlockHeader: React.FunctionComponent<Props> = ({
-  blockNumber,
-  transactionCount,
-  loading,
-  handleDetailsClick,
-  handleTransactionsClick,
-  trxVisible,
-}) => {
-  function renderSupTitleContent() {
-    return trxVisible ? (
-      <>&#x23;&nbsp;{blockNumber}</>
-    ) : (
-      <>{transactionCount} Transactions</>
+const BlockHeader: React.FunctionComponent<Props> = memo(
+  ({
+    blockNumber,
+    transactionCount,
+    loading,
+    handleDetailsClick,
+    handleTransactionsClick,
+    trxVisible,
+  }) => {
+    function renderSupTitleContent() {
+      return trxVisible ? (
+        <>&#x23;&nbsp;{blockNumber}</>
+      ) : (
+        <>{transactionCount} Transactions</>
+      )
+    }
+
+    function renderTitleContent() {
+      return trxVisible ? (
+        <>{transactionCount} Transactions</>
+      ) : (
+        <>&#x23;&nbsp;{blockNumber}</>
+      )
+    }
+
+    return (
+      <Container>
+        <Button to="/" buttonType="tertiary" icon="arrow-left">
+          All Blocks
+        </Button>
+        <Header showAsTrx={trxVisible}>
+          <HeaderInner>
+            <DetailCouple>
+              <SupTitle intensity="low" size="lg" loading={loading}>
+                {renderSupTitleContent()}
+              </SupTitle>
+              <Title
+                intensity="high"
+                size="lg"
+                loading={loading}
+                skeletonWidth="sm"
+              >
+                {renderTitleContent()}
+              </Title>
+            </DetailCouple>
+
+            <BlockHeaderSwitch
+              onDetailsClock={handleDetailsClick}
+              onTransactionsClick={handleTransactionsClick}
+            />
+          </HeaderInner>
+        </Header>
+      </Container>
     )
   }
-
-  function renderTitleContent() {
-    return trxVisible ? (
-      <>{transactionCount} Transactions</>
-    ) : (
-      <>&#x23;&nbsp;{blockNumber}</>
-    )
-  }
-
-  return (
-    <Container>
-      <Button to="/" buttonType="tertiary" icon="arrow-left">
-        All Blocks
-      </Button>
-      <Header showAsTrx={trxVisible}>
-        <HeaderInner>
-          <DetailCouple>
-            <SupTitle intensity="low" size="lg" loading={loading}>
-              {renderSupTitleContent()}
-            </SupTitle>
-            <Title
-              intensity="high"
-              size="lg"
-              loading={loading}
-              skeletonWidth="sm"
-            >
-              {renderTitleContent()}
-            </Title>
-          </DetailCouple>
-
-          <BlockHeaderSwitch
-            onDetailsClock={handleDetailsClick}
-            onTransactionsClick={handleTransactionsClick}
-          />
-        </HeaderInner>
-      </Header>
-    </Container>
-  )
-}
+)
 
 const Container = styled(Panel)`
   margin-bottom: ${layout.scale[8]};
@@ -132,4 +134,4 @@ const DetailCouple = styled.div`
   padding-left: 13%;
 `
 
-export default memo(BlockHeader)
+export default BlockHeader

@@ -12,40 +12,37 @@ interface Props {
   loading?: boolean
 }
 
-const CardDetails: React.FunctionComponent<Props> = ({
-  size,
-  difficulty,
-  miner,
-  loading,
-}) => {
-  return (
-    <Details>
-      {/* Size */}
-      <SizeItem>
-        <DetailsTitle intensity="low">Size</DetailsTitle>
-        <DetailsValue loading={loading} skeletonWidth="sm">
-          <TruncateString text={size + "B"} truncateAt={20} />
-        </DetailsValue>
-      </SizeItem>
+const CardDetails: React.FunctionComponent<Props> = memo(
+  ({ size, difficulty, miner, loading }) => {
+    return (
+      <Details>
+        {/* Size */}
+        <SizeItem>
+          <DetailsTitle intensity="low">Size</DetailsTitle>
+          <DetailsValue loading={loading} skeletonWidth="sm">
+            <TruncateString text={size + "B"} truncateAt={20} />
+          </DetailsValue>
+        </SizeItem>
 
-      {/* Difficulty */}
-      <DifficultyItem>
-        <DetailsTitle intensity="low">Difficulty</DetailsTitle>
-        <DetailsValue loading={loading} skeletonWidth="md">
-          <TruncateString text={difficulty} truncateAt={20} />
-        </DetailsValue>
-      </DifficultyItem>
+        {/* Difficulty */}
+        <DifficultyItem>
+          <DetailsTitle intensity="low">Difficulty</DetailsTitle>
+          <DetailsValue loading={loading} skeletonWidth="md">
+            <TruncateString text={difficulty} truncateAt={20} />
+          </DetailsValue>
+        </DifficultyItem>
 
-      {/* Miner */}
-      <MinerItem>
-        <DetailsTitle intensity="low">Miner</DetailsTitle>
-        <DetailsValue loading={loading} skeletonWidth="lg">
-          <TruncateString text={miner} truncateAt={40} />
-        </DetailsValue>
-      </MinerItem>
-    </Details>
-  )
-}
+        {/* Miner */}
+        <MinerItem>
+          <DetailsTitle intensity="low">Miner</DetailsTitle>
+          <DetailsValue loading={loading} skeletonWidth="lg">
+            <TruncateString text={miner} truncateAt={40} />
+          </DetailsValue>
+        </MinerItem>
+      </Details>
+    )
+  }
+)
 
 const Details = styled.div`
   display: flex;
@@ -126,4 +123,4 @@ const MinerItem = styled.div`
   `}
 `
 
-export default memo(CardDetails)
+export default CardDetails

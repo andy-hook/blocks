@@ -27,102 +27,99 @@ export let menuIsAnimating = false
 const slideInSpeed = 0.6
 const slideOutSpeed = 0.3
 
-const Menu: React.FunctionComponent<AllProps> = ({
-  open,
-  social,
-  dispatchCloseMenuAction,
-  blockData,
-}) => {
-  const sidebar = React.useRef() as MutableRefObject<HTMLDivElement>
-  const containerRef = React.useRef() as MutableRefObject<HTMLDivElement>
-  const animationScrim = React.useRef() as MutableRefObject<HTMLDivElement>
+const Menu: React.FunctionComponent<AllProps> = memo(
+  ({ open, social, dispatchCloseMenuAction, blockData }) => {
+    const sidebar = React.useRef() as MutableRefObject<HTMLDivElement>
+    const containerRef = React.useRef() as MutableRefObject<HTMLDivElement>
+    const animationScrim = React.useRef() as MutableRefObject<HTMLDivElement>
 
-  const handleMenuClose = () => {
-    if (!menuIsAnimating) {
-      dispatchCloseMenuAction()
+    const handleMenuClose = () => {
+      if (!menuIsAnimating) {
+        dispatchCloseMenuAction()
+      }
     }
-  }
 
-  const animateOpen = () => {
-    gsap.set(containerRef.current, { visibility: "visible" })
-    gsap.fromTo(
-      sidebar.current,
-      {
-        x: "100%",
-      },
-      {
-        duration: slideInSpeed,
-        ease: "expo.out",
-        x: "0%",
-        onComplete: () => {
-          menuIsAnimating = false
+    const animateOpen = () => {
+      gsap.set(containerRef.current, { visibility: "visible" })
+      gsap.fromTo(
+        sidebar.current,
+        {
+          x: "100%",
         },
-      }
-    )
-    // Scrim
-    gsap.to(animationScrim.current, {
-      duration: 0.4,
-      opacity: 0.75,
-    })
-  }
+        {
+          duration: slideInSpeed,
+          ease: "expo.out",
+          x: "0%",
+          onComplete: () => {
+            menuIsAnimating = false
+          },
+        }
+      )
+      // Scrim
+      gsap.to(animationScrim.current, {
+        duration: 0.4,
+        opacity: 0.75,
+      })
+    }
 
-  const animateClose = () => {
-    gsap.fromTo(
-      sidebar.current,
-      {
-        x: "0%",
-      },
-      {
+    const animateClose = () => {
+      gsap.fromTo(
+        sidebar.current,
+        {
+          x: "0%",
+        },
+        {
+          duration: slideOutSpeed,
+          ease: "expo.out",
+          x: "100%",
+          clearProps: "transform, opacity",
+          onComplete: () => {
+            menuIsAnimating = false
+            gsap.set(containerRef.current, { clearProps: "visibility" })
+          },
+        }
+      )
+      // Scrim
+      gsap.to(animationScrim.current, {
         duration: slideOutSpeed,
-        ease: "expo.out",
-        x: "100%",
-        clearProps: "transform, opacity",
-        onComplete: () => {
-          menuIsAnimating = false
-          gsap.set(containerRef.current, { clearProps: "visibility" })
-        },
-      }
+        opacity: 0,
+        clearProps: "opacity",
+      })
+    }
+
+    useDeferredRunEffect(() => {
+      menuIsAnimating = true
+
+      open ? animateOpen() : animateClose()
+    }, [open])
+
+    return (
+      <Fixer ref={containerRef}>
+        <Sidebar ref={sidebar}>
+          <Contents>
+            <SidebarNav>
+              <SidebarNavInner>
+                <MenuBlockList
+                  blockData={blockData}
+                  onClick={handleMenuClose}
+                  open={open}
+                />
+
+                <MenuNavList onClick={handleMenuClose} open={open} />
+              </SidebarNavInner>
+            </SidebarNav>
+
+            <SocialContainer>
+              <Social items={social} open={open} />
+            </SocialContainer>
+          </Contents>
+        </Sidebar>
+
+        <AnimationScrim ref={animationScrim} onClick={handleMenuClose} />
+      </Fixer>
     )
-    // Scrim
-    gsap.to(animationScrim.current, {
-      duration: slideOutSpeed,
-      opacity: 0,
-      clearProps: "opacity",
-    })
   }
-
-  useDeferredRunEffect(() => {
-    menuIsAnimating = true
-
-    open ? animateOpen() : animateClose()
-  }, [open])
-
-  return (
-    <Fixer ref={containerRef}>
-      <Sidebar ref={sidebar}>
-        <Contents>
-          <SidebarNav>
-            <SidebarNavInner>
-              <MenuBlockList
-                blockData={blockData}
-                onClick={handleMenuClose}
-                open={open}
-              />
-
-              <MenuNavList onClick={handleMenuClose} open={open} />
-            </SidebarNavInner>
-          </SidebarNav>
-
-          <SocialContainer>
-            <Social items={social} open={open} />
-          </SocialContainer>
-        </Contents>
-      </Sidebar>
-
-      <AnimationScrim ref={animationScrim} onClick={handleMenuClose} />
-    </Fixer>
-  )
-}
+)
 
 export const menuZindex = layout.zIndex.highest
 
@@ -256,4 +253,4 @@ const SocialContainer = styled.div`
   ${scaleGreaterThan("font-size", type.scale[7], "topUltra")}
 `
 
-export default memo(Menu)
+export default Menu

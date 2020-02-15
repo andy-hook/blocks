@@ -9,7 +9,7 @@ interface Props {
   blockData?: Web3BlockData | null
 }
 
-const Block: React.FunctionComponent<Props> = ({ blockData }) => {
+const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
   const [trxVisible, setTrxVisible] = useState<boolean>(false)
 
   function handleDetailsClick() {
@@ -42,8 +42,8 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
       <BlockBody trxVisible={trxVisible} blockData={blockData} />
     </Container>
   )
-}
+})
 
 const Container = styled.article``
 
-export default memo(Block)
+export default Block

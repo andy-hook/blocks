@@ -9,13 +9,13 @@ interface Props {
   className?: string
 }
 
-const Icon: React.FunctionComponent<Props> = ({ name, className }) => (
+const Icon: React.FunctionComponent<Props> = memo(({ name, className }) => (
   <IconWrapper className={classNames("", className)}>
     <IconSvg>
       <use xlinkHref={withPrefix(`icon-sprite.svg#${name}`)} />
     </IconSvg>
   </IconWrapper>
-)
+))
 
 export const IconWrapper = styled.div`
   width: 1em;
@@ -29,4 +29,4 @@ export const IconSvg = styled.svg`
   fill: currentColor;
 `
 
-export default memo(Icon)
+export default Icon

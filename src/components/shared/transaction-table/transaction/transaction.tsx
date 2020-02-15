@@ -19,37 +19,32 @@ interface Props {
   className?: string
 }
 
-const Transaction: React.FunctionComponent<Props> = ({
-  blockNumber,
-  trxHash,
-  from,
-  to,
-  value,
-  className,
-}) => {
-  return (
-    <Row className={classNames("", className)}>
-      <ColumnsTemplate
-        hash={
-          <LimitedHash>
-            <TruncateString text={trxHash} truncateAt={50} />
-          </LimitedHash>
-        }
-        block={
-          <Title size="xs">
-            <TruncateString text={"# " + blockNumber} truncateAt={50} />
-          </Title>
-        }
-        fromTo={<Transfer from={from} to={to} />}
-        value={
-          <Label>
-            <TruncateString text={value} truncateAt={20} />
-          </Label>
-        }
-      />
-    </Row>
-  )
-}
+const Transaction: React.FunctionComponent<Props> = memo(
+  ({ blockNumber, trxHash, from, to, value, className }) => {
+    return (
+      <Row className={classNames("", className)}>
+        <ColumnsTemplate
+          hash={
+            <LimitedHash>
+              <TruncateString text={trxHash} truncateAt={50} />
+            </LimitedHash>
+          }
+          block={
+            <Title size="xs">
+              <TruncateString text={"# " + blockNumber} truncateAt={50} />
+            </Title>
+          }
+          fromTo={<Transfer from={from} to={to} />}
+          value={
+            <Label>
+              <TruncateString text={value} truncateAt={20} />
+            </Label>
+          }
+        />
+      </Row>
+    )
+  }
+)
 
 export const rowPaddingX = css`
   padding-left: ${layout.scale[7]};
@@ -90,4 +85,4 @@ const Row = styled.tr`
   `}
 `
 
-export default memo(Transaction)
+export default Transaction

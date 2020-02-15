@@ -10,9 +10,13 @@ interface Props {
   children?: ReactNode
 }
 
-const Panel: React.FunctionComponent<Props> = ({ children, className }) => {
-  return <Container className={classNames("", className)}>{children}</Container>
-}
+const Panel: React.FunctionComponent<Props> = memo(
+  ({ children, className }) => {
+    return (
+      <Container className={classNames("", className)}>{children}</Container>
+    )
+  }
+)
 
 const Container = styled.div`
   padding: ${layout.scale[7]};
@@ -32,4 +36,4 @@ const Container = styled.div`
   background-color: ${themeTone(500)};
 `
 
-export default memo(Panel)
+export default Panel

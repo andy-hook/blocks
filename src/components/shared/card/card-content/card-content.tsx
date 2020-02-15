@@ -20,55 +20,57 @@ interface Props {
   loading?: boolean
 }
 
-const CardContent: React.FunctionComponent<Props> = ({
-  blockNumber,
-  transactions,
-  size,
-  difficulty,
-  miner,
-  loading,
-  transactionCount,
-}) => {
-  function renderTrxAsPlaceholderOrPopulated(
-    blockTransactions: Props["transactions"]
-  ) {
-    if (blockTransactions) {
-      return <CardTrxSummary transactions={blockTransactions} />
-    } else {
-      return <CardTrxSummary loading={true} />
+const CardContent: React.FunctionComponent<Props> = memo(
+  ({
+    blockNumber,
+    transactions,
+    size,
+    difficulty,
+    miner,
+    loading,
+    transactionCount,
+  }) => {
+    function renderTrxAsPlaceholderOrPopulated(
+      blockTransactions: Props["transactions"]
+    ) {
+      if (blockTransactions) {
+        return <CardTrxSummary transactions={blockTransactions} />
+      } else {
+        return <CardTrxSummary loading={true} />
+      }
     }
+
+    return (
+      <Panel>
+        {/* Title info */}
+        <TransactionsCountLabel intensity="low" loading={loading}>
+          {transactionCount} Transactions
+        </TransactionsCountLabel>
+        <Title intensity="high" loading={loading} skeletonWidth="sm">
+          &#x23;&nbsp;{blockNumber}
+        </Title>
+
+        {/* Transactions */}
+        {renderTrxAsPlaceholderOrPopulated(transactions)}
+
+        {/* Details */}
+        <CardDetails
+          size={size}
+          difficulty={difficulty}
+          miner={miner}
+          loading={loading}
+        />
+
+        {/* CTA */}
+        <CardActions>
+          <CardButton buttonType="secondary" to={`/block/${blockNumber}`}>
+            More Details
+          </CardButton>
+        </CardActions>
+      </Panel>
+    )
   }
-
-  return (
-    <Panel>
-      {/* Title info */}
-      <TransactionsCountLabel intensity="low" loading={loading}>
-        {transactionCount} Transactions
-      </TransactionsCountLabel>
-      <Title intensity="high" loading={loading} skeletonWidth="sm">
-        &#x23;&nbsp;{blockNumber}
-      </Title>
-
-      {/* Transactions */}
-      {renderTrxAsPlaceholderOrPopulated(transactions)}
-
-      {/* Details */}
-      <CardDetails
-        size={size}
-        difficulty={difficulty}
-        miner={miner}
-        loading={loading}
-      />
-
-      {/* CTA */}
-      <CardActions>
-        <CardButton buttonType="secondary" to={`/block/${blockNumber}`}>
-          More Details
-        </CardButton>
-      </CardActions>
-    </Panel>
-  )
-}
+)
 
 const TransactionsCountLabel = styled(Label)`
   margin-bottom: ${layout.scale[5]};
@@ -84,4 +86,4 @@ const CardButton = styled(Button)`
   `}
 `
 
-export default memo(CardContent)
+export default CardContent

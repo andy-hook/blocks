@@ -10,7 +10,7 @@ interface Props {
   blockData?: Web3BlockData[] | null
 }
 
-const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
+const BlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
   // Render skeleton items while awaiting data
   function renderItems() {
     return Array.from(Array(BLOCK_COUNT)).map((_, index) => {
@@ -25,7 +25,7 @@ const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
   }
 
   return <Grid>{renderItems()}</Grid>
-}
+})
 
 const gridItemOffsetAmount = layout.scale[16]
 
@@ -69,4 +69,4 @@ const GridItemOffset = styled.div<{ isEven: boolean }>`
   `};
 `
 
-export default memo(BlockList)
+export default BlockList

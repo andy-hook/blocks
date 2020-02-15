@@ -7,9 +7,11 @@ interface Props {
   children: ReactNode
 }
 
-const Gutter = React.forwardRef<HTMLDivElement, Props>(({ children }, ref) => (
-  <GutterContainer ref={ref}>{children}</GutterContainer>
-))
+const Gutter = memo(
+  React.forwardRef<HTMLDivElement, Props>(({ children }, ref) => (
+    <GutterContainer ref={ref}>{children}</GutterContainer>
+  ))
+)
 
 export const smallScreenGutter = rem("25px")
 
@@ -30,4 +32,4 @@ const GutterContainer = styled.div`
   width: 100%;
 `
 
-export default memo(Gutter)
+export default Gutter

@@ -9,35 +9,34 @@ interface Props {
   trxVisible: boolean
 }
 
-const BlockBody: React.FunctionComponent<Props> = ({
-  blockData,
-  trxVisible,
-}) => {
-  function renderInfoAsSkeletonOrPopulated() {
-    if (blockData) {
-      return trxVisible ? (
-        <TransactionTable transactions={blockData.transactionsData} />
-      ) : (
-        <>
-          <BlockInfo
-            size={toString(blockData.size + "B")}
-            difficulty={blockData.difficulty}
-            totalDifficulty={blockData.totalDifficulty}
-            gasLimit={toString(blockData.gasLimit)}
-            gasUsed={toString(blockData.gasUsed)}
-          />
-        </>
-      )
-    } else {
-      return (
-        <>
-          <BlockInfo loading={true} />
-        </>
-      )
+const BlockBody: React.FunctionComponent<Props> = memo(
+  ({ blockData, trxVisible }) => {
+    function renderInfoAsSkeletonOrPopulated() {
+      if (blockData) {
+        return trxVisible ? (
+          <TransactionTable transactions={blockData.transactionsData} />
+        ) : (
+          <>
+            <BlockInfo
+              size={toString(blockData.size + "B")}
+              difficulty={blockData.difficulty}
+              totalDifficulty={blockData.totalDifficulty}
+              gasLimit={toString(blockData.gasLimit)}
+              gasUsed={toString(blockData.gasUsed)}
+            />
+          </>
+        )
+      } else {
+        return (
+          <>
+            <BlockInfo loading={true} />
+          </>
+        )
+      }
     }
+
+    return <>{renderInfoAsSkeletonOrPopulated()}</>
   }
+)
 
-  return <>{renderInfoAsSkeletonOrPopulated()}</>
-}
-
-export default memo(BlockBody)
+export default BlockBody
