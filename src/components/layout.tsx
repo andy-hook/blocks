@@ -13,6 +13,7 @@ import { connect } from "react-redux"
 import Web3Provider from "@web3/web3-provider"
 import Web3BlocksDataProvider from "@web3/web3-blocks-data-provider"
 import { BLOCK_COUNT } from "@utils"
+import LoadingStatusProvider from "@providers/loading-status-provider/loading-status-provider"
 
 interface DispatchProps {
   switchToLightTheme: () => void
@@ -32,13 +33,15 @@ const Layout: React.FunctionComponent<ContainerProps> = memo(
         <ThemeProvider theme={lightThemeEnabled ? themes.light : themes.dark}>
           <Web3Provider>
             <Web3BlocksDataProvider maxBlocks={BLOCK_COUNT}>
-              <>
-                <GlobalStyle />
-                <LoaderContainer />
-                <TopbarContainer />
-                <MenuContainer />
-                {children}
-              </>
+              <LoadingStatusProvider>
+                <>
+                  <GlobalStyle />
+                  <LoaderContainer />
+                  <TopbarContainer />
+                  <MenuContainer />
+                  {children}
+                </>
+              </LoadingStatusProvider>
             </Web3BlocksDataProvider>
           </Web3Provider>
         </ThemeProvider>

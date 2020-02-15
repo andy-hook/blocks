@@ -7,6 +7,7 @@ import Page from "@components/shared/page/page"
 import Gutter from "@components/shared/gutter/gutter"
 import Limiter from "@components/shared/limiter/limiter"
 import Block from "@components/shared/block/block"
+import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 
 interface Props {
   path: string
@@ -23,11 +24,24 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
     const web3 = useWeb3Context().web3
     const { data: blocksData } = useWeb3BlocksDataContext()
     const blockNumber = parseFloat(blockNumberFromUrl as string)
+    const { setLoadingStatus } = useLoadingStatusContext()
 
     const [blockData, setBlockData] = useState<DataState>({
       data: null,
       error: null,
     })
+
+    function setDataAndHideLoadingStatus(
+      data: Web3BlockData,
+      error: DataState["error"]
+    ) {
+      setBlockData({
+        data: { ...data },
+        error,
+      })
+
+      setLoadingStatus(false)
+    }
 
     async function fetchFreshBlockData() {
       try {
@@ -36,10 +50,7 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
         ])) as Web3BlockData[]
 
         // Success
-        setBlockData({
-          data: { ...currentBlockData[0] },
-          error: null,
-        })
+        setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
       } catch (error) {
         // Failure
         setBlockData({ data: null, error })
@@ -55,10 +66,7 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
 
         // Use value from context if it exists...
         currentCachedBlockData
-          ? setBlockData({
-              data: { ...currentCachedBlockData },
-              error: null,
-            })
+          ? setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
           : // Or fetch new data for the view
             fetchFreshBlockData()
       }
