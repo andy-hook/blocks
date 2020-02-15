@@ -73,6 +73,7 @@ const Text = styled.div<{
   ${typeBaseSemibold}
   ${props => textSize[props.size]};
 
+  max-width: 100%;
   position: relative;
   color: ${props => textColors[props.intensity]};
 

@@ -7,13 +7,14 @@ import {
   setDisplayCropAndLineHeight,
   setDisplayPlaceholderCrop,
   typeDisplayBold,
+  typeSizeDisplayXs,
 } from "@style/typography"
 import { type, appearance } from "@style/design-tokens"
 import { isTheme, themeText } from "@style/theme"
 import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
-type Size = "sm" | "md" | "lg"
+type Size = "xs" | "sm" | "md" | "lg"
 
 interface Props {
   loading?: boolean
@@ -53,6 +54,7 @@ const skeletonWidths = {
 }
 
 const textSize = {
+  xs: typeSizeDisplayXs,
   sm: typeSizeDisplaySm,
   md: typeSizeDisplayMd,
   lg: typeSizeDisplayLg,
@@ -73,6 +75,7 @@ const Text = styled.div<{
   ${props => textSize[props.size]};
 
   position: relative;
+  max-width: 100%;
   color: ${props => textIntensity[props.intensity]};
 
   ${isTheme(

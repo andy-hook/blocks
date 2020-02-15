@@ -2,21 +2,36 @@
 
 exports[`<BlockTransactionRow /> renders correctly 1`] = `
 <tr
-  className="sc-bdVaJa bDWFJH"
+  className="sc-dnqmqq bAdZNb"
 >
   <td
-    className="sc-bwzfXH sc-htpNat KtFsv"
-  />
+    className="sc-bdVaJa sc-bwzfXH kIQmTZ"
+  >
+    <div
+      className="sc-EHOje fKjTYp"
+      size="xs"
+    />
+  </td>
   <td
-    className="sc-bwzfXH sc-bxivhb bUZGRr"
-  />
+    className="sc-bdVaJa sc-htpNat fwPHmk"
+  >
+    <div
+      className="sc-gzVnrw hicXCb"
+      size="md"
+    />
+  </td>
   <td
-    className="sc-bwzfXH sc-ifAKCX cFlEyZ"
+    className="sc-bdVaJa sc-bxivhb dUdiVs"
   >
     <div />
   </td>
   <td
-    className="sc-bwzfXH sc-EHOje jvzENE"
-  />
+    className="sc-bdVaJa sc-ifAKCX qNfRk"
+  >
+    <div
+      className="sc-gzVnrw hicXCb"
+      size="md"
+    />
+  </td>
 </tr>
 `;

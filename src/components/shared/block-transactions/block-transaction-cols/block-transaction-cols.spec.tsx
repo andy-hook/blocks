@@ -9,10 +9,10 @@ describe("<BlockTransactionCols />", () => {
     const tree = renderWithTheme(
       "dark",
       <BlockTransactionCols
-        one="string"
-        two="string"
-        three="string"
-        four="string"
+        block="string"
+        hash="string"
+        fromTo="string"
+        value="string"
       />
     )
     expect(tree).toMatchSnapshot()

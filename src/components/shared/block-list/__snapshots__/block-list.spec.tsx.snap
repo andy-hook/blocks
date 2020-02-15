@@ -17,14 +17,14 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             34
              Transactions
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             # 
@@ -705,13 +705,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               />
             </div>
@@ -719,13 +719,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               />
             </div>
@@ -733,13 +733,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               />
             </div>
@@ -776,14 +776,14 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             34
              Transactions
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             # 
@@ -1464,13 +1464,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               />
             </div>
@@ -1478,13 +1478,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               />
             </div>
@@ -1492,13 +1492,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               />
             </div>
@@ -1535,7 +1535,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -1545,7 +1545,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -2229,13 +2229,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -2249,13 +2249,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -2269,13 +2269,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -2318,7 +2318,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -2328,7 +2328,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -3012,13 +3012,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -3032,13 +3032,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -3052,13 +3052,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -3101,7 +3101,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -3111,7 +3111,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -3795,13 +3795,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -3815,13 +3815,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -3835,13 +3835,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -3884,7 +3884,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -3894,7 +3894,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -4578,13 +4578,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -4598,13 +4598,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -4618,13 +4618,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -4667,7 +4667,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -4677,7 +4677,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -5361,13 +5361,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -5381,13 +5381,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -5401,13 +5401,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -5450,7 +5450,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -5460,7 +5460,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -6144,13 +6144,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -6164,13 +6164,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -6184,13 +6184,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -6233,7 +6233,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -6243,7 +6243,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -6927,13 +6927,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -6947,13 +6947,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -6967,13 +6967,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -7016,7 +7016,7 @@ exports[`<BlockList /> renders correctly 1`] = `
           className="sc-cSHVUG iEUGjl"
         >
           <div
-            className="sc-EHOje jbJQDV sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
             size="md"
           >
             <div
@@ -7026,7 +7026,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT hgupYT"
+            className="sc-VigVT iDzZxv"
             size="md"
           >
             <div
@@ -7710,13 +7710,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-iwsKbI dVxxQe"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Size
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -7730,13 +7730,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gZMcBi jWPKqd"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Difficulty
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div
@@ -7750,13 +7750,13 @@ exports[`<BlockList /> renders correctly 1`] = `
               className="sc-gqjmRU jpVdfh"
             >
               <div
-                className="sc-EHOje jbJQDV sc-htoDjs dARhit"
+                className="sc-EHOje jUPklj sc-htoDjs dARhit"
                 size="md"
               >
                 Miner
               </div>
               <div
-                className="sc-EHOje jKpobC sc-dnqmqq koHliJ"
+                className="sc-EHOje cuddjF sc-dnqmqq koHliJ"
                 size="md"
               >
                 <div

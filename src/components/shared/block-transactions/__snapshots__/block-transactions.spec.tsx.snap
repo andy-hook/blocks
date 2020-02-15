@@ -2,50 +2,80 @@
 
 exports[`<BlockSingleTrx /> renders correctly 1`] = `
 <table
-  className="sc-bZQynM DcOju"
+  className="sc-iwsKbI dHZycU"
 >
-  <thead>
+  <thead
+    className="sc-gZMcBi jKHKPE"
+  >
     <tr
-      className="sc-bdVaJa bDWFJH"
+      className="sc-gqjmRU iRDvLn"
     >
       <th
-        className="sc-bwzfXH sc-htpNat KtFsv"
+        className="sc-bdVaJa sc-bwzfXH kIQmTZ"
       >
-        hello
+        <div
+          className="sc-gzVnrw drvdmO"
+          size="lg"
+        >
+          Hash
+        </div>
       </th>
       <th
-        className="sc-bwzfXH sc-bxivhb bUZGRr"
+        className="sc-bdVaJa sc-htpNat fwPHmk"
       >
-        hello
+        <div
+          className="sc-gzVnrw drvdmO"
+          size="lg"
+        >
+          Block
+        </div>
       </th>
       <th
-        className="sc-bwzfXH sc-ifAKCX cFlEyZ"
+        className="sc-bdVaJa sc-bxivhb dUdiVs"
       >
-        hello
+        <div
+          className="sc-gzVnrw drvdmO"
+          size="lg"
+        >
+          From / To
+        </div>
       </th>
       <th
-        className="sc-bwzfXH sc-EHOje jvzENE"
+        className="sc-bdVaJa sc-ifAKCX qNfRk"
       >
-        hello
+        <div
+          className="sc-gzVnrw drvdmO"
+          size="lg"
+        >
+          Value
+        </div>
       </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody
+    className="sc-VigVT bCcJUc"
+  >
     <tr
-      className="sc-bdVaJa bDWFJH sc-gzVnrw daUmfx"
+      className="sc-dnqmqq bAdZNb sc-jTzLTM ePCJr"
     >
       <td
-        className="sc-bwzfXH sc-htpNat KtFsv"
+        className="sc-bdVaJa sc-bwzfXH kIQmTZ"
       >
-        7250676
+        <div
+          className="sc-EHOje fKjTYp"
+          size="xs"
+        />
       </td>
       <td
-        className="sc-bwzfXH sc-bxivhb bUZGRr"
+        className="sc-bdVaJa sc-htpNat fwPHmk"
       >
-        0x414a1b09ff2a1cafb2ddd13ed1cc229948ee349b7accd4ad3c3b250e46cddb8d
+        <div
+          className="sc-gzVnrw hicXCb"
+          size="md"
+        />
       </td>
       <td
-        className="sc-bwzfXH sc-ifAKCX cFlEyZ"
+        className="sc-bdVaJa sc-bxivhb dUdiVs"
       >
         <div>
           0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
@@ -53,26 +83,35 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </td>
       <td
-        className="sc-bwzfXH sc-EHOje jvzENE"
+        className="sc-bdVaJa sc-ifAKCX qNfRk"
       >
-        1
+        <div
+          className="sc-gzVnrw hicXCb"
+          size="md"
+        />
       </td>
     </tr>
     <tr
-      className="sc-bdVaJa bDWFJH sc-gzVnrw daUmfx"
+      className="sc-dnqmqq bAdZNb sc-jTzLTM ePCJr"
     >
       <td
-        className="sc-bwzfXH sc-htpNat KtFsv"
+        className="sc-bdVaJa sc-bwzfXH kIQmTZ"
       >
-        7250676
+        <div
+          className="sc-EHOje fKjTYp"
+          size="xs"
+        />
       </td>
       <td
-        className="sc-bwzfXH sc-bxivhb bUZGRr"
+        className="sc-bdVaJa sc-htpNat fwPHmk"
       >
-        0x414a1b09ff2a1cafb2ddd13ed1cc229948ee349b7accd4ad3c3b250e46cddb8d
+        <div
+          className="sc-gzVnrw hicXCb"
+          size="md"
+        />
       </td>
       <td
-        className="sc-bwzfXH sc-ifAKCX cFlEyZ"
+        className="sc-bdVaJa sc-bxivhb dUdiVs"
       >
         <div>
           0xcf5f58c3E7d863c3c859C6Cbce03e015262df0e5
@@ -80,9 +119,12 @@ exports[`<BlockSingleTrx /> renders correctly 1`] = `
         </div>
       </td>
       <td
-        className="sc-bwzfXH sc-EHOje jvzENE"
+        className="sc-bdVaJa sc-ifAKCX qNfRk"
       >
-        1
+        <div
+          className="sc-gzVnrw hicXCb"
+          size="md"
+        />
       </td>
     </tr>
   </tbody>
