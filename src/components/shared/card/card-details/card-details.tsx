@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled, { css } from "styled-components"
 import Label from "@components/shared/label/label"
 import { layout } from "@style/design-tokens"
@@ -126,4 +126,4 @@ const MinerItem = styled.div`
   `}
 `
 
-export default CardDetails
+export default memo(CardDetails)

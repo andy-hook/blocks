@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import BlockInfoRow from "./block-info-row/block-info-row"
 import { layout, appearance } from "@style/design-tokens"
@@ -73,4 +73,4 @@ const Row = styled(BlockInfoRow)`
   }
 `
 
-export default BlockInfo
+export default memo(BlockInfo)

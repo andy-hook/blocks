@@ -33,7 +33,7 @@ export const linkProps = {
   },
 }
 
-const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
+const NavList: React.FunctionComponent<Props> = ({ className }) => {
   const navRef = React.useRef() as MutableRefObject<HTMLDivElement>
 
   return (
@@ -52,7 +52,7 @@ const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
       </List>
     </Container>
   )
-})
+}
 
 export const Container = styled.nav``
 
@@ -85,4 +85,4 @@ export const ListItemLink = styled(Link)`
   }
 `
 
-export default NavList
+export default memo(NavList)

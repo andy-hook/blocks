@@ -7,13 +7,13 @@ interface Props {
   name: Icons
 }
 
-const Icon: React.FunctionComponent<Props> = memo(({ name }) => (
+const Icon: React.FunctionComponent<Props> = ({ name }) => (
   <IconWrapper>
     <IconSvg className="icon">
       <use xlinkHref={withPrefix(`icon-sprite.svg#${name}`)} />
     </IconSvg>
   </IconWrapper>
-))
+)
 
 export const IconWrapper = styled.div`
   width: 1em;
@@ -27,4 +27,4 @@ export const IconSvg = styled.svg`
   fill: currentColor;
 `
 
-export default Icon
+export default memo(Icon)

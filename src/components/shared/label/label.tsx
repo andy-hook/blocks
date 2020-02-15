@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo, ReactNode } from "react"
 import styled, { css } from "styled-components"
 import {
   typeBaseSemibold,
@@ -22,6 +22,7 @@ interface Props {
   size?: Size
   intensity?: Intensity
   className?: string
+  children?: ReactNode
 }
 
 const Label: React.FunctionComponent<Props> = ({
@@ -108,4 +109,4 @@ const Skeleton = styled.div<Props>`
   }
 `
 
-export default Label
+export default memo(Label)

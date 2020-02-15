@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
@@ -83,4 +83,4 @@ const Value = styled(Col)`
   `}
 `
 
-export default ColumnsTemplate
+export default memo(ColumnsTemplate)

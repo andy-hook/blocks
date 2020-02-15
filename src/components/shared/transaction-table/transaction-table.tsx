@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import Transaction, { rowPaddingX } from "./transaction/transaction"
 import { themeTone } from "@style/theme"
@@ -89,4 +89,4 @@ const DataRow = styled(Transaction)`
   `}
 `
 
-export default TransactionTable
+export default memo(TransactionTable)

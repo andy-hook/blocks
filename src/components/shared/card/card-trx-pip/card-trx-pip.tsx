@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { Web3TransactionData } from "model"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
@@ -43,4 +43,4 @@ const PipInner = styled.div<{
   ${props => props.isLoading && `background-color: purple;`};
 `
 
-export default CardTrxPip
+export default memo(CardTrxPip)

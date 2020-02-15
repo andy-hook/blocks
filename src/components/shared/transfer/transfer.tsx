@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import TransferPip from "./transfer-pip/transfer-pip"
 import { layout, type } from "@style/design-tokens"
@@ -42,4 +42,4 @@ const TransferIcon = styled.div`
   padding-right: ${layout.scale[2]};
 `
 
-export default Transfer
+export default memo(Transfer)

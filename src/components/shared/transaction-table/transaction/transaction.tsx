@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import classNames from "classnames"
 import ColumnsTemplate from "../columns-template/columns-template"
 import styled, { css } from "styled-components"
@@ -90,4 +90,4 @@ const Row = styled.tr`
   `}
 `
 
-export default Transaction
+export default memo(Transaction)

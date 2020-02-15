@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { Web3BlockData } from "model"
 import BlockInfo from "@components/shared/block-info/block-info"
 import { toString } from "lodash"
@@ -40,4 +40,4 @@ const BlockBody: React.FunctionComponent<Props> = ({
   return <>{renderInfoAsSkeletonOrPopulated()}</>
 }
 
-export default BlockBody
+export default memo(BlockBody)

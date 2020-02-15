@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo, ReactNode } from "react"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
@@ -7,6 +7,7 @@ import { themeTone } from "@style/theme"
 
 interface Props {
   className?: string
+  children?: ReactNode
 }
 
 const Panel: React.FunctionComponent<Props> = ({ children, className }) => {
@@ -31,4 +32,4 @@ const Container = styled.div`
   background-color: ${themeTone(500)};
 `
 
-export default Panel
+export default memo(Panel)

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, memo } from "react"
 import { Web3BlockData } from "model"
 import { toString } from "lodash"
 import styled from "styled-components"
@@ -45,4 +45,4 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
 
 const Container = styled.article``
 
-export default Block
+export default memo(Block)

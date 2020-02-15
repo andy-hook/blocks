@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { Web3BlockData } from "model"
 import CardContent from "./card-content/card-content"
 import styled from "styled-components"
@@ -31,4 +31,4 @@ const Card: React.FunctionComponent<Props> = ({ blockData }) => {
 
 const CardContainer = styled.div``
 
-export default Card
+export default memo(Card)

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled, { css } from "styled-components"
 import { type, appearance, animation, layout } from "@style/design-tokens"
 import {
@@ -124,4 +124,4 @@ const secondaryStyles = css`
   border: ${appearance.borderThickness.regular} solid ${themeText(800)};
 `
 
-export default Button
+export default memo(Button)

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo, ReactNode } from "react"
 import styled, { css } from "styled-components"
 import {
   typeSizeDisplaySm,
@@ -22,6 +22,7 @@ interface Props {
   size?: Size
   intensity?: Intensity
   className?: string
+  children?: ReactNode
 }
 
 const Title: React.FunctionComponent<Props> = ({
@@ -107,4 +108,4 @@ const Skeleton = styled.div<Props>`
   }
 `
 
-export default Title
+export default memo(Title)

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { Web3BlockData } from "model"
 import CardTrxSummary from "@components/shared/card/card-trx-summary/card-trx-summary"
 import styled from "styled-components"
@@ -84,4 +84,4 @@ const CardButton = styled(Button)`
   `}
 `
 
-export default CardContent
+export default memo(CardContent)
