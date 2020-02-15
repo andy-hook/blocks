@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
+import { mq } from "@style/media-queries"
 
 interface Props {
   tableHeader?: boolean
@@ -33,24 +34,53 @@ const Col = styled.td`
   display: flex;
   align-items: center;
 
-  padding-left: ${layout.scale[5]};
-  padding-right: ${layout.scale[5]};
+  &:not(:last-child) {
+    padding-right: ${layout.scale[7]};
+  }
 `
 
 const Block = styled(Col)`
-  width: 18%;
+  width: 50%;
+
+  ${mq.greaterThan("topLap")`
+    width: 20%;
+  `}
+
+  ${mq.greaterThan("topDesk")`
+    width: 18%;
+  `}
 `
 
 const Hash = styled(Col)`
+  ${mq.lessThan("bottomDesk")`
+    display: none;
+  `}
+
   width: 27%;
 `
 
 const FromTo = styled(Col)`
-  width: 40%;
+  width: 60%;
+
+  ${mq.lessThan("bottomLap")`
+    display: none;
+  `}
+
+  ${mq.greaterThan("topDesk")`
+    width: 40%;
+  `}
 `
 
 const Value = styled(Col)`
-  width: 15%;
+  width: 50%;
+
+  ${mq.greaterThan("topLap")`
+    width: 20%;
+  `}
+
+  ${mq.greaterThan("topDesk")`
+    width: 15%;
+  `}
 `
 
 export default ColumnsTemplate

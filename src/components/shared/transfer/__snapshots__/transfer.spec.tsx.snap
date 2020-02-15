@@ -2,10 +2,10 @@
 
 exports[`<Transfer /> renders correctly 1`] = `
 <div
-  className="sc-bxivhb hqZNJK"
+  className="sc-EHOje jHJqNe"
 >
   <div
-    className="sc-htpNat dYrkBq sc-ifAKCX hNkhZu"
+    className="sc-htpNat dYrkBq sc-bZQynM cnpumk"
   >
     <div
       className="sc-bdVaJa pjsti"
@@ -13,7 +13,22 @@ exports[`<Transfer /> renders correctly 1`] = `
     />
   </div>
   <div
-    className="sc-htpNat dYrkBq sc-ifAKCX hNkhZu"
+    className="sc-gzVnrw cNySxs"
+  >
+    <div
+      className="sc-bxivhb cBsPOV"
+    >
+      <svg
+        className="sc-ifAKCX ynkQX icon"
+      >
+        <use
+          xlinkHref="/icon-sprite.svg#arrow-right"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat dYrkBq sc-bZQynM cnpumk"
   >
     <div
       className="sc-bdVaJa pjsti"
