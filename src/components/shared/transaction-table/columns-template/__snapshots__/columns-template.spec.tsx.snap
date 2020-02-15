@@ -3,17 +3,17 @@
 exports[`<ColumnsTemplate /> renders correctly 1`] = `
 Array [
   <td
-    className="sc-bdVaJa sc-bwzfXH bYluML"
+    className="sc-bdVaJa sc-bwzfXH dTfGgv"
   >
     string
   </td>,
   <td
-    className="sc-bdVaJa sc-htpNat ktEnks"
+    className="sc-bdVaJa sc-htpNat gJAHQQ"
   >
     string
   </td>,
   <td
-    className="sc-bdVaJa sc-bxivhb jyedSb"
+    className="sc-bdVaJa sc-bxivhb gxCMyn"
   >
     string
   </td>,

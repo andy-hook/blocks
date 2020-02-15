@@ -2,10 +2,10 @@
 
 exports[`<Transaction /> renders correctly 1`] = `
 <tr
-  className="sc-dnqmqq hnNEMU"
+  className="sc-VigVT kpDDxL"
 >
   <td
-    className="sc-bdVaJa sc-bwzfXH bYluML"
+    className="sc-bdVaJa sc-bwzfXH dTfGgv"
   >
     <div
       className="sc-EHOje fKjTYp"
@@ -13,17 +13,36 @@ exports[`<Transaction /> renders correctly 1`] = `
     />
   </td>
   <td
-    className="sc-bdVaJa sc-htpNat ktEnks"
+    className="sc-bdVaJa sc-htpNat gJAHQQ"
   >
     <div
-      className="sc-gzVnrw hySMDL"
+      className="sc-gzVnrw hySMDL sc-gqjmRU ckARqJ"
       size="md"
     />
   </td>
   <td
-    className="sc-bdVaJa sc-bxivhb jyedSb"
+    className="sc-bdVaJa sc-bxivhb gxCMyn"
   >
-    <div />
+    <div
+      className="sc-iwsKbI cBeLjd"
+    >
+      <div
+        className="sc-dnqmqq hgouuL sc-gZMcBi eGBApE"
+      >
+        <div
+          className="sc-gzVnrw bZExEz"
+          size="sm"
+        />
+      </div>
+      <div
+        className="sc-dnqmqq hgouuL sc-gZMcBi eGBApE"
+      >
+        <div
+          className="sc-gzVnrw bZExEz"
+          size="sm"
+        />
+      </div>
+    </div>
   </td>
   <td
     className="sc-bdVaJa sc-ifAKCX lppyUR"
