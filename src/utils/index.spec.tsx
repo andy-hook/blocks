@@ -1,4 +1,9 @@
-import { removeWidow, keys, lastNumbersFromRange } from "@utils"
+import {
+  removeWidow,
+  keys,
+  lastNumbersFromRange,
+  generateBlockNumberFromStaticRange,
+} from "@utils"
 
 describe("removeWidow", () => {
   test("returns string with non-breaking space before last word", () => {
@@ -29,5 +34,16 @@ describe("lastNumbersFromRange", () => {
 
   it("returns array of last numbers of given range", () => {
     expect(lastNumbersFromRange(inValues)).toEqual(outValues)
+  })
+})
+
+describe("generateBlockNumberFromStaticRange", () => {
+  const min = 1
+  const max = 90000
+  const inValues = { min, max }
+
+  it("returns a value inside given range", () => {
+    expect(generateBlockNumberFromStaticRange(inValues)).toBeGreaterThan(min)
+    expect(generateBlockNumberFromStaticRange(inValues)).toBeLessThan(max)
   })
 })
