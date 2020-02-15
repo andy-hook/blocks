@@ -57,7 +57,6 @@
       "@data/*": ["./src/data/*"],
       "@test-utils": ["./src/test-utils/index.tsx"],
       "@components/*": ["./src/components/*"],
-      "@store/*": ["./src/store/*"],
       "@custom-types/*": ["./src/types/*"],
       "@images/*": ["./src/images/*"],
       "@hooks/*": ["./src/hooks/*"],

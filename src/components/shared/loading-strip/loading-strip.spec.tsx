@@ -5,7 +5,7 @@ import { renderWithTheme } from "@test-utils"
 
 describe("<LoadingStrip />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <LoadingStrip loading={true} />)
+    const tree = renderWithTheme("dark", <LoadingStrip />)
 
     expect(tree).toMatchSnapshot()
   })
