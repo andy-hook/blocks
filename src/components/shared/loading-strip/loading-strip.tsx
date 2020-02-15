@@ -1,19 +1,17 @@
 import React, { memo } from "react"
 import styled from "styled-components"
-import { menuZindex } from "@components/shared/menu/menu"
+import { layout } from "@style/design-tokens"
+import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 
-interface Props {
-  loading: boolean
-}
+const LoadingStrip: React.FunctionComponent = memo(() => {
+  const { loading } = useLoadingStatusContext()
+  return <>{loading && <LoadingContainer />}</>
+})
 
-const LoadingStrip: React.FunctionComponent<Props> = ({ loading }) => {
-  return <>{loading && <Loading />}</>
-}
-
-const Loading = styled.div`
+const LoadingContainer = styled.div`
   position: fixed;
 
-  z-index: ${menuZindex + 2};
+  z-index: ${layout.zIndex.highest};
 
   top: 0;
   left: 0;
@@ -23,4 +21,4 @@ const Loading = styled.div`
   height: 10px;
 `
 
-export default memo(LoadingStrip)
+export default LoadingStrip

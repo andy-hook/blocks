@@ -1,292 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Topbar /> renders as closed correctly 1`] = `
-Array [
-  <div
-    className="sc-ckVGcZ sc-jKJlTe dwluft"
-  >
-    <div
-      className="sc-kkGfuU jwTQsl"
-    >
-      <button
-        className="sc-bdVaJa IrEnj"
-        onClick={[Function]}
-        open={false}
-      >
-        <svg
-          className="sc-bwzfXH fKuZHR"
-          viewBox="0 0 25 25"
-        >
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="8"
-          />
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="15"
-          />
-        </svg>
-      </button>
-      <button
-        className="sc-bdVaJa IrEnj"
-        onClick={[Function]}
-        open={false}
-      >
-        <svg
-          className="sc-bwzfXH fKuZHR"
-          viewBox="0 0 25 25"
-        >
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="8"
-          />
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="15"
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <div
-    className="sc-ckVGcZ sc-eNQAEJ iqKeeK"
-  >
-    <div
-      className="sc-hMqMXs bNsWeO"
-    >
-      <nav
-        className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
-      >
-        <ul
-          className="sc-kGXeez izoWHp"
-        >
-          <li
-            className="sc-kpOJdX hfUBhb"
-          >
-            <a
-              className="sc-dxgOiQ kEZNuz"
-              href="/"
-              onClick={[Function]}
-            >
-              Ten Blocks
-            </a>
-          </li>
-          <li
-            className="sc-kpOJdX hfUBhb"
-          >
-            <a
-              className="sc-dxgOiQ kEZNuz"
-              href="/about/"
-              onClick={[Function]}
-            >
-              About
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>,
-]
-`;
-
-exports[`<Topbar /> renders as hidden correctly 1`] = `
-Array [
-  <div
-    className="sc-ckVGcZ sc-jKJlTe joqcy"
-  >
-    <div
-      className="sc-kkGfuU jwTQsl"
-    >
-      <button
-        className="sc-bdVaJa IrEnj"
-        onClick={[Function]}
-        open={true}
-      >
-        <svg
-          className="sc-bwzfXH fKuZHR"
-          viewBox="0 0 25 25"
-        >
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="8"
-          />
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="15"
-          />
-        </svg>
-      </button>
-      <button
-        className="sc-bdVaJa IrEnj"
-        onClick={[Function]}
-        open={true}
-      >
-        <svg
-          className="sc-bwzfXH fKuZHR"
-          viewBox="0 0 25 25"
-        >
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="8"
-          />
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="15"
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <div
-    className="sc-ckVGcZ sc-eNQAEJ eqnLup"
-  >
-    <div
-      className="sc-hMqMXs bNsWeO"
-    >
-      <nav
-        className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
-      >
-        <ul
-          className="sc-kGXeez izoWHp"
-        >
-          <li
-            className="sc-kpOJdX hfUBhb"
-          >
-            <a
-              className="sc-dxgOiQ kEZNuz"
-              href="/"
-              onClick={[Function]}
-            >
-              Ten Blocks
-            </a>
-          </li>
-          <li
-            className="sc-kpOJdX hfUBhb"
-          >
-            <a
-              className="sc-dxgOiQ kEZNuz"
-              href="/about/"
-              onClick={[Function]}
-            >
-              About
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>,
-]
-`;
-
 exports[`<Topbar /> renders correctly 1`] = `
-Array [
-  <div
-    className="sc-ckVGcZ sc-jKJlTe dwluft"
+<div
+  className="sc-gzVnrw dvjlLN"
+>
+  <nav
+    className="sc-bwzfXH uTxCW sc-htoDjs bKyWRy"
+  >
+    <ul
+      className="sc-htpNat NhtAu"
+    >
+      <li
+        className="sc-bxivhb llkUbX"
+      >
+        <a
+          className="sc-ifAKCX ggxBwp"
+          href="/"
+          onClick={[Function]}
+        >
+          Ten Blocks
+        </a>
+      </li>
+      <li
+        className="sc-bxivhb llkUbX"
+      >
+        <a
+          className="sc-ifAKCX ggxBwp"
+          href="/about/"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    className="sc-dnqmqq fdFecU"
+    onClick={[Function]}
   >
     <div
-      className="sc-kkGfuU jwTQsl"
+      className="sc-EHOje foslyy"
     >
-      <button
-        className="sc-bdVaJa IrEnj"
-        onClick={[Function]}
-        open={true}
+      <svg
+        className="sc-bZQynM jYytzR"
       >
-        <svg
-          className="sc-bwzfXH fKuZHR"
-          viewBox="0 0 25 25"
-        >
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="8"
-          />
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="15"
-          />
-        </svg>
-      </button>
-      <button
-        className="sc-bdVaJa IrEnj"
-        onClick={[Function]}
-        open={true}
-      >
-        <svg
-          className="sc-bwzfXH fKuZHR"
-          viewBox="0 0 25 25"
-        >
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="8"
-          />
-          <rect
-            height="2"
-            width="23"
-            x="1"
-            y="15"
-          />
-        </svg>
-      </button>
+        <use
+          xlinkHref="/icon-sprite.svg#shuffle"
+        />
+      </svg>
     </div>
-  </div>,
-  <div
-    className="sc-ckVGcZ sc-eNQAEJ iqKeeK"
-  >
-    <div
-      className="sc-hMqMXs bNsWeO"
-    >
-      <nav
-        className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
-      >
-        <ul
-          className="sc-kGXeez izoWHp"
-        >
-          <li
-            className="sc-kpOJdX hfUBhb"
-          >
-            <a
-              className="sc-dxgOiQ kEZNuz"
-              href="/"
-              onClick={[Function]}
-            >
-              Ten Blocks
-            </a>
-          </li>
-          <li
-            className="sc-kpOJdX hfUBhb"
-          >
-            <a
-              className="sc-dxgOiQ kEZNuz"
-              href="/about/"
-              onClick={[Function]}
-            >
-              About
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>,
-]
+  </button>
+</div>
 `;

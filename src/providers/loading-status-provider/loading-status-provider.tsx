@@ -8,7 +8,7 @@ interface ContextState {
 const initialValue = true
 
 export const LoadingStatusContext = createContext<ContextState>({
-  loading: false,
+  loading: initialValue,
   setLoadingStatus: () => initialValue,
 })
 
