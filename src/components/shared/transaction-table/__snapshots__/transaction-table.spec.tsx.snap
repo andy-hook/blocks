@@ -95,7 +95,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
               className="sc-iwsKbI iUEoeV"
             >
               <svg
-                className="sc-gZMcBi didhH icon"
+                className="sc-gZMcBi didhH"
               >
                 <use
                   xlinkHref="/icon-sprite.svg#arrow-right"
@@ -162,7 +162,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
               className="sc-iwsKbI iUEoeV"
             >
               <svg
-                className="sc-gZMcBi didhH icon"
+                className="sc-gZMcBi didhH"
               >
                 <use
                   xlinkHref="/icon-sprite.svg#arrow-right"

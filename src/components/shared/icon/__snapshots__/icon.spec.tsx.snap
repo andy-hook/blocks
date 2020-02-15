@@ -5,7 +5,7 @@ exports[`Icon renders correctly 1`] = `
   className="sc-bdVaJa dqBkPn"
 >
   <svg
-    className="sc-bwzfXH kdIDyY icon"
+    className="sc-bwzfXH kdIDyY"
   >
     <use
       xlinkHref="/icon-sprite.svg#twitter"

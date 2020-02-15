@@ -9,14 +9,17 @@ import { themeText, isTheme } from "@style/theme"
 import { Link } from "gatsby"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
+import Icon from "@components/shared/icon/icon"
+import { Icons } from "icons"
 
-type ButtonType = "primary" | "secondary"
+type ButtonType = "primary" | "secondary" | "tertiary"
 
 interface Props {
   to: string
   children: string
   buttonType?: ButtonType
   className?: string
+  icon?: Icons
 }
 
 const Button: React.FunctionComponent<Props> = ({
@@ -24,6 +27,7 @@ const Button: React.FunctionComponent<Props> = ({
   children,
   className,
   buttonType = "primary",
+  icon,
 }) => {
   return (
     <StyledButton
@@ -31,7 +35,10 @@ const Button: React.FunctionComponent<Props> = ({
       type={buttonType}
       className={classNames("", className)}
     >
-      <Inner>{children}</Inner>
+      <Inner>
+        {icon && <ButtonIcon name={icon} />}
+        <Text hasIcon={icon && true}>{children}</Text>
+      </Inner>
     </StyledButton>
   )
 }
@@ -41,33 +48,40 @@ const StyledButton = styled(Link)<{ type: ButtonType }>`
 
   display: inline-flex;
   justify-content: center;
-
-  overflow: hidden;
-  font-size: ${type.scale[2]};
-  border-radius: ${appearance.radius.pill};
-
-  text-decoration: none;
+  align-items: center;
 
   padding: ${layout.scale[4]} ${layout.scale[6]};
+
+  color: ${themeText(100)};
 
   ${mq.greaterThan("topWide")`
     font-size: ${type.scale[3]};
     padding: ${layout.scale[5]} ${layout.scale[7]};
   `}
 
+  overflow: hidden;
+  font-size: ${type.scale[2]};
+
+  text-decoration: none;
+
   ${props => props.type === "primary" && primaryStyles}
   ${props => props.type === "secondary" && secondaryStyles}
+  ${props => props.type === "tertiary" && tertiaryStyles}
 `
 
-const Inner = styled.span`
+const Inner = styled.div`
+  position: relative;
+`
+
+const Text = styled.span<{ hasIcon?: boolean }>`
   ${setDisplayCropAndLineHeight(type.lineHeight.flat)}
   ${typeDisplayButton}
-
-  color: ${themeText(100)};
 
   display: block;
   position: relative;
   z-index: ${layout.zIndex.medium};
+
+  ${props => props.hasIcon && `padding-left: 1.75em;`}
 
   ${isTheme(
     "dark",
@@ -77,8 +91,18 @@ const Inner = styled.span`
   )};
 `
 
+const ButtonIcon = styled(Icon)`
+  position: absolute;
+  font-size: 1.25em;
+  left: 0;
+  top: -0.2em;
+
+  opacity: 0.5;
+`
+
 const primaryStyles = css`
   background: linear-gradient(160deg, #c700b1 0%, #6609e1 100%);
+  border-radius: ${appearance.radius.pill};
 
   &::before,
   &::after {
@@ -121,7 +145,12 @@ const primaryStyles = css`
 `
 
 const secondaryStyles = css`
+  border-radius: ${appearance.radius.pill};
   border: ${appearance.borderThickness.regular} solid ${themeText(800)};
+`
+
+const tertiaryStyles = css`
+  color: ${themeText(800)};
 `
 
 export default memo(Button)

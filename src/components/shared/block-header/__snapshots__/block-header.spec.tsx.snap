@@ -2,16 +2,42 @@
 
 exports[`<BlockHeader /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw eNMNUi sc-htoDjs fHvRim"
+  className="sc-gzVnrw eNMNUi sc-jTzLTM cTcVyo"
 >
-  <header
-    className="sc-dnqmqq adqDD"
+  <a
+    className="sc-iwsKbI klTUTv"
+    href="/"
+    type="tertiary"
   >
     <div
-      className="sc-gZMcBi cwYwrq"
+      className="sc-gZMcBi irilpd"
     >
       <div
-        className="sc-htpNat brNyGz sc-iwsKbI leOnVy"
+        className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
+      >
+        <svg
+          className="sc-dnqmqq iydQTw"
+        >
+          <use
+            xlinkHref="/icon-sprite.svg#arrow-left"
+          />
+        </svg>
+      </div>
+      <span
+        className="sc-gqjmRU ctzSfg"
+      >
+        All Blocks
+      </span>
+    </div>
+  </a>
+  <header
+    className="sc-fjdhpX jGjyzw"
+  >
+    <div
+      className="sc-cSHVUG wEsLH"
+    >
+      <div
+        className="sc-htpNat brNyGz sc-jzJRlG kpJqLT"
         size="lg"
       >
          Transactions

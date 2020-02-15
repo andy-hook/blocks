@@ -19,7 +19,7 @@ exports[`<Transfer /> renders correctly 1`] = `
       className="sc-bxivhb cBsPOV"
     >
       <svg
-        className="sc-ifAKCX ynkQX icon"
+        className="sc-ifAKCX ynkQX"
       >
         <use
           xlinkHref="/icon-sprite.svg#arrow-right"

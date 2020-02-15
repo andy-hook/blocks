@@ -21,7 +21,7 @@ exports[`<Social /> renders correctly 1`] = `
           className="sc-bdVaJa dqBkPn"
         >
           <svg
-            className="sc-bwzfXH kdIDyY icon"
+            className="sc-bwzfXH kdIDyY"
           >
             <use
               xlinkHref="/icon-sprite.svg#mail"
@@ -48,7 +48,7 @@ exports[`<Social /> renders correctly 1`] = `
           className="sc-bdVaJa dqBkPn"
         >
           <svg
-            className="sc-bwzfXH kdIDyY icon"
+            className="sc-bwzfXH kdIDyY"
           >
             <use
               xlinkHref="/icon-sprite.svg#twitter"
@@ -75,7 +75,7 @@ exports[`<Social /> renders correctly 1`] = `
           className="sc-bdVaJa dqBkPn"
         >
           <svg
-            className="sc-bwzfXH kdIDyY icon"
+            className="sc-bwzfXH kdIDyY"
           >
             <use
               xlinkHref="/icon-sprite.svg#instagram"
@@ -102,7 +102,7 @@ exports[`<Social /> renders correctly 1`] = `
           className="sc-bdVaJa dqBkPn"
         >
           <svg
-            className="sc-bwzfXH kdIDyY icon"
+            className="sc-bwzfXH kdIDyY"
           >
             <use
               xlinkHref="/icon-sprite.svg#linkedin"
@@ -129,7 +129,7 @@ exports[`<Social /> renders correctly 1`] = `
           className="sc-bdVaJa dqBkPn"
         >
           <svg
-            className="sc-bwzfXH kdIDyY icon"
+            className="sc-bwzfXH kdIDyY"
           >
             <use
               xlinkHref="/icon-sprite.svg#dribbble"
@@ -156,7 +156,7 @@ exports[`<Social /> renders correctly 1`] = `
           className="sc-bdVaJa dqBkPn"
         >
           <svg
-            className="sc-bwzfXH kdIDyY icon"
+            className="sc-bwzfXH kdIDyY"
           >
             <use
               xlinkHref="/icon-sprite.svg#github"

@@ -2,14 +2,16 @@ import { withPrefix } from "gatsby"
 import React, { memo } from "react"
 import { Icons } from "@custom-types/icons"
 import styled from "styled-components"
+import classNames from "classnames"
 
 interface Props {
   name: Icons
+  className?: string
 }
 
-const Icon: React.FunctionComponent<Props> = ({ name }) => (
-  <IconWrapper>
-    <IconSvg className="icon">
+const Icon: React.FunctionComponent<Props> = ({ name, className }) => (
+  <IconWrapper className={classNames("", className)}>
+    <IconSvg>
       <use xlinkHref={withPrefix(`icon-sprite.svg#${name}`)} />
     </IconSvg>
   </IconWrapper>
