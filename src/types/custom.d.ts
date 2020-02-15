@@ -1,4 +1,4 @@
-// Ignore SVG imports as they are not valid to TS but supported by gatsby-plugin-react-svg
+// Typescript, why can't you see my svgs?
 declare module "*.svg" {
   const content: any
   export default content
@@ -28,7 +28,7 @@ declare module "gatsby-plugin-transition-link/hooks" {
   export const useTransitionState: () => TransitionState
 }
 
-// "react-truncate-string" doesn't current have type declarations
+// "react-truncate-string" doesn't currently have type declarations
 declare module "react-truncate-string" {
   const TruncateString: any
   export default TruncateString

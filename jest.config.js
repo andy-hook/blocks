@@ -13,7 +13,7 @@ module.exports = {
     "^@test-utils(.*)$": "<rootDir>/src/test-utils$1",
     "^@components(.*)$": "<rootDir>/src/components$1",
     "^@custom-types(.*)$": "<rootDir>/src/types$1",
-    "^@images(.*)$": "<rootDir>/src/images$1",
+    "^@svg(.*)$": "<rootDir>/src/svg$1",
     "^@hooks(.*)$": "<rootDir>/src/hooks$1",
     "^@utils(.*)$": "<rootDir>/src/utils$1",
     "^@providers(.*)$": "<rootDir>/src/providers$1",
