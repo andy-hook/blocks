@@ -21,8 +21,8 @@ const ColumnsTemplate: React.FunctionComponent<Props> = ({
 
   return (
     <>
-      <Hash as={colTagType}>{hash}</Hash>
       <Block as={colTagType}>{block}</Block>
+      <Hash as={colTagType}>{hash}</Hash>
       <FromTo as={colTagType}>{fromTo}</FromTo>
       <Value as={colTagType}>{value}</Value>
     </>
@@ -37,16 +37,16 @@ const Col = styled.td`
   padding-right: ${layout.scale[5]};
 `
 
-const Hash = styled(Col)`
-  width: 20%;
+const Block = styled(Col)`
+  width: 18%;
 `
 
-const Block = styled(Col)`
-  width: 15%;
+const Hash = styled(Col)`
+  width: 27%;
 `
 
 const FromTo = styled(Col)`
-  width: 50%;
+  width: 40%;
 `
 
 const Value = styled(Col)`

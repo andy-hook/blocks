@@ -7,6 +7,7 @@ import { layout } from "@style/design-tokens"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
 import { themeTone } from "@style/theme"
+import Transfer from "@components/shared/transfer/transfer"
 
 interface Props {
   blockNumber?: string
@@ -29,21 +30,16 @@ const Transaction: React.FunctionComponent<Props> = ({
     <Row className={classNames("", className)}>
       <ColumnsTemplate
         hash={
-          <Title size="xs">
+          <LimitedHash>
             <TruncateString text={trxHash} truncateAt={50} />
-          </Title>
+          </LimitedHash>
         }
         block={
-          <Label>
+          <Title size="xs">
             <TruncateString text={"# " + blockNumber} truncateAt={50} />
-          </Label>
+          </Title>
         }
-        fromTo={
-          <div>
-            {from}
-            {to}
-          </div>
-        }
+        fromTo={<Transfer from={from} to={to} />}
         value={
           <Label>
             <TruncateString text={value} truncateAt={50} />
@@ -55,6 +51,10 @@ const Transaction: React.FunctionComponent<Props> = ({
 }
 
 export const rowPaddingX = layout.scale[8]
+
+const LimitedHash = styled(Label)`
+  max-width: ${layout.scale[16]};
+`
 
 const Row = styled.tr`
   display: flex;

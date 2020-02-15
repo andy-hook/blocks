@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TransferPip /> renders correctly 1`] = `
+<div
+  className="sc-htpNat dYrkBq"
+>
+  <div
+    className="sc-bdVaJa pjsti"
+    size="sm"
+  />
+</div>
+`;
