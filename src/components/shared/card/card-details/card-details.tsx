@@ -95,7 +95,7 @@ const SizeItem = styled.div`
   `}
 
   ${mq.greaterThan("topWide")`
-    width: 16%;
+    width: 18%;
   `}
 `
 

@@ -2,7 +2,7 @@
 
 exports[`<BlockHeader /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw kGXvWh sc-jTzLTM cTcVyo"
+  className="sc-gzVnrw kGXvWh sc-jTzLTM ibgpdw"
 >
   <a
     className="sc-iwsKbI dlHWTk"
@@ -37,7 +37,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
       className="sc-jzJRlG ePnpgy"
     >
       <div
-        className="sc-kAzzGY kqTKCJ"
+        className="sc-kAzzGY dPENuM"
       >
         <div
           className="sc-htpNat jhWtKn sc-cSHVUG edwNlB"

@@ -5,6 +5,7 @@ import classNames from "classnames"
 import TruncateString from "react-truncate-string"
 import Title from "@components/shared/title/title"
 import { layout } from "@style/design-tokens"
+import { mq } from "@style/media-queries"
 
 interface Props {
   name: string
@@ -41,8 +42,13 @@ const Row = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding-top: ${layout.scale[8]};
-  padding-bottom: ${layout.scale[8]};
+  padding-top: ${layout.scale[7]};
+  padding-bottom: ${layout.scale[7]};
+
+  ${mq.greaterThan("topLap")`
+    padding-top: ${layout.scale[8]};
+    padding-bottom: ${layout.scale[8]};
+  `}
 `
 
 const ValueLabel = styled.div`

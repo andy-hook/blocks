@@ -6,6 +6,7 @@ import { layout } from "@style/design-tokens"
 import BlockHeaderSwitch from "./block-header-switch/block-header-switch"
 import Panel from "@components/shared/panel/panel"
 import Button from "@components/shared/button/button"
+import { mq } from "@style/media-queries"
 
 interface Props {
   blockNumber?: string
@@ -74,7 +75,11 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
 )
 
 const HeaderPanel = styled(Panel)`
-  margin-bottom: ${layout.scale[8]};
+  margin-bottom: ${layout.scale[6]};
+
+  ${mq.greaterThan("topLap")`
+    margin-bottom: ${layout.scale[8]};
+  `}
 `
 
 const blockLettering = css`
@@ -130,8 +135,13 @@ const SupTitle = styled(Label)`
 
 const DetailCouple = styled.div`
   width: 50%;
-  padding-top: ${layout.scale[13]};
-  padding-left: 13%;
+  padding-top: ${layout.scale[11]};
+  padding-left: 5%;
+
+  ${mq.greaterThan("topLap")`
+    padding-left: 13%;
+    padding-top: ${layout.scale[13]};
+  `}
 `
 
 export default BlockHeader

@@ -5,7 +5,7 @@ exports[`<Block /> renders correctly 1`] = `
   className="sc-gPEVay eQYmiW"
 >
   <div
-    className="sc-gzVnrw kGXvWh sc-jTzLTM cTcVyo"
+    className="sc-gzVnrw kGXvWh sc-jTzLTM ibgpdw"
   >
     <a
       className="sc-iwsKbI dlHWTk"
@@ -40,7 +40,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-jzJRlG ePnpgy"
       >
         <div
-          className="sc-kAzzGY kqTKCJ"
+          className="sc-kAzzGY dPENuM"
         >
           <div
             className="sc-htpNat jhWtKn sc-cSHVUG edwNlB"
@@ -84,13 +84,13 @@ exports[`<Block /> renders correctly 1`] = `
     className="sc-gzVnrw kGXvWh"
   >
     <ul
-      className="sc-kGXeez cJVxQo"
+      className="sc-kGXeez eIIwaK"
     >
       <div
-        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa bIqsFB"
+          className="sc-bdVaJa tITjZ"
           size="sm"
         >
           Size
@@ -111,10 +111,58 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa bIqsFB"
+          className="sc-bdVaJa tITjZ"
+          size="sm"
+        >
+          Timestamp
+        </div>
+        <div
+          className="sc-kgoBCf donpaw"
+        >
+          <div
+            className="sc-htpNat dFFTl"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb kzfWct"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+      >
+        <div
+          className="sc-bdVaJa tITjZ"
+          size="sm"
+        >
+          Miner
+        </div>
+        <div
+          className="sc-kgoBCf donpaw"
+        >
+          <div
+            className="sc-htpNat dFFTl"
+            size="lg"
+          >
+            <div
+              className="sc-bxivhb kzfWct"
+            >
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+      >
+        <div
+          className="sc-bdVaJa tITjZ"
           size="sm"
         >
           Difficulty
@@ -135,10 +183,10 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa bIqsFB"
+          className="sc-bdVaJa tITjZ"
           size="sm"
         >
           Total Difficulty
@@ -159,10 +207,10 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa bIqsFB"
+          className="sc-bdVaJa tITjZ"
           size="sm"
         >
           Gas Used
@@ -183,10 +231,10 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
+        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa bIqsFB"
+          className="sc-bdVaJa tITjZ"
           size="sm"
         >
           Gas Limit
