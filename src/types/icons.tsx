@@ -6,3 +6,4 @@ export type Icons =
   | "github"
   | "mail"
   | "arrow-right"
+  | "arrow-left"
