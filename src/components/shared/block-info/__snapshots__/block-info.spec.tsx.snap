@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockInfo /> renders correctly 1`] = `
-<section
-  className="sc-bZQynM kUwNZg"
+<div
+  className="sc-bZQynM eypyDe"
 >
   <ul
     className="sc-gzVnrw gjsEYR"
@@ -98,5 +98,5 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
   </ul>
-</section>
+</div>
 `;

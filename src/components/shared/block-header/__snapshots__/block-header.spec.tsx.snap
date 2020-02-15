@@ -5,7 +5,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
   className="sc-gzVnrw eNMNUi sc-jTzLTM cTcVyo"
 >
   <a
-    className="sc-iwsKbI klTUTv"
+    className="sc-iwsKbI dlHWTk"
     href="/"
     type="tertiary"
   >
@@ -31,38 +31,42 @@ exports[`<BlockHeader /> renders correctly 1`] = `
     </div>
   </a>
   <header
-    className="sc-fjdhpX jGjyzw"
+    className="sc-fjdhpX jMkWoO"
   >
     <div
-      className="sc-cSHVUG wEsLH"
+      className="sc-jzJRlG ePnpgy"
     >
       <div
-        className="sc-htpNat brNyGz sc-jzJRlG kpJqLT"
-        size="lg"
+        className="sc-kAzzGY kqTKCJ"
       >
-         Transactions
+        <div
+          className="sc-htpNat brNyGz sc-cSHVUG edwNlB"
+          size="lg"
+        >
+           Transactions
+        </div>
+        <div
+          className="sc-bdVaJa hOjnFL"
+          size="lg"
+        >
+          # 
+        </div>
       </div>
-      <div
-        className="sc-bdVaJa hOjnFL"
-        size="lg"
+      <section
+        className="sc-ifAKCX kWjkTO"
       >
-        # 
-      </div>
+        <button
+          className="sc-EHOje jvzENE"
+        >
+          Details
+        </button>
+        <button
+          className="sc-bZQynM bOrPFB"
+        >
+          Transactions
+        </button>
+      </section>
     </div>
-    <section
-      className="sc-ifAKCX kWjkTO"
-    >
-      <button
-        className="sc-EHOje jvzENE"
-      >
-        Details
-      </button>
-      <button
-        className="sc-bZQynM bOrPFB"
-      >
-        Transactions
-      </button>
-    </section>
   </header>
 </div>
 `;

@@ -2,7 +2,7 @@
 
 exports[`<Button /> renders correctly 1`] = `
 <a
-  className="sc-htpNat edAHyi"
+  className="sc-htpNat fZHPFq"
   href="https://www.google.com"
   type="primary"
 >

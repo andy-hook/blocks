@@ -2,7 +2,8 @@ import React, { memo } from "react"
 import styled from "styled-components"
 import BlockInfoRow from "./block-info-row/block-info-row"
 import { layout, appearance } from "@style/design-tokens"
-import { themeText, themeTone } from "@style/theme"
+import { themeText } from "@style/theme"
+import Panel from "@components/shared/panel/panel"
 
 interface Props {
   blockNumber?: string
@@ -24,7 +25,7 @@ const BlockInfo: React.FunctionComponent<Props> = ({
   loading,
 }) => {
   return (
-    <Container>
+    <Panel>
       <InfoList>
         <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
         <Row
@@ -52,14 +53,9 @@ const BlockInfo: React.FunctionComponent<Props> = ({
           skeletonWidth="sm"
         />
       </InfoList>
-    </Container>
+    </Panel>
   )
 }
-
-const Container = styled.section`
-  padding: ${layout.scale[11]};
-  background-color: ${themeTone(500)};
-`
 
 const InfoList = styled.ul`
   /* Sit optically flush against container */
