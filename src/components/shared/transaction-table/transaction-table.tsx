@@ -7,6 +7,7 @@ import ColumnsTemplate from "./columns-template/columns-template"
 import Label from "../label/label"
 import { layout } from "@style/design-tokens"
 import { toString } from "lodash"
+import { mq } from "@style/media-queries"
 
 interface Props {
   transactions: Web3BlockData["transactionsData"]
@@ -22,7 +23,7 @@ const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
           trxHash={trx.hash}
           from={trx.from}
           to={trx.to}
-          value={trx.value}
+          value={toString(trx.ether) + " Ether"}
         />
       )
     })
@@ -57,9 +58,18 @@ const Table = styled.table`
 `
 
 const TableHead = styled.thead`
+  ${rowPaddingX}
+
   display: block;
-  padding: ${layout.scale[7]} ${rowPaddingX};
   background-color: ${themeTone(500)};
+
+  padding-top: ${layout.scale[5]};
+  padding-bottom: ${layout.scale[5]};
+
+  ${mq.greaterThan("topDesk")`
+    padding-top: ${layout.scale[6]};
+    padding-bottom: ${layout.scale[6]};
+  `}
 `
 
 const TableHeadRow = styled.tr`
@@ -72,7 +82,11 @@ const TableBody = styled.tbody`
 `
 
 const DataRow = styled(Transaction)`
-  margin-top: ${layout.scale[5]};
+  margin-top: ${layout.scale[3]};
+
+  ${mq.greaterThan("topDesk")`
+    margin-top: ${layout.scale[4]};
+  `}
 `
 
 export default TransactionTable

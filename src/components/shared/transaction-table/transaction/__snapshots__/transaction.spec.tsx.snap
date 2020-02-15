@@ -2,10 +2,10 @@
 
 exports[`<Transaction /> renders correctly 1`] = `
 <tr
-  className="sc-VigVT kpDDxL"
+  className="sc-jzJRlG cCQXGv"
 >
   <td
-    className="sc-bdVaJa sc-bwzfXH dTfGgv"
+    className="sc-bdVaJa sc-bwzfXH dfeDEW"
   >
     <div
       className="sc-EHOje fKjTYp"
@@ -13,21 +13,21 @@ exports[`<Transaction /> renders correctly 1`] = `
     />
   </td>
   <td
-    className="sc-bdVaJa sc-htpNat gJAHQQ"
+    className="sc-bdVaJa sc-htpNat jDGsFT"
   >
     <div
-      className="sc-gzVnrw hySMDL sc-gqjmRU ckARqJ"
+      className="sc-gzVnrw hySMDL sc-fjdhpX kcoeae"
       size="md"
     />
   </td>
   <td
-    className="sc-bdVaJa sc-bxivhb gxCMyn"
+    className="sc-bdVaJa sc-bxivhb hxXuRT"
   >
     <div
-      className="sc-iwsKbI cBeLjd"
+      className="sc-gqjmRU jDgOTw"
     >
       <div
-        className="sc-dnqmqq hgouuL sc-gZMcBi eGBApE"
+        className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
       >
         <div
           className="sc-gzVnrw bZExEz"
@@ -35,7 +35,22 @@ exports[`<Transaction /> renders correctly 1`] = `
         />
       </div>
       <div
-        className="sc-dnqmqq hgouuL sc-gZMcBi eGBApE"
+        className="sc-jTzLTM kwaODZ"
+      >
+        <div
+          className="sc-iwsKbI iUEoeV"
+        >
+          <svg
+            className="sc-gZMcBi didhH icon"
+          >
+            <use
+              xlinkHref="/icon-sprite.svg#arrow-right"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
       >
         <div
           className="sc-gzVnrw bZExEz"
@@ -45,7 +60,7 @@ exports[`<Transaction /> renders correctly 1`] = `
     </div>
   </td>
   <td
-    className="sc-bdVaJa sc-ifAKCX lppyUR"
+    className="sc-bdVaJa sc-ifAKCX gEVBXo"
   >
     <div
       className="sc-gzVnrw hySMDL"
