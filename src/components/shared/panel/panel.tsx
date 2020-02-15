@@ -61,23 +61,26 @@ const paddingSizes: { [index: string]: ResponsiveSizes } = {
   },
 }
 
-export function mimicPanelPadding(opts: {
+export function mimicPanelPadding({
+  xSize,
+  ySize,
+}: {
   xSize: PaddingSize
   ySize: PaddingSize
 }) {
   return css`
-    padding: ${paddingSizes[opts.ySize].base} ${paddingSizes[opts.xSize].base};
+    padding: ${paddingSizes[ySize].base} ${paddingSizes[xSize].base};
 
   ${mq.greaterThan("topLap")`
-    padding: ${paddingSizes[opts.ySize].topLap} ${paddingSizes[opts.xSize].topLap} ;
+    padding: ${paddingSizes[ySize].topLap} ${paddingSizes[xSize].topLap} ;
   `}
 
   ${mq.greaterThan("topWide")`
-    padding: ${paddingSizes[opts.ySize].topWide} ${paddingSizes[opts.xSize].topWide};
+    padding: ${paddingSizes[ySize].topWide} ${paddingSizes[xSize].topWide};
   `}
 
   ${mq.greaterThan("topWall")`
-    padding: ${paddingSizes[opts.ySize].topWall} ${paddingSizes[opts.xSize].topWall};
+    padding: ${paddingSizes[ySize].topWall} ${paddingSizes[xSize].topWall};
   `}
   `
 }
