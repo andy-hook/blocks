@@ -9,6 +9,7 @@ import Label from "@components/shared/label/label"
 import { themeTone } from "@style/theme"
 import Transfer from "@components/shared/transfer/transfer"
 import { mq } from "@style/media-queries"
+import { mimicPanelPadding } from "@components/shared/panel/panel"
 
 interface Props {
   blockNumber?: string
@@ -24,15 +25,15 @@ const Transaction: React.FunctionComponent<Props> = memo(
     return (
       <Row className={classNames("", className)}>
         <ColumnsTemplate
-          hash={
-            <LimitedHash>
-              <TruncateString text={trxHash} truncateAt={50} />
-            </LimitedHash>
-          }
           block={
             <Title size="xs">
               <TruncateString text={"# " + blockNumber} truncateAt={50} />
             </Title>
+          }
+          hash={
+            <LimitedHash>
+              <TruncateString text={trxHash} truncateAt={50} />
+            </LimitedHash>
           }
           fromTo={<Transfer from={from} to={to} />}
           value={
@@ -71,18 +72,10 @@ const LimitedHash = styled(Label)`
 `
 
 const Row = styled.tr`
-  ${rowPaddingX}
+  ${mimicPanelPadding({ xSize: "lg", ySize: "sm" })}
 
   display: flex;
   background-color: ${themeTone(500)};
-
-  padding-top: ${layout.scale[6]};
-  padding-bottom: ${layout.scale[6]};
-
-  ${mq.greaterThan("topDesk")`
-    padding-top: ${layout.scale[7]};
-    padding-bottom: ${layout.scale[7]};
-  `}
 `
 
 export default Transaction

@@ -98,7 +98,11 @@ export const typeSizeBaseMd = css`
 `
 
 export const typeSizeBaseLg = css`
-  font-size: ${type.scale[3]};
+  font-size: ${type.scale[2]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[3]};
+  `}
 `
 
 /* Display type sizes
@@ -108,7 +112,11 @@ export const typeSizeDisplayXs = css`
 `
 
 export const typeSizeDisplaySm = css`
-  font-size: ${type.scale[7]};
+  font-size: ${type.scale[6]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[7]};
+  `}
 `
 
 export const typeSizeDisplayMd = css`
@@ -120,5 +128,13 @@ export const typeSizeDisplayMd = css`
 `
 
 export const typeSizeDisplayLg = css`
-  font-size: ${type.scale[11]};
+  font-size: ${type.scale[9]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[10]};
+  `}
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[11]};
+  `}
 `

@@ -3,7 +3,7 @@
 exports[`<Topbar /> renders as closed correctly 1`] = `
 Array [
   <div
-    className="sc-ckVGcZ sc-jKJlTe fgbUEF"
+    className="sc-ckVGcZ sc-jKJlTe dwluft"
   >
     <div
       className="sc-kkGfuU jwTQsl"
@@ -60,7 +60,7 @@ Array [
     className="sc-ckVGcZ sc-eNQAEJ iqKeeK"
   >
     <div
-      className="sc-hMqMXs ibhGtN"
+      className="sc-hMqMXs bNsWeO"
     >
       <nav
         className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
@@ -100,7 +100,7 @@ Array [
 exports[`<Topbar /> renders as hidden correctly 1`] = `
 Array [
   <div
-    className="sc-ckVGcZ sc-jKJlTe exVNjm"
+    className="sc-ckVGcZ sc-jKJlTe joqcy"
   >
     <div
       className="sc-kkGfuU jwTQsl"
@@ -157,7 +157,7 @@ Array [
     className="sc-ckVGcZ sc-eNQAEJ eqnLup"
   >
     <div
-      className="sc-hMqMXs ibhGtN"
+      className="sc-hMqMXs bNsWeO"
     >
       <nav
         className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"
@@ -197,7 +197,7 @@ Array [
 exports[`<Topbar /> renders correctly 1`] = `
 Array [
   <div
-    className="sc-ckVGcZ sc-jKJlTe fgbUEF"
+    className="sc-ckVGcZ sc-jKJlTe dwluft"
   >
     <div
       className="sc-kkGfuU jwTQsl"
@@ -254,7 +254,7 @@ Array [
     className="sc-ckVGcZ sc-eNQAEJ iqKeeK"
   >
     <div
-      className="sc-hMqMXs ibhGtN"
+      className="sc-hMqMXs bNsWeO"
     >
       <nav
         className="sc-kgoBCf kVSTZj sc-kEYyzF gChjCE"

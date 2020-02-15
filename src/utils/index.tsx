@@ -1,5 +1,5 @@
 export const BLOCK_COUNT = 10
-export const USE_MAINNET = false
+export const USE_MAINNET = true
 export const SUMMARY_MAX_TRANSACTIONS = 60
 
 export function removeWidow(str: string) {

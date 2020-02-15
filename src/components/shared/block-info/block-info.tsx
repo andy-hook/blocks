@@ -19,7 +19,7 @@ interface Props {
 const BlockInfo: React.FunctionComponent<Props> = memo(
   ({ size, difficulty, totalDifficulty, gasUsed, gasLimit, loading }) => {
     return (
-      <Panel>
+      <Panel yPadding="lg" xPadding="lg">
         <InfoList>
           <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
           <Row
