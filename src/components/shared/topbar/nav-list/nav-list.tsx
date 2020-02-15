@@ -1,36 +1,15 @@
 import React, { memo, MutableRefObject } from "react"
-import {
-  PAGE_LEAVE_DURATION,
-  TRANSITION_TYPE_EXIT,
-  TRANSITION_TYPE_ENTER,
-} from "@hooks/page-transition"
+
 import classNames from "classnames"
-import styled from "styled-components"
-import { typeBaseSemibold, setBaseCropAndLineHeight } from "@style/typography"
-import Link from "gatsby-plugin-transition-link"
+import styled, { css } from "styled-components"
+import { setBaseCropAndLineHeight, typeDisplayBold } from "@style/typography"
+import { Link } from "gatsby"
 import { themeText } from "@style/theme"
 import { type } from "@style/design-tokens"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-export interface Props {
+interface Props {
   className?: string
-}
-
-export const linkProps = {
-  activeClassName: "active",
-
-  exit: {
-    state: {
-      animType: TRANSITION_TYPE_EXIT,
-    },
-    length: PAGE_LEAVE_DURATION, // Should match entry delay
-  },
-  entry: {
-    state: {
-      animType: TRANSITION_TYPE_ENTER,
-    },
-    delay: PAGE_LEAVE_DURATION, // How long the current page should show for before changing scroll position
-    length: PAGE_LEAVE_DURATION,
-  },
 }
 
 const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
@@ -40,39 +19,42 @@ const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
     <Container ref={navRef} className={classNames("", className)}>
       <List>
         <ListItem>
-          <ListItemLink to="/" {...linkProps}>
-            Ten Blocks
+          <ListItemLink to="/" activeClassName="active">
+            Latest Blocks
           </ListItemLink>
         </ListItem>
         <ListItem>
-          <ListItemLink to="/about/" {...linkProps}>
-            About
-          </ListItemLink>
+          <ListItemLinkOutbound
+            href="https://github.com/andy-hook/ten-blocks"
+            target="_blank"
+          >
+            Github
+          </ListItemLinkOutbound>
         </ListItem>
       </List>
     </Container>
   )
 })
 
-export const Container = styled.nav``
+const Container = styled.nav``
 
 const itemPadding = "1em"
 
-export const List = styled.ul`
-  ${typeBaseSemibold}
+const List = styled.ul`
+  ${typeDisplayBold}
 
   display: flex;
   margin-right: -${itemPadding};
   margin-left: -${itemPadding};
 `
 
-export const ListItem = styled.li`
+const ListItem = styled.li`
   &:not(:last-child) {
     margin-right: 0.8em;
   }
 `
 
-export const ListItemLink = styled(Link)`
+const ListLinkStyle = css`
   ${setBaseCropAndLineHeight(type.lineHeight.display.regular)}
 
   display: block;
@@ -83,6 +65,14 @@ export const ListItemLink = styled(Link)`
   &.active {
     color: ${themeText(400)};
   }
+`
+
+const ListItemLink = styled(Link)`
+  ${ListLinkStyle}
+`
+
+const ListItemLinkOutbound = styled(OutboundLink)`
+  ${ListLinkStyle}
 `
 
 export default NavList

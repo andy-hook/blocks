@@ -1,15 +1,19 @@
-import React, { memo } from "react"
-import { smallScreenGutter } from "../gutter/gutter"
-import styled, { css } from "styled-components"
+import React, { memo, useState, useEffect } from "react"
+import styled from "styled-components"
 import { mq } from "@style/media-queries"
 import NavList from "./nav-list/nav-list"
-import { layout, animation } from "@style/design-tokens"
+import { layout, type } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
 import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
+import { typeSizeBaseLg } from "@style/typography"
+import { themeTone, themeText } from "@style/theme"
+import { Link } from "gatsby"
+import { generateBlockNumberFromStaticRange } from "@utils"
 
 const Topbar: React.FunctionComponent = memo(() => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
+  const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
 
   useScrollPosition(({ prevPos, currPos }) => {
     const canHideTopbar = currPos.y > prevPos.y
@@ -28,18 +32,40 @@ const Topbar: React.FunctionComponent = memo(() => {
       : setThemeTypeStatus("light")
   }
 
+  function generateRandomBlockNumber() {
+    setRandomBlockNumber(
+      generateBlockNumberFromStaticRange({ min: 1, max: 9000000 })
+    )
+  }
+
+  // Generate random number on initial render
+  useEffect(() => {
+    generateRandomBlockNumber()
+  }, [])
+
   return (
-    <TopbarContainer visible={true}>
+    <TopbarContainer>
       <TopbarNavList />
 
-      <TopbarShuffle onClick={toggleTheme}>
-        <Icon name="shuffle" />
-      </TopbarShuffle>
+      <TopbarControls>
+        <TopbarThemeSwitch onClick={toggleTheme}>
+          <Icon name="shuffle" />
+        </TopbarThemeSwitch>
+
+        <TopbarGithub
+          to={`/block/${randomBlockNumber}`}
+          onClick={generateRandomBlockNumber}
+        >
+          <Icon name="shuffle" />
+        </TopbarGithub>
+      </TopbarControls>
     </TopbarContainer>
   )
 })
 
-const TopbarContainer = styled.div<{ visible: boolean }>`
+const TopbarContainer = styled.div`
+  ${typeSizeBaseLg}
+
   position: fixed;
   display: flex;
 
@@ -49,19 +75,11 @@ const TopbarContainer = styled.div<{ visible: boolean }>`
   left: 0;
   width: 100%;
 
-  padding-left: ${smallScreenGutter};
-  padding-right: ${smallScreenGutter};
-
-  transition: transform 1.5s ${animation.ease("easeOutCirc")};
-
-  transform: translate3d(0, -100%, 0);
+  padding: ${layout.scale[5]} ${layout.scale[8]};
 
   z-index: ${layout.zIndex.high};
-  ${props =>
-    props.visible &&
-    css`
-      transform: translate3d(0, 0, 0);
-    `};
+
+  background-color: ${themeTone(100)};
 `
 
 const TopbarNavList = styled(NavList)`
@@ -75,10 +93,17 @@ const TopbarNavList = styled(NavList)`
   `}
 `
 
-const TopbarShuffle = styled.button`
-  color: red;
-
+const TopbarControls = styled.div`
+  color: ${themeText(300)};
   display: flex;
+  align-items: center;
+  font-size: ${type.scale[7]};
+`
+
+const TopbarThemeSwitch = styled.button``
+
+const TopbarGithub = styled(Link)`
+  margin-left: ${layout.scale[5]};
 `
 
 export default Topbar
