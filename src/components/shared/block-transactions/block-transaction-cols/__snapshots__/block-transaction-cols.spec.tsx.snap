@@ -1,28 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockTransactionCols /> renders correctly 1`] = `
-<tr
-  className="sc-bdVaJa bDWFJH"
->
+Array [
   <td
-    className="sc-bwzfXH sc-htpNat KtFsv"
+    className="sc-bdVaJa sc-bwzfXH kIQmTZ"
   >
     string
-  </td>
+  </td>,
   <td
-    className="sc-bwzfXH sc-bxivhb bUZGRr"
+    className="sc-bdVaJa sc-htpNat fwPHmk"
   >
     string
-  </td>
+  </td>,
   <td
-    className="sc-bwzfXH sc-ifAKCX cFlEyZ"
+    className="sc-bdVaJa sc-bxivhb dUdiVs"
   >
     string
-  </td>
+  </td>,
   <td
-    className="sc-bwzfXH sc-EHOje jvzENE"
+    className="sc-bdVaJa sc-ifAKCX qNfRk"
   >
     string
-  </td>
-</tr>
+  </td>,
+]
 `;

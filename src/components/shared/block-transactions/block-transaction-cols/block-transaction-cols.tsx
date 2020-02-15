@@ -1,42 +1,56 @@
 import React from "react"
 import styled from "styled-components"
-import classNames from "classnames"
+import { layout } from "@style/design-tokens"
 
 interface Props {
   tableHeader?: boolean
-  one: any
-  two: any
-  three: any
-  four: any
+  block: any
+  hash: any
+  fromTo: any
+  value: any
 }
 
 const BlockTransactionCols: React.FunctionComponent<Props> = ({
   tableHeader = false,
-  one,
-  two,
-  three,
-  four,
+  block,
+  hash,
+  fromTo,
+  value,
 }) => {
   const colTagType = tableHeader ? "th" : "td"
 
   return (
     <>
-      <ColOne as={colTagType}>{one}</ColOne>
-      <ColTwo as={colTagType}>{two}</ColTwo>
-      <ColThree as={colTagType}>{three}</ColThree>
-      <ColFour as={colTagType}>{four}</ColFour>
+      <Hash as={colTagType}>{hash}</Hash>
+      <Block as={colTagType}>{block}</Block>
+      <FromTo as={colTagType}>{fromTo}</FromTo>
+      <Value as={colTagType}>{value}</Value>
     </>
   )
 }
 
-const Col = styled.td``
+const Col = styled.td`
+  display: flex;
+  align-items: center;
 
-const ColOne = styled(Col)``
+  padding-left: ${layout.scale[4]};
+  padding-right: ${layout.scale[4]};
+`
 
-const ColTwo = styled(Col)``
+const Hash = styled(Col)`
+  width: 20%;
+`
 
-const ColThree = styled(Col)``
+const Block = styled(Col)`
+  width: 15%;
+`
 
-const ColFour = styled(Col)``
+const FromTo = styled(Col)`
+  width: 50%;
+`
+
+const Value = styled(Col)`
+  width: 15%;
+`
 
 export default BlockTransactionCols

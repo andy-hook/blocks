@@ -2,7 +2,7 @@
 
 exports[`<Block /> renders correctly 1`] = `
 <article
-  className="sc-ckVGcZ foYhJp"
+  className="sc-hMqMXs cPxEnv"
 >
   <div
     className="sc-gzVnrw iCGcXq"
@@ -14,7 +14,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-iwsKbI ldERec"
       >
         <div
-          className="sc-htpNat iflsxI sc-dnqmqq dpESLn"
+          className="sc-htpNat brNyGz sc-dnqmqq dpESLn"
           size="lg"
         >
           <div
@@ -24,7 +24,7 @@ exports[`<Block /> renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-bdVaJa jlBogh"
+          className="sc-bdVaJa hOjnFL"
           size="lg"
         >
           <div
@@ -60,7 +60,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-gZMcBi iQtxug sc-fjdhpX fPMPjs"
       >
         <div
-          className="sc-bdVaJa ftOOkT"
+          className="sc-bdVaJa hxlARP"
           size="sm"
         >
           Size
@@ -69,7 +69,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-gqjmRU jjTjnl"
         >
           <div
-            className="sc-htpNat fjqEwh"
+            className="sc-htpNat gAuZHc"
             size="lg"
           >
             <div
@@ -84,7 +84,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-gZMcBi iQtxug sc-fjdhpX fPMPjs"
       >
         <div
-          className="sc-bdVaJa ftOOkT"
+          className="sc-bdVaJa hxlARP"
           size="sm"
         >
           Difficulty
@@ -93,7 +93,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-gqjmRU jjTjnl"
         >
           <div
-            className="sc-htpNat fjqEwh"
+            className="sc-htpNat gAuZHc"
             size="lg"
           >
             <div
@@ -108,7 +108,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-gZMcBi iQtxug sc-fjdhpX fPMPjs"
       >
         <div
-          className="sc-bdVaJa ftOOkT"
+          className="sc-bdVaJa hxlARP"
           size="sm"
         >
           Total Difficulty
@@ -117,7 +117,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-gqjmRU jjTjnl"
         >
           <div
-            className="sc-htpNat fjqEwh"
+            className="sc-htpNat gAuZHc"
             size="lg"
           >
             <div
@@ -132,7 +132,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-gZMcBi iQtxug sc-fjdhpX fPMPjs"
       >
         <div
-          className="sc-bdVaJa ftOOkT"
+          className="sc-bdVaJa hxlARP"
           size="sm"
         >
           Gas Used
@@ -141,7 +141,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-gqjmRU jjTjnl"
         >
           <div
-            className="sc-htpNat fjqEwh"
+            className="sc-htpNat gAuZHc"
             size="lg"
           >
             <div
@@ -156,7 +156,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-gZMcBi iQtxug sc-fjdhpX fPMPjs"
       >
         <div
-          className="sc-bdVaJa ftOOkT"
+          className="sc-bdVaJa hxlARP"
           size="sm"
         >
           Gas Limit
@@ -165,7 +165,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-gqjmRU jjTjnl"
         >
           <div
-            className="sc-htpNat fjqEwh"
+            className="sc-htpNat gAuZHc"
             size="lg"
           >
             <div

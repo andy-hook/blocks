@@ -18,13 +18,16 @@ const BlockBody: React.FunctionComponent<Props> = ({
       return trxVisible ? (
         <BlockTransactions transactions={blockData.transactionsData} />
       ) : (
-        <BlockInfo
-          size={toString(blockData.size + "B")}
-          difficulty={blockData.difficulty}
-          totalDifficulty={blockData.totalDifficulty}
-          gasLimit={toString(blockData.gasLimit)}
-          gasUsed={toString(blockData.gasUsed)}
-        />
+        <>
+          <BlockTransactions transactions={blockData.transactionsData} />
+          <BlockInfo
+            size={toString(blockData.size + "B")}
+            difficulty={blockData.difficulty}
+            totalDifficulty={blockData.totalDifficulty}
+            gasLimit={toString(blockData.gasLimit)}
+            gasUsed={toString(blockData.gasUsed)}
+          />
+        </>
       )
     } else {
       return (

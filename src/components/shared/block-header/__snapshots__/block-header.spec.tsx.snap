@@ -11,13 +11,13 @@ exports[`<BlockHeader /> renders correctly 1`] = `
       className="sc-iwsKbI ldERec"
     >
       <div
-        className="sc-htpNat iflsxI sc-dnqmqq dpESLn"
+        className="sc-htpNat brNyGz sc-dnqmqq dpESLn"
         size="lg"
       >
          Transactions
       </div>
       <div
-        className="sc-bdVaJa jlBogh"
+        className="sc-bdVaJa hOjnFL"
         size="lg"
       >
         # 

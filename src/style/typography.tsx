@@ -103,6 +103,10 @@ export const typeSizeBaseLg = css`
 
 /* Display type sizes
   ------------------------------------------------- */
+export const typeSizeDisplayXs = css`
+  font-size: ${type.scale[5]};
+`
+
 export const typeSizeDisplaySm = css`
   font-size: ${type.scale[7]};
 `
