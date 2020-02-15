@@ -5,28 +5,28 @@ exports[`<Navigation /> renders correctly 1`] = `
   className="sc-bdVaJa bDWFJH"
 >
   <ul
-    className="sc-bwzfXH gFQoxK"
+    className="sc-bwzfXH biXqYm"
   >
     <li
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb bFEVbR"
+        className="sc-bxivhb bZtjSv"
         href="/"
-        onClick={[Function]}
       >
-        Ten Blocks
+        Latest Blocks
       </a>
     </li>
     <li
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb bFEVbR"
-        href="/about/"
+        className="sc-ifAKCX iysrLI"
+        href="https://github.com/andy-hook/ten-blocks"
         onClick={[Function]}
+        target="_blank"
       >
-        About
+        Github
       </a>
     </li>
   </ul>

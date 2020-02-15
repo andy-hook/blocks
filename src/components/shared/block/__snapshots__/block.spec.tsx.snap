@@ -43,7 +43,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kAzzGY eqWyFP"
         >
           <div
-            className="sc-htpNat jhWtKn sc-cSHVUG edwNlB"
+            className="sc-htpNat eluBxQ sc-cSHVUG edwNlB"
             size="lg"
           >
             <div
@@ -53,7 +53,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-bdVaJa boIDlV"
+            className="sc-bdVaJa cLRnGS"
             size="lg"
           >
             <div
@@ -90,7 +90,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Size
@@ -99,7 +99,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div
@@ -114,7 +114,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Timestamp
@@ -123,7 +123,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div
@@ -138,7 +138,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Miner
@@ -147,7 +147,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div
@@ -162,7 +162,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Difficulty
@@ -171,7 +171,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div
@@ -186,7 +186,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Total Difficulty
@@ -195,7 +195,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div
@@ -210,7 +210,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Gas Used
@@ -219,7 +219,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div
@@ -234,7 +234,7 @@ exports[`<Block /> renders correctly 1`] = `
         className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
-          className="sc-bdVaJa tITjZ"
+          className="sc-bdVaJa cxiLdp"
           size="sm"
         >
           Gas Limit
@@ -243,7 +243,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-kgoBCf donpaw"
         >
           <div
-            className="sc-htpNat dFFTl"
+            className="sc-htpNat idhIXX"
             size="lg"
           >
             <div

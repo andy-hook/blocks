@@ -108,33 +108,32 @@ export const typeSizeBaseLg = css`
 /* Display type sizes
   ------------------------------------------------- */
 export const typeSizeDisplayXs = css`
-  font-size: ${type.scale[5]};
+  font-size: ${type.scale[4]};
 `
 
 export const typeSizeDisplaySm = css`
-  font-size: ${type.scale[5]};
+  font-size: ${type.scale[4]};
 
   ${mq.greaterThan("topLap")`
-    font-size: ${type.scale[7]};
+    font-size: ${type.scale[6]};
   `}
 `
-
 export const typeSizeDisplayMd = css`
-  font-size: ${type.scale[9]};
+  font-size: ${type.scale[8]};
 
   ${mq.greaterThan("topWide")`
-    font-size: ${type.scale[10]};
+    font-size: ${type.scale[9]};
   `}
 `
 
 export const typeSizeDisplayLg = css`
-  font-size: ${type.scale[9]};
+  font-size: ${type.scale[8]};
 
   ${mq.greaterThan("topLap")`
-    font-size: ${type.scale[10]};
+    font-size: ${type.scale[9]};
   `}
 
   ${mq.greaterThan("topWide")`
-    font-size: ${type.scale[11]};
+    font-size: ${type.scale[10]};
   `}
 `

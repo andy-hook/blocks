@@ -2,53 +2,74 @@
 
 exports[`<Topbar /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw dvjlLN"
+  className="sc-gzVnrw bbHWP"
 >
   <nav
-    className="sc-bwzfXH uTxCW sc-htoDjs bKyWRy"
+    className="sc-bdVaJa bDWFJH sc-htoDjs bKyWRy"
   >
     <ul
-      className="sc-htpNat NhtAu"
+      className="sc-bwzfXH biXqYm"
     >
       <li
-        className="sc-bxivhb llkUbX"
+        className="sc-htpNat iaJVDJ"
       >
         <a
-          className="sc-ifAKCX ggxBwp"
+          className="sc-bxivhb bZtjSv"
           href="/"
-          onClick={[Function]}
         >
-          Ten Blocks
+          Latest Blocks
         </a>
       </li>
       <li
-        className="sc-bxivhb llkUbX"
+        className="sc-htpNat iaJVDJ"
       >
         <a
-          className="sc-ifAKCX ggxBwp"
-          href="/about/"
+          className="sc-ifAKCX iysrLI"
+          href="https://github.com/andy-hook/ten-blocks"
           onClick={[Function]}
+          target="_blank"
         >
-          About
+          Github
         </a>
       </li>
     </ul>
   </nav>
-  <button
-    className="sc-dnqmqq fdFecU"
-    onClick={[Function]}
+  <div
+    className="sc-dnqmqq cOJZLP"
   >
-    <div
-      className="sc-EHOje foslyy"
+    <button
+      className="sc-iwsKbI jQhHGA"
+      onClick={[Function]}
     >
-      <svg
-        className="sc-bZQynM jYytzR"
+      <div
+        className="sc-EHOje foslyy"
       >
-        <use
-          xlinkHref="/icon-sprite.svg#shuffle"
-        />
-      </svg>
-    </div>
-  </button>
+        <svg
+          className="sc-bZQynM jYytzR"
+        >
+          <use
+            xlinkHref="/icon-sprite.svg#shuffle"
+          />
+        </svg>
+      </div>
+    </button>
+    <a
+      className="sc-gZMcBi blWxmd"
+      href="/block/undefined"
+      onClick={[Function]}
+    >
+      <div
+        className="sc-EHOje foslyy"
+      >
+        <svg
+          className="sc-bZQynM jYytzR"
+        >
+          <use
+            xlinkHref="/icon-sprite.svg#shuffle"
+          />
+        </svg>
+      </div>
+    </a>
+  </div>
 </div>
 `;
