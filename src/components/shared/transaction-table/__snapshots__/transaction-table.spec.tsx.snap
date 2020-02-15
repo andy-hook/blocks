@@ -14,7 +14,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-gzVnrw bzArvE"
+          className="sc-gzVnrw lmofWw"
           size="lg"
         >
           Block
@@ -24,7 +24,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw bzArvE"
+          className="sc-gzVnrw lmofWw"
           size="lg"
         >
           Hash
@@ -34,7 +34,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bxivhb hxXuRT"
       >
         <div
-          className="sc-gzVnrw bzArvE"
+          className="sc-gzVnrw lmofWw"
           size="lg"
         >
           From / To
@@ -44,7 +44,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-ifAKCX gEVBXo"
       >
         <div
-          className="sc-gzVnrw bzArvE"
+          className="sc-gzVnrw lmofWw"
           size="lg"
         >
           Value
@@ -62,7 +62,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-EHOje fKjTYp"
+          className="sc-EHOje cFfKiE"
           size="xs"
         />
       </td>
@@ -70,7 +70,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw hySMDL sc-jzJRlG dHdNug"
+          className="sc-gzVnrw gfZtNX sc-jzJRlG dHdNug"
           size="md"
         />
       </td>
@@ -84,7 +84,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
             className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
           >
             <div
-              className="sc-gzVnrw bZExEz"
+              className="sc-gzVnrw jdISSh"
               size="sm"
             />
           </div>
@@ -107,7 +107,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
             className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
           >
             <div
-              className="sc-gzVnrw bZExEz"
+              className="sc-gzVnrw jdISSh"
               size="sm"
             />
           </div>
@@ -117,7 +117,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-ifAKCX gEVBXo"
       >
         <div
-          className="sc-gzVnrw hySMDL"
+          className="sc-gzVnrw gfZtNX"
           size="md"
         />
       </td>
@@ -129,7 +129,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-EHOje fKjTYp"
+          className="sc-EHOje cFfKiE"
           size="xs"
         />
       </td>
@@ -137,7 +137,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw hySMDL sc-jzJRlG dHdNug"
+          className="sc-gzVnrw gfZtNX sc-jzJRlG dHdNug"
           size="md"
         />
       </td>
@@ -151,7 +151,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
             className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
           >
             <div
-              className="sc-gzVnrw bZExEz"
+              className="sc-gzVnrw jdISSh"
               size="sm"
             />
           </div>
@@ -174,7 +174,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
             className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
           >
             <div
-              className="sc-gzVnrw bZExEz"
+              className="sc-gzVnrw jdISSh"
               size="sm"
             />
           </div>
@@ -184,7 +184,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-ifAKCX gEVBXo"
       >
         <div
-          className="sc-gzVnrw hySMDL"
+          className="sc-gzVnrw gfZtNX"
           size="md"
         />
       </td>

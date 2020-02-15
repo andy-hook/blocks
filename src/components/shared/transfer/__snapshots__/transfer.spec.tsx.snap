@@ -8,7 +8,7 @@ exports[`<Transfer /> renders correctly 1`] = `
     className="sc-htpNat dYrkBq sc-bZQynM cnpumk"
   >
     <div
-      className="sc-bdVaJa pjsti"
+      className="sc-bdVaJa kwWHFO"
       size="sm"
     />
   </div>
@@ -31,7 +31,7 @@ exports[`<Transfer /> renders correctly 1`] = `
     className="sc-htpNat dYrkBq sc-bZQynM cnpumk"
   >
     <div
-      className="sc-bdVaJa pjsti"
+      className="sc-bdVaJa kwWHFO"
       size="sm"
     />
   </div>

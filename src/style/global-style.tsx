@@ -48,9 +48,7 @@ const Global = createGlobalStyle`
 
   a,
   button {
-    &:focus {
-      outline: none;
-    }
+    color: inherit;
   }
 
   a {
@@ -135,7 +133,7 @@ const Global = createGlobalStyle`
 
 const GlobalPageBackground = createGlobalStyle`
   body {
-    background-color: ${themeTone(100)}
+    background-color: ${themeTone(300)}
   }
 `
 

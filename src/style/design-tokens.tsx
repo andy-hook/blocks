@@ -16,10 +16,10 @@ const letterSpacing = {
   base: {
     regular: "0.01em",
     medium: "0.01em",
-    semibold: "0.0025em",
+    semibold: "0.004em",
   },
   display: {
-    bold: "-0.02em",
+    bold: "-0.005em",
     button: "0.01em",
   },
   uppercase: "0.06em",
@@ -54,14 +54,13 @@ const typeScale = {
   1: rem("12px"),
   2: rem("14px"),
   3: rem("16px"),
-  4: rem("16px"),
-  5: rem("18px"),
-  6: rem("20px"),
-  7: rem("24px"),
-  8: rem("30px"),
-  9: rem("36px"),
-  10: rem("48px"),
-  11: rem("64px"),
+  4: rem("18px"),
+  5: rem("20px"),
+  6: rem("24px"),
+  7: rem("30px"),
+  8: rem("36px"),
+  9: rem("48px"),
+  10: rem("64px"),
 }
 
 const spacingScale = {
