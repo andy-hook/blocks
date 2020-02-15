@@ -42,8 +42,8 @@ const Row = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding-top: ${layout.scale[7]};
-  padding-bottom: ${layout.scale[7]};
+  padding-top: ${layout.scale[6]};
+  padding-bottom: ${layout.scale[6]};
 
   ${mq.greaterThan("topLap")`
     padding-top: ${layout.scale[8]};

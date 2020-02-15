@@ -80,7 +80,7 @@ const DataRow = styled(Transaction)`
   margin-top: ${layout.scale[3]};
 
   ${mq.greaterThan("topDesk")`
-    margin-top: ${layout.scale[4]};
+    margin-top: ${layout.scale[5]};
   `}
 `
 

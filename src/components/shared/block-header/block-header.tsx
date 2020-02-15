@@ -75,10 +75,10 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
 )
 
 const HeaderPanel = styled(Panel)`
-  margin-bottom: ${layout.scale[6]};
+  margin-bottom: ${layout.scale[3]};
 
-  ${mq.greaterThan("topLap")`
-    margin-bottom: ${layout.scale[8]};
+  ${mq.greaterThan("topDesk")`
+    margin-bottom: ${layout.scale[5]};
   `}
 `
 
@@ -119,14 +119,22 @@ const Header = styled.header<{ showAsTrx: boolean }>`
 
 const HeaderInner = styled.div`
   position: relative;
-  display: flex;
-
-  align-items: flex-end;
-  justify-content: space-between;
 
   padding-bottom: ${layout.scale[6]};
 
   z-index: ${layout.zIndex.low};
+
+  padding-left: 5%;
+  padding-top: ${layout.scale[11]};
+
+  ${mq.greaterThan("topLap")`
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 13%;
+    padding-top: ${layout.scale[13]};
+  `}
 `
 
 const SupTitle = styled(Label)`
@@ -135,12 +143,9 @@ const SupTitle = styled(Label)`
 
 const DetailCouple = styled.div`
   width: 50%;
-  padding-top: ${layout.scale[11]};
-  padding-left: 5%;
 
-  ${mq.greaterThan("topLap")`
-    padding-left: 13%;
-    padding-top: ${layout.scale[13]};
+  ${mq.lessThan("bottomLap")`
+    margin-bottom: ${layout.scale[5]}
   `}
 `
 
