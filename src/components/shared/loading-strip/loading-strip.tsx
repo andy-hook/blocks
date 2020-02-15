@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import { menuZindex } from "@components/shared/menu/menu"
 
@@ -23,4 +23,4 @@ const Loading = styled.div`
   height: 10px;
 `
 
-export default LoadingStrip
+export default memo(LoadingStrip)

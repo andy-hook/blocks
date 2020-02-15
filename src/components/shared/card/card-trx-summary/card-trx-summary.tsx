@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { Web3TransactionData } from "model"
 import CardTrxPip from "@components/shared/card/card-trx-pip/card-trx-pip"
 import styled from "styled-components"
@@ -77,4 +77,4 @@ const Grid = styled.ul`
 
 const GridItem = styled.li``
 
-export default CardTrxSummary
+export default memo(CardTrxSummary)

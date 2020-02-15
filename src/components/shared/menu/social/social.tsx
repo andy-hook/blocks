@@ -16,7 +16,7 @@ interface Props {
 
 type Refs<T> = Array<MutableRefObject<T>>
 
-const Social: React.FunctionComponent<Props> = memo(({ items, open }) => {
+const Social: React.FunctionComponent<Props> = ({ items, open }) => {
   const projectKeys = keys(items)
   const refs = projectKeys.map(React.createRef) as Refs<HTMLLIElement>
   const cachedRefs = React.useRef<Refs<HTMLLIElement>>(refs)
@@ -92,7 +92,7 @@ const Social: React.FunctionComponent<Props> = memo(({ items, open }) => {
   })
 
   return <SocialList ref={listRef}>{icons}</SocialList>
-})
+}
 
 const padding = "0.7em"
 
@@ -159,4 +159,4 @@ const IconPos = styled.div`
   }
 `
 
-export default Social
+export default memo(Social)

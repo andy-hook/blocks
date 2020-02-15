@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
@@ -67,4 +67,4 @@ const DetailCouple = styled.div`
   padding-left: ${layout.scale[12]};
 `
 
-export default BlockHeader
+export default memo(BlockHeader)

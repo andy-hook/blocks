@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import { Web3BlockData } from "model"
 import Card from "@components/shared/card/card"
@@ -69,4 +69,4 @@ const GridItemOffset = styled.div<{ isEven: boolean }>`
   `};
 `
 
-export default BlockList
+export default memo(BlockList)

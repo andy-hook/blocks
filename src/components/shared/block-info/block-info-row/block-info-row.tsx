@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 import Label, { SkeletonWidth } from "@components/shared/label/label"
 import classNames from "classnames"
@@ -54,4 +54,4 @@ const ValueLabel = styled.div`
   width: 50%;
 `
 
-export default BlockInfoRow
+export default memo(BlockInfoRow)

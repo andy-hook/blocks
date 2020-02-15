@@ -1,9 +1,10 @@
-import React, { PropsWithChildren } from "react"
+import React, { PropsWithChildren, memo, ReactNode } from "react"
 import { rem } from "polished"
 import styled, { css } from "styled-components"
 
 interface Props {
   size?: "small" | "medium" | "large"
+  children?: ReactNode
 }
 
 const Limiter: React.FunctionComponent<Props> = React.forwardRef<
@@ -50,4 +51,4 @@ const LargeLimiter = styled.div`
   max-width: ${largeSize};
 `
 
-export default Limiter
+export default memo(Limiter)

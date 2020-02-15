@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import styled from "styled-components"
 
 interface Props {
@@ -28,4 +28,4 @@ const DetailsButton = styled.button``
 
 const TransactionsButton = styled.button``
 
-export default BlockHeaderSwitch
+export default memo(BlockHeaderSwitch)

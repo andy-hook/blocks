@@ -9,7 +9,7 @@ interface Props {
   blockData?: Web3BlockData[] | null
 }
 
-const MenuBlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
+const MenuBlockList: React.FunctionComponent<Props> = ({ blockData }) => {
   function renderItems() {
     if (blockData) {
       return blockData.map((block, index) => {
@@ -25,10 +25,10 @@ const MenuBlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
   }
 
   return <>{renderItems()}</>
-})
+}
 
 export const Item = styled.div`
   color: ${themeText(100)};
 `
 
-export default MenuBlockList
+export default memo(MenuBlockList)
