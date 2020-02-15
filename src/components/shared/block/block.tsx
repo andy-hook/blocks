@@ -28,10 +28,11 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
           transactionCount={toString(blockData.transactionCount)}
           handleDetailsClick={handleDetailsClick}
           handleTransactionsClick={handleTransactionsClick}
+          trxVisible={trxVisible}
         />
       )
     } else {
-      return <BlockHeader loading={true} />
+      return <BlockHeader trxVisible={trxVisible} loading={true} />
     }
   }
 

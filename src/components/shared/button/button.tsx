@@ -50,17 +50,14 @@ const StyledButton = styled(Link)<{ type: ButtonType }>`
   justify-content: center;
   align-items: center;
 
-  padding: ${layout.scale[4]} ${layout.scale[6]};
-
   color: ${themeText(100)};
-
-  ${mq.greaterThan("topWide")`
-    font-size: ${type.scale[3]};
-    padding: ${layout.scale[5]} ${layout.scale[7]};
-  `}
 
   overflow: hidden;
   font-size: ${type.scale[2]};
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[3]};
+  `}
 
   text-decoration: none;
 
@@ -104,6 +101,12 @@ const primaryStyles = css`
   background: linear-gradient(160deg, #c700b1 0%, #6609e1 100%);
   border-radius: ${appearance.radius.pill};
 
+  padding: ${layout.scale[4]} ${layout.scale[6]};
+
+  ${mq.greaterThan("topWide")`
+    padding: ${layout.scale[5]} ${layout.scale[7]};
+  `}
+
   &::before,
   &::after {
     transition: opacity ${animation.duration.fast} linear;
@@ -145,6 +148,13 @@ const primaryStyles = css`
 `
 
 const secondaryStyles = css`
+  padding: ${layout.scale[4]} ${layout.scale[6]};
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[3]};
+    padding: ${layout.scale[5]} ${layout.scale[7]};
+  `}
+
   border-radius: ${appearance.radius.pill};
   border: ${appearance.borderThickness.regular} solid ${themeText(800)};
 `

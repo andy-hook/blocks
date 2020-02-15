@@ -8,7 +8,7 @@ exports[`<Block /> renders correctly 1`] = `
     className="sc-gzVnrw eNMNUi sc-jTzLTM cTcVyo"
   >
     <a
-      className="sc-iwsKbI klTUTv"
+      className="sc-iwsKbI dlHWTk"
       href="/"
       type="tertiary"
     >
@@ -34,56 +34,60 @@ exports[`<Block /> renders correctly 1`] = `
       </div>
     </a>
     <header
-      className="sc-fjdhpX jGjyzw"
+      className="sc-fjdhpX jMkWoO"
     >
       <div
-        className="sc-cSHVUG wEsLH"
+        className="sc-jzJRlG ePnpgy"
       >
         <div
-          className="sc-htpNat brNyGz sc-jzJRlG kpJqLT"
-          size="lg"
+          className="sc-kAzzGY kqTKCJ"
         >
           <div
-            className="sc-bxivhb kzfWct"
+            className="sc-htpNat brNyGz sc-cSHVUG edwNlB"
+            size="lg"
           >
-             
+            <div
+              className="sc-bxivhb kzfWct"
+            >
+               
+            </div>
           </div>
-        </div>
-        <div
-          className="sc-bdVaJa hOjnFL"
-          size="lg"
-        >
           <div
-            className="sc-bwzfXH csGlom"
+            className="sc-bdVaJa hOjnFL"
+            size="lg"
           >
-             
+            <div
+              className="sc-bwzfXH csGlom"
+            >
+               
+            </div>
           </div>
         </div>
+        <section
+          className="sc-ifAKCX kWjkTO"
+        >
+          <button
+            className="sc-EHOje jvzENE"
+          >
+            Details
+          </button>
+          <button
+            className="sc-bZQynM bOrPFB"
+          >
+            Transactions
+          </button>
+        </section>
       </div>
-      <section
-        className="sc-ifAKCX kWjkTO"
-      >
-        <button
-          className="sc-EHOje jvzENE"
-        >
-          Details
-        </button>
-        <button
-          className="sc-bZQynM bOrPFB"
-        >
-          Transactions
-        </button>
-      </section>
     </header>
   </div>
-  <section
-    className="sc-kgoBCf eAbLPJ"
+  <div
+    className="sc-gzVnrw eNMNUi"
   >
     <ul
       className="sc-kGXeez cJVxQo"
     >
       <div
-        className="sc-kAzzGY iekkB sc-kpOJdX gpJrWj"
+        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
       >
         <div
           className="sc-bdVaJa hxlARP"
@@ -92,7 +96,7 @@ exports[`<Block /> renders correctly 1`] = `
           Size
         </div>
         <div
-          className="sc-chPdSV gzSvEs"
+          className="sc-kgoBCf donpaw"
         >
           <div
             className="sc-htpNat fzsdpf"
@@ -107,7 +111,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-kAzzGY iekkB sc-kpOJdX gpJrWj"
+        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
       >
         <div
           className="sc-bdVaJa hxlARP"
@@ -116,7 +120,7 @@ exports[`<Block /> renders correctly 1`] = `
           Difficulty
         </div>
         <div
-          className="sc-chPdSV gzSvEs"
+          className="sc-kgoBCf donpaw"
         >
           <div
             className="sc-htpNat fzsdpf"
@@ -131,7 +135,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-kAzzGY iekkB sc-kpOJdX gpJrWj"
+        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
       >
         <div
           className="sc-bdVaJa hxlARP"
@@ -140,7 +144,7 @@ exports[`<Block /> renders correctly 1`] = `
           Total Difficulty
         </div>
         <div
-          className="sc-chPdSV gzSvEs"
+          className="sc-kgoBCf donpaw"
         >
           <div
             className="sc-htpNat fzsdpf"
@@ -155,7 +159,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-kAzzGY iekkB sc-kpOJdX gpJrWj"
+        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
       >
         <div
           className="sc-bdVaJa hxlARP"
@@ -164,7 +168,7 @@ exports[`<Block /> renders correctly 1`] = `
           Gas Used
         </div>
         <div
-          className="sc-chPdSV gzSvEs"
+          className="sc-kgoBCf donpaw"
         >
           <div
             className="sc-htpNat fzsdpf"
@@ -179,7 +183,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-kAzzGY iekkB sc-kpOJdX gpJrWj"
+        className="sc-chPdSV cNnBEd sc-kpOJdX gpJrWj"
       >
         <div
           className="sc-bdVaJa hxlARP"
@@ -188,7 +192,7 @@ exports[`<Block /> renders correctly 1`] = `
           Gas Limit
         </div>
         <div
-          className="sc-chPdSV gzSvEs"
+          className="sc-kgoBCf donpaw"
         >
           <div
             className="sc-htpNat fzsdpf"
@@ -203,6 +207,6 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
     </ul>
-  </section>
+  </div>
 </article>
 `;
