@@ -19,7 +19,6 @@ const BlockBody: React.FunctionComponent<Props> = ({
         <TransactionTable transactions={blockData.transactionsData} />
       ) : (
         <>
-          <TransactionTable transactions={blockData.transactionsData} />
           <BlockInfo
             size={toString(blockData.size + "B")}
             difficulty={blockData.difficulty}
