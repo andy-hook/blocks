@@ -29,6 +29,7 @@
     "gatsby-transformer-sharp": "^2.1.17",
     "gsap": "^3.0.1",
     "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "polished": "^3.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

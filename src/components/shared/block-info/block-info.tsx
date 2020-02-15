@@ -1,7 +1,7 @@
 import React, { memo } from "react"
 import styled from "styled-components"
 import BlockInfoRow from "./block-info-row/block-info-row"
-import { layout, appearance } from "@style/design-tokens"
+import { appearance } from "@style/design-tokens"
 import { themeText } from "@style/theme"
 import Panel from "@components/shared/panel/panel"
 
@@ -14,14 +14,37 @@ interface Props {
   gasLimit?: string
   gasUsed?: string
   loading?: boolean
+  timestamp?: string
+  miner?: string
 }
 
 const BlockInfo: React.FunctionComponent<Props> = memo(
-  ({ size, difficulty, totalDifficulty, gasUsed, gasLimit, loading }) => {
+  ({
+    size,
+    difficulty,
+    totalDifficulty,
+    gasUsed,
+    gasLimit,
+    loading,
+    timestamp,
+    miner,
+  }) => {
     return (
       <Panel yPadding="lg" xPadding="lg">
         <InfoList>
           <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
+          <Row
+            name="Timestamp"
+            value={timestamp}
+            loading={loading}
+            skeletonWidth="md"
+          />
+          <Row
+            name="Miner"
+            value={miner}
+            loading={loading}
+            skeletonWidth="md"
+          />
           <Row
             name="Difficulty"
             value={difficulty}
@@ -52,13 +75,17 @@ const BlockInfo: React.FunctionComponent<Props> = memo(
   }
 )
 
-const InfoList = styled.ul`
-  /* Sit optically flush against container */
-  margin-top: -${layout.scale[8]};
-  margin-bottom: -${layout.scale[8]};
-`
+const InfoList = styled.ul``
 
 const Row = styled(BlockInfoRow)`
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
   &:not(:first-child) {
     border-top: ${appearance.borderThickness.regular} solid ${themeText(1000)};
   }

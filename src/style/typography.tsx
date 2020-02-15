@@ -112,7 +112,7 @@ export const typeSizeDisplayXs = css`
 `
 
 export const typeSizeDisplaySm = css`
-  font-size: ${type.scale[6]};
+  font-size: ${type.scale[5]};
 
   ${mq.greaterThan("topLap")`
     font-size: ${type.scale[7]};
