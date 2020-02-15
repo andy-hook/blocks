@@ -12,7 +12,7 @@ import { ThemeProvider } from "styled-components"
 import { connect } from "react-redux"
 import Web3Provider from "@web3/web3-provider"
 import Web3BlocksDataProvider from "@web3/web3-blocks-data-provider"
-import { BLOCK_COUNT } from "@utils"
+import { BLOCK_COUNT, USE_MAINNET } from "@utils"
 import LoadingStatusProvider from "@providers/loading-status-provider/loading-status-provider"
 
 interface DispatchProps {
@@ -31,7 +31,7 @@ const Layout: React.FunctionComponent<ContainerProps> = memo(
     return (
       <MediaQueryProvider>
         <ThemeProvider theme={lightThemeEnabled ? themes.light : themes.dark}>
-          <Web3Provider>
+          <Web3Provider useMainnet={USE_MAINNET}>
             <Web3BlocksDataProvider maxBlocks={BLOCK_COUNT}>
               <LoadingStatusProvider>
                 <>

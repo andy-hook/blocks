@@ -7,6 +7,10 @@ import React, { createContext, useState, useEffect, useContext } from "react"
 // Ignore your linter, this should stay a require
 const Web3Require = require("web3")
 
+interface ProviderProps {
+  useMainnet: boolean
+}
+
 interface StateProps {
   web3: any // Package types are broken :'(
   error?: "DENIED" | "FORBIDDEN"
@@ -14,7 +18,10 @@ interface StateProps {
 
 export const Web3Context = createContext<Partial<StateProps>>({})
 
-export const Web3Provider: React.FunctionComponent = ({ children }) => {
+export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
+  children,
+  useMainnet = false,
+}) => {
   const [web3State, setWeb3State] = useState<StateProps>({
     web3: null,
   })
@@ -22,7 +29,9 @@ export const Web3Provider: React.FunctionComponent = ({ children }) => {
   useEffect(() => {
     const configureProvider = () => {
       const provider = new Web3Require.providers.HttpProvider(
-        "https://mainnet.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0"
+        `https://${
+          useMainnet ? "mainnet" : "ropsten"
+        }.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0`
       )
 
       setWeb3State({ web3: new Web3Require(provider) })
