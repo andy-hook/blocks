@@ -7,3 +7,4 @@ export type Icons =
   | "mail"
   | "arrow-right"
   | "arrow-left"
+  | "shuffle"
