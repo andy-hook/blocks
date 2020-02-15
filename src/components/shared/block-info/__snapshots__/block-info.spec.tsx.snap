@@ -8,7 +8,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
     className="sc-gzVnrw ibZhkv"
   >
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"
@@ -26,7 +26,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"
@@ -44,7 +44,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"
@@ -62,7 +62,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"
@@ -80,7 +80,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"
@@ -98,7 +98,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"
@@ -116,7 +116,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fGFUlD sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
         className="sc-htpNat eNMfOi"

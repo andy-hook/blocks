@@ -5,7 +5,7 @@ exports[`<Block /> renders correctly 1`] = `
   className="sc-gPEVay eQYmiW"
 >
   <div
-    className="sc-gzVnrw kGXvWh sc-jTzLTM ibgpdw"
+    className="sc-gzVnrw kGXvWh sc-jTzLTM iziihJ"
   >
     <a
       className="sc-iwsKbI dlHWTk"
@@ -37,10 +37,10 @@ exports[`<Block /> renders correctly 1`] = `
       className="sc-fjdhpX jMkWoO"
     >
       <div
-        className="sc-jzJRlG ePnpgy"
+        className="sc-jzJRlG bkHJTN"
       >
         <div
-          className="sc-kAzzGY dPENuM"
+          className="sc-kAzzGY eqWyFP"
         >
           <div
             className="sc-htpNat jhWtKn sc-cSHVUG edwNlB"
@@ -87,7 +87,7 @@ exports[`<Block /> renders correctly 1`] = `
       className="sc-kGXeez eIIwaK"
     >
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
@@ -111,7 +111,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
@@ -135,7 +135,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
@@ -159,7 +159,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
@@ -183,7 +183,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
@@ -207,7 +207,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
@@ -231,7 +231,7 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-chPdSV jYvbxD sc-kpOJdX cICyLI"
+        className="sc-chPdSV gfSCZK sc-kpOJdX cICyLI"
       >
         <div
           className="sc-bdVaJa tITjZ"
