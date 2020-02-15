@@ -22,26 +22,22 @@ interface Props {
   icon?: Icons
 }
 
-const Button: React.FunctionComponent<Props> = ({
-  to,
-  children,
-  className,
-  buttonType = "primary",
-  icon,
-}) => {
-  return (
-    <StyledButton
-      to={to}
-      type={buttonType}
-      className={classNames("", className)}
-    >
-      <Inner>
-        {icon && <ButtonIcon name={icon} />}
-        <Text hasIcon={icon && true}>{children}</Text>
-      </Inner>
-    </StyledButton>
-  )
-}
+const Button: React.FunctionComponent<Props> = memo(
+  ({ to, children, className, buttonType = "primary" as ButtonType, icon }) => {
+    return (
+      <StyledButton
+        to={to}
+        type={buttonType}
+        className={classNames("", className)}
+      >
+        <Inner>
+          {icon && <ButtonIcon name={icon} />}
+          <Text hasIcon={icon && true}>{children}</Text>
+        </Inner>
+      </StyledButton>
+    )
+  }
+)
 
 const StyledButton = styled(Link)<{ type: ButtonType }>`
   position: relative;
@@ -163,4 +159,4 @@ const tertiaryStyles = css`
   color: ${themeText(800)};
 `
 
-export default memo(Button)
+export default Button

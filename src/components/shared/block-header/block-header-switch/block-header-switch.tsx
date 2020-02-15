@@ -6,19 +6,18 @@ interface Props {
   onTransactionsClick?: () => void
 }
 
-const BlockHeaderSwitch: React.FunctionComponent<Props> = ({
-  onDetailsClock,
-  onTransactionsClick,
-}) => {
-  return (
-    <Container>
-      <DetailsButton onClick={onDetailsClock}>Details</DetailsButton>
-      <TransactionsButton onClick={onTransactionsClick}>
-        Transactions
-      </TransactionsButton>
-    </Container>
-  )
-}
+const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
+  ({ onDetailsClock, onTransactionsClick }) => {
+    return (
+      <Container>
+        <DetailsButton onClick={onDetailsClock}>Details</DetailsButton>
+        <TransactionsButton onClick={onTransactionsClick}>
+          Transactions
+        </TransactionsButton>
+      </Container>
+    )
+  }
+)
 
 const Container = styled.section`
   background-color: blue;
@@ -28,4 +27,4 @@ const DetailsButton = styled.button``
 
 const TransactionsButton = styled.button``
 
-export default memo(BlockHeaderSwitch)
+export default BlockHeaderSwitch

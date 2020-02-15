@@ -7,23 +7,24 @@ interface Props {
   children?: ReactNode
 }
 
-const Limiter: React.FunctionComponent<Props> = React.forwardRef<
-  HTMLDivElement,
-  PropsWithChildren<Props>
->(({ size = "medium", children }, ref) => {
-  function renderLimiter() {
-    switch (size) {
-      case "small":
-        return <SmallLimiter ref={ref}>{children}</SmallLimiter>
-      case "medium":
-        return <MediumLimiter ref={ref}>{children}</MediumLimiter>
-      case "large":
-        return <LargeLimiter ref={ref}>{children}</LargeLimiter>
-    }
-  }
+const Limiter: React.FunctionComponent<Props> = memo(
+  React.forwardRef<HTMLDivElement, PropsWithChildren<Props>>(
+    ({ size = "medium", children }, ref) => {
+      function renderLimiter() {
+        switch (size) {
+          case "small":
+            return <SmallLimiter ref={ref}>{children}</SmallLimiter>
+          case "medium":
+            return <MediumLimiter ref={ref}>{children}</MediumLimiter>
+          case "large":
+            return <LargeLimiter ref={ref}>{children}</LargeLimiter>
+        }
+      }
 
-  return <>{renderLimiter()}</>
-})
+      return <>{renderLimiter()}</>
+    }
+  )
+)
 
 const smallSize = rem("900px")
 const mediumSize = rem("1200px")
@@ -51,4 +52,4 @@ const LargeLimiter = styled.div`
   max-width: ${largeSize};
 `
 
-export default memo(Limiter)
+export default Limiter

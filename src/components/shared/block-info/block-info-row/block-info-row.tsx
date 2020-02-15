@@ -14,30 +14,26 @@ interface Props {
   skeletonWidth?: SkeletonWidth
 }
 
-const BlockInfoRow: React.FunctionComponent<Props> = ({
-  name,
-  value,
-  loading,
-  className,
-  skeletonWidth,
-}) => {
-  return (
-    <Row className={classNames("", className)}>
-      <Title size="sm">{name}</Title>
+const BlockInfoRow: React.FunctionComponent<Props> = memo(
+  ({ name, value, loading, className, skeletonWidth }) => {
+    return (
+      <Row className={classNames("", className)}>
+        <Title size="sm">{name}</Title>
 
-      <ValueLabel>
-        <Label
-          loading={loading}
-          skeletonWidth={skeletonWidth}
-          intensity="medium"
-          size="lg"
-        >
-          <TruncateString text={value} truncateAt={40} />
-        </Label>
-      </ValueLabel>
-    </Row>
-  )
-}
+        <ValueLabel>
+          <Label
+            loading={loading}
+            skeletonWidth={skeletonWidth}
+            intensity="medium"
+            size="lg"
+          >
+            <TruncateString text={value} truncateAt={40} />
+          </Label>
+        </ValueLabel>
+      </Row>
+    )
+  }
+)
 
 const Row = styled.div`
   display: flex;
@@ -54,4 +50,4 @@ const ValueLabel = styled.div`
   width: 50%;
 `
 
-export default memo(BlockInfoRow)
+export default BlockInfoRow

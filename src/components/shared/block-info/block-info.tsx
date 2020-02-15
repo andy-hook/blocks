@@ -16,46 +16,41 @@ interface Props {
   loading?: boolean
 }
 
-const BlockInfo: React.FunctionComponent<Props> = ({
-  size,
-  difficulty,
-  totalDifficulty,
-  gasUsed,
-  gasLimit,
-  loading,
-}) => {
-  return (
-    <Panel>
-      <InfoList>
-        <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
-        <Row
-          name="Difficulty"
-          value={difficulty}
-          loading={loading}
-          skeletonWidth="md"
-        />
-        <Row
-          name="Total Difficulty"
-          value={totalDifficulty}
-          loading={loading}
-          skeletonWidth="lg"
-        />
-        <Row
-          name="Gas Used"
-          value={gasUsed}
-          loading={loading}
-          skeletonWidth="md"
-        />
-        <Row
-          name="Gas Limit"
-          value={gasLimit}
-          loading={loading}
-          skeletonWidth="sm"
-        />
-      </InfoList>
-    </Panel>
-  )
-}
+const BlockInfo: React.FunctionComponent<Props> = memo(
+  ({ size, difficulty, totalDifficulty, gasUsed, gasLimit, loading }) => {
+    return (
+      <Panel>
+        <InfoList>
+          <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
+          <Row
+            name="Difficulty"
+            value={difficulty}
+            loading={loading}
+            skeletonWidth="md"
+          />
+          <Row
+            name="Total Difficulty"
+            value={totalDifficulty}
+            loading={loading}
+            skeletonWidth="lg"
+          />
+          <Row
+            name="Gas Used"
+            value={gasUsed}
+            loading={loading}
+            skeletonWidth="md"
+          />
+          <Row
+            name="Gas Limit"
+            value={gasLimit}
+            loading={loading}
+            skeletonWidth="sm"
+          />
+        </InfoList>
+      </Panel>
+    )
+  }
+)
 
 const InfoList = styled.ul`
   /* Sit optically flush against container */
@@ -69,4 +64,4 @@ const Row = styled(BlockInfoRow)`
   }
 `
 
-export default memo(BlockInfo)
+export default BlockInfo

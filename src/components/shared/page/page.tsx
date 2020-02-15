@@ -22,4 +22,4 @@ export const Container = styled.div`
   ${scaleGreaterThan("padding-top", "15rem", "topUltra")}
 `
 
-export default memo(Page)
+export default Page

@@ -19,38 +19,34 @@ interface Props {
   toggleTheme: () => void
 }
 
-const Topbar: React.FunctionComponent<Props> = ({
-  open,
-  openMenu,
-  closeMenu,
-  visible,
-  toggleTheme,
-}) => {
-  const toggleMenu = () => {
-    if (menuIsAnimating) {
-      return
+const Topbar: React.FunctionComponent<Props> = memo(
+  ({ open, openMenu, closeMenu, visible, toggleTheme }) => {
+    const toggleMenu = () => {
+      if (menuIsAnimating) {
+        return
+      }
+
+      open ? closeMenu() : openMenu()
     }
 
-    open ? closeMenu() : openMenu()
+    return (
+      <>
+        <TopbarOver visible={visible}>
+          <TopbarNavicon>
+            <Navicon open={open} onClick={toggleTheme} />
+            <Navicon open={open} onClick={toggleMenu} />
+          </TopbarNavicon>
+        </TopbarOver>
+
+        <TopbarUnder visible={visible}>
+          <TopbarNavContainer>
+            <StyledNavList />
+          </TopbarNavContainer>
+        </TopbarUnder>
+      </>
+    )
   }
-
-  return (
-    <>
-      <TopbarOver visible={visible}>
-        <TopbarNavicon>
-          <Navicon open={open} onClick={toggleTheme} />
-          <Navicon open={open} onClick={toggleMenu} />
-        </TopbarNavicon>
-      </TopbarOver>
-
-      <TopbarUnder visible={visible}>
-        <TopbarNavContainer>
-          <StyledNavList />
-        </TopbarNavContainer>
-      </TopbarUnder>
-    </>
-  )
-}
+)
 
 const spacingXSmall = smallScreenGutter
 const spacingXBig = rem("35px")
@@ -184,4 +180,4 @@ export const TopbarNavicon = styled.div`
   `}
 `
 
-export default memo(Topbar)
+export default Topbar

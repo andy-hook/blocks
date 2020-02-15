@@ -10,7 +10,7 @@ interface Props {
   to?: string
 }
 
-const Transfer: React.FunctionComponent<Props> = ({ from, to }) => {
+const Transfer: React.FunctionComponent<Props> = memo(({ from, to }) => {
   return (
     <TransferContainer>
       <TransferValue>{from}</TransferValue>
@@ -20,7 +20,7 @@ const Transfer: React.FunctionComponent<Props> = ({ from, to }) => {
       <TransferValue>{to}</TransferValue>
     </TransferContainer>
   )
-}
+})
 
 const TransferContainer = styled.div`
   width: 100%;
@@ -42,4 +42,4 @@ const TransferIcon = styled.div`
   padding-right: ${layout.scale[2]};
 `
 
-export default memo(Transfer)
+export default Transfer

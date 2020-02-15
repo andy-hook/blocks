@@ -15,38 +15,41 @@ import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
 type Size = "xs" | "sm" | "md" | "lg"
+type SkeletonWidth = "sm" | "md" | "lg"
 
 interface Props {
   loading?: boolean
-  skeletonWidth?: "sm" | "md" | "lg"
+  skeletonWidth?: SkeletonWidth
   size?: Size
   intensity?: Intensity
   className?: string
   children?: ReactNode
 }
 
-const Title: React.FunctionComponent<Props> = ({
-  children,
-  className,
-  loading,
-  skeletonWidth = "md",
-  intensity = "medium",
-  size = "md",
-}) => {
-  return (
-    <Text
-      intensity={intensity}
-      size={size}
-      className={classNames("", className)}
-    >
-      {loading ? (
-        <Skeleton skeletonWidth={skeletonWidth}>&nbsp;</Skeleton>
-      ) : (
-        children
-      )}
-    </Text>
-  )
-}
+const Title: React.FunctionComponent<Props> = memo(
+  ({
+    children,
+    className,
+    loading,
+    skeletonWidth = "md" as SkeletonWidth,
+    intensity = "medium" as Intensity,
+    size = "md" as Size,
+  }) => {
+    return (
+      <Text
+        intensity={intensity}
+        size={size}
+        className={classNames("", className)}
+      >
+        {loading ? (
+          <Skeleton skeletonWidth={skeletonWidth}>&nbsp;</Skeleton>
+        ) : (
+          children
+        )}
+      </Text>
+    )
+  }
+)
 
 const skeletonWidths = {
   sm: "3em",
@@ -108,4 +111,4 @@ const Skeleton = styled.div<Props>`
   }
 `
 
-export default memo(Title)
+export default Title
