@@ -67,7 +67,7 @@ exports[`<Menu /> renders correctly 1`] = `
                   className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-htpNat jBmPeL icon"
+                    className="sc-htpNat jBmPeL"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#mail"
@@ -94,7 +94,7 @@ exports[`<Menu /> renders correctly 1`] = `
                   className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-htpNat jBmPeL icon"
+                    className="sc-htpNat jBmPeL"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#twitter"
@@ -121,7 +121,7 @@ exports[`<Menu /> renders correctly 1`] = `
                   className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-htpNat jBmPeL icon"
+                    className="sc-htpNat jBmPeL"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#instagram"
@@ -148,7 +148,7 @@ exports[`<Menu /> renders correctly 1`] = `
                   className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-htpNat jBmPeL icon"
+                    className="sc-htpNat jBmPeL"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#linkedin"
@@ -175,7 +175,7 @@ exports[`<Menu /> renders correctly 1`] = `
                   className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-htpNat jBmPeL icon"
+                    className="sc-htpNat jBmPeL"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#dribbble"
@@ -202,7 +202,7 @@ exports[`<Menu /> renders correctly 1`] = `
                   className="sc-bwzfXH gUlMwG"
                 >
                   <svg
-                    className="sc-htpNat jBmPeL icon"
+                    className="sc-htpNat jBmPeL"
                   >
                     <use
                       xlinkHref="/icon-sprite.svg#github"

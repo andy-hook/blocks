@@ -2,14 +2,18 @@
 
 exports[`<Button /> renders correctly 1`] = `
 <a
-  className="sc-bdVaJa gkCdZm"
+  className="sc-htpNat edAHyi"
   href="https://www.google.com"
   type="primary"
 >
-  <span
-    className="sc-bwzfXH egjIfW"
+  <div
+    className="sc-bxivhb cdiCYE"
   >
-    This is a button
-  </span>
+    <span
+      className="sc-ifAKCX kPJRmG"
+    >
+      This is a button
+    </span>
+  </div>
 </a>
 `;

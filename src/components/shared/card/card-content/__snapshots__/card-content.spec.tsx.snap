@@ -2,10 +2,10 @@
 
 exports[`<CardContent /> renders correctly 1`] = `
 <div
-  className="sc-cSHVUG eVIRuU"
+  className="sc-kGXeez cVBluA"
 >
   <div
-    className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+    className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
     size="md"
   >
      Transactions
@@ -732,18 +732,22 @@ exports[`<CardContent /> renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-chPdSV bpNxBw"
+    className="sc-dxgOiQ iKOXYn"
   >
     <a
-      className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+      className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
       href="/block/100"
       type="secondary"
     >
-      <span
-        className="sc-jzJRlG lkILP"
+      <div
+        className="sc-kAzzGY ebaOMy"
       >
-        More Details
-      </span>
+        <span
+          className="sc-chPdSV eHFiPO"
+        >
+          More Details
+        </span>
+      </div>
     </a>
   </div>
 </div>

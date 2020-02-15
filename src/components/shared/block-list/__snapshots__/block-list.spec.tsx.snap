@@ -2,22 +2,22 @@
 
 exports[`<BlockList /> renders correctly 1`] = `
 <ul
-  className="sc-kpOJdX gaKgJw"
+  className="sc-eNQAEJ ebZswk"
 >
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ hVGZyy"
+      className="sc-kEYyzF jAdoft"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             34
@@ -745,18 +745,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/7250672"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -764,19 +768,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ rgExP"
+      className="sc-kEYyzF insuBq"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             34
@@ -1504,18 +1508,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/7250672"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -1523,19 +1531,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ hVGZyy"
+      className="sc-kEYyzF jAdoft"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -2287,18 +2295,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -2306,19 +2318,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ rgExP"
+      className="sc-kEYyzF insuBq"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -3070,18 +3082,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -3089,19 +3105,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ hVGZyy"
+      className="sc-kEYyzF jAdoft"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -3853,18 +3869,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -3872,19 +3892,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ rgExP"
+      className="sc-kEYyzF insuBq"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -4636,18 +4656,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -4655,19 +4679,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ hVGZyy"
+      className="sc-kEYyzF jAdoft"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -5419,18 +5443,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -5438,19 +5466,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ rgExP"
+      className="sc-kEYyzF insuBq"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -6202,18 +6230,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -6221,19 +6253,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ hVGZyy"
+      className="sc-kEYyzF jAdoft"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -6985,18 +7017,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
@@ -7004,19 +7040,19 @@ exports[`<BlockList /> renders correctly 1`] = `
     </div>
   </li>
   <li
-    className="sc-dxgOiQ hTjMfW"
+    className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-ckVGcZ rgExP"
+      className="sc-kEYyzF insuBq"
     >
       <div
-        className="sc-kGXeez eIIwaK"
+        className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-cSHVUG eVIRuU"
+          className="sc-kGXeez cVBluA"
         >
           <div
-            className="sc-EHOje jUPklj sc-kAzzGY bttNCU"
+            className="sc-EHOje jUPklj sc-kpOJdX jbuTzW"
             size="md"
           >
             <div
@@ -7768,18 +7804,22 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV bpNxBw"
+            className="sc-dxgOiQ iKOXYn"
           >
             <a
-              className="sc-fjdhpX jmUMrU sc-kgoBCf dimznU"
+              className="sc-cSHVUG fmoeGV sc-ckVGcZ bBUPhT"
               href="/block/undefined"
               type="secondary"
             >
-              <span
-                className="sc-jzJRlG lkILP"
+              <div
+                className="sc-kAzzGY ebaOMy"
               >
-                More Details
-              </span>
+                <span
+                  className="sc-chPdSV eHFiPO"
+                >
+                  More Details
+                </span>
+              </div>
             </a>
           </div>
         </div>
