@@ -5,3 +5,4 @@ export type Icons =
   | "twitter"
   | "github"
   | "mail"
+  | "arrow-right"
