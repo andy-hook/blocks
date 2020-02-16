@@ -11,7 +11,7 @@ exports[`<Navigation /> renders correctly 1`] = `
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb dMbktt"
+        className="sc-bxivhb gUjObH"
         href="/"
       >
         Latest Blocks
@@ -21,7 +21,7 @@ exports[`<Navigation /> renders correctly 1`] = `
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-ifAKCX jkMENd"
+        className="sc-ifAKCX ccGYEy"
         href="https://github.com/andy-hook/ten-blocks"
         onClick={[Function]}
         target="_blank"

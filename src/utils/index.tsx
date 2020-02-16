@@ -5,6 +5,8 @@
 export const BLOCK_COUNT = 10
 export const USE_MAINNET = true
 export const SUMMARY_MAX_TRANSACTIONS = 60
+export const SHUFFLE_MIN_RANGE = 100
+export const SHUFFLE_MAX_RANGE = 7000000
 
 /**
  * Returns a string with which the last two words are joined via unicode non-breaking space

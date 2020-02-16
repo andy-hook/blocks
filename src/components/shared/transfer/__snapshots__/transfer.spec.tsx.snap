@@ -5,15 +5,15 @@ exports[`<Transfer /> renders correctly 1`] = `
   className="sc-EHOje jHJqNe"
 >
   <div
-    className="sc-htpNat dYrkBq sc-bZQynM cnpumk"
+    className="sc-htpNat frRoNZ sc-bZQynM cnpumk"
   >
     <div
-      className="sc-bdVaJa kwWHFO"
+      className="sc-bdVaJa caHkzD"
       size="sm"
     />
   </div>
   <div
-    className="sc-gzVnrw cNySxs"
+    className="sc-gzVnrw jzjNUy"
   >
     <div
       className="sc-bxivhb cBsPOV"
@@ -28,10 +28,10 @@ exports[`<Transfer /> renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-htpNat dYrkBq sc-bZQynM cnpumk"
+    className="sc-htpNat frRoNZ sc-bZQynM cnpumk"
   >
     <div
-      className="sc-bdVaJa kwWHFO"
+      className="sc-bdVaJa caHkzD"
       size="sm"
     />
   </div>

@@ -2,7 +2,7 @@ import React, { memo } from "react"
 import styled from "styled-components"
 import BlockInfoRow from "./block-info-row/block-info-row"
 import { appearance } from "@style/design-tokens"
-import { themeText } from "@style/theme"
+import { themeForeground } from "@style/theme"
 import Panel from "@components/shared/panel/panel"
 
 interface Props {
@@ -87,7 +87,8 @@ const Row = styled(BlockInfoRow)`
   }
 
   &:not(:first-child) {
-    border-top: ${appearance.borderThickness.regular} solid ${themeText(1000)};
+    border-top: ${appearance.borderThickness.regular} solid
+      ${themeForeground("extraLow")};
   }
 `
 

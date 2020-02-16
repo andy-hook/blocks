@@ -5,7 +5,7 @@ exports[`<BlockInfoRow /> renders correctly 1`] = `
   className="sc-ifAKCX fnBNId"
 >
   <div
-    className="sc-htpNat egChak"
+    className="sc-htpNat jEtwwK"
     size="sm"
   >
     string
@@ -14,7 +14,7 @@ exports[`<BlockInfoRow /> renders correctly 1`] = `
     className="sc-EHOje foZbCf"
   >
     <div
-      className="sc-bdVaJa ikMsdC"
+      className="sc-bdVaJa hxipTb"
       size="lg"
     />
   </div>

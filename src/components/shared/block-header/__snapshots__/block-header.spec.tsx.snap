@@ -5,7 +5,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
   className="sc-gzVnrw fwSaaD sc-jTzLTM iziihJ"
 >
   <a
-    className="sc-iwsKbI dlHWTk"
+    className="sc-iwsKbI ePgOzf"
     href="/"
     type="tertiary"
   >
@@ -40,13 +40,13 @@ exports[`<BlockHeader /> renders correctly 1`] = `
         className="sc-kAzzGY eqWyFP"
       >
         <div
-          className="sc-htpNat eluBxQ sc-cSHVUG edwNlB"
+          className="sc-htpNat nFlw sc-cSHVUG edwNlB"
           size="lg"
         >
            Transactions
         </div>
         <div
-          className="sc-bdVaJa kGWxIO"
+          className="sc-bdVaJa heQHLE"
           size="lg"
         >
           # 

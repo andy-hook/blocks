@@ -4,7 +4,7 @@ import classNames from "classnames"
 import styled, { css } from "styled-components"
 import { typeDisplayBold, setDisplayCropAndLineHeight } from "@style/typography"
 import { Link } from "gatsby"
-import { themeText } from "@style/theme"
+import { themeForeground } from "@style/theme"
 import { type, layout } from "@style/design-tokens"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { mq } from "@style/media-queries"
@@ -62,7 +62,7 @@ const ListLinkStyle = css`
   ${setDisplayCropAndLineHeight(type.lineHeight.display.regular)}
 
   display: block;
-  color: ${themeText(800)};
+  color: ${themeForeground("medium")};
 
   padding: ${layout.scale[2]};
 
@@ -71,7 +71,7 @@ const ListLinkStyle = css`
   `}
 
   &.active {
-    color: ${themeText(400)};
+    color: ${themeForeground("extraHigh")};
   }
 `
 

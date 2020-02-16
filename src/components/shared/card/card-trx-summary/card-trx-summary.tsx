@@ -3,7 +3,7 @@ import { Web3TransactionData } from "model"
 import CardTrxPip from "@components/shared/card/card-trx-pip/card-trx-pip"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
-import { themeText } from "@style/theme"
+import { themeForeground } from "@style/theme"
 import { mq } from "@style/media-queries"
 import { SUMMARY_MAX_TRANSACTIONS } from "@utils"
 
@@ -56,7 +56,8 @@ const GridContainer = styled.div`
   padding-bottom: ${layout.scale[7]};
   margin-bottom: ${layout.scale[7]};
 
-  border-bottom: ${appearance.borderThickness.regular} solid ${themeText(1000)};
+  border-bottom: ${appearance.borderThickness.regular} solid
+    ${themeForeground("extraLow")};
 `
 
 const Grid = styled.ul`

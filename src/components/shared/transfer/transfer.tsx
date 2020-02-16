@@ -3,7 +3,7 @@ import styled from "styled-components"
 import TransferPip from "./transfer-pip/transfer-pip"
 import { layout, type } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
-import { themeText } from "@style/theme"
+import { themeForeground } from "@style/theme"
 
 interface Props {
   from?: string
@@ -36,7 +36,7 @@ const TransferValue = styled(TransferPip)`
 const TransferIcon = styled.div`
   /* font-size is used to scale icons for responsive flexibility */
   font-size: ${type.scale[5]};
-  color: ${themeText(900)};
+  color: ${themeForeground("extraLow")};
 
   padding-left: ${layout.scale[2]};
   padding-right: ${layout.scale[2]};

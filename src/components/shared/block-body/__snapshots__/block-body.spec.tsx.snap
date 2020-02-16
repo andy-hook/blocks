@@ -8,10 +8,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
     className="sc-gzVnrw ibZhkv"
   >
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Size
@@ -20,7 +20,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
@@ -32,10 +32,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Timestamp
@@ -44,7 +44,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
@@ -56,10 +56,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Miner
@@ -68,7 +68,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
@@ -80,10 +80,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Difficulty
@@ -92,7 +92,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
@@ -104,10 +104,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Total Difficulty
@@ -116,7 +116,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
@@ -128,10 +128,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Gas Used
@@ -140,7 +140,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
@@ -152,10 +152,10 @@ exports[`<BlockBody /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Gas Limit
@@ -164,7 +164,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         >
           <div
