@@ -2,13 +2,13 @@
 
 exports[`<Transaction /> renders correctly 1`] = `
 <tr
-  className="sc-cSHVUG dRwgtR"
+  className="sc-cSHVUG gwFqCt"
 >
   <td
     className="sc-bdVaJa sc-bwzfXH dfeDEW"
   >
     <div
-      className="sc-EHOje bmwzpV"
+      className="sc-EHOje kbgGtU"
       size="xs"
     />
   </td>
