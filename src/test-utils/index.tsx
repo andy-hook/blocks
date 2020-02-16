@@ -1,8 +1,7 @@
 import React, { ReactNode } from "react"
 import { ThemeProvider } from "styled-components"
 import { shallow, mount } from "enzyme"
-import { themes } from "@style/theme"
-import { ThemeName } from "@custom-types/theme"
+import { themes, ThemeName } from "@style/theme"
 import renderer from "react-test-renderer"
 
 export const mountWithTheme = (theme: ThemeName, children: ReactNode) =>

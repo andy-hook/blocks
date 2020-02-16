@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState } from "react"
 import { ThemeProvider } from "styled-components"
-import { themes } from "@style/theme"
-import { ThemeName } from "theme"
+import { themes, ThemeName } from "@style/theme"
 
 interface ContextState {
   themeType: ThemeName

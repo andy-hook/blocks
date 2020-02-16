@@ -1,8 +1,25 @@
 import { generateMedia, pxToEm } from "styled-media-query"
 import { stripUnit, between } from "polished"
 import { css, CSSProp } from "styled-components"
-import { BreakpointName, Breakpoints } from "@custom-types/breakpoints"
 import { type } from "./design-tokens"
+
+export type BreakpointName =
+  | "bottomThumb"
+  | "topThumb"
+  | "bottomPalm"
+  | "topPalm"
+  | "bottomLap"
+  | "topLap"
+  | "bottomDesk"
+  | "topDesk"
+  | "bottomWide"
+  | "topWide"
+  | "bottomWall"
+  | "topWall"
+  | "bottomUltra"
+  | "topUltra"
+
+export type Breakpoints = { [key in BreakpointName]: string }
 
 /* Breakpoints
   ------------------------------------------------- */

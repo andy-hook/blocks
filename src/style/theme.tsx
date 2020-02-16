@@ -1,13 +1,21 @@
-import {
-  Theme,
-  GreyNames,
-  ThemeName,
-  Greys,
-  Layers,
-  LayerNames,
-} from "@custom-types/theme"
 import { css, CSSProp } from "styled-components"
 import { createHsl, createHsla } from "@style/utils"
+
+type GreyNames = "extraLow" | "low" | "medium" | "high" | "extraHigh"
+
+type Greys = { [key in GreyNames]: string }
+
+export type ThemeName = "light" | "dark"
+
+type LayerNames = "low" | "medium" | "high"
+
+type Layers = { [key in LayerNames]: string }
+
+export interface Theme {
+  name: ThemeName
+  text: Greys
+  layerTone: Layers
+}
 
 /* Dark theme app layers
 ------------------------------------------------- */
@@ -37,7 +45,7 @@ export const lightThemeLayer = (value: LayerNames) =>
 export const lightThemeLayerAlpha = (value: LayerNames, alpha: number) =>
   createHsla(lightThemeLayers[value], alpha)
 
-/* Dark theme greys
+/* Dark theme foreground
 ------------------------------------------------- */
 
 // Text
@@ -55,7 +63,7 @@ export const darkThemeForeground = (value: GreyNames) =>
 export const darkThemeForegroundAlpha = (value: GreyNames, alpha: number) =>
   createHsla(darkThemeForegroundHSL[value], alpha)
 
-/* Light theme greys
+/* Light theme foreground
 ------------------------------------------------- */
 
 // Text
