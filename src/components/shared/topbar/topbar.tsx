@@ -9,11 +9,22 @@ import useScrollPosition from "@hooks/scroll-position"
 import { themeTone, themeText } from "@style/theme"
 import { Link } from "gatsby"
 import { generateBlockNumberFromStaticRange } from "@utils"
+import { useSpring, animated } from "react-spring"
+
+{
+  /* <animated.div style={props}>I will fade in</animated.div> */
+}
 
 const Topbar: React.FunctionComponent = memo(() => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
   const [topbarScrolled, setTopbarScrolled] = useState(false)
+  const animateBrandMark = useSpring({
+    opacity: topbarScrolled ? 1 : 0,
+    transform: topbarScrolled
+      ? `translate3d(0rem,0,0)`
+      : `translate3d(-${layout.scale[11]},0,0)`,
+  })
 
   function toggleTheme() {
     themeType === "light"
@@ -48,9 +59,11 @@ const Topbar: React.FunctionComponent = memo(() => {
     <TopbarContainer darken={topbarScrolled}>
       {/* Left navigation */}
       <TopbarMainNav>
-        <TopbarBrandMark to="/">
-          <Icon name="blocks" />
-        </TopbarBrandMark>
+        <animated.div style={animateBrandMark}>
+          <TopbarBrandMark to="/">
+            <Icon name="blocks" />
+          </TopbarBrandMark>
+        </animated.div>
         <TopbarNavList />
       </TopbarMainNav>
 
