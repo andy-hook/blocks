@@ -2,10 +2,16 @@
 
 exports[`<BlockHeaderSwitch /> renders correctly 1`] = `
 <div
-  className="sc-bdVaJa bDWFJH"
+  className="sc-bdVaJa bNDPWZ"
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
 >
   <button
     className="sc-bwzfXH dcmFEq"
+    disabled={false}
     onClick={[Function]}
   >
     <div
@@ -16,6 +22,7 @@ exports[`<BlockHeaderSwitch /> renders correctly 1`] = `
   </button>
   <button
     className="sc-bwzfXH jHohNU"
+    disabled={false}
     onClick={[Function]}
   >
     <div

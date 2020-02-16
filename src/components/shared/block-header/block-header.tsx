@@ -73,7 +73,7 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
             onDetailsClick={handleDetailsClick}
             onTransactionsClick={handleTransactionsClick}
             trxVisible={trxVisible}
-            visible={loading}
+            disabled={loading}
           />
         </Header>
       </HeaderPanel>
@@ -107,11 +107,9 @@ const transactionLettering = css`
 
 const Header = styled.header<{ showAsTrx: boolean }>`
   position: relative;
-
-  margin-top: ${layout.scale[8]};
-
   z-index: ${layout.zIndex.low};
 
+  margin-top: ${layout.scale[8]};
   padding-left: 5%;
   padding-top: ${layout.scale[11]};
 
