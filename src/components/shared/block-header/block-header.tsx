@@ -9,6 +9,9 @@ import Button from "@components/shared/button/button"
 import { mq } from "@style/media-queries"
 import bkOnDarkSvg from "@svg/bk-on-dark.svg"
 import tkOnDarkSvg from "@svg/tx-on-dark.svg"
+import bkOnLightSvg from "@svg/bk-on-light.svg"
+import tkOnLightSvg from "@svg/tx-on-light.svg"
+import { isTheme } from "@style/theme"
 
 interface Props {
   blockNumber?: string
@@ -50,6 +53,7 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
           All Blocks
         </Button>
         <Header showAsTrx={trxVisible}>
+          {/* Title with details */}
           <DetailCouple>
             <SupTitle intensity="low" size="lg" loading={loading}>
               {renderSupTitleContent()}
@@ -64,10 +68,12 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
             </Title>
           </DetailCouple>
 
+          {/* Switch between details and transactions */}
           <HeaderSwitch
             onDetailsClick={handleDetailsClick}
             onTransactionsClick={handleTransactionsClick}
             trxVisible={trxVisible}
+            visible={loading}
           />
         </Header>
       </HeaderPanel>
@@ -84,11 +90,19 @@ const HeaderPanel = styled(Panel)`
 `
 
 const blockLettering = css`
-  background-image: url(${bkOnDarkSvg});
+  ${isTheme(
+    "dark",
+    `background-image: url(${bkOnDarkSvg});`,
+    `background-image: url(${bkOnLightSvg});`
+  )};
 `
 
 const transactionLettering = css`
-  background-image: url(${tkOnDarkSvg});
+  ${isTheme(
+    "dark",
+    `background-image: url(${tkOnDarkSvg});`,
+    `background-image: url(${tkOnLightSvg});`
+  )};
 `
 
 const Header = styled.header<{ showAsTrx: boolean }>`
