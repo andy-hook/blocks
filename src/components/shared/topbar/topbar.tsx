@@ -6,7 +6,7 @@ import { layout, type } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
 import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
-import { themeTone, themeText } from "@style/theme"
+import { themeTone, themeText, themeLayer, isTheme } from "@style/theme"
 import { Link } from "gatsby"
 import { generateBlockNumberFromStaticRange } from "@utils"
 import { useSpring, animated } from "react-spring"
@@ -116,7 +116,9 @@ const TopbarContainerBg = styled(animated.div)`
   width: 100%;
   height: 100%;
 
-  background-color: ${themeTone(100)};
+  /* background-color: ${themeTone(100)}; */
+
+  background-color: ${isTheme("dark", themeLayer("low"), "blue")};
 
   z-index: ${layout.zIndex.floor};
 `

@@ -16,9 +16,23 @@ import {
   lightThemeTextAlpha,
   lightThemeTone,
   lightThemeToneAlpha,
+  themeLayer,
+  themeLayerAlpha,
+  darkThemeLayer,
+  darkThemeLayerAlpha,
+  lightThemeLayer,
+  lightThemeLayerAlpha,
 } from "@style/theme"
 import styled from "styled-components"
 import "jest-styled-components"
+
+const ThemeLayerComponent = styled.div`
+  color: ${themeLayer("medium")};
+`
+
+const ThemeLayerAlphaComponent = styled.div`
+  color: ${themeLayerAlpha("medium", 0.5)};
+`
 
 const ThemeToneComponent = styled.div`
   color: ${themeTone(100)};
@@ -52,6 +66,18 @@ const IsNotThemeComponent = styled.div`
   ${isTheme("dark", "color: red;", "color: blue;")};
 `
 
+describe("darkThemeLayer", () => {
+  test("should return correct value as hsl string", () => {
+    expect(darkThemeLayer("medium")).toEqual("hsl(207, 13%, 14%)")
+  })
+})
+
+describe("darkThemeLayerAlpha", () => {
+  test("should return correct value as hsla string", () => {
+    expect(darkThemeLayerAlpha("medium", 50)).toEqual("hsla(207, 13%, 14%,50)")
+  })
+})
+
 describe("darkThemeText", () => {
   test("should return correct value as hsl string", () => {
     expect(darkThemeText(100)).toEqual("hsl(240, 3%, 100%)")
@@ -73,6 +99,18 @@ describe("darkThemeTone", () => {
 describe("darkThemeToneAlpha", () => {
   test("should return correct value as hsla string", () => {
     expect(darkThemeToneAlpha(100, 50)).toEqual("hsla(240, 6%, 7%,50)")
+  })
+})
+
+describe("lightThemeLayer", () => {
+  test("should return correct value as hsl string", () => {
+    expect(lightThemeLayer("medium")).toEqual("hsl(20, 13%, 14%)")
+  })
+})
+
+describe("lightThemeLayerAlpha", () => {
+  test("should return correct value as hsla string", () => {
+    expect(lightThemeLayerAlpha("medium", 50)).toEqual("hsla(20, 13%, 14%,50)")
   })
 })
 
@@ -111,6 +149,20 @@ describe("themeToneAlpha", () => {
   it("renders correct hsla from given tone value", () => {
     const tree = mountWithTheme("dark", <ThemeToneAlphaComponent />)
     expect(tree).toHaveStyleRule("color", "hsla(240,6%,7%,0)")
+  })
+})
+
+describe("darkThemeLayer", () => {
+  it("renders correct hsl from given layer value", () => {
+    const tree = mountWithTheme("dark", <ThemeLayerComponent />)
+    expect(tree).toHaveStyleRule("color", `hsl(207,13%,14%)`)
+  })
+})
+
+describe("darkThemeLayerAlpha", () => {
+  it("renders correct hsla from given layer and opacity value", () => {
+    const tree = mountWithTheme("dark", <ThemeLayerAlphaComponent />)
+    expect(tree).toHaveStyleRule("color", "hsla(207,13%,14%,0.5)")
   })
 })
 

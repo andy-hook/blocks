@@ -1,6 +1,41 @@
-import { Theme, GreyNames, ThemeName, Greys } from "@custom-types/theme"
+import {
+  Theme,
+  GreyNames,
+  ThemeName,
+  Greys,
+  Layers,
+  LayerNames,
+} from "@custom-types/theme"
 import { css, CSSProp } from "styled-components"
 import { createHsl, createHsla } from "@style/utils"
+
+/* Dark theme app layers
+------------------------------------------------- */
+const darkThemeLayers: Layers = {
+  low: "206, 13%, 11%",
+  medium: "207, 13%, 14%",
+  high: "204, 13%, 15%",
+}
+
+export const darkThemeLayer = (value: LayerNames) =>
+  createHsl(darkThemeLayers[value])
+
+export const darkThemeLayerAlpha = (value: LayerNames, alpha: number) =>
+  createHsla(darkThemeLayers[value], alpha)
+
+/* Light theme app layers
+------------------------------------------------- */
+const lightThemeLayers: Layers = {
+  low: "20, 13%, 11%",
+  medium: "20, 13%, 14%",
+  high: "20, 13%, 15%",
+}
+
+export const lightThemeLayer = (value: LayerNames) =>
+  createHsl(lightThemeLayers[value])
+
+export const lightThemeLayerAlpha = (value: LayerNames, alpha: number) =>
+  createHsla(lightThemeLayers[value], alpha)
 
 /* Dark theme greys
 ------------------------------------------------- */
@@ -92,12 +127,14 @@ const lightTheme: Theme = {
   name: "light",
   text: lightThemeTextHSL,
   tone: lightThemeToneHSL,
+  layerTone: lightThemeLayers,
 }
 
 const darkTheme: Theme = {
   name: "dark",
   text: darkThemeTextHSL,
   tone: darkThemeToneHSL,
+  layerTone: darkThemeLayers,
 }
 
 export const themes: { [key: string]: Theme } = {
@@ -119,6 +156,14 @@ export const themeText = (value: GreyNames) => css`
 
 export const themeTextAlpha = (value: GreyNames, alpha: number) => css`
   ${props => createHsla(props.theme.text[value], alpha)}
+`
+
+export const themeLayer = (value: LayerNames) => css`
+  ${props => createHsl(props.theme.layerTone[value])}
+`
+
+export const themeLayerAlpha = (value: LayerNames, alpha: number) => css`
+  ${props => createHsla(props.theme.layerTone[value], alpha)}
 `
 
 export const isDarkTheme = (output: string | CSSProp) => css`

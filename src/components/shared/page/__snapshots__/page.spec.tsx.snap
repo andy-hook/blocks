@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Page /> renders correctly 1`] = `
-<div
-  className="sc-EHOje cdxoZi"
->
-  Content
+Array [
+  <div
+    className="sc-EHOje bXjivu"
+  >
+    Content
+  </div>,
   <footer
-    className="sc-ifAKCX foicZd"
+    className="sc-ifAKCX bmhxHF"
   >
     <div
       className="sc-bdVaJa hOvSxO"
@@ -17,6 +19,6 @@ exports[`<Page /> renders correctly 1`] = `
         I am a footer
       </div>
     </div>
-  </footer>
-</div>
+  </footer>,
+]
 `;
