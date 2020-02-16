@@ -3,9 +3,14 @@ import styled, { css } from "styled-components"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
-import { themeTone } from "@style/theme"
+import { themeLayer } from "@style/theme"
 
 type PaddingSize = "sm" | "md" | "lg"
+
+interface PanelSizes {
+  xSize: PaddingSize
+  ySize: PaddingSize
+}
 
 interface Props {
   className?: string
@@ -30,8 +35,8 @@ const Panel: React.FunctionComponent<Props> = memo(
   }) => {
     return (
       <Container
-        xPadding={xPadding}
-        yPadding={yPadding}
+        xSize={xPadding}
+        ySize={yPadding}
         className={classNames("", className)}
       >
         {children}
@@ -61,13 +66,7 @@ const paddingSizes: { [index: string]: ResponsiveSizes } = {
   },
 }
 
-export function mimicPanelPadding({
-  xSize,
-  ySize,
-}: {
-  xSize: PaddingSize
-  ySize: PaddingSize
-}) {
+function mimicPanelPadding({ xSize, ySize }: PanelSizes) {
   return css`
     padding: ${paddingSizes[ySize].base} ${paddingSizes[xSize].base};
 
@@ -85,15 +84,21 @@ export function mimicPanelPadding({
   `
 }
 
-const Container = styled.div<{
-  xPadding: PaddingSize
-  yPadding: PaddingSize
-}>`
+// It's annoying to have to provide this but forwardAs isn't supported
+// in my current version of styled components
+export function mimicPanelSizeAndPresentation({ xSize, ySize }: PanelSizes) {
+  return css`
+    ${mimicPanelPadding({ xSize, ySize })}
+    background-color: ${themeLayer("high")};
+  `
+}
 
+const Container = styled.div<PanelSizes>`
   ${props =>
-    mimicPanelPadding({ xSize: props.xPadding, ySize: props.yPadding })}
-
-  background-color: ${themeTone(500)};
+    mimicPanelSizeAndPresentation({
+      xSize: props.xSize,
+      ySize: props.ySize,
+    })}
 `
 
 export default Panel

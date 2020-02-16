@@ -6,10 +6,9 @@ import TruncateString from "react-truncate-string"
 import { layout } from "@style/design-tokens"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
-import { themeTone } from "@style/theme"
 import Transfer from "@components/shared/transfer/transfer"
 import { mq } from "@style/media-queries"
-import { mimicPanelPadding } from "@components/shared/panel/panel"
+import { mimicPanelSizeAndPresentation } from "@components/shared/panel/panel"
 
 interface Props {
   blockNumber?: string
@@ -72,10 +71,9 @@ const LimitedHash = styled(Label)`
 `
 
 const Row = styled.tr`
-  ${mimicPanelPadding({ xSize: "lg", ySize: "sm" })}
+  ${mimicPanelSizeAndPresentation({ xSize: "lg", ySize: "sm" })}
 
   display: flex;
-  background-color: ${themeTone(500)};
 `
 
 export default Transaction

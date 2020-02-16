@@ -8,14 +8,15 @@ interface Props {
 }
 
 const Page: React.FunctionComponent<Props> = memo(({ children }) => (
-  <Container>
-    {children}
+  <>
+    <PageContent>{children}</PageContent>
     <Footer />
-  </Container>
+  </>
 ))
 
-export const Container = styled.div`
+export const PageContent = styled.div`
   padding-top: ${layout.scale[16]};
+  padding-bottom: ${layout.scale[14]};
 `
 
 export default Page

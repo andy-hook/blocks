@@ -1,14 +1,13 @@
 import React, { memo } from "react"
 import styled from "styled-components"
 import Transaction from "./transaction/transaction"
-import { themeTone } from "@style/theme"
 import { Web3BlockData } from "model"
 import ColumnsTemplate from "./columns-template/columns-template"
 import Label from "../label/label"
 import { layout } from "@style/design-tokens"
 import { toString } from "lodash"
 import { mq } from "@style/media-queries"
-import { mimicPanelPadding } from "../panel/panel"
+import { mimicPanelSizeAndPresentation } from "../panel/panel"
 
 interface Props {
   transactions: Web3BlockData["transactionsData"]
@@ -61,10 +60,9 @@ const Table = styled.table`
 `
 
 const TableHead = styled.thead`
-  ${mimicPanelPadding({ xSize: "lg", ySize: "sm" })}
+  ${mimicPanelSizeAndPresentation({ xSize: "lg", ySize: "sm" })}
 
   display: block;
-  background-color: ${themeTone(500)};
 `
 
 const TableHeadRow = styled.tr`
