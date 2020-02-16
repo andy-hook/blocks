@@ -107,6 +107,7 @@ const textShadow = {
 const borderThickness = {
   regular: "1px",
   thick: "2px",
+  thicker: "3px",
 }
 
 /* Duration
