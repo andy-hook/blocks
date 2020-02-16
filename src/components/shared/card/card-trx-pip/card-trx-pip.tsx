@@ -3,7 +3,7 @@ import { Web3TransactionData } from "model"
 import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
-import { themeForeground } from "@style/theme"
+import { themeForeground, themeBrand } from "@style/theme"
 
 interface Props {
   value?: number
@@ -34,16 +34,16 @@ const empty = css`
 `
 
 const zeroValue = css`
-  background-color: hotpink;
+  background-color: ${themeBrand()};
   opacity: 0.15;
 `
 
 const hasValue = css`
-  background-color: hotpink;
+  background-color: ${themeBrand()};
 `
 
 const isLoading = css`
-  background-color: purple;
+  background-color: ${themeForeground("extraLow")};
 `
 
 const PipOuter = styled.div`

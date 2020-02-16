@@ -1,21 +1,53 @@
 import { css, CSSProp } from "styled-components"
 import { createHsl, createHsla } from "@style/utils"
 
-type GreyNames = "extraLow" | "low" | "medium" | "high" | "extraHigh"
-
-type Greys = { [key in GreyNames]: string }
-
 export type ThemeName = "light" | "dark"
 
 type LayerNames = "low" | "medium" | "high"
-
 type Layers = { [key in LayerNames]: string }
+
+type GreyNames = "extraLow" | "low" | "medium" | "high" | "extraHigh"
+type Greys = { [key in GreyNames]: string }
+
+type BrandShadeNames = "base" | "light" | "dark"
+type BrandShades = { [key in BrandShadeNames]: string }
 
 export interface Theme {
   name: ThemeName
   text: Greys
   layerTone: Layers
+  brand: BrandShades
 }
+
+/* Brand colours
+------------------------------------------------- */
+const darkThemeBrandShades: BrandShades = {
+  light: "4, 96%, 72%",
+  base: "354, 89%, 64%",
+  dark: "346, 91%, 56%",
+}
+
+export const darkThemeToneShade = (value: BrandShadeNames) =>
+  createHsl(darkThemeBrandShades[value])
+
+export const darkThemeToneShadeAlpha = (
+  value: BrandShadeNames,
+  alpha: number
+) => createHsla(darkThemeBrandShades[value], alpha)
+
+const lightThemeBrandShades: BrandShades = {
+  light: "4, 96%, 72%",
+  base: "354, 89%, 64%",
+  dark: "346, 91%, 56%",
+}
+
+export const lightThemeToneShade = (value: BrandShadeNames) =>
+  createHsl(lightThemeBrandShades[value])
+
+export const lightThemeToneShadeAlpha = (
+  value: BrandShadeNames,
+  alpha: number
+) => createHsla(lightThemeBrandShades[value], alpha)
 
 /* Dark theme app layers
 ------------------------------------------------- */
@@ -85,12 +117,14 @@ const lightTheme: Theme = {
   name: "light",
   text: lightThemeForegroundHSL,
   layerTone: lightThemeLayers,
+  brand: lightThemeBrandShades,
 }
 
 const darkTheme: Theme = {
   name: "dark",
   text: darkThemeForegroundHSL,
   layerTone: darkThemeLayers,
+  brand: darkThemeBrandShades,
 }
 
 export const themes: { [key: string]: Theme } = {
@@ -112,6 +146,17 @@ export const themeLayer = (value: LayerNames) => css`
 
 export const themeLayerAlpha = (value: LayerNames, alpha: number) => css`
   ${props => createHsla(props.theme.layerTone[value], alpha)}
+`
+
+export const themeBrand = (value: BrandShadeNames = "base") => css`
+  ${props => createHsl(props.theme.brand[value])}
+`
+
+export const themeBrandAlpha = (
+  value: BrandShadeNames = "base",
+  alpha: number = 1
+) => css`
+  ${props => createHsla(props.theme.brand[value], alpha)}
 `
 
 export const isDarkTheme = (output: string | CSSProp) => css`

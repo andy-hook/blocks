@@ -2,6 +2,6 @@
 
 exports[`<Panel /> renders correctly 1`] = `
 <div
-  className="sc-bdVaJa eRvBQD"
+  className="sc-bdVaJa hPdBrM"
 />
 `;

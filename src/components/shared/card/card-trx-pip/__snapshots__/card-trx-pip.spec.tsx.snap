@@ -5,7 +5,7 @@ exports[`<TransactionPip /> renders correctly 1`] = `
   className="sc-bdVaJa ldkUXY"
 >
   <div
-    className="sc-bwzfXH ohHan"
+    className="sc-bwzfXH iEkxDb"
   />
 </div>
 `;

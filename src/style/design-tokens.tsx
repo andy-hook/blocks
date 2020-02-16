@@ -85,7 +85,7 @@ const spacingScale = {
   ------------------------------------------------- */
 
 const borderRadius = {
-  base: "4px",
+  base: "6px",
   large: "10px",
   pill: "50000px",
   circle: "50%",

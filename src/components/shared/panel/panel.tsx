@@ -1,6 +1,6 @@
 import React, { memo, ReactNode } from "react"
 import styled, { css } from "styled-components"
-import { layout } from "@style/design-tokens"
+import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
 import { themeLayer } from "@style/theme"
@@ -84,11 +84,18 @@ function mimicPanelPadding({ xSize, ySize }: PanelSizes) {
   `
 }
 
+export const panelShadow = css`
+  box-shadow: 2rem 2rem 6rem 0 ${themeLayer("low")};
+`
+
 // It's annoying to have to provide this but forwardAs isn't supported
 // in my current version of styled components
 export function mimicPanelSizeAndPresentation({ xSize, ySize }: PanelSizes) {
   return css`
+    ${panelShadow}
     ${mimicPanelPadding({ xSize, ySize })}
+
+    border-radius: ${appearance.radius.base};
     background-color: ${themeLayer("high")};
   `
 }

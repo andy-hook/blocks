@@ -5,7 +5,7 @@ exports[`<Block /> renders correctly 1`] = `
   className="sc-gPEVay eQYmiW"
 >
   <div
-    className="sc-gzVnrw fwSaaD sc-jTzLTM iziihJ"
+    className="sc-gzVnrw cnjFid sc-jTzLTM iziihJ"
   >
     <a
       className="sc-iwsKbI ePgOzf"
@@ -81,7 +81,7 @@ exports[`<Block /> renders correctly 1`] = `
     </header>
   </div>
   <div
-    className="sc-gzVnrw fwSaaD"
+    className="sc-gzVnrw cnjFid"
   >
     <ul
       className="sc-kGXeez eIIwaK"
