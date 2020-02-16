@@ -3,29 +3,34 @@ import classNames from "classnames"
 import ColumnsTemplate from "../columns-template/columns-template"
 import styled, { css } from "styled-components"
 import TruncateString from "react-truncate-string"
-import { layout } from "@style/design-tokens"
+import { layout, appearance } from "@style/design-tokens"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
 import Transfer from "@components/shared/transfer/transfer"
 import { mq } from "@style/media-queries"
 import { mimicPanelSizeAndPresentation } from "@components/shared/panel/panel"
+import { themeBrand } from "@style/theme"
+import { toString } from "lodash"
 
 interface Props {
   blockNumber?: string
   trxHash?: string
   from?: string
   to?: string
-  value?: string
+  value?: number
   className?: string
 }
 
 const Transaction: React.FunctionComponent<Props> = memo(
   ({ blockNumber, trxHash, from, to, value, className }) => {
     return (
-      <Row className={classNames("", className)}>
+      <Row
+        className={classNames("", className)}
+        hasValue={value ? value > 0 : false}
+      >
         <ColumnsTemplate
           block={
-            <Title size="xs">
+            <Title size="xs" intensity="high">
               <TruncateString text={"# " + blockNumber} truncateAt={50} />
             </Title>
           }
@@ -37,7 +42,10 @@ const Transaction: React.FunctionComponent<Props> = memo(
           fromTo={<Transfer from={from} to={to} />}
           value={
             <Label>
-              <TruncateString text={value} truncateAt={20} />
+              <TruncateString
+                text={toString(value) + " Ether"}
+                truncateAt={20}
+              />
             </Label>
           }
         />
@@ -70,10 +78,29 @@ const LimitedHash = styled(Label)`
   max-width: ${layout.scale[16]};
 `
 
-const Row = styled.tr`
+const Row = styled.tr<{ hasValue: boolean }>`
   ${mimicPanelSizeAndPresentation({ xSize: "lg", ySize: "sm" })}
 
+  position: relative;
+  overflow: hidden;
+
   display: flex;
+
+  &::after {
+    content: "";
+
+    background-color: ${themeBrand()};
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    height: 100%;
+
+    width: ${appearance.borderThickness.thickest};
+
+    opacity: ${props => (props.hasValue ? 1 : 0.15)};
+  }
 `
 
 export default Transaction

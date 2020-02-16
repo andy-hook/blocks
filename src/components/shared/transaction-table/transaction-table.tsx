@@ -24,7 +24,7 @@ const TransactionTable: React.FunctionComponent<Props> = memo(
             trxHash={trx.hash}
             from={trx.from}
             to={trx.to}
-            value={toString(trx.ether) + " Ether"}
+            value={trx.ether}
           />
         )
       })

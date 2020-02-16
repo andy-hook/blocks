@@ -56,13 +56,13 @@ exports[`<TransactionTable /> renders correctly 1`] = `
     className="sc-kGXeez htkide"
   >
     <tr
-      className="sc-cSHVUG dRwgtR sc-kpOJdX brllvB"
+      className="sc-cSHVUG fadoZi sc-kpOJdX brllvB"
     >
       <td
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-EHOje bmwzpV"
+          className="sc-EHOje kbgGtU"
           size="xs"
         />
       </td>
@@ -123,13 +123,13 @@ exports[`<TransactionTable /> renders correctly 1`] = `
       </td>
     </tr>
     <tr
-      className="sc-cSHVUG dRwgtR sc-kpOJdX brllvB"
+      className="sc-cSHVUG fadoZi sc-kpOJdX brllvB"
     >
       <td
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-EHOje bmwzpV"
+          className="sc-EHOje kbgGtU"
           size="xs"
         />
       </td>
