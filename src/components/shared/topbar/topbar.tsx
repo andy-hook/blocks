@@ -6,7 +6,6 @@ import { layout, type } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
 import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
-import { typeSizeBaseLg } from "@style/typography"
 import { themeTone, themeText } from "@style/theme"
 import { Link } from "gatsby"
 import { generateBlockNumberFromStaticRange } from "@utils"
@@ -51,7 +50,7 @@ const Topbar: React.FunctionComponent = memo(() => {
 
       <TopbarControls>
         <TopbarThemeSwitch onClick={toggleTheme}>
-          <Icon name="shuffle" />
+          <Icon name={themeType === "light" ? "dark-mode" : "light-mode"} />
         </TopbarThemeSwitch>
 
         <TopbarShuffle
@@ -66,8 +65,6 @@ const Topbar: React.FunctionComponent = memo(() => {
 })
 
 const TopbarContainer = styled.div<{ darken: boolean }>`
-  ${typeSizeBaseLg}
-
   position: fixed;
   display: flex;
 
@@ -77,11 +74,15 @@ const TopbarContainer = styled.div<{ darken: boolean }>`
   left: 0;
   width: 100%;
 
-  padding: ${layout.scale[5]} ${layout.scale[8]};
-
   z-index: ${layout.zIndex.high};
 
   background-color: ${props => (props.darken ? themeTone(100) : "transparent")};
+
+  padding: ${layout.scale[6]} ${layout.scale[6]};
+
+  ${mq.greaterThan("topLap")`
+    padding: ${layout.scale[6]} ${layout.scale[8]};
+  `}
 `
 
 const TopbarNavList = styled(NavList)`
@@ -89,23 +90,33 @@ const TopbarNavList = styled(NavList)`
   display: flex;
 
   align-items: center;
-
-  ${mq.lessThan("bottomPalm")`
-    display: none;
-  `}
 `
 
 const TopbarControls = styled.div`
-  color: ${themeText(300)};
   display: flex;
   align-items: center;
-  font-size: ${type.scale[7]};
+
+  color: ${themeText(300)};
+
+  font-size: ${type.scale[6]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[7]};
+  `}
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[8]};
+  `}
 `
 
 const TopbarThemeSwitch = styled.button``
 
 const TopbarShuffle = styled(Link)`
   margin-left: ${layout.scale[5]};
+
+  ${mq.greaterThan("topLap")`
+    margin-left: ${layout.scale[6]};
+  `}
 `
 
 export default Topbar

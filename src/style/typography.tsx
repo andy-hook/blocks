@@ -28,7 +28,7 @@ export const setBasePlaceholderCrop = (lHeight: number) => {
   ------------------------------------------------- */
 const displayCropSettings = {
   topCrop: 4,
-  bottomCrop: 19,
+  bottomCrop: 22,
 }
 
 export const setDisplayCropAndLineHeight = (lHeight: number) => {
