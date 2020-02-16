@@ -58,13 +58,15 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
     }
 
     useEffect(() => {
+      setLoadingStatus(true)
+
       if (blocksData) {
         // Get the current block from context if possible
         const currentCachedBlockData = blocksData.find(
           element => element.number === blockNumber
         ) as Web3BlockData
 
-        // Use value from context if it exists...
+        // Use value from context if it exists or fetch new...
         currentCachedBlockData
           ? setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
           : // Or fetch new data for the view
