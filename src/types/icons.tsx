@@ -8,3 +8,5 @@ export type Icons =
   | "arrow-right"
   | "arrow-left"
   | "shuffle"
+  | "dark-mode"
+  | "light-mode"
