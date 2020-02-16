@@ -21,6 +21,13 @@ const Topbar: React.FunctionComponent = memo(() => {
   const [topbarScrolled, setTopbarScrolled] = useState(false)
 
   const animateMarkMove = useSpring({
+    opacity: topbarScrolled ? 1 : 0,
+    transform: topbarScrolled
+      ? `translate3d(0rem,0,0)`
+      : `translate3d(-${layout.scale[11]},0,0)`,
+  })
+
+  const animateNavkMove = useSpring({
     transform: topbarScrolled
       ? `translate3d(0rem,0,0)`
       : `translate3d(-${layout.scale[11]},0,0)`,
@@ -66,13 +73,13 @@ const Topbar: React.FunctionComponent = memo(() => {
     <TopbarContainer>
       {/* Left navigation */}
       <TopbarMainNav>
-        <animated.div style={animateMarkMove}>
+        <TopbarBrandPositioner style={animateMarkMove}>
           <TopbarBrandMark to="/">
             <Icon name="blocks" />
           </TopbarBrandMark>
-        </animated.div>
+        </TopbarBrandPositioner>
 
-        <animated.div style={animateMarkMove}>
+        <animated.div style={animateNavkMove}>
           <TopbarNavList />
         </animated.div>
       </TopbarMainNav>
@@ -132,8 +139,6 @@ const TopbarMainNav = styled.div`
   position: relative;
   display: flex;
 
-  overflow: hidden;
-
   align-items: center;
 
   z-index: ${layout.zIndex.low};
@@ -170,9 +175,21 @@ const TopbarBrandMark = styled(Link)`
     background-color: ${themeForeground("extraLow")};
 
     transform: translateY(-50%);
+
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: ${themeForeground("extraHigh")};
   }
 
   transform: translateY(-50%);
+`
+
+const TopbarBrandPositioner = styled(animated.div)`
+  position: relative;
+
+  z-index: ${layout.zIndex.medium};
 `
 
 const TopbarNavList = styled(NavList)`
