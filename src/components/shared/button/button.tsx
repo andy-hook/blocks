@@ -1,6 +1,6 @@
 import React, { memo } from "react"
 import styled, { css } from "styled-components"
-import { type, appearance, animation, layout } from "@style/design-tokens"
+import { type, appearance, layout } from "@style/design-tokens"
 import {
   setDisplayCropAndLineHeight,
   typeDisplayButton,
@@ -9,8 +9,7 @@ import { themeForeground, isTheme } from "@style/theme"
 import { Link } from "gatsby"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
-import Icon from "@components/shared/icon/icon"
-import { Icons } from "icons"
+import Icon, { Icons } from "@components/shared/icon/icon"
 
 type ButtonType = "primary" | "secondary" | "tertiary"
 
@@ -105,7 +104,6 @@ const primaryStyles = css`
 
   &::before,
   &::after {
-    transition: opacity ${animation.duration.fast} linear;
     content: "";
 
     position: absolute;

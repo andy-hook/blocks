@@ -1,8 +1,21 @@
 import { withPrefix } from "gatsby"
 import React, { memo } from "react"
-import { Icons } from "@custom-types/icons"
 import styled from "styled-components"
 import classNames from "classnames"
+
+export type Icons =
+  | "dribbble"
+  | "instagram"
+  | "linkedin"
+  | "twitter"
+  | "github"
+  | "mail"
+  | "arrow-right"
+  | "arrow-left"
+  | "shuffle"
+  | "dark-mode"
+  | "light-mode"
+  | "blocks"
 
 interface Props {
   name: Icons
