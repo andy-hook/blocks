@@ -13,6 +13,7 @@ interface Props {
   onTransactionsClick?: () => void
   trxVisible: boolean
   className?: string
+  visible?: boolean
 }
 
 const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
