@@ -4,7 +4,7 @@ import classNames from "classnames"
 import TruncateString from "react-truncate-string"
 import { appearance, layout } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
-import { themeTone } from "@style/theme"
+import { themeForeground } from "@style/theme"
 
 interface Props {
   className?: string
@@ -29,7 +29,7 @@ const Container = styled.div`
   padding-bottom: ${layout.scale[2]};
   text-align: center;
   border-radius: ${appearance.radius.pill};
-  background-color: ${themeTone(900)};
+  background-color: ${themeForeground("extraLow")};
 `
 
 export default TransferPip

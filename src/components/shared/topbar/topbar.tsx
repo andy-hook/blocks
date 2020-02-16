@@ -6,9 +6,13 @@ import { layout, type } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
 import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
-import { themeTone, themeText, themeLayer, isTheme } from "@style/theme"
+import { themeForeground, themeLayer, isTheme } from "@style/theme"
 import { Link } from "gatsby"
-import { generateBlockNumberFromStaticRange } from "@utils"
+import {
+  generateBlockNumberFromStaticRange,
+  SHUFFLE_MIN_RANGE,
+  SHUFFLE_MAX_RANGE,
+} from "@utils"
 import { useSpring, animated } from "react-spring"
 
 const Topbar: React.FunctionComponent = memo(() => {
@@ -34,7 +38,10 @@ const Topbar: React.FunctionComponent = memo(() => {
 
   function generateRandomBlockNumber() {
     setRandomBlockNumber(
-      generateBlockNumberFromStaticRange({ min: 1, max: 9000000 })
+      generateBlockNumberFromStaticRange({
+        min: SHUFFLE_MIN_RANGE,
+        max: SHUFFLE_MAX_RANGE,
+      })
     )
   }
 
@@ -116,8 +123,6 @@ const TopbarContainerBg = styled(animated.div)`
   width: 100%;
   height: 100%;
 
-  /* background-color: ${themeTone(100)}; */
-
   background-color: ${isTheme("dark", themeLayer("low"), "blue")};
 
   z-index: ${layout.zIndex.floor};
@@ -139,7 +144,7 @@ const TopbarBrandMark = styled(Link)`
   top: 50%;
   left: 0;
 
-  color: ${themeText(100)};
+  color: ${themeForeground("medium")};
 
   font-size: ${type.scale[6]};
 
@@ -162,7 +167,7 @@ const TopbarBrandMark = styled(Link)`
     width: 1px;
     height: 75%;
 
-    background-color: ${themeText(1000)};
+    background-color: ${themeForeground("extraLow")};
 
     transform: translateY(-50%);
   }
@@ -179,7 +184,7 @@ const TopbarControls = styled.div`
   display: flex;
   align-items: center;
 
-  color: ${themeText(300)};
+  color: ${themeForeground("high")};
 
   font-size: ${type.scale[6]};
 
@@ -194,10 +199,18 @@ const TopbarControls = styled.div`
   z-index: ${layout.zIndex.low};
 `
 
-const TopbarThemeSwitch = styled.button``
+const TopbarThemeSwitch = styled.button`
+  &:hover {
+    color: ${themeForeground("extraHigh")};
+  }
+`
 
 const TopbarShuffle = styled(Link)`
   margin-left: ${layout.scale[5]};
+
+  &:hover {
+    color: ${themeForeground("extraHigh")};
+  }
 
   ${mq.greaterThan("topLap")`
     margin-left: ${layout.scale[6]};

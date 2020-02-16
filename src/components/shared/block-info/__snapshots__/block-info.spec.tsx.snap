@@ -8,10 +8,10 @@ exports[`<BlockInfo /> renders correctly 1`] = `
     className="sc-gzVnrw ibZhkv"
   >
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Size
@@ -20,16 +20,16 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Timestamp
@@ -38,16 +38,16 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Miner
@@ -56,16 +56,16 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Difficulty
@@ -74,16 +74,16 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Total Difficulty
@@ -92,16 +92,16 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Gas Used
@@ -110,16 +110,16 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>
     </div>
     <div
-      className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
+      className="sc-ifAKCX fnBNId sc-htoDjs BSSVW"
     >
       <div
-        className="sc-htpNat egChak"
+        className="sc-htpNat jEtwwK"
         size="sm"
       >
         Gas Limit
@@ -128,7 +128,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
         className="sc-EHOje foZbCf"
       >
         <div
-          className="sc-bdVaJa ikMsdC"
+          className="sc-bdVaJa hxipTb"
           size="lg"
         />
       </div>

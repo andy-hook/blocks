@@ -19,15 +19,12 @@ const BlockInfoRow: React.FunctionComponent<Props> = memo(
   ({ name, value, loading, className, skeletonWidth }) => {
     return (
       <Row className={classNames("", className)}>
-        <Title size="sm">{name}</Title>
+        <Title intensity="high" size="sm">
+          {name}
+        </Title>
 
         <ValueLabel>
-          <Label
-            loading={loading}
-            skeletonWidth={skeletonWidth}
-            intensity="medium"
-            size="lg"
-          >
+          <Label loading={loading} skeletonWidth={skeletonWidth} size="lg">
             <TruncateString text={value} truncateAt={40} />
           </Label>
         </ValueLabel>

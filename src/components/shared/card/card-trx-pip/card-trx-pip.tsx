@@ -3,7 +3,7 @@ import { Web3TransactionData } from "model"
 import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
-import { themeTone } from "@style/theme"
+import { themeForeground } from "@style/theme"
 
 interface Props {
   value?: number
@@ -29,7 +29,8 @@ const CardTrxPip: React.FunctionComponent<Props> = memo(
 )
 
 const empty = css`
-  border: ${appearance.borderThickness.thick} solid ${themeTone(1000)};
+  border: ${appearance.borderThickness.thick} solid
+    ${themeForeground("extraLow")};
 `
 
 const zeroValue = css`

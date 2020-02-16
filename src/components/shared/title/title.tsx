@@ -10,7 +10,7 @@ import {
   typeSizeDisplayXs,
 } from "@style/typography"
 import { type, appearance } from "@style/design-tokens"
-import { isTheme, themeText } from "@style/theme"
+import { isTheme, themeForeground } from "@style/theme"
 import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
@@ -65,9 +65,9 @@ const textSize = {
 }
 
 const textIntensity = {
-  low: themeText(900),
-  medium: themeText(500),
-  high: themeText(100),
+  low: themeForeground("medium"),
+  medium: themeForeground("high"),
+  high: themeForeground("extraHigh"),
 }
 
 const Text = styled.div<{

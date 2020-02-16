@@ -2,10 +2,10 @@
 
 exports[`<TransferPip /> renders correctly 1`] = `
 <div
-  className="sc-htpNat dYrkBq"
+  className="sc-htpNat frRoNZ"
 >
   <div
-    className="sc-bdVaJa kwWHFO"
+    className="sc-bdVaJa caHkzD"
     size="sm"
   />
 </div>

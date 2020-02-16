@@ -8,7 +8,7 @@ exports[`<Transaction /> renders correctly 1`] = `
     className="sc-bdVaJa sc-bwzfXH dfeDEW"
   >
     <div
-      className="sc-EHOje eLosOs"
+      className="sc-EHOje bmwzpV"
       size="xs"
     />
   </td>
@@ -16,7 +16,7 @@ exports[`<Transaction /> renders correctly 1`] = `
     className="sc-bdVaJa sc-htpNat jDGsFT"
   >
     <div
-      className="sc-gzVnrw gfZtNX sc-jzJRlG dHdNug"
+      className="sc-gzVnrw isdEPA sc-jzJRlG dHdNug"
       size="md"
     />
   </td>
@@ -27,15 +27,15 @@ exports[`<Transaction /> renders correctly 1`] = `
       className="sc-gqjmRU jDgOTw"
     >
       <div
-        className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
+        className="sc-dnqmqq YlYyx sc-VigVT czeWEy"
       >
         <div
-          className="sc-gzVnrw jdISSh"
+          className="sc-gzVnrw gogDjz"
           size="sm"
         />
       </div>
       <div
-        className="sc-jTzLTM kwaODZ"
+        className="sc-jTzLTM cpIzaT"
       >
         <div
           className="sc-iwsKbI iUEoeV"
@@ -50,10 +50,10 @@ exports[`<Transaction /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-dnqmqq hgouuL sc-VigVT czeWEy"
+        className="sc-dnqmqq YlYyx sc-VigVT czeWEy"
       >
         <div
-          className="sc-gzVnrw jdISSh"
+          className="sc-gzVnrw gogDjz"
           size="sm"
         />
       </div>
@@ -63,7 +63,7 @@ exports[`<Transaction /> renders correctly 1`] = `
     className="sc-bdVaJa sc-ifAKCX gEVBXo"
   >
     <div
-      className="sc-gzVnrw gfZtNX"
+      className="sc-gzVnrw isdEPA"
       size="md"
     />
   </td>

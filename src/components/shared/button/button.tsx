@@ -5,7 +5,7 @@ import {
   setDisplayCropAndLineHeight,
   typeDisplayButton,
 } from "@style/typography"
-import { themeText, isTheme } from "@style/theme"
+import { themeForeground, isTheme } from "@style/theme"
 import { Link } from "gatsby"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
@@ -46,7 +46,7 @@ const StyledButton = styled(Link)<{ type: ButtonType }>`
   justify-content: center;
   align-items: center;
 
-  color: ${themeText(100)};
+  color: ${themeForeground("extraHigh")};
 
   overflow: hidden;
   font-size: ${type.scale[2]};
@@ -152,11 +152,11 @@ const secondaryStyles = css`
   `}
 
   border-radius: ${appearance.radius.pill};
-  border: ${appearance.borderThickness.regular} solid ${themeText(800)};
+  border: ${appearance.borderThickness.regular} solid ${themeForeground("low")};
 `
 
 const tertiaryStyles = css`
-  color: ${themeText(800)};
+  color: ${themeForeground("high")};
 `
 
 export default Button

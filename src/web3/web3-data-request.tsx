@@ -41,12 +41,12 @@ export async function requestBlocks(web3Instance: any, blocks: number[]) {
         web3Instance.eth.getBlock.request(
           block,
           async (error: {}, data: Web3BlockData) => {
-            if (error) {
+            if (error || !data) {
               reject(error)
             } else {
               const transactionsData = await requestTransactions(
                 web3Instance,
-                data.transactions
+                data && data.transactions
               )
 
               resolve({
