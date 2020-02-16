@@ -2,63 +2,79 @@
 
 exports[`<Topbar /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw ewtBRA"
+  className="sc-gzVnrw bKsdra"
 >
   <div
-    className="sc-htoDjs iuFyta"
+    className="sc-dnqmqq dWZDMo"
   >
-    <a
-      className="sc-dnqmqq fPYKJ"
-      href="/"
+    <div
+      style={
+        Object {
+          "transform": "translate3d(-5rem,0,0)",
+        }
+      }
     >
-      <div
-        className="sc-EHOje foslyy"
+      <a
+        className="sc-iwsKbI kKAYSP"
+        href="/"
       >
-        <svg
-          className="sc-bZQynM jYytzR"
+        <div
+          className="sc-EHOje foslyy"
         >
-          <use
-            xlinkHref="/icon-sprite.svg#blocks"
-          />
-        </svg>
-      </div>
-    </a>
-    <nav
-      className="sc-bdVaJa bDWFJH sc-iwsKbI cojOrm"
+          <svg
+            className="sc-bZQynM jYytzR"
+          >
+            <use
+              xlinkHref="/icon-sprite.svg#blocks"
+            />
+          </svg>
+        </div>
+      </a>
+    </div>
+    <div
+      style={
+        Object {
+          "transform": "translate3d(-5rem,0,0)",
+        }
+      }
     >
-      <ul
-        className="sc-bwzfXH iPhcok"
+      <nav
+        className="sc-bdVaJa bDWFJH sc-gZMcBi easGjm"
       >
-        <li
-          className="sc-htpNat iaJVDJ"
+        <ul
+          className="sc-bwzfXH iPhcok"
         >
-          <a
-            className="sc-bxivhb dMbktt"
-            href="/"
+          <li
+            className="sc-htpNat iaJVDJ"
           >
-            Latest Blocks
-          </a>
-        </li>
-        <li
-          className="sc-htpNat iaJVDJ"
-        >
-          <a
-            className="sc-ifAKCX jkMENd"
-            href="https://github.com/andy-hook/ten-blocks"
-            onClick={[Function]}
-            target="_blank"
+            <a
+              className="sc-bxivhb dMbktt"
+              href="/"
+            >
+              Latest Blocks
+            </a>
+          </li>
+          <li
+            className="sc-htpNat iaJVDJ"
           >
-            Github
-          </a>
-        </li>
-      </ul>
-    </nav>
+            <a
+              className="sc-ifAKCX jkMENd"
+              href="https://github.com/andy-hook/ten-blocks"
+              onClick={[Function]}
+              target="_blank"
+            >
+              Github
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
   <div
-    className="sc-gZMcBi dnJnhH"
+    className="sc-gqjmRU gixZad"
   >
     <button
-      className="sc-gqjmRU hnZXkc"
+      className="sc-VigVT fIhGog"
       onClick={[Function]}
     >
       <div
@@ -74,7 +90,7 @@ exports[`<Topbar /> renders correctly 1`] = `
       </div>
     </button>
     <a
-      className="sc-VigVT fcxcZu"
+      className="sc-jTzLTM bsMlBN"
       href="/block/undefined"
       onClick={[Function]}
     >
@@ -91,5 +107,13 @@ exports[`<Topbar /> renders correctly 1`] = `
       </div>
     </a>
   </div>
+  <div
+    className="sc-htoDjs kYmEDo"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  />
 </div>
 `;
