@@ -39,15 +39,22 @@ const Topbar: React.FunctionComponent = memo(() => {
     }
   })
 
-  // Generate random number on initial render
+  // Generate random number on initial render only
   useEffect(() => {
     generateRandomBlockNumber()
   }, [])
 
   return (
     <TopbarContainer darken={topbarScrolled}>
-      <TopbarNavList />
+      {/* Left navigation */}
+      <TopbarMainNav>
+        <TopbarBrandMark to="/">
+          <Icon name="blocks" />
+        </TopbarBrandMark>
+        <TopbarNavList />
+      </TopbarMainNav>
 
+      {/* Right controls */}
       <TopbarControls>
         <TopbarThemeSwitch onClick={toggleTheme}>
           <Icon name={themeType === "light" ? "dark-mode" : "light-mode"} />
@@ -85,11 +92,43 @@ const TopbarContainer = styled.div<{ darken: boolean }>`
   `}
 `
 
-const TopbarNavList = styled(NavList)`
-  z-index: ${layout.zIndex.medium};
+const TopbarMainNav = styled.div`
+  position: relative;
   display: flex;
 
   align-items: center;
+`
+
+const TopbarBrandMark = styled(Link)`
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  color: ${themeText(100)};
+
+  font-size: ${type.scale[7]};
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    right: -${layout.scale[6]};
+
+    width: 1px;
+    height: 75%;
+
+    background-color: ${themeText(1000)};
+
+    transform: translateY(-50%);
+  }
+
+  transform: translateY(-50%);
+`
+
+const TopbarNavList = styled(NavList)`
+  padding-left: ${layout.scale[11]};
 `
 
 const TopbarControls = styled.div`

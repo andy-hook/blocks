@@ -2,43 +2,63 @@
 
 exports[`<Topbar /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw bbHWP"
+  className="sc-gzVnrw ewtBRA"
 >
-  <nav
-    className="sc-bdVaJa bDWFJH sc-htoDjs bKyWRy"
-  >
-    <ul
-      className="sc-bwzfXH biXqYm"
-    >
-      <li
-        className="sc-htpNat iaJVDJ"
-      >
-        <a
-          className="sc-bxivhb bZtjSv"
-          href="/"
-        >
-          Latest Blocks
-        </a>
-      </li>
-      <li
-        className="sc-htpNat iaJVDJ"
-      >
-        <a
-          className="sc-ifAKCX iysrLI"
-          href="https://github.com/andy-hook/ten-blocks"
-          onClick={[Function]}
-          target="_blank"
-        >
-          Github
-        </a>
-      </li>
-    </ul>
-  </nav>
   <div
-    className="sc-dnqmqq cOJZLP"
+    className="sc-htoDjs iuFyta"
+  >
+    <a
+      className="sc-dnqmqq fPYKJ"
+      href="/"
+    >
+      <div
+        className="sc-EHOje foslyy"
+      >
+        <svg
+          className="sc-bZQynM jYytzR"
+        >
+          <use
+            xlinkHref="/icon-sprite.svg#blocks"
+          />
+        </svg>
+      </div>
+    </a>
+    <nav
+      className="sc-bdVaJa bDWFJH sc-iwsKbI cojOrm"
+    >
+      <ul
+        className="sc-bwzfXH iPhcok"
+      >
+        <li
+          className="sc-htpNat iaJVDJ"
+        >
+          <a
+            className="sc-bxivhb dMbktt"
+            href="/"
+          >
+            Latest Blocks
+          </a>
+        </li>
+        <li
+          className="sc-htpNat iaJVDJ"
+        >
+          <a
+            className="sc-ifAKCX jkMENd"
+            href="https://github.com/andy-hook/ten-blocks"
+            onClick={[Function]}
+            target="_blank"
+          >
+            Github
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div
+    className="sc-gZMcBi dnJnhH"
   >
     <button
-      className="sc-iwsKbI jQhHGA"
+      className="sc-gqjmRU hnZXkc"
       onClick={[Function]}
     >
       <div
@@ -48,13 +68,13 @@ exports[`<Topbar /> renders correctly 1`] = `
           className="sc-bZQynM jYytzR"
         >
           <use
-            xlinkHref="/icon-sprite.svg#shuffle"
+            xlinkHref="/icon-sprite.svg#light-mode"
           />
         </svg>
       </div>
     </button>
     <a
-      className="sc-gZMcBi blWxmd"
+      className="sc-VigVT fcxcZu"
       href="/block/undefined"
       onClick={[Function]}
     >

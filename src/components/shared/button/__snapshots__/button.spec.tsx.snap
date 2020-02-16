@@ -10,7 +10,7 @@ exports[`<Button /> renders correctly 1`] = `
     className="sc-bxivhb cdiCYE"
   >
     <span
-      className="sc-ifAKCX kPJRmG"
+      className="sc-ifAKCX gYipKR"
     >
       This is a button
     </span>

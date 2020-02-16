@@ -24,7 +24,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
         </svg>
       </div>
       <span
-        className="sc-gqjmRU ctzSfg"
+        className="sc-gqjmRU zdZKF"
       >
         All Blocks
       </span>
@@ -46,7 +46,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
            Transactions
         </div>
         <div
-          className="sc-bdVaJa cLRnGS"
+          className="sc-bdVaJa kGWxIO"
           size="lg"
         >
           # 

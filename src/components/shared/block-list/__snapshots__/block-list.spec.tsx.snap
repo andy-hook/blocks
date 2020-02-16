@@ -24,7 +24,7 @@ exports[`<BlockList /> renders correctly 1`] = `
              Transactions
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             # 
@@ -756,7 +756,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -787,7 +787,7 @@ exports[`<BlockList /> renders correctly 1`] = `
              Transactions
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             # 
@@ -1519,7 +1519,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -1553,11 +1553,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -2306,7 +2306,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -2340,11 +2340,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -3093,7 +3093,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -3127,11 +3127,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -3880,7 +3880,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -3914,11 +3914,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -4667,7 +4667,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -4701,11 +4701,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -5454,7 +5454,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -5488,11 +5488,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -6241,7 +6241,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -6275,11 +6275,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -7028,7 +7028,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
@@ -7062,11 +7062,11 @@ exports[`<BlockList /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-VigVT eNEuqD"
+            className="sc-VigVT lgfTnR"
             size="md"
           >
             <div
-              className="sc-jTzLTM hRefak"
+              className="sc-jTzLTM fhCgeJ"
             >
                
             </div>
@@ -7815,7 +7815,7 @@ exports[`<BlockList /> renders correctly 1`] = `
                 className="sc-kAzzGY ebaOMy"
               >
                 <span
-                  className="sc-chPdSV eHFiPO"
+                  className="sc-chPdSV qpvXI"
                 >
                   More Details
                 </span>
