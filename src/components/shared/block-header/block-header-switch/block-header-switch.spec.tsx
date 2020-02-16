@@ -9,8 +9,9 @@ describe("<BlockHeaderSwitch />", () => {
     const tree = renderWithTheme(
       "dark",
       <BlockHeaderSwitch
-        onDetailsClock={jest.fn}
+        onDetailsClick={jest.fn}
         onTransactionsClick={jest.fn}
+        trxVisible={false}
       />
     )
     expect(tree).toMatchSnapshot()

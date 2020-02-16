@@ -74,13 +74,6 @@ const Text = styled.span<{ hasIcon?: boolean }>`
   z-index: ${layout.zIndex.medium};
 
   ${props => props.hasIcon && `padding-left: 1.75em;`}
-
-  ${isTheme(
-    "dark",
-    css`
-      text-shadow: ${appearance.textShadow.subtle};
-    `
-  )};
 `
 
 const ButtonIcon = styled(Icon)`
@@ -97,6 +90,8 @@ const primaryStyles = css`
   border-radius: ${appearance.radius.pill};
 
   padding: ${layout.scale[4]} ${layout.scale[6]};
+
+  text-shadow: ${appearance.textShadow.subtle};
 
   ${mq.greaterThan("topWide")`
     padding: ${layout.scale[5]} ${layout.scale[7]};
@@ -129,8 +124,7 @@ const primaryStyles = css`
     z-index: ${layout.zIndex.low};
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     &::before {
       opacity: 0.1;
     }
@@ -149,12 +143,16 @@ const secondaryStyles = css`
     padding: ${layout.scale[5]} ${layout.scale[7]};
   `}
 
+  ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
+
   border-radius: ${appearance.radius.pill};
   border: ${appearance.borderThickness.regular} solid ${themeForeground("low")};
 `
 
 const tertiaryStyles = css`
   color: ${themeForeground("high")};
+
+  ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
 `
 
 export default Button
