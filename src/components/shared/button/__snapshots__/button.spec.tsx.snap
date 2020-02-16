@@ -2,7 +2,8 @@
 
 exports[`<Button /> renders correctly 1`] = `
 <a
-  className="sc-htpNat izyYOq"
+  className="sc-htpNat eZQuxZ"
+  disabled={false}
   href="https://www.google.com"
   type="primary"
 >

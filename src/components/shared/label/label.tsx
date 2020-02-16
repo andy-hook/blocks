@@ -41,7 +41,9 @@ const Label: React.FunctionComponent<Props> = memo(
         className={classNames("", className)}
       >
         {loading ? (
-          <Skeleton skeletonWidth={skeletonWidth}>&nbsp;</Skeleton>
+          <Skeleton intensity={intensity} skeletonWidth={skeletonWidth}>
+            &nbsp;
+          </Skeleton>
         ) : (
           children
         )}
@@ -51,9 +53,9 @@ const Label: React.FunctionComponent<Props> = memo(
 )
 
 const skeletonWidths = {
-  sm: "3em",
-  md: "5em",
-  lg: "7em",
+  sm: "4em",
+  md: "7em",
+  lg: "10em",
 }
 
 const textSize = {
@@ -66,6 +68,12 @@ const textColors = {
   low: themeForeground("medium"),
   medium: themeForeground("high"),
   high: themeForeground("extraHigh"),
+}
+
+const skeletonIntensity = {
+  low: themeForeground("extraLow"),
+  medium: themeForeground("extraLow"),
+  high: themeForeground("low"),
 }
 
 const Text = styled.div<{
@@ -83,11 +91,17 @@ const Text = styled.div<{
   ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
 `
 
-const Skeleton = styled.div<Props>`
-  display: inline-block;
+const Skeleton = styled.div<{
+  skeletonWidth: SkeletonWidth
+  intensity: Intensity
+}>`
+  display: inline-flex;
   position: relative;
 
+  overflow: hidden;
+
   width: 100%;
+  border-radius: ${appearance.radius.base};
 
   ${props =>
     props.skeletonWidth && `max-width: ${skeletonWidths[props.skeletonWidth]}`};
@@ -98,11 +112,12 @@ const Skeleton = styled.div<Props>`
     content: '';
 
     position: absolute;
+    border-radius: ${appearance.radius.base};
     left: 0;
 
     width: 100%;
 
-    background-color: currentColor;
+    background-color: ${props => skeletonIntensity[props.intensity]};
   }
 `
 

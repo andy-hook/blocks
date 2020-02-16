@@ -46,7 +46,7 @@ const CardContent: React.FunctionComponent<Props> = memo(
         <TransactionsCountLabel intensity="low" loading={loading}>
           {transactionCount} Transactions
         </TransactionsCountLabel>
-        <Title intensity="high" loading={loading} skeletonWidth="sm">
+        <Title intensity="high" loading={loading} skeletonWidth="md">
           &#x23;&nbsp;{blockNumber}
         </Title>
 
@@ -63,7 +63,11 @@ const CardContent: React.FunctionComponent<Props> = memo(
 
         {/* CTA */}
         <CardActions>
-          <CardButton buttonType="secondary" to={`/block/${blockNumber}`}>
+          <CardButton
+            disabled={loading}
+            buttonType="secondary"
+            to={`/block/${blockNumber}`}
+          >
             More Details
           </CardButton>
         </CardActions>

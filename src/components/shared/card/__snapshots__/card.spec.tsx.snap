@@ -739,7 +739,8 @@ exports[`<Card /> renders correctly 1`] = `
       className="sc-dxgOiQ iKOXYn"
     >
       <a
-        className="sc-cSHVUG jABBFv sc-ckVGcZ bBUPhT"
+        className="sc-cSHVUG dWORRs sc-ckVGcZ bBUPhT"
+        disabled={false}
         href="/block/7250672"
         type="secondary"
       >

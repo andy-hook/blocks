@@ -27,7 +27,7 @@ const CardDetails: React.FunctionComponent<Props> = memo(
         {/* Difficulty */}
         <DifficultyItem>
           <DetailsTitle intensity="low">Difficulty</DetailsTitle>
-          <DetailsValue intensity="high" loading={loading} skeletonWidth="md">
+          <DetailsValue intensity="high" loading={loading} skeletonWidth="lg">
             <TruncateString text={difficulty} truncateAt={20} />
           </DetailsValue>
         </DifficultyItem>
