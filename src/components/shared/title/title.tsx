@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import {
   typeSizeDisplaySm,
   typeSizeDisplayMd,
@@ -82,12 +82,7 @@ const Text = styled.div<{
   max-width: 100%;
   color: ${props => textIntensity[props.intensity]};
 
-  ${isTheme(
-    "dark",
-    css`
-      text-shadow: ${appearance.textShadow.subtle};
-    `
-  )};
+  ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
 `
 
 const Skeleton = styled.div<Props>`

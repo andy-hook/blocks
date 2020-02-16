@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import {
   typeBaseSemibold,
   setBaseCropAndLineHeight,
@@ -80,12 +80,7 @@ const Text = styled.div<{
   position: relative;
   color: ${props => textColors[props.intensity]};
 
-  ${isTheme(
-    "dark",
-    css`
-      text-shadow: ${appearance.textShadow.subtle};
-    `
-  )};
+  ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
 `
 
 const Skeleton = styled.div<Props>`

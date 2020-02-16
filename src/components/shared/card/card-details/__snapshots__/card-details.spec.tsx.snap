@@ -8,13 +8,13 @@ exports[`<CardDetails /> renders correctly 1`] = `
     className="sc-EHOje dqaEls"
   >
     <div
-      className="sc-bdVaJa dHOkjZ sc-bxivhb hIEsEO"
+      className="sc-bdVaJa iJpXZD sc-bxivhb hIEsEO"
       size="md"
     >
       Size
     </div>
     <div
-      className="sc-bdVaJa cazVVB sc-ifAKCX dHHSVa"
+      className="sc-bdVaJa bgtfTX sc-ifAKCX dHHSVa"
       size="md"
     />
   </div>
@@ -22,13 +22,13 @@ exports[`<CardDetails /> renders correctly 1`] = `
     className="sc-bZQynM hNVbvw"
   >
     <div
-      className="sc-bdVaJa dHOkjZ sc-bxivhb hIEsEO"
+      className="sc-bdVaJa iJpXZD sc-bxivhb hIEsEO"
       size="md"
     >
       Difficulty
     </div>
     <div
-      className="sc-bdVaJa cazVVB sc-ifAKCX dHHSVa"
+      className="sc-bdVaJa bgtfTX sc-ifAKCX dHHSVa"
       size="md"
     />
   </div>
@@ -36,13 +36,13 @@ exports[`<CardDetails /> renders correctly 1`] = `
     className="sc-gzVnrw jnrzUa"
   >
     <div
-      className="sc-bdVaJa dHOkjZ sc-bxivhb hIEsEO"
+      className="sc-bdVaJa iJpXZD sc-bxivhb hIEsEO"
       size="md"
     >
       Miner
     </div>
     <div
-      className="sc-bdVaJa cazVVB sc-ifAKCX dHHSVa"
+      className="sc-bdVaJa bgtfTX sc-ifAKCX dHHSVa"
       size="md"
     />
   </div>

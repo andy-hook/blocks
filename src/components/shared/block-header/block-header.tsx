@@ -50,26 +50,25 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
           All Blocks
         </Button>
         <Header showAsTrx={trxVisible}>
-          <HeaderInner>
-            <DetailCouple>
-              <SupTitle intensity="low" size="lg" loading={loading}>
-                {renderSupTitleContent()}
-              </SupTitle>
-              <Title
-                intensity="high"
-                size="lg"
-                loading={loading}
-                skeletonWidth="sm"
-              >
-                {renderTitleContent()}
-              </Title>
-            </DetailCouple>
+          <DetailCouple>
+            <SupTitle intensity="low" size="lg" loading={loading}>
+              {renderSupTitleContent()}
+            </SupTitle>
+            <Title
+              intensity="high"
+              size="lg"
+              loading={loading}
+              skeletonWidth="sm"
+            >
+              {renderTitleContent()}
+            </Title>
+          </DetailCouple>
 
-            <BlockHeaderSwitch
-              onDetailsClock={handleDetailsClick}
-              onTransactionsClick={handleTransactionsClick}
-            />
-          </HeaderInner>
+          <HeaderSwitch
+            onDetailsClick={handleDetailsClick}
+            onTransactionsClick={handleTransactionsClick}
+            trxVisible={trxVisible}
+          />
         </Header>
       </HeaderPanel>
     )
@@ -97,6 +96,20 @@ const Header = styled.header<{ showAsTrx: boolean }>`
 
   margin-top: ${layout.scale[8]};
 
+  z-index: ${layout.zIndex.low};
+
+  padding-left: 5%;
+  padding-top: ${layout.scale[11]};
+
+  ${mq.greaterThan("topLap")`
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 13%;
+    padding-top: ${layout.scale[13]};
+  `}
+
   &::after {
     content: "";
 
@@ -119,26 +132,6 @@ const Header = styled.header<{ showAsTrx: boolean }>`
   }
 `
 
-const HeaderInner = styled.div`
-  position: relative;
-
-  padding-bottom: ${layout.scale[6]};
-
-  z-index: ${layout.zIndex.low};
-
-  padding-left: 5%;
-  padding-top: ${layout.scale[11]};
-
-  ${mq.greaterThan("topLap")`
-    display: flex;
-
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-left: 13%;
-    padding-top: ${layout.scale[13]};
-  `}
-`
-
 const SupTitle = styled(Label)`
   margin-bottom: ${layout.scale[4]};
 `
@@ -146,9 +139,16 @@ const SupTitle = styled(Label)`
 const DetailCouple = styled.div`
   width: 50%;
 
+  padding-bottom: ${layout.scale[6]};
+
   ${mq.lessThan("bottomLap")`
-    margin-bottom: ${layout.scale[5]}
+    margin-bottom: ${layout.scale[2]}
   `}
+`
+
+const HeaderSwitch = styled(BlockHeaderSwitch)`
+  position: relative;
+  z-index: ${layout.zIndex.low};
 `
 
 export default BlockHeader

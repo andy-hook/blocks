@@ -1,20 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlockHeaderSwitch /> renders correctly 1`] = `
-<section
-  className="sc-bdVaJa AMIHk"
+<div
+  className="sc-bdVaJa bDWFJH"
 >
   <button
-    className="sc-bwzfXH uTxCW"
+    className="sc-bwzfXH dcmFEq"
     onClick={[Function]}
   >
-    Details
+    <div
+      className="sc-htpNat gRXXol"
+    >
+      Details
+    </div>
   </button>
   <button
-    className="sc-htpNat KtFsv"
+    className="sc-bwzfXH jHohNU"
     onClick={[Function]}
   >
-    Transactions
+    <div
+      className="sc-htpNat gRXXol"
+    >
+      Transactions
+    </div>
   </button>
-</section>
+</div>
 `;
