@@ -15,6 +15,7 @@ const Topbar: React.FunctionComponent = memo(() => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
   const [topbarScrolled, setTopbarScrolled] = useState(false)
+
   const animateMarkMove = useSpring({
     transform: topbarScrolled
       ? `translate3d(0rem,0,0)`
