@@ -1,208 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Block /> renders correctly 1`] = `
-<article
-  className="sc-iRbamj blSEcj"
+<div
+  style={
+    Object {
+      "opacity": 0,
+      "transform": "translate3d(0,5rem,0)",
+    }
+  }
 >
-  <div
-    className="sc-gzVnrw cnjFid sc-jTzLTM iziihJ"
-  >
-    <a
-      className="sc-iwsKbI iaTFxL"
-      disabled={false}
-      href="/"
-      type="tertiary"
+  <article>
+    <div
+      className="sc-gzVnrw cnjFid sc-jTzLTM iziihJ"
     >
-      <div
-        className="sc-gZMcBi irilpd"
+      <a
+        className="sc-iwsKbI iaTFxL"
+        disabled={false}
+        href="/"
+        type="tertiary"
       >
         <div
-          className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
-        >
-          <svg
-            className="sc-dnqmqq iydQTw"
-          >
-            <use
-              xlinkHref="/icon-sprite.svg#arrow-left"
-            />
-          </svg>
-        </div>
-        <span
-          className="sc-gqjmRU krxleO"
-        >
-          All Blocks
-        </span>
-      </div>
-    </a>
-    <header
-      className="sc-fjdhpX iDwZVg"
-    >
-      <div
-        className="sc-cSHVUG iFrTaI"
-      >
-        <div
-          className="sc-htpNat fRItwi sc-jzJRlG kpJqLT"
-          size="lg"
+          className="sc-gZMcBi irilpd"
         >
           <div
-            className="sc-bxivhb hbOsFi"
+            className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
           >
-             
-          </div>
-        </div>
-        <div
-          className="sc-bdVaJa iZkTwA"
-          size="lg"
-        >
-          <div
-            className="sc-bwzfXH dNEZtn"
-          >
-             
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
-      >
-        <button
-          className="sc-EHOje iUvvWR"
-          disabled={true}
-        >
-          <div
-            className="sc-bZQynM GNSbg"
-          >
-            Details
-          </div>
-        </button>
-        <button
-          className="sc-EHOje dNLmzK"
-          disabled={true}
-        >
-          <div
-            className="sc-bZQynM GNSbg"
-          >
-            Transactions
-          </div>
-        </button>
-      </div>
-    </header>
-  </div>
-  <div
-    className="sc-gzVnrw cnjFid sc-kGXeez jrWVKz"
-  >
-    <ul
-      className="sc-kpOJdX kAzjOl"
-    >
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
-      >
-        <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
-        >
-          Size
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
-        >
-          <div
-            className="sc-htpNat leGpXE"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb XhibV"
+            <svg
+              className="sc-dnqmqq iydQTw"
             >
-               
-            </div>
+              <use
+                xlinkHref="/icon-sprite.svg#arrow-left"
+              />
+            </svg>
           </div>
-        </div>
-      </div>
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
-      >
-        <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
-        >
-          Timestamp
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
-        >
-          <div
-            className="sc-htpNat leGpXE"
-            size="lg"
+          <span
+            className="sc-gqjmRU krxleO"
           >
-            <div
-              className="sc-bxivhb kEfYuL"
-            >
-               
-            </div>
-          </div>
+            All Blocks
+          </span>
         </div>
-      </div>
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+      </a>
+      <header
+        className="sc-fjdhpX iDwZVg"
       >
         <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
-        >
-          Miner
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
+          className="sc-cSHVUG iFrTaI"
         >
           <div
-            className="sc-htpNat leGpXE"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb kEfYuL"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
-      >
-        <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
-        >
-          Difficulty
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
-        >
-          <div
-            className="sc-htpNat leGpXE"
-            size="lg"
-          >
-            <div
-              className="sc-bxivhb kEfYuL"
-            >
-               
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
-      >
-        <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
-        >
-          Total Difficulty
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
-        >
-          <div
-            className="sc-htpNat leGpXE"
+            className="sc-htpNat fRItwi sc-jzJRlG kpJqLT"
             size="lg"
           >
             <div
@@ -211,57 +56,221 @@ exports[`<Block /> renders correctly 1`] = `
                
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
-      >
-        <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
-        >
-          Gas Used
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
-        >
           <div
-            className="sc-htpNat leGpXE"
+            className="sc-bdVaJa iZkTwA"
             size="lg"
           >
             <div
-              className="sc-bxivhb kEfYuL"
+              className="sc-bwzfXH dNEZtn"
             >
                
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
-      >
         <div
-          className="sc-bdVaJa ceXrEC"
-          size="sm"
+          className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
         >
-          Gas Limit
-        </div>
-        <div
-          className="sc-kgoBCf donpaw"
-        >
-          <div
-            className="sc-htpNat leGpXE"
-            size="lg"
+          <button
+            className="sc-EHOje iUvvWR"
+            disabled={true}
           >
             <div
-              className="sc-bxivhb XhibV"
+              className="sc-bZQynM GNSbg"
             >
-               
+              Details
+            </div>
+          </button>
+          <button
+            className="sc-EHOje dNLmzK"
+            disabled={true}
+          >
+            <div
+              className="sc-bZQynM GNSbg"
+            >
+              Transactions
+            </div>
+          </button>
+        </div>
+      </header>
+    </div>
+    <main>
+      <div
+        className="sc-gzVnrw cnjFid sc-kGXeez jrWVKz"
+      >
+        <ul
+          className="sc-kpOJdX kAzjOl"
+        >
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Size
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb XhibV"
+                >
+                   
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Timestamp
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb kEfYuL"
+                >
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Miner
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb kEfYuL"
+                >
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Difficulty
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb kEfYuL"
+                >
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Total Difficulty
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb hbOsFi"
+                >
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Gas Used
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb kEfYuL"
+                >
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+          >
+            <div
+              className="sc-bdVaJa ceXrEC"
+              size="sm"
+            >
+              Gas Limit
+            </div>
+            <div
+              className="sc-kgoBCf donpaw"
+            >
+              <div
+                className="sc-htpNat leGpXE"
+                size="lg"
+              >
+                <div
+                  className="sc-bxivhb XhibV"
+                >
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
       </div>
-    </ul>
-  </div>
-</article>
+    </main>
+  </article>
+</div>
 `;

@@ -1,9 +1,9 @@
 import React, { useState, memo } from "react"
 import { Web3BlockData } from "model"
 import { toString } from "lodash"
-import styled from "styled-components"
 import BlockHeader from "@components/shared/block-header/block-header"
 import BlockBody from "@components/shared/block-body/block-body"
+import { animated, useSpring } from "react-spring"
 
 interface Props {
   blockData?: Web3BlockData | null
@@ -11,6 +11,17 @@ interface Props {
 
 const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
   const [trxVisible, setTrxVisible] = useState<boolean>(false)
+  const animateMarkMove = useSpring({
+    from: {
+      opacity: 0,
+      transform: `translate3d(0,5rem,0)`,
+    },
+    to: {
+      opacity: 1,
+      transform: `translate3d(0rem,0,0)`,
+    },
+    config: { mass: 1, tension: 175, friction: 30 },
+  })
 
   function handleDetailsClick() {
     setTrxVisible(false)
@@ -37,13 +48,15 @@ const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
   }
 
   return (
-    <Container>
-      {renderHeaderAsSkeletonOrPopulated()}
-      <BlockBody trxVisible={trxVisible} blockData={blockData} />
-    </Container>
+    <animated.div style={animateMarkMove}>
+      <article>
+        {renderHeaderAsSkeletonOrPopulated()}
+        <main>
+          <BlockBody trxVisible={trxVisible} blockData={blockData} />
+        </main>
+      </article>
+    </animated.div>
   )
 })
-
-const Container = styled.article``
 
 export default Block
