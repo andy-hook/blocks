@@ -55,14 +55,19 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
         <Header showAsTrx={trxVisible}>
           {/* Title with details */}
           <DetailCouple>
-            <SupTitle intensity="low" size="lg" loading={loading}>
+            <SupTitle
+              intensity="low"
+              size="lg"
+              skeletonWidth="lg"
+              loading={loading}
+            >
               {renderSupTitleContent()}
             </SupTitle>
             <Title
               intensity="high"
               size="lg"
               loading={loading}
-              skeletonWidth="sm"
+              skeletonWidth="md"
             >
               {renderTitleContent()}
             </Title>
@@ -140,7 +145,7 @@ const Header = styled.header<{ showAsTrx: boolean }>`
 
     z-index: ${layout.zIndex.floor};
 
-    opacity: 0.025;
+    opacity: 0.02;
   }
 `
 
@@ -149,9 +154,12 @@ const SupTitle = styled(Label)`
 `
 
 const DetailCouple = styled.div`
+  position: relative;
   width: 50%;
 
   padding-bottom: ${layout.scale[6]};
+
+  z-index: ${layout.zIndex.low};
 
   ${mq.lessThan("bottomLap")`
     margin-bottom: ${layout.scale[2]}

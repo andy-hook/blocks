@@ -7,7 +7,6 @@ import {
 } from "@style/typography"
 import { themeForeground, themeBrand, isTheme } from "@style/theme"
 import classNames from "classnames"
-import { animated, useSpring } from "react-spring"
 
 interface Props {
   onDetailsClick?: () => void
@@ -25,18 +24,8 @@ const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
     className,
     disabled = false,
   }) => {
-    const showSpring = { mass: 1, tension: 250, friction: 50 }
-
-    const animatedEntrance = useSpring({
-      opacity: disabled ? 0.2 : 1,
-      config: showSpring,
-    })
-
     return (
-      <SwitchContainer
-        className={classNames("", className)}
-        style={animatedEntrance}
-      >
+      <SwitchContainer className={classNames("", className)}>
         <SwitchButton
           onClick={onDetailsClick}
           active={!trxVisible}
@@ -60,7 +49,7 @@ const activeStyle = css`
   background-color: ${themeBrand()};
 `
 
-const SwitchContainer = styled(animated.div)`
+const SwitchContainer = styled.div`
   display: flex;
   justify-content: flex-end;
 `
@@ -78,6 +67,10 @@ const SwitchButton = styled.button<{ active: boolean }>`
   }
 
   ${props => props.active && activeStyle}
+
+  &[disabled] {
+    opacity: 0.25;
+  }
 `
 
 const SwitchButtonText = styled.div`

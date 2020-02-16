@@ -5,7 +5,8 @@ exports[`<BlockHeader /> renders correctly 1`] = `
   className="sc-gzVnrw cnjFid sc-jTzLTM iziihJ"
 >
   <a
-    className="sc-iwsKbI Rjfvb"
+    className="sc-iwsKbI iaTFxL"
+    disabled={false}
     href="/"
     type="tertiary"
   >
@@ -31,10 +32,10 @@ exports[`<BlockHeader /> renders correctly 1`] = `
     </div>
   </a>
   <header
-    className="sc-fjdhpX TtzaS"
+    className="sc-fjdhpX iDwZVg"
   >
     <div
-      className="sc-cSHVUG hRXcfM"
+      className="sc-cSHVUG iFrTaI"
     >
       <div
         className="sc-htpNat fRItwi sc-jzJRlG kpJqLT"
@@ -51,14 +52,9 @@ exports[`<BlockHeader /> renders correctly 1`] = `
     </div>
     <div
       className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
     >
       <button
-        className="sc-EHOje klPAPL"
+        className="sc-EHOje iUvvWR"
         disabled={false}
       >
         <div
@@ -68,7 +64,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
         </div>
       </button>
       <button
-        className="sc-EHOje fbAsfT"
+        className="sc-EHOje dNLmzK"
         disabled={false}
       >
         <div

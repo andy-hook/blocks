@@ -19,15 +19,24 @@ interface Props {
   buttonType?: ButtonType
   className?: string
   icon?: Icons
+  disabled?: boolean
 }
 
 const Button: React.FunctionComponent<Props> = memo(
-  ({ to, children, className, buttonType = "primary" as ButtonType, icon }) => {
+  ({
+    to,
+    children,
+    className,
+    disabled = false,
+    buttonType = "primary" as ButtonType,
+    icon,
+  }) => {
     return (
       <StyledButton
         to={to}
         type={buttonType}
         className={classNames("", className)}
+        disabled={disabled}
       >
         <Inner>
           {icon && <ButtonIcon name={icon} />}
@@ -38,7 +47,7 @@ const Button: React.FunctionComponent<Props> = memo(
   }
 )
 
-const StyledButton = styled(Link)<{ type: ButtonType }>`
+const StyledButton = styled(Link)<{ type: ButtonType; disabled: boolean }>`
   position: relative;
 
   display: inline-flex;
@@ -55,6 +64,13 @@ const StyledButton = styled(Link)<{ type: ButtonType }>`
   `}
 
   text-decoration: none;
+
+  ${props =>
+    props.disabled &&
+    `
+    pointer-events: none;
+    opacity: 0.2;
+  `}
 
   ${props => props.type === "primary" && primaryStyles}
   ${props => props.type === "secondary" && secondaryStyles}
