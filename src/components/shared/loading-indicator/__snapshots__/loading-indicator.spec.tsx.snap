@@ -10,7 +10,7 @@ exports[`<LoadingIndicator /> renders correctly 1`] = `
   }
 >
   <div
-    className="sc-bwzfXH jIPMuh"
+    className="sc-bwzfXH hIVbPz"
     style={
       Object {
         "transform": "translate3d(-100%,0,0)",

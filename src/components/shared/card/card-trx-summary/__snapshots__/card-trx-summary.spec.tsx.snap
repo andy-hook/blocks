@@ -14,7 +14,7 @@ exports[`<CardTrxSummary /> renders correctly 1`] = `
         className="sc-bdVaJa ldkUXY"
       >
         <div
-          className="sc-bwzfXH ohHan"
+          className="sc-bwzfXH iEkxDb"
         />
       </div>
     </li>
@@ -25,7 +25,7 @@ exports[`<CardTrxSummary /> renders correctly 1`] = `
         className="sc-bdVaJa ldkUXY"
       >
         <div
-          className="sc-bwzfXH ohHan"
+          className="sc-bwzfXH iEkxDb"
         />
       </div>
     </li>

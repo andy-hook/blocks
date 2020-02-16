@@ -2,7 +2,7 @@
 
 exports[`<BlockHeader /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw fwSaaD sc-jTzLTM iziihJ"
+  className="sc-gzVnrw cnjFid sc-jTzLTM iziihJ"
 >
   <a
     className="sc-iwsKbI ePgOzf"

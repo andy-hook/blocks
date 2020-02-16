@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { Spring, Transition } from "react-spring/renderprops.cjs"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
+import { themeBrand } from "@style/theme"
 
 const LoadingIndicator: React.FunctionComponent = memo(() => {
   const { loading } = useLoadingStatusContext()
@@ -75,7 +76,7 @@ const LoadingBar = styled.div`
   width: 100%;
   height: 100%;
 
-  background-color: red;
+  background-color: ${themeBrand()};
 `
 
 export default LoadingIndicator
