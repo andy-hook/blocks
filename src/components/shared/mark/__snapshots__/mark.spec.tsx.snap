@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Mark /> renders correctly 1`] = `
+<div
+  className="sc-htpNat kJxHk"
+>
+  <div
+    className="sc-bdVaJa dqBkPn sc-bxivhb cphRIN"
+  >
+    <svg
+      className="sc-bwzfXH kdIDyY"
+    >
+      <use
+        xlinkHref="/icon-sprite.svg#blocks"
+      />
+    </svg>
+  </div>
+</div>
+`;
