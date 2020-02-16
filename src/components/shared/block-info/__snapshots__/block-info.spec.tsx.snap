@@ -11,7 +11,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Size
@@ -29,7 +29,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Timestamp
@@ -47,7 +47,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Miner
@@ -65,7 +65,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Difficulty
@@ -83,7 +83,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Total Difficulty
@@ -101,7 +101,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Gas Used
@@ -119,7 +119,7 @@ exports[`<BlockInfo /> renders correctly 1`] = `
       className="sc-ifAKCX fnBNId sc-htoDjs gcJlvz"
     >
       <div
-        className="sc-htpNat jmqvJ"
+        className="sc-htpNat egChak"
         size="sm"
       >
         Gas Limit

@@ -15,7 +15,7 @@ exports[`<Card /> renders correctly 1`] = `
        Transactions
     </div>
     <div
-      className="sc-VigVT eNEuqD"
+      className="sc-VigVT lgfTnR"
       size="md"
     >
       # 
@@ -747,7 +747,7 @@ exports[`<Card /> renders correctly 1`] = `
           className="sc-kAzzGY ebaOMy"
         >
           <span
-            className="sc-chPdSV eHFiPO"
+            className="sc-chPdSV qpvXI"
           >
             More Details
           </span>

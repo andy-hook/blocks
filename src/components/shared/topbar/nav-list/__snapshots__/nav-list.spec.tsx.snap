@@ -5,13 +5,13 @@ exports[`<Navigation /> renders correctly 1`] = `
   className="sc-bdVaJa bDWFJH"
 >
   <ul
-    className="sc-bwzfXH biXqYm"
+    className="sc-bwzfXH iPhcok"
   >
     <li
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-bxivhb bZtjSv"
+        className="sc-bxivhb dMbktt"
         href="/"
       >
         Latest Blocks
@@ -21,7 +21,7 @@ exports[`<Navigation /> renders correctly 1`] = `
       className="sc-htpNat iaJVDJ"
     >
       <a
-        className="sc-ifAKCX iysrLI"
+        className="sc-ifAKCX jkMENd"
         href="https://github.com/andy-hook/ten-blocks"
         onClick={[Function]}
         target="_blank"
