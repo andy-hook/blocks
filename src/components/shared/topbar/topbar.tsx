@@ -14,17 +14,7 @@ import { generateBlockNumberFromStaticRange } from "@utils"
 const Topbar: React.FunctionComponent = memo(() => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
-
-  useScrollPosition(({ prevPos, currPos }) => {
-    const canHideTopbar = currPos.y > prevPos.y
-    const canShowTopbar = currPos.y <= prevPos.y
-
-    if (canHideTopbar) {
-      // console.log("hide topbar")
-    } else if (canShowTopbar) {
-      // console.log("show topbar")
-    }
-  })
+  const [topbarScrolled, setTopbarScrolled] = useState(false)
 
   function toggleTheme() {
     themeType === "light"
@@ -38,13 +28,25 @@ const Topbar: React.FunctionComponent = memo(() => {
     )
   }
 
+  useScrollPosition(({ currPos }) => {
+    const scrollThreshhold = 200
+    const scrollMoreThan = currPos.y > scrollThreshhold
+    const scrolledLessThan = currPos.y < scrollThreshhold
+
+    if (scrollMoreThan) {
+      setTopbarScrolled(true)
+    } else if (scrolledLessThan) {
+      setTopbarScrolled(false)
+    }
+  })
+
   // Generate random number on initial render
   useEffect(() => {
     generateRandomBlockNumber()
   }, [])
 
   return (
-    <TopbarContainer>
+    <TopbarContainer darken={topbarScrolled}>
       <TopbarNavList />
 
       <TopbarControls>
@@ -52,18 +54,18 @@ const Topbar: React.FunctionComponent = memo(() => {
           <Icon name="shuffle" />
         </TopbarThemeSwitch>
 
-        <TopbarGithub
+        <TopbarShuffle
           to={`/block/${randomBlockNumber}`}
           onClick={generateRandomBlockNumber}
         >
           <Icon name="shuffle" />
-        </TopbarGithub>
+        </TopbarShuffle>
       </TopbarControls>
     </TopbarContainer>
   )
 })
 
-const TopbarContainer = styled.div`
+const TopbarContainer = styled.div<{ darken: boolean }>`
   ${typeSizeBaseLg}
 
   position: fixed;
@@ -79,7 +81,7 @@ const TopbarContainer = styled.div`
 
   z-index: ${layout.zIndex.high};
 
-  background-color: ${themeTone(100)};
+  background-color: ${props => (props.darken ? themeTone(100) : "transparent")};
 `
 
 const TopbarNavList = styled(NavList)`
@@ -102,7 +104,7 @@ const TopbarControls = styled.div`
 
 const TopbarThemeSwitch = styled.button``
 
-const TopbarGithub = styled(Link)`
+const TopbarShuffle = styled(Link)`
   margin-left: ${layout.scale[5]};
 `
 
