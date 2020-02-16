@@ -73,6 +73,10 @@ const ListLinkStyle = css`
   &.active {
     color: ${themeForeground("extraHigh")};
   }
+
+  &:hover {
+    color: ${themeForeground("high")};
+  }
 `
 
 const ListItemLink = styled(Link)`

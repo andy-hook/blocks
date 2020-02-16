@@ -15,7 +15,6 @@ const Page: React.FunctionComponent<Props> = memo(({ children }) => (
 ))
 
 export const PageContent = styled.div`
-  padding-top: ${layout.scale[16]};
   padding-bottom: ${layout.scale[14]};
 `
 

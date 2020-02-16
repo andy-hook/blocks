@@ -8,6 +8,8 @@ import Gutter from "@components/shared/gutter/gutter"
 import Limiter from "@components/shared/limiter/limiter"
 import Block from "@components/shared/block/block"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
+import styled from "styled-components"
+import { layout } from "@style/design-tokens"
 
 interface Props {
   path: string
@@ -78,12 +80,18 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
       <Page>
         <Gutter>
           <Limiter size="large">
-            <Block blockData={blockData.data} />
+            <BlockContainer>
+              <Block blockData={blockData.data} />
+            </BlockContainer>
           </Limiter>
         </Gutter>
       </Page>
     )
   }
 )
+
+const BlockContainer = styled.div`
+  padding-top: ${layout.scale[14]};
+`
 
 export default BlockSingle
