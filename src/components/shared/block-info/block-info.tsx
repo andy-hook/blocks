@@ -2,7 +2,7 @@ import React, { memo } from "react"
 import styled from "styled-components"
 import BlockInfoRow from "./block-info-row/block-info-row"
 import { appearance } from "@style/design-tokens"
-import { themeForeground } from "@style/theme"
+import { themeForeground, themeBrand } from "@style/theme"
 import Panel from "@components/shared/panel/panel"
 
 interface Props {
@@ -30,54 +30,78 @@ const BlockInfo: React.FunctionComponent<Props> = memo(
     miner,
   }) => {
     return (
-      <Panel yPadding="lg" xPadding="lg">
+      <InfoPanel yPadding="lg" xPadding="lg">
         <InfoList>
-          <Row name="Size" value={size} loading={loading} skeletonWidth="sm" />
-          <Row
+          <InfoRow
+            name="Size"
+            value={size}
+            loading={loading}
+            skeletonWidth="sm"
+          />
+          <InfoRow
             name="Timestamp"
             value={timestamp}
             loading={loading}
             skeletonWidth="md"
           />
-          <Row
+          <InfoRow
             name="Miner"
             value={miner}
             loading={loading}
             skeletonWidth="md"
           />
-          <Row
+          <InfoRow
             name="Difficulty"
             value={difficulty}
             loading={loading}
             skeletonWidth="md"
           />
-          <Row
+          <InfoRow
             name="Total Difficulty"
             value={totalDifficulty}
             loading={loading}
             skeletonWidth="lg"
           />
-          <Row
+          <InfoRow
             name="Gas Used"
             value={gasUsed}
             loading={loading}
             skeletonWidth="md"
           />
-          <Row
+          <InfoRow
             name="Gas Limit"
             value={gasLimit}
             loading={loading}
             skeletonWidth="sm"
           />
         </InfoList>
-      </Panel>
+      </InfoPanel>
     )
   }
 )
 
+const InfoPanel = styled(Panel)`
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: ${themeBrand()};
+
+    height: ${appearance.borderThickness.thickest};
+    width: 100%;
+  }
+`
+
 const InfoList = styled.ul``
 
-const Row = styled(BlockInfoRow)`
+const InfoRow = styled(BlockInfoRow)`
   &:first-child {
     padding-top: 0;
   }
