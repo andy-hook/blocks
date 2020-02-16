@@ -10,3 +10,4 @@ export type Icons =
   | "shuffle"
   | "dark-mode"
   | "light-mode"
+  | "blocks"
