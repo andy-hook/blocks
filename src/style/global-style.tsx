@@ -92,6 +92,10 @@ const Global = createGlobalStyle`
     padding: 0;
     background: none;
     cursor: pointer;
+
+    &[disabled] {
+      cursor: default;
+    }
   }
 
 

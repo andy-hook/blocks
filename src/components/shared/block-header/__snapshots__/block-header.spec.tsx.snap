@@ -31,7 +31,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
     </div>
   </a>
   <header
-    className="sc-fjdhpX wAbRy"
+    className="sc-fjdhpX TtzaS"
   >
     <div
       className="sc-cSHVUG hRXcfM"
@@ -50,10 +50,16 @@ exports[`<BlockHeader /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-ifAKCX cFlEyZ sc-kAzzGY dBGQmE"
+      className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
     >
       <button
         className="sc-EHOje klPAPL"
+        disabled={false}
       >
         <div
           className="sc-bZQynM GNSbg"
@@ -63,6 +69,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
       </button>
       <button
         className="sc-EHOje fbAsfT"
+        disabled={false}
       >
         <div
           className="sc-bZQynM GNSbg"

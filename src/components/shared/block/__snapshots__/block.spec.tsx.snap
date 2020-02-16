@@ -34,7 +34,7 @@ exports[`<Block /> renders correctly 1`] = `
       </div>
     </a>
     <header
-      className="sc-fjdhpX wAbRy"
+      className="sc-fjdhpX TtzaS"
     >
       <div
         className="sc-cSHVUG hRXcfM"
@@ -61,10 +61,16 @@ exports[`<Block /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-ifAKCX cFlEyZ sc-kAzzGY dBGQmE"
+        className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
+        style={
+          Object {
+            "opacity": 0.2,
+          }
+        }
       >
         <button
           className="sc-EHOje klPAPL"
+          disabled={true}
         >
           <div
             className="sc-bZQynM GNSbg"
@@ -74,6 +80,7 @@ exports[`<Block /> renders correctly 1`] = `
         </button>
         <button
           className="sc-EHOje fbAsfT"
+          disabled={true}
         >
           <div
             className="sc-bZQynM GNSbg"

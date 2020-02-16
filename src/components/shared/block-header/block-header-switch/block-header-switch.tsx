@@ -7,34 +7,62 @@ import {
 } from "@style/typography"
 import { themeForeground, themeBrand, isTheme } from "@style/theme"
 import classNames from "classnames"
+import { animated, useSpring } from "react-spring"
 
 interface Props {
   onDetailsClick?: () => void
   onTransactionsClick?: () => void
   trxVisible: boolean
   className?: string
-  visible?: boolean
+  disabled?: boolean
 }
 
 const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
-  ({ onDetailsClick, onTransactionsClick, trxVisible, className }) => {
+  ({
+    onDetailsClick,
+    onTransactionsClick,
+    trxVisible,
+    className,
+    disabled = false,
+  }) => {
+    const showSpring = { mass: 1, tension: 250, friction: 50 }
+
+    const animatedEntrance = useSpring({
+      opacity: disabled ? 0.2 : 1,
+      config: showSpring,
+    })
+
     return (
-      <Container className={classNames("", className)}>
-        <SwitchButton onClick={onDetailsClick} active={!trxVisible}>
+      <SwitchContainer
+        className={classNames("", className)}
+        style={animatedEntrance}
+      >
+        <SwitchButton
+          onClick={onDetailsClick}
+          active={!trxVisible}
+          disabled={disabled}
+        >
           <SwitchButtonText>Details</SwitchButtonText>
         </SwitchButton>
-        <SwitchButton onClick={onTransactionsClick} active={trxVisible}>
+        <SwitchButton
+          onClick={onTransactionsClick}
+          active={trxVisible}
+          disabled={disabled}
+        >
           <SwitchButtonText>Transactions</SwitchButtonText>
         </SwitchButton>
-      </Container>
+      </SwitchContainer>
     )
   }
 )
 
-const Container = styled.div``
-
 const activeStyle = css`
   background-color: ${themeBrand()};
+`
+
+const SwitchContainer = styled(animated.div)`
+  display: flex;
+  justify-content: flex-end;
 `
 
 const SwitchButton = styled.button<{ active: boolean }>`
