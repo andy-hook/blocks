@@ -5,8 +5,9 @@ import styled, { css } from "styled-components"
 import { setBaseCropAndLineHeight, typeDisplayBold } from "@style/typography"
 import { Link } from "gatsby"
 import { themeText } from "@style/theme"
-import { type } from "@style/design-tokens"
+import { type, layout } from "@style/design-tokens"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
+import { mq } from "@style/media-queries"
 
 interface Props {
   className?: string
@@ -38,14 +39,17 @@ const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
 
 const Container = styled.nav``
 
-const itemPadding = "1em"
-
 const List = styled.ul`
   ${typeDisplayBold}
 
   display: flex;
-  margin-right: -${itemPadding};
-  margin-left: -${itemPadding};
+  margin: -${layout.scale[2]};
+  font-size: ${type.scale[3]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[4]};
+    margin: -${layout.scale[4]};
+  `}
 `
 
 const ListItem = styled.li`
@@ -60,7 +64,11 @@ const ListLinkStyle = css`
   display: block;
   color: ${themeText(1000)};
 
-  padding: ${itemPadding};
+  padding: ${layout.scale[2]};
+
+  ${mq.greaterThan("topLap")`
+    padding: ${layout.scale[4]};
+  `}
 
   &.active {
     color: ${themeText(400)};
