@@ -11,19 +11,18 @@ import { Link } from "gatsby"
 import { generateBlockNumberFromStaticRange } from "@utils"
 import { useSpring, animated } from "react-spring"
 
-{
-  /* <animated.div style={props}>I will fade in</animated.div> */
-}
-
 const Topbar: React.FunctionComponent = memo(() => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
   const [topbarScrolled, setTopbarScrolled] = useState(false)
-  const animateBrandMark = useSpring({
-    opacity: topbarScrolled ? 1 : 0,
+  const animateMarkMove = useSpring({
     transform: topbarScrolled
       ? `translate3d(0rem,0,0)`
       : `translate3d(-${layout.scale[11]},0,0)`,
+  })
+
+  const animateTopbarBg = useSpring({
+    opacity: topbarScrolled ? 1 : 0,
   })
 
   function toggleTheme() {
@@ -56,15 +55,18 @@ const Topbar: React.FunctionComponent = memo(() => {
   }, [])
 
   return (
-    <TopbarContainer darken={topbarScrolled}>
+    <TopbarContainer>
       {/* Left navigation */}
       <TopbarMainNav>
-        <animated.div style={animateBrandMark}>
+        <animated.div style={animateMarkMove}>
           <TopbarBrandMark to="/">
             <Icon name="blocks" />
           </TopbarBrandMark>
         </animated.div>
-        <TopbarNavList />
+
+        <animated.div style={animateMarkMove}>
+          <TopbarNavList />
+        </animated.div>
       </TopbarMainNav>
 
       {/* Right controls */}
@@ -80,11 +82,12 @@ const Topbar: React.FunctionComponent = memo(() => {
           <Icon name="shuffle" />
         </TopbarShuffle>
       </TopbarControls>
+      <TopbarContainerBg style={animateTopbarBg} />
     </TopbarContainer>
   )
 })
 
-const TopbarContainer = styled.div<{ darken: boolean }>`
+const TopbarContainer = styled.div`
   position: fixed;
   display: flex;
 
@@ -96,20 +99,36 @@ const TopbarContainer = styled.div<{ darken: boolean }>`
 
   z-index: ${layout.zIndex.high};
 
-  background-color: ${props => (props.darken ? themeTone(100) : "transparent")};
-
   padding: ${layout.scale[6]} ${layout.scale[6]};
 
   ${mq.greaterThan("topLap")`
-    padding: ${layout.scale[6]} ${layout.scale[8]};
+    padding: ${layout.scale[7]} ${layout.scale[8]};
   `}
+`
+
+const TopbarContainerBg = styled(animated.div)`
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: ${themeTone(100)};
+
+  z-index: ${layout.zIndex.floor};
 `
 
 const TopbarMainNav = styled.div`
   position: relative;
   display: flex;
 
+  overflow: hidden;
+
   align-items: center;
+
+  z-index: ${layout.zIndex.low};
 `
 
 const TopbarBrandMark = styled(Link)`
@@ -119,7 +138,15 @@ const TopbarBrandMark = styled(Link)`
 
   color: ${themeText(100)};
 
-  font-size: ${type.scale[7]};
+  font-size: ${type.scale[6]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[7]};
+  `}
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[8]};
+  `}
 
   &::after {
     content: "";
@@ -145,6 +172,7 @@ const TopbarNavList = styled(NavList)`
 `
 
 const TopbarControls = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -159,6 +187,8 @@ const TopbarControls = styled.div`
   ${mq.greaterThan("topWide")`
     font-size: ${type.scale[8]};
   `}
+
+  z-index: ${layout.zIndex.low};
 `
 
 const TopbarThemeSwitch = styled.button``
