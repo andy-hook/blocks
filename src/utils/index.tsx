@@ -2,7 +2,7 @@
  * App global constants live here until I make an effort to put them
  * in a more suitable place.
  */
-export const BLOCK_COUNT = 20
+export const BLOCK_COUNT = 16
 export const USE_MAINNET = true
 export const SUMMARY_MAX_TRANSACTIONS = 60
 export const SHUFFLE_MIN_RANGE = 100

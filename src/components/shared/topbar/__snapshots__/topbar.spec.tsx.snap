@@ -2,23 +2,91 @@
 
 exports[`<Topbar /> renders correctly 1`] = `
 <div
-  className="sc-gzVnrw bKsdra"
+  className="sc-gzVnrw hkfFDC"
+  style={
+    Object {
+      "opacity": 0,
+      "transform": "translate3d(0,-5rem,0)",
+    }
+  }
 >
   <div
-    className="sc-dnqmqq jeURPe"
+    className="sc-htoDjs clSpNh"
   >
     <div
-      className="sc-gZMcBi gomqR"
-      style={
-        Object {
-          "opacity": 0,
-          "transform": "translate3d(-5rem,0,0)",
-        }
-      }
+      className="sc-iwsKbI kkVzut"
     >
-      <a
-        className="sc-iwsKbI iMMNvL"
-        href="/"
+      <div
+        className="sc-gqjmRU heJvZy"
+        style={
+          Object {
+            "opacity": 0,
+            "transform": "translate3d(-5rem,0,0)",
+          }
+        }
+      >
+        <a
+          className="sc-gZMcBi ijHXEV"
+          href="/"
+        >
+          <div
+            className="sc-EHOje foslyy"
+          >
+            <svg
+              className="sc-bZQynM jYytzR"
+            >
+              <use
+                xlinkHref="/icon-sprite.svg#blocks"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "transform": "translate3d(-5rem,0,0)",
+          }
+        }
+      >
+        <nav
+          className="sc-bdVaJa bDWFJH sc-VigVT hucas"
+        >
+          <ul
+            className="sc-bwzfXH iPhcok"
+          >
+            <li
+              className="sc-htpNat iaJVDJ"
+            >
+              <a
+                className="sc-bxivhb iUcbWs"
+                href="/"
+              >
+                Latest blocks
+              </a>
+            </li>
+            <li
+              className="sc-htpNat iaJVDJ"
+            >
+              <a
+                className="sc-ifAKCX kdWyHd"
+                href="https://github.com/andy-hook/ten-blocks"
+                onClick={[Function]}
+                target="_blank"
+              >
+                Github
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div
+      className="sc-jTzLTM vrVLp"
+    >
+      <button
+        className="sc-fjdhpX hsDKpW"
+        onClick={[Function]}
       >
         <div
           className="sc-EHOje foslyy"
@@ -27,95 +95,37 @@ exports[`<Topbar /> renders correctly 1`] = `
             className="sc-bZQynM jYytzR"
           >
             <use
-              xlinkHref="/icon-sprite.svg#blocks"
+              xlinkHref="/icon-sprite.svg#light-mode"
+            />
+          </svg>
+        </div>
+      </button>
+      <a
+        className="sc-jzJRlG ikkuKx"
+        href="/block/undefined"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-EHOje foslyy"
+        >
+          <svg
+            className="sc-bZQynM jYytzR"
+          >
+            <use
+              xlinkHref="/icon-sprite.svg#shuffle"
             />
           </svg>
         </div>
       </a>
     </div>
     <div
+      className="sc-dnqmqq jnoPwI"
       style={
         Object {
-          "transform": "translate3d(-5rem,0,0)",
+          "opacity": 0,
         }
       }
-    >
-      <nav
-        className="sc-bdVaJa bDWFJH sc-gqjmRU djYRQy"
-      >
-        <ul
-          className="sc-bwzfXH iPhcok"
-        >
-          <li
-            className="sc-htpNat iaJVDJ"
-          >
-            <a
-              className="sc-bxivhb iUcbWs"
-              href="/"
-            >
-              Latest blocks
-            </a>
-          </li>
-          <li
-            className="sc-htpNat iaJVDJ"
-          >
-            <a
-              className="sc-ifAKCX kdWyHd"
-              href="https://github.com/andy-hook/ten-blocks"
-              onClick={[Function]}
-              target="_blank"
-            >
-              Github
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    />
   </div>
-  <div
-    className="sc-VigVT fYcKfG"
-  >
-    <button
-      className="sc-jTzLTM bWujvB"
-      onClick={[Function]}
-    >
-      <div
-        className="sc-EHOje foslyy"
-      >
-        <svg
-          className="sc-bZQynM jYytzR"
-        >
-          <use
-            xlinkHref="/icon-sprite.svg#light-mode"
-          />
-        </svg>
-      </div>
-    </button>
-    <a
-      className="sc-fjdhpX gGnaWq"
-      href="/block/undefined"
-      onClick={[Function]}
-    >
-      <div
-        className="sc-EHOje foslyy"
-      >
-        <svg
-          className="sc-bZQynM jYytzR"
-        >
-          <use
-            xlinkHref="/icon-sprite.svg#shuffle"
-          />
-        </svg>
-      </div>
-    </a>
-  </div>
-  <div
-    className="sc-htoDjs cqwzct"
-    style={
-      Object {
-        "opacity": 0,
-      }
-    }
-  />
 </div>
 `;

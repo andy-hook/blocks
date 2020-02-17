@@ -20,14 +20,26 @@ const Topbar: React.FunctionComponent = memo(() => {
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
   const [topbarScrolled, setTopbarScrolled] = useState(false)
 
-  const animateMarkMove = useSpring({
+  const animateTopbarEntrance = useSpring({
+    from: {
+      opacity: 0,
+      transform: `translate3d(0,-5rem,0)`,
+    },
+    to: {
+      opacity: 1,
+      transform: `translate3d(0rem,0,0)`,
+    },
+    config: { mass: 1, tension: 175, friction: 30 },
+  })
+
+  const animateMarkShow = useSpring({
     opacity: topbarScrolled ? 1 : 0,
     transform: topbarScrolled
       ? `translate3d(0rem,0,0)`
       : `translate3d(-${layout.scale[11]},0,0)`,
   })
 
-  const animateNavkMove = useSpring({
+  const animateNavShow = useSpring({
     transform: topbarScrolled
       ? `translate3d(0rem,0,0)`
       : `translate3d(-${layout.scale[11]},0,0)`,
@@ -70,49 +82,54 @@ const Topbar: React.FunctionComponent = memo(() => {
   }, [])
 
   return (
-    <TopbarContainer>
-      {/* Left navigation */}
-      <TopbarMainNav>
-        <TopbarBrandPositioner style={animateMarkMove}>
-          <TopbarBrandMark to="/">
-            <Icon name="blocks" />
-          </TopbarBrandMark>
-        </TopbarBrandPositioner>
+    <TopbarFixer style={animateTopbarEntrance}>
+      <TopbarContainer>
+        {/* Left navigation */}
+        <TopbarMainNav>
+          <TopbarBrandPositioner style={animateMarkShow}>
+            <TopbarBrandMark to="/">
+              <Icon name="blocks" />
+            </TopbarBrandMark>
+          </TopbarBrandPositioner>
 
-        <animated.div style={animateNavkMove}>
-          <TopbarNavList />
-        </animated.div>
-      </TopbarMainNav>
+          <animated.div style={animateNavShow}>
+            <TopbarNavList />
+          </animated.div>
+        </TopbarMainNav>
 
-      {/* Right controls */}
-      <TopbarControls>
-        <TopbarThemeSwitch onClick={toggleTheme}>
-          <Icon name={themeType === "light" ? "dark-mode" : "light-mode"} />
-        </TopbarThemeSwitch>
+        {/* Right controls */}
+        <TopbarControls>
+          <TopbarThemeSwitch onClick={toggleTheme}>
+            <Icon name={themeType === "light" ? "dark-mode" : "light-mode"} />
+          </TopbarThemeSwitch>
 
-        <TopbarShuffle
-          to={`/block/${randomBlockNumber}`}
-          onClick={generateRandomBlockNumber}
-        >
-          <Icon name="shuffle" />
-        </TopbarShuffle>
-      </TopbarControls>
-      <TopbarContainerBg style={animateTopbarBg} />
-    </TopbarContainer>
+          <TopbarShuffle
+            to={`/block/${randomBlockNumber}`}
+            onClick={generateRandomBlockNumber}
+          >
+            <Icon name="shuffle" />
+          </TopbarShuffle>
+        </TopbarControls>
+        <TopbarContainerBg style={animateTopbarBg} />
+      </TopbarContainer>
+    </TopbarFixer>
   )
 })
 
-const TopbarContainer = styled.div`
+const TopbarFixer = styled(animated.div)`
   position: fixed;
-  display: flex;
-
-  justify-content: space-between;
 
   top: 0;
   left: 0;
   width: 100%;
 
   z-index: ${layout.zIndex.high};
+`
+
+const TopbarContainer = styled.div`
+  display: flex;
+
+  justify-content: space-between;
 
   padding: ${layout.scale[6]} ${layout.scale[6]};
 
