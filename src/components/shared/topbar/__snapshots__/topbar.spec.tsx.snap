@@ -95,13 +95,13 @@ exports[`<Topbar /> renders correctly 1`] = `
             className="sc-bZQynM jYytzR"
           >
             <use
-              xlinkHref="/icon-sprite.svg#light-mode"
+              xlinkHref="/icon-sprite.svg#dark-mode"
             />
           </svg>
         </div>
       </button>
       <a
-        className="sc-jzJRlG ikkuKx"
+        className="sc-jzJRlG fwgwkd"
         href="/block/undefined"
         onClick={[Function]}
       >

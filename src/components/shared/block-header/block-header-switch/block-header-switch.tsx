@@ -47,6 +47,7 @@ const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
 
 const activeStyle = css`
   background-color: ${themeBrand()};
+  color: white;
 `
 
 const SwitchContainer = styled.div`

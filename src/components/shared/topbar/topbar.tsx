@@ -147,7 +147,7 @@ const TopbarContainerBg = styled(animated.div)`
   width: 100%;
   height: 100%;
 
-  background-color: ${isTheme("dark", themeLayer("low"), "blue")};
+  background-color: ${isTheme("dark", themeLayer("low"), themeLayer("high"))};
 
   z-index: ${layout.zIndex.floor};
 `
@@ -247,7 +247,7 @@ const TopbarShuffle = styled(Link)`
   }
 
   ${mq.greaterThan("topLap")`
-    margin-left: ${layout.scale[6]};
+    margin-left: ${layout.scale[7]};
   `}
 `
 

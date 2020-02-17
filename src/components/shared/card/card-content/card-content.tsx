@@ -71,7 +71,7 @@ const CardContent: React.FunctionComponent<Props> = memo(
             buttonType="secondary"
             to={`/block/${blockNumber}`}
           >
-            More Details
+            More details
           </CardButton>
         </CardActions>
       </Panel>
