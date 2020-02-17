@@ -36,9 +36,9 @@ export const darkThemeToneShadeAlpha = (
 ) => createHsla(darkThemeBrandShades[value], alpha)
 
 const lightThemeBrandShades: BrandShades = {
-  light: "4, 96%, 72%",
-  base: "354, 89%, 64%",
-  dark: "346, 91%, 56%",
+  light: "185, 99%, 47%",
+  base: "190, 98%, 45%",
+  dark: "193, 96%, 37%",
 }
 
 export const lightThemeToneShade = (value: BrandShadeNames) =>
@@ -66,9 +66,9 @@ export const darkThemeLayerAlpha = (value: LayerNames, alpha: number) =>
 /* Light theme app layers
 ------------------------------------------------- */
 const lightThemeLayers: Layers = {
-  low: "20, 13%, 11%",
-  medium: "20, 13%, 14%",
-  high: "20, 13%, 15%",
+  low: "223, 21%, 94%",
+  medium: "220, 16%, 96%",
+  high: "220, 16%, 97%",
 }
 
 export const lightThemeLayer = (value: LayerNames) =>
@@ -100,11 +100,11 @@ export const darkThemeForegroundAlpha = (value: GreyNames, alpha: number) =>
 
 // Text
 const lightThemeForegroundHSL: Greys = {
-  extraLow: "240, 17%, 2%",
-  low: "240, 15%, 5%",
-  medium: "240, 15%, 11%",
-  high: "240, 10%, 14%",
-  extraHigh: "240, 8%, 18%",
+  extraLow: "206, 8%, 93%",
+  low: "206, 8%, 85%",
+  medium: "206, 10%, 50%",
+  high: "206, 11%, 35%",
+  extraHigh: "215, 13%, 2%",
 }
 
 export const lightThemeForeground = (value: GreyNames) =>

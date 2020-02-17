@@ -1,7 +1,12 @@
 import React, { memo } from "react"
 import styled from "styled-components"
 import Icon from "@components/shared/icon/icon"
-import { themeForeground, themeForegroundAlpha } from "@style/theme"
+import {
+  themeForeground,
+  themeForegroundAlpha,
+  isTheme,
+  themeLayerAlpha,
+} from "@style/theme"
 import classNames from "classnames"
 import { appearance } from "@style/design-tokens"
 
@@ -21,19 +26,29 @@ const MarkContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1em;
-  /* padding: 0.44em; */
 
   width: 1.95em;
   height: 1.95em;
 
   border-radius: ${appearance.radius.circle};
 
-  border: ${appearance.borderThickness.thick} solid ${themeForeground("low")};
+  border: ${appearance.borderThickness.thick} solid
+    ${isTheme("dark", themeForeground("low"), themeForeground("medium"))};
 
   background: linear-gradient(
     135deg,
-    ${themeForegroundAlpha("extraLow", 1)} 0%,
-    ${themeForegroundAlpha("extraLow", 0)} 75%
+    ${isTheme(
+        "dark",
+        themeForegroundAlpha("extraLow", 1),
+        themeLayerAlpha("high", 1)
+      )}
+      0%,
+    ${isTheme(
+        "dark",
+        themeForegroundAlpha("extraLow", 0),
+        themeLayerAlpha("high", 0)
+      )}
+      75%
   );
 `
 

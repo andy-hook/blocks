@@ -80,13 +80,13 @@ describe("darkThemeForegroundAlpha", () => {
 
 describe("lightThemeLayer", () => {
   test("should return correct value as hsl string", () => {
-    expect(lightThemeLayer("medium")).toEqual("hsl(20, 13%, 14%)")
+    expect(lightThemeLayer("medium")).toEqual("hsl(220, 16%, 96%)")
   })
 })
 
 describe("lightThemeLayerAlpha", () => {
   test("should return correct value as hsla string", () => {
-    expect(lightThemeLayerAlpha("medium", 50)).toEqual("hsla(20, 13%, 14%,50)")
+    expect(lightThemeLayerAlpha("medium", 50)).toEqual("hsla(220, 16%, 96%,50)")
   })
 })
 

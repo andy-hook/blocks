@@ -2,7 +2,7 @@
 
 exports[`<CardContent /> renders correctly 1`] = `
 <div
-  className="sc-kGXeez hiAgIS"
+  className="sc-kGXeez eSJJdN"
 >
   <div
     className="sc-EHOje ebxVeD sc-kpOJdX jbuTzW"
@@ -748,7 +748,7 @@ exports[`<CardContent /> renders correctly 1`] = `
         <span
           className="sc-chPdSV dFswRj"
         >
-          More Details
+          More details
         </span>
       </div>
     </a>

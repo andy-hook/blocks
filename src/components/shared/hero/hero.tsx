@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import Mark from "@components/shared/mark/mark"
 import Title from "@components/shared/title/title"
-import { themeForeground } from "@style/theme"
+import { themeForeground, isTheme } from "@style/theme"
 import RemoveWidow from "@components/shared/remove-widow/remove-widow"
 import { mq } from "@style/media-queries"
 
@@ -92,7 +92,7 @@ const HeroMarkRings = styled.div`
     opacity: 0.45;
 
     border: ${appearance.borderThickness.regular} solid
-      ${themeForeground("extraLow")};
+      ${isTheme("dark", themeForeground("extraLow"), themeForeground("low"))};
 
     border-radius: ${appearance.radius.circle};
   }

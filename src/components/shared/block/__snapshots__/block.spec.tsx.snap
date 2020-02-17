@@ -11,7 +11,7 @@ exports[`<Block /> renders correctly 1`] = `
 >
   <article>
     <div
-      className="sc-gzVnrw cnjFid sc-jTzLTM iziihJ"
+      className="sc-gzVnrw gHSksH sc-jTzLTM iziihJ"
     >
       <a
         className="sc-iwsKbI iaTFxL"
@@ -73,7 +73,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
         >
           <button
-            className="sc-EHOje iUvvWR"
+            className="sc-EHOje fTwiRz"
             disabled={true}
           >
             <div
@@ -97,7 +97,7 @@ exports[`<Block /> renders correctly 1`] = `
     </div>
     <main>
       <div
-        className="sc-gzVnrw cnjFid sc-kGXeez jrWVKz"
+        className="sc-gzVnrw gHSksH sc-kGXeez jrWVKz"
       >
         <ul
           className="sc-kpOJdX kAzjOl"

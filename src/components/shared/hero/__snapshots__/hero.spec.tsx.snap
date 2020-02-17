@@ -11,7 +11,7 @@ exports[`<Hero /> renders correctly 1`] = `
       className="sc-htoDjs iAdwLg"
     >
       <div
-        className="sc-htpNat cccRjm sc-dnqmqq iAZwbl"
+        className="sc-htpNat iLPYrw sc-dnqmqq iAZwbl"
       >
         <div
           className="sc-bdVaJa dqBkPn sc-bxivhb cphRIN"
@@ -26,10 +26,10 @@ exports[`<Hero /> renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="sc-iwsKbI sc-gqjmRU kzWRCO"
+        className="sc-iwsKbI sc-gqjmRU dCJbIQ"
       />
       <div
-        className="sc-iwsKbI sc-gZMcBi jcvUqK"
+        className="sc-iwsKbI sc-gZMcBi fzrSht"
       />
     </div>
     <h1>

@@ -7,7 +7,7 @@ interface ContextState {
   setThemeTypeStatus: (type: ThemeName) => void
 }
 
-const initialValue: ThemeName = "dark"
+const initialValue: ThemeName = "light"
 
 export const ThemeSwitchContext = createContext<ContextState>({
   themeType: initialValue,

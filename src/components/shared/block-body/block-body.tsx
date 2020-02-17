@@ -27,7 +27,7 @@ const BlockBody: React.FunctionComponent<Props> = memo(
       ) : (
         <BlockEmptyTransactions yPadding="lg">
           <Title size="sm" intensity="high">
-            This block doesn't have any transactions!
+            This block doesn't have any transactions&nbsp;&nbsp;&nbsp;:(
           </Title>
         </BlockEmptyTransactions>
       )
