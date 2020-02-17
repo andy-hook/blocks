@@ -6,10 +6,10 @@ import "@style/fonts.css"
 import MediaQueryProvider from "@providers/media-query-provider/media-query-provider"
 import Web3Provider from "@web3/web3-provider"
 import Web3BlocksDataProvider from "@web3/web3-blocks-data-provider"
-import { BLOCK_COUNT, USE_MAINNET } from "@utils"
 import LoadingStatusProvider from "@providers/loading-status-provider/loading-status-provider"
 import ThemeSwitchProvider from "@providers/theme-switch-provider/theme-switch-provider"
 import LoadingIndicator from "@components/shared/loading-indicator/loading-indicator"
+import { USE_MAINNET, BLOCK_COUNT } from "../config"
 
 const Layout: React.FunctionComponent = memo(({ children }) => {
   return (

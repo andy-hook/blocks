@@ -1,14 +1,4 @@
 /**
- * App global constants live here until I make an effort to put them
- * in a more suitable place.
- */
-export const BLOCK_COUNT = 16
-export const USE_MAINNET = true
-export const SUMMARY_MAX_TRANSACTIONS = 60
-export const SHUFFLE_MIN_RANGE = 100
-export const SHUFFLE_MAX_RANGE = 7000000
-
-/**
  * Returns a string with which the last two words are joined via unicode non-breaking space
  */
 export function removeWidow(str: string): string {

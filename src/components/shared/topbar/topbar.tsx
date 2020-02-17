@@ -8,11 +8,8 @@ import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-sw
 import useScrollPosition from "@hooks/scroll-position"
 import { themeForeground, themeLayer, isTheme } from "@style/theme"
 import { Link } from "gatsby"
-import {
-  generateBlockNumberFromStaticRange,
-  SHUFFLE_MIN_RANGE,
-  SHUFFLE_MAX_RANGE,
-} from "@utils"
+import { SHUFFLE_MIN_RANGE, SHUFFLE_MAX_RANGE } from "../../../config"
+import { generateBlockNumberFromStaticRange } from "@utils"
 import { useSpring, animated } from "react-spring"
 
 const Topbar: React.FunctionComponent = memo(() => {
