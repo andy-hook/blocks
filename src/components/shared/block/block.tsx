@@ -11,7 +11,7 @@ interface Props {
 
 const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
   const [trxVisible, setTrxVisible] = useState<boolean>(false)
-  const animateMarkMove = useSpring({
+  const animateBlockEntrance = useSpring({
     from: {
       opacity: 0,
       transform: `translate3d(0,5rem,0)`,
@@ -48,7 +48,7 @@ const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
   }
 
   return (
-    <animated.div style={animateMarkMove}>
+    <animated.div style={animateBlockEntrance}>
       <article>
         {renderHeaderAsSkeletonOrPopulated()}
         <main>
