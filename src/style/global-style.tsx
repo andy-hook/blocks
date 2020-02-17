@@ -1,7 +1,7 @@
 import React from "react"
 import { Normalize } from "styled-normalize"
 import { createGlobalStyle } from "styled-components"
-import { themeLayer } from "./theme"
+import { themeLayer, themeForeground } from "./theme"
 import { layout } from "./design-tokens"
 
 const Global = createGlobalStyle`
@@ -81,6 +81,13 @@ const Global = createGlobalStyle`
     &::before,
     &::after {
       box-sizing: inherit;
+    }
+  }
+
+  button,
+  a {
+    &:focus {
+      outline: 1px dotted ${themeForeground("medium")};
     }
   }
 

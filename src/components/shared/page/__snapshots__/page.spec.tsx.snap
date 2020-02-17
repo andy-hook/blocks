@@ -79,6 +79,7 @@ Array [
                       className="sc-kGXeez fYBllT"
                       href="https://www.instagram.com/andyhooky/"
                       onClick={[Function]}
+                      target="_blank"
                     >
                       Instagram
                     </a>
@@ -95,6 +96,7 @@ Array [
                       className="sc-kGXeez fYBllT"
                       href="https://twitter.com/andy_hook"
                       onClick={[Function]}
+                      target="_blank"
                     >
                       Twitter
                     </a>
@@ -111,6 +113,7 @@ Array [
                       className="sc-kGXeez fYBllT"
                       href="https://dribbble.com/andyhook"
                       onClick={[Function]}
+                      target="_blank"
                     >
                       Dribbble
                     </a>
@@ -127,6 +130,7 @@ Array [
                       className="sc-kGXeez fYBllT"
                       href="https://github.com/andy-hook"
                       onClick={[Function]}
+                      target="_blank"
                     >
                       Github
                     </a>
@@ -143,6 +147,7 @@ Array [
                       className="sc-kGXeez fYBllT"
                       href="https://www.linkedin.com/in/andyahook"
                       onClick={[Function]}
+                      target="_blank"
                     >
                       Linkedin
                     </a>

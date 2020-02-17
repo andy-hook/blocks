@@ -72,7 +72,9 @@ const FooterSocialItem: React.FunctionComponent<{
 }> = memo(({ href, children }) => (
   <FooterSocialListItem>
     <Label intensity="low">
-      <FooterSocialLink href={href}>{children}</FooterSocialLink>
+      <FooterSocialLink href={href} target="_blank">
+        {children}
+      </FooterSocialLink>
     </Label>
   </FooterSocialListItem>
 ))
