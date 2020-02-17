@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> renders correctly 1`] = `
+<div
+  className="sc-bZQynM fVrVZQ"
+>
+  <div
+    className="sc-gzVnrw ibZhkv"
+  >
+    <div
+      className="sc-htoDjs iAdwLg"
+    >
+      <div
+        className="sc-htpNat cccRjm sc-dnqmqq iAZwbl"
+      >
+        <div
+          className="sc-bdVaJa dqBkPn sc-bxivhb cphRIN"
+        >
+          <svg
+            className="sc-bwzfXH kdIDyY"
+          >
+            <use
+              xlinkHref="/icon-sprite.svg#blocks"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-iwsKbI sc-gqjmRU kzWRCO"
+      />
+      <div
+        className="sc-iwsKbI sc-gZMcBi jcvUqK"
+      />
+    </div>
+    <div
+      className="sc-ifAKCX gJoLYy sc-VigVT bTnWfT"
+      size="sm"
+    >
+      A minimal way to explore Ethereum blocks inside your web browser.
+    </div>
+  </div>
+</div>
+`;

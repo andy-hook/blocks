@@ -5,7 +5,7 @@ const email = `hello@andy-hook.co.uk`
 module.exports = {
   siteMetadata: {
     title: `Ten Blocks – Explore ten Ethereum blocks`,
-    description: `A minimal way to explore ten Ethereum blocks inside your web browser.`,
+    description: `A minimal way to explore Ethereum blocks inside your web browser.`,
     author: `@Andy_Hook`,
     email: email,
     defaultTwitterImage: `/images/social/twitter-preview.png`,

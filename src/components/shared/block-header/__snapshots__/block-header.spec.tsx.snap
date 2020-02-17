@@ -27,7 +27,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
       <span
         className="sc-gqjmRU krxleO"
       >
-        All Blocks
+        Latest blocks
       </span>
     </div>
   </a>
@@ -44,7 +44,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
          Transactions
       </div>
       <div
-        className="sc-bdVaJa iZkTwA"
+        className="sc-bdVaJa epBYsd"
         size="lg"
       >
         # 

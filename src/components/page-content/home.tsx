@@ -5,6 +5,7 @@ import Page from "@components/shared/page/page"
 import Limiter from "@components/shared/limiter/limiter"
 import Gutter from "@components/shared/gutter/gutter"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
+import Hero from "@components/shared/hero/hero"
 
 const Home: React.FunctionComponent = memo(() => {
   const { data } = useWeb3BlocksDataContext()
@@ -18,6 +19,7 @@ const Home: React.FunctionComponent = memo(() => {
 
   return (
     <Page>
+      <Hero />
       <Gutter>
         <Limiter size="large">
           <BlockList blockData={data} />

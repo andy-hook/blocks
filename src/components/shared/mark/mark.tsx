@@ -16,8 +16,15 @@ const Mark: React.FunctionComponent<Props> = memo(({ className }) => (
 ))
 
 const MarkContainer = styled.div`
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
   font-size: 1em;
-  padding: 0.44em;
+  /* padding: 0.44em; */
+
+  width: 1.95em;
+  height: 1.95em;
 
   border-radius: ${appearance.radius.circle};
 

@@ -21,7 +21,7 @@ const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
       <List>
         <ListItem>
           <ListItemLink to="/" activeClassName="active">
-            Latest Blocks
+            Latest blocks
           </ListItemLink>
         </ListItem>
         <ListItem>
