@@ -1,5 +1,5 @@
 {
-  "name": "ten-blocks.andyhook.dev",
+  "name": "blocks.andyhook.dev",
   "private": true,
   "description": "A minimal way to explore Ethereum blocks inside your web browser.",
   "version": "0.1.0",
@@ -114,9 +114,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andy-hook/ten-blocks"
+    "url": "https://github.com/andy-hook/blocks"
   },
   "bugs": {
-    "url": "https://github.com/andy-hook/ten-blocks/issues"
+    "url": "https://github.com/andy-hook/blocks/issues"
   }
 }

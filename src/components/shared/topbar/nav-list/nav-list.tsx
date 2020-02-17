@@ -26,7 +26,7 @@ const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
         </ListItem>
         <ListItem>
           <ListItemLinkOutbound
-            href="https://github.com/andy-hook/ten-blocks"
+            href="https://github.com/andy-hook/blocks"
             target="_blank"
           >
             View on Github
