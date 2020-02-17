@@ -1,6 +1,10 @@
-## Overview
+## Blocks
 
 Blocks is a simple, minimal Ethereum blocks explorer designed to make the display of data visually appealing and fun to use. It's built on [Gatsby](https://www.gatsbyjs.org/), written in [Typescript](https://www.typescriptlang.org/) and styled with [Styled Components](https://styled-components.com/). Motion is handled by [React Spring](https://www.react-spring.io/) and tests run on [Jest](https://jestjs.io/).
+
+### Prerequisites
+
+You'll need to have the MetaMask extension installed and be logged in to view blocks, you can get it [here](https://metamask.io/).
 
 ### Demo
 
