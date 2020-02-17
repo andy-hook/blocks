@@ -10,13 +10,15 @@ exports[`<CardContent /> renders correctly 1`] = `
   >
      Transactions
   </div>
-  <div
-    className="sc-VigVT gmvQdD"
-    size="md"
-  >
-    # 
-    100
-  </div>
+  <h2>
+    <div
+      className="sc-VigVT gmvQdD"
+      size="md"
+    >
+      # 
+      100
+    </div>
+  </h2>
   <div
     className="sc-htpNat cjijsP"
   >

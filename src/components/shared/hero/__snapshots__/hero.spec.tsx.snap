@@ -32,12 +32,14 @@ exports[`<Hero /> renders correctly 1`] = `
         className="sc-iwsKbI sc-gZMcBi jcvUqK"
       />
     </div>
-    <div
-      className="sc-ifAKCX gJoLYy sc-VigVT bTnWfT"
-      size="sm"
-    >
-      A minimal way to explore Ethereum blocks inside your web browser.
-    </div>
+    <h1>
+      <div
+        className="sc-ifAKCX gJoLYy sc-VigVT bTnWfT"
+        size="sm"
+      >
+        A minimal way to explore Ethereum blocks inside your web browser.
+      </div>
+    </h1>
   </div>
 </div>
 `;

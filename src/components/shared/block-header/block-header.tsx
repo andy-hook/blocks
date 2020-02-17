@@ -63,14 +63,17 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
             >
               {renderSupTitleContent()}
             </SupTitle>
-            <Title
-              intensity="high"
-              size="lg"
-              loading={loading}
-              skeletonWidth="md"
-            >
-              {renderTitleContent()}
-            </Title>
+
+            <h1>
+              <Title
+                intensity="high"
+                size="lg"
+                loading={loading}
+                skeletonWidth="md"
+              >
+                {renderTitleContent()}
+              </Title>
+            </h1>
           </DetailCouple>
 
           {/* Switch between details and transactions */}

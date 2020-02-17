@@ -74,7 +74,7 @@ exports[`<Topbar /> renders correctly 1`] = `
                 onClick={[Function]}
                 target="_blank"
               >
-                Github
+                View on Github
               </a>
             </li>
           </ul>
