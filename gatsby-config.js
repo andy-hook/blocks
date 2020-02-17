@@ -63,8 +63,8 @@ module.exports = {
         name: `blocks.andyhook.dev`,
         short_name: `blocks`,
         start_url: `/`,
-        background_color: `#0D0D0F`,
-        theme_color: `#651BC7`,
+        background_color: `#171C1F`,
+        theme_color: `#F55161`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
@@ -113,15 +113,15 @@ module.exports = {
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // {
-    //   resolve: `gatsby-plugin-offline`,
-    //   options: {
-    //     globPatterns: ["**/*.{js,svg,html,css}"],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        globPatterns: ["**/*.{js,svg,html,css}"],
+      },
+    },
 
     // Temporarily disable service worker for local dev
-    `gatsby-plugin-remove-serviceworker`,
+    // `gatsby-plugin-remove-serviceworker`,
 
     // Netlify integration and redirects
     `gatsby-plugin-netlify`,
