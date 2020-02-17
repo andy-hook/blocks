@@ -18,11 +18,13 @@ const Hero: React.FunctionComponent = memo(() => (
       </HeroMarkDecoration>
 
       {/* Title */}
-      <HeroTitle size="sm" intensity="low">
-        <RemoveWidow>
-          A minimal way to explore Ethereum blocks inside your web browser.
-        </RemoveWidow>
-      </HeroTitle>
+      <h1>
+        <HeroTitle size="sm" intensity="low">
+          <RemoveWidow>
+            A minimal way to explore Ethereum blocks inside your web browser.
+          </RemoveWidow>
+        </HeroTitle>
+      </h1>
     </HeroInner>
   </HeroContainer>
 ))

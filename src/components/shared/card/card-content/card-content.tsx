@@ -46,9 +46,12 @@ const CardContent: React.FunctionComponent<Props> = memo(
         <TransactionsCountLabel intensity="low" loading={loading}>
           {transactionCount} Transactions
         </TransactionsCountLabel>
-        <Title intensity="high" loading={loading} skeletonWidth="md">
-          &#x23;&nbsp;{blockNumber}
-        </Title>
+
+        <h2>
+          <Title intensity="high" loading={loading} skeletonWidth="md">
+            &#x23;&nbsp;{blockNumber}
+          </Title>
+        </h2>
 
         {/* Transactions */}
         {renderTrxAsPlaceholderOrPopulated(transactions)}

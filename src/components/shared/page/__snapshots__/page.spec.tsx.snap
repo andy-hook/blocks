@@ -3,20 +3,155 @@
 exports[`<Page /> renders correctly 1`] = `
 Array [
   <div
-    className="sc-EHOje lcasSO"
+    className="sc-kpOJdX gSHhOa"
   >
     Content
   </div>,
   <footer
-    className="sc-ifAKCX bmhxHF"
+    className="sc-gqjmRU mOwno"
   >
     <div
       className="sc-bdVaJa hOvSxO"
     >
       <div
-        className="sc-htpNat kYCaBa"
+        className="sc-bxivhb fImOLt"
       >
-        I am a footer
+        <div
+          className="sc-VigVT eQDVnF"
+        >
+          <div>
+            <div
+              className="sc-jTzLTM bTvezP"
+            >
+              <div
+                className="sc-iwsKbI hFFlcC"
+                size="lg"
+              >
+                Let’s build something awesome together
+              </div>
+            </div>
+            <div
+              className="sc-fjdhpX hdHalG"
+            >
+              <div
+                className="sc-bZQynM bBdmKv sc-jzJRlG dcsJFX"
+              >
+                <div
+                  className="sc-ifAKCX eSCdkv sc-gzVnrw lmyzrt"
+                >
+                  <svg
+                    className="sc-EHOje fEbmfa"
+                  >
+                    <use
+                      xlinkHref="/icon-sprite.svg#blocks"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                className="sc-htoDjs iADxuV"
+                size="lg"
+              >
+                Start by
+                 
+                <a
+                  className="sc-cSHVUG eYwLKr"
+                  href="mailto:hello@andy-hook.co.uk"
+                >
+                  saying hello
+                </a>
+              </div>
+            </div>
+            <div
+              className="sc-kAzzGY fMzmXI"
+            >
+              <ul
+                className="sc-chPdSV cyyuJt"
+              >
+                <li
+                  className="sc-kgoBCf kVSTZj"
+                >
+                  <div
+                    className="sc-iwsKbI bITgpr"
+                    size="md"
+                  >
+                    <a
+                      className="sc-kGXeez fYBllT"
+                      href="https://www.instagram.com/andyhooky/"
+                      onClick={[Function]}
+                    >
+                      Instagram
+                    </a>
+                  </div>
+                </li>
+                <li
+                  className="sc-kgoBCf kVSTZj"
+                >
+                  <div
+                    className="sc-iwsKbI bITgpr"
+                    size="md"
+                  >
+                    <a
+                      className="sc-kGXeez fYBllT"
+                      href="https://twitter.com/andy_hook"
+                      onClick={[Function]}
+                    >
+                      Twitter
+                    </a>
+                  </div>
+                </li>
+                <li
+                  className="sc-kgoBCf kVSTZj"
+                >
+                  <div
+                    className="sc-iwsKbI bITgpr"
+                    size="md"
+                  >
+                    <a
+                      className="sc-kGXeez fYBllT"
+                      href="https://dribbble.com/andyhook"
+                      onClick={[Function]}
+                    >
+                      Dribbble
+                    </a>
+                  </div>
+                </li>
+                <li
+                  className="sc-kgoBCf kVSTZj"
+                >
+                  <div
+                    className="sc-iwsKbI bITgpr"
+                    size="md"
+                  >
+                    <a
+                      className="sc-kGXeez fYBllT"
+                      href="https://github.com/andy-hook"
+                      onClick={[Function]}
+                    >
+                      Github
+                    </a>
+                  </div>
+                </li>
+                <li
+                  className="sc-kgoBCf kVSTZj"
+                >
+                  <div
+                    className="sc-iwsKbI bITgpr"
+                    size="md"
+                  >
+                    <a
+                      className="sc-kGXeez fYBllT"
+                      href="https://www.linkedin.com/in/andyahook"
+                      onClick={[Function]}
+                    >
+                      Linkedin
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>,

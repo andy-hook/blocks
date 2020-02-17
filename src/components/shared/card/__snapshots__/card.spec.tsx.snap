@@ -14,13 +14,15 @@ exports[`<Card /> renders correctly 1`] = `
       34
        Transactions
     </div>
-    <div
-      className="sc-VigVT gmvQdD"
-      size="md"
-    >
-      # 
-      7250672
-    </div>
+    <h2>
+      <div
+        className="sc-VigVT gmvQdD"
+        size="md"
+      >
+        # 
+        7250672
+      </div>
+    </h2>
     <div
       className="sc-htpNat cjijsP"
     >

@@ -56,16 +56,18 @@ exports[`<Block /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-bdVaJa epBYsd"
-            size="lg"
-          >
+          <h1>
             <div
-              className="sc-bwzfXH iSURLW"
+              className="sc-bdVaJa epBYsd"
+              size="lg"
             >
-               
+              <div
+                className="sc-bwzfXH iSURLW"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h1>
         </div>
         <div
           className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"

@@ -23,13 +23,15 @@ exports[`<BlockList /> renders correctly 1`] = `
             34
              Transactions
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
-            # 
-            7250672
-          </div>
+          <h2>
+            <div
+              className="sc-VigVT gmvQdD"
+              size="md"
+            >
+              # 
+              7250672
+            </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -787,13 +789,15 @@ exports[`<BlockList /> renders correctly 1`] = `
             34
              Transactions
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
-            # 
-            7250672
-          </div>
+          <h2>
+            <div
+              className="sc-VigVT gmvQdD"
+              size="md"
+            >
+              # 
+              7250672
+            </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -1554,16 +1558,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -2342,16 +2348,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -3130,16 +3138,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -3918,16 +3928,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -4706,16 +4718,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -5494,16 +5508,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -6282,16 +6298,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -7070,16 +7088,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -7858,16 +7878,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -8646,16 +8668,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -9434,16 +9458,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -10222,16 +10248,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -11010,16 +11038,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
@@ -11798,16 +11828,18 @@ exports[`<BlockList /> renders correctly 1`] = `
                
             </div>
           </div>
-          <div
-            className="sc-VigVT gmvQdD"
-            size="md"
-          >
+          <h2>
             <div
-              className="sc-jTzLTM kGThBU"
+              className="sc-VigVT gmvQdD"
+              size="md"
             >
-               
+              <div
+                className="sc-jTzLTM kGThBU"
+              >
+                 
+              </div>
             </div>
-          </div>
+          </h2>
           <div
             className="sc-htpNat cjijsP"
           >
