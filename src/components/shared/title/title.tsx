@@ -82,7 +82,7 @@ const Text = styled.div<{
   intensity: Intensity
   size: Size
 }>`
-  ${setDisplayCropAndLineHeight(type.lineHeight.display.regular)}
+  ${setDisplayCropAndLineHeight(type.lineHeight.display.tight)}
   ${typeDisplayBold}
   ${props => textSize[props.size]};
 
@@ -104,7 +104,7 @@ const Skeleton = styled.div<{
   width: 100%;
 
   &:before {
-    ${setDisplayPlaceholderCrop(type.lineHeight.display.regular)}
+    ${setDisplayPlaceholderCrop(type.lineHeight.display.tight)}
 
     content: '';
 

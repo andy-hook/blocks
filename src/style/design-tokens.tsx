@@ -32,7 +32,7 @@ const lineHeight = {
   },
   display: {
     regular: 1.4,
-    tight: 1.15,
+    tight: 1.3,
     longform: 1.6,
   },
 }

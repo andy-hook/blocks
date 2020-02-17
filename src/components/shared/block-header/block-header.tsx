@@ -50,7 +50,7 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
     return (
       <HeaderPanel yPadding="lg" xPadding="lg">
         <Button to="/" buttonType="tertiary" icon="arrow-left">
-          All Blocks
+          Latest blocks
         </Button>
         <Header showAsTrx={trxVisible}>
           {/* Title with details */}

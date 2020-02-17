@@ -53,7 +53,7 @@ exports[`<Topbar /> renders correctly 1`] = `
               className="sc-bxivhb iUcbWs"
               href="/"
             >
-              Latest Blocks
+              Latest blocks
             </a>
           </li>
           <li

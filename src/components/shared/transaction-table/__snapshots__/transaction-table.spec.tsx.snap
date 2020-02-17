@@ -62,7 +62,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-EHOje dWOHvV"
+          className="sc-EHOje iohNtG"
           size="xs"
         />
       </td>
@@ -129,7 +129,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-EHOje dWOHvV"
+          className="sc-EHOje iohNtG"
           size="xs"
         />
       </td>

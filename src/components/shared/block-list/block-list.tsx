@@ -30,6 +30,7 @@ const BlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
 const gridItemOffsetAmount = layout.scale[16]
 
 const Grid = styled.ul`
+  position: relative;
   display: grid;
 
   min-width: 0;
@@ -37,6 +38,8 @@ const Grid = styled.ul`
   grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-template-rows: auto;
   grid-gap: ${layout.scale[9]};
+
+  z-index: ${layout.zIndex.low};
 
   ${mq.greaterThan("topLap")`
     grid-template-columns: repeat(2, minmax(0, 1fr));
