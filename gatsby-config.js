@@ -4,7 +4,7 @@ const email = `hello@andy-hook.co.uk`
 
 module.exports = {
   siteMetadata: {
-    title: `Ten Blocks – Explore ten Ethereum blocks`,
+    title: `Blocks | Explore the latest Ethereum blocks`,
     description: `A minimal way to explore Ethereum blocks inside your web browser.`,
     author: `@Andy_Hook`,
     email: email,
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ten-blocks.andyhook.dev`,
-        short_name: `ten-blocks`,
+        name: `blocks.andyhook.dev`,
+        short_name: `blocks`,
         start_url: `/`,
         background_color: `#0D0D0F`,
         theme_color: `#651BC7`,
