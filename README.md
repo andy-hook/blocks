@@ -21,6 +21,10 @@ or
 npm install
 ```
 
+## Configuration
+
+See configuration constants inside `src/config` to manage some aspects of data display.
+
 ## Developing
 
 To start local development:

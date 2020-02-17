@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { themeForeground } from "@style/theme"
 import { mq } from "@style/media-queries"
-import { SUMMARY_MAX_TRANSACTIONS } from "@utils"
+import { SUMMARY_MAX_TRANSACTIONS } from "../../../../config"
 
 interface Props {
   transactions?: Web3TransactionData[]

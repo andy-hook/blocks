@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Web3BlockData } from "model"
 import Card from "@components/shared/card/card"
 import { layout } from "@style/design-tokens"
-import { BLOCK_COUNT } from "@utils"
+import { BLOCK_COUNT } from "../../../config"
 import { mq } from "@style/media-queries"
 
 interface Props {
