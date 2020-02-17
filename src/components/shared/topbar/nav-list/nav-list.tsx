@@ -70,12 +70,12 @@ const ListLinkStyle = css`
     padding: ${layout.scale[4]};
   `}
 
-  &.active {
-    color: ${themeForeground("extraHigh")};
-  }
-
   &:hover {
     color: ${themeForeground("high")};
+  }
+
+  &.active {
+    color: ${themeForeground("extraHigh")};
   }
 `
 

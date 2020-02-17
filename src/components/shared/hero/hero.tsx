@@ -89,7 +89,7 @@ const HeroMarkRings = styled.div`
     margin-top: -0.5em;
     margin-left: -0.5em;
 
-    opacity: 0.45;
+    opacity: 0.75;
 
     border: ${appearance.borderThickness.regular} solid
       ${isTheme("dark", themeForeground("extraLow"), themeForeground("low"))};
