@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from "react"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import {
   typeBaseSemibold,
   setBaseCropAndLineHeight,
@@ -14,7 +14,7 @@ import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
 type Size = "sm" | "md" | "lg"
-export type SkeletonWidth = "sm" | "md" | "lg"
+export type SkeletonWidth = "sm" | "md" | "lg" | "xl"
 
 interface Props {
   loading?: boolean
@@ -56,6 +56,7 @@ const skeletonWidths = {
   sm: "4em",
   md: "7em",
   lg: "10em",
+  xl: "20em",
 }
 
 const textSize = {
@@ -91,6 +92,16 @@ const Text = styled.div<{
   ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
 `
 
+const pulseAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+`
+
 const Skeleton = styled.div<{
   skeletonWidth: SkeletonWidth
   intensity: Intensity
@@ -106,18 +117,27 @@ const Skeleton = styled.div<{
   ${props =>
     props.skeletonWidth && `max-width: ${skeletonWidths[props.skeletonWidth]}`};
 
-  &:before {
+  &::after,
+  &::before {
     ${setBasePlaceholderCrop(type.lineHeight.base.regular)}
 
-    content: '';
+    content: "";
 
     position: absolute;
     border-radius: ${appearance.radius.base};
     left: 0;
 
     width: 100%;
+  }
 
+  &::before {
     background-color: ${props => skeletonIntensity[props.intensity]};
+  }
+
+  &::after {
+    background-color: white;
+    animation: ${pulseAnimation} 0.5s linear alternate infinite;
+    transform: translate3d(0, 0, 0);
   }
 `
 

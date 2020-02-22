@@ -1,6 +1,6 @@
 import React, { memo } from "react"
 import { Web3TransactionData } from "model"
-import styled, { css } from "styled-components"
+import styled, { css, keyframes } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import { themeForeground, themeBrand } from "@style/theme"
@@ -51,8 +51,37 @@ const hasValue = css`
   ${gradient}
 `
 
+const pulseAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+`
+
 const isLoading = css`
+  position: relative;
   background-color: ${themeForeground("extraLow")};
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    border-radius: ${appearance.radius.circle};
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    animation: ${pulseAnimation} 0.5s linear alternate infinite;
+
+    background-color: white;
+
+    transform: translate3d(0, 0, 0);
+  }
 `
 
 const PipOuter = styled.div`
