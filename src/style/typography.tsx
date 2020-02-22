@@ -137,3 +137,15 @@ export const typeSizeDisplayLg = css`
     font-size: ${type.scale[10]};
   `}
 `
+
+export const typeSizeDisplayXl = css`
+  font-size: ${type.scale[9]};
+
+  ${mq.greaterThan("topLap")`
+    font-size: ${type.scale[10]};
+  `}
+
+  ${mq.greaterThan("topWide")`
+    font-size: ${type.scale[11]};
+  `}
+`
