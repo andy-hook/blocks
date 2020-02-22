@@ -148,7 +148,7 @@ const Header = styled.header<{ showAsTrx: boolean }>`
 
     z-index: ${layout.zIndex.floor};
 
-    opacity: 0.02;
+    opacity: 0.03;
   }
 `
 

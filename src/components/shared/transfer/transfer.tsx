@@ -36,7 +36,7 @@ const TransferValue = styled(TransferPip)`
 const TransferIcon = styled.div`
   /* font-size is used to scale icons for responsive flexibility */
   font-size: ${type.scale[5]};
-  color: ${themeForeground("extraLow")};
+  color: ${themeForeground("low")};
 
   padding-left: ${layout.scale[2]};
   padding-right: ${layout.scale[2]};

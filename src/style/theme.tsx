@@ -66,9 +66,9 @@ export const darkThemeLayerAlpha = (value: LayerNames, alpha: number) =>
 /* Light theme app layers
 ------------------------------------------------- */
 const lightThemeLayers: Layers = {
-  low: "223, 21%, 94%",
+  low: "223, 16%, 95%",
   medium: "220, 16%, 96%",
-  high: "220, 16%, 97%",
+  high: "220, 16%, 98%",
 }
 
 export const lightThemeLayer = (value: LayerNames) =>
@@ -100,7 +100,7 @@ export const darkThemeForegroundAlpha = (value: GreyNames, alpha: number) =>
 
 // Text
 const lightThemeForegroundHSL: Greys = {
-  extraLow: "206, 8%, 93%",
+  extraLow: "206, 8%, 90%",
   low: "206, 8%, 85%",
   medium: "206, 10%, 50%",
   high: "206, 11%, 35%",
