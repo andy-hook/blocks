@@ -59,6 +59,7 @@ const typeScale = {
   8: rem("36px"),
   9: rem("48px"),
   10: rem("64px"),
+  11: rem("94px"),
 }
 
 const spacingScale = {

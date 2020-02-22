@@ -8,13 +8,14 @@ import {
   setDisplayPlaceholderCrop,
   typeDisplayBold,
   typeSizeDisplayXs,
+  typeSizeDisplayXl,
 } from "@style/typography"
 import { type, appearance } from "@style/design-tokens"
 import { isTheme, themeForeground } from "@style/theme"
 import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
-type Size = "xs" | "sm" | "md" | "lg"
+type Size = "xs" | "sm" | "md" | "lg" | "xl"
 type SkeletonWidth = "sm" | "md" | "lg"
 
 interface Props {
@@ -64,6 +65,7 @@ const textSize = {
   sm: typeSizeDisplaySm,
   md: typeSizeDisplayMd,
   lg: typeSizeDisplayLg,
+  xl: typeSizeDisplayXl,
 }
 
 const textIntensity = {
