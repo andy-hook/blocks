@@ -1,7 +1,7 @@
 {
   "name": "blocks.andyhook.dev",
   "private": true,
-  "description": "A minimal way to explore Ethereum blocks inside your web browser.",
+  "description": "The minimal way to explore Ethereum blocks inside your web browser.",
   "version": "0.1.0",
   "author": "Andy Hook <hello@andy-hook.co.uk>",
   "dependencies": {

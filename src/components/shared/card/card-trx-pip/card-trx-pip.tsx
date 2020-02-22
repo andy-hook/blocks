@@ -33,13 +33,22 @@ const empty = css`
     ${themeForeground("extraLow")};
 `
 
+const gradient = css`
+  background: linear-gradient(
+    135deg,
+    ${themeBrand("light")} 0%,
+    ${themeBrand()} 90%
+  );
+`
+
 const zeroValue = css`
-  background-color: ${themeBrand()};
+  ${gradient}
+
   opacity: 0.15;
 `
 
 const hasValue = css`
-  background-color: ${themeBrand()};
+  ${gradient}
 `
 
 const isLoading = css`

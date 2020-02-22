@@ -73,7 +73,7 @@ exports[`<Block /> renders correctly 1`] = `
           className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
         >
           <button
-            className="sc-EHOje fTwiRz"
+            className="sc-EHOje kzeUww"
             disabled={true}
           >
             <div

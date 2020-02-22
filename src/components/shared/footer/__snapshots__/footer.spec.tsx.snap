@@ -49,7 +49,7 @@ exports[`<Footer /> renders correctly 1`] = `
               Start by
                
               <a
-                className="sc-cSHVUG eYwLKr"
+                className="sc-cSHVUG fZNbwG"
                 href="mailto:hello@andy-hook.co.uk"
               >
                 saying hello

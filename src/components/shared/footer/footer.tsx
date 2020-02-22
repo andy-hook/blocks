@@ -156,7 +156,17 @@ const FooterMark = styled(Mark)`
 `
 
 const FooterMailto = styled.a`
-  color: ${themeBrand()};
+  background: linear-gradient(
+    135deg,
+    ${themeBrand("light")} 0%,
+    ${themeBrand()} 75%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: none;
 `
 
 const FooterSocial = styled.div`

@@ -36,7 +36,7 @@ exports[`<Card /> renders correctly 1`] = `
             className="sc-bdVaJa ldkUXY"
           >
             <div
-              className="sc-bwzfXH iEkxDb"
+              className="sc-bwzfXH dIGGHs"
             />
           </div>
         </li>
@@ -47,7 +47,7 @@ exports[`<Card /> renders correctly 1`] = `
             className="sc-bdVaJa ldkUXY"
           >
             <div
-              className="sc-bwzfXH iEkxDb"
+              className="sc-bwzfXH dIGGHs"
             />
           </div>
         </li>
