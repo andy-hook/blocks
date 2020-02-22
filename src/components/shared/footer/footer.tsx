@@ -2,10 +2,16 @@ import React, { memo } from "react"
 import Gutter from "../gutter/gutter"
 import Limiter from "../limiter/limiter"
 import styled, { css } from "styled-components"
-import { themeLayer, themeBrand, themeForeground } from "@style/theme"
+import {
+  themeLayer,
+  themeBrand,
+  themeForeground,
+  isTheme,
+  isLightTheme,
+} from "@style/theme"
 import Mark from "@components/shared/mark/mark"
 import Title from "@components/shared/title/title"
-import { layout } from "@style/design-tokens"
+import { layout, appearance } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { mq } from "@style/media-queries"
@@ -82,12 +88,20 @@ const FooterSocialItem: React.FunctionComponent<{
 const FooterContainer = styled.footer`
   padding-top: ${layout.scale[13]};
   padding-bottom: ${layout.scale[13]};
-  background-color: ${themeLayer("low")};
+
+  background-color: ${isTheme("dark", themeLayer("low"), themeLayer("low"))};
+
+  ${isLightTheme(
+    css`
+      border-top: ${appearance.borderThickness.regular} solid
+        ${themeForeground("low")};
+    `
+  )}
 
   ${mq.greaterThan("topWide")`
     padding-top: ${layout.scale[14]};
     padding-bottom: ${layout.scale[14]};
-  `}
+  `};
 `
 
 const FooterInner = styled.div`

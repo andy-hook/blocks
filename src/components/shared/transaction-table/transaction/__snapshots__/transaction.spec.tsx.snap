@@ -2,7 +2,7 @@
 
 exports[`<Transaction /> renders correctly 1`] = `
 <tr
-  className="sc-cSHVUG jHWoFg"
+  className="sc-cSHVUG csKTHO"
 >
   <td
     className="sc-bdVaJa sc-bwzfXH dfeDEW"
@@ -35,7 +35,7 @@ exports[`<Transaction /> renders correctly 1`] = `
         />
       </div>
       <div
-        className="sc-jTzLTM cpIzaT"
+        className="sc-jTzLTM jOJtzV"
       >
         <div
           className="sc-iwsKbI iUEoeV"

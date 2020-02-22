@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
-import { themeLayer, isTheme, themeForeground } from "@style/theme"
+import { themeLayer, isTheme, themeForegroundAlpha } from "@style/theme"
 
 type PaddingSize = "sm" | "md" | "lg"
 
@@ -84,9 +84,16 @@ function mimicPanelPadding({ xSize, ySize }: PanelSizes) {
   `
 }
 
-export const panelShadow = css`
-  box-shadow: 2rem 2rem 6rem 0
-    ${isTheme("dark", themeLayer("low"), themeForeground("low"))};
+const darkModeShadow = css`
+  box-shadow: 2rem 2rem 6rem 0 ${themeLayer("low")};
+`
+
+const lightModeShadow = css`
+  box-shadow: 0rem 0.2rem 0.3rem 0 ${themeForegroundAlpha("low", 0.5)};
+`
+
+const panelShadow = css`
+  ${isTheme("dark", darkModeShadow, lightModeShadow)};
 `
 
 // It's annoying to have to provide this but forwardAs isn't supported

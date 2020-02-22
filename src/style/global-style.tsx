@@ -2,7 +2,7 @@ import React from "react"
 import { Normalize } from "styled-normalize"
 import { createGlobalStyle } from "styled-components"
 import { themeLayer, themeForeground } from "./theme"
-import { layout } from "./design-tokens"
+import { layout, appearance } from "./design-tokens"
 
 const Global = createGlobalStyle`
 
@@ -87,7 +87,9 @@ const Global = createGlobalStyle`
   button,
   a {
     &:focus {
-      outline: 1px dotted ${themeForeground("medium")};
+      outline: ${appearance.borderThickness.regular} dotted ${themeForeground(
+  "medium"
+)};
     }
   }
 

@@ -11,13 +11,13 @@ exports[`<Topbar /> renders correctly 1`] = `
   }
 >
   <div
-    className="sc-htoDjs clSpNh"
+    className="sc-dnqmqq bGdiRR"
   >
     <div
-      className="sc-iwsKbI kkVzut"
+      className="sc-gZMcBi deQXuR"
     >
       <div
-        className="sc-gqjmRU heJvZy"
+        className="sc-VigVT iGAgPQ"
         style={
           Object {
             "opacity": 0,
@@ -26,7 +26,7 @@ exports[`<Topbar /> renders correctly 1`] = `
         }
       >
         <a
-          className="sc-gZMcBi ijHXEV"
+          className="sc-gqjmRU hEBXoI"
           href="/"
         >
           <div
@@ -50,7 +50,7 @@ exports[`<Topbar /> renders correctly 1`] = `
         }
       >
         <nav
-          className="sc-bdVaJa bDWFJH sc-VigVT hucas"
+          className="sc-bdVaJa bDWFJH sc-jTzLTM kokKzs"
         >
           <ul
             className="sc-bwzfXH iPhcok"
@@ -82,10 +82,10 @@ exports[`<Topbar /> renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-jTzLTM vrVLp"
+      className="sc-fjdhpX fZpvui"
     >
       <button
-        className="sc-fjdhpX hsDKpW"
+        className="sc-jzJRlG kMPbXY"
         onClick={[Function]}
       >
         <div
@@ -101,7 +101,7 @@ exports[`<Topbar /> renders correctly 1`] = `
         </div>
       </button>
       <a
-        className="sc-jzJRlG fwgwkd"
+        className="sc-cSHVUG edhiZa"
         href="/block/undefined"
         onClick={[Function]}
       >
@@ -119,7 +119,7 @@ exports[`<Topbar /> renders correctly 1`] = `
       </a>
     </div>
     <div
-      className="sc-dnqmqq jnoPwI"
+      className="sc-iwsKbI gHzBhB"
       style={
         Object {
           "opacity": 0,
@@ -127,5 +127,13 @@ exports[`<Topbar /> renders correctly 1`] = `
       }
     />
   </div>
+  <div
+    className="sc-htoDjs lgzucf"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  />
 </div>
 `;

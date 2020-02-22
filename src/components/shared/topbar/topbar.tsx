@@ -1,12 +1,18 @@
 import React, { memo, useState, useEffect } from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { mq } from "@style/media-queries"
 import NavList from "./nav-list/nav-list"
-import { layout, type } from "@style/design-tokens"
+import { layout, type, appearance } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
 import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
-import { themeForeground, themeLayer, isTheme } from "@style/theme"
+import {
+  themeForeground,
+  themeForegroundAlpha,
+  themeLayer,
+  isTheme,
+  isLightTheme,
+} from "@style/theme"
 import { Link } from "gatsby"
 import { SHUFFLE_MIN_RANGE, SHUFFLE_MAX_RANGE } from "../../../config"
 import { generateBlockNumberFromStaticRange } from "@utils"
@@ -109,6 +115,8 @@ const Topbar: React.FunctionComponent = memo(() => {
         </TopbarControls>
         <TopbarContainerBg style={animateTopbarBg} />
       </TopbarContainer>
+
+      <TopbarShadow style={animateTopbarBg} />
     </TopbarFixer>
   )
 })
@@ -121,6 +129,30 @@ const TopbarFixer = styled(animated.div)`
   width: 100%;
 
   z-index: ${layout.zIndex.high};
+`
+
+const shadow = css`
+  background: linear-gradient(
+    to bottom,
+    ${themeForegroundAlpha("high", 0.05)} 0%,
+    ${themeForegroundAlpha("high", 0)} 40%
+  );
+`
+
+const TopbarShadow = styled(animated.div)`
+  content: "";
+
+  position: absolute;
+
+  height: ${layout.scale[6]};
+  width: 100%;
+
+  bottom: -${layout.scale[6]};
+  left: 0;
+
+  ${isLightTheme(shadow)}
+
+  pointer-events: none;
 `
 
 const TopbarContainer = styled.div`
@@ -183,7 +215,7 @@ const TopbarBrandMark = styled(Link)`
     top: 50%;
     right: -${layout.scale[6]};
 
-    width: 1px;
+    width: ${appearance.borderThickness.regular};
     height: 75%;
 
     background-color: ${themeForeground("extraLow")};

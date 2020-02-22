@@ -1,14 +1,10 @@
 import React, { memo } from "react"
 import styled from "styled-components"
 import Icon from "@components/shared/icon/icon"
-import {
-  themeForeground,
-  themeForegroundAlpha,
-  isTheme,
-  themeLayerAlpha,
-} from "@style/theme"
+import { themeForeground, themeForegroundAlpha, isTheme } from "@style/theme"
 import classNames from "classnames"
 import { appearance } from "@style/design-tokens"
+import { rgba } from "polished"
 
 interface Props {
   className?: string
@@ -33,21 +29,12 @@ const MarkContainer = styled.div`
   border-radius: ${appearance.radius.circle};
 
   border: ${appearance.borderThickness.thick} solid
-    ${isTheme("dark", themeForeground("low"), themeForeground("medium"))};
+    ${isTheme("dark", themeForeground("low"), themeForeground("low"))};
 
   background: linear-gradient(
     135deg,
-    ${isTheme(
-        "dark",
-        themeForegroundAlpha("extraLow", 1),
-        themeLayerAlpha("high", 1)
-      )}
-      0%,
-    ${isTheme(
-        "dark",
-        themeForegroundAlpha("extraLow", 0),
-        themeLayerAlpha("high", 0)
-      )}
+    ${isTheme("dark", themeForegroundAlpha("extraLow", 1), rgba("white", 1))} 0%,
+    ${isTheme("dark", themeForegroundAlpha("extraLow", 0), rgba("white", 0))}
       75%
   );
 `
