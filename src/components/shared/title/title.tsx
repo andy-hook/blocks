@@ -58,6 +58,7 @@ const skeletonWidths = {
   sm: "4em",
   md: "7em",
   lg: "10em",
+  xl: "20em",
 }
 
 const textSize = {

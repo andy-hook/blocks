@@ -14,7 +14,7 @@ import classNames from "classnames"
 
 type Intensity = "low" | "medium" | "high"
 type Size = "sm" | "md" | "lg"
-export type SkeletonWidth = "sm" | "md" | "lg"
+export type SkeletonWidth = "sm" | "md" | "lg" | "xl"
 
 interface Props {
   loading?: boolean
@@ -56,6 +56,7 @@ const skeletonWidths = {
   sm: "4em",
   md: "7em",
   lg: "10em",
+  xl: "20em",
 }
 
 const textSize = {

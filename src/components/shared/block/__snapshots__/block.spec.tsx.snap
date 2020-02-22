@@ -147,7 +147,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb kEfYuL"
+                  className="sc-bxivhb hbOsFi"
                 >
                    
                 </div>
@@ -171,7 +171,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb kEfYuL"
+                  className="sc-bxivhb hTETsU"
                 >
                    
                 </div>
@@ -243,7 +243,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb kEfYuL"
+                  className="sc-bxivhb XhibV"
                 >
                    
                 </div>
@@ -267,7 +267,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb XhibV"
+                  className="sc-bxivhb kEfYuL"
                 >
                    
                 </div>
