@@ -42,13 +42,13 @@ const BlockInfo: React.FunctionComponent<Props> = memo(
             name="Timestamp"
             value={timestamp}
             loading={loading}
-            skeletonWidth="md"
+            skeletonWidth="lg"
           />
           <InfoRow
             name="Miner"
             value={miner}
             loading={loading}
-            skeletonWidth="md"
+            skeletonWidth="xl"
           />
           <InfoRow
             name="Difficulty"
@@ -66,13 +66,13 @@ const BlockInfo: React.FunctionComponent<Props> = memo(
             name="Gas Used"
             value={gasUsed}
             loading={loading}
-            skeletonWidth="md"
+            skeletonWidth="sm"
           />
           <InfoRow
             name="Gas Limit"
             value={gasLimit}
             loading={loading}
-            skeletonWidth="sm"
+            skeletonWidth="md"
           />
         </InfoList>
       </InfoPanel>

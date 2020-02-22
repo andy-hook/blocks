@@ -24,7 +24,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH ksEprg"
+            className="sc-bwzfXH pPGel"
           >
              
           </div>
@@ -48,7 +48,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH ilEEVv"
+            className="sc-bwzfXH bQhbsC"
           >
              
           </div>
@@ -72,7 +72,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH ilEEVv"
+            className="sc-bwzfXH bnnyOS"
           >
              
           </div>
@@ -96,7 +96,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH ilEEVv"
+            className="sc-bwzfXH dMyGjF"
           >
              
           </div>
@@ -120,7 +120,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH bCVTbn"
+            className="sc-bwzfXH bQhbsC"
           >
              
           </div>
@@ -144,7 +144,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH ilEEVv"
+            className="sc-bwzfXH pPGel"
           >
              
           </div>
@@ -168,7 +168,7 @@ exports[`<BlockBody /> renders correctly 1`] = `
           size="lg"
         >
           <div
-            className="sc-bwzfXH ksEprg"
+            className="sc-bwzfXH dMyGjF"
           >
              
           </div>
