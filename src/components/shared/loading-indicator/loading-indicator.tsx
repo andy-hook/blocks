@@ -76,7 +76,13 @@ const LoadingBar = styled.div`
   width: 100%;
   height: 100%;
 
-  background-color: ${themeBrand()};
+  background: linear-gradient(
+    to left,
+    ${themeBrand("light")} 0%,
+    ${themeBrand()} 10%
+  );
+
+  border-radius: ${appearance.radius.pill};
 `
 
 export default LoadingIndicator

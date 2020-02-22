@@ -22,7 +22,7 @@ export interface Theme {
 /* Brand colours
 ------------------------------------------------- */
 const darkThemeBrandShades: BrandShades = {
-  light: "4, 96%, 72%",
+  light: "16, 96%, 69%",
   base: "354, 89%, 64%",
   dark: "346, 91%, 56%",
 }
@@ -36,9 +36,9 @@ export const darkThemeToneShadeAlpha = (
 ) => createHsla(darkThemeBrandShades[value], alpha)
 
 const lightThemeBrandShades: BrandShades = {
-  light: "185, 99%, 47%",
-  base: "190, 98%, 45%",
-  dark: "193, 96%, 37%",
+  light: "281, 86%, 46%",
+  base: "259, 78%, 50%",
+  dark: "259, 70%, 35%",
 }
 
 export const lightThemeToneShade = (value: BrandShadeNames) =>

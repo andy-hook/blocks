@@ -5,7 +5,7 @@ exports[`<BlockHeaderSwitch /> renders correctly 1`] = `
   className="sc-bdVaJa bNDPWZ"
 >
   <button
-    className="sc-bwzfXH gCWzeM"
+    className="sc-bwzfXH jbsUVT"
     disabled={false}
     onClick={[Function]}
   >

@@ -46,7 +46,12 @@ const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
 )
 
 const activeStyle = css`
-  background-color: ${themeBrand()};
+  background: linear-gradient(
+    135deg,
+    ${themeBrand("light")} 0%,
+    ${themeBrand()} 100%
+  );
+
   color: white;
 `
 

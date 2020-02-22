@@ -21,7 +21,7 @@ const Hero: React.FunctionComponent = memo(() => (
       <h1>
         <HeroTitle size="sm" intensity="low">
           <RemoveWidow>
-            A minimal way to explore Ethereum blocks inside your web browser.
+            The minimal way to explore Ethereum blocks inside your web browser.
           </RemoveWidow>
         </HeroTitle>
       </h1>

@@ -89,7 +89,12 @@ const Row = styled.tr<{ hasValue: boolean }>`
   &::after {
     content: "";
 
-    background-color: ${themeBrand()};
+    background: linear-gradient(
+      to bottom,
+      ${themeBrand("light")} 0%,
+      ${themeBrand()} 100%
+    );
+
     position: absolute;
 
     left: 0;
