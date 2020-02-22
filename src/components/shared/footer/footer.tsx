@@ -11,7 +11,7 @@ import {
 } from "@style/theme"
 import Mark from "@components/shared/mark/mark"
 import Title from "@components/shared/title/title"
-import { layout } from "@style/design-tokens"
+import { layout, appearance } from "@style/design-tokens"
 import Label from "@components/shared/label/label"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { mq } from "@style/media-queries"
@@ -93,7 +93,8 @@ const FooterContainer = styled.footer`
 
   ${isLightTheme(
     css`
-      border-top: 1px solid ${themeForeground("low")};
+      border-top: ${appearance.borderThickness.regular} solid
+        ${themeForeground("low")};
     `
   )}
 

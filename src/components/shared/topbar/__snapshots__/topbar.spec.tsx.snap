@@ -95,7 +95,7 @@ exports[`<Topbar /> renders correctly 1`] = `
             className="sc-bZQynM jYytzR"
           >
             <use
-              xlinkHref="/icon-sprite.svg#dark-mode"
+              xlinkHref="/icon-sprite.svg#light-mode"
             />
           </svg>
         </div>

@@ -2,7 +2,7 @@ import React, { memo, useState, useEffect } from "react"
 import styled, { css } from "styled-components"
 import { mq } from "@style/media-queries"
 import NavList from "./nav-list/nav-list"
-import { layout, type } from "@style/design-tokens"
+import { layout, type, appearance } from "@style/design-tokens"
 import Icon from "@components/shared/icon/icon"
 import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
@@ -215,7 +215,7 @@ const TopbarBrandMark = styled(Link)`
     top: 50%;
     right: -${layout.scale[6]};
 
-    width: 1px;
+    width: ${appearance.borderThickness.regular};
     height: 75%;
 
     background-color: ${themeForeground("extraLow")};
