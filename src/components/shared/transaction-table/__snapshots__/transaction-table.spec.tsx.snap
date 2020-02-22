@@ -5,7 +5,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
   className="sc-kAzzGY busMyf"
 >
   <thead
-    className="sc-chPdSV lfZfmG"
+    className="sc-chPdSV knPHLE"
   >
     <tr
       className="sc-kgoBCf beOYFC"
@@ -56,7 +56,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
     className="sc-kGXeez htkide"
   >
     <tr
-      className="sc-cSHVUG hUHWen sc-kpOJdX brllvB"
+      className="sc-cSHVUG dnaafx sc-kpOJdX brllvB"
     >
       <td
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
@@ -89,7 +89,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
             />
           </div>
           <div
-            className="sc-jTzLTM cpIzaT"
+            className="sc-jTzLTM jOJtzV"
           >
             <div
               className="sc-iwsKbI iUEoeV"
@@ -123,7 +123,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
       </td>
     </tr>
     <tr
-      className="sc-cSHVUG hUHWen sc-kpOJdX brllvB"
+      className="sc-cSHVUG dnaafx sc-kpOJdX brllvB"
     >
       <td
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
@@ -156,7 +156,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
             />
           </div>
           <div
-            className="sc-jTzLTM cpIzaT"
+            className="sc-jTzLTM jOJtzV"
           >
             <div
               className="sc-iwsKbI iUEoeV"

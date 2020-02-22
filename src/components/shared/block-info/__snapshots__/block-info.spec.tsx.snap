@@ -2,7 +2,7 @@
 
 exports[`<BlockInfo /> renders correctly 1`] = `
 <div
-  className="sc-bZQynM dleEWh sc-gzVnrw egtCjV"
+  className="sc-bZQynM voXAZ sc-gzVnrw egtCjV"
 >
   <ul
     className="sc-htoDjs bZzhDu"

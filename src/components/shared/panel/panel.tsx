@@ -3,12 +3,7 @@ import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
-import {
-  themeLayer,
-  isTheme,
-  themeForeground,
-  themeForegroundAlpha,
-} from "@style/theme"
+import { themeLayer, isTheme, themeForegroundAlpha } from "@style/theme"
 
 type PaddingSize = "sm" | "md" | "lg"
 
