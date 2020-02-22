@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import {
   typeSizeDisplaySm,
   typeSizeDisplayMd,
@@ -95,16 +95,6 @@ const Text = styled.div<{
   ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
 `
 
-const pulseAnimation = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.2;
-  }
-`
-
 const Skeleton = styled.div<{
   skeletonWidth: SkeletonWidth
   intensity: Intensity
@@ -115,30 +105,22 @@ const Skeleton = styled.div<{
 
   width: 100%;
 
-  ${props =>
-    props.skeletonWidth && `max-width: ${skeletonWidths[props.skeletonWidth]}`};
+  &:before {
+    ${setDisplayPlaceholderCrop(type.lineHeight.display.tight)}
 
-  &::after,
-  &::before {
-    ${setDisplayPlaceholderCrop(type.lineHeight.base.regular)}
-
-    content: "";
+    content: '';
 
     position: absolute;
     border-radius: ${appearance.radius.base};
     left: 0;
 
     width: 100%;
-  }
 
-  &::before {
     background-color: ${props => skeletonIntensity[props.intensity]};
-  }
 
-  &::after {
-    background-color: white;
-    animation: ${pulseAnimation} 0.5s linear alternate infinite;
-    transform: translate3d(0, 0, 0);
+    ${props =>
+      props.skeletonWidth &&
+      `max-width: ${skeletonWidths[props.skeletonWidth]}`};
   }
 `
 

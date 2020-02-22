@@ -54,7 +54,7 @@ exports[`<Block /> renders correctly 1`] = `
               size="lg"
             >
               <div
-                className="sc-bxivhb dAdQUX"
+                className="sc-bxivhb hbOsFi"
               >
                  
               </div>
@@ -65,7 +65,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bwzfXH kfkKPr"
+                  className="sc-bwzfXH iSURLW"
                 >
                    
                 </div>
@@ -123,7 +123,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb csodad"
+                  className="sc-bxivhb XhibV"
                 >
                    
                 </div>
@@ -147,7 +147,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb dAdQUX"
+                  className="sc-bxivhb kEfYuL"
                 >
                    
                 </div>
@@ -171,7 +171,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb ifxlau"
+                  className="sc-bxivhb kEfYuL"
                 >
                    
                 </div>
@@ -195,7 +195,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb gTklWJ"
+                  className="sc-bxivhb kEfYuL"
                 >
                    
                 </div>
@@ -219,7 +219,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb dAdQUX"
+                  className="sc-bxivhb hbOsFi"
                 >
                    
                 </div>
@@ -243,7 +243,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb csodad"
+                  className="sc-bxivhb kEfYuL"
                 >
                    
                 </div>
@@ -267,7 +267,7 @@ exports[`<Block /> renders correctly 1`] = `
                 size="lg"
               >
                 <div
-                  className="sc-bxivhb gTklWJ"
+                  className="sc-bxivhb XhibV"
                 >
                    
                 </div>
