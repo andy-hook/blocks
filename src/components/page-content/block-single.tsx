@@ -10,6 +10,7 @@ import Block from "@components/shared/block/block"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
+import { mq } from "@style/media-queries"
 
 interface Props {
   path: string
@@ -91,7 +92,11 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
 )
 
 const BlockContainer = styled.div`
-  padding-top: ${layout.scale[14]};
+  padding-top: ${layout.scale[12]};
+
+  ${mq.greaterThan("topLap")`
+    padding-top: ${layout.scale[14]};
+  `}
 `
 
 export default BlockSingle

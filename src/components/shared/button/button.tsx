@@ -108,47 +108,6 @@ const primaryStyles = css`
   padding: ${layout.scale[4]} ${layout.scale[6]};
 
   text-shadow: ${appearance.textShadow.subtle};
-
-  ${mq.greaterThan("topWide")`
-    padding: ${layout.scale[5]} ${layout.scale[7]};
-  `}
-
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-    left: 0;
-
-    opacity: 0;
-
-    border-radius: ${appearance.radius.pill};
-  }
-
-  &::before {
-    box-shadow: inset 0 -0.25em 1em 0 #c615a8;
-    z-index: ${layout.zIndex.medium};
-  }
-
-  &::after {
-    background: linear-gradient(160deg, #c615a8 0%, #4d0fbe 100%);
-    z-index: ${layout.zIndex.low};
-  }
-
-  &:hover {
-    &::before {
-      opacity: 0.1;
-    }
-
-    &::after {
-      opacity: 0.75;
-    }
-  }
 `
 
 const secondaryStyles = css`
@@ -169,6 +128,9 @@ const tertiaryStyles = css`
   color: ${themeForeground("high")};
 
   ${isTheme("dark", `text-shadow: ${appearance.textShadow.subtle}`)};
+
+  padding-top: ${layout.scale[3]};
+  padding-bottom: ${layout.scale[3]};
 `
 
 export default Button

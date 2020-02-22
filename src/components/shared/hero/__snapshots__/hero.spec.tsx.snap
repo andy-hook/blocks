@@ -2,7 +2,7 @@
 
 exports[`<Hero /> renders correctly 1`] = `
 <div
-  className="sc-bZQynM fVrVZQ"
+  className="sc-bZQynM kMiIqn"
 >
   <div
     className="sc-gzVnrw ibZhkv"

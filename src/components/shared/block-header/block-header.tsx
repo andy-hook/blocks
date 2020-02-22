@@ -49,41 +49,43 @@ const BlockHeader: React.FunctionComponent<Props> = memo(
 
     return (
       <HeaderPanel yPadding="lg" xPadding="lg">
-        <Button to="/" buttonType="tertiary" icon="arrow-left">
-          Latest blocks
-        </Button>
-        <Header showAsTrx={trxVisible}>
-          {/* Title with details */}
-          <DetailCouple>
-            <SupTitle
-              intensity="low"
-              size="lg"
-              skeletonWidth="lg"
-              loading={loading}
-            >
-              {renderSupTitleContent()}
-            </SupTitle>
-
-            <h1>
-              <Title
-                intensity="high"
+        <HeaderPanelInner>
+          <Button to="/" buttonType="tertiary" icon="arrow-left">
+            Latest blocks
+          </Button>
+          <Header showAsTrx={trxVisible}>
+            {/* Title with details */}
+            <DetailCouple>
+              <SupTitle
+                intensity="low"
                 size="lg"
+                skeletonWidth="lg"
                 loading={loading}
-                skeletonWidth="md"
               >
-                {renderTitleContent()}
-              </Title>
-            </h1>
-          </DetailCouple>
+                {renderSupTitleContent()}
+              </SupTitle>
 
-          {/* Switch between details and transactions */}
-          <HeaderSwitch
-            onDetailsClick={handleDetailsClick}
-            onTransactionsClick={handleTransactionsClick}
-            trxVisible={trxVisible}
-            disabled={loading}
-          />
-        </Header>
+              <h1>
+                <Title
+                  intensity="high"
+                  size="lg"
+                  loading={loading}
+                  skeletonWidth="md"
+                >
+                  {renderTitleContent()}
+                </Title>
+              </h1>
+            </DetailCouple>
+
+            {/* Switch between details and transactions */}
+            <HeaderSwitch
+              onDetailsClick={handleDetailsClick}
+              onTransactionsClick={handleTransactionsClick}
+              trxVisible={trxVisible}
+              disabled={loading}
+            />
+          </Header>
+        </HeaderPanelInner>
       </HeaderPanel>
     )
   }
@@ -95,6 +97,10 @@ const HeaderPanel = styled(Panel)`
   ${mq.greaterThan("topDesk")`
     margin-bottom: ${layout.scale[5]};
   `}
+`
+
+const HeaderPanelInner = styled.div`
+  margin-top: -${layout.scale[3]};
 `
 
 const blockLettering = css`
@@ -158,7 +164,6 @@ const SupTitle = styled(Label)`
 
 const DetailCouple = styled.div`
   position: relative;
-  width: 50%;
 
   padding-bottom: ${layout.scale[6]};
 
@@ -166,6 +171,10 @@ const DetailCouple = styled.div`
 
   ${mq.lessThan("bottomLap")`
     margin-bottom: ${layout.scale[2]}
+  `}
+
+  ${mq.greaterThan("topDesk")`
+    width: 50%;
   `}
 `
 
