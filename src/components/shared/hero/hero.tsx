@@ -36,9 +36,13 @@ const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  height: 70vh;
+  height: 60vh;
 
   z-index: ${layout.zIndex.floor};
+
+  ${mq.greaterThan("topDesk")`
+    height: 70vh;
+  `}
 `
 
 const HeroInner = styled.div``

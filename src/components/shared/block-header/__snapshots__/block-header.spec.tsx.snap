@@ -4,78 +4,82 @@ exports[`<BlockHeader /> renders correctly 1`] = `
 <div
   className="sc-gzVnrw lmZtEH sc-jTzLTM iziihJ"
 >
-  <a
-    className="sc-iwsKbI iaTFxL"
-    disabled={false}
-    href="/"
-    type="tertiary"
+  <div
+    className="sc-fjdhpX jUDtSK"
   >
-    <div
-      className="sc-gZMcBi irilpd"
+    <a
+      className="sc-iwsKbI gdWEHq"
+      disabled={false}
+      href="/"
+      type="tertiary"
     >
       <div
-        className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
+        className="sc-gZMcBi irilpd"
       >
-        <svg
-          className="sc-dnqmqq iydQTw"
-        >
-          <use
-            xlinkHref="/icon-sprite.svg#arrow-left"
-          />
-        </svg>
-      </div>
-      <span
-        className="sc-gqjmRU krxleO"
-      >
-        Latest blocks
-      </span>
-    </div>
-  </a>
-  <header
-    className="sc-fjdhpX eNBXHy"
-  >
-    <div
-      className="sc-cSHVUG iFrTaI"
-    >
-      <div
-        className="sc-htpNat fRItwi sc-jzJRlG kpJqLT"
-        size="lg"
-      >
-         Transactions
-      </div>
-      <h1>
         <div
-          className="sc-bdVaJa epBYsd"
+          className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
+        >
+          <svg
+            className="sc-dnqmqq iydQTw"
+          >
+            <use
+              xlinkHref="/icon-sprite.svg#arrow-left"
+            />
+          </svg>
+        </div>
+        <span
+          className="sc-gqjmRU krxleO"
+        >
+          Latest blocks
+        </span>
+      </div>
+    </a>
+    <header
+      className="sc-jzJRlG cCRKKz"
+    >
+      <div
+        className="sc-kAzzGY bckeJi"
+      >
+        <div
+          className="sc-htpNat fRItwi sc-cSHVUG edwNlB"
           size="lg"
         >
-          # 
+           Transactions
         </div>
-      </h1>
-    </div>
-    <div
-      className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
-    >
-      <button
-        className="sc-EHOje kzeUww"
-        disabled={false}
+        <h1>
+          <div
+            className="sc-bdVaJa epBYsd"
+            size="lg"
+          >
+            # 
+          </div>
+        </h1>
+      </div>
+      <div
+        className="sc-ifAKCX kDkoYa sc-chPdSV ioOFCo"
       >
-        <div
-          className="sc-bZQynM GNSbg"
+        <button
+          className="sc-EHOje kzeUww"
+          disabled={false}
         >
-          Details
-        </div>
-      </button>
-      <button
-        className="sc-EHOje dNLmzK"
-        disabled={false}
-      >
-        <div
-          className="sc-bZQynM GNSbg"
+          <div
+            className="sc-bZQynM GNSbg"
+          >
+            Details
+          </div>
+        </button>
+        <button
+          className="sc-EHOje dNLmzK"
+          disabled={false}
         >
-          Transactions
-        </div>
-      </button>
-    </div>
-  </header>
+          <div
+            className="sc-bZQynM GNSbg"
+          >
+            Transactions
+          </div>
+        </button>
+      </div>
+    </header>
+  </div>
 </div>
 `;

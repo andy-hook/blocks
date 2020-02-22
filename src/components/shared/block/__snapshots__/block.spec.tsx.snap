@@ -13,97 +13,101 @@ exports[`<Block /> renders correctly 1`] = `
     <div
       className="sc-gzVnrw lmZtEH sc-jTzLTM iziihJ"
     >
-      <a
-        className="sc-iwsKbI iaTFxL"
-        disabled={false}
-        href="/"
-        type="tertiary"
+      <div
+        className="sc-fjdhpX jUDtSK"
       >
-        <div
-          className="sc-gZMcBi irilpd"
+        <a
+          className="sc-iwsKbI gdWEHq"
+          disabled={false}
+          href="/"
+          type="tertiary"
         >
           <div
-            className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
-          >
-            <svg
-              className="sc-dnqmqq iydQTw"
-            >
-              <use
-                xlinkHref="/icon-sprite.svg#arrow-left"
-              />
-            </svg>
-          </div>
-          <span
-            className="sc-gqjmRU krxleO"
-          >
-            Latest blocks
-          </span>
-        </div>
-      </a>
-      <header
-        className="sc-fjdhpX eNBXHy"
-      >
-        <div
-          className="sc-cSHVUG iFrTaI"
-        >
-          <div
-            className="sc-htpNat fRItwi sc-jzJRlG kpJqLT"
-            size="lg"
+            className="sc-gZMcBi irilpd"
           >
             <div
-              className="sc-bxivhb hbOsFi"
+              className="sc-htoDjs hZurrr sc-VigVT eJzOxy"
             >
-               
+              <svg
+                className="sc-dnqmqq iydQTw"
+              >
+                <use
+                  xlinkHref="/icon-sprite.svg#arrow-left"
+                />
+              </svg>
             </div>
+            <span
+              className="sc-gqjmRU krxleO"
+            >
+              Latest blocks
+            </span>
           </div>
-          <h1>
+        </a>
+        <header
+          className="sc-jzJRlG cCRKKz"
+        >
+          <div
+            className="sc-kAzzGY bckeJi"
+          >
             <div
-              className="sc-bdVaJa epBYsd"
+              className="sc-htpNat fRItwi sc-cSHVUG edwNlB"
               size="lg"
             >
               <div
-                className="sc-bwzfXH iSURLW"
+                className="sc-bxivhb hbOsFi"
               >
                  
               </div>
             </div>
-          </h1>
-        </div>
-        <div
-          className="sc-ifAKCX kDkoYa sc-kAzzGY dBGQmE"
-        >
-          <button
-            className="sc-EHOje kzeUww"
-            disabled={true}
+            <h1>
+              <div
+                className="sc-bdVaJa epBYsd"
+                size="lg"
+              >
+                <div
+                  className="sc-bwzfXH iSURLW"
+                >
+                   
+                </div>
+              </div>
+            </h1>
+          </div>
+          <div
+            className="sc-ifAKCX kDkoYa sc-chPdSV ioOFCo"
           >
-            <div
-              className="sc-bZQynM GNSbg"
+            <button
+              className="sc-EHOje kzeUww"
+              disabled={true}
             >
-              Details
-            </div>
-          </button>
-          <button
-            className="sc-EHOje dNLmzK"
-            disabled={true}
-          >
-            <div
-              className="sc-bZQynM GNSbg"
+              <div
+                className="sc-bZQynM GNSbg"
+              >
+                Details
+              </div>
+            </button>
+            <button
+              className="sc-EHOje dNLmzK"
+              disabled={true}
             >
-              Transactions
-            </div>
-          </button>
-        </div>
-      </header>
+              <div
+                className="sc-bZQynM GNSbg"
+              >
+                Transactions
+              </div>
+            </button>
+          </div>
+        </header>
+      </div>
     </div>
     <main>
       <div
-        className="sc-gzVnrw lmZtEH sc-kGXeez jrWVKz"
+        className="sc-gzVnrw lmZtEH sc-kpOJdX epAUmu"
       >
         <ul
-          className="sc-kpOJdX kAzjOl"
+          className="sc-dxgOiQ hTjMfW"
         >
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -112,7 +116,7 @@ exports[`<Block /> renders correctly 1`] = `
               Size
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
@@ -127,7 +131,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -136,7 +140,7 @@ exports[`<Block /> renders correctly 1`] = `
               Timestamp
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
@@ -151,7 +155,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -160,7 +164,7 @@ exports[`<Block /> renders correctly 1`] = `
               Miner
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
@@ -175,7 +179,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -184,7 +188,7 @@ exports[`<Block /> renders correctly 1`] = `
               Difficulty
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
@@ -199,7 +203,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -208,7 +212,7 @@ exports[`<Block /> renders correctly 1`] = `
               Total Difficulty
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
@@ -223,7 +227,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -232,7 +236,7 @@ exports[`<Block /> renders correctly 1`] = `
               Gas Used
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
@@ -247,7 +251,7 @@ exports[`<Block /> renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-chPdSV gfSCZK sc-dxgOiQ cdhNWs"
+            className="sc-kgoBCf eEofCw sc-ckVGcZ eEfBjy"
           >
             <div
               className="sc-bdVaJa bQjCIB"
@@ -256,7 +260,7 @@ exports[`<Block /> renders correctly 1`] = `
               Gas Limit
             </div>
             <div
-              className="sc-kgoBCf donpaw"
+              className="sc-kGXeez eQUzpj"
             >
               <div
                 className="sc-htpNat leGpXE"
