@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useState } from "react"
+import React, { memo, useState } from "react"
 import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 import { Web3BlockData } from "model"
 import { requestBlocks } from "@web3/web3-data-request"
@@ -11,6 +11,7 @@ import { useLoadingStatusContext } from "@providers/loading-status-provider/load
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
+import { useAsyncEffect } from "use-async-effect"
 
 interface Props {
   path: string
@@ -46,36 +47,43 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
       setLoadingStatus(false)
     }
 
-    async function fetchFreshBlockData() {
-      try {
-        const currentBlockData = (await requestBlocks(web3, [
-          blockNumber,
-        ])) as Web3BlockData[]
+    useAsyncEffect(
+      async isMounted => {
+        setLoadingStatus(true)
 
-        // Success
-        setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
-      } catch (error) {
-        // Failure
-        setBlockData({ data: null, error })
-      }
-    }
+        if (blocksData) {
+          // Get the current block from context if possible
+          const currentCachedBlockData = blocksData.find(
+            element => element.number === blockNumber
+          ) as Web3BlockData
 
-    useEffect(() => {
-      setLoadingStatus(true)
+          // Use value from context if it exists or fetch new...
+          if (currentCachedBlockData) {
+            setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
+          } else {
+            // Or fetch fresh data
+            try {
+              const currentBlockData = (await requestBlocks(web3, [
+                blockNumber,
+              ])) as Web3BlockData[]
 
-      if (blocksData) {
-        // Get the current block from context if possible
-        const currentCachedBlockData = blocksData.find(
-          element => element.number === blockNumber
-        ) as Web3BlockData
+              if (!isMounted()) {
+                return
+              }
 
-        // Use value from context if it exists or fetch new...
-        currentCachedBlockData
-          ? setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
-          : // Or fetch new data for the view
-            fetchFreshBlockData()
-      }
-    }, [blocksData])
+              // Success
+              setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
+            } catch (error) {
+              // Failure
+              if (isMounted()) {
+                setBlockData({ data: null, error })
+              }
+            }
+          }
+        }
+      },
+      [blocksData]
+    )
 
     return (
       <Page>
