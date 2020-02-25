@@ -1,8 +1,9 @@
-import React, { createContext, useState, useEffect, useContext } from "react"
+import React, { createContext, useState, useContext } from "react"
 import { Web3BlockData } from "model"
 import { useWeb3Context } from "./web3-provider"
 import { lastNumbersFromRange } from "@utils"
 import { requestBlocks } from "./web3-data-request"
+import { useAsyncEffect } from "use-async-effect"
 
 interface Props {
   maxBlocks?: number
@@ -25,34 +26,45 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
     error: null,
   })
 
-  async function fetchAllData() {
-    const latestBlockNumber = await web3.eth.getBlockNumber()
+  useAsyncEffect(
+    async isMounted => {
+      if (web3 && !blocksState.data) {
+        const latestBlockNumber = await web3.eth.getBlockNumber()
 
-    const blocksToRequest = lastNumbersFromRange({
-      start: latestBlockNumber - maxBlocks,
-      size: maxBlocks,
-    })
+        if (!isMounted()) {
+          return
+        }
 
-    try {
-      const allBlocksData = (await requestBlocks(
-        web3,
-        blocksToRequest
-      )) as Web3BlockData[]
+        const blocksToRequest = lastNumbersFromRange({
+          start: latestBlockNumber - maxBlocks,
+          size: maxBlocks,
+        })
 
-      // Success
-      setBlocksState({ data: allBlocksData, error: null })
-    } catch (error) {
-      // Failure
-      setBlocksState({ data: null, error })
-    }
-  }
+        try {
+          const allBlocksData = (await requestBlocks(
+            web3,
+            blocksToRequest
+          )) as Web3BlockData[]
 
-  useEffect(() => {
-    // Request only once
-    if (web3 && !blocksState.data) {
-      fetchAllData()
-    }
-  }, [web3])
+          if (!isMounted()) {
+            return
+          }
+
+          // Success
+          setBlocksState({ data: allBlocksData, error: null })
+        } catch (error) {
+          // Failure
+          if (isMounted()) {
+            setBlocksState({
+              data: null,
+              error,
+            })
+          }
+        }
+      }
+    },
+    [web3]
+  )
 
   return (
     <Web3BlocksData.Provider value={blocksState}>
