@@ -66,14 +66,14 @@ describe("darkThemeLayerAlpha", () => {
 
 describe("darkThemeForeground", () => {
   test("should return correct value as hsl string", () => {
-    expect(darkThemeForeground("medium")).toEqual("hsl(206, 10%, 49%)")
+    expect(darkThemeForeground("medium")).toEqual("hsl(206, 10%, 55%)")
   })
 })
 
 describe("darkThemeForegroundAlpha", () => {
   test("should return correct value as hsla string", () => {
     expect(darkThemeForegroundAlpha("medium", 50)).toEqual(
-      "hsla(206, 10%, 49%,50)"
+      "hsla(206, 10%, 55%,50)"
     )
   })
 })
@@ -92,14 +92,14 @@ describe("lightThemeLayerAlpha", () => {
 
 describe("lightThemeForeground", () => {
   test("should return correct value as hsl string", () => {
-    expect(lightThemeForeground("medium")).toEqual("hsl(206, 10%, 49%)")
+    expect(lightThemeForeground("medium")).toEqual("hsl(206, 10%, 55%)")
   })
 })
 
 describe("lightThemeForegroundAlpha", () => {
   test("should return correct value as hsla string", () => {
     expect(lightThemeForegroundAlpha("medium", 50)).toEqual(
-      "hsla(206, 10%, 49%,50)"
+      "hsla(206, 10%, 55%,50)"
     )
   })
 })
@@ -121,14 +121,14 @@ describe("darkThemeLayerAlpha", () => {
 describe("ThemeForeground", () => {
   it("renders correct hsl from given text value", () => {
     const tree = mountWithTheme("dark", <ThemeForegroundComponent />)
-    expect(tree).toHaveStyleRule("color", "hsl(206,10%,49%)")
+    expect(tree).toHaveStyleRule("color", "hsl(206,10%,55%)")
   })
 })
 
 describe("ThemeForegroundAlpha", () => {
   it("renders correct hsla from given text value", () => {
     const tree = mountWithTheme("dark", <ThemeForegroundAlphaComponent />)
-    expect(tree).toHaveStyleRule("color", "hsla(206,10%,49%,0)")
+    expect(tree).toHaveStyleRule("color", "hsla(206,10%,55%,0)")
   })
 })
 

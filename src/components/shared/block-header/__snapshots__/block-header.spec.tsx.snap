@@ -41,7 +41,7 @@ exports[`<BlockHeader /> renders correctly 1`] = `
         className="sc-kAzzGY bckeJi"
       >
         <div
-          className="sc-htpNat fRItwi sc-cSHVUG edwNlB"
+          className="sc-htpNat kRNXEf sc-cSHVUG edwNlB"
           size="lg"
         >
            Transactions
