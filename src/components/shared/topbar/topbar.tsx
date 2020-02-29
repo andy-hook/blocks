@@ -102,7 +102,14 @@ const Topbar: React.FunctionComponent = memo(() => {
 
         {/* Right controls */}
         <TopbarControls>
-          <TopbarThemeSwitch onClick={toggleTheme}>
+          <TopbarThemeSwitch
+            onClick={toggleTheme}
+            name={
+              themeType === "light"
+                ? "Switch to light theme"
+                : "Switch to dark theme"
+            }
+          >
             <Icon name={themeType === "light" ? "dark-mode" : "light-mode"} />
           </TopbarThemeSwitch>
 
