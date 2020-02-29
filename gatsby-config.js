@@ -120,6 +120,11 @@ module.exports = {
       },
     },
 
+    // Don't ship sourcemaps with build
+    {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    },
+
     // Temporarily disable service worker for local dev
     // `gatsby-plugin-remove-serviceworker`,
 
