@@ -24,7 +24,7 @@ Array [
               className="sc-jTzLTM bTvezP"
             >
               <div
-                className="sc-iwsKbI hFFlcC"
+                className="sc-iwsKbI eeeNDD"
                 size="lg"
               >
                 Let’s build something awesome together
@@ -72,13 +72,14 @@ Array [
                   className="sc-kgoBCf kVSTZj"
                 >
                   <div
-                    className="sc-iwsKbI bITgpr"
+                    className="sc-iwsKbI fAqETr"
                     size="md"
                   >
                     <a
                       className="sc-kGXeez fYBllT"
                       href="https://www.instagram.com/andyhooky/"
                       onClick={[Function]}
+                      rel="noreferrer"
                       target="_blank"
                     >
                       Instagram
@@ -89,13 +90,14 @@ Array [
                   className="sc-kgoBCf kVSTZj"
                 >
                   <div
-                    className="sc-iwsKbI bITgpr"
+                    className="sc-iwsKbI fAqETr"
                     size="md"
                   >
                     <a
                       className="sc-kGXeez fYBllT"
                       href="https://twitter.com/andy_hook"
                       onClick={[Function]}
+                      rel="noreferrer"
                       target="_blank"
                     >
                       Twitter
@@ -106,13 +108,14 @@ Array [
                   className="sc-kgoBCf kVSTZj"
                 >
                   <div
-                    className="sc-iwsKbI bITgpr"
+                    className="sc-iwsKbI fAqETr"
                     size="md"
                   >
                     <a
                       className="sc-kGXeez fYBllT"
                       href="https://dribbble.com/andyhook"
                       onClick={[Function]}
+                      rel="noreferrer"
                       target="_blank"
                     >
                       Dribbble
@@ -123,13 +126,14 @@ Array [
                   className="sc-kgoBCf kVSTZj"
                 >
                   <div
-                    className="sc-iwsKbI bITgpr"
+                    className="sc-iwsKbI fAqETr"
                     size="md"
                   >
                     <a
                       className="sc-kGXeez fYBllT"
                       href="https://github.com/andy-hook"
                       onClick={[Function]}
+                      rel="noreferrer"
                       target="_blank"
                     >
                       Github
@@ -140,13 +144,14 @@ Array [
                   className="sc-kgoBCf kVSTZj"
                 >
                   <div
-                    className="sc-iwsKbI bITgpr"
+                    className="sc-iwsKbI fAqETr"
                     size="md"
                   >
                     <a
                       className="sc-kGXeez fYBllT"
                       href="https://www.linkedin.com/in/andyahook"
                       onClick={[Function]}
+                      rel="noreferrer"
                       target="_blank"
                     >
                       Linkedin

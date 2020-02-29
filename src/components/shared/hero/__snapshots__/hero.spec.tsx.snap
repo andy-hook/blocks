@@ -34,7 +34,7 @@ exports[`<Hero /> renders correctly 1`] = `
     </div>
     <h1>
       <div
-        className="sc-ifAKCX gJoLYy sc-VigVT bTnWfT"
+        className="sc-ifAKCX ezykjO sc-VigVT bTnWfT"
         size="sm"
       >
         The minimal way to explore Ethereum blocks inside your web browser.

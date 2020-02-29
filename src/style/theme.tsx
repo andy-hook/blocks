@@ -84,7 +84,7 @@ export const lightThemeLayerAlpha = (value: LayerNames, alpha: number) =>
 const darkThemeForegroundHSL: Greys = {
   extraLow: "215, 13%, 20%",
   low: "206, 11%, 35%",
-  medium: "206, 10%, 49%",
+  medium: "206, 10%, 55%",
   high: "206, 8%, 62%",
   extraHigh: "0, 0%, 100%",
 }
@@ -102,7 +102,7 @@ export const darkThemeForegroundAlpha = (value: GreyNames, alpha: number) =>
 const lightThemeForegroundHSL: Greys = {
   extraLow: "206, 8%, 90%",
   low: "206, 8%, 85%",
-  medium: "206, 10%, 50%",
+  medium: "206, 10%, 40%",
   high: "206, 11%, 35%",
   extraHigh: "215, 13%, 2%",
 }

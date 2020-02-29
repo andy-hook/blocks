@@ -90,7 +90,7 @@ const Topbar: React.FunctionComponent = memo(() => {
         {/* Left navigation */}
         <TopbarMainNav>
           <TopbarBrandPositioner style={animateMarkShow}>
-            <TopbarBrandMark to="/">
+            <TopbarBrandMark aria-label="Go to latest blocks" to="/">
               <Icon name="blocks" />
             </TopbarBrandMark>
           </TopbarBrandPositioner>
@@ -102,11 +102,19 @@ const Topbar: React.FunctionComponent = memo(() => {
 
         {/* Right controls */}
         <TopbarControls>
-          <TopbarThemeSwitch onClick={toggleTheme}>
+          <TopbarThemeSwitch
+            onClick={toggleTheme}
+            aria-label={
+              themeType === "light"
+                ? "Switch to light theme"
+                : "Switch to dark theme"
+            }
+          >
             <Icon name={themeType === "light" ? "dark-mode" : "light-mode"} />
           </TopbarThemeSwitch>
 
           <TopbarShuffle
+            aria-label="Go to a random block"
             to={`/block/${randomBlockNumber}`}
             onClick={generateRandomBlockNumber}
           >

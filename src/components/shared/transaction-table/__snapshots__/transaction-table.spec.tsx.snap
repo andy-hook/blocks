@@ -14,7 +14,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bwzfXH dfeDEW"
       >
         <div
-          className="sc-gzVnrw jdjHQZ"
+          className="sc-gzVnrw jOObZo"
           size="lg"
         >
           Block
@@ -24,7 +24,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-htpNat jDGsFT"
       >
         <div
-          className="sc-gzVnrw jdjHQZ"
+          className="sc-gzVnrw jOObZo"
           size="lg"
         >
           Hash
@@ -34,7 +34,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-bxivhb hxXuRT"
       >
         <div
-          className="sc-gzVnrw jdjHQZ"
+          className="sc-gzVnrw jOObZo"
           size="lg"
         >
           From / To
@@ -44,7 +44,7 @@ exports[`<TransactionTable /> renders correctly 1`] = `
         className="sc-bdVaJa sc-ifAKCX gEVBXo"
       >
         <div
-          className="sc-gzVnrw jdjHQZ"
+          className="sc-gzVnrw jOObZo"
           size="lg"
         >
           Value
