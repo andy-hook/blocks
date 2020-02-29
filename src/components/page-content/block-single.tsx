@@ -51,7 +51,7 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
       async isMounted => {
         setLoadingStatus(true)
 
-        if (blocksData) {
+        if (blocksData && web3) {
           // Get the current block from context if possible
           const currentCachedBlockData = blocksData.find(
             element => element.number === blockNumber
@@ -67,12 +67,10 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
                 blockNumber,
               ])) as Web3BlockData[]
 
-              if (!isMounted()) {
-                return
-              }
-
               // Success
-              setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
+              if (isMounted()) {
+                setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
+              }
             } catch (error) {
               // Failure
               if (isMounted()) {

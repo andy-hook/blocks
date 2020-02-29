@@ -31,10 +31,6 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
       if (web3 && !blocksState.data) {
         const latestBlockNumber = await web3.eth.getBlockNumber()
 
-        if (!isMounted()) {
-          return
-        }
-
         const blocksToRequest = lastNumbersFromRange({
           start: latestBlockNumber - maxBlocks,
           size: maxBlocks,
@@ -46,12 +42,10 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
             blocksToRequest
           )) as Web3BlockData[]
 
-          if (!isMounted()) {
-            return
-          }
-
           // Success
-          setBlocksState({ data: allBlocksData, error: null })
+          if (isMounted()) {
+            setBlocksState({ data: allBlocksData, error: null })
+          }
         } catch (error) {
           // Failure
           if (isMounted()) {
