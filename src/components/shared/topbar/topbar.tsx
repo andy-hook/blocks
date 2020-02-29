@@ -17,21 +17,19 @@ import { Link } from "gatsby"
 import { SHUFFLE_MIN_RANGE, SHUFFLE_MAX_RANGE } from "../../../config"
 import { generateBlockNumberFromStaticRange } from "@utils"
 import { useSpring, animated } from "react-spring"
+import { useWeb3Context } from "@web3/web3-provider"
 
 const Topbar: React.FunctionComponent = memo(() => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
   const [topbarScrolled, setTopbarScrolled] = useState(false)
+  const { metamaskStatus } = useWeb3Context()
+
+  const loggedIn = metamaskStatus === "LOGGED_IN"
 
   const animateTopbarEntrance = useSpring({
-    from: {
-      opacity: 0,
-      transform: `translate3d(0,-5rem,0)`,
-    },
-    to: {
-      opacity: 1,
-      transform: `translate3d(0rem,0,0)`,
-    },
+    opacity: loggedIn ? 1 : 0,
+    transform: loggedIn ? `translate3d(0rem,0,0)` : `translate3d(0,-5rem,0)`,
     config: { mass: 1, tension: 175, friction: 30 },
   })
 

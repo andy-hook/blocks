@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react"
+import React, { memo, useState, useEffect } from "react"
 import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 import { Web3BlockData } from "model"
 import { requestBlocks } from "@web3/web3-data-request"
@@ -25,10 +25,11 @@ interface DataState {
 
 const BlockSingle: React.FunctionComponent<Props> = memo(
   ({ blockNumberFromUrl }) => {
-    const web3 = useWeb3Context().web3
+    const { web3 } = useWeb3Context()
     const { data: blocksData } = useWeb3BlocksDataContext()
     const blockNumber = parseFloat(blockNumberFromUrl as string)
     const { setLoadingStatus } = useLoadingStatusContext()
+    const { metamaskStatus } = useWeb3Context()
 
     const [blockData, setBlockData] = useState<DataState>({
       data: null,
@@ -47,10 +48,14 @@ const BlockSingle: React.FunctionComponent<Props> = memo(
       setLoadingStatus(false)
     }
 
+    useEffect(() => {
+      if (metamaskStatus === "LOGGED_IN") {
+        setLoadingStatus(true)
+      }
+    }, [metamaskStatus])
+
     useAsyncEffect(
       async isMounted => {
-        setLoadingStatus(true)
-
         if (blocksData && web3) {
           // Get the current block from context if possible
           const currentCachedBlockData = blocksData.find(

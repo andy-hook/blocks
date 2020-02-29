@@ -11,7 +11,7 @@ const initialValue: ThemeName = "dark"
 
 export const ThemeSwitchContext = createContext<ContextState>({
   themeType: initialValue,
-  setThemeTypeStatus: () => initialValue,
+  setThemeTypeStatus: () => null,
 })
 
 const ThemeSwitchProvider: React.FunctionComponent = ({ children }) => {

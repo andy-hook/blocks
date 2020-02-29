@@ -7,27 +7,30 @@ import { themeForeground, isTheme } from "@style/theme"
 import RemoveWidow from "@components/shared/remove-widow/remove-widow"
 import { mq } from "@style/media-queries"
 
-const Hero: React.FunctionComponent = memo(() => (
-  <HeroContainer>
-    <HeroInner>
-      {/* Spacey rings */}
-      <HeroMarkDecoration>
-        <HeroMark />
-        <HeroMarkRingsOuter />
-        <HeroMarkRingsInner />
-      </HeroMarkDecoration>
+const Hero: React.FunctionComponent = memo(() => {
+  return (
+    <HeroContainer>
+      <HeroInner>
+        {/* Spacey rings */}
+        <HeroMarkDecoration>
+          <HeroMark />
+          <HeroMarkRingsOuter />
+          <HeroMarkRingsInner />
+        </HeroMarkDecoration>
 
-      {/* Title */}
-      <h1>
-        <HeroTitle size="sm" intensity="low">
-          <RemoveWidow>
-            The minimal way to explore Ethereum blocks inside your web browser.
-          </RemoveWidow>
-        </HeroTitle>
-      </h1>
-    </HeroInner>
-  </HeroContainer>
-))
+        {/* Title */}
+        <h1>
+          <HeroTitle size="sm" intensity="low">
+            <RemoveWidow>
+              The minimal way to explore Ethereum blocks inside your web
+              browser.
+            </RemoveWidow>
+          </HeroTitle>
+        </h1>
+      </HeroInner>
+    </HeroContainer>
+  )
+})
 
 const HeroContainer = styled.div`
   position: relative;
@@ -78,6 +81,9 @@ const HeroMarkRings = styled.div`
 
   font-size: 15em;
 
+  width: 1em;
+  height: 1em;
+
   &::after,
   &::before {
     content: "";
@@ -103,26 +109,18 @@ const HeroMarkRings = styled.div`
 `
 
 const HeroMarkRingsInner = styled(HeroMarkRings)`
-  width: 500px;
-  height: 500px;
-
   &::after {
     font-size: 0.75em;
-
     z-index: ${layout.zIndex.medium};
   }
 
   &::before {
     font-size: 0.2em;
-
     z-index: ${layout.zIndex.high};
   }
 `
 
 const HeroMarkRingsOuter = styled(HeroMarkRings)`
-  width: 1000px;
-  height: 1000px;
-
   &::after {
     font-size: 3em;
 

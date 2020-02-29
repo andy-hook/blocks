@@ -5,7 +5,7 @@ interface ContextState {
   setLoadingStatus: (status: boolean) => void
 }
 
-const initialValue = true
+const initialValue = false
 
 export const LoadingStatusContext = createContext<ContextState>({
   loading: initialValue,

@@ -7,26 +7,28 @@ import Gutter from "@components/shared/gutter/gutter"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 import Hero from "@components/shared/hero/hero"
 import { useSpring, animated } from "react-spring"
+import { useWeb3Context } from "@web3/web3-provider"
 
 const Home: React.FunctionComponent = memo(() => {
   const { data } = useWeb3BlocksDataContext()
   const { setLoadingStatus } = useLoadingStatusContext()
+  const { metamaskStatus } = useWeb3Context()
+
+  const loggedIn = metamaskStatus === "LOGGED_IN"
 
   useEffect(() => {
-    if (data) {
-      setLoadingStatus(false)
+    if (loggedIn) {
+      setLoadingStatus(true)
+
+      if (data) {
+        setLoadingStatus(false)
+      }
     }
-  }, [data])
+  }, [metamaskStatus, data])
 
   const animateHomeEntrance = useSpring({
-    from: {
-      opacity: 0,
-      transform: `translate3d(0,5rem,0)`,
-    },
-    to: {
-      opacity: 1,
-      transform: `translate3d(0rem,0,0)`,
-    },
+    opacity: loggedIn ? 1 : 0,
+    transform: loggedIn ? `translate3d(0rem,0,0)` : `translate3d(0,5rem,0)`,
     config: { mass: 1, tension: 175, friction: 30 },
   })
 

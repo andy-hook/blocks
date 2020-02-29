@@ -20,7 +20,7 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
   children,
   maxBlocks = 10,
 }) => {
-  const web3 = useWeb3Context().web3
+  const { web3 } = useWeb3Context()
   const [blocksState, setBlocksState] = useState<DataState>({
     data: null,
     error: null,
