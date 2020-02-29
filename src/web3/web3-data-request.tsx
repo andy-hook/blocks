@@ -1,11 +1,14 @@
 import { Web3BlockData, Web3TransactionData } from "model"
+import Web3 from "web3"
 
-function requestTransactions(web3Instance: any, transactions: string[]) {
+function requestTransactions(web3Instance: Web3, transactions: string[]) {
   const batchRequest = new web3Instance.eth.BatchRequest()
 
   const batchPromise = transactions.map(transaction => {
     return new Promise((resolve, reject) => {
       batchRequest.add(
+        // @ts-ignore – request doesn't exist in types
+        // https://github.com/ethereum/web3.js/issues/3144
         web3Instance.eth.getTransaction.request(
           transaction,
           async (error: {}, data: Web3TransactionData) => {
@@ -16,7 +19,7 @@ function requestTransactions(web3Instance: any, transactions: string[]) {
                 ...data,
                 ether: parseFloat(
                   web3Instance.utils.fromWei(
-                    new web3Instance.utils.BN(data.value)
+                    web3Instance.utils.toBN(data.value)
                   )
                 ),
               })
@@ -32,12 +35,14 @@ function requestTransactions(web3Instance: any, transactions: string[]) {
   return Promise.all(batchPromise)
 }
 
-export async function requestBlocks(web3Instance: any, blocks: number[]) {
+export async function requestBlocks(web3Instance: Web3, blocks: number[]) {
   const batchRequest = new web3Instance.eth.BatchRequest()
 
   const batchPromise = blocks.map(block => {
     return new Promise((resolve, reject) => {
       batchRequest.add(
+        // @ts-ignore – request doesn't exist in types
+        // https://github.com/ethereum/web3.js/issues/3144
         web3Instance.eth.getBlock.request(
           block,
           async (error: {}, data: Web3BlockData) => {

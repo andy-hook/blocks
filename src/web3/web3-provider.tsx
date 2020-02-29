@@ -1,18 +1,12 @@
-// @ts-nocheck
 import React, { createContext, useState, useEffect, useContext } from "react"
-
-/* tslint:disable: no-var-requires */
-// There are problems with the types provided by web3
-// Using a typical import fails to build production because of type errors
-// Ignore your linter, this should stay a require
-const Web3Require = require("web3")
+import Web3 from "web3"
 
 interface ProviderProps {
   useMainnet: boolean
 }
 
 interface StateProps {
-  web3: any // Package types are broken :'(
+  web3: Web3 | null
   error?: "DENIED" | "FORBIDDEN"
 }
 
@@ -28,13 +22,13 @@ export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
 
   useEffect(() => {
     const configureProvider = () => {
-      const provider = new Web3Require.providers.HttpProvider(
+      const provider = new Web3.providers.HttpProvider(
         `https://${
           useMainnet ? "mainnet" : "ropsten"
         }.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0`
       )
 
-      setWeb3State({ web3: new Web3Require(provider) })
+      setWeb3State({ web3: new Web3(provider) })
     }
 
     async function checkMetaMask() {
