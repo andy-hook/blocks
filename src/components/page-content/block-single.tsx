@@ -52,8 +52,6 @@ const BlockSingle: React.FunctionComponent<Props> = ({
     async isMounted => {
       setLoadingStatus(true)
 
-      console.log("render")
-
       if (blocksData && web3) {
         // Get the current block from context if possible
         const currentCachedBlockData = blocksData.find(
@@ -83,7 +81,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({
         }
       }
     },
-    [blocksData]
+    [blocksData, blockNumberFromUrl]
   )
 
   return (
