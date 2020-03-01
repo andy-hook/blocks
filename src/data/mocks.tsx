@@ -4,8 +4,6 @@ import {
   Web3TransactionData,
 } from "@custom-types/model"
 import { FluidObject } from "gatsby-image"
-import { TransitionType } from "@custom-types/gatsby-plugin-transition-link"
-import { TRANSITION_STATUS_ENTERING } from "@hooks/page-transition"
 
 export const mockSocialIcons: SocialMeta = {
   email: {
@@ -46,32 +44,6 @@ export const mockFluidImageObject: FluidObject = {
   src: "/static/4a7de89fcee5d7cd97c940895602fbe0/2f7e7/cover-image.jpg",
   srcSet:
     "/static/4a7de89fcee5d7cd97c940895602fbe0/4d406/cover-image.jpg 250w,↵/static/4a7de89fcee5d7cd97c940895602fbe0/32ee9/cover-image.jpg 500w,↵/static/4a7de89fcee5d7cd97c940895602fbe0/2f7e7/cover-image.jpg",
-}
-
-export const createStateMock = (animType?: TransitionType) => {
-  return {
-    current: {
-      delay: 0,
-      length: 0,
-      state: {},
-    },
-    entry: {
-      delay: 0,
-      length: 0,
-      state: {
-        animType,
-      },
-    },
-    exit: {
-      delay: 0,
-      length: 0,
-      state: {
-        animType,
-      },
-    },
-    transitionStatus: TRANSITION_STATUS_ENTERING,
-    mount: false,
-  }
 }
 
 export const mockWeb3BlockTransactions = [
