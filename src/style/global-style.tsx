@@ -11,6 +11,7 @@ const Global = createGlobalStyle`
 
   body {
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   body,
