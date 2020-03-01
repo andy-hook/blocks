@@ -70,15 +70,15 @@ module.exports = {
       },
     },
 
-    // Per route transition links
-    // The persistent layout is defined here rather than being part of component composition in file
+    // Persist a common layout across pages
     {
-      resolve: "gatsby-plugin-transition-link",
+      resolve: `gatsby-plugin-layout`,
       options: {
-        layout: require.resolve(`./src/components/layout.tsx`),
+        component: require.resolve(`./src/components/layout.tsx`),
       },
     },
 
+    // Portable alias's
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
