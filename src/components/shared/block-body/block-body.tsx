@@ -7,6 +7,7 @@ import moment from "moment"
 import Panel from "@components/shared/panel/panel"
 import Title from "@components/shared/title/title"
 import styled from "styled-components"
+import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 
 interface Props {
   blockData?: Web3BlockData | null
@@ -17,6 +18,7 @@ const BlockBody: React.FunctionComponent<Props> = ({
   blockData,
   trxVisible,
 }) => {
+  const { loading } = useLoadingStatusContext()
   function formatUnixTime(timestamp: number) {
     return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
   }
@@ -34,7 +36,9 @@ const BlockBody: React.FunctionComponent<Props> = ({
   }
 
   function renderInfoAsSkeletonOrPopulated() {
-    if (blockData) {
+    if (loading) {
+      return <BlockInfo loading={true} />
+    } else if (blockData) {
       return trxVisible ? (
         renderTransactionsOrEmptyState(blockData.transactionsData)
       ) : (
@@ -48,8 +52,6 @@ const BlockBody: React.FunctionComponent<Props> = ({
           miner={blockData.miner}
         />
       )
-    } else {
-      return <BlockInfo loading={true} />
     }
   }
 
