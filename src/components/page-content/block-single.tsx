@@ -62,7 +62,10 @@ const BlockSingle: React.FunctionComponent<Props> = ({
         if (currentCachedBlockData) {
           setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
         } else {
-          // Or fetch fresh data
+          // Clear stored data to force loading skeletons to appear
+          setBlockData({ data: null, error: null })
+
+          // Fetch fresh data
           try {
             const currentBlockData = (await requestBlocks(web3, [
               blockNumber,

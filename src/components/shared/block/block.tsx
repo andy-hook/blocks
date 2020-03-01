@@ -4,7 +4,6 @@ import { toString } from "lodash"
 import BlockHeader from "@components/shared/block-header/block-header"
 import BlockBody from "@components/shared/block-body/block-body"
 import { animated, useSpring } from "react-spring"
-import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 
 interface Props {
   blockData?: Web3BlockData | null
@@ -12,7 +11,6 @@ interface Props {
 
 const Block: React.FunctionComponent<Props> = ({ blockData }) => {
   const [trxVisible, setTrxVisible] = useState<boolean>(false)
-  const { loading } = useLoadingStatusContext()
   const animateBlockEntrance = useSpring({
     from: {
       opacity: 0,
@@ -34,9 +32,7 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
   }
 
   function renderHeaderAsSkeletonOrPopulated() {
-    if (loading) {
-      return <BlockHeader trxVisible={trxVisible} loading={true} />
-    } else if (blockData) {
+    if (blockData) {
       return (
         <BlockHeader
           blockNumber={toString(blockData.number)}
@@ -46,6 +42,8 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
           trxVisible={trxVisible}
         />
       )
+    } else {
+      return <BlockHeader trxVisible={trxVisible} loading={true} />
     }
   }
 
