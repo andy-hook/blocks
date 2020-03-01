@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import { Web3TransactionData } from "model"
 import CardTrxPip from "@components/shared/card/card-trx-pip/card-trx-pip"
 import styled from "styled-components"
@@ -12,44 +12,45 @@ interface Props {
   loading?: boolean
 }
 
-const CardTrxSummary: React.FunctionComponent<Props> = memo(
-  ({ transactions, loading }) => {
-    function renderAsHolderOrPopulated(transaction?: Web3TransactionData) {
-      if (transaction) {
-        return (
-          <CardTrxPip
-            value={transaction.ether}
-            from={transaction.from}
-            to={transaction.to}
-          />
-        )
-      } else {
-        return <CardTrxPip isEmpty={true} />
-      }
+const CardTrxSummary: React.FunctionComponent<Props> = ({
+  transactions,
+  loading,
+}) => {
+  function renderAsHolderOrPopulated(transaction?: Web3TransactionData) {
+    if (transaction) {
+      return (
+        <CardTrxPip
+          value={transaction.ether}
+          from={transaction.from}
+          to={transaction.to}
+        />
+      )
+    } else {
+      return <CardTrxPip isEmpty={true} />
     }
-
-    // Renders items
-    function renderItems() {
-      return Array.from(Array(SUMMARY_MAX_TRANSACTIONS)).map((_, index) => {
-        return (
-          <GridItem key={index}>
-            {loading ? (
-              <CardTrxPip loading={true} />
-            ) : (
-              renderAsHolderOrPopulated(transactions && transactions[index])
-            )}
-          </GridItem>
-        )
-      })
-    }
-
-    return (
-      <GridContainer>
-        <Grid>{renderItems()}</Grid>
-      </GridContainer>
-    )
   }
-)
+
+  // Renders items
+  function renderItems() {
+    return Array.from(Array(SUMMARY_MAX_TRANSACTIONS)).map((_, index) => {
+      return (
+        <GridItem key={index}>
+          {loading ? (
+            <CardTrxPip loading={true} />
+          ) : (
+            renderAsHolderOrPopulated(transactions && transactions[index])
+          )}
+        </GridItem>
+      )
+    })
+  }
+
+  return (
+    <GridContainer>
+      <Grid>{renderItems()}</Grid>
+    </GridContainer>
+  )
+}
 
 const GridContainer = styled.div`
   padding-top: ${layout.scale[7]};

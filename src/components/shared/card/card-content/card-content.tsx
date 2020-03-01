@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import { Web3BlockData } from "model"
 import CardTrxSummary from "@components/shared/card/card-trx-summary/card-trx-summary"
 import styled from "styled-components"
@@ -20,64 +20,62 @@ interface Props {
   loading?: boolean
 }
 
-const CardContent: React.FunctionComponent<Props> = memo(
-  ({
-    blockNumber,
-    transactions,
-    size,
-    difficulty,
-    miner,
-    loading,
-    transactionCount,
-  }) => {
-    function renderTrxAsPlaceholderOrPopulated(
-      blockTransactions: Props["transactions"]
-    ) {
-      if (blockTransactions) {
-        return <CardTrxSummary transactions={blockTransactions} />
-      } else {
-        return <CardTrxSummary loading={true} />
-      }
+const CardContent: React.FunctionComponent<Props> = ({
+  blockNumber,
+  transactions,
+  size,
+  difficulty,
+  miner,
+  loading,
+  transactionCount,
+}) => {
+  function renderTrxAsPlaceholderOrPopulated(
+    blockTransactions: Props["transactions"]
+  ) {
+    if (blockTransactions) {
+      return <CardTrxSummary transactions={blockTransactions} />
+    } else {
+      return <CardTrxSummary loading={true} />
     }
-
-    return (
-      <Panel>
-        {/* Title info */}
-        <TransactionsCountLabel intensity="low" loading={loading}>
-          {transactionCount} Transactions
-        </TransactionsCountLabel>
-
-        <h2>
-          <Title intensity="high" loading={loading} skeletonWidth="md">
-            &#x23;&nbsp;{blockNumber}
-          </Title>
-        </h2>
-
-        {/* Transactions */}
-        {renderTrxAsPlaceholderOrPopulated(transactions)}
-
-        {/* Details */}
-        <CardDetails
-          size={size}
-          difficulty={difficulty}
-          miner={miner}
-          loading={loading}
-        />
-
-        {/* CTA */}
-        <CardActions>
-          <CardButton
-            disabled={loading}
-            buttonType="secondary"
-            to={`/block/${blockNumber}`}
-          >
-            More details
-          </CardButton>
-        </CardActions>
-      </Panel>
-    )
   }
-)
+
+  return (
+    <Panel>
+      {/* Title info */}
+      <TransactionsCountLabel intensity="low" loading={loading}>
+        {transactionCount} Transactions
+      </TransactionsCountLabel>
+
+      <h2>
+        <Title intensity="high" loading={loading} skeletonWidth="md">
+          &#x23;&nbsp;{blockNumber}
+        </Title>
+      </h2>
+
+      {/* Transactions */}
+      {renderTrxAsPlaceholderOrPopulated(transactions)}
+
+      {/* Details */}
+      <CardDetails
+        size={size}
+        difficulty={difficulty}
+        miner={miner}
+        loading={loading}
+      />
+
+      {/* CTA */}
+      <CardActions>
+        <CardButton
+          disabled={loading}
+          buttonType="secondary"
+          to={`/block/${blockNumber}`}
+        >
+          More details
+        </CardButton>
+      </CardActions>
+    </Panel>
+  )
+}
 
 const TransactionsCountLabel = styled(Label)`
   margin-bottom: ${layout.scale[5]};

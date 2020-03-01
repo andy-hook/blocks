@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import styled, { css } from "styled-components"
 import { mq } from "@style/media-queries"
 import NavList from "./nav-list/nav-list"
@@ -18,7 +18,7 @@ import { SHUFFLE_MIN_RANGE, SHUFFLE_MAX_RANGE } from "../../../config"
 import { generateBlockNumberFromStaticRange } from "@utils"
 import { useSpring, animated } from "react-spring"
 
-const Topbar: React.FunctionComponent = memo(() => {
+const Topbar: React.FunctionComponent = () => {
   const { themeType, setThemeTypeStatus } = useThemeSwitchContext()
   const [randomBlockNumber, setRandomBlockNumber] = useState<number>()
   const [topbarScrolled, setTopbarScrolled] = useState(false)
@@ -127,7 +127,7 @@ const Topbar: React.FunctionComponent = memo(() => {
       <TopbarShadow style={animateTopbarBg} />
     </TopbarFixer>
   )
-})
+}
 
 const TopbarFixer = styled(animated.div)`
   position: fixed;

@@ -1,11 +1,11 @@
-import React, { memo, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { Spring, Transition } from "react-spring/renderprops.cjs"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 import { themeBrand } from "@style/theme"
 
-const LoadingIndicator: React.FunctionComponent = memo(() => {
+const LoadingIndicator: React.FunctionComponent = () => {
   const { loading } = useLoadingStatusContext()
 
   const initialPercent = 0
@@ -53,7 +53,7 @@ const LoadingIndicator: React.FunctionComponent = memo(() => {
       </Transition>
     </>
   )
-})
+}
 
 const LoadingContainer = styled.div`
   position: fixed;

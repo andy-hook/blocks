@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import Transaction from "./transaction/transaction"
 import { Web3BlockData } from "model"
@@ -13,41 +13,39 @@ interface Props {
   transactions: Web3BlockData["transactionsData"]
 }
 
-const TransactionTable: React.FunctionComponent<Props> = memo(
-  ({ transactions }) => {
-    function renderBodyRows() {
-      return transactions.map((trx, index) => {
-        return (
-          <DataRow
-            key={index}
-            blockNumber={toString(trx.blockNumber)}
-            trxHash={trx.hash}
-            from={trx.from}
-            to={trx.to}
-            value={trx.ether}
-          />
-        )
-      })
-    }
-
-    return (
-      <Table>
-        <TableHead>
-          <TableHeadRow>
-            <ColumnsTemplate
-              tableHeader={true}
-              block={<Heading>Block</Heading>}
-              hash={<Heading>Hash</Heading>}
-              fromTo={<Heading>From / To</Heading>}
-              value={<Heading>Value</Heading>}
-            />
-          </TableHeadRow>
-        </TableHead>
-        <TableBody>{renderBodyRows()}</TableBody>
-      </Table>
-    )
+const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
+  function renderBodyRows() {
+    return transactions.map((trx, index) => {
+      return (
+        <DataRow
+          key={index}
+          blockNumber={toString(trx.blockNumber)}
+          trxHash={trx.hash}
+          from={trx.from}
+          to={trx.to}
+          value={trx.ether}
+        />
+      )
+    })
   }
-)
+
+  return (
+    <Table>
+      <TableHead>
+        <TableHeadRow>
+          <ColumnsTemplate
+            tableHeader={true}
+            block={<Heading>Block</Heading>}
+            hash={<Heading>Hash</Heading>}
+            fromTo={<Heading>From / To</Heading>}
+            value={<Heading>Value</Heading>}
+          />
+        </TableHeadRow>
+      </TableHead>
+      <TableBody>{renderBodyRows()}</TableBody>
+    </Table>
+  )
+}
 
 const Heading: React.FunctionComponent = ({ children }) => (
   <Label intensity="low" size="lg">

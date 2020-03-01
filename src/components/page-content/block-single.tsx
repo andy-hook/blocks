@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react"
+import React, { useState } from "react"
 import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 import { Web3BlockData } from "model"
 import { requestBlocks } from "@web3/web3-data-request"
@@ -23,79 +23,81 @@ interface DataState {
   error: {} | null
 }
 
-const BlockSingle: React.FunctionComponent<Props> = memo(
-  ({ blockNumberFromUrl }) => {
-    const web3 = useWeb3Context().web3
-    const { data: blocksData } = useWeb3BlocksDataContext()
-    const blockNumber = parseFloat(blockNumberFromUrl as string)
-    const { setLoadingStatus } = useLoadingStatusContext()
+const BlockSingle: React.FunctionComponent<Props> = ({
+  blockNumberFromUrl,
+}) => {
+  const web3 = useWeb3Context().web3
+  const { data: blocksData } = useWeb3BlocksDataContext()
+  const blockNumber = parseFloat(blockNumberFromUrl as string)
+  const { setLoadingStatus } = useLoadingStatusContext()
 
-    const [blockData, setBlockData] = useState<DataState>({
-      data: null,
-      error: null,
+  const [blockData, setBlockData] = useState<DataState>({
+    data: null,
+    error: null,
+  })
+
+  function setDataAndHideLoadingStatus(
+    data: Web3BlockData,
+    error: DataState["error"]
+  ) {
+    setBlockData({
+      data: { ...data },
+      error,
     })
 
-    function setDataAndHideLoadingStatus(
-      data: Web3BlockData,
-      error: DataState["error"]
-    ) {
-      setBlockData({
-        data: { ...data },
-        error,
-      })
+    setLoadingStatus(false)
+  }
 
-      setLoadingStatus(false)
-    }
+  useAsyncEffect(
+    async isMounted => {
+      setLoadingStatus(true)
 
-    useAsyncEffect(
-      async isMounted => {
-        setLoadingStatus(true)
+      console.log("render")
 
-        if (blocksData && web3) {
-          // Get the current block from context if possible
-          const currentCachedBlockData = blocksData.find(
-            element => element.number === blockNumber
-          ) as Web3BlockData
+      if (blocksData && web3) {
+        // Get the current block from context if possible
+        const currentCachedBlockData = blocksData.find(
+          element => element.number === blockNumber
+        ) as Web3BlockData
 
-          // Use value from context if it exists or fetch new...
-          if (currentCachedBlockData) {
-            setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
-          } else {
-            // Or fetch fresh data
-            try {
-              const currentBlockData = (await requestBlocks(web3, [
-                blockNumber,
-              ])) as Web3BlockData[]
+        // Use value from context if it exists or fetch new...
+        if (currentCachedBlockData) {
+          setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
+        } else {
+          // Or fetch fresh data
+          try {
+            const currentBlockData = (await requestBlocks(web3, [
+              blockNumber,
+            ])) as Web3BlockData[]
 
-              // Success
-              if (isMounted()) {
-                setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
-              }
-            } catch (error) {
-              // Failure
-              if (isMounted()) {
-                setBlockData({ data: null, error })
-              }
+            // Success
+            if (isMounted()) {
+              setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
+            }
+          } catch (error) {
+            // Failure
+            if (isMounted()) {
+              setBlockData({ data: null, error })
             }
           }
         }
-      },
-      [blocksData]
-    )
+      }
+    },
+    [blocksData]
+  )
 
-    return (
-      <Page>
-        <Gutter>
-          <Limiter size="large">
-            <BlockContainer>
-              <Block blockData={blockData.data} />
-            </BlockContainer>
-          </Limiter>
-        </Gutter>
-      </Page>
-    )
-  }
-)
+  return (
+    <Page>
+      <Gutter>
+        <Limiter size="large">
+          <BlockContainer>
+            <Block blockData={blockData.data} />
+          </BlockContainer>
+        </Limiter>
+      </Gutter>
+    </Page>
+  )
+}
 
 const BlockContainer = styled.div`
   padding-top: ${layout.scale[12]};

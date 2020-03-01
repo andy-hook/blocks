@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import Icon from "@components/shared/icon/icon"
 import { themeForeground, themeForegroundAlpha, isTheme } from "@style/theme"
@@ -10,11 +10,11 @@ interface Props {
   className?: string
 }
 
-const Mark: React.FunctionComponent<Props> = memo(({ className }) => (
+const Mark: React.FunctionComponent<Props> = ({ className }) => (
   <MarkContainer className={classNames("", className)}>
     <MarkIcon name="blocks" />
   </MarkContainer>
-))
+)
 
 const MarkContainer = styled.div`
   display: flex;

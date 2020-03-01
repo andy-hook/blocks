@@ -1,4 +1,4 @@
-import React, { memo, ReactNode } from "react"
+import React, { ReactNode } from "react"
 import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
@@ -26,24 +26,22 @@ interface ResponsiveSizes {
   topWall: string
 }
 
-const Panel: React.FunctionComponent<Props> = memo(
-  ({
-    children,
-    className,
-    xPadding = "md" as PaddingSize,
-    yPadding = "md" as PaddingSize,
-  }) => {
-    return (
-      <Container
-        xSize={xPadding}
-        ySize={yPadding}
-        className={classNames("", className)}
-      >
-        {children}
-      </Container>
-    )
-  }
-)
+const Panel: React.FunctionComponent<Props> = ({
+  children,
+  className,
+  xPadding = "md" as PaddingSize,
+  yPadding = "md" as PaddingSize,
+}) => {
+  return (
+    <Container
+      xSize={xPadding}
+      ySize={yPadding}
+      className={classNames("", className)}
+    >
+      {children}
+    </Container>
+  )
+}
 
 const paddingSizes: { [index: string]: ResponsiveSizes } = {
   sm: {

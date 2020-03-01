@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import Label, { SkeletonWidth } from "@components/shared/label/label"
 import classNames from "classnames"
@@ -15,23 +15,27 @@ interface Props {
   skeletonWidth?: SkeletonWidth
 }
 
-const BlockInfoRow: React.FunctionComponent<Props> = memo(
-  ({ name, value, loading, className, skeletonWidth }) => {
-    return (
-      <Row className={classNames("", className)}>
-        <Title intensity="high" size="sm">
-          {name}
-        </Title>
+const BlockInfoRow: React.FunctionComponent<Props> = ({
+  name,
+  value,
+  loading,
+  className,
+  skeletonWidth,
+}) => {
+  return (
+    <Row className={classNames("", className)}>
+      <Title intensity="high" size="sm">
+        {name}
+      </Title>
 
-        <ValueLabel>
-          <Label loading={loading} skeletonWidth={skeletonWidth} size="lg">
-            <TruncateString text={value} truncateAt={40} />
-          </Label>
-        </ValueLabel>
-      </Row>
-    )
-  }
-)
+      <ValueLabel>
+        <Label loading={loading} skeletonWidth={skeletonWidth} size="lg">
+          <TruncateString text={value} truncateAt={40} />
+        </Label>
+      </ValueLabel>
+    </Row>
+  )
+}
 
 const Row = styled.div`
   display: flex;

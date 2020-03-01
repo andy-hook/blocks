@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled, { css } from "styled-components"
 import Title from "@components/shared/title/title"
 import Label from "@components/shared/label/label"
@@ -22,74 +22,72 @@ interface Props {
   handleTransactionsClick?: () => void
 }
 
-const BlockHeader: React.FunctionComponent<Props> = memo(
-  ({
-    blockNumber,
-    transactionCount,
-    loading,
-    handleDetailsClick,
-    handleTransactionsClick,
-    trxVisible,
-  }) => {
-    function renderSupTitleContent() {
-      return trxVisible ? (
-        <>&#x23;&nbsp;{blockNumber}</>
-      ) : (
-        <>{transactionCount} Transactions</>
-      )
-    }
-
-    function renderTitleContent() {
-      return trxVisible ? (
-        <>{transactionCount} Transactions</>
-      ) : (
-        <>&#x23;&nbsp;{blockNumber}</>
-      )
-    }
-
-    return (
-      <HeaderPanel yPadding="lg" xPadding="lg">
-        <HeaderPanelInner>
-          <Button to="/" buttonType="tertiary" icon="arrow-left">
-            Latest blocks
-          </Button>
-          <Header showAsTrx={trxVisible}>
-            {/* Title with details */}
-            <DetailCouple>
-              <SupTitle
-                intensity="low"
-                size="lg"
-                skeletonWidth="lg"
-                loading={loading}
-              >
-                {renderSupTitleContent()}
-              </SupTitle>
-
-              <h1>
-                <Title
-                  intensity="high"
-                  size="lg"
-                  loading={loading}
-                  skeletonWidth="md"
-                >
-                  {renderTitleContent()}
-                </Title>
-              </h1>
-            </DetailCouple>
-
-            {/* Switch between details and transactions */}
-            <HeaderSwitch
-              onDetailsClick={handleDetailsClick}
-              onTransactionsClick={handleTransactionsClick}
-              trxVisible={trxVisible}
-              disabled={loading}
-            />
-          </Header>
-        </HeaderPanelInner>
-      </HeaderPanel>
+const BlockHeader: React.FunctionComponent<Props> = ({
+  blockNumber,
+  transactionCount,
+  loading,
+  handleDetailsClick,
+  handleTransactionsClick,
+  trxVisible,
+}) => {
+  function renderSupTitleContent() {
+    return trxVisible ? (
+      <>&#x23;&nbsp;{blockNumber}</>
+    ) : (
+      <>{transactionCount} Transactions</>
     )
   }
-)
+
+  function renderTitleContent() {
+    return trxVisible ? (
+      <>{transactionCount} Transactions</>
+    ) : (
+      <>&#x23;&nbsp;{blockNumber}</>
+    )
+  }
+
+  return (
+    <HeaderPanel yPadding="lg" xPadding="lg">
+      <HeaderPanelInner>
+        <Button to="/" buttonType="tertiary" icon="arrow-left">
+          Latest blocks
+        </Button>
+        <Header showAsTrx={trxVisible}>
+          {/* Title with details */}
+          <DetailCouple>
+            <SupTitle
+              intensity="low"
+              size="lg"
+              skeletonWidth="lg"
+              loading={loading}
+            >
+              {renderSupTitleContent()}
+            </SupTitle>
+
+            <h1>
+              <Title
+                intensity="high"
+                size="lg"
+                loading={loading}
+                skeletonWidth="md"
+              >
+                {renderTitleContent()}
+              </Title>
+            </h1>
+          </DetailCouple>
+
+          {/* Switch between details and transactions */}
+          <HeaderSwitch
+            onDetailsClick={handleDetailsClick}
+            onTransactionsClick={handleTransactionsClick}
+            trxVisible={trxVisible}
+            disabled={loading}
+          />
+        </Header>
+      </HeaderPanelInner>
+    </HeaderPanel>
+  )
+}
 
 const HeaderPanel = styled(Panel)`
   margin-bottom: ${layout.scale[3]};

@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import classNames from "classnames"
 import ColumnsTemplate from "../columns-template/columns-template"
 import styled, { css } from "styled-components"
@@ -21,38 +21,40 @@ interface Props {
   className?: string
 }
 
-const Transaction: React.FunctionComponent<Props> = memo(
-  ({ blockNumber, trxHash, from, to, value, className }) => {
-    return (
-      <Row
-        className={classNames("", className)}
-        hasValue={value ? value > 0 : false}
-      >
-        <ColumnsTemplate
-          block={
-            <Title size="xs" intensity="high">
-              <TruncateString text={"# " + blockNumber} truncateAt={50} />
-            </Title>
-          }
-          hash={
-            <LimitedHash>
-              <TruncateString text={trxHash} truncateAt={50} />
-            </LimitedHash>
-          }
-          fromTo={<Transfer from={from} to={to} />}
-          value={
-            <Label>
-              <TruncateString
-                text={toString(value) + " Ether"}
-                truncateAt={20}
-              />
-            </Label>
-          }
-        />
-      </Row>
-    )
-  }
-)
+const Transaction: React.FunctionComponent<Props> = ({
+  blockNumber,
+  trxHash,
+  from,
+  to,
+  value,
+  className,
+}) => {
+  return (
+    <Row
+      className={classNames("", className)}
+      hasValue={value ? value > 0 : false}
+    >
+      <ColumnsTemplate
+        block={
+          <Title size="xs" intensity="high">
+            <TruncateString text={"# " + blockNumber} truncateAt={50} />
+          </Title>
+        }
+        hash={
+          <LimitedHash>
+            <TruncateString text={trxHash} truncateAt={50} />
+          </LimitedHash>
+        }
+        fromTo={<Transfer from={from} to={to} />}
+        value={
+          <Label>
+            <TruncateString text={toString(value) + " Ether"} truncateAt={20} />
+          </Label>
+        }
+      />
+    </Row>
+  )
+}
 
 export const rowPaddingX = css`
   padding-left: ${layout.scale[7]};

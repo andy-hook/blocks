@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import BlockInfoRow from "./block-info-row/block-info-row"
 import { appearance } from "@style/design-tokens"
@@ -18,67 +18,65 @@ interface Props {
   miner?: string
 }
 
-const BlockInfo: React.FunctionComponent<Props> = memo(
-  ({
-    size,
-    difficulty,
-    totalDifficulty,
-    gasUsed,
-    gasLimit,
-    loading,
-    timestamp,
-    miner,
-  }) => {
-    return (
-      <InfoPanel yPadding="lg" xPadding="lg">
-        <InfoList>
-          <InfoRow
-            name="Size"
-            value={size}
-            loading={loading}
-            skeletonWidth="sm"
-          />
-          <InfoRow
-            name="Timestamp"
-            value={timestamp}
-            loading={loading}
-            skeletonWidth="lg"
-          />
-          <InfoRow
-            name="Miner"
-            value={miner}
-            loading={loading}
-            skeletonWidth="xl"
-          />
-          <InfoRow
-            name="Difficulty"
-            value={difficulty}
-            loading={loading}
-            skeletonWidth="md"
-          />
-          <InfoRow
-            name="Total Difficulty"
-            value={totalDifficulty}
-            loading={loading}
-            skeletonWidth="lg"
-          />
-          <InfoRow
-            name="Gas Used"
-            value={gasUsed}
-            loading={loading}
-            skeletonWidth="sm"
-          />
-          <InfoRow
-            name="Gas Limit"
-            value={gasLimit}
-            loading={loading}
-            skeletonWidth="md"
-          />
-        </InfoList>
-      </InfoPanel>
-    )
-  }
-)
+const BlockInfo: React.FunctionComponent<Props> = ({
+  size,
+  difficulty,
+  totalDifficulty,
+  gasUsed,
+  gasLimit,
+  loading,
+  timestamp,
+  miner,
+}) => {
+  return (
+    <InfoPanel yPadding="lg" xPadding="lg">
+      <InfoList>
+        <InfoRow
+          name="Size"
+          value={size}
+          loading={loading}
+          skeletonWidth="sm"
+        />
+        <InfoRow
+          name="Timestamp"
+          value={timestamp}
+          loading={loading}
+          skeletonWidth="lg"
+        />
+        <InfoRow
+          name="Miner"
+          value={miner}
+          loading={loading}
+          skeletonWidth="xl"
+        />
+        <InfoRow
+          name="Difficulty"
+          value={difficulty}
+          loading={loading}
+          skeletonWidth="md"
+        />
+        <InfoRow
+          name="Total Difficulty"
+          value={totalDifficulty}
+          loading={loading}
+          skeletonWidth="lg"
+        />
+        <InfoRow
+          name="Gas Used"
+          value={gasUsed}
+          loading={loading}
+          skeletonWidth="sm"
+        />
+        <InfoRow
+          name="Gas Limit"
+          value={gasLimit}
+          loading={loading}
+          skeletonWidth="md"
+        />
+      </InfoList>
+    </InfoPanel>
+  )
+}
 
 const InfoPanel = styled(Panel)`
   position: relative;
