@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled, { css } from "styled-components"
 import { type, appearance, layout } from "@style/design-tokens"
 import {
@@ -22,30 +22,28 @@ interface Props {
   disabled?: boolean
 }
 
-const Button: React.FunctionComponent<Props> = memo(
-  ({
-    to,
-    children,
-    className,
-    disabled = false,
-    buttonType = "primary" as ButtonType,
-    icon,
-  }) => {
-    return (
-      <StyledButton
-        to={to}
-        type={buttonType}
-        className={classNames("", className)}
-        disabled={disabled}
-      >
-        <Inner>
-          {icon && <ButtonIcon name={icon} />}
-          <Text hasIcon={icon && true}>{children}</Text>
-        </Inner>
-      </StyledButton>
-    )
-  }
-)
+const Button: React.FunctionComponent<Props> = ({
+  to,
+  children,
+  className,
+  disabled = false,
+  buttonType = "primary" as ButtonType,
+  icon,
+}) => {
+  return (
+    <StyledButton
+      to={to}
+      type={buttonType}
+      className={classNames("", className)}
+      disabled={disabled}
+    >
+      <Inner>
+        {icon && <ButtonIcon name={icon} />}
+        <Text hasIcon={icon && true}>{children}</Text>
+      </Inner>
+    </StyledButton>
+  )
+}
 
 const StyledButton = styled(Link)<{ type: ButtonType; disabled: boolean }>`
   position: relative;

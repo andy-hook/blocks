@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from "react"
+import React, { useEffect } from "react"
 import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
 import BlockList from "@components/shared/block-list/block-list"
 import Page from "@components/shared/page/page"
@@ -8,7 +8,7 @@ import { useLoadingStatusContext } from "@providers/loading-status-provider/load
 import Hero from "@components/shared/hero/hero"
 import { useSpring, animated } from "react-spring"
 
-const Home: React.FunctionComponent = memo(() => {
+const Home: React.FunctionComponent = () => {
   const { data } = useWeb3BlocksDataContext()
   const { setLoadingStatus } = useLoadingStatusContext()
 
@@ -42,6 +42,6 @@ const Home: React.FunctionComponent = memo(() => {
       </animated.div>
     </Page>
   )
-})
+}
 
 export default Home

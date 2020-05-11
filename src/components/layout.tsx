@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import GlobalStyle from "@style/global-style"
 import Topbar from "@components/shared/topbar/topbar"
 
@@ -11,7 +11,7 @@ import ThemeSwitchProvider from "@providers/theme-switch-provider/theme-switch-p
 import LoadingIndicator from "@components/shared/loading-indicator/loading-indicator"
 import { USE_MAINNET, BLOCK_COUNT } from "../config"
 
-const Layout: React.FunctionComponent = memo(({ children }) => {
+const Layout: React.FunctionComponent = ({ children }) => {
   return (
     <MediaQueryProvider>
       <ThemeSwitchProvider>
@@ -30,6 +30,6 @@ const Layout: React.FunctionComponent = memo(({ children }) => {
       </ThemeSwitchProvider>
     </MediaQueryProvider>
   )
-})
+}
 
 export default Layout

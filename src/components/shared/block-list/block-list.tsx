@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import { Web3BlockData } from "model"
 import Card from "@components/shared/card/card"
@@ -10,7 +10,7 @@ interface Props {
   blockData?: Web3BlockData[] | null
 }
 
-const BlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
+const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {
   // Render skeleton items while awaiting data
   function renderItems() {
     return Array.from(Array(BLOCK_COUNT)).map((_, index) => {
@@ -25,7 +25,7 @@ const BlockList: React.FunctionComponent<Props> = memo(({ blockData }) => {
   }
 
   return <Grid>{renderItems()}</Grid>
-})
+}
 
 const gridItemOffsetAmount = layout.scale[16]
 

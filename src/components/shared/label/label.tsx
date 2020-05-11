@@ -1,4 +1,4 @@
-import React, { memo, ReactNode } from "react"
+import React, { ReactNode } from "react"
 import styled from "styled-components"
 import {
   typeBaseSemibold,
@@ -25,32 +25,30 @@ interface Props {
   children?: ReactNode
 }
 
-const Label: React.FunctionComponent<Props> = memo(
-  ({
-    children,
-    className,
-    loading,
-    skeletonWidth = "md" as SkeletonWidth,
-    intensity = "medium" as Intensity,
-    size = "md" as Size,
-  }) => {
-    return (
-      <Text
-        intensity={intensity}
-        size={size}
-        className={classNames("", className)}
-      >
-        {loading ? (
-          <Skeleton intensity={intensity} skeletonWidth={skeletonWidth}>
-            &nbsp;
-          </Skeleton>
-        ) : (
-          children
-        )}
-      </Text>
-    )
-  }
-)
+const Label: React.FunctionComponent<Props> = ({
+  children,
+  className,
+  loading,
+  skeletonWidth = "md" as SkeletonWidth,
+  intensity = "medium" as Intensity,
+  size = "md" as Size,
+}) => {
+  return (
+    <Text
+      intensity={intensity}
+      size={size}
+      className={classNames("", className)}
+    >
+      {loading ? (
+        <Skeleton intensity={intensity} skeletonWidth={skeletonWidth}>
+          &nbsp;
+        </Skeleton>
+      ) : (
+        children
+      )}
+    </Text>
+  )
+}
 
 const skeletonWidths = {
   sm: "4em",

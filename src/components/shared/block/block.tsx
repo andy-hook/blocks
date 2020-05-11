@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react"
+import React, { useState } from "react"
 import { Web3BlockData } from "model"
 import { toString } from "lodash"
 import BlockHeader from "@components/shared/block-header/block-header"
@@ -9,7 +9,7 @@ interface Props {
   blockData?: Web3BlockData | null
 }
 
-const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
+const Block: React.FunctionComponent<Props> = ({ blockData }) => {
   const [trxVisible, setTrxVisible] = useState<boolean>(false)
   const animateBlockEntrance = useSpring({
     from: {
@@ -57,6 +57,6 @@ const Block: React.FunctionComponent<Props> = memo(({ blockData }) => {
       </article>
     </animated.div>
   )
-})
+}
 
 export default Block

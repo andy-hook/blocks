@@ -2,7 +2,7 @@ import React from "react"
 import { Normalize } from "styled-normalize"
 import { createGlobalStyle } from "styled-components"
 import { themeLayer, themeForeground } from "./theme"
-import { layout, appearance } from "./design-tokens"
+import { appearance } from "./design-tokens"
 
 const Global = createGlobalStyle`
 
@@ -11,6 +11,7 @@ const Global = createGlobalStyle`
 
   body {
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   body,
@@ -150,47 +151,12 @@ const GlobalPageBackground = createGlobalStyle`
   }
 `
 
-const GlobalTransitionLink = createGlobalStyle`
-
-  /* transition-portal doesn't give any granular control over the z-index level so it's overwritten here */
-  /* position: fixed is also set on the portal which messes up the width of the wrapped page */
-  .gatsby-plugin-transition-link-portal {
-    width: 100%;
-    z-index: ${layout.zIndex.low} !important;
-  }
-
-  .tl-wrapper {
-    z-index: ${layout.zIndex.low} !important;
-  }
-
-  .tl-edges {
-    overflow: hidden !important;
-  }
-
-  /* Using transition-portal messes with styling and causes pages to dissappear due to a negative margin set on the element */
-  .tl-wrapper + .tl-wrapper {
-    margin: 0 !important;
-  }
-
-  /* Entering page should always sit above the exiting */
-  /* This is primarily used to prevent jank when switching routes */
-  .tl-wrapper-status--entering,
-  .tl-wrapper-status--entered {
-    z-index: ${layout.zIndex.low + 1} !important;
-  }
-
-  .tl-wrapper-status--exiting {
-    z-index: ${layout.zIndex.low} !important;
-  }
-`
-
 const GlobalStyle: React.FunctionComponent = () => {
   return (
     <>
       <Normalize />
       <Global />
       <GlobalPageBackground />
-      <GlobalTransitionLink />
     </>
   )
 }

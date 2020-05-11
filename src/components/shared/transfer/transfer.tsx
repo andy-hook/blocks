@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import TransferPip from "./transfer-pip/transfer-pip"
 import { layout, type } from "@style/design-tokens"
@@ -10,7 +10,7 @@ interface Props {
   to?: string
 }
 
-const Transfer: React.FunctionComponent<Props> = memo(({ from, to }) => {
+const Transfer: React.FunctionComponent<Props> = ({ from, to }) => {
   return (
     <TransferContainer>
       <TransferValue>{from}</TransferValue>
@@ -20,7 +20,7 @@ const Transfer: React.FunctionComponent<Props> = memo(({ from, to }) => {
       <TransferValue>{to}</TransferValue>
     </TransferContainer>
   )
-})
+}
 
 const TransferContainer = styled.div`
   width: 100%;

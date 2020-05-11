@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled, { css } from "styled-components"
 import { type, layout, appearance } from "@style/design-tokens"
 import {
@@ -16,34 +16,32 @@ interface Props {
   disabled?: boolean
 }
 
-const BlockHeaderSwitch: React.FunctionComponent<Props> = memo(
-  ({
-    onDetailsClick,
-    onTransactionsClick,
-    trxVisible,
-    className,
-    disabled = false,
-  }) => {
-    return (
-      <SwitchContainer className={classNames("", className)}>
-        <SwitchButton
-          onClick={onDetailsClick}
-          active={!trxVisible}
-          disabled={disabled}
-        >
-          <SwitchButtonText>Details</SwitchButtonText>
-        </SwitchButton>
-        <SwitchButton
-          onClick={onTransactionsClick}
-          active={trxVisible}
-          disabled={disabled}
-        >
-          <SwitchButtonText>Transactions</SwitchButtonText>
-        </SwitchButton>
-      </SwitchContainer>
-    )
-  }
-)
+const BlockHeaderSwitch: React.FunctionComponent<Props> = ({
+  onDetailsClick,
+  onTransactionsClick,
+  trxVisible,
+  className,
+  disabled = false,
+}) => {
+  return (
+    <SwitchContainer className={classNames("", className)}>
+      <SwitchButton
+        onClick={onDetailsClick}
+        active={!trxVisible}
+        disabled={disabled}
+      >
+        <SwitchButtonText>Details</SwitchButtonText>
+      </SwitchButton>
+      <SwitchButton
+        onClick={onTransactionsClick}
+        active={trxVisible}
+        disabled={disabled}
+      >
+        <SwitchButtonText>Transactions</SwitchButtonText>
+      </SwitchButton>
+    </SwitchContainer>
+  )
+}
 
 const activeStyle = css`
   background: linear-gradient(

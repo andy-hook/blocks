@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import Gutter from "../gutter/gutter"
 import Limiter from "../limiter/limiter"
 import styled, { css } from "styled-components"
@@ -16,7 +16,7 @@ import Label from "@components/shared/label/label"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { mq } from "@style/media-queries"
 
-const Footer: React.FunctionComponent = memo(() => (
+const Footer: React.FunctionComponent = () => (
   <FooterContainer>
     <Gutter>
       <Limiter size="large">
@@ -70,12 +70,12 @@ const Footer: React.FunctionComponent = memo(() => (
       </Limiter>
     </Gutter>
   </FooterContainer>
-))
+)
 
 const FooterSocialItem: React.FunctionComponent<{
   href: string
   children: string
-}> = memo(({ href, children }) => (
+}> = ({ href, children }) => (
   <FooterSocialListItem>
     <Label intensity="low">
       <FooterSocialLink rel="noreferrer" href={href} target="_blank">
@@ -83,7 +83,7 @@ const FooterSocialItem: React.FunctionComponent<{
       </FooterSocialLink>
     </Label>
   </FooterSocialListItem>
-))
+)
 
 const FooterContainer = styled.footer`
   padding-top: ${layout.scale[13]};

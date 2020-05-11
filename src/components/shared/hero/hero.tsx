@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import Mark from "@components/shared/mark/mark"
@@ -7,7 +7,7 @@ import { themeForeground, isTheme } from "@style/theme"
 import RemoveWidow from "@components/shared/remove-widow/remove-widow"
 import { mq } from "@style/media-queries"
 
-const Hero: React.FunctionComponent = memo(() => (
+const Hero: React.FunctionComponent = () => (
   <HeroContainer>
     <HeroInner>
       {/* Spacey rings */}
@@ -27,7 +27,7 @@ const Hero: React.FunctionComponent = memo(() => (
       </h1>
     </HeroInner>
   </HeroContainer>
-))
+)
 
 const HeroContainer = styled.div`
   position: relative;

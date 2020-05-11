@@ -1,4 +1,4 @@
-import React, { memo, MutableRefObject } from "react"
+import React, { MutableRefObject } from "react"
 
 import classNames from "classnames"
 import styled, { css } from "styled-components"
@@ -13,7 +13,7 @@ interface Props {
   className?: string
 }
 
-const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
+const NavList: React.FunctionComponent<Props> = ({ className }) => {
   const navRef = React.useRef() as MutableRefObject<HTMLDivElement>
 
   return (
@@ -35,7 +35,7 @@ const NavList: React.FunctionComponent<Props> = memo(({ className }) => {
       </List>
     </Container>
   )
-})
+}
 
 const Container = styled.nav``
 

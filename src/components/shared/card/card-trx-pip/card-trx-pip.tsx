@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React from "react"
 import { Web3TransactionData } from "model"
 import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
@@ -13,20 +13,22 @@ interface Props {
   isEmpty?: boolean
 }
 
-const CardTrxPip: React.FunctionComponent<Props> = memo(
-  ({ value, loading, isEmpty }) => {
-    return (
-      <PipOuter>
-        <PipInner
-          hasValue={value ? value > 0 : false}
-          zeroValue={value === 0}
-          isEmpty={isEmpty}
-          isLoading={loading}
-        />
-      </PipOuter>
-    )
-  }
-)
+const CardTrxPip: React.FunctionComponent<Props> = ({
+  value,
+  loading,
+  isEmpty,
+}) => {
+  return (
+    <PipOuter>
+      <PipInner
+        hasValue={value ? value > 0 : false}
+        zeroValue={value === 0}
+        isEmpty={isEmpty}
+        isLoading={loading}
+      />
+    </PipOuter>
+  )
+}
 
 const empty = css`
   border: ${appearance.borderThickness.thick} solid
