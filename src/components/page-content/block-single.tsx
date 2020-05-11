@@ -94,7 +94,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({
       <Gutter>
         <Limiter size="large">
           <BlockContainer>
-            <Block blockData={blockData.data} key={location?.key} />
+            <Block blockData={blockData.data} key={location && location.key} />
           </BlockContainer>
         </Limiter>
       </Gutter>
