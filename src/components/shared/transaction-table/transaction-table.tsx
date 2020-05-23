@@ -13,22 +13,26 @@ interface Props {
   transactions: Web3BlockData["transactionsData"]
 }
 
-const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
-  function renderBodyRows() {
-    return transactions.map((trx, index) => {
-      return (
-        <DataRow
-          key={index}
-          blockNumber={toString(trx.blockNumber)}
-          trxHash={trx.hash}
-          from={trx.from}
-          to={trx.to}
-          value={trx.ether}
-        />
-      )
-    })
-  }
+const TransactionRows: React.FunctionComponent<Props> = ({ transactions }) => {
+  return (
+    <>
+      {transactions.map((trx, index) => {
+        return (
+          <DataRow
+            key={index}
+            blockNumber={toString(trx.blockNumber)}
+            trxHash={trx.hash}
+            from={trx.from}
+            to={trx.to}
+            value={trx.ether}
+          />
+        )
+      })}
+    </>
+  )
+}
 
+const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
   return (
     <Table>
       <TableHead>
@@ -42,7 +46,9 @@ const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
           />
         </TableHeadRow>
       </TableHead>
-      <TableBody>{renderBodyRows()}</TableBody>
+      <TableBody>
+        <TransactionRows transactions={transactions} />
+      </TableBody>
     </Table>
   )
 }

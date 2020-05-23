@@ -13,6 +13,24 @@ interface Props {
   trxVisible: boolean
 }
 
+const TransactionsList: React.FunctionComponent<{
+  transactions: Web3TransactionData[]
+}> = ({ transactions }) => {
+  return (
+    <>
+      {transactions.length > 0 ? (
+        <TransactionTable transactions={transactions} />
+      ) : (
+        <BlockEmptyTransactions yPadding="lg">
+          <Title size="sm" intensity="high">
+            This block doesn't have any transactions&nbsp;&nbsp;&nbsp;:(
+          </Title>
+        </BlockEmptyTransactions>
+      )}
+    </>
+  )
+}
+
 const BlockBody: React.FunctionComponent<Props> = ({
   blockData,
   trxVisible,
@@ -21,22 +39,10 @@ const BlockBody: React.FunctionComponent<Props> = ({
     return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
   }
 
-  function renderTransactionsOrEmptyState(transactions: Web3TransactionData[]) {
-    return transactions.length > 0 ? (
-      <TransactionTable transactions={transactions} />
-    ) : (
-      <BlockEmptyTransactions yPadding="lg">
-        <Title size="sm" intensity="high">
-          This block doesn't have any transactions&nbsp;&nbsp;&nbsp;:(
-        </Title>
-      </BlockEmptyTransactions>
-    )
-  }
-
   function renderInfoAsSkeletonOrPopulated() {
     if (blockData) {
       return trxVisible ? (
-        renderTransactionsOrEmptyState(blockData.transactionsData)
+        <TransactionsList transactions={blockData.transactionsData} />
       ) : (
         <BlockInfo
           size={toString(blockData.size + "B")}

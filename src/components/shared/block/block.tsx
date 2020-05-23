@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useCallback, useMemo } from "react"
 import { Web3BlockData } from "model"
 import { toString } from "lodash"
 import BlockHeader from "@components/shared/block-header/block-header"
@@ -11,6 +11,7 @@ interface Props {
 
 const Block: React.FunctionComponent<Props> = ({ blockData }) => {
   const [trxVisible, setTrxVisible] = useState<boolean>(false)
+  const spring = { mass: 1, tension: 175, friction: 30 }
   const animateBlockEntrance = useSpring({
     from: {
       opacity: 0,
@@ -18,20 +19,20 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
     },
     to: {
       opacity: 1,
-      transform: `translate3d(0rem,0,0)`,
+      transform: `translate3d(0,0,0)`,
     },
-    config: { mass: 1, tension: 175, friction: 30 },
+    config: spring,
   })
 
-  function handleDetailsClick() {
+  const handleDetailsClick = useCallback(() => {
     setTrxVisible(false)
-  }
+  }, [])
 
-  function handleTransactionsClick() {
+  const handleTransactionsClick = useCallback(() => {
     setTrxVisible(true)
-  }
+  }, [])
 
-  function renderHeaderAsSkeletonOrPopulated() {
+  const renderHeaderAsSkeletonOrPopulated = useMemo(() => {
     if (blockData) {
       return (
         <BlockHeader
@@ -45,12 +46,12 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
     } else {
       return <BlockHeader trxVisible={trxVisible} loading={true} />
     }
-  }
+  }, [blockData, trxVisible, handleDetailsClick, handleTransactionsClick])
 
   return (
     <animated.div style={animateBlockEntrance}>
       <article>
-        {renderHeaderAsSkeletonOrPopulated()}
+        {renderHeaderAsSkeletonOrPopulated}
         <main>
           <BlockBody trxVisible={trxVisible} blockData={blockData} />
         </main>
