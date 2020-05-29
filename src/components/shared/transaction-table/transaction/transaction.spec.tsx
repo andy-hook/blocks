@@ -6,7 +6,7 @@ jest.mock("react-truncate-string")
 
 describe("<Transaction />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <Transaction />)
+    const tree = renderWithTheme("dark", <Transaction blockNumber="1" />)
     expect(tree).toMatchSnapshot()
   })
 })

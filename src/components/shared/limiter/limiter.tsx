@@ -1,33 +1,23 @@
-import React, { PropsWithChildren, ReactNode } from "react"
+import React from "react"
 import { rem } from "polished"
 import styled, { css } from "styled-components"
 
 interface Props {
   size?: "small" | "medium" | "large"
-  children?: ReactNode
 }
-
-const Limiter: React.FunctionComponent<Props> = React.forwardRef<
-  HTMLDivElement,
-  PropsWithChildren<Props>
->(({ size = "medium", children }, ref) => {
-  function renderLimiter() {
-    switch (size) {
-      case "small":
-        return <SmallLimiter ref={ref}>{children}</SmallLimiter>
-      case "medium":
-        return <MediumLimiter ref={ref}>{children}</MediumLimiter>
-      case "large":
-        return <LargeLimiter ref={ref}>{children}</LargeLimiter>
-    }
+const Limiter: React.FunctionComponent<Props> = ({
+  size = "medium",
+  children,
+}) => {
+  switch (size) {
+    case "small":
+      return <SmallLimiter>{children}</SmallLimiter>
+    case "medium":
+      return <MediumLimiter>{children}</MediumLimiter>
+    case "large":
+      return <LargeLimiter>{children}</LargeLimiter>
   }
-
-  return <>{renderLimiter()}</>
-})
-
-const smallSize = rem("900px")
-const mediumSize = rem("1200px")
-const largeSize = rem("1650px")
+}
 
 const commonStyles = css`
   margin: auto;
@@ -36,19 +26,19 @@ const commonStyles = css`
 const SmallLimiter = styled.div`
   ${commonStyles}
 
-  max-width: ${smallSize};
+  max-width: ${rem("900px")};
 `
 
 const MediumLimiter = styled.div`
   ${commonStyles}
 
-  max-width: ${mediumSize};
+  max-width: ${rem("1200px")};
 `
 
 const LargeLimiter = styled.div`
   ${commonStyles}
 
-  max-width: ${largeSize};
+  max-width: ${rem("1650px")};
 `
 
 export default Limiter

@@ -1,17 +1,25 @@
-import React, { ReactNode } from "react"
+import React, { ReactNode, Component } from "react"
 import { ThemeProvider } from "styled-components"
-import { shallow, mount } from "enzyme"
+import { shallow, mount, ShallowWrapper, ReactWrapper } from "enzyme"
 import { themes, ThemeName } from "@style/theme"
-import renderer from "react-test-renderer"
+import renderer, { ReactTestRendererJSON } from "react-test-renderer"
 
-export const mountWithTheme = (theme: ThemeName, children: ReactNode) =>
+type emptyObj = Record<string, unknown>
+
+export const mountWithTheme = (
+  theme: ThemeName,
+  children: ReactNode
+): ReactWrapper<any, Readonly<emptyObj>, Component<emptyObj, emptyObj, any>> =>
   mount(
     <ThemeProvider theme={themes[theme]}>
       <>{children}</>
     </ThemeProvider>
   )
 
-export const renderWithTheme = (theme: ThemeName, children: ReactNode) =>
+export const renderWithTheme = (
+  theme: ThemeName,
+  children: ReactNode
+): ReactTestRendererJSON | null =>
   renderer
     .create(
       <ThemeProvider theme={themes[theme]}>
@@ -20,7 +28,10 @@ export const renderWithTheme = (theme: ThemeName, children: ReactNode) =>
     )
     .toJSON()
 
-export const shallowWithTheme = (theme: ThemeName, children: ReactNode) =>
+export const shallowWithTheme = (
+  theme: ThemeName,
+  children: ReactNode
+): ShallowWrapper<any, emptyObj, Component<emptyObj, emptyObj, any>> =>
   shallow(
     <ThemeProvider theme={themes[theme]}>
       <>{children}</>

@@ -1,11 +1,11 @@
-import { css } from "styled-components"
+import { css, CSSProp } from "styled-components"
 
-export const createHsl = (value: string) => `hsl(${value})`
+export const createHsl = (value: string): string => `hsl(${value})`
 
-export const createHsla = (value: string, alpha: number) =>
+export const createHsla = (value: string, alpha: number): string =>
   `hsla(${value},${alpha})`
 
-export const createCubicBezier = (values: number[]) => {
+export const createCubicBezier = (values: number[]): string => {
   const valueString = values.join(",")
 
   return `cubic-bezier(${valueString})`
@@ -21,7 +21,7 @@ export function createTextCrop(
   settings: CropSettings,
   topAdjustment = "0px",
   bottomAdjustment = "0px"
-) {
+): CSSProp {
   const { lHeight, topCrop, bottomCrop } = settings
 
   const cropFontSize = 100
@@ -59,7 +59,7 @@ export function createPlaceholderCrop(
   settings: CropSettings,
   topAdjustment = "0px",
   bottomAdjustment = "0px"
-) {
+): CSSProp {
   const { lHeight, topCrop, bottomCrop } = settings
 
   const cropFontSize = 100

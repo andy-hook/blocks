@@ -1,6 +1,6 @@
 // Typescript, why can't you see my svgs?
 declare module "*.svg" {
-  const content: any
+  const content: string
   export default content
 }
 

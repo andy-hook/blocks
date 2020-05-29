@@ -16,8 +16,9 @@ const Home: React.FunctionComponent = () => {
     if (data) {
       setLoadingStatus(false)
     }
-  }, [data])
+  }, [data, setLoadingStatus])
 
+  const spring = { mass: 1, tension: 175, friction: 30 }
   const animateHomeEntrance = useSpring({
     from: {
       opacity: 0,
@@ -27,7 +28,7 @@ const Home: React.FunctionComponent = () => {
       opacity: 1,
       transform: `translate3d(0rem,0,0)`,
     },
-    config: { mass: 1, tension: 175, friction: 30 },
+    config: spring,
   })
 
   return (

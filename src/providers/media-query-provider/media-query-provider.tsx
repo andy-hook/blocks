@@ -81,6 +81,6 @@ const MediaQueryProvider: React.FunctionComponent = ({ children }) => {
 
 export default MediaQueryProvider
 
-export function useMediaQueryContext() {
+export function useMediaQueryContext(): Partial<ContextProps> {
   return useContext(MediaQueryContext)
 }

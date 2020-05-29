@@ -21,47 +21,52 @@ export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
   })
 
   useEffect(() => {
-    const configureProvider = () => {
-      const provider = new Web3.providers.HttpProvider(
-        `https://${
-          useMainnet ? "mainnet" : "ropsten"
-        }.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0`
-      )
-
-      setWeb3State({ web3: new Web3(provider) })
-    }
+    let cancelled = false
 
     async function checkMetaMask() {
       // @ts-ignore
       if (window.ethereum) {
         // Happy path
         // @ts-ignore
+        // eslint-disable-next-line
         window.ethereum.autoRefreshOnNetworkChange = false
 
         try {
           // Awaiting log in
           // @ts-ignore
+          // eslint-disable-next-line
           await window.ethereum.enable()
 
           // Logged in
-          configureProvider()
+          const provider = new Web3.providers.HttpProvider(
+            `https://${
+              useMainnet ? "mainnet" : "rinkeby"
+            }.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0`
+          )
+
+          if (!cancelled) {
+            setWeb3State({ web3: new Web3(provider) })
+          }
         } catch {
           // Not logged in
           // There was an error while enabling
-          setWeb3State({ web3: null, error: "DENIED" })
+          if (!cancelled) {
+            setWeb3State({ web3: null, error: "DENIED" })
+          }
         }
-
-        // Legacy dapp browsers...
-        // @ts-ignore
-      } else if (window.web3) {
-        configureProvider()
       } else {
-        setWeb3State({ web3: null, error: "FORBIDDEN" })
+        if (!cancelled) {
+          setWeb3State({ web3: null, error: "FORBIDDEN" })
+        }
       }
     }
 
-    checkMetaMask()
-  }, [])
+    void checkMetaMask()
+
+    return () => {
+      cancelled = true
+    }
+  }, [useMainnet])
 
   return (
     <Web3Context.Provider value={web3State}>{children}</Web3Context.Provider>
@@ -70,6 +75,6 @@ export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
 
 export default Web3Provider
 
-export function useWeb3Context() {
+export function useWeb3Context(): Partial<StateProps> {
   return useContext(Web3Context)
 }

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react"
+import React, { createContext, useContext, useState, useCallback } from "react"
 
 interface ContextState {
   loading: boolean
@@ -15,9 +15,12 @@ export const LoadingStatusContext = createContext<ContextState>({
 const LoadingStatusProvider: React.FunctionComponent = ({ children }) => {
   const [loading, setLoading] = useState(initialValue)
 
-  function setLoadingStatus(status: boolean) {
-    setLoading(status)
-  }
+  const setLoadingStatus = useCallback(
+    (status: boolean) => {
+      setLoading(status)
+    },
+    [setLoading]
+  )
 
   return (
     <LoadingStatusContext.Provider value={{ loading, setLoadingStatus }}>
@@ -28,6 +31,6 @@ const LoadingStatusProvider: React.FunctionComponent = ({ children }) => {
 
 export default LoadingStatusProvider
 
-export function useLoadingStatusContext() {
+export function useLoadingStatusContext(): ContextState {
   return useContext(LoadingStatusContext)
 }

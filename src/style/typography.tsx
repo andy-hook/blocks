@@ -1,4 +1,4 @@
-import { css } from "styled-components"
+import { css, CSSProp } from "styled-components"
 import { createTextCrop, createPlaceholderCrop } from "./utils"
 import { type } from "./design-tokens"
 import { mq } from "./media-queries"
@@ -10,14 +10,14 @@ const baseCropSettings = {
   bottomCrop: 15,
 }
 
-export const setBaseCropAndLineHeight = (lHeight: number) => {
+export const setBaseCropAndLineHeight = (lHeight: number): CSSProp => {
   return createTextCrop({
     ...baseCropSettings,
     lHeight,
   })
 }
 
-export const setBasePlaceholderCrop = (lHeight: number) => {
+export const setBasePlaceholderCrop = (lHeight: number): CSSProp => {
   return createPlaceholderCrop({
     ...baseCropSettings,
     lHeight,
@@ -31,14 +31,14 @@ const displayCropSettings = {
   bottomCrop: 22,
 }
 
-export const setDisplayCropAndLineHeight = (lHeight: number) => {
+export const setDisplayCropAndLineHeight = (lHeight: number): CSSProp => {
   return createTextCrop({
     ...displayCropSettings,
     lHeight,
   })
 }
 
-export const setDisplayPlaceholderCrop = (lHeight: number) => {
+export const setDisplayPlaceholderCrop = (lHeight: number): CSSProp => {
   return createPlaceholderCrop({
     ...displayCropSettings,
     lHeight,

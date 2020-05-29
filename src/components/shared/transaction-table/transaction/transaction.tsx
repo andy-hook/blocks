@@ -13,7 +13,7 @@ import { themeBrand } from "@style/theme"
 import { toString } from "lodash"
 
 interface Props {
-  blockNumber?: string
+  blockNumber: string
   trxHash?: string
   from?: string
   to?: string
@@ -37,7 +37,7 @@ const Transaction: React.FunctionComponent<Props> = ({
       <ColumnsTemplate
         block={
           <Title size="xs" intensity="high">
-            <TruncateString text={"# " + blockNumber} truncateAt={50} />
+            <TruncateString text={`# ${blockNumber}`} truncateAt={50} />
           </Title>
         }
         hash={

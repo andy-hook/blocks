@@ -5,10 +5,16 @@
   "version": "0.1.0",
   "author": "Andy Hook <hello@andy-hook.co.uk>",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
     "babel-plugin-styled-components": "^1.10.0",
     "bignumber.js": "^9.0.0",
     "change-case": "^3.1.0",
     "classnames": "^2.2.6",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
     "gatsby": "^2.18.10",
     "gatsby-image": "^2.0.37",
     "gatsby-plugin-alias-imports": "^1.0.5",
@@ -40,7 +46,6 @@
     "styled-components": "^4.2.0",
     "styled-media-query": "^2.1.2",
     "styled-normalize": "^8.0.6",
-    "use-async-effect": "^2.2.2",
     "use-media": "^1.4.0",
     "web3": "^1.2.5"
   },
@@ -71,14 +76,7 @@
     "react-test-renderer": "^16.8.6",
     "svgstore-cli": "^1.3.1",
     "ts-jest": "^24.0.2",
-    "tslint": "^5.15.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-loader": "^3.5.4",
-    "tslint-plugin-prettier": "^2.0.1",
-    "tslint-react": "^4.0.0",
-    "tslint-react-hooks": "^2.1.1",
-    "typescript": "^3.8.3",
-    "typescript-tslint-plugin": "^0.5.5"
+    "typescript": "^3.8.3"
   },
   "keywords": [
     "gatsby"
@@ -93,7 +91,7 @@
     "test-watch": "npm test -- --watch",
     "snapshots": "npm test -- -u",
     "type-check": "tsc --noEmit --forceConsistentCasingInFileNames",
-    "lint": "tslint --project .",
+    "lint": "eslint ./src/",
     "all-checks": "npm run type-check && npm run format && npm run lint && npm run test",
     "netlify-build": "npm run all-checks && npm run build",
     "build-icons": "node imagemin-svgo.js && svgstore -o static/icon-sprite.svg src/icons/**/*.svg",

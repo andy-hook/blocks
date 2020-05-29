@@ -8,13 +8,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF jAdoft"
+      className="sc-kEYyzF dQoLKx"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -774,13 +774,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF insuBq"
+      className="sc-kEYyzF bSOZxt"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -1540,13 +1540,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF jAdoft"
+      className="sc-kEYyzF dQoLKx"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -2308,7 +2308,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -2330,13 +2330,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF insuBq"
+      className="sc-kEYyzF bSOZxt"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -3098,7 +3098,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -3120,13 +3120,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF jAdoft"
+      className="sc-kEYyzF dQoLKx"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -3888,7 +3888,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -3910,13 +3910,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF insuBq"
+      className="sc-kEYyzF bSOZxt"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -4678,7 +4678,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -4700,13 +4700,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF jAdoft"
+      className="sc-kEYyzF dQoLKx"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -5468,7 +5468,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -5490,13 +5490,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF insuBq"
+      className="sc-kEYyzF bSOZxt"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -6258,7 +6258,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -6280,13 +6280,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF jAdoft"
+      className="sc-kEYyzF dQoLKx"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -7048,7 +7048,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -7070,13 +7070,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF insuBq"
+      className="sc-kEYyzF bSOZxt"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -7838,7 +7838,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -7860,13 +7860,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF jAdoft"
+      className="sc-kEYyzF dQoLKx"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -8628,7 +8628,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div
@@ -8650,13 +8650,13 @@ exports[`<BlockList /> renders correctly 1`] = `
     className="sc-hMqMXs cPxEnv"
   >
     <div
-      className="sc-kEYyzF insuBq"
+      className="sc-kEYyzF bSOZxt"
     >
       <div
         className="sc-jKJlTe loXQau"
       >
         <div
-          className="sc-kGXeez ewkNID"
+          className="sc-kGXeez UiZhV"
         >
           <div
             className="sc-EHOje jxbRPR sc-kpOJdX jbuTzW"
@@ -9418,7 +9418,7 @@ exports[`<BlockList /> renders correctly 1`] = `
             <a
               className="sc-cSHVUG AcTxi sc-ckVGcZ bBUPhT"
               disabled={true}
-              href="/block/undefined"
+              href=""
               type="secondary"
             >
               <div

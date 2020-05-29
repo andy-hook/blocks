@@ -9,9 +9,10 @@ function requestTransactions(web3Instance: Web3, transactions: string[]) {
       batchRequest.add(
         // @ts-ignore – request doesn't exist in types
         // https://github.com/ethereum/web3.js/issues/3144
+        // eslint-disable-next-line
         web3Instance.eth.getTransaction.request(
           transaction,
-          async (error: {}, data: Web3TransactionData) => {
+          (error: Record<string, unknown>, data: Web3TransactionData) => {
             if (error) {
               reject(error)
             } else {
@@ -35,7 +36,10 @@ function requestTransactions(web3Instance: Web3, transactions: string[]) {
   return Promise.all(batchPromise)
 }
 
-export async function requestBlocks(web3Instance: Web3, blocks: number[]) {
+export async function requestBlocks(
+  web3Instance: Web3,
+  blocks: number[]
+): Promise<unknown[]> {
   const batchRequest = new web3Instance.eth.BatchRequest()
 
   const batchPromise = blocks.map(block => {
@@ -43,9 +47,10 @@ export async function requestBlocks(web3Instance: Web3, blocks: number[]) {
       batchRequest.add(
         // @ts-ignore – request doesn't exist in types
         // https://github.com/ethereum/web3.js/issues/3144
+        // eslint-disable-next-line
         web3Instance.eth.getBlock.request(
           block,
-          async (error: {}, data: Web3BlockData) => {
+          async (error: Record<string, unknown>, data: Web3BlockData) => {
             if (error || !data) {
               reject(error)
             } else {

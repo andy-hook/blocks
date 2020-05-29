@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Web3BlockData } from "model"
 import Card from "@components/shared/card/card"
 import { layout } from "@style/design-tokens"
@@ -63,13 +63,15 @@ const Grid = styled.ul`
 
 const GridItem = styled.li``
 
-const GridItemOffset = styled.div<{ isEven: boolean }>`
-  ${props =>
-    props.isEven &&
-    mq.greaterThan("topLap")`
+const verticalItemOffset = css`
+  ${mq.greaterThan("topLap")`
     position: relative;
     top: ${gridItemOffsetAmount};
-  `};
+  `}
+`
+
+const GridItemOffset = styled.div<{ isEven: boolean }>`
+  ${props => props.isEven && verticalItemOffset}
 `
 
 export default BlockList

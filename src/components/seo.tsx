@@ -8,6 +8,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import Helmet from "react-helmet"
+import { MetaData } from "model"
 
 interface Props {
   description?: string
@@ -19,7 +20,11 @@ interface Props {
   ogImage?: string
 }
 
-const SEO = ({
+interface metaData {
+  metaData: MetaData
+}
+
+const SEO: React.FunctionComponent<Props> = ({
   description = ``,
   lang = `en`,
   bodyClasses = ``,
@@ -28,7 +33,7 @@ const SEO = ({
   twitterImage = ``,
   ogImage = ``,
 }: Props) => {
-  const { metaData } = useStaticQuery(
+  const queryData: metaData = useStaticQuery(
     graphql`
       query {
         metaData: site {
@@ -37,6 +42,10 @@ const SEO = ({
       }
     `
   )
+
+  console.log(queryData)
+
+  const { metaData } = queryData
 
   const metaDescription = description || metaData.siteMetadata.description
   const metaTwitterImage =
