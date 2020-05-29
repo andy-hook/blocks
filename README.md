@@ -34,7 +34,7 @@ See configuration constants inside `src/config` to manage some aspects of data d
 To start local development:
 
 ```sh
-npm run start
+yarn start
 ```
 
 This will spin up a local server on `localhost:8000`
@@ -44,13 +44,13 @@ This will spin up a local server on `localhost:8000`
 To build for production:
 
 ```sh
-npm run build
+yarn build
 ```
 
 or preview a build locally on `localhost:9000`
 
 ```sh
-npm run build-serve
+yarn build-serve
 ```
 
 ## Testing
@@ -58,13 +58,13 @@ npm run build-serve
 Run the tests:
 
 ```sh
-npm run test
+yarn test
 ```
 
 or run and watch:
 
 ```sh
-npm run test-watch
+yarn test-watch
 ```
 
 ## Type checking, linting and CI
@@ -72,19 +72,19 @@ npm run test-watch
 Because React doesn't typecheck at runtime you'll have to run a check manually or in your pipeline to ensure all your code passes:
 
 ```sh
-npm run type-check
+yarn type-check
 ```
 
 You can also run a lint:
 
 ```sh
-npm run lint
+yarn lint
 ```
 
 Or everything including formatting and tests:
 
 ```sh
-npm run all-checks
+yarn all-checks
 ```
 
 ## Formatting your code
@@ -92,7 +92,7 @@ npm run all-checks
 Prettier is supported:
 
 ```sh
-npm run format
+yarn format
 ```
 
 Or install a plugin for your editor of choice, I personally use [this vscode package](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
@@ -102,7 +102,7 @@ Or install a plugin for your editor of choice, I personally use [this vscode pac
 To optimise and update the spritesheet when you edit icons:
 
 ```sh
-npm run build-icons
+yarn build-icons
 ```
 
 ## Pre-loading fonts
@@ -112,13 +112,13 @@ Whenever you change font files, `@fontface` declarations or add new pages you wi
 ### Start your development environment
 
 ```sh
-npm run start
+yarn start
 ```
 
 ### Run the scraper to generate cache
 
 ```sh
-npm run preload-fonts
+yarn preload-fonts
 ```
 
 You should now have an updated `font-preload-cache.json`, don't forget to check this in along with your font changes.
