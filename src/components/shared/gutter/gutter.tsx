@@ -1,15 +1,11 @@
-import React, { ReactNode } from "react"
+import React from "react"
 import { mq } from "@style/media-queries"
 import styled from "styled-components"
 import { rem } from "polished"
 
-interface Props {
-  children: ReactNode
-}
-
-const Gutter = React.forwardRef<HTMLDivElement, Props>(({ children }, ref) => (
-  <GutterContainer ref={ref}>{children}</GutterContainer>
-))
+const Gutter: React.FunctionComponent = ({ children }) => (
+  <GutterContainer>{children}</GutterContainer>
+)
 
 export const smallScreenGutter = rem("15px")
 

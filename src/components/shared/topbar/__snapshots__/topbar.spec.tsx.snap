@@ -105,7 +105,7 @@ exports[`<Topbar /> renders correctly 1`] = `
       <a
         aria-label="Go to a random block"
         className="sc-cSHVUG edhiZa"
-        href="/block/undefined"
+        href=""
         onClick={[Function]}
       >
         <div

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react"
-import styled, { css } from "styled-components"
+import styled, { css, CSSProp } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import classNames from "classnames"
@@ -90,20 +90,19 @@ const lightModeShadow = css`
   box-shadow: 0rem 0.2rem 0.3rem 0 ${themeForegroundAlpha("low", 0.5)};
 `
 
-const panelShadow = css`
-  ${isTheme("dark", darkModeShadow, lightModeShadow)};
-`
-
 // It's annoying to have to provide this but forwardAs isn't supported
 // in my current version of styled components
-export function mimicPanelSizeAndPresentation({ xSize, ySize }: PanelSizes) {
+export function mimicPanelSizeAndPresentation({
+  xSize,
+  ySize,
+}: PanelSizes): CSSProp {
   return css`
-    ${panelShadow}
-    ${mimicPanelPadding({ xSize, ySize })}
+  ${isTheme("dark", darkModeShadow, lightModeShadow)};
+  ${mimicPanelPadding({ xSize, ySize })}
 
-    border-radius: ${appearance.radius.base};
-    background-color: ${themeLayer("high")};
-  `
+  border-radius: ${appearance.radius.base};
+  background-color: ${themeLayer("high")};
+`
 }
 
 const Container = styled.div<PanelSizes>`

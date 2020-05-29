@@ -4,12 +4,12 @@ import styled from "styled-components"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 import Title from "@components/shared/title/title"
 
-const NotFoundPage = () => {
+const NotFoundPage: React.FunctionComponent = () => {
   const { setLoadingStatus } = useLoadingStatusContext()
 
   useEffect(() => {
     setLoadingStatus(false)
-  }, [])
+  }, [setLoadingStatus])
 
   return (
     <>

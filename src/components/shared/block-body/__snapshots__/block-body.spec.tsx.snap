@@ -2,7 +2,7 @@
 
 exports[`<BlockBody /> renders correctly 1`] = `
 <div
-  className="sc-bZQynM voXAZ sc-gzVnrw egtCjV"
+  className="sc-bZQynM hPkpFr sc-gzVnrw egtCjV"
 >
   <ul
     className="sc-htoDjs bZzhDu"

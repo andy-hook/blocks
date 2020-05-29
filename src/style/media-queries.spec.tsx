@@ -33,9 +33,9 @@ describe("constructMinMediaString", () => {
 
 describe("uniformScale", () => {
   test("should return a viewport unit", () => {
-    const out = stripUnit(uniformScale("100px", "topUltra"), true)[1]
+    const out = stripUnit(uniformScale("100px", "topUltra"), true) as string[]
 
-    expect(out).toEqual("vw")
+    expect(out[1]).toEqual("vw")
   })
 
   test("should return correct value when supplied PX unit", () => {

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useEffect, useRef, DependencyList } from "react"
+import { useLayoutEffect, useEffect, useRef, useCallback } from "react"
 
 interface ScrollProps {
   prevPos: {
@@ -23,33 +23,30 @@ const getScrollPosition = () => {
   return { x: window.scrollX, y: window.scrollY }
 }
 
-const useScrollPosition = (
-  effect: (props: ScrollProps) => void,
-  deps?: DependencyList
-) => {
+const useScrollPosition = (effect: (props: ScrollProps) => void): void => {
   const currPosition = useRef(getScrollPosition())
   const prevPosition = useRef(getScrollPosition())
   const ticking = useRef(false)
 
-  const update = () => {
+  const update = useCallback(() => {
     ticking.current = false
 
     effect({ prevPos: prevPosition.current, currPos: currPosition.current })
-  }
+  }, [effect])
 
-  const requestTick = () => {
+  const requestTick = useCallback(() => {
     if (!ticking.current) {
       requestAnimationFrame(update)
     }
     ticking.current = true
-  }
+  }, [update])
 
-  const onScroll = () => {
+  const onScroll = useCallback(() => {
     prevPosition.current = currPosition.current
     currPosition.current = getScrollPosition()
 
     requestTick()
-  }
+  }, [requestTick])
 
   useIsomorphicLayoutEffect(() => {
     if (!isBrowser) {
@@ -59,7 +56,7 @@ const useScrollPosition = (
     window.addEventListener("scroll", onScroll)
 
     return () => window.removeEventListener("scroll", onScroll)
-  }, deps)
+  }, [onScroll])
 }
 
 export default useScrollPosition

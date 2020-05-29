@@ -11,7 +11,7 @@ exports[`<Block /> renders correctly 1`] = `
 >
   <article>
     <div
-      className="sc-gzVnrw lmZtEH sc-jTzLTM iziihJ"
+      className="sc-gzVnrw cDihpn sc-jTzLTM iziihJ"
     >
       <div
         className="sc-fjdhpX jUDtSK"
@@ -101,7 +101,7 @@ exports[`<Block /> renders correctly 1`] = `
     </div>
     <main>
       <div
-        className="sc-gzVnrw lmZtEH sc-kpOJdX epAUmu"
+        className="sc-gzVnrw cDihpn sc-kpOJdX epAUmu"
       >
         <ul
           className="sc-dxgOiQ hTjMfW"

@@ -68,7 +68,7 @@ const CardContent: React.FunctionComponent<Props> = ({
         <CardButton
           disabled={loading}
           buttonType="secondary"
-          to={`/block/${blockNumber}`}
+          to={blockNumber ? `/block/${blockNumber}` : ""}
         >
           More details
         </CardButton>

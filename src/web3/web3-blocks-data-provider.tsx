@@ -1,9 +1,8 @@
-import React, { createContext, useState, useContext } from "react"
+import React, { createContext, useState, useContext, useEffect } from "react"
 import { Web3BlockData } from "model"
 import { useWeb3Context } from "./web3-provider"
 import { lastNumbersFromRange } from "@utils"
 import { requestBlocks } from "./web3-data-request"
-import { useAsyncEffect } from "use-async-effect"
 
 interface Props {
   maxBlocks?: number
@@ -11,7 +10,7 @@ interface Props {
 
 interface DataState {
   data: Web3BlockData[] | null
-  error: {} | null
+  error: string | null
 }
 
 export const Web3BlocksData = createContext<Partial<DataState>>({})
@@ -26,8 +25,10 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
     error: null,
   })
 
-  useAsyncEffect(
-    async isMounted => {
+  useEffect(() => {
+    let cancelled = false
+
+    async function getBlocksState() {
       if (web3 && !blocksState.data) {
         const latestBlockNumber = await web3.eth.getBlockNumber()
 
@@ -43,22 +44,29 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
           )) as Web3BlockData[]
 
           // Success
-          if (isMounted()) {
+          if (!cancelled) {
             setBlocksState({ data: allBlocksData, error: null })
           }
         } catch (error) {
+          const errorMessage = (error as Error).message
+
           // Failure
-          if (isMounted()) {
+          if (!cancelled) {
             setBlocksState({
               data: null,
-              error,
+              error: errorMessage,
             })
           }
         }
       }
-    },
-    [web3]
-  )
+    }
+
+    void getBlocksState()
+
+    return () => {
+      cancelled = true
+    }
+  }, [web3, blocksState.data, maxBlocks])
 
   return (
     <Web3BlocksData.Provider value={blocksState}>
@@ -69,6 +77,6 @@ export const Web3BlocksDataProvider: React.FunctionComponent<Props> = ({
 
 export default Web3BlocksDataProvider
 
-export function useWeb3BlocksDataContext() {
+export function useWeb3BlocksDataContext(): Partial<DataState> {
   return useContext(Web3BlocksData)
 }

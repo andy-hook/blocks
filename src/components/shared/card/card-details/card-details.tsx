@@ -24,7 +24,7 @@ const CardDetails: React.FunctionComponent<Props> = ({
       <SizeItem>
         <DetailsTitle intensity="low">Size</DetailsTitle>
         <DetailsValue intensity="high" loading={loading} skeletonWidth="sm">
-          <TruncateString text={size + "B"} truncateAt={20} />
+          <TruncateString text={`${size ? size : ""}B`} truncateAt={20} />
         </DetailsValue>
       </SizeItem>
 

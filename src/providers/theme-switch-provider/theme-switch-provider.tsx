@@ -32,6 +32,6 @@ const ThemeSwitchProvider: React.FunctionComponent = ({ children }) => {
 
 export default ThemeSwitchProvider
 
-export function useThemeSwitchContext() {
+export function useThemeSwitchContext(): ContextState {
   return useContext(ThemeSwitchContext)
 }

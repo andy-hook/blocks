@@ -49,11 +49,11 @@ const breakpoints: Breakpoints = {
 
 const emBreakpoints = pxToEm(breakpoints, type.baseFontSize)
 
-export const constructMaxMediaString = (breakpoint: string) => {
+export const constructMaxMediaString = (breakpoint: string): string => {
   return `(max-width: ${breakpoint})`
 }
 
-export const constructMinMediaString = (breakpoint: string) => {
+export const constructMinMediaString = (breakpoint: string): string => {
   return `(min-width: ${breakpoint})`
 }
 
@@ -87,25 +87,26 @@ export const uniformScale = (
   targetMediaQuery: BreakpointName
 ): string => {
   // Split into value and unit
-  const value = stripUnit(cssValue)
-  const unit = stripUnit(cssValue, true)[1]
+  const value = stripUnit(cssValue) as number
+  const valueWithUnit = stripUnit(cssValue, true) as string[]
+  const unit = valueWithUnit[1]
   const breakpoint = breakpoints[targetMediaQuery]
 
   // Convert from relative to px value
   const convertedUnit = unit === "px" ? value : value * type.baseFontSize
 
-  const bpValue = stripUnit(breakpoint)
+  const bpValue = stripUnit(breakpoint) as number
 
   return `${convertedUnit / (bpValue * 0.01 * 1)}vw`
 }
 
 export const scaleBetween = (
   property: string,
-  fromValue: string | CSSProp,
-  toValue: string | CSSProp,
+  fromValue: string,
+  toValue: string,
   fromBreakpoint: BreakpointName,
   toBreakpoint: BreakpointName
-) =>
+): CSSProp =>
   css`
     ${mq.between(fromBreakpoint, toBreakpoint)`
       ${property}: ${between(
@@ -119,9 +120,9 @@ export const scaleBetween = (
 
 export const scaleGreaterThan = (
   property: string,
-  fromValue: string | CSSProp,
+  fromValue: string,
   fromBreakpoint: BreakpointName
-) =>
+): CSSProp =>
   css`
     ${mq.greaterThan(fromBreakpoint)`
       ${property}: ${uniformScale(`${fromValue}`, fromBreakpoint)};

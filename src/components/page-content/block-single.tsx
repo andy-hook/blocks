@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useCallback, useMemo } from "react"
 import Page from "@components/shared/page/page"
 import Gutter from "@components/shared/gutter/gutter"
 import Limiter from "@components/shared/limiter/limiter"
@@ -11,7 +11,6 @@ import { useWeb3Context } from "@web3/web3-provider"
 import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
-import { useAsyncEffect } from "use-async-effect"
 import { RouteComponentProps } from "@reach/router"
 
 interface Props extends RouteComponentProps {
@@ -21,7 +20,7 @@ interface Props extends RouteComponentProps {
 
 interface DataState {
   data: Web3BlockData | null
-  error: {} | null
+  error: string | null
 }
 
 const BlockSingle: React.FunctionComponent<Props> = ({
@@ -30,42 +29,53 @@ const BlockSingle: React.FunctionComponent<Props> = ({
 }) => {
   const web3 = useWeb3Context().web3
   const { data: blocksData } = useWeb3BlocksDataContext()
-  const blockNumber = parseFloat(blockNumberFromUrl as string)
   const { setLoadingStatus } = useLoadingStatusContext()
+  const blockNumber = useMemo(() => parseFloat(blockNumberFromUrl as string), [
+    blockNumberFromUrl,
+  ])
 
   const [blockData, setBlockData] = useState<DataState>({
     data: null,
     error: null,
   })
 
-  function setDataAndHideLoadingStatus(
-    data: Web3BlockData,
-    error: DataState["error"]
-  ) {
-    setBlockData({
-      data: { ...data },
-      error,
-    })
+  const setDataAndHideLoadingStatus = useCallback(
+    (data: Web3BlockData, error: DataState["error"]) => {
+      setBlockData({
+        data: { ...data },
+        error,
+      })
 
-    setLoadingStatus(false)
-  }
+      setLoadingStatus(false)
+    },
+    [setLoadingStatus]
+  )
 
-  useAsyncEffect(
-    async isMounted => {
-      setLoadingStatus(true)
+  useEffect(() => {
+    console.log(blockNumber)
+    setLoadingStatus(true)
+  }, [setLoadingStatus, blockNumber])
 
+  useEffect(() => {
+    let cancelled = false
+    async function getBlocksState() {
       if (blocksData && web3) {
         // Get the current block from context if possible
         const currentCachedBlockData = blocksData.find(
-          element => element.number === blockNumber
+          block => block.number === blockNumber
         ) as Web3BlockData
 
         // Use value from context if it exists or fetch new...
         if (currentCachedBlockData) {
-          setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
+          if (!cancelled) {
+            setDataAndHideLoadingStatus({ ...currentCachedBlockData }, null)
+          }
         } else {
+          console.log("firing")
           // Clear stored data to force loading skeletons to appear
-          setBlockData({ data: null, error: null })
+          if (!cancelled) {
+            setBlockData({ data: null, error: null })
+          }
 
           // Fetch fresh data
           try {
@@ -74,20 +84,34 @@ const BlockSingle: React.FunctionComponent<Props> = ({
             ])) as Web3BlockData[]
 
             // Success
-            if (isMounted()) {
+            if (!cancelled) {
               setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
             }
           } catch (error) {
+            const errorMessage = (error as Error).message
+
             // Failure
-            if (isMounted()) {
-              setBlockData({ data: null, error })
+            if (!cancelled) {
+              setBlockData({ data: null, error: errorMessage })
             }
           }
         }
       }
-    },
-    [blocksData, blockNumberFromUrl]
-  )
+    }
+
+    void getBlocksState()
+
+    return () => {
+      cancelled = true
+    }
+  }, [
+    blocksData,
+    blockNumberFromUrl,
+    blockNumber,
+    setLoadingStatus,
+    setDataAndHideLoadingStatus,
+    web3,
+  ])
 
   return (
     <Page>

@@ -1,4 +1,4 @@
-import { css, CSSProp } from "styled-components"
+import { css, CSSProp, ThemeProps, DefaultTheme } from "styled-components"
 import { createHsl, createHsla } from "@style/utils"
 
 export type ThemeName = "light" | "dark"
@@ -27,13 +27,13 @@ const darkThemeBrandShades: BrandShades = {
   dark: "346, 91%, 56%",
 }
 
-export const darkThemeToneShade = (value: BrandShadeNames) =>
+export const darkThemeToneShade = (value: BrandShadeNames): string =>
   createHsl(darkThemeBrandShades[value])
 
 export const darkThemeToneShadeAlpha = (
   value: BrandShadeNames,
   alpha: number
-) => createHsla(darkThemeBrandShades[value], alpha)
+): string => createHsla(darkThemeBrandShades[value], alpha)
 
 const lightThemeBrandShades: BrandShades = {
   light: "281, 86%, 46%",
@@ -41,13 +41,13 @@ const lightThemeBrandShades: BrandShades = {
   dark: "259, 70%, 35%",
 }
 
-export const lightThemeToneShade = (value: BrandShadeNames) =>
+export const lightThemeToneShade = (value: BrandShadeNames): string =>
   createHsl(lightThemeBrandShades[value])
 
 export const lightThemeToneShadeAlpha = (
   value: BrandShadeNames,
   alpha: number
-) => createHsla(lightThemeBrandShades[value], alpha)
+): string => createHsla(lightThemeBrandShades[value], alpha)
 
 /* Dark theme app layers
 ------------------------------------------------- */
@@ -57,10 +57,10 @@ const darkThemeLayers: Layers = {
   high: "204, 13%, 15%",
 }
 
-export const darkThemeLayer = (value: LayerNames) =>
+export const darkThemeLayer = (value: LayerNames): string =>
   createHsl(darkThemeLayers[value])
 
-export const darkThemeLayerAlpha = (value: LayerNames, alpha: number) =>
+export const darkThemeLayerAlpha = (value: LayerNames, alpha: number): string =>
   createHsla(darkThemeLayers[value], alpha)
 
 /* Light theme app layers
@@ -71,11 +71,13 @@ const lightThemeLayers: Layers = {
   high: "220, 16%, 98%",
 }
 
-export const lightThemeLayer = (value: LayerNames) =>
+export const lightThemeLayer = (value: LayerNames): string =>
   createHsl(lightThemeLayers[value])
 
-export const lightThemeLayerAlpha = (value: LayerNames, alpha: number) =>
-  createHsla(lightThemeLayers[value], alpha)
+export const lightThemeLayerAlpha = (
+  value: LayerNames,
+  alpha: number
+): string => createHsla(lightThemeLayers[value], alpha)
 
 /* Dark theme foreground
 ------------------------------------------------- */
@@ -89,11 +91,13 @@ const darkThemeForegroundHSL: Greys = {
   extraHigh: "0, 0%, 100%",
 }
 
-export const darkThemeForeground = (value: GreyNames) =>
+export const darkThemeForeground = (value: GreyNames): string =>
   createHsl(darkThemeForegroundHSL[value])
 
-export const darkThemeForegroundAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(darkThemeForegroundHSL[value], alpha)
+export const darkThemeForegroundAlpha = (
+  value: GreyNames,
+  alpha: number
+): string => createHsla(darkThemeForegroundHSL[value], alpha)
 
 /* Light theme foreground
 ------------------------------------------------- */
@@ -107,11 +111,13 @@ const lightThemeForegroundHSL: Greys = {
   extraHigh: "215, 13%, 2%",
 }
 
-export const lightThemeForeground = (value: GreyNames) =>
+export const lightThemeForeground = (value: GreyNames): string =>
   createHsl(darkThemeForegroundHSL[value])
 
-export const lightThemeForegroundAlpha = (value: GreyNames, alpha: number) =>
-  createHsla(darkThemeForegroundHSL[value], alpha)
+export const lightThemeForegroundAlpha = (
+  value: GreyNames,
+  alpha: number
+): string => createHsla(darkThemeForegroundHSL[value], alpha)
 
 const lightTheme: Theme = {
   name: "light",
@@ -132,47 +138,61 @@ export const themes: { [key: string]: Theme } = {
   dark: darkTheme,
 }
 
-export const themeForeground = (value: GreyNames) => css`
-  ${props => createHsl(props.theme.text[value])}
+export const themeForeground = (value: GreyNames): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): string =>
+    createHsl(props.theme.text[value])}
 `
 
-export const themeForegroundAlpha = (value: GreyNames, alpha: number) => css`
-  ${props => createHsla(props.theme.text[value], alpha)}
+export const themeForegroundAlpha = (
+  value: GreyNames,
+  alpha: number
+): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): string =>
+    createHsla(props.theme.text[value], alpha)}
 `
 
-export const themeLayer = (value: LayerNames) => css`
-  ${props => createHsl(props.theme.layerTone[value])}
+export const themeLayer = (value: LayerNames): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): string =>
+    createHsl(props.theme.layerTone[value])}
 `
 
-export const themeLayerAlpha = (value: LayerNames, alpha: number) => css`
-  ${props => createHsla(props.theme.layerTone[value], alpha)}
+export const themeLayerAlpha = (
+  value: LayerNames,
+  alpha: number
+): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): string =>
+    createHsla(props.theme.layerTone[value], alpha)}
 `
 
-export const themeBrand = (value: BrandShadeNames = "base") => css`
-  ${props => createHsl(props.theme.brand[value])}
+export const themeBrand = (value: BrandShadeNames = "base"): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): string =>
+    createHsl(props.theme.brand[value])}
 `
 
 export const themeBrandAlpha = (
   value: BrandShadeNames = "base",
-  alpha: number = 1
-) => css`
-  ${props => createHsla(props.theme.brand[value], alpha)}
+  alpha = 1
+): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): string =>
+    createHsla(props.theme.brand[value], alpha)}
 `
 
-export const isDarkTheme = (output: string | CSSProp) => css`
-  ${props => props.theme.name === "dark" && output}
+export const isDarkTheme = (output: string | CSSProp): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): CSSProp | string | false =>
+    props.theme.name === "dark" && output}
 `
 
-export const isLightTheme = (output: string | CSSProp) => css`
-  ${props => props.theme.name === "light" && output}
+export const isLightTheme = (output: string | CSSProp): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): CSSProp | string | false =>
+    props.theme.name === "light" && output}
 `
 
 export const isTheme = (
   themeName: ThemeName,
   validOutput: string | CSSProp,
   invalidOutput?: string | CSSProp
-) => css`
-  ${props => {
+): CSSProp => css`
+  ${(props: ThemeProps<DefaultTheme>): CSSProp | false => {
     if (invalidOutput) {
       return props.theme.name === themeName ? validOutput : invalidOutput
     } else {

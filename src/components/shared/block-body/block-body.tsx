@@ -27,7 +27,7 @@ const BlockBody: React.FunctionComponent<Props> = ({
     ) : (
       <BlockEmptyTransactions yPadding="lg">
         <Title size="sm" intensity="high">
-          This block doesn't have any transactions&nbsp;&nbsp;&nbsp;:(
+          This block doesn&apos;t have any transactions&nbsp;&nbsp;&nbsp;:(
         </Title>
       </BlockEmptyTransactions>
     )
@@ -39,7 +39,7 @@ const BlockBody: React.FunctionComponent<Props> = ({
         renderTransactionsOrEmptyState(blockData.transactionsData)
       ) : (
         <BlockInfo
-          size={toString(blockData.size + "B")}
+          size={`${blockData.size}B`}
           difficulty={blockData.difficulty}
           totalDifficulty={blockData.totalDifficulty}
           gasLimit={toString(blockData.gasLimit)}
