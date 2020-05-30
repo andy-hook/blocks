@@ -1,4 +1,4 @@
-import { Icons } from "@components/shared/icon/icon"
+import { Icons } from "@components/icon/icon"
 
 export interface SocialMetaItem {
   label: string
