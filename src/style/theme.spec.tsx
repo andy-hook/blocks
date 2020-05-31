@@ -1,5 +1,5 @@
 import React from "react"
-import { mountWithTheme } from "@test-utils"
+import { renderWithTheme } from "@test-utils"
 import {
   themeForeground,
   themeForegroundAlpha,
@@ -106,74 +106,74 @@ describe("lightThemeForegroundAlpha", () => {
 
 describe("darkThemeLayer", () => {
   it("renders correct hsl from given layer value", () => {
-    const tree = mountWithTheme("dark", <ThemeLayerComponent />)
+    const tree = renderWithTheme("dark", <ThemeLayerComponent />)
     expect(tree).toHaveStyleRule("color", `hsl(207,13%,14%)`)
   })
 })
 
 describe("darkThemeLayerAlpha", () => {
   it("renders correct hsla from given layer and opacity value", () => {
-    const tree = mountWithTheme("dark", <ThemeLayerAlphaComponent />)
+    const tree = renderWithTheme("dark", <ThemeLayerAlphaComponent />)
     expect(tree).toHaveStyleRule("color", "hsla(207,13%,14%,0.5)")
   })
 })
 
 describe("ThemeForeground", () => {
   it("renders correct hsl from given text value", () => {
-    const tree = mountWithTheme("dark", <ThemeForegroundComponent />)
+    const tree = renderWithTheme("dark", <ThemeForegroundComponent />)
     expect(tree).toHaveStyleRule("color", "hsl(206,10%,55%)")
   })
 })
 
 describe("ThemeForegroundAlpha", () => {
   it("renders correct hsla from given text value", () => {
-    const tree = mountWithTheme("dark", <ThemeForegroundAlphaComponent />)
+    const tree = renderWithTheme("dark", <ThemeForegroundAlphaComponent />)
     expect(tree).toHaveStyleRule("color", "hsla(206,10%,55%,0)")
   })
 })
 
 describe("isDarkTheme", () => {
   it("renders style block when using a dark theme", () => {
-    const tree = mountWithTheme("dark", <IsDarkThemeComponent />)
+    const tree = renderWithTheme("dark", <IsDarkThemeComponent />)
     expect(tree).toHaveStyleRule("color", "red")
   })
 
   it("does not render style block when using a light theme", () => {
-    const tree = mountWithTheme("light", <IsDarkThemeComponent />)
+    const tree = renderWithTheme("light", <IsDarkThemeComponent />)
     expect(tree).not.toHaveStyleRule("color", "red")
   })
 })
 
 describe("isLightTheme", () => {
   it("renders style block when using a light theme", () => {
-    const tree = mountWithTheme("light", <IsLightThemeComponent />)
+    const tree = renderWithTheme("light", <IsLightThemeComponent />)
     expect(tree).toHaveStyleRule("color", "red")
   })
 
   it("does not render style block when using a dark theme", () => {
-    const tree = mountWithTheme("dark", <IsLightThemeComponent />)
+    const tree = renderWithTheme("dark", <IsLightThemeComponent />)
     expect(tree).not.toHaveStyleRule("color", "red")
   })
 })
 
 describe("isTheme", () => {
   it("renders single argument style block when using a dark theme", () => {
-    const tree = mountWithTheme("dark", <IsThemeComponent />)
+    const tree = renderWithTheme("dark", <IsThemeComponent />)
     expect(tree).toHaveStyleRule("color", "red")
   })
 
   it("does not render single argument style block when using a light theme", () => {
-    const tree = mountWithTheme("light", <IsThemeComponent />)
+    const tree = renderWithTheme("light", <IsThemeComponent />)
     expect(tree).not.toHaveStyleRule("color", "red")
   })
 
   it("renders first style block argument when using a dark theme", () => {
-    const tree = mountWithTheme("dark", <IsNotThemeComponent />)
+    const tree = renderWithTheme("dark", <IsNotThemeComponent />)
     expect(tree).toHaveStyleRule("color", "red")
   })
 
   it("renders second style block argument when using a light theme", () => {
-    const tree = mountWithTheme("light", <IsNotThemeComponent />)
+    const tree = renderWithTheme("light", <IsNotThemeComponent />)
     expect(tree).toHaveStyleRule("color", "blue")
   })
 })
