@@ -1,7 +1,6 @@
 import React from "react"
 import { Web3BlockData, Web3TransactionData } from "model"
 import BlockInfo from "@components/block-info/block-info"
-import { toString } from "lodash"
 import TransactionTable from "@components/transaction-table/transaction-table"
 import moment from "moment"
 import Panel from "@components/panel/panel"
@@ -13,14 +12,14 @@ interface Props {
   trxVisible: boolean
 }
 
+function formatUnixTime(timestamp: number) {
+  return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
+}
+
 const BlockBody: React.FunctionComponent<Props> = ({
   blockData,
   trxVisible,
 }) => {
-  function formatUnixTime(timestamp: number) {
-    return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
-  }
-
   function renderTransactionsOrEmptyState(transactions: Web3TransactionData[]) {
     return transactions.length > 0 ? (
       <TransactionTable transactions={transactions} />
@@ -42,8 +41,8 @@ const BlockBody: React.FunctionComponent<Props> = ({
           size={`${blockData.size}B`}
           difficulty={blockData.difficulty}
           totalDifficulty={blockData.totalDifficulty}
-          gasLimit={toString(blockData.gasLimit)}
-          gasUsed={toString(blockData.gasUsed)}
+          gasLimit={`${blockData.gasLimit}`}
+          gasUsed={`${blockData.gasUsed}`}
           timestamp={formatUnixTime(blockData.timestamp)}
           miner={blockData.miner}
         />

@@ -5,7 +5,6 @@ import { Web3BlockData } from "model"
 import ColumnsTemplate from "./columns-template/columns-template"
 import Label from "../label/label"
 import { layout } from "@style/design-tokens"
-import { toString } from "lodash"
 import { mq } from "@style/media-queries"
 import { mimicPanelSizeAndPresentation } from "../panel/panel"
 
@@ -19,7 +18,7 @@ const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
       return (
         <DataRow
           key={index}
-          blockNumber={toString(trx.blockNumber)}
+          blockNumber={`${trx.blockNumber}`}
           trxHash={trx.hash}
           from={trx.from}
           to={trx.to}

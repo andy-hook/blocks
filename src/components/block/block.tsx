@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Web3BlockData } from "model"
-import { toString } from "lodash"
 import BlockHeader from "@components/block-header/block-header"
 import BlockBody from "@components/block-body/block-body"
 import { animated, useSpring } from "react-spring"
@@ -35,8 +34,8 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
     if (blockData) {
       return (
         <BlockHeader
-          blockNumber={toString(blockData.number)}
-          transactionCount={toString(blockData.transactionCount)}
+          blockNumber={`${blockData.number}`}
+          transactionCount={`${blockData.transactionCount}`}
           handleDetailsClick={handleDetailsClick}
           handleTransactionsClick={handleTransactionsClick}
           trxVisible={trxVisible}

@@ -10,7 +10,6 @@ import Transfer from "@components/transfer/transfer"
 import { mq } from "@style/media-queries"
 import { mimicPanelSizeAndPresentation } from "@components/panel/panel"
 import { themeBrand } from "@style/theme"
-import { toString } from "lodash"
 
 interface Props {
   blockNumber: string
@@ -48,7 +47,10 @@ const Transaction: React.FunctionComponent<Props> = ({
         fromTo={<Transfer from={from} to={to} />}
         value={
           <Label>
-            <TruncateString text={toString(value) + " Ether"} truncateAt={20} />
+            <TruncateString
+              text={`${value ? value : ""} Ether`}
+              truncateAt={20}
+            />
           </Label>
         }
       />
