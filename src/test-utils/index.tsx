@@ -1,39 +1,32 @@
-import React, { ReactNode, Component } from "react"
+import React from "react"
+import { render, RenderOptions } from "@testing-library/react"
 import { ThemeProvider } from "styled-components"
-import { shallow, mount, ShallowWrapper, ReactWrapper } from "enzyme"
-import { themes, ThemeName } from "@style/theme"
-import renderer, { ReactTestRendererJSON } from "react-test-renderer"
+import { themes } from "@style/theme"
 
-type emptyObj = Record<string, unknown>
-
-export const mountWithTheme = (
-  theme: ThemeName,
-  children: ReactNode
-): ReactWrapper<any, Readonly<emptyObj>, Component<emptyObj, emptyObj, any>> =>
-  mount(
-    <ThemeProvider theme={themes[theme]}>
+const DarkTheme: React.FunctionComponent = ({ children }) => {
+  return (
+    <ThemeProvider theme={themes["dark"]}>
       <>{children}</>
     </ThemeProvider>
   )
+}
 
-export const renderWithTheme = (
-  theme: ThemeName,
-  children: ReactNode
-): ReactTestRendererJSON | null =>
-  renderer
-    .create(
-      <ThemeProvider theme={themes[theme]}>
-        <>{children}</>
-      </ThemeProvider>
-    )
-    .toJSON()
-
-export const shallowWithTheme = (
-  theme: ThemeName,
-  children: ReactNode
-): ShallowWrapper<any, emptyObj, Component<emptyObj, emptyObj, any>> =>
-  shallow(
-    <ThemeProvider theme={themes[theme]}>
+const LightTheme: React.FunctionComponent = ({ children }) => {
+  return (
+    <ThemeProvider theme={themes["light"]}>
       <>{children}</>
     </ThemeProvider>
   )
+}
+
+const renderDarkTheme = (ui: React.ReactElement, options?: RenderOptions) =>
+  render(ui, { wrapper: DarkTheme, ...options })
+
+const renderLightTheme = (ui: React.ReactElement, options?: RenderOptions) =>
+  render(ui, { wrapper: LightTheme, ...options })
+
+// re-export everything
+export * from "@testing-library/react"
+
+// override render method
+export { renderDarkTheme as render, renderDarkTheme, renderLightTheme }

@@ -7,9 +7,9 @@ import {
   constructMaxMediaString,
   constructMinMediaString,
 } from "./media-queries"
-import renderer from "react-test-renderer"
 import styled from "styled-components"
 import "jest-styled-components"
+import { render } from "@test-utils"
 
 const ScaleBetweenComponent = styled.div`
   ${scaleBetween("font-size", "10rem", "20rem", "bottomThumb", "topThumb")}
@@ -53,9 +53,9 @@ describe("uniformScale", () => {
 
 describe("scaleBetween", () => {
   it("renders correct values inside media queries", () => {
-    const tree = renderer.create(<ScaleBetweenComponent />).toJSON()
+    const { container } = render(<ScaleBetweenComponent />)
 
-    expect(tree).toHaveStyleRule(
+    expect(container.firstChild).toHaveStyleRule(
       "font-size",
       "calc(-4780.00rem + 16000.00vw)",
       {
@@ -67,10 +67,14 @@ describe("scaleBetween", () => {
 
 describe("scaleGreaterThan", () => {
   it("renders correct value inside media queries", () => {
-    const tree = renderer.create(<ScaleGreaterThanComponent />).toJSON()
+    const { container } = render(<ScaleGreaterThanComponent />)
 
-    expect(tree).toHaveStyleRule("font-size", "33.40292275574113vw", {
-      media: "(min-width: 29.9375em)",
-    })
+    expect(container.firstChild).toHaveStyleRule(
+      "font-size",
+      "33.40292275574113vw",
+      {
+        media: "(min-width: 29.9375em)",
+      }
+    )
   })
 })

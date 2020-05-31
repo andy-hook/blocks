@@ -24,6 +24,7 @@
     }
   },
   "plugins": ["@typescript-eslint", "react-hooks"],
+  "ignorePatterns": ["*.js"], // Don't lint js configuration files
   "rules": {
     "react/prop-types": 0,
     "@typescript-eslint/no-explicit-any": 0,

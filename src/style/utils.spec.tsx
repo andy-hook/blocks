@@ -1,6 +1,5 @@
 import React from "react"
 import "jest-styled-components"
-import renderer from "react-test-renderer"
 import styled from "styled-components"
 import {
   createHsl,
@@ -9,6 +8,7 @@ import {
   createTextCrop,
   createPlaceholderCrop,
 } from "./utils"
+import { render } from "@test-utils"
 
 const CroppedTextComponent = styled.div`
   ${createTextCrop({
@@ -27,19 +27,19 @@ const CroppedPlaceholderComponent = styled.div`
 `
 
 describe("createHsl", () => {
-  test("should return valid hsl css string from provided value", () => {
+  it("should return valid hsl css string from provided value", () => {
     expect(createHsl("240,17%,2%")).toMatch("hsl(240,17%,2%)")
   })
 })
 
 describe("createHsla", () => {
-  test("should return valid hsla css string from provided value", () => {
+  it("should return valid hsla css string from provided value", () => {
     expect(createHsla("240,17%,2%", 50)).toMatch("hsla(240,17%,2%,50)")
   })
 })
 
 describe("createCubicBezier", () => {
-  test("should return valid cubic-bezier css string from provided values", () => {
+  it("should return valid cubic-bezier css string from provided values", () => {
     expect(createCubicBezier([0.55, 0.085, 0.68, 0.53])).toMatch(
       "cubic-bezier(0.55,0.085,0.68,0.53)"
     )
@@ -47,25 +47,33 @@ describe("createCubicBezier", () => {
 })
 
 describe("createTextCrop", () => {
-  test("should apply correct top and bottom offsets", () => {
-    const tree = renderer.create(<CroppedTextComponent />).toJSON()
+  it("should apply correct top and bottom offsets", () => {
+    const { container } = render(<CroppedTextComponent />)
 
-    expect(tree).toHaveStyleRule("margin-bottom", "calc(-0.35em + 0px)", {
-      modifier: "::before",
-    })
+    expect(container.firstChild).toHaveStyleRule(
+      "margin-bottom",
+      "calc(-0.35em + 0px)",
+      {
+        modifier: "::before",
+      }
+    )
 
-    expect(tree).toHaveStyleRule("margin-top", "calc(-0.4em + 0px)", {
-      modifier: "::after",
-    })
+    expect(container.firstChild).toHaveStyleRule(
+      "margin-top",
+      "calc(-0.4em + 0px)",
+      {
+        modifier: "::after",
+      }
+    )
   })
 })
 
-fdescribe("createPlaceholderCrop", () => {
-  test("should apply correct top and bottom crop offsetting", () => {
-    const tree = renderer.create(<CroppedPlaceholderComponent />).toJSON()
+describe("createPlaceholderCrop", () => {
+  it("should apply correct top and bottom crop offsetting", () => {
+    const { container } = render(<CroppedPlaceholderComponent />)
 
-    expect(tree).toHaveStyleRule("top", "calc(0.35em + 0px)")
+    expect(container.firstChild).toHaveStyleRule("top", "calc(0.35em + 0px)")
 
-    expect(tree).toHaveStyleRule("bottom", "calc(0.4em + 0px)")
+    expect(container.firstChild).toHaveStyleRule("bottom", "calc(0.4em + 0px)")
   })
 })
