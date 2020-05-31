@@ -1,13 +1,12 @@
 import React from "react"
 import BlockHeaderSwitch from "./block-header-switch"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 jest.mock("react-truncate-string")
 
 describe("<BlockHeaderSwitch />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme(
-      "dark",
+    const tree = render(
       <BlockHeaderSwitch
         onDetailsClick={jest.fn}
         onTransactionsClick={jest.fn}

@@ -1,10 +1,10 @@
 import React from "react"
 import Label from "./label"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 describe("<Label />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <Label />)
+    const tree = render(<Label />)
     expect(tree).toBeTruthy()
   })
 })

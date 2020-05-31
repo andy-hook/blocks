@@ -1,14 +1,11 @@
 import React from "react"
 
 import RemoveWidow from "./remove-widow"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 describe("<RemoveWidow />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme(
-      "dark",
-      <RemoveWidow>This is test text</RemoveWidow>
-    )
+    const tree = render(<RemoveWidow>This is test text</RemoveWidow>)
 
     expect(tree).toBeTruthy()
   })

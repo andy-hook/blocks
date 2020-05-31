@@ -1,12 +1,12 @@
 import React from "react"
 import TransferPip from "./transfer-pip"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 jest.mock("react-truncate-string")
 
 describe("<TransferPip />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <TransferPip />)
+    const tree = render(<TransferPip />)
     expect(tree).toBeTruthy()
   })
 })

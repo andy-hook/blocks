@@ -1,11 +1,11 @@
 import React from "react"
 
 import LoadingIndicator from "./loading-indicator"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 describe("<LoadingIndicator />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <LoadingIndicator />)
+    const tree = render(<LoadingIndicator />)
 
     expect(tree).toBeTruthy()
   })

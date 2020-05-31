@@ -1,10 +1,10 @@
 import React from "react"
 import Hero from "./hero"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 describe("<Hero />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <Hero />)
+    const tree = render(<Hero />)
     expect(tree).toBeTruthy()
   })
 })

@@ -1,16 +1,32 @@
-import React, { ReactNode } from "react"
+import React from "react"
+import { render, RenderOptions } from "@testing-library/react"
 import { ThemeProvider } from "styled-components"
-import { themes, ThemeName } from "@style/theme"
-import renderer, { ReactTestRendererJSON } from "react-test-renderer"
+import { themes } from "@style/theme"
 
-export const renderWithTheme = (
-  theme: ThemeName,
-  children: ReactNode
-): ReactTestRendererJSON | null =>
-  renderer
-    .create(
-      <ThemeProvider theme={themes[theme]}>
-        <>{children}</>
-      </ThemeProvider>
-    )
-    .toJSON()
+const DarkTheme: React.FunctionComponent = ({ children }) => {
+  return (
+    <ThemeProvider theme={themes["dark"]}>
+      <>{children}</>
+    </ThemeProvider>
+  )
+}
+
+const LightTheme: React.FunctionComponent = ({ children }) => {
+  return (
+    <ThemeProvider theme={themes["light"]}>
+      <>{children}</>
+    </ThemeProvider>
+  )
+}
+
+const renderDarkTheme = (ui: React.ReactElement, options?: RenderOptions) =>
+  render(ui, { wrapper: DarkTheme, ...options })
+
+const renderLightTheme = (ui: React.ReactElement, options?: RenderOptions) =>
+  render(ui, { wrapper: LightTheme, ...options })
+
+// re-export everything
+export * from "@testing-library/react"
+
+// override render method
+export { renderDarkTheme as render, renderDarkTheme, renderLightTheme }

@@ -1,10 +1,10 @@
 import React from "react"
 import Mark from "./mark"
-import { renderWithTheme } from "@test-utils"
+import { render } from "@test-utils"
 
 describe("<Mark />", () => {
   it("renders correctly", () => {
-    const tree = renderWithTheme("dark", <Mark />)
+    const tree = render(<Mark />)
     expect(tree).toBeTruthy()
   })
 })

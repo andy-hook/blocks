@@ -1,6 +1,5 @@
 import React from "react"
 import "jest-styled-components"
-import renderer from "react-test-renderer"
 import styled from "styled-components"
 import {
   createHsl,
@@ -9,6 +8,7 @@ import {
   createTextCrop,
   createPlaceholderCrop,
 } from "./utils"
+import { render } from "@test-utils"
 
 const CroppedTextComponent = styled.div`
   ${createTextCrop({
@@ -48,24 +48,32 @@ describe("createCubicBezier", () => {
 
 describe("createTextCrop", () => {
   it("should apply correct top and bottom offsets", () => {
-    const tree = renderer.create(<CroppedTextComponent />).toJSON()
+    const { container } = render(<CroppedTextComponent />)
 
-    expect(tree).toHaveStyleRule("margin-bottom", "calc(-0.35em + 0px)", {
-      modifier: "::before",
-    })
+    expect(container.firstChild).toHaveStyleRule(
+      "margin-bottom",
+      "calc(-0.35em + 0px)",
+      {
+        modifier: "::before",
+      }
+    )
 
-    expect(tree).toHaveStyleRule("margin-top", "calc(-0.4em + 0px)", {
-      modifier: "::after",
-    })
+    expect(container.firstChild).toHaveStyleRule(
+      "margin-top",
+      "calc(-0.4em + 0px)",
+      {
+        modifier: "::after",
+      }
+    )
   })
 })
 
 describe("createPlaceholderCrop", () => {
   it("should apply correct top and bottom crop offsetting", () => {
-    const tree = renderer.create(<CroppedPlaceholderComponent />).toJSON()
+    const { container } = render(<CroppedPlaceholderComponent />)
 
-    expect(tree).toHaveStyleRule("top", "calc(0.35em + 0px)")
+    expect(container.firstChild).toHaveStyleRule("top", "calc(0.35em + 0px)")
 
-    expect(tree).toHaveStyleRule("bottom", "calc(0.4em + 0px)")
+    expect(container.firstChild).toHaveStyleRule("bottom", "calc(0.4em + 0px)")
   })
 })
