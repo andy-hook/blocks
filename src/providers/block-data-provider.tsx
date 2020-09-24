@@ -13,15 +13,18 @@ interface Props {
   maxBlocks?: number
 }
 
-type DataState = BlockWithTransactions[] | null
+type BlockDataState = [BlockWithTransactions[] | null, boolean]
 
-const DataContext = createContext<Partial<DataState>>(null)
+const BlockDataContext = createContext<Partial<BlockDataState>>([null, true])
 
 const BlockDataProvider: React.FunctionComponent<Props> = ({
   children,
   maxBlocks = 12,
 }) => {
-  const [blocksData, setBlocksData] = useState<DataState>(null)
+  const [blocksData, setBlocksData] = useState<BlockWithTransactions[] | null>(
+    null
+  )
+  const [loading, setLoading] = useState<boolean>(true)
 
   const provider = getDefaultProvider("rinkeby")
 
@@ -45,6 +48,7 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
 
         if (!cancelled) {
           setBlocksData(response)
+          setLoading(false)
         }
       } catch (error) {
         console.error(error)
@@ -60,17 +64,20 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
     }
   }, [provider, maxBlocks, blocksData])
 
-  const blocksDataState = useMemo(() => blocksData, [blocksData])
+  const blocksDataState = useMemo<BlockDataState>(() => [blocksData, loading], [
+    blocksData,
+    loading,
+  ])
 
   return (
-    <DataContext.Provider value={blocksDataState}>
+    <BlockDataContext.Provider value={blocksDataState}>
       {children}
-    </DataContext.Provider>
+    </BlockDataContext.Provider>
   )
 }
 
 function useBlockData() {
-  return useContext(DataContext)
+  return useContext(BlockDataContext)
 }
 
 export { BlockDataProvider, useBlockData }
