@@ -1,5 +1,4 @@
 import React from "react"
-import { Web3TransactionData } from "model"
 import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
@@ -7,8 +6,8 @@ import { themeForeground, themeBrand } from "@style/theme"
 
 interface Props {
   value?: number
-  to?: Web3TransactionData["to"]
-  from?: Web3TransactionData["from"]
+  to?: string
+  from?: string
   loading?: boolean
   isEmpty?: boolean
 }
