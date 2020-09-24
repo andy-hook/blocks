@@ -1,23 +1,24 @@
 import React from "react"
-import { Web3BlockData } from "model"
 import CardContent from "./card-content/card-content"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import styled from "styled-components"
 
 interface Props {
-  blockData?: Web3BlockData | null
+  blockData?: BlockWithTransactions | null
 }
 
 const Card: React.FunctionComponent<Props> = ({ blockData }) => {
   function renderAsSkeletonOrPopulated() {
     if (blockData) {
+      // TODO: Change size and difficulty
       return (
         <CardContent
           blockNumber={`${blockData.number}`}
-          size={`${blockData.size}`}
-          difficulty={blockData.difficulty}
+          size="CHANGE ME"
+          difficulty="CHANGE ME"
           miner={blockData.miner}
-          transactionCount={blockData.transactionCount}
-          transactions={blockData.transactionsData}
+          transactionCount={blockData.transactions.length}
+          transactions={blockData.transactions}
         />
       )
     } else {

@@ -1,14 +1,14 @@
 import React from "react"
-import { Web3TransactionData } from "model"
 import CardTrxPip from "@components/card/card-trx-pip/card-trx-pip"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { themeForeground } from "@style/theme"
 import { mq } from "@style/media-queries"
 import { SUMMARY_MAX_TRANSACTIONS } from "../../../config"
+import { TransactionResponse } from "@ethersproject/abstract-provider"
 
 interface Props {
-  transactions?: Web3TransactionData[]
+  transactions?: TransactionResponse[]
   loading?: boolean
 }
 
@@ -16,11 +16,12 @@ const CardTrxSummary: React.FunctionComponent<Props> = ({
   transactions,
   loading,
 }) => {
-  function renderAsHolderOrPopulated(transaction?: Web3TransactionData) {
+  function renderAsHolderOrPopulated(transaction?: TransactionResponse) {
     if (transaction) {
+      // TODO: Change value
       return (
         <CardTrxPip
-          value={transaction.ether}
+          value={100000}
           from={transaction.from}
           to={transaction.to}
         />

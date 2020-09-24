@@ -1,5 +1,4 @@
 import React from "react"
-import { Web3BlockData } from "model"
 import CardTrxSummary from "@components/card/card-trx-summary/card-trx-summary"
 import styled from "styled-components"
 import { layout } from "@style/design-tokens"
@@ -9,10 +8,11 @@ import Title from "@components/title/title"
 import Button from "@components/button/button"
 import { mq } from "@style/media-queries"
 import Panel from "@components/panel/panel"
+import { TransactionResponse } from "@ethersproject/abstract-provider"
 
 interface Props {
   blockNumber?: string
-  transactions?: Web3BlockData["transactionsData"]
+  transactions?: TransactionResponse[]
   transactionCount?: number
   size?: string
   difficulty?: string

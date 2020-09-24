@@ -49,6 +49,7 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
         if (!cancelled) {
           setBlocksData(response)
           setLoading(false)
+          console.log(response[1])
         }
       } catch (error) {
         console.error(error)
