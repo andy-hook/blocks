@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { Spring, Transition } from "react-spring/renderprops.cjs"
-import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
+import { useLoadingStatusContext } from "@providers/loading-status-provider"
 import { themeBrand } from "@style/theme"
 
 const LoadingIndicator: React.FunctionComponent = () => {

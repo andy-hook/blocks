@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext, useEffect } from "react"
 import { Web3BlockData } from "model"
 import { useWeb3Context } from "./web3-provider"
 import { lastNumbersFromRange } from "@utils"
-import { requestBlocks } from "./web3-data-request"
+import { requestBlocks } from "@web3/web3-data-request"
 
 interface Props {
   maxBlocks?: number
