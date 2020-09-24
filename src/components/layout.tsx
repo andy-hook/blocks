@@ -8,13 +8,13 @@ import Web3Provider from "@providers/web3-provider"
 import Web3BlocksDataProvider from "@providers/web3-blocks-data-provider"
 import LoadingStatusProvider from "@providers/loading-status-provider"
 import ThemeSwitchProvider from "@providers/theme-switch-provider"
-import { DataProvider } from "@providers/data-provider"
+import { BlockDataProvider } from "@providers/block-data-provider"
 import LoadingIndicator from "@components/loading-indicator/loading-indicator"
 import { BLOCK_COUNT } from "../config"
 
 const Layout: React.FunctionComponent = ({ children }) => {
   return (
-    <DataProvider>
+    <BlockDataProvider maxBlocks={BLOCK_COUNT}>
       <MediaQueryProvider>
         <ThemeSwitchProvider>
           <Web3Provider>
@@ -31,7 +31,7 @@ const Layout: React.FunctionComponent = ({ children }) => {
           </Web3Provider>
         </ThemeSwitchProvider>
       </MediaQueryProvider>
-    </DataProvider>
+    </BlockDataProvider>
   )
 }
 
