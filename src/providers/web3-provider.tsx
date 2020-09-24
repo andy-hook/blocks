@@ -1,10 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from "react"
 import Web3 from "web3"
 
-interface ProviderProps {
-  useMainnet: boolean
-}
-
 interface StateProps {
   web3: Web3 | null
   error?: "DENIED" | "FORBIDDEN"
@@ -12,10 +8,7 @@ interface StateProps {
 
 export const Web3Context = createContext<Partial<StateProps>>({})
 
-export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
-  children,
-  useMainnet = false,
-}) => {
+export const Web3Provider: React.FunctionComponent = ({ children }) => {
   const [web3State, setWeb3State] = useState<StateProps>({
     web3: null,
   })
@@ -39,9 +32,7 @@ export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
 
           // Logged in
           const provider = new Web3.providers.HttpProvider(
-            `https://${
-              useMainnet ? "mainnet" : "rinkeby"
-            }.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0`
+            `https://mainnet.infura.io/v3/39596d8fbf1d4a2d9dce11f73fc4fed0`
           )
 
           if (!cancelled) {
@@ -66,7 +57,7 @@ export const Web3Provider: React.FunctionComponent<ProviderProps> = ({
     return () => {
       cancelled = true
     }
-  }, [useMainnet])
+  }, [])
 
   return (
     <Web3Context.Provider value={web3State}>{children}</Web3Context.Provider>
