@@ -1,28 +1,29 @@
 import React from "react"
 import styled from "styled-components"
 import Transaction from "./transaction/transaction"
-import { Web3BlockData } from "model"
 import ColumnsTemplate from "./columns-template/columns-template"
 import Label from "../label/label"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import { mimicPanelSizeAndPresentation } from "../panel/panel"
+import { TransactionResponse } from "@ethersproject/abstract-provider"
 
 interface Props {
-  transactions: Web3BlockData["transactionsData"]
+  transactions: TransactionResponse[]
 }
 
 const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
   function renderBodyRows() {
     return transactions.map((trx, index) => {
+      // TODO: Change these values
       return (
         <DataRow
           key={index}
-          blockNumber={`${trx.blockNumber}`}
+          blockNumber={`CHANGE ME`}
           trxHash={trx.hash}
           from={trx.from}
           to={trx.to}
-          value={trx.ether}
+          value={10000000}
         />
       )
     })

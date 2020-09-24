@@ -1,5 +1,7 @@
 import { Web3BlockData, Web3TransactionData } from "model"
+import { getDefaultProvider } from "ethers"
 import Web3 from "web3"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 
 function requestTransactions(web3Instance: Web3, transactions: string[]) {
   const batchRequest = new web3Instance.eth.BatchRequest()
@@ -73,4 +75,12 @@ export async function requestBlocks(
 
   batchRequest.execute()
   return Promise.all(batchPromise)
+}
+
+const provider = getDefaultProvider("rinkeby")
+
+export function getBlock(
+  blockNumber: string | number
+): Promise<BlockWithTransactions> {
+  return provider.getBlockWithTransactions(blockNumber)
 }

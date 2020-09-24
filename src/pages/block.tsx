@@ -6,13 +6,12 @@ import Gutter from "@components/gutter/gutter"
 import Limiter from "@components/limiter/limiter"
 import Block from "@components/block/block"
 import styled from "styled-components"
-import { useWeb3BlocksDataContext } from "@providers/web3-blocks-data-provider"
-import { Web3BlockData } from "model"
-import { requestBlocks } from "@web3/web3-data-request"
-import { useWeb3Context } from "@providers/web3-provider"
 import { useLoadingStatusContext } from "@providers/loading-status-provider"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
+import { useBlockData } from "@providers/block-data-provider"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
+import { getBlock } from "@web3/web3-data-request"
 
 interface Props extends RouteComponentProps {
   path: string
@@ -20,7 +19,7 @@ interface Props extends RouteComponentProps {
 }
 
 interface DataState {
-  data: Web3BlockData | null
+  data: BlockWithTransactions | null
   error: string | null
 }
 
@@ -28,8 +27,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({
   blockNumberFromUrl,
   location,
 }) => {
-  const web3 = useWeb3Context().web3
-  const { data: blocksData } = useWeb3BlocksDataContext()
+  const [blocksData] = useBlockData()
   const { setLoadingStatus } = useLoadingStatusContext()
   const blockNumber = useMemo(() => parseFloat(blockNumberFromUrl as string), [
     blockNumberFromUrl,
@@ -41,7 +39,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({
   })
 
   const setDataAndHideLoadingStatus = useCallback(
-    (data: Web3BlockData, error: DataState["error"]) => {
+    (data: BlockWithTransactions, error: DataState["error"]) => {
       setBlockData({
         data: { ...data },
         error,
@@ -59,11 +57,11 @@ const BlockSingle: React.FunctionComponent<Props> = ({
   useEffect(() => {
     let cancelled = false
     async function getBlocksState() {
-      if (blocksData && web3) {
+      if (blocksData) {
         // Get the current block from context if possible
         const currentCachedBlockData = blocksData.find(
-          block => block.number === blockNumber
-        ) as Web3BlockData
+          ({ number }) => number === blockNumber
+        )
 
         // Use value from context if it exists or fetch new...
         if (currentCachedBlockData) {
@@ -75,20 +73,15 @@ const BlockSingle: React.FunctionComponent<Props> = ({
           if (!cancelled) {
             setBlockData({ data: null, error: null })
           }
-
           // Fetch fresh data
           try {
-            const currentBlockData = (await requestBlocks(web3, [
-              blockNumber,
-            ])) as Web3BlockData[]
-
+            const currentBlockData = await getBlock(blockNumber)
             // Success
             if (!cancelled) {
-              setDataAndHideLoadingStatus({ ...currentBlockData[0] }, null)
+              setDataAndHideLoadingStatus(currentBlockData, null)
             }
           } catch (error) {
             const errorMessage = (error as Error).message
-
             // Failure
             if (!cancelled) {
               setBlockData({ data: null, error: errorMessage })
@@ -109,7 +102,6 @@ const BlockSingle: React.FunctionComponent<Props> = ({
     blockNumber,
     setLoadingStatus,
     setDataAndHideLoadingStatus,
-    web3,
   ])
 
   return (

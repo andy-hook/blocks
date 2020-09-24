@@ -1,14 +1,17 @@
 import React from "react"
-import { Web3BlockData, Web3TransactionData } from "model"
 import BlockInfo from "@components/block-info/block-info"
 import TransactionTable from "@components/transaction-table/transaction-table"
 import moment from "moment"
 import Panel from "@components/panel/panel"
 import Title from "@components/title/title"
 import styled from "styled-components"
+import {
+  BlockWithTransactions,
+  TransactionResponse,
+} from "@ethersproject/abstract-provider"
 
 interface Props {
-  blockData?: Web3BlockData | null
+  blockData?: BlockWithTransactions | null
   trxVisible: boolean
 }
 
@@ -20,7 +23,7 @@ const BlockBody: React.FunctionComponent<Props> = ({
   blockData,
   trxVisible,
 }) => {
-  function renderTransactionsOrEmptyState(transactions: Web3TransactionData[]) {
+  function renderTransactionsOrEmptyState(transactions: TransactionResponse[]) {
     return transactions.length > 0 ? (
       <TransactionTable transactions={transactions} />
     ) : (
@@ -35,14 +38,15 @@ const BlockBody: React.FunctionComponent<Props> = ({
   function renderInfoAsSkeletonOrPopulated() {
     if (blockData) {
       return trxVisible ? (
-        renderTransactionsOrEmptyState(blockData.transactionsData)
+        renderTransactionsOrEmptyState(blockData.transactions)
       ) : (
+        // TODO: Update these values
         <BlockInfo
-          size={`${blockData.size}B`}
-          difficulty={blockData.difficulty}
-          totalDifficulty={blockData.totalDifficulty}
-          gasLimit={`${blockData.gasLimit}`}
-          gasUsed={`${blockData.gasUsed}`}
+          size={`CHANGE ME`}
+          difficulty={"CHANGE ME"}
+          totalDifficulty={"CHANGE ME"}
+          gasLimit={`CHANGE ME`}
+          gasUsed={`CHANGE ME`}
           timestamp={formatUnixTime(blockData.timestamp)}
           miner={blockData.miner}
         />

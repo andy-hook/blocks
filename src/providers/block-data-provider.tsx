@@ -8,6 +8,7 @@ import React, {
 import { getDefaultProvider } from "ethers"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import { lastNumbersFromRange } from "@utils"
+import { getBlock } from "@web3/web3-data-request"
 
 interface Props {
   maxBlocks?: number
@@ -42,7 +43,7 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
 
         const response = await Promise.all(
           blocksToRequest.map(blockNumber => {
-            return provider.getBlockWithTransactions(blockNumber)
+            return getBlock(blockNumber)
           })
         )
 
@@ -63,7 +64,7 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
     return () => {
       cancelled = true
     }
-  }, [provider, maxBlocks, blocksData])
+  }, [provider, maxBlocks, blocksData, getBlock])
 
   const blocksDataState = useMemo<BlockDataState>(() => [blocksData, loading], [
     blocksData,
