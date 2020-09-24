@@ -1,3 +1,6 @@
+import { getDefaultProvider } from "ethers"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
+
 /**
  * Returns a string with which the last two words are joined via unicode non-breaking space
  */
@@ -54,4 +57,15 @@ export function generateBlockNumberFromStaticRange({
   const maxBottom = Math.floor(max)
 
   return Math.floor(Math.random() * (maxBottom - minTop + 1)) + minTop
+}
+
+/**
+ * Get a block (with transactions) from chain via block number
+ */
+const provider = getDefaultProvider("rinkeby")
+
+export function getBlock(
+  blockNumber: string | number
+): Promise<BlockWithTransactions> {
+  return provider.getBlockWithTransactions(blockNumber)
 }

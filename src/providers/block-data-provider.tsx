@@ -8,7 +8,7 @@ import React, {
 import { getDefaultProvider } from "ethers"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import { lastNumbersFromRange } from "@utils"
-import { getBlock } from "@web3/web3-data-request"
+import { getBlock } from "@utils"
 
 interface Props {
   maxBlocks?: number

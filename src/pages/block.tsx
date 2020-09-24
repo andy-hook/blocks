@@ -11,7 +11,7 @@ import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import { useBlockData } from "@providers/block-data-provider"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
-import { getBlock } from "@web3/web3-data-request"
+import { getBlock } from "@utils"
 
 interface Props extends RouteComponentProps {
   path: string
