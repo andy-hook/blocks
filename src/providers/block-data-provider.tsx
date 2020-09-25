@@ -5,10 +5,9 @@ import React, {
   useEffect,
   useMemo,
 } from "react"
-import { getDefaultProvider } from "ethers"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
+import useEthers from "@hooks/ethers"
 import { lastNumbersFromRange } from "@utils"
-import { getBlock } from "@utils"
 
 interface Props {
   maxBlocks?: number
@@ -22,19 +21,18 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
   children,
   maxBlocks = 12,
 }) => {
+  const { getBlock, getLatestBlockNumber } = useEthers()
   const [blocksData, setBlocksData] = useState<BlockWithTransactions[] | null>(
     null
   )
   const [loading, setLoading] = useState<boolean>(true)
-
-  const provider = getDefaultProvider("rinkeby")
 
   useEffect(() => {
     let cancelled = false
 
     async function getBlockData() {
       try {
-        const latestBlockNumber = await provider.getBlockNumber()
+        const latestBlockNumber = await getLatestBlockNumber()
 
         const blocksToRequest = lastNumbersFromRange({
           start: latestBlockNumber - maxBlocks,
@@ -64,7 +62,7 @@ const BlockDataProvider: React.FunctionComponent<Props> = ({
     return () => {
       cancelled = true
     }
-  }, [provider, maxBlocks, blocksData, getBlock])
+  }, [maxBlocks, blocksData, getBlock, getLatestBlockNumber])
 
   const blocksDataState = useMemo<BlockDataState>(() => [blocksData, loading], [
     blocksData,

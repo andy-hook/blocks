@@ -11,7 +11,7 @@ import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import { useBlockData } from "@providers/block-data-provider"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
-import { getBlock } from "@utils"
+import useEthers from "@hooks/ethers"
 
 interface Props extends RouteComponentProps {
   path: string
@@ -27,6 +27,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({
   blockNumberFromUrl,
   location,
 }) => {
+  const { getBlock } = useEthers()
   const [blocksData] = useBlockData()
   const { setLoadingStatus } = useLoadingStatusContext()
   const blockNumber = useMemo(() => parseFloat(blockNumberFromUrl as string), [
@@ -102,6 +103,7 @@ const BlockSingle: React.FunctionComponent<Props> = ({
     blockNumber,
     setLoadingStatus,
     setDataAndHideLoadingStatus,
+    getBlock,
   ])
 
   return (
