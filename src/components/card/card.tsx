@@ -14,8 +14,8 @@ const Card: React.FunctionComponent<Props> = ({ blockData }) => {
       return (
         <CardContent
           blockNumber={`${blockData.number}`}
-          size="CHANGE ME"
-          difficulty="CHANGE ME"
+          timestamp={`${blockData.timestamp}`}
+          difficulty={`${blockData.difficulty}`}
           miner={blockData.miner}
           transactionCount={blockData.transactions.length}
           transactions={blockData.transactions}

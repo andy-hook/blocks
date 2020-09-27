@@ -6,27 +6,27 @@ import TruncateString from "react-truncate-string"
 import { mq } from "@style/media-queries"
 
 interface Props {
-  size?: string
+  timestamp?: string
   difficulty?: string
   miner?: string
   loading?: boolean
 }
 
 const CardDetails: React.FunctionComponent<Props> = ({
-  size,
+  timestamp,
   difficulty,
   miner,
   loading,
 }) => {
   return (
     <Details>
-      {/* Size */}
-      <SizeItem>
-        <DetailsTitle intensity="low">Size</DetailsTitle>
+      {/* Time */}
+      <TimeItem>
+        <DetailsTitle intensity="low">Timestamp</DetailsTitle>
         <DetailsValue intensity="high" loading={loading} skeletonWidth="sm">
-          <TruncateString text={`${size ? size : ""}B`} truncateAt={20} />
+          <TruncateString text={timestamp} truncateAt={20} />
         </DetailsValue>
-      </SizeItem>
+      </TimeItem>
 
       {/* Difficulty */}
       <DifficultyItem>
@@ -90,7 +90,7 @@ const DetailsItem = css`
   `}
 `
 
-const SizeItem = styled.div`
+const TimeItem = styled.div`
   ${DetailsItem}
 
   ${mq.between("topDesk", "bottomWide")`

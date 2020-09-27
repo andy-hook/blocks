@@ -1,3 +1,5 @@
+import moment from "moment"
+
 /**
  * Returns a string with which the last two words are joined via unicode non-breaking space
  */
@@ -60,3 +62,10 @@ export function generateBlockNumberFromStaticRange({
  * Check for browser environment
  */
 export const isBrowser = typeof window !== "undefined"
+
+/**
+ * Format a unix timestamp
+ */
+export function formatUnixTime(timestamp: number): string {
+  return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
+}

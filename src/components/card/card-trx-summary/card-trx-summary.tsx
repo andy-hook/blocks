@@ -21,7 +21,7 @@ const CardTrxSummary: React.FunctionComponent<Props> = ({
       // TODO: Change value
       return (
         <CardTrxPip
-          value={100000}
+          value={transaction.value.toString()}
           from={transaction.from}
           to={transaction.to}
         />

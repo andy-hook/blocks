@@ -15,15 +15,16 @@ interface Props {
 const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
   function renderBodyRows() {
     return transactions.map((trx, index) => {
+      console.log(trx)
       // TODO: Change these values
       return (
         <DataRow
           key={index}
-          blockNumber={`CHANGE ME`}
+          blockNumber={trx.blockNumber ? `${trx.blockNumber}` : ""}
           trxHash={trx.hash}
           from={trx.from}
           to={trx.to}
-          value={10000000}
+          value={trx.value.toString()}
         />
       )
     })

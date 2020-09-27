@@ -8,9 +8,8 @@ import Panel from "@components/panel/panel"
 interface Props {
   blockNumber?: string
   transactionCount?: string
-  size?: string
+  hash?: string
   difficulty?: string
-  totalDifficulty?: string
   gasLimit?: string
   gasUsed?: string
   loading?: boolean
@@ -19,9 +18,8 @@ interface Props {
 }
 
 const BlockInfo: React.FunctionComponent<Props> = ({
-  size,
+  hash,
   difficulty,
-  totalDifficulty,
   gasUsed,
   gasLimit,
   loading,
@@ -32,8 +30,8 @@ const BlockInfo: React.FunctionComponent<Props> = ({
     <InfoPanel yPadding="lg" xPadding="lg">
       <InfoList>
         <InfoRow
-          name="Size"
-          value={size}
+          name="Hash"
+          value={hash}
           loading={loading}
           skeletonWidth="sm"
         />
@@ -54,12 +52,6 @@ const BlockInfo: React.FunctionComponent<Props> = ({
           value={difficulty}
           loading={loading}
           skeletonWidth="md"
-        />
-        <InfoRow
-          name="Total Difficulty"
-          value={totalDifficulty}
-          loading={loading}
-          skeletonWidth="lg"
         />
         <InfoRow
           name="Gas Used"

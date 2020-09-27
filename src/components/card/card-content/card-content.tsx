@@ -14,7 +14,7 @@ interface Props {
   blockNumber?: string
   transactions?: TransactionResponse[]
   transactionCount?: number
-  size?: string
+  timestamp?: string
   difficulty?: string
   miner?: string
   loading?: boolean
@@ -23,7 +23,7 @@ interface Props {
 const CardContent: React.FunctionComponent<Props> = ({
   blockNumber,
   transactions,
-  size,
+  timestamp,
   difficulty,
   miner,
   loading,
@@ -57,7 +57,7 @@ const CardContent: React.FunctionComponent<Props> = ({
 
       {/* Details */}
       <CardDetails
-        size={size}
+        timestamp={timestamp}
         difficulty={difficulty}
         miner={miner}
         loading={loading}

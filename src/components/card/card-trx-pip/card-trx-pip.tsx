@@ -5,7 +5,7 @@ import { mq } from "@style/media-queries"
 import { themeForeground, themeBrand } from "@style/theme"
 
 interface Props {
-  value?: number
+  value?: string
   to?: string
   from?: string
   loading?: boolean
@@ -20,8 +20,8 @@ const CardTrxPip: React.FunctionComponent<Props> = ({
   return (
     <PipOuter>
       <PipInner
-        hasValue={value ? value > 0 : false}
-        zeroValue={value === 0}
+        hasValue={value ? value !== "0" : false}
+        zeroValue={value === "0"}
         isEmpty={isEmpty}
         isLoading={loading}
       />
