@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react"
-import { isBrowser } from "@utils"
+import { isBrowser } from "@utils/general"
 import {
   Provider,
   BlockWithTransactions,

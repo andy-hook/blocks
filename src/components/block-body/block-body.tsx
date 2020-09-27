@@ -8,7 +8,7 @@ import {
   BlockWithTransactions,
   TransactionResponse,
 } from "@ethersproject/abstract-provider"
-import { formatUnixTime } from "@utils"
+import { dateFormat, toMs } from "@utils/date"
 
 interface Props {
   blockData?: BlockWithTransactions | null
@@ -42,7 +42,7 @@ const BlockBody: React.FunctionComponent<Props> = ({
           difficulty={`${blockData.difficulty}`}
           gasLimit={`${blockData.gasLimit.toString()}`}
           gasUsed={`${blockData.gasUsed.toString()}`}
-          timestamp={formatUnixTime(blockData.timestamp)}
+          timestamp={dateFormat(toMs(blockData.timestamp), "extended")}
           miner={blockData.miner}
         />
       )

@@ -7,7 +7,7 @@ import React, {
 } from "react"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import useEthers from "@hooks/ethers"
-import { lastNumbersFromRange } from "@utils"
+import { lastNumbersFromRange } from "@utils/general"
 
 interface Props {
   maxBlocks?: number

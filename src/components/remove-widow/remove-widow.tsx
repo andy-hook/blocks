@@ -1,5 +1,5 @@
 import React from "react"
-import { removeWidow } from "@utils"
+import { removeWidow } from "@utils/general"
 
 interface Props {
   children: string

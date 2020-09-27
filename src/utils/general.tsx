@@ -1,5 +1,3 @@
-import moment from "moment"
-
 // Import BigNumber away from the core package to avoid
 // buid errors with SSG
 import { BigNumber } from "ethers/lib/ethers"
@@ -72,9 +70,22 @@ export function generateBlockNumberFromStaticRange({
  */
 export const isBrowser = typeof window !== "undefined"
 
-/**
- * Format a unix timestamp
- */
-export function formatUnixTime(timestamp: number): string {
-  return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
+import dayjs from "dayjs"
+
+type dateFormats = "onlyDate" | "standard" | "extended"
+
+const KNOWN_FORMATS: { [key in dateFormats]: string } = {
+  onlyDate: "YYYY/MM/DD",
+  standard: "YYYY/MM/DD HH:mm",
+  extended: "dddd, MMMM DD, YYYY h:mm:ss A",
+}
+
+export const toMs = (seconds: number): number => seconds * 1000
+
+export function dateFormat(
+  date: string | number | Date,
+  format: dateFormats = "onlyDate"
+): string {
+  console.log(date)
+  return dayjs(date).format(KNOWN_FORMATS[format] || format)
 }

@@ -15,7 +15,7 @@ import {
 } from "@style/theme"
 import { Link } from "gatsby"
 import { SHUFFLE_MIN_RANGE, SHUFFLE_MAX_RANGE } from "../../config"
-import { generateBlockNumberFromStaticRange } from "@utils"
+import { generateBlockNumberFromStaticRange } from "@utils/general"
 import { useSpring, animated } from "react-spring"
 
 const Topbar: React.FunctionComponent = () => {

@@ -3,7 +3,7 @@ import {
   keys,
   lastNumbersFromRange,
   generateBlockNumberFromStaticRange,
-} from "@utils"
+} from "@utils/general"
 
 describe("removeWidow", () => {
   test("returns string with non-breaking space before last word", () => {

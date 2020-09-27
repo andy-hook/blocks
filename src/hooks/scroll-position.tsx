@@ -1,5 +1,5 @@
 import { useLayoutEffect, useEffect, useRef, useCallback } from "react"
-import { isBrowser } from "@utils"
+import { isBrowser } from "@utils/general"
 
 interface ScrollProps {
   prevPos: {

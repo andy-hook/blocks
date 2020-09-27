@@ -4,7 +4,7 @@ import {
   BlockWithTransactions,
   TransactionResponse,
 } from "@ethersproject/abstract-provider"
-import { bigNum } from "@utils"
+import { bigNum } from "@utils/general"
 
 export const mockSocialIcons: SocialMeta = {
   email: {

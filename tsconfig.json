@@ -60,7 +60,7 @@
       "@custom-types/*": ["./src/types/*"],
       "@svg/*": ["./src/svg/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@utils": ["./src/utils/index.tsx"],
+      "@utils/*": ["./src/utils/*"],
       "@providers/*": ["./src/providers/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
