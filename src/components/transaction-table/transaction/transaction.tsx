@@ -31,7 +31,7 @@ const Transaction: React.FunctionComponent<Props> = ({
   return (
     <Row
       className={classNames("", className)}
-      hasValue={value ? value > 0 : false}
+      hasValue={value ? value !== "0" : false}
     >
       <ColumnsTemplate
         block={

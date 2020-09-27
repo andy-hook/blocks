@@ -1,5 +1,14 @@
 import moment from "moment"
 
+// Import BigNumber away from the core package to avoid
+// buid errors with SSG
+import { BigNumber } from "ethers/lib/ethers"
+export { BigNumber }
+
+export function bigNum(value: string | number): BigNumber {
+  return BigNumber.from(value)
+}
+
 /**
  * Returns a string with which the last two words are joined via unicode non-breaking space
  */
