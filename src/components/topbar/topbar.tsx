@@ -4,7 +4,7 @@ import { mq } from "@style/media-queries"
 import NavList from "./nav-list/nav-list"
 import { layout, type, appearance } from "@style/design-tokens"
 import Icon from "@components/icon/icon"
-import { useThemeSwitchContext } from "@providers/theme-switch-provider/theme-switch-provider"
+import { useThemeSwitchContext } from "@providers/theme-switch-provider"
 import useScrollPosition from "@hooks/scroll-position"
 import {
   themeForeground,
@@ -15,7 +15,7 @@ import {
 } from "@style/theme"
 import { Link } from "gatsby"
 import { SHUFFLE_MIN_RANGE, SHUFFLE_MAX_RANGE } from "../../config"
-import { generateBlockNumberFromStaticRange } from "@utils"
+import { generateBlockNumberFromStaticRange } from "@utils/general"
 import { useSpring, animated } from "react-spring"
 
 const Topbar: React.FunctionComponent = () => {

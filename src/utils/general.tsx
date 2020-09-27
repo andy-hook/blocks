@@ -1,3 +1,12 @@
+// Import BigNumber away from the core package to avoid
+// buid errors with SSG
+import { BigNumber } from "ethers/lib/ethers"
+export { BigNumber }
+
+export function bigNum(value: string | number): BigNumber {
+  return BigNumber.from(value)
+}
+
 /**
  * Returns a string with which the last two words are joined via unicode non-breaking space
  */
@@ -34,7 +43,7 @@ export function lastNumbersFromRange({
     currentItem++
   }
 
-  return matching
+  return matching.reverse()
 }
 
 /**
@@ -55,3 +64,8 @@ export function generateBlockNumberFromStaticRange({
 
   return Math.floor(Math.random() * (maxBottom - minTop + 1)) + minTop
 }
+
+/**
+ * Check for browser environment
+ */
+export const isBrowser = typeof window !== "undefined"

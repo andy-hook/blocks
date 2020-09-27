@@ -1,13 +1,13 @@
 import React from "react"
 import styled, { css } from "styled-components"
-import { Web3BlockData } from "model"
 import Card from "@components/card/card"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import { layout } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import { BLOCK_COUNT } from "../../config"
 
 interface Props {
-  blockData?: Web3BlockData[] | null
+  blockData?: BlockWithTransactions[] | null
 }
 
 const BlockList: React.FunctionComponent<Props> = ({ blockData }) => {

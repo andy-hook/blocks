@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import SEO from "@components/seo"
 import styled from "styled-components"
-import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
+import { useLoadingStatusContext } from "@providers/loading-status-provider"
 import Title from "@components/title/title"
 
 const NotFoundPage: React.FunctionComponent = () => {

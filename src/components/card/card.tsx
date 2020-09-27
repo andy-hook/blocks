@@ -1,10 +1,11 @@
 import React from "react"
-import { Web3BlockData } from "model"
 import CardContent from "./card-content/card-content"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import styled from "styled-components"
+import { dateFormat, toMs } from "@utils/date"
 
 interface Props {
-  blockData?: Web3BlockData | null
+  blockData?: BlockWithTransactions | null
 }
 
 const Card: React.FunctionComponent<Props> = ({ blockData }) => {
@@ -13,11 +14,11 @@ const Card: React.FunctionComponent<Props> = ({ blockData }) => {
       return (
         <CardContent
           blockNumber={`${blockData.number}`}
-          size={`${blockData.size}`}
-          difficulty={blockData.difficulty}
+          timestamp={dateFormat(toMs(blockData.timestamp), "onlyDate")}
+          difficulty={`${blockData.difficulty}`}
           miner={blockData.miner}
-          transactionCount={blockData.transactionCount}
-          transactions={blockData.transactionsData}
+          transactionCount={blockData.transactions.length}
+          transactions={blockData.transactions}
         />
       )
     } else {

@@ -1,26 +1,25 @@
 import React from "react"
-import { Web3BlockData, Web3TransactionData } from "model"
 import BlockInfo from "@components/block-info/block-info"
 import TransactionTable from "@components/transaction-table/transaction-table"
-import moment from "moment"
 import Panel from "@components/panel/panel"
 import Title from "@components/title/title"
 import styled from "styled-components"
+import {
+  BlockWithTransactions,
+  TransactionResponse,
+} from "@ethersproject/abstract-provider"
+import { dateFormat, toMs } from "@utils/date"
 
 interface Props {
-  blockData?: Web3BlockData | null
+  blockData?: BlockWithTransactions | null
   trxVisible: boolean
-}
-
-function formatUnixTime(timestamp: number) {
-  return moment.unix(timestamp).format("dddd, MMMM Do, YYYY h:mm:ss A")
 }
 
 const BlockBody: React.FunctionComponent<Props> = ({
   blockData,
   trxVisible,
 }) => {
-  function renderTransactionsOrEmptyState(transactions: Web3TransactionData[]) {
+  function renderTransactionsOrEmptyState(transactions: TransactionResponse[]) {
     return transactions.length > 0 ? (
       <TransactionTable transactions={transactions} />
     ) : (
@@ -35,15 +34,14 @@ const BlockBody: React.FunctionComponent<Props> = ({
   function renderInfoAsSkeletonOrPopulated() {
     if (blockData) {
       return trxVisible ? (
-        renderTransactionsOrEmptyState(blockData.transactionsData)
+        renderTransactionsOrEmptyState(blockData.transactions)
       ) : (
         <BlockInfo
-          size={`${blockData.size}B`}
-          difficulty={blockData.difficulty}
-          totalDifficulty={blockData.totalDifficulty}
-          gasLimit={`${blockData.gasLimit}`}
-          gasUsed={`${blockData.gasUsed}`}
-          timestamp={formatUnixTime(blockData.timestamp)}
+          hash={`${blockData.hash}`}
+          difficulty={`${blockData.difficulty}`}
+          gasLimit={`${blockData.gasLimit.toString()}`}
+          gasUsed={`${blockData.gasUsed.toString()}`}
+          timestamp={dateFormat(toMs(blockData.timestamp), "extended")}
           miner={blockData.miner}
         />
       )

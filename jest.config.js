@@ -17,7 +17,6 @@ module.exports = {
     "^@hooks(.*)$": "<rootDir>/src/hooks$1",
     "^@utils(.*)$": "<rootDir>/src/utils$1",
     "^@providers(.*)$": "<rootDir>/src/providers$1",
-    "^@web3(.*)$": "<rootDir>/src/web3$1",
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testPathIgnorePatterns: ["node_modules", ".cache"],

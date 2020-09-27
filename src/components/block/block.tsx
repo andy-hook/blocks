@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import { Web3BlockData } from "model"
 import BlockHeader from "@components/block-header/block-header"
 import BlockBody from "@components/block-body/block-body"
 import { animated, useSpring } from "react-spring"
+import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 
 interface Props {
-  blockData?: Web3BlockData | null
+  blockData?: BlockWithTransactions | null
 }
 
 const Block: React.FunctionComponent<Props> = ({ blockData }) => {
@@ -35,7 +35,7 @@ const Block: React.FunctionComponent<Props> = ({ blockData }) => {
       return (
         <BlockHeader
           blockNumber={`${blockData.number}`}
-          transactionCount={`${blockData.transactionCount}`}
+          transactionCount={`${blockData.transactions.length}`}
           handleDetailsClick={handleDetailsClick}
           handleTransactionsClick={handleTransactionsClick}
           trxVisible={trxVisible}

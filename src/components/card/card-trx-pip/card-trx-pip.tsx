@@ -1,14 +1,13 @@
 import React from "react"
-import { Web3TransactionData } from "model"
 import styled, { css } from "styled-components"
 import { layout, appearance } from "@style/design-tokens"
 import { mq } from "@style/media-queries"
 import { themeForeground, themeBrand } from "@style/theme"
 
 interface Props {
-  value?: number
-  to?: Web3TransactionData["to"]
-  from?: Web3TransactionData["from"]
+  value?: string
+  to?: string
+  from?: string
   loading?: boolean
   isEmpty?: boolean
 }
@@ -21,8 +20,8 @@ const CardTrxPip: React.FunctionComponent<Props> = ({
   return (
     <PipOuter>
       <PipInner
-        hasValue={value ? value > 0 : false}
-        zeroValue={value === 0}
+        hasValue={value ? value !== "0" : false}
+        zeroValue={value === "0"}
         isEmpty={isEmpty}
         isLoading={loading}
       />

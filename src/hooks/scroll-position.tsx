@@ -1,4 +1,5 @@
 import { useLayoutEffect, useEffect, useRef, useCallback } from "react"
+import { isBrowser } from "@utils/general"
 
 interface ScrollProps {
   prevPos: {
@@ -11,10 +12,7 @@ interface ScrollProps {
   }
 }
 
-const isBrowser = typeof window !== `undefined`
-
-const useIsomorphicLayoutEffect =
-  typeof window !== "undefined" ? useLayoutEffect : useEffect
+const useIsomorphicLayoutEffect = isBrowser ? useLayoutEffect : useEffect
 
 const getScrollPosition = () => {
   if (!isBrowser) {

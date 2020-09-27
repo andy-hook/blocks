@@ -12,11 +12,11 @@ import { mimicPanelSizeAndPresentation } from "@components/panel/panel"
 import { themeBrand } from "@style/theme"
 
 interface Props {
-  blockNumber: string
+  blockNumber?: string
   trxHash?: string
   from?: string
   to?: string
-  value?: number
+  value?: string
   className?: string
 }
 
@@ -31,12 +31,15 @@ const Transaction: React.FunctionComponent<Props> = ({
   return (
     <Row
       className={classNames("", className)}
-      hasValue={value ? value > 0 : false}
+      hasValue={value ? value !== "0" : false}
     >
       <ColumnsTemplate
         block={
           <Title size="xs" intensity="high">
-            <TruncateString text={`# ${blockNumber}`} truncateAt={50} />
+            <TruncateString
+              text={blockNumber && `# ${blockNumber}`}
+              truncateAt={50}
+            />
           </Title>
         }
         hash={
@@ -48,7 +51,7 @@ const Transaction: React.FunctionComponent<Props> = ({
         value={
           <Label>
             <TruncateString
-              text={`${value ? value : ""} Ether`}
+              text={`${value ? value : ""} Eth`}
               truncateAt={20}
             />
           </Label>

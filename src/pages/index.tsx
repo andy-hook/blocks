@@ -2,27 +2,27 @@ import React, { useEffect } from "react"
 
 import SEO from "@components/seo"
 import Page from "@components/page/page"
-import { useWeb3BlocksDataContext } from "@web3/web3-blocks-data-provider"
-import { useLoadingStatusContext } from "@providers/loading-status-provider/loading-status-provider"
+import { useLoadingStatusContext } from "@providers/loading-status-provider"
 import { useSpring, animated } from "react-spring"
 import Hero from "@components/hero/hero"
 import Gutter from "@components/gutter/gutter"
 import Limiter from "@components/limiter/limiter"
 import BlockList from "@components/block-list/block-list"
+import { useBlockData } from "@providers/block-data-provider"
 
 interface Props {
   path: string
 }
 
 const IndexPage: React.FunctionComponent<Props> = () => {
-  const { data } = useWeb3BlocksDataContext()
+  const [blockData] = useBlockData()
   const { setLoadingStatus } = useLoadingStatusContext()
 
   useEffect(() => {
-    if (data) {
+    if (blockData) {
       setLoadingStatus(false)
     }
-  }, [data, setLoadingStatus])
+  }, [blockData, setLoadingStatus])
 
   const spring = { mass: 1, tension: 175, friction: 30 }
   const animateHomeEntrance = useSpring({
@@ -45,7 +45,7 @@ const IndexPage: React.FunctionComponent<Props> = () => {
           <Hero />
           <Gutter>
             <Limiter size="large">
-              <BlockList blockData={data} />
+              <BlockList blockData={blockData} />
             </Limiter>
           </Gutter>
         </animated.div>

@@ -3,7 +3,16 @@ import {
   keys,
   lastNumbersFromRange,
   generateBlockNumberFromStaticRange,
-} from "@utils"
+  bigNum,
+} from "@utils/general"
+
+describe("bigNum", () => {
+  const inValue = bigNum(100)
+
+  it("returns a BigNumber", () => {
+    expect(inValue).toEqual(inValue)
+  })
+})
 
 describe("removeWidow", () => {
   test("returns string with non-breaking space before last word", () => {
@@ -30,7 +39,7 @@ describe("keys", () => {
 describe("lastNumbersFromRange", () => {
   const inValues = { start: 500, size: 10 }
 
-  const outValues = [491, 492, 493, 494, 495, 496, 497, 498, 499, 500]
+  const outValues = [500, 499, 498, 497, 496, 495, 494, 493, 492, 491]
 
   it("returns array of last numbers of given range", () => {
     expect(lastNumbersFromRange(inValues)).toEqual(outValues)

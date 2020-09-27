@@ -60,9 +60,8 @@
       "@custom-types/*": ["./src/types/*"],
       "@svg/*": ["./src/svg/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@utils": ["./src/utils/index.tsx"],
-      "@providers/*": ["./src/providers/*"],
-      "@web3/*": ["./src/web3/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@providers/*": ["./src/providers/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
