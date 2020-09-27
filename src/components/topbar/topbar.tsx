@@ -115,7 +115,7 @@ const Topbar: React.FunctionComponent = () => {
 
           <TopbarShuffle
             aria-label="Go to a random block"
-            to={randomBlockNumber ? `/block/${randomBlockNumber}` : ""}
+            to={`/block/${randomBlockNumber ? randomBlockNumber : ""}`}
             onClick={generateRandomBlockNumber}
           >
             <Icon name="shuffle" />
