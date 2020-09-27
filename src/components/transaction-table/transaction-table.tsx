@@ -15,7 +15,6 @@ interface Props {
 const TransactionTable: React.FunctionComponent<Props> = ({ transactions }) => {
   function renderBodyRows() {
     return transactions.map((trx, index) => {
-      // TODO: Change these values
       return (
         <DataRow
           key={index}

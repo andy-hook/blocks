@@ -43,7 +43,7 @@ export function lastNumbersFromRange({
     currentItem++
   }
 
-  return matching
+  return matching.reverse()
 }
 
 /**
@@ -69,23 +69,3 @@ export function generateBlockNumberFromStaticRange({
  * Check for browser environment
  */
 export const isBrowser = typeof window !== "undefined"
-
-import dayjs from "dayjs"
-
-type dateFormats = "onlyDate" | "standard" | "extended"
-
-const KNOWN_FORMATS: { [key in dateFormats]: string } = {
-  onlyDate: "YYYY/MM/DD",
-  standard: "YYYY/MM/DD HH:mm",
-  extended: "dddd, MMMM DD, YYYY h:mm:ss A",
-}
-
-export const toMs = (seconds: number): number => seconds * 1000
-
-export function dateFormat(
-  date: string | number | Date,
-  format: dateFormats = "onlyDate"
-): string {
-  console.log(date)
-  return dayjs(date).format(KNOWN_FORMATS[format] || format)
-}

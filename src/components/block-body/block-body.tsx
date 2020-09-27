@@ -36,7 +36,6 @@ const BlockBody: React.FunctionComponent<Props> = ({
       return trxVisible ? (
         renderTransactionsOrEmptyState(blockData.transactions)
       ) : (
-        // TODO: Update these values
         <BlockInfo
           hash={`${blockData.hash}`}
           difficulty={`${blockData.difficulty}`}

@@ -30,16 +30,16 @@ const BlockInfo: React.FunctionComponent<Props> = ({
     <InfoPanel yPadding="lg" xPadding="lg">
       <InfoList>
         <InfoRow
-          name="Hash"
-          value={hash}
-          loading={loading}
-          skeletonWidth="sm"
-        />
-        <InfoRow
           name="Timestamp"
           value={timestamp}
           loading={loading}
           skeletonWidth="lg"
+        />
+        <InfoRow
+          name="Hash"
+          value={hash}
+          loading={loading}
+          skeletonWidth="xl"
         />
         <InfoRow
           name="Miner"

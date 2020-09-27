@@ -18,7 +18,6 @@ const CardTrxSummary: React.FunctionComponent<Props> = ({
 }) => {
   function renderAsHolderOrPopulated(transaction?: TransactionResponse) {
     if (transaction) {
-      // TODO: Change value
       return (
         <CardTrxPip
           value={transaction.value.toString()}

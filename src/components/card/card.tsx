@@ -2,6 +2,7 @@ import React from "react"
 import CardContent from "./card-content/card-content"
 import { BlockWithTransactions } from "@ethersproject/abstract-provider"
 import styled from "styled-components"
+import { dateFormat, toMs } from "@utils/date"
 
 interface Props {
   blockData?: BlockWithTransactions | null
@@ -10,11 +11,10 @@ interface Props {
 const Card: React.FunctionComponent<Props> = ({ blockData }) => {
   function renderAsSkeletonOrPopulated() {
     if (blockData) {
-      // TODO: Change size and difficulty
       return (
         <CardContent
           blockNumber={`${blockData.number}`}
-          timestamp={`${blockData.timestamp}`}
+          timestamp={dateFormat(toMs(blockData.timestamp), "onlyDate")}
           difficulty={`${blockData.difficulty}`}
           miner={blockData.miner}
           transactionCount={blockData.transactions.length}

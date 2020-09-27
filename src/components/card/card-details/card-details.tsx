@@ -22,7 +22,7 @@ const CardDetails: React.FunctionComponent<Props> = ({
     <Details>
       {/* Time */}
       <TimeItem>
-        <DetailsTitle intensity="low">Timestamp</DetailsTitle>
+        <DetailsTitle intensity="low">Date</DetailsTitle>
         <DetailsValue intensity="high" loading={loading} skeletonWidth="sm">
           <TruncateString text={timestamp} truncateAt={20} />
         </DetailsValue>
@@ -94,11 +94,11 @@ const TimeItem = styled.div`
   ${DetailsItem}
 
   ${mq.between("topDesk", "bottomWide")`
-    width: 20%;
+    width: 30%;
   `}
 
   ${mq.greaterThan("topWide")`
-    width: 18%;
+    width: 23%;
   `}
 `
 
